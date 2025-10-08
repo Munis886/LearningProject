@@ -1,0 +1,274 @@
+body,div,ul,li,h1,h2{
+    margin: 0;
+    padding: 0;
+}
+#bosh_qism {
+    background-color: #ffa089;
+    padding: 5px 0;
+    color: #333;
+}
+
+.bosh_qism {
+    width: 80%;
+    margin: 0 auto;
+}
+
+#menyu {
+    background-color: #ff7f50;
+    margin: 0 auto;
+    padding: 5px;
+}
+
+#menyu ul li{
+    display: inline;
+    text-decoration: none;
+    padding: 0 10px;
+    border-right: 1px solid #333;
+}
+
+.menyu {
+    width: 70%;
+    margin: 0 auto;
+}
+
+.menyu li a{
+    text-decoration: none;
+    color: #333;
+    font-family: Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+#front_end {
+    display: flex;
+    /* height: 100%; */
+    background-image: url(/images/1.Front-end.jpg);
+    background-size: cover; /* Rasm butun sahifani qoplashi */
+    background-position: center; /* Rasm markazda bo'lishi */
+    background-repeat: no-repeat; /* Rasm takrorlanmasligi */
+    
+    height: 550px;
+    
+}
+.front_end {
+    width: 50%;
+    margin: auto 10px; 
+    display: flex;
+}
+
+.front_end h2 {
+    margin: auto;
+}
+
+.front_end a{
+    text-decoration: none;
+    color: #333;
+}
+
+.ul li {
+    display: block;
+       
+}
+
+.ul li {
+    text-align: center;
+}
+.ul {
+    margin: auto;
+}
+.ul li a {
+    text-decoration: none;
+    font-size: 18px;
+    color: black;
+    background-color:aliceblue;
+}
+
+.ul li a{
+    border-radius: 10px;
+    padding: 5px 30px; 
+    margin: 15px 0;
+}
+
+.ul li {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    text-align: center;
+    
+}
+
+#backend {
+    display: flex;
+    background-image:url(/images/2.Backend.jpg);
+    background-size: cover; /* Rasm butun sahifani qoplashi */
+    background-position: center; /* Rasm markazda bo'lishi */
+    background-repeat: no-repeat; /* Rasm takrorlanmasligi */
+    height: 350px;
+}
+.backend {
+    width: 50%;
+    margin: auto 10px; 
+    display: flex;
+}
+
+.backend h2 {
+    margin: auto;
+    
+}
+
+.backend a{
+    text-decoration: none;
+    color: #f2f2f2;
+}
+
+#Rus_tili {
+    display: flex;
+    background-image:url(/images/3.Rus-tili.jpg);
+    background: 100% / cover no-repeat url(/images/3.Rus-tili.jpg);
+    background-color:limegreen;
+    height: 300px;
+}
+.Rus_tili {
+    
+    width: 50%;
+    margin: auto 10px; 
+    display: flex;
+}
+
+.Rus_tili h2 {
+    margin: auto;
+}
+
+.Rus_tili a{
+    text-decoration: none;
+    color: #fff9ff;
+}
+
+.footer {
+    background-color: cadetblue;
+    margin: 0 auto;
+}
+
+.footer p{
+    background-color: cadetblue;
+    margin: 0 auto;
+    padding: 10px;
+    color: #333222;
+    text-align: center;
+    font-size: 18px;
+}
+
+/* Responsive breakpoints */
+@media (max-width: 1024px) {
+    #front_end, #backend, #Rus_tili {
+        flex-direction: column;
+        height: auto;
+    }
+    .front_end, .backend, .Rus_tili, .ul {
+        width: 100%;
+        margin: 10px 0;
+    }
+}
+
+@media (max-width: 768px) {
+    html {
+        font-size: 14px;
+    }
+    #menyu ul li {
+        display: block;
+        margin: 8px 0;
+    }
+    #front_end, #backend, #Rus_tili {
+        padding: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    html {
+        font-size: 12px;
+    }
+    .ul li a {
+        padding: 0.5rem 1rem;
+        font-size: 1rem;
+    }
+}
+
+/* Umumiy rasm responsiv stili */
+.responsive-image {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+/* Max-width: 1024px */
+@media (max-width: 1024px) {
+    #header, #footer {
+        text-align: center;
+        padding: 10px;
+    }
+
+    .responsive-image {
+        width: 90%;
+    }
+}
+
+/* Max-width: 768px */
+@media (max-width: 768px) {
+    .responsive-image {
+        width: 95%;
+    }
+}
+
+/* Max-width: 480px */
+@media (max-width: 480px) {
+    .responsive-image {
+        width: 100%;
+    }
+}
+
+.shuur {
+    display: flex;
+    background:cornflowerblue;
+    margin: 0 auto;
+    padding: 10px 50px;
+}
+
+.shuur1 {
+    background-color:cornflowerblue;
+    margin : 0;
+    width: 100%;
+}
+
+.shuur1 p{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: #323323;
+}
+.shuur2 {
+    background-color:cornflowerblue;
+    margin : 0;
+    width: 100%;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: #323323;
+}
+
+.right{
+    text-align: right;
+}
+
+.center{
+    text-align: center;
+}
+
+.left{
+    text-align: left;
+}
+
+.justify{
+    text-align: justify;
+}
+
+.maqsad {
+    background-color: #ffdead;
+    margin: 0 auto;
+    padding: 10px 50px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: #323323;
+}

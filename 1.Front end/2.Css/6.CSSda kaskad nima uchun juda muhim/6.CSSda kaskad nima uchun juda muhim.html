@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="Css">
+    <meta name="description" content="Bu yerda Css haqida batafsil ma'lumotlar">
+    <title>"CSS"da "kaskad" nima uchun juda muhim?</title>
+    <link rel="stylesheet" href="/1.Front end/2.Css/style.css">
+    <script src="/1.Front end/2.Css/Js.js"></script>
+    
+</head>
+<body>
+    <div id="bosh">
+        <div class="bosh">
+            <h1>CSS</h1>
+        </div>
+    </div>
+    <div id="menyu">
+    <div class="menyu">
+        <ul>
+            <button id="toggle-btn" onclick="toggleMenu()">Menu</button>
+            <li><a href="/index.html">HOME</a></li>
+            <li><a href="/1.Front end/1.Front_end.html">FRONT END</a></li>
+            <li><a href="/1.Front end/1.HTML/1.HTML.html">HTML</a></li>
+            <li><a href="/1.Front end/2.Css/Css.html">CSS</a></li>
+        </ul>
+    </div>
+    <div style="display: flex;">
+        <div id="menu" class="menu">
+            <h3 style="padding: 1px 2px;">CSS</h3>
+            <ul>
+                <li><a href="/1.Front end/2.Css/Css.html">CSS HOME</a></li>
+                <li>
+                    <a href="#" onclick="toggleSubMenu('sub-menu-1')">
+                        Daraxt diagrammasi
+                    </a>
+                    <ul id="sub-menu-1" class="sub-menu">
+                        <li><a href="/1.Front end/2.Css/1.Daraxt diagrammasi/1.Matnni daraxt diagrammasida ko'rsatish.html">Matnni daraxt diagrammasida ko'rsatish</a></li>
+                        <li><a href="/1.Front end/2.Css/1.Daraxt diagrammasi/2.Daraxt diagrammasining tarkibi.html">Daraxt diagrammasining tarkibi</a></li>
+                        <li><a href="/1.Front end/2.Css/1.Daraxt diagrammasi/3.Daraxt diagrammalaridan qutilarga.html">Daraxt diagrammalaridan qutilarga</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#" onclick="toggleSubMenu('sub-menu-2')">"HTML"ga uslub berish</a>
+                    <ul id="sub-menu-2" class="sub-menu">
+                        <li><a href="/1.Front end/2.Css/2.Uslub berish/1.HTMLga to‘g‘ridan to‘g‘ri uslub berish.html">HTMLga to‘g‘ridan to‘g‘ri uslub berish</a></li>
+                        <li><a href="/1.Front end/2.Css/2.Uslub berish/2.HTMLga alohida uslub berish.html">HTMLga alohida uslub berish</a></li>
+                    </ul>
+                </li>
+                <li><a href="/1.Front end/2.Css/3.CSS sintaksisi/3.CSS sintaksisi.html">"CSS" sintaksisi</a></li>
+                <li>
+                    <a href="#" onclick="toggleSubMenu('sub-menu-3')">Selektorlar</a>
+                    <ul id="sub-menu-3" class="sub-menu">
+                        <li><a href="/1.Front end/2.Css/4.Selektorlar/Selektorlar.html">Selektorlar</a></li>
+                        <li><a href="/1.Front end/2.Css/4.Selektorlar/1.Selektor Turlari.html">Selektorlar turlari</a></li>
+                        <li><a href="/1.Front end/2.Css/4.Selektorlar/2.class va id selektorlari.html">Class va id selektorlari</a></li>
+                        <li><a href="/1.Front end/2.Css/4.Selektorlar/3.Selektorlarni birlashtirish.html">Selektorlarni birlashtirish</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#" onclick="toggleSubMenu('sub-menu-4')">Takrorlash</a>
+                    <ul id="sub-menu-4" class="sub-menu">
+                        <li><a href="/1.Front end/2.Css/5.Takrorkash/Termin so‘zlarni takrorlash.html">Termin so‘zlarni takrorlash</a></li>
+                        <li><a href="/1.Front end/2.Css/5.Takrorkash/Selektorlarni takrorlash.html">Selektorlarni takrorlash</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="/1.Front end/2.Css/6.CSSda kaskad nima uchun juda muhim.html">"CSS"da "kaskad" nima uchun juda muhim?</a>
+                </li>
+                <li>
+                    <a href="/1.Front end/2.Css/7.O‘lchov birliklari/7.O‘lchov birliklari.html">O‘lchov birliklari</a>
+                </li>
+                <li>
+                    <a href="/1.Front end/2.Css/8.Qutilar/8.Qutilar.html">Qutilar</a>
+                </li>
+                <li>
+                    <a href="/1.Front end/2.Css/9.Foizlar/9.Foizlar.html">Foizlar</a>
+                </li>
+                <li>
+                    <a href="/1.Front end/2.Css/10.CSS qoidalari/CSS qoidalari.html">CSS qoidalari</a>
+                </li>
+                <li>
+                    <a href="/1.Front end/2.Css/11.CSS uslublarni HTMLdan ajratish/11.CSS uslublarni HTMLdan ajratish.html">CSS uslublarni HTMLdan ajratish</a>
+                </li>
+                <li>
+                    <a href="/1.Front end/2.Css/12.Ranglardan foydalanish/12.Ranglardan foydalanish.html">Ranglardan foydalanish</a>
+                </li>
+                <li>
+                    <a href="/1.Front end/2.Css/13.Shriftlar/13.Shriftlar.html">Shriftlar</a>
+                </li>
+                <li>
+                    <a href="/1.Front end/2.Css/14.CSSda Flexbox xossasi/14.CSSda Flexbox xossasi.html">"CSS"da "Flexbox" xossasi</a>
+                </li>
+            </ul>
+        </div> 
+        <div id="container">
+            
+            <div id="sarlavha">
+                <h2 style="width: 12em;">"CSS"da "kaskad" nima uchun juda muhim?</h2>
+            </div>
+            <div id="text">
+                <p>
+                    Yaxshi. Shunday qilib, siz CSSda bajarishingiz mumkin bo'lgan bir nechta 
+                    narsalarni ko'rdingiz, ammo hali bu yerda biz hali javob bermagan savol,
+                    stillar jadvallarini kaskadlash nima bo'ladi?
+                    Kaskadlash DOM daraxtidagi har bir tugun o'z stilini belgilashiga bog'liq.
+                    Asosan tugunda aniqlangan har qanday stil xususiyati odatdagi barcha 
+                    tugunlarning avlodlariga qo'llaniladi. Aytaylik bizda tanasi shunga o'xshash
+                    hujjat bor. 
+                </p>
+                <div class="container">
+                    <div class="box">body</div>
+                    <div class="line"></div>
+                    
+                    <div class="row">
+                        <div class="col">
+                            <div class="box">h1</div>
+                            <div class="line"></div>
+                            
+                            <div class="row">
+                                <div class="col">
+                                    <div class="box">"All about"</div>
+                                </div>
+                                <div class="col">
+                                    <div class="box">em</div>
+                                    <div class="line"></div>
+                                    <div class="box">"CSS"</div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="col">
+                            <div class="box">p</div>
+                            <div class="line"></div>
+                            
+                            <div class="row">
+                                <div class="col">
+                                    <div class="box">"CSS is"</div>
+                                </div>
+                                <div class="col">
+                                    <div class="box">em</div>
+                                    <div class="line"></div>
+                                    <div class="box">"awesome"</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <p>
+                    va bizda shunday CSS qoidalari bor
+                </p>
+                <p>
+                    <style>
+                        .body {
+                            color:white;
+                            background-color: black;
+                        }
+
+                        .p {
+                            color:pink;
+                            margin: 0;
+                        }
+                        em {
+                            color:red;
+                        }
+                        h1 em {
+                            color: orange;
+                        }
+                    </style>
+                </p>
+                <div style="width: 60%; background-color: #343434; margin: 0 auto; border-radius: 6px 6px 0 0;">
+                    <p style="margin: 0;">body</p>
+                    <div class="body">
+                        <p class="p">
+                            body { <br>
+                                color:white; <br>
+                                background-color: black; <br>
+                            } <br><br>
+        
+                            p { <br>
+                                color:pink; <br>
+                            } <br>
+                            em { <br>
+                                color:red; <br>
+                            } <br>
+                            h1 em { <br>
+                                color: orange; <br>
+                            } 
+                        </p>
+                    </div>
+                </div>
+                
+                    <style>
+                        .container {
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        font-family: Arial, sans-serif;
+                        }
+                        .box {
+                        border: 1px solid #00d9db;
+                        padding: 10px;
+                        margin: 10px;
+                        text-align: center;
+                        width: 80px;
+                        background-color: white;
+                        }
+                        
+                        .line {
+                        width: 1px;
+                        height: 20px;
+                        background: #00d9db;
+                        margin: -5px auto;
+                        }
+                        .row {
+                        display: flex;
+                        justify-content: center;
+                        }
+                        .col {
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        margin: 0 20px;
+                        }
+                    </style>
+                <p>
+                    Biz qilmoqchi bo'lgan narsa - bu matnli tugunlarning har biri
+                    brauzerda paydo bo'lganda qanday rangga aylanishidir. Buni bilish 
+                    uchun biz yuqoridan boshlanadigan har bir tugunga tashrif buyuradigan
+                    DOM daraxti bo'ylab yuramiz. Agar ushbu tugun uchun CSS qoidasi
+                    mavjud bo'lsa, biz unga ushbu stilni qo'llaymiz, lekin har bir tugun 
+                    ham stilni ota tugunidan meros qilib oladi. Biz tana tugunidan boshlaymiz
+                    Buning uchun qoida mavjud. Ushbu qoida ushbu oq matnni qora fonda qilish
+                    kerakligini aytadi. 
+                </p>
+                <div class="container">
+                    <div class="box" style="background-color: black; color: white;">body</div>
+                    <div class="line"></div>    
+                    
+                </div>
+                <p>
+                    Keyin chap shox bo'lgan h1 ga tushamiz, bizda h1 uchun qoida mavjud emas,
+                    shuning uchun u otasi kabi uslubga ega bo'ladi.  
+                </p>
+                <div class="container">
+                    <div class="box" style="background-color: black; color: white;">body</div>
+                    <div class="line"></div>
+                    
+                    <div class="row">
+                        <div class="col">
+                            <div class="box" style="background-color: black; color: white;">h1</div>
+                            <div class="line"></div>
+                            
+                        </div>
+                        
+                        <div class="col">
+                            <div class="box">p</div>
+                            <div class="line"></div>
+                            
+                        </div>
+                    </div>
+                </div>
+                <p>
+                   Keyin hammasi haqida matnli tugunga o'tamiz. Bu o'z otasi 
+                   h1 bilan bir xil uslubni oladi. 
+                </p>
+                <div class="container">
+                    <div class="box" style="background-color: black; color: white;">body</div>
+                    <div class="line"></div>
+                    
+                    <div class="row">
+                        <div class="col">
+                            <div class="box" style="background-color: black; color: white;">h1</div>
+                            <div class="line"></div>
+                            
+                            <div class="row">
+                                <div class="col">
+                                    <div class="box" style="background-color: black; color: white;">"All about"</div>
+                                </div>
+                                <div class="col">
+                                    <div class="box">em</div>
+                                    <div class="line"></div>
+                                    <div class="box">"CSS"</div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="col">
+                            <div class="box">p</div>
+                            <div class="line"></div>
+                            
+                            <div class="row">
+                                <div class="col">
+                                    <div class="box">"CSS is"</div>
+                                </div>
+                                <div class="col">
+                                    <div class="box">em</div>
+                                    <div class="line"></div>
+                                    <div class="box">"awesome"</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <p>
+                    Bu yerda em tuguniga kelsak, bizda ushbu tugunga rang berish uchun
+                    ikki xil qoidalar mavjud. Bizda EM uchun va h1 em uchun yana bir
+                    boshqa qoida mavjud. Bunday holda, eng aniq tanlovchi qo'llaniladi.
+                    Mana, bu h1 em qoidasi. Shunday qilib, bu zarg'aldoq bo'ladi, qizil 
+                    emas,
+                </p>
+                <div class="container">
+                    <div class="box" style="background-color: black; color: white;">body</div>
+                    <div class="line"></div>
+                    
+                    <div class="row">
+                        <div class="col">
+                            <div class="box" style="background-color: black; color: white;">h1</div>
+                            <div class="line"></div>
+                            
+                            <div class="row">
+                                <div class="col">
+                                    <div class="box" style="background-color: black; color: white;">"All about"</div>
+                                </div>
+                                <div class="col">
+                                    <div class="box" style="background-color: black; color: goldenrod;">em</div>
+                                    <div class="line"></div>
+                                    <div class="box">"CSS"</div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="col">
+                            <div class="box">p</div>
+                            <div class="line"></div>
+                            
+                            <div class="row">
+                                <div class="col">
+                                    <div class="box">"CSS is"</div>
+                                </div>
+                                <div class="col">
+                                    <div class="box">em</div>
+                                    <div class="line"></div>
+                                    <div class="box">"awesome"</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <p>
+                    lekin h1 em qoidasi fon rangini belgilamaydi, shuning uchun 
+                    yuqoridan meros bo'lib o'tadi. Mana bu keyingi matn tuguni CSSni 
+                    zarg'aldoq rangni qora stildagi otasidan meros qilib olishini 
+                    bildiradi.
+                </p>
+                <div class="container">
+                    <div class="box" style="background-color: black; color: white;">body</div>
+                    <div class="line"></div>
+                    
+                    <div class="row">
+                        <div class="col">
+                            <div class="box" style="background-color: black; color: white;">h1</div>
+                            <div class="line"></div>
+                            
+                            <div class="row">
+                                <div class="col">
+                                    <div class="box" style="background-color: black; color: white;">"All about"</div>
+                                </div>
+                                <div class="col">
+                                    <div class="box" style="background-color: black; color: goldenrod;">em</div>
+                                    <div class="line"></div>
+                                    <div class="box" style="background-color: black; color: goldenrod;">"CSS"</div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="col">
+                            <div class="box">p</div>
+                            <div class="line"></div>
+                            
+                            <div class="row">
+                                <div class="col">
+                                    <div class="box">"CSS is"</div>
+                                </div>
+                                <div class="col">
+                                    <div class="box">em</div>
+                                    <div class="line"></div>
+                                    <div class="box">"awesome"</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <p>
+                    Daraxtning o'ng tomonida, p tugun p uchun CSS qoidasiga mos keladi,
+                    shuning uchun pushti paragraf uchun pushti p bo'ladi.
+                </p>
+                <div class="container">
+                    <div class="box" style="background-color: black; color: white;">body</div>
+                    <div class="line"></div>
+                    
+                    <div class="row">
+                        <div class="col">
+                            <div class="box" style="background-color: black; color: white;">h1</div>
+                            <div class="line"></div>
+                            
+                            <div class="row">
+                                <div class="col">
+                                    <div class="box" style="background-color: black; color: white;">"All about"</div>
+                                </div>
+                                <div class="col">
+                                    <div class="box" style="background-color: black; color: goldenrod;">em</div>
+                                    <div class="line"></div>
+                                    <div class="box" style="background-color: black; color: goldenrod;">"CSS"</div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="col">
+                            <div class="box" style="background-color: black; color: palevioletred;">p</div>
+                            <div class="line"></div>
+                            
+                            <div class="row">
+                                <div class="col">
+                                    <div class="box">"CSS is"</div>
+                                </div>
+                                <div class="col">
+                                    <div class="box">em</div>
+                                    <div class="line"></div>
+                                    <div class="box">"awesome"</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <p>
+                    Shunga qaramay tana qismidagi qora fonni meros qilib olamiz
+                    va ular ushbu matnli tugunga o'tadilar, 
+                </p>
+                <div class="container">
+                    <div class="box" style="background-color: black; color: white;">body</div>
+                    <div class="line"></div>
+                    
+                    <div class="row">
+                        <div class="col">
+                            <div class="box" style="background-color: black; color: white;">h1</div>
+                            <div class="line"></div>
+                            
+                            <div class="row">
+                                <div class="col">
+                                    <div class="box" style="background-color: black; color: white;">"All about"</div>
+                                </div>
+                                <div class="col">
+                                    <div class="box" style="background-color: black; color: goldenrod;">em</div>
+                                    <div class="line"></div>
+                                    <div class="box" style="background-color: black; color: goldenrod;">"CSS"</div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="col">
+                            <div class="box" style="background-color: black; color: palevioletred;">p</div>
+                            <div class="line"></div>
+                            
+                            <div class="row">
+                                <div class="col">
+                                    <div class="box" style="background-color: black; color: palevioletred;">"CSS is"</div>
+                                </div>
+                                <div class="col">
+                                    <div class="box">em</div>
+                                    <div class="line"></div>
+                                    <div class="box">"awesome"</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <p>
+                    Ammo bu yerda biz qizil rangga bo'yaladigan va quyida joylashgan
+                    matn tuguniga o'tadigan tugunga egamiz. 
+                </p>
+                <div class="container">
+                    <div class="box" style="background-color: black; color: white;">body</div>
+                    <div class="line"></div>
+                    
+                    <div class="row">
+                        <div class="col">
+                            <div class="box" style="background-color: black; color: white;">h1</div>
+                            <div class="line"></div>
+                            
+                            <div class="row">
+                                <div class="col">
+                                    <div class="box" style="background-color: black; color: white;">"All about"</div>
+                                </div>
+                                <div class="col">
+                                    <div class="box" style="background-color: black; color: goldenrod;">em</div>
+                                    <div class="line"></div>
+                                    <div class="box" style="background-color: black; color: goldenrod;">"CSS"</div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="col">
+                            <div class="box" style="background-color: black; color: palevioletred;">p</div>
+                            <div class="line"></div>
+                            
+                            <div class="row">
+                                <div class="col">
+                                    <div class="box" style="background-color: black; color: palevioletred;">"CSS is"</div>
+                                </div>
+                                <div class="col">
+                                    <div class="box" style="background-color: black; color: red;">em</div>
+                                    <div class="line"></div>
+                                    <div class="box" style="background-color: black; color: red;">"awesome"</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <p>
+                    Ajoyib Shunday qilib, kaskadli stillar jadvallarining kaskadli
+                    xususiyatidir. Tizimda aniqlangan har bir stil xususiyati tugunning 
+                    farzandlari va avlodlariga daraxtning xususiyatlari o'tkazadi yoki quradi.
+                    Ushbu misolda qora fon rangi daraxtning har bir tuguniga taqqoslangan,
+                    ammo bu matn ranglarining har biri faqat ma'lum bir daraxt ostida o'tkazilgan. 
+                </p>
+                <h2>
+                    "CSS"da kaskad va aniqlik
+                </h2>
+                <p>
+                    *"Cascading Style Sheets"*dagi "kaskadli" atamasi "DOM" daraxti diagrammasining yuqoridagi qismdan boshlab uslubi xossalarini pastga qarab "kaskad" bo‘lib tushishini bildiradi. Body elementiga qo‘llaniladigan uslub butun hujjatga ta’sir qiladi. Pastki darajadagi elementga qo‘llaniladigan uslub ushbu elementga va uning barcha avlodlariga(ushbu elementni ichida va pastki qismida joylashgan barcha elementlarga) ta‘sir qiladi.
+                </p>
+                <p>
+                    Pastroqda qo‘llaniladigan uslub yuqorida qo‘llanilgan uslub ustidan g‘olib kelishi mumkin, ya’ni yuqorida qo‘llanilgan uslub o‘z kuchini yo‘qotadi. Masalan, agar body elementi color: red uslubiga ega bo‘lsa, lekin body elementi ichida p paragraf elementi bo‘lsa va unga color: blue uslubi qo‘llanilgan bo‘lsa, ko‘k rang ushbu paragrafga va uning ichidagi har qanday elementlarga qo‘llaniladi:
+                </p>
+                
+                <div style="width: 20em; background-color: #343434; margin-left: 25px; margin-bottom: 25px;  border-radius: 6px 6px 0 0;">
+                    <p style="margin: 0;">body</p>
+                    <div class="body">
+                        <p style="margin: 0;">
+                            &lt;style&gt; <br>
+                            &nbsp;    body { color: red; } <br>
+                            &nbsp;    p { color: blue; } <br>
+                            &lt;/style&gt; <br>
+                            &lt;body&gt; <br>
+                            &nbsp;    &lt;p&gt; This will be blue, not red. <br>
+                            &nbsp;&nbsp;        &lt;em&gt; Same with this. &lt;/em&gt; <br>
+                            &nbsp;    &lt;/p&gt; <br>
+                            &lt;/body&gt;
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>

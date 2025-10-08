@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="Css">
+    <meta name="description" content="Bu yerda Css haqida batafsil ma'lumotlar">
+    <title>-webkit-text-fill-color</title>
+    <link rel="stylesheet" href="/1.Front end/2.Css/style.css">
+    <script src="/1.Front end/2.Css/Js.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="bosh">
+        <div class="bosh">
+            <h1>CSS</h1>
+        </div>
+    </div>
+    <div id="menyu">
+    <div class="menyu">
+        <button id="toggle-btn" onclick="toggleMenu()">Menu</button>
+        <ul>
+            <li><a href="/index.html">HOME</a></li>
+            <li><a href="/1.Front end/1.Front_end.html">FRONT END</a></li>
+            <li><a href="/1.Front end/1.HTML/1.HTML.html">HTML</a></li>
+            <li><a href="/1.Front end/2.Css/Css.html">CSS</a></li>
+            <li><a href="/1.Front end/3.Js/Javascript.html">JavaScript</a></li>
+            <li><a href="/2.Backend/1.Node js/Node js.html">Node js</a></li>
+        </ul>
+    </div>
+    <div class="body">
+        <div id="menu" class="menu">
+            <h3>CSS</h3>
+            <ul>
+                <li><a href="/1.Front end/2.Css/Css.html">CSS HOME</a></li>
+                <li>
+                    <a href="#" onclick="toggleSubMenu('sub-menu-1')">
+                        Daraxt diagrammasi
+                    </a>
+                    <ul id="sub-menu-1" class="sub-menu">
+                        <li><a href="/1.Front end/2.Css/1.Daraxt diagrammasi/1.Matnni daraxt diagrammasida ko'rsatish.html">Matnni daraxt diagrammasida ko'rsatish</a></li>
+                        <li><a href="/1.Front end/2.Css/1.Daraxt diagrammasi/2.Daraxt diagrammasining tarkibi.html">Daraxt diagrammasining tarkibi</a></li>
+                        <li><a href="/1.Front end/2.Css/1.Daraxt diagrammasi/3.Daraxt diagrammalaridan qutilarga.html">Daraxt diagrammalaridan qutilarga</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#" onclick="toggleSubMenu('sub-menu-2')">"HTML"ga uslub berish</a>
+                    <ul id="sub-menu-2" class="sub-menu">
+                        <li><a href="/1.Front end/2.Css/2.Uslub berish/1.HTMLga to‘g‘ridan to‘g‘ri uslub berish.html">HTMLga to‘g‘ridan to‘g‘ri uslub berish</a></li>
+                        <li><a href="/1.Front end/2.Css/2.Uslub berish/2.HTMLga alohida uslub berish.html">HTMLga alohida uslub berish</a></li>
+                    </ul>
+                </li>
+                <li><a href="/1.Front end/2.Css/3.CSS sintaksisi.html">"CSS" sintaksisi</a></li>
+                <li>
+                    <a href="#" onclick="toggleSubMenu('sub-menu-3')">Selektorlar</a>
+                    <ul id="sub-menu-3" class="sub-menu">
+                        <li><a href="/1.Front end/2.Css/4.Selektorlar/1.Selektor Turlari.html">Selektorlar turlari</a></li>
+                        <li><a href="/1.Front end/2.Css/4.Selektorlar/2.class va id selektorlari.html">Class va id selektorlari</a></li>
+                        <li><a href="/1.Front end/2.Css/4.Selektorlar/3.Selektorlarni birlashtirish.html">Selektorlarni birlashtirish</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#" onclick="toggleSubMenu('sub-menu-4')">Takrorlash</a>
+                    <ul id="sub-menu-4" class="sub-menu">
+                        <li><a href="/1.Front end/2.Css/5.Takrorkash/Termin so‘zlarni takrorlash.html">Termin so‘zlarni takrorlash</a></li>
+                        <li><a href="/1.Front end/2.Css/5.Takrorkash/Selektorlarni takrorlash.html">Selektorlarni takrorlash</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="/1.Front end/2.Css/6.CSSda kaskad nima uchun juda muhim/6.CSSda kaskad nima uchun juda muhim.html">"CSS"da "kaskad" nima uchun juda muhim?</a>
+                </li>
+                <li>
+                    <a href="/1.Front end/2.Css/7.O‘lchov birliklari/7.O‘lchov birliklari.html">O‘lchov birliklari</a>
+                </li>
+                <li>
+                    <a href="/1.Front end/2.Css/8.Qutilar/8.Qutilar.html">Qutilar</a>
+                </li>
+                <li>
+                    <a href="/1.Front end/2.Css/9.Foizlar/9.Foizlar.html">Foizlar</a>
+                </li>
+                <li>
+                    <a href="/1.Front end/2.Css/10.CSS qoidalari/CSS qoidalari.html">CSS qoidalari</a>
+                </li>
+                <li>
+                    <a href="/1.Front end/2.Css/11.CSS uslublarni HTMLdan ajratish/11.CSS uslublarni HTMLdan ajratish.html">CSS uslublarni HTMLdan ajratish</a>
+                </li>
+            </ul>
+        </div> 
+        <div id="container">
+            
+            <div id="sarlavha">
+                <h2>-webkit-text-fill-color</h2>
+            </div>
+            <div id="text" class="qisqa">
+                  
+                <p>
+                    CSS ning <span class="maxsus">`-webkit-text-fill-color`</span> xususiyati matn belgilarining 
+                    to‘ldirish rangini belgilaydi. Agar bu xususiyat o‘rnatilmagan 
+                    bo‘lsa, <span class="maxsus">`color`</span> xususiyatining qiymati ishlatiladi.
+                </p>
+
+               
+                
+                
+                <!--
+                <div style="display: flex; margin: 15px auto; width: 80%;" >
+                    <div  style="width: 1%; background-color: cyan; border-radius: 15px 0 0 15px;">
+                        
+                    </div>
+                    
+                    <div style="background-color: aquamarine; padding: 15px 15px; border-radius: 0 10px 10px 0; display: flex;">
+                        <div class="Eslatma">
+                        
+                        </div>
+                        <p style="padding: 0; margin: 0;">
+                            <b>Eslatma:</b> Ushbu xususiyat dastlab WebKit-da amalga oshirilgan 
+                            va boshqa ikkita eski xususiyatga bog'liqlik kabi ba'zi muammolarga ega. 
+                            U eski qo'llab-quvvatlash uchun CSS Overflow modulining 4-darajasida standartlashtirildi.
+                            CSS Overflow moduli darajasi 4, shuningdek line-clamp, ushbu xususiyatni almashtirish 
+                            va uning muammolaridan qochish uchun mo'ljallangan xususiyatni belgilaydi. Biroq, 
+                            qo'llab-quvvatlaydigan barcha brauzerlar line-clampham -webkit-line-clampmoslik 
+                            sabablarini qo'llab-quvvatlaydi.
+                        </p>
+                       
+                    </div>
+                </div>
+                -->
+                
+                
+                
+                <h2>
+                    Sintaksis
+                </h2>
+
+                
+                
+                
+                <div id="CSS">
+                    <p>CSS</p>
+                    <div class="CSS">
+                        <pre>
+                                    /* color values */
+                                    -webkit-text-fill-color: red;
+                                    -webkit-text-fill-color: #000000;
+                                    -webkit-text-fill-color: rgb(100 200 0);
+                                    
+                                    /* Global values */
+                                    -webkit-text-fill-color: inherit;
+                                    -webkit-text-fill-color: initial;
+                                    -webkit-text-fill-color: revert;
+                                    -webkit-text-fill-color: revert-layer;
+                                    -webkit-text-fill-color: unset;
+                        </pre>
+                    </div>
+                </div>
+                
+                <h2>
+                    Qadriyatlar
+                </h2>
+
+                <span class="maxsus">
+                    <a href="#">
+                        &lt;color&gt;
+                    </a>
+                </span>
+
+                <p>
+                    Element matnining old fon to‘ldirish rangi.
+                </p>
+                
+                <h2>
+                    Rasmiy sintaksis
+                </h2>
+                <div id="CSS">
+                    <p>∞</p>
+                    <div class="CSS">
+                        <pre>
+                            -webkit-text-fill-color = 
+                            &lt;color&gt;                            
+                        </pre>
+                    </div>
+                </div>
+                
+                <h2>
+                    Misollar
+                </h2>
+
+                <style>
+                    .h2 {
+                        font-weight: 100;
+                    }
+                </style>
+                
+                <h2 class="h2">
+                    To'ldirish rangini o'zgartirish
+                </h2>
+                
+               <h2>
+                CSS
+               </h2>
+               <div id="CSS">
+                <p>CSS</p>
+                <div class="CSS">
+                    <pre>
+                        p {
+                            margin: 0;
+                            font-size: 3em;
+                            -webkit-text-fill-color: green;
+                          }                    
+                    </pre>
+                </div>
+                </div>
+            <h2>
+                HTML
+            </h2>
+            <div id="CSS">
+                <p>HTML</p>
+                <div class="CSS">
+                    <p>
+                        &lt;<span class="green">p</span>&gt;
+                        This text is green.
+                        &lt;/<span class="green">p</span>&gt;
+                    </p>
+                </div>
+            </div>
+            <style>
+                .p {
+                    margin: 0;
+                    font-size: 3em;
+                    -webkit-text-fill-color: green;
+                    }
+                .CSS {
+                    background-color: white;
+                }
+            </style>
+            <h2>
+                Natija
+            </h2>
+            <div id="CSS">
+                <p>Natija</p>
+                <div class="CSS">
+                    <p class="p">
+                        This text is green.
+                    </p>
+                </div>
+            </div>
+            <h2>
+                Texnik xususiyatlari
+            </h2>
+            <div id="CSS">
+                <p>Spetsifikatsiya</p>
+                <div class="CSS">
+                    <p class="kok">
+                        Compatibility <br>
+                        # the-webkit-text-fill-color            
+                    </p>
+                </div>
+            </div>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>

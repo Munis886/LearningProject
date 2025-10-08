@@ -1,0 +1,85 @@
+/*elementlardagi marginlarni yo'qotadi*/
+body, h1,h2,ul {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: darkgrey;
+}
+
+#container {
+    width: 100%;
+    background-color: bisque;
+    margin: 0 auto;
+}
+
+#text {
+    width: 80%;
+    padding: 5px;
+    border-radius: 2px;
+    margin: 0 auto;
+    background-color: bisque;
+}
+
+#text p{
+    padding: 0 20px;
+    font-size: 17px;
+    text-align: justify;
+}
+
+#bosh {
+    background-color:chocolate;
+    padding: 10px 0;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.bosh {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.menyu {
+    width: 70%;
+    margin: 0 auto;
+}
+
+#menyu {
+    background-color:dimgray;
+    width: 100%;
+    margin: 0 auto;
+}
+
+#menyu ul li{
+    list-style-type: none;
+    display: inline;
+}
+
+#menyu ul li a {
+    text-decoration: none;
+    color: #fff;
+    padding: 5px 10px;
+    display: inline-block;
+}
+
+.orqaga {
+    margin: 0 auto;
+}
+
+.orqaga a {
+    text-decoration: none;
+    color: #333;
+}
+
+.Atributlar {
+    padding: 5px;   
+    border-radius: 2px;
+    margin: 10px auto;
+    background-color: bisque;
+}
+
+
+
+
+

@@ -1,0 +1,795 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="Javascript, Java script">
+    <meta name="description" content="Bu yerda Javascript haqida batafsil ma'lumot olamiz">
+    <link rel="stylesheet" href="/1.Front end/3.Js/style.css">
+    <title>Java script</title>
+    <script src="/1.Front end/3.Js/script.js"></script>
+</head>
+<body>
+    <div id="bosh">
+        <div class="bosh">
+            <h1>JavaScript</h1>
+        </div>
+    </div>
+
+     <div id="menyu">
+    <div class="menyu">
+        <button id="toggle-btn" onclick="toggleMenu()">Menu</button>
+        <ul>
+            <li><a href="/index.html">HOME</a></li>
+            <li><a href="/1.Front end/1.Front_end.html">FRONT END</a></li>
+            <li><a href="/1.Front end/1.HTML/1.HTML.html">HTML</a></li>
+            <li><a href="/1.Front end/2.Css/Css.html">CSS</a></li>
+            <li><a href="/1.Front end/3.Js/Javascript.html">JavaScript</a></li>
+        </ul>
+    </div>
+    </div>
+    <div class="body">
+        <div id="menu" class="menu">
+            <h3>JavaScript</h3>
+            <ul>
+                <li>
+                    <a href="#" onclick="toggleSubMenu('sub-menu-1')">
+                        <b>1 JavaScript nima?</b>
+                    </a>
+                    <ul id="sub-menu-1" class="sub-menu">
+                        <li>
+                            <a href="/1.Front end/3.Js/Javascript.html">
+                                1.0."JavaScript"ga kirish 
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/1.Front end/3.Js/1.JavaScript nima/1.1.JavaScriptning tarixi/1.1.JavaScriptning tarixi.html">
+                                1.1."JavaScript"ning tarixi
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/1.Front end/3.Js/1.JavaScript nima/1.2.JavaScript Consoli/1.2.JavaScript Consoli.html">
+                                1.2."JavaScript"ning Consoli
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/1.Front end/3.Js/1.JavaScript nima/1.4.Har hil brauzerlarda Developer Tools panelidan foydalanish/1.4.Har hil brauzerlarda Developer Tools panelidan foydalanish.html">
+                                1.4.Har hil brauzerlarda "Developer Tools" panelidan foydalanish
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/1.Front end/3.Js/1.JavaScript nima/1.5.console.log funksiyasi/1.5.console.log funksiyasi.html">
+                                1.5."console.log" funksiyasi
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/1.Front end/3.Js/1.JavaScript nima/1.6.JavaScript tilini ishlashini ko‘rsatish/1.6.JavaScript tilini ishlashini ko‘rsatish.html">
+                                1.6.JavaScript tilini ishlashini ko‘rsatish
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/1.Front end/3.Js/1.JavaScript nima/1.7.Xulosa/1.7.Xulosa.html">
+                                1.7.Xulosa
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+
+                <li>
+                    <a href="#" onclick="toggleSubMenu('sub-menu-2')">
+                        <span>
+                            <b>2</b>
+                        </span> <b>Ma'lumot turlari va o'zgaruvchilar</b>
+                    </a>
+                    <ul id="sub-menu-2" class="sub-menu">
+                        <li>
+                            <a href="/1.Front end/3.Js/2.Ma'lumotlar turlari va o'zgaruvchilar/2.1.Ma’lumot turlari bilan tanishish/2.1.Ma’lumot turlari bilan tanishish.html">
+                                2.1.Ma’lumot turlari bilan tanishish
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/1.Front end/3.Js/2.Ma'lumotlar turlari va o'zgaruvchilar/2.2.Sonlar/2.2.Sonlar.html">
+                                2.2.Sonlar
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/1.Front end/3.Js/2.Ma'lumotlar turlari va o'zgaruvchilar/2.3.Izohlar/2.3.Izohlar.html">
+                                2.3.Izohlar
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/1.Front end/3.Js/2.Ma'lumotlar turlari va o'zgaruvchilar/2.4.Test Birinchi ifodalar (2-1)/2.4.Test Birinchi ifodalar (2-1).html">
+                                2.4.Test: Birinchi ifodalar (2-1)
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/1.Front end/3.Js/2.Ma'lumotlar turlari va o'zgaruvchilar/2.5.Matn ma’lumotlar turi(Strings)/2.5.Matn ma’lumotlar turi(Strings).html">
+                                2.5.Matn ma’lumotlar turi(Strings)
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/1.Front end/3.Js/2.Ma'lumotlar turlari va o'zgaruvchilar/2.6.Matn ma’lumotlar turini bir biriga biriktirish/2.6.Matn ma’lumotlar turini bir biriga biriktirish.html">
+                                2.6.Matn ma’lumotlar turini bir biriga biriktirish
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/1.Front end/3.Js/2.Ma'lumotlar turlari va o'zgaruvchilar/2.7.O'zgaruvchilar/2.7.O'zgaruvchilar.html">
+                                2.7.O'zgaruvchilar
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/1.Front end/3.Js/2.Ma'lumotlar turlari va o'zgaruvchilar/2.8.Test Harorat o‘lchov birliklarini o‘zgartirish/2.8.Test Harorat o‘lchov birliklarini o‘zgartirish(2-2).html">
+                                2.8.Test: Harorat o‘lchov birliklarini o‘zgartirish(2-2)
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/1.Front end/3.Js/2.Ma'lumotlar turlari va o'zgaruvchilar/2.9.String ma’lumot turining indeksi/2.9.String ma’lumot turining indeksi.html">
+                                2.9."String" ma’lumot turining indeksi
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/1.Front end/3.Js/2.Ma'lumotlar turlari va o'zgaruvchilar/2.10.Matnlarda maxsus belgilarni ishlatish/2.10.Matnlarda maxsus belgilarni ishlatish.html">
+                                2.10.Matnlarda maxsus belgilarni ishlatish
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/1.Front end/3.Js/2.Ma'lumotlar turlari va o'zgaruvchilar/2.11.Matnlarni taqqoslash/2.11.Matnlarni taqqoslash.html">
+                                2.11.Matnlarni taqqoslash
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/1.Front end/3.Js/2.Ma'lumotlar turlari va o'zgaruvchilar/2.12.Test Yoqimli ovqat (2-3)/2.12.Test Yoqimli ovqat (2-3).html">
+                                2.12.Test: Yoqimli ovqat (2-3)
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/1.Front end/3.Js/2.Ma'lumotlar turlari va o'zgaruvchilar/2.13.Test Matnni barchasiga tengligi (2-4)/2.13.Test Matnni barchasiga tengligi (2-4).html">
+                                2.13.Test: Matnni barchasiga tengligi (2-4)
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/1.Front end/3.Js/2.Ma'lumotlar turlari va o'zgaruvchilar/2.14.Test Barchasi bo‘glangan (2-5)/2.14.Test Barchasi bo‘glangan (2-5).html">
+                                2.14.Test: Barchasi bo‘glangan (2-5)
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/1.Front end/3.Js/2.Ma'lumotlar turlari va o'zgaruvchilar/2.15.Test Yosa Buson (2-6)/2.15.Test Yosa Buson (2-6).html">
+                                2.15.Test: Yosa Buson (2-6)
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/1.Front end/3.Js/2.Ma'lumotlar turlari va o'zgaruvchilar/2.16.Boolean ma’lumot turi/2.16.Boolean ma’lumot turi.html">
+                                2.16."Boolean" ma’lumot turi
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/1.Front end/3.Js/2.Ma'lumotlar turlari va o'zgaruvchilar/2.17.Test Facebookga xabar chop etish(2-7)/2.17.Test Facebookga xabar chop etish(2-7).html">
+                                2.17.Test: "Facebook"ga xabar chop etish(2-7)
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/1.Front end/3.Js/2.Ma'lumotlar turlari va o'zgaruvchilar/2.18.Null, Undefined, va NaN obyektlari/2.18.Null, Undefined, va NaN obyektlari.html">
+                                2.18.Null, Undefined, va NaN obyektlari
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/1.Front end/3.Js/2.Ma'lumotlar turlari va o'zgaruvchilar/2.19.Tenglik/2.19.Tenglik.html">
+                                2.19.Tenglik
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/1.Front end/3.Js/2.Ma'lumotlar turlari va o'zgaruvchilar/2.20.Test Nuqta vergullar! (2-8)/2.20.Test Nuqta vergullar! (2-8).html">
+                                2.20.Test: Nuqta vergullar! (2-8)
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/1.Front end/3.Js/2.Ma'lumotlar turlari va o'zgaruvchilar/2.21.Test Ismim nima (2-9)/2.21.Test Ismim nima (2-9).html">
+                                2.21.Test: Ismim nima? (2-9)
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/1.Front end/3.Js/2.Ma'lumotlar turlari va o'zgaruvchilar/2.22.Test Kechki ovqatga chiqish (2-10)/2.22.Test Kechki ovqatga chiqish (2-10).html">
+                                2.22.Test: Kechki ovqatga chiqish (2-10)
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/1.Front end/3.Js/2.Ma'lumotlar turlari va o'zgaruvchilar/2.23.Test Mad Libs o‘yini (2-11)/2.23.Test Mad Libs o‘yini (2-11).html">
+                                2.23.Test: "Mad Libs" o‘yini (2-11)
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/1.Front end/3.Js/2.Ma'lumotlar turlari va o'zgaruvchilar/2.24.Test bitta ajoyib xabar (2-12)/2.24.Test bitta ajoyib xabar (2-12).html">
+                                2.24.Test: bitta ajoyib xabar (2-12)
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/1.Front end/3.Js/2.Ma'lumotlar turlari va o'zgaruvchilar/2.25.Xulosa/2.25.Xulosa.html">
+                                2.25.2-dars xulosasi
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+
+                <li>
+                    <a href="#" onclick="toggleSubMenu('sub-menu-3')">
+                        <span>
+                            <b>3</b>
+                        </span> <b>Shartli ifodalar</b>
+                    </a>
+                    <ul id="sub-menu-3" class="sub-menu">
+                        <li>
+                            <a href="/1.Front end/3.Js/3.Shartli ifodalar/3.1.Shartli ifodalarga kirish/3.1.Shartli ifodalarga kirish.html">
+                                3.1.Shartli ifodalarga kirish
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/1.Front end/3.Js/3.Shartli ifodalar/3.2.Test Blok-sxemalar (3-1)/3.2.Test Blok-sxemalar (3-1).html">
+                                3.2.Test: Blok-sxemalar (3-1)
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/1.Front end/3.Js/3.Shartli ifodalar/3.3.Kod uchun blok-sxema/3.3.Kod uchun blok-sxema.html">
+                                3.3.Kod uchun blok-sxema
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/1.Front end/3.Js/3.Shartli ifodalar/3.4.If...Else ifodalari/3.4.If...Else ifodalari.html">
+                                3.4."If...Else" ifodalari
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/1.Front end/3.Js/3.Shartli ifodalar/3.5.Else If ifodalari/3.5.Else If ifodalari.html">
+                                3.5."Else If" ifodalari
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/1.Front end/3.Js/3.Shartli ifodalar/3.6.Test Even (juft) yoki Odd (toq) (3-2)/3.6.Test Even (juft) yoki Odd (toq) (3-2).html">
+                                3.6.Test: Even (juft) yoki Odd (toq) (3-2)
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/1.Front end/3.Js/3.Shartli ifodalar/3.7.Test Musiqiy guruhlar (3-3)/3.7.Test Musiqiy guruhlar (3-3).html">
+                                3.7.Test: Musiqiy guruhlar (3-3)
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/1.Front end/3.Js/3.Shartli ifodalar/3.8.Test Qotillik siri (3-4)/3.8.Test Qotillik siri (3-4).html">
+                                3.8.Test: Qotillik siri (3-4)
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/1.Front end/3.Js/3.Shartli ifodalar/3.9.Yanada murakkabroq muammolar/3.9.Yanada murakkabroq muammolar.html">
+                                3.9.Yanada murakkabroq muammolar
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/1.Front end/3.Js/3.Shartli ifodalar/3.10.Mantiqiy operatorlar/3.10.Mantiqiy operatorlar.html">
+                                3.10.Mantiqiy operatorlar
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/1.Front end/3.Js/3.Shartli ifodalar/3.11.Mantiqiy AND va OR/3.11.Mantiqiy AND va OR.html">
+                                3.11.Mantiqiy "AND" va "OR"
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/1.Front end/3.Js/3.Shartli ifodalar/3.12.Test Sizning balansingizni tekshirish (3-5)/3.12.Test Sizning balansingizni tekshirish (3-5).html">
+                                3.12.Test: Sizning balansingizni tekshirish (3-5)
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/1.Front end/3.Js/3.Shartli ifodalar/3.13.Test Muzqaymoq (3-6)/3.13.Test Muzqaymoq (3-6).html">
+                                3.13.Test: Muzqaymoq (3-6)
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/1.Front end/3.Js/3.Shartli ifodalar/3.14.Test Nima kiyaman (3-7)/3.14.Test Nima kiyaman (3-7).html">
+                                3.14.Test: Nima kiyaman? (3-7)
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/1.Front end/3.Js/3.Shartli ifodalar/3.15.Murakkab shartli ifodalar/3.15.Murakkab shartli ifodalar.html">
+                                3.15.Murakkab shartli ifodalar
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/1.Front end/3.Js/3.Shartli ifodalar/3.16.Truthy(rost) va Falsy(yolg‘on) qiymatlar/3.16.Truthy(rost) va Falsy(yolg‘on) qiymatlar.html">
+                                3.16.Truthy(rost) va Falsy(yolg‘on) qiymatlar
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/1.Front end/3.Js/3.Shartli ifodalar/3.17.Ternary operatori/3.17.Ternary operatori.html">
+                                3.17."Ternary" operatori
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/1.Front end/3.Js/3.Shartli ifodalar/3.18.Test Oziq-ovqat tarmog‘ini boshqarish (3-8)/3.18.Test Oziq-ovqat tarmog‘ini boshqarish (3-8).html">
+                                3.18.Test: Oziq-ovqat tarmog‘ini boshqarish (3-8)
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/1.Front end/3.Js/3.Shartli ifodalar/3.19.Switch ifodasi/3.19.Switch ifodasi.html">
+                                3.19."Switch" ifodasi
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/1.Front end/3.Js/3.Shartli ifodalar/3.20.Ijro etishni keyingi holatga o‘tkazish/3.20.Ijro etishni keyingi holatga o‘tkazish.html">
+                                3.20.Ijro etishni keyingi holatga o‘tkazish
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/1.Front end/3.Js/3.Shartli ifodalar/3.21.Test Maktabga qaytish (3-9)/3.21.Test Maktabga qaytish (3-9).html">
+                                3.21.Test: Maktabga qaytish (3-9)
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/1.Front end/3.Js/3.Shartli ifodalar/3.22.3-dars xulosasi/3.22.3-dars xulosasi.html">
+                                3.22.3-dars xulosasi
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#" onclick="toggleSubMenu('sub-menu-4')">
+                        <span>
+                            4
+                        </span> <b>Sikllar (Loops)</b>
+                    </a>
+                    <ul id="sub-menu-4" class="sub-menu">
+                        <li>
+                            <a href="/1.Front end/3.Js/4.Sikllar/4.1.Sikllar. Kirish/4.1.Sikllar. Kirish.html">
+                                4.1.Sikllar. Kirish.
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/1.Front end/3.Js/4.Sikllar/4.2.While sikli/4.2.While sikli.html">
+                                4.2."While" sikli
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/1.Front end/3.Js/4.Sikllar/4.3.While sikli/4.3.While sikli.html">
+                                4.3."While" sikli
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/1.Front end/3.Js/4.Sikllar/4.4.Test JuliaJames (4-1)/4.4.Test JuliaJames (4-1).html">
+                                4.4."Test: JuliaJames (4-1)
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/1.Front end/3.Js/4.Sikllar/4.5.Test 99 ta butilka sharbat (4-2)/4.5.Test 99 ta butilka sharbat (4-2).html">
+                                4.5.Test: 99 ta butilka sharbat (4-2)
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/1.Front end/3.Js/4.Sikllar/4.6.Test Hisob qaydnomasi, Faollashtirish! (4-3)/4.6.Test Hisob qaydnomasi, Faollashtirish! (4-3).html">
+                                4.6.Test: Hisob qaydnomasi, "Faollashtirish!" (4-3)
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/1.Front end/3.Js/4.Sikllar/4.7.For sikli/4.7.For sikli.html">
+                                4.7."For" sikli
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/1.Front end/3.Js/4.Sikllar/4.8.For Loop qismlari/4.8.For Loop qismlari.html">
+                                4.8."For Loop" qismlari
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/1.Front end/3.Js/4.Sikllar/4.9.Nested - ichma-ich sikllar/4.9.Nested - ichma-ich sikllar.html">
+                                4.9.Nested - ichma-ich sikllar
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/1.Front end/3.Js/4.Sikllar/4.10.O‘sish (oshirish) va kamayish/4.10.O‘sish (oshirish) va kamayish.html">
+                                4.10.O‘sish (oshirish) va kamayish
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/1.Front end/3.Js/4.Sikllar/4.11.Test Siklni o‘zgartirish (4-4)/4.11.Test Siklni o‘zgartirish (4-4).html">
+                                4.11.Test: Siklni o‘zgartirish (4-4)
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/1.Front end/3.Js/4.Sikllar/4.12.Test 1-xatoni tuzatish (4-5)/4.12.Test 1-xatoni tuzatish (4-5).html">
+                                4.12.Test: 1-xatoni tuzatish (4-5)
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/1.Front end/3.Js/4.Sikllar/4.13.Test 2-xatoni tuzating (4-6)/4.13.Test 2-xatoni tuzating (4-6).html">
+                                4.13.Test: 2-xatoni tuzating (4-6)
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/1.Front end/3.Js/4.Sikllar/4.14.Test Faktoriallar! (4-7)/4.14.Test Faktoriallar! (4-7).html">
+                                4.14.Test: Faktoriallar! (4-7)
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/1.Front end/3.Js/4.Sikllar/4.15.Test Mening joyimni toping (4-8)/4.15.Test Mening joyimni toping (4-8).html">
+                                4.15.Test: Mening joyimni toping (4-8)
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/1.Front end/3.Js/4.Sikllar/4.16.4-dars xulosasi/4.16.4-dars xulosasi.html">
+                                4.16.4-dars xulosasi
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#" onclick="toggleSubMenu('sub-menu-5')">
+                        <span>
+                            5
+                        </span> <b>Funksiyalar</b>
+                    </a>
+                    <ul id="sub-menu-5" class="sub-menu">
+                        <li>
+                            <a href="/1.Front end/3.Js/5.Funksiyalar/5.1.Funksiyalarga kirish/5.1.Funksiyalarga kirish.html">
+                                5.1.Funksiyalarga kirish
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/1.Front end/3.Js/5.Funksiyalar/5.2.Funksiyaga misollar/5.2.Funksiyaga misollar.html">
+                                5.2.Funksiyaga misollar
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/1.Front end/3.Js/5.Funksiyalar/5.3.Funksiyalarni e’lon qilish/5.3.Funksiyalarni e’lon qilish.html">
+                                5.3.Funksiyalarni e’lon qilish
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/1.Front end/3.Js/5.Funksiyalar/5.4.Funksiyani takrorlash/5.4.Funksiyani takrorlash.html">
+                                5.4.Funksiyani takrorlash
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/1.Front end/3.Js/5.Funksiyalar/5.5.Mashq Laugh it Off 1 (5-1)/5.5.Mashq Laugh it Off 1 (5-1).html">
+                                5.5.Mashq: Laugh it Off 1 (5-1)
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/1.Front end/3.Js/5.Funksiyalar/5.6.Quiz Laugh it Off 2 (5-2)/5.6.Quiz Laugh it Off 2 (5-2).html">
+                                5.6.Quiz: Laugh it Off 2 (5-2)
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/1.Front end/3.Js/5.Funksiyalar/5.7.Qaytarish qiymatlari/5.7.Qaytarish qiymatlari.html">
+                                5.7.Qaytarish qiymatlari
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/1.Front end/3.Js/5.Funksiyalar/5.8.Qaytarish qiymatlaridan foydalanish/5.8.Qaytarish qiymatlaridan foydalanish.html">
+                                5.8.Qaytarish qiymatlaridan foydalanish
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/1.Front end/3.Js/5.Funksiyalar/5.9.Qamrov doirasi/5.9.Qamrov doirasi.html">
+                                5.9.Qamrov doirasi
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/1.Front end/3.Js/5.Funksiyalar/5.10.Qamrov doirasiga oid misollar/5.10.Qamrov doirasiga oid misollar.html">
+                                5.10.Qamrov doirasiga oid misollar
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/1.Front end/3.Js/5.Funksiyalar/5.11.Soyalash/5.11.Soyalash.html">
+                                5.11.Soyalash
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/1.Front end/3.Js/5.Funksiyalar/5.12.Global o‘zgaruvchilar/5.12.Global o‘zgaruvchilar.html">
+                                5.12.Global o‘zgaruvchilar
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/1.Front end/3.Js/5.Funksiyalar/5.13.Scope Recap/5.13.Scope Recap.html">
+                                5.13.Scope Recap
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/1.Front end/3.Js/5.Funksiyalar/5.14.Ko‘tarish/5.14.Ko‘tarish.html">
+                                5.14.Ko‘tarish
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/1.Front end/3.Js/5.Funksiyalar/5.15.Ko‘tarishni takrorlash/5.15.Ko‘tarishni takrorlash.html">
+                                5.15.Ko‘tarishni takrorlash
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/1.Front end/3.Js/5.Funksiyalar/5.16.Mashq Uchburchak yasang (5-3)/5.16.Mashq Uchburchak yasang (5-3).html">
+                                5.16.Mashq: Uchburchak yasang (5-3)
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/1.Front end/3.Js/5.Funksiyalar/5.17.Funksiya ifodalari/5.17.Funksiya ifodalari.html">
+                                5.17.Funksiya ifodalari
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/1.Front end/3.Js/5.Funksiyalar/5.18.Funksiya ifodalari bilan ishlashda namunalar/5.18.Funksiya ifodalari bilan ishlashda namunalar.html">
+                                5.18.Funksiya ifodalari bilan ishlashda namunalar
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/1.Front end/3.Js/5.Funksiyalar/5.19.Funksiya ifodalarini takrorlash/5.19.Funksiya ifodalarini takrorlash.html">
+                                5.19.Funksiya ifodalarini takrorlash
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/1.Front end/3.Js/5.Funksiyalar/5.20.Quiz Laugh (5-4)/5.20.Quiz Laugh (5-4).html">
+                                5.20.Quiz: Laugh (5-4)
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/1.Front end/3.Js/5.Funksiyalar/5.21.Mashq Cry (5-5)/5.21.Mashq Cry (5-5).html">
+                                5.21.Mashq: Cry (5-5)
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/1.Front end/3.Js/5.Funksiyalar/5.22.Mashq Inline (5-6)/5.22.Mashq Inline (5-6).html">
+                                5.22.Mashq: Inline (5-6)
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/1.Front end/3.Js/5.Funksiyalar/5.23.Xulosa/5.23.Xulosa.html">
+                                5.23.Xulosa
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#" onclick="toggleSubMenu('sub-menu-6')">
+                        <span>
+                            6
+                        </span> <b>Massivlar</b>
+                    </a>
+                    <ul id="sub-menu-6" class="sub-menu">
+                        <li>
+                            <a href="/1.Front end/3.Js/6.Massivlar/6.1.Massivlarga kirish/6.1.Massivlarga kirish.html">
+                                6.1.Funksiyalarga kirish
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/1.Front end/3.Js/6.Massivlar/6.2.Kod uchun donutlar/6.2.Kod uchun donutlar.html">
+                                6.2.Kod uchun donutlar
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/1.Front end/3.Js/6.Massivlar/6.3.Massiv yaratish/6.3.Massiv yaratish.html">
+                                6.3.Massiv yaratish
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/1.Front end/3.Js/6.Massivlar/6.4.Massiv elementlaridan foydalanish/6.4.Massiv elementlaridan foydalanish.html">
+                                6.4.Massiv elementlaridan foydalanish
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/1.Front end/3.Js/6.Massivlar/6.5.Massivlarda indekslar/6.5.Massivlarda indekslar.html">
+                                6.5.Massivlarda indekslar
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/1.Front end/3.Js/6.Massivlar/6.6.Test Udacity oilasi (6-1)/6.6.Test Udacity oilasi (6-1).html">
+                                6.6.Mashq: Uchburchak yasang (5-3)
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/1.Front end/3.Js/6.Massivlar/6.7.Test Jamoa qurish (6-2)/6.7.Test Jamoa qurish (6-2).html">
+                                6.7.Test: Jamoa qurish (6-2)
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/1.Front end/3.Js/6.Massivlar/6.8.Test Narx to‘g‘ri (6-3)/6.8.Test Narx to‘g‘ri (6-3).html">
+                                6.8.Test: Narx to‘g‘ri (6-3)
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/1.Front end/3.Js/6.Massivlar/6.9.Massiv xususiyatlari va metodlari/6.9.Massiv xususiyatlari va metodlari.html">
+                                6.9.Massiv xususiyatlari va metodlari
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/1.Front end/3.Js/6.Massivlar/6.10.Uzunlik/6.10.Uzunlik.html">
+                                6.10.Uzunlik
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/1.Front end/3.Js/6.Massivlar/6.11.Push metodi/6.11.Push metodi.html">
+                                6.11."Push" metodi
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/1.Front end/3.Js/6.Massivlar/6.12.Pop metodi/6.12.Pop metodi.html">
+                                6.12."Pop" metodi
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/1.Front end/3.Js/6.Massivlar/6.13.Splice metodi/6.13.Splice metodi.html">
+                                6.13."Splice" metodi
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/1.Front end/3.Js/6.Massivlar/6.14.Test Kamalak ranglari (6-4)/6.14.Test Kamalak ranglari (6-4).html">
+                                6.14.Test Kamalak ranglari (6-4)
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/1.Front end/3.Js/6.Massivlar/6.15.Test Qvidich Kubogi (6-5)/6.15.Test Qvidich Kubogi (6-5).html">
+                                6.15.Test Qvidich Kubogi (6-5)
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/1.Front end/3.Js/6.Massivlar/6.16.Test Jamoaga qo‘shilish (6-6)/6.16.Test Jamoaga qo‘shilish (6-6).html">
+                                6.16.Test: Jamoaga qo‘shilish (6-6)
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/1.Front end/3.Js/6.Massivlar/6.17.Test Hujjatlarni tekshirish (6-7)/6.17.Test Hujjatlarni tekshirish (6-7).html">
+                                6.17.Test: Hujjatlarni tekshirish (6-7)
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/1.Front end/3.Js/6.Massivlar/6.18.Massivli sikl/6.18.Massivli sikl.html">
+                                6.18.Massivli sikl
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/1.Front end/3.Js/6.Massivlar/6.19.Sikl forEach/6.19.Sikl forEach.html">
+                                6.19.Sikl forEach
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/1.Front end/3.Js/6.Massivlar/6.20.Test Siklning yana bir turi (6-8)/6.20.Test Siklning yana bir turi (6-8).html">
+                                6.20.Test Siklning yana bir turi (6-8)
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/1.Front end/3.Js/6.Massivlar/6.21.Map metodi/6.21.Map metodi.html">
+                                6.21.Map metodi
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/1.Front end/3.Js/6.Massivlar/6.22.Test Men hisoblab oldim (6-9)/6.22.Test Men hisoblab oldim (6-9).html">
+                                6.22.Test: Men hisoblab oldim (6-9)
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/1.Front end/3.Js/6.Massivlar/6.23.Massivlar ichida massivlar/6.23.Massivlar ichida massivlar.html">
+                                6.23.Massivlar ichida massivlar
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/1.Front end/3.Js/6.Massivlar/6.24.2D Donutlar massivi/6.24.2D Donutlar massivi.html">
+                                6.24.2D Donutlar massivi
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/1.Front end/3.Js/6.Massivlar/6.25.Test Sonlar, sonlar... (6-10)/6.25.Test Sonlar, sonlar... (6-10).html">
+                                6.25.Test: Sonlar, sonlar... (6-10)
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/1.Front end/3.Js/6.Massivlar/6.26.6-dars. Xulosa/6.26.6-dars. Xulosa.html">
+                                6.26.6-dars. Xulosa
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#" onclick="toggleSubMenu('sub-menu-7')">
+                        <span>
+                            7
+                        </span> <b>Obyektlar</b>
+                    </a>
+                    <ul id="sub-menu-7" class="sub-menu">
+                        <li>
+                            <a href="/1.Front end/3.Js/7.Obyektlar/7.1.Obyektlar. Kirish/7.1.Obyektlar. Kirish.html">
+                                7.1.Obyektlar. Kirish
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/1.Front end/3.Js/7.Obyektlar/7.2.Kodda obyektlar/7.2.Kodda obyektlar.html">
+                                7.2.Kodda obyektlar
+                            </a>
+                        </li>
+                        
+                    </ul>
+                </li>
+            </ul>
+        </div> 
+
+        <div id="container">
+            <div id="sarlavha">
+                <h2>JavaScript Konsoli</h2>
+            </div>
+            <div id="text">
+                <p>
+                    Ushbu videoda JavaScript konsoliga kirish  uchun Google Chrome dasturchilar
+                    vositalarini qanday olishni ko‘rsataman. Siz ushbu kursda yozadigan  ko‘pgina 
+                    kodlaringizni konsol rejimidan foydalanasiz. Agar siz Google Chrome brauzeridan 
+                    foydalanayotgan  bo‘lsangiz, ushbu videoda ko‘rganlaringiz kompyuteringizdagilarga 
+                    mos kelishi kerak. Agar Google Chromedan foydalanmasangiz, boshqa brauzerlardagi dastur 
+                    vositalariga qanday kirish bo‘yicha ko‘rsatmalar  olish uchun keyingi qismga o‘ting
+                    va keyin ushbu videoga qayting. Yaxshi, endi bajarishingiz kerak bo‘lgan  birinchi narsa 
+                    - dasturiy vositalarni ochish. Siz buni sahifaning o‘ng tugmachasini bosib va ​​Inspect ni 
+                    yoki Проверит ni tanlash orqali qilishingiz mumkin. 
+                </p>
+                <!-- <style>
+                    img {
+                        width: 10px;
+                    }
+                </style> -->
+                <p>
+                    <img src="1.Inspect.jpg" alt="Inspect" width="19%">
+                    &nbsp;
+                    <img src="2.Проверит.jpg" alt="Проверит" width="20%">
+                </p>
+                <p>
+                    Dasturiy vositalar ochilgach, Console tabulyatsiyasiga bosib   
+                    JavaScript Console ni topishingiz mumkin. 
+                </p>
+                <p> <!--style="text-align: center;"-->
+                    <img src="3.Element.jpg" alt="Element" width="45%">
+                    <img src="4.Console.jpg" alt="Console" width="45%">
+                </p>
+                <p>   
+                    Agar siz klaviaturada bosmoqchi bo‘lsangiz,  konsolni 
+                    ochish uchun Mac da Cmd + Option + J yoki Windows da Ctrl + Shift + J dan foydalanishingiz mumkin.
+                </p>
+                <p>
+                    Ushbu darsning ostida ko‘rsatilgan  dasturchi vositalari uchun klaviatura qisqa tugmachalari haqida 
+                    foydali ma’lumot mavjud. Yaxshi, endi siz JavaScript konsolini  ochgan bo‘lsangiz, keling, birinchi 
+                    JavaScript kodingizni yozamiz. Siz qilishingiz mumkin bo‘lgan  birinchi ish - ismingizni yozish.
+                    Faqat ismingizni shunchaki o‘zini yozish bu  yerda ko‘rib turganingizdek xatoga olib keladi.
+                </p>
+                <p>
+                    <img src="5.Console.jpg" alt="Console" width="45%">
+                </p>
+                <p>
+                    Haqiqatan ham JavaScriptda ismingizni, biror-bir  kodni xatosiz yoza olish uchun siz uni qo‘shtirnoq ichiga kiritib,
+                    ma’lumot turi sifatida formatlashingiz kerak. 
+                </p>
+                <p>
+                    <img src="6.Console.jpg" alt="Console" width="45%">
+                </p>
+                <p>
+                    Nega biz boshqa narsani sinab ko‘rmasligmiz kerak ekan?
+                    Mana, ogohlantiruvchi oynani  yaratadigan ba’zi kod,
+                </p>
+                <p>
+                    <img src="7.Console.jpg" alt="Console" width="45%">
+                </p>
+                <p>
+                    Salom, Julia, qalaysiz? deydi. Va uni brauzerga berib yuboradi.
+                </p>
+                <p>
+                    <img src="8.Console.jpg" alt="Console" width="55%">
+                </p>
+                <p>
+                    Siz u yerga boring. Endi kodni to‘g‘ridan-to‘g‘ri brauzeringizda yozish bu sizning
+                    yangi kichik kodlarni sinab ko‘rish  uchun bajaradigan ishingizdir. Ammo siz kattaroq 
+                    va yanada kattaroq  dasturlarni yozishni boshlaganingizda,
+                    bu asabiylashtirishi mumkin. Masalan, agar siz bir emas, ikkita ogohlantirishni yaratmoqchi 
+                    bo‘lsangiz, dastlab oddiy ko‘rinishi mumkin,  ammo har safar keyingi satrga o‘tishingiz kerak,
+                    bunda shunchaki Return(Win.da Enter) tugmachasini emas, balki Shift + Return(Win.da Enter) tugmachasini bosishingiz 
+                    kerak bo‘ladi. Bu juda qiyin va tez bo‘ladi. Keyingi kursda siz JavaScript fayllarini yuklashning
+                    boshqa usullari bilan tanishasiz.   
+                    Ammo hozircha Atom yoki Sublime Text kabi muharrirlardan foydalanishni va kodlarni sinab ko‘rishda 
+                    konsolga  joylashtirishni tavsiya etamiz.   
+                </p>
+            </div>
+        </div> 
+    </div>
+    
+ 
+
+   
+   
+</body>
+</html>

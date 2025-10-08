@@ -1,0 +1,36 @@
+.havo_chegara {
+    border: 1.5px solid #6491FC; 
+    width: 60%; 
+    margin: 30px auto; 
+    border-radius: 0 0 45px 0; 
+    margin-top: 15px;
+}
+
+.border {
+    border: 1px solid black;
+    border-radius: 8px;
+    margin: 5px 4px;
+    padding: 3px 4px;
+    width: 90%;
+    width: 60%; 
+    margin: 6px auto;
+}
+
+.deeppink {
+    color: deeppink;
+}
+
+body {
+    background-color: beige;
+}
+#text {
+    width: 90%;
+}
+ul {
+    text-decoration: none;
+    padding-left: 10px;
+}
+p {
+    font-size: 17px;
+    margin: 10px 20px;
+}

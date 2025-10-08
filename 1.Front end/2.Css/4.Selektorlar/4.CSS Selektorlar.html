@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="Css">
+    <meta name="description" content="Bu yerda Css haqida batafsil ma'lumotlar">
+    <title>CSS Selektorlar</title>
+    <link rel="stylesheet" href="/1.Front end/2.Css/style.css">
+    <script src="Js.js"></script>
+</head>
+<body>
+    <div id="bosh">
+        <div class="bosh">
+            <h1>CSS</h1>
+        </div>
+    </div>
+    <div id="menyu">
+        <div class="menyu">
+            <ul>
+                <button id="toggle-btn" onclick="toggleMenu()">Menu</button>
+                <li><a href="/index.html">HOME</a></li>
+                <li><a href="/1.Front end/1.Front_end.html">FRONT END</a></li>
+                <li><a href="/1.Front end/1.HTML/1.HTML.html">HTML</a></li>
+                <li><a href="/1.Front end/2.Css/Css.html">CSS</a></li>
+            </ul>
+        </div>
+    </div>
+    <div>
+        <div id="menu" class="menu">
+            <h3>CSS</h3>
+            <ul>
+                <li><a href="/1.Front end/2.Css/Css.html">CSS HOME</a></li>
+                <li>
+                    <a href="#" onclick="toggleSubMenu('sub-menu-1')">
+                        Daraxt diagrammasi
+                    </a>
+                    <ul id="sub-menu-1" class="sub-menu">
+                        <li><a href="/1.Front end/2.Css/1.Daraxt diagrammasi/1.Matnni daraxt diagrammasida ko'rsatish.html">Matnni daraxt diagrammasida ko'rsatish</a></li>
+                        <li><a href="/1.Front end/2.Css/1.Daraxt diagrammasi/2.Daraxt diagrammasining tarkibi.html">Daraxt diagrammasining tarkibi</a></li>
+                        <li><a href="/1.Front end/2.Css/1.Daraxt diagrammasi/3.Daraxt diagrammalaridan qutilarga.html">Daraxt diagrammalaridan qutilarga</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#" onclick="toggleSubMenu('sub-menu-2')">"HTML"ga uslub berish</a>
+                    <ul id="sub-menu-2" class="sub-menu">
+                        <li><a href="/1.Front end/2.Css/2.Uslub berish/1.HTMLga to‘g‘ridan to‘g‘ri uslub berish.html">HTMLga to‘g‘ridan to‘g‘ri uslub berish</a></li>
+                        <li><a href="/1.Front end/2.Css/2.Uslub berish/2.HTMLga alohida uslub berish.html">HTMLga alohida uslub berish</a></li>
+                    </ul>
+                </li>
+                <li><a href="/1.Front end/2.Css/3.CSS sintaksisi/3.CSS sintaksisi.html">"CSS" sintaksisi</a></li>
+                <li>
+                    <a href="#" onclick="toggleSubMenu('sub-menu-3')">Selektorlar</a>
+                    <ul id="sub-menu-3" class="sub-menu">
+                        <li><a href="/1.Front end/2.Css/4.Selektorlar/Selektorlar.html">Selektorlar</a></li>
+                        <li><a href="/1.Front end/2.Css/4.Selektorlar/1.Selektor Turlari.html">Selektorlar turlari</a></li>
+                        <li><a href="/1.Front end/2.Css/4.Selektorlar/2.class va id selektorlari.html">Class va id selektorlari</a></li>
+                        <li><a href="/1.Front end/2.Css/4.Selektorlar/3.Selektorlarni birlashtirish.html">Selektorlarni birlashtirish</a></li>
+                        <li><a href="/1.Front end/2.Css/4.Selektorlar/4.CSS Selektorlar.html">CSS Selektorlar</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#" onclick="toggleSubMenu('sub-menu-4')">Takrorlash</a>
+                    <ul id="sub-menu-4" class="sub-menu">
+                        <li><a href="/1.Front end/2.Css/5.Takrorkash/Termin so‘zlarni takrorlash.html">Termin so‘zlarni takrorlash</a></li>
+                        <li><a href="/1.Front end/2.Css/5.Takrorkash/Selektorlarni takrorlash.html">Selektorlarni takrorlash</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="/1.Front end/2.Css/6.CSSda kaskad nima uchun juda muhim/6.CSSda kaskad nima uchun juda muhim.html">"CSS"da "kaskad" nima uchun juda muhim?</a>
+                </li>
+                <li>
+                    <a href="/1.Front end/2.Css/7.O‘lchov birliklari/7.O‘lchov birliklari.html">O‘lchov birliklari</a>
+                </li>
+                <li>
+                <li>
+                    <a href="/1.Front end/2.Css/8.Qutilar/8.Qutilar.html">Qutilar</a>
+                </li>
+                <li>
+                    <a href="/1.Front end/2.Css/9.Foizlar/9.Foizlar.html">Foizlar</a>
+                </li>
+                <li>
+                    <a href="/1.Front end/2.Css/10.CSS qoidalari/CSS qoidalari.html">CSS qoidalari</a>
+                </li>
+                <li>
+                    <a href="/1.Front end/2.Css/11.CSS uslublarni HTMLdan ajratish/11.CSS uslublarni HTMLdan ajratish.html">CSS uslublarni HTMLdan ajratish</a>
+                </li>
+                <li>
+                    <a href="/1.Front end/2.Css/12.Ranglardan foydalanish/12.Ranglardan foydalanish.html">Ranglardan foydalanish</a>
+                </li>
+                <li>
+                    <a href="/1.Front end/2.Css/13.Shriftlar/13.Shriftlar.html">Shriftlar</a>
+                </li>
+                <li>
+                    <a href="/1.Front end/2.Css/14.CSSda Flexbox xossasi/14.CSSda Flexbox xossasi.html">"CSS"da "Flexbox" xossasi</a>
+                </li>
+            </ul>
+        </div>
+        <div id="container">
+                
+            <div id="text">
+                
+                <div id="sarlavha">
+                    <h2>CSS selektorlari</h2>
+                </div> 
+                <p>
+                    CSS selektorlari moduli CSS qoidalari to'plami qo'llaniladigan 
+                    elementlarni tanlash naqshlarini aniqlaydi va ularning o'ziga 
+                    xosligi bilan birga. CSS selektor moduli bizga 60 dan ortiq selektor 
+                    va besh kombinatorni taqdim etadi. Boshqa modullar qo'shimcha psevdo-sinf 
+                    selektorlari va psevdo-elementlarni taqdim etadi.
+                </p>
+                <p>
+                    CSS-da selektorlar siz uslublashni xohlagan elementlarga mos kelish 
+                    yoki tanlash uchun ishlatiladigan naqshlardir. Tanlagichlar JavaScript-da, 
+                    shuningdek, tugunlar ro'yxati sifatida qaytish uchun DOM tugunlarini 
+                    tanlashni yoqish uchun ishlatiladi.
+                </p>
+                <p>
+                    Selektorlar, CSS yoki JavaScript-da qo'llanilishidan qat'i nazar, 
+                    HTML elementlarini ularning turi, atributlari, joriy holatlari va 
+                    hatto DOMdagi joylashuviga qarab maqsadli belgilash imkonini beradi. 
+                    Kombinatorlar elementlarni boshqa elementlarga munosabatiga qarab 
+                    tanlash imkonini berib, elementlarni tanlashda aniqroq bo'lishga imkon beradi.
+                </p>
+                <h2>
+                    Malumot
+                </h2>
+                <h2>
+                    Kombinatorlar va ajratgichlar
+                </h2>
+                <style>
+                    #kombinatorlar ul li{
+                        padding-left: 25px;
+                        margin: 6px;
+                    }
+                    #kombinatorlar ul li span {
+                        background: #343434; 
+                        border-radius: 6px; 
+                        color: #fff; 
+                        font-size: medium;
+                        padding: 3px;
+                    }
+                    #Selektorlar ul {
+                        padding-left: 45px;
+                        margin: 6px;
+                    }
+                </style>
+                <div id="kombinatorlar">
+                    <ul>
+                        <li><span>+</span> <a href="#">(Keyingi aka-uka kombinatori)</a></li>
+                        <li><span>&gt;</span> <a href="#">(Bolalar birlashtiruvchi)</a></li>
+                        <li><span>||</span> <a href="#">(ustun birlashtiruvchi)</a></li>
+                        <li><span>&#126;</span> <a href="#">(Keyingi aka-uka kombinatori)</a></li>
+                        <li><span>" "</span> <a href="#">(avlod birlashtiruvchisi)</a></li>
+                        <li><span>|</span> <a href="#">(Ism maydonini ajratuvchi)</a></li>
+                    </ul>
+                </div>
+                <h2>
+                    Selektorlar
+                </h2>
+                <style>
+                     #Selektorlar ul li{
+                        padding: 0;
+                        margin: 6px;
+                    }
+                    #Selektorlar a {
+                        text-decoration: none;
+                        background-color: #343434;
+                        color: rgb(221, 17, 68);
+                        border-radius: 15px;
+                        padding: 1px 14px;
+                    }
+
+                    #Selektorlar .yangi {
+                        color: aliceblue;
+                    }
+                    
+                </style>
+                <div id="Selektorlar" style="display: flex;">
+                    <ul>
+                        <li><a href="#">:active</a></li>
+                        <li><a href="#">:any-link</a></li>
+                        <li><a href="#">:autofill</a></li>
+                        <li><a href="#">:blank</a></li>
+                        <li><a href="#">:buffering</a></li>
+                        <li><a href="#">:checked</a></li>
+                        <li><a href="#">:current</a></li>
+                        <li><a href="#">:current()</a></li>
+                        <li><a href="#">:default</a></li>
+                        <li><a href="#">:defined</a></li>
+                        <li><a href="#">:dir()</a></li>
+                        <li><a href="#">:disabled</a></li>
+                        <li><a href="#">:empty</a></li>
+                        <li><a href="#">:enabled</a></li>
+                        <li><a href="#">:first-child</a></li>
+                        <li><a href="#">:first-of-type</a></li>
+                        <li><a href="#">:focus</a></li>
+                        <li><a href="#">:focus-visible</a></li>
+                        <li><a href="#">:focus-within</a></li>
+                        <li><a href="#">:fullscreen</a></li>
+                        <li><a href="#">:future</a></li>
+                        <li><a href="#">:has()</a></li>
+                        <li><a href="#">:hover</a></li>
+                        <li><a href="#">:indeterminate</a></li>
+                        <li><a href="#">:in-range</a></li>
+                        <li><a href="#">:invalid</a></li>
+                        <li><a href="#">:is()</a></li>
+                        <li><a href="#">:lang()</a></li>
+                        <li><a href="#">:last-child</a></li>
+                        <li><a href="#">:last-of-type</a></li>
+                        <li><a href="#">:link</a></li>
+                        <li><a href="#">:local-link</a></li>
+                        <li>:matches() (obsolete legacy selector alias for <a href="#">:is()</a>)</li>
+                        <li><a href="#">:modal</a></li>
+                        <li><a href="#">:muted</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="#">:not()</a></li>
+                        <li><a href="#">:nth-child()</a></li>
+                        <li><a href="#">:nth-of-type()</a></li>
+                        <li><a href="#">:nth-last-child()</a></li>
+                        <li><a href="#">:nth-last-of-type()</a></li>
+                        <li><a href="#">:only-child</a></li>
+                        <li><a href="#">:only-of-type</a></li>
+                        <li><a href="#">:optional</a></li>
+                        <li><a href="#">:out-of-range</a></li>
+                        <li><a href="#">:past</a></li>
+                        <li><a href="#">:paused</a></li>
+                        <li><a href="#">:picture-in-picture</a></li>
+                        <li><a href="#">:placeholder-shown</a></li>
+                        <li><a href="#">:playing</a></li>
+                        <li><a href="#">:read-only</a></li>
+                        <li><a href="#">:read-write</a></li>
+                        <li><a href="#">:required</a></li>
+                        <li>
+                            <a  class="yangi"
+                                href="/1.Front end/2.Css/4.Selektorlar/CSS Selektorlar/51.root.html">
+                                :root
+                            </a>
+                        </li>
+                        <li><a href="#">:scope</a></li>
+                        <li><a href="#">:seeking</a></li>
+                        <li><a href="#">:stalled</a></li>
+                        <li><a href="#">:target</a></li>
+                        <li><a href="#">:target-within</a></li>
+                        <li><a href="#">:user-invalid</a></li>
+                        <li><a href="#">:user-valid</a></li>
+                        <li><a href="#">:valid</a></li>
+                        <li><a href="#">:visited</a></li>
+                        <li><a href="#">:volume-locked</a></li>
+                        <li><a href="#">:where():-webkit- </a>&nbsp; pseudo-classes</li>
+                        <li><a href="#">Attribute selectors</a></li>
+                        <li><a href="#">Class selector</a></li>
+                        <li><a href="#">ID selectors</a></li>
+                        <li><a href="#">Type selectors</a></li>
+                        <li>
+                            <a  class="yangi"
+                                href="/1.Front end/2.Css/4.Selektorlar/CSS Selektorlar/101.Universal selektorlar.html">
+                                Universal selectors
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        
+    </div>
+    
+    
+</body>
+</html>

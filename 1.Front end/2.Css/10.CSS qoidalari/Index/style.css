@@ -1,0 +1,398 @@
+/*elementlardagi marginlarni yo'qotadi*/
+body, h1, ul {
+    margin: 0;
+    padding: 0;
+}
+
+/* body {
+  display: flex;
+  min-height: 100vh;
+  background-color: var(--background-primary);
+} */
+
+#bosh {
+    background-color:chocolate; 
+    margin: 0 auto;
+}
+
+.bosh {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.menyu {
+    width: 100%;
+    margin: 0 auto;
+}
+
+#menyu {
+    background-color:dimgray; 
+    margin: 0 auto;
+}
+
+div .menyu ul li{
+    list-style-type: none;
+    display: inline;
+}
+
+.menyu ul li a {
+    text-decoration: none;
+    color: #fff;
+    padding: 5px 10px;
+    display: inline-block;
+}
+
+.menu {
+    width: 250px;
+    height: 100%;
+    background-color: dimgray;
+    position:fixed;
+    top: 0;
+    left: -250px; /* Menu yashirilgan holatda */
+    transition: left 0.3s; /* Silliq ko'rinish uchun o'tish */
+  }
+  
+.menu.active {
+    left: 0; /* Menu ko'rinadigan holatda */
+    position:relative;
+  }
+
+#menu h3 {
+    padding: 2px 6px;
+    margin: 2px 3px;
+    color: #fff;
+    display: inline-block;
+}
+
+div #menu ul li{   
+      list-style-type: none;
+      
+  }
+#menu ul {
+      padding: 0;
+  }
+#menu ul li a {
+      display: block;
+      margin: 1px 0;
+      color: #000; /* Dastlabki matn rangi */
+      background-color: #f0f0f0; /* Dastlabki fon rangi */
+      padding: 6px 25px;
+      text-decoration: none;
+    }
+  
+  /* Kursor ustiga kelsa */
+div #menu ul li a:hover {
+      background-color: #33d3; /* Kursor ustiga kelsa fon rangi */
+      color: #fff; /* Kursor ustiga kelsa matn rangi */
+    }
+  
+    /* Bosilgan holat */
+#menu  a:active {
+      background-color: #0003d3 !important; /* Bosilgan holat fon rangi */
+      color: #fff !important; /* Bosilgan holat matn rangi */
+    }
+#container {
+      width: 100%;
+      margin: 0 auto;
+      font-size: 17px;
+      background-color: var(--background-primary);
+  }
+
+#text {
+  background-color: var(--background-primary);
+}
+
+.CSS p, #text ul {
+    padding: 12px 20px;
+}
+
+#sarlavha h2{
+  margin: 10px 0;
+  border-radius: 0 10px 10px 0;
+  background-color: var(--background-information);
+  padding: 5px 22px 5px 25px;
+  text-align: center;
+  color: var(--text-secondary);
+  user-select: none;
+}
+
+dt,dd {
+  padding: 4px 1px;
+}
+
+.sub-menu {
+  display: none; /* Yashirilgan holatda */
+  padding-left: 25px; /* Ichkariga siljitish */
+  background-color: dimgray;
+}
+
+.sub-menu li {
+  margin: 0 0 1px 5px;
+}
+
+.fa-book:before {
+  content: "\f02d";
+}
+
+.maxsus {
+  background-color: var(--code-background-inline); 
+  border-radius: 3px; 
+  padding: 1px 2px;
+  line-height: 1.4;
+  color: var(--text-secondary);
+}
+
+.maxsus a{
+  text-decoration: none;
+  line-height: 1.8;
+  color: var(--text-secondary);
+}
+
+.qisqa {
+  width: 80%;
+  margin: 0 auto;
+  padding: 0px 20px;
+  margin-top: 15px;
+}
+
+.maxsus1 {
+  background: gray; 
+  padding: 1px 2px; 
+  border-radius: 6px;
+}
+
+.maxsus1 a {
+  text-decoration: none; 
+  color: black; 
+  cursor: pointer;
+}
+
+#CSS p:not(.CSS p){
+  padding: 2px 20px;
+  border-bottom: 2px solid #000;
+  padding-bottom: 0;
+  margin: 0;
+  color: #fff;
+}
+
+
+
+
+
+.body {
+    margin: 0;
+    display: flex;
+    height: 100vh;
+    overflow: hidden;
+}
+
+:root{
+  --code-token-attribute-name: #ff97a0;
+  --code-background-inline: #343434;
+  --background-primary: #1b1b1b;
+  /* .CSS uchun rang */
+  --code-background-block: #343434;
+  --icon-information: #5e9eff;
+  --background-information: #013e70;
+  --text-secondary: #cdcdcd;
+  --note-background: var(--background-information);
+  --note-theme: var(--icon-information);
+  --elem-radius: 0.25rem;
+  --kok:#16f;
+  --binafsha: #bea5ff;
+}
+
+.binafsha {
+  color: var(--binafsha);
+}
+
+.Eslatma {
+  display: flex; 
+  margin: 15px auto; 
+  width: 80%;
+  border-left: 3px solid var(--note-theme);
+  border-radius: var(--elem-radius);
+  color: var(--text-secondary);
+}
+
+/* .Eslatma .chap_yon {
+  width: 1%; 
+  background-color: cyan; 
+  border-radius: 15px 0 0 15px;
+} */
+
+.Eslatma .Eslatma_tana {
+  background-color: var(--note-background); 
+  padding: 15px 12px 15px 36px; 
+  border-radius: 0 10px 10px 0;
+  
+}
+
+.Eslatma_tana {
+    position: relative; /* Konteynerni nisbiy pozitsiyaga qo'yamiz */
+    padding: 15px 15px 5px 10px;
+    }
+
+.Eslatma_tana > p {
+  margin: 0;
+  padding: 0;
+}
+
+.Eslatma_tana::before {
+    content: "i";
+    position: absolute;
+    top: 17px; /* Belgilangan joylashuv */
+    left: 10px; /* Chapdan joylashuv */
+    right: 10px; /* O'ngdan joylashuv */
+    background-color: var(--note-theme);
+    color: white;
+    font-weight: bold;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+  }
+
+.green {
+  color: green;
+}
+
+.crimson {
+  color: var(--code-token-attribute-name);
+}
+#text > p {
+    padding: 5px 25px;
+    margin: 7px 0;
+    color: var(--text-secondary);
+}
+
+#text > h1,#text > h2, #text > h3 {
+  color: var(--text-secondary);
+}
+
+.kul {
+  color: #b3b3b3;
+}
+
+.kok {
+  color: var(--kok);
+}
+
+.CSS pre {
+  background-color: var(--code-background-block);
+  border: 1px solid #0000;
+  margin: 1rem 0 2rem;
+  padding: 1rem 2.5rem 1rem 1rem;
+  margin-top: 1px;
+  margin-bottom: 1px;
+  text-align: left;
+  white-space: pre-line;
+  font-family: sans-serif;
+  color: var(--text-secondary);
+  line-height: 1.7;
+}
+
+.CSS pre code {
+  display: block;
+  margin-top: -0.5em; /* Qatarlar orasidagi bo'shliqni qisqartirish */
+  margin-bottom: -0.5em;
+}
+
+.weight100 {
+    font-weight: 100;
+}
+
+iframe {
+  display: flex;
+  align-items: center;
+  margin: auto;
+}
+
+#text {
+  width: 80%;
+  margin: auto;
+}
+
+.display_flex {
+  display: flex;
+  margin: 1px auto;
+  align-items: center;
+  text-align: center;
+  width: 60%;
+  border: 1px solid #cdcdcd;
+  border-radius: 3px;
+}
+
+.display_flex ul li{
+  list-style-type: none; 
+  padding: 6px 5px;
+  margin: 4px 4px; 
+}
+
+.display_flex ul li a {
+  text-decoration: none;
+  background-color: #cdcdcd;
+  padding: 6px 5px;
+  margin: 4px 4px;
+  border-radius: 4px;
+}
+
+.display_flex ul li a:hover {
+  border: 1px solid #5e9eff;
+}
+
+.section {
+  padding: 0;
+}
+
+.section .css {
+  margin: 0 auto;
+}
+
+.CSS {
+  background: rgb(59, 59, 59);
+  margin: 0 auto; 
+  width: 80%;
+  border-radius: 5px 5px 0 0;
+}
+
+.CSS p{
+  background-color: var(--code-background-block);
+  color: var(--text-secondary);
+  border: none;
+  margin: 0;
+  border-radius: 5px 5px 0 0 ;
+}
+
+.css {
+  background: rgb(59, 59, 59);
+  border-radius: 0;
+  width: 80%;
+}
+
+
+.css > p{
+  padding: 6px 20px;
+  border-bottom: 2px solid #000;
+  margin: 0 auto;
+  color: white;
+  font-size: large;
+}
+
+.css_tana p{
+  padding: 12px 20px;
+  background-color: darkgray;
+  color: #000;
+  border: none;
+  margin: 0;
+  border-radius: 0 5px 5px 0;
+}
+
+.css_tana, .css_tana h1{
+  background-color: darkgray;
+  margin: 0 auto; 
+  padding: 12px 20px;
+}

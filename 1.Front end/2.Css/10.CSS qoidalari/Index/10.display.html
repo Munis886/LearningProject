@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="Css">
+    <meta name="description" content="Bu yerda Css haqida batafsil ma'lumotlar">
+    <title>display</title>
+    <link rel="stylesheet" href="/1.Front end/2.Css/style.css">
+    <script src="/1.Front end/2.Css/Js.js"></script>
+    <link rel="stylesheet" href="/1.Front end/2.Css/10.CSS qoidalari/Index/style.css">
+</head>
+<body>
+    <div id="bosh">
+        <div class="bosh">
+            <h1>CSS</h1>
+        </div>
+    </div>
+    <div id="menyu">
+    <div class="menyu">
+        <ul>
+            <button id="toggle-btn" onclick="toggleMenu()">Menu</button>
+            <li><a href="/index.html">HOME</a></li>
+            <li><a href="/1.Front end/1.Front_end.html">FRONT END</a></li>
+            <li><a href="/1.Front end/1.HTML/1.HTML.html">HTML</a></li>
+            <li><a href="/1.Front end/2.Css/Css.html">CSS</a></li>
+            <li><a href="/1.Front end/3.Js/Javascript.html">JAVASCRIPT</a></li>
+            <li><a href="/1.Front end/4.JavaScript/Javascript.html">ES6</a></li>
+        </ul>
+    </div>
+    <div style="display: flex;">
+        <div id="menu" class="menu">
+            <h3 style="padding: 1px 2px;">CSS</h3>
+            <ul>
+                <li><a href="/1.Front end/2.Css/Css.html">CSS HOME</a></li>
+                <li>
+                    <a href="#" onclick="toggleSubMenu('sub-menu-1')">
+                        Daraxt diagrammasi
+                    </a>
+                    <ul id="sub-menu-1" class="sub-menu">
+                        <li><a href="/1.Front end/2.Css/1.Daraxt diagrammasi/1.Matnni daraxt diagrammasida ko'rsatish.html">Matnni daraxt diagrammasida ko'rsatish</a></li>
+                        <li><a href="/1.Front end/2.Css/1.Daraxt diagrammasi/2.Daraxt diagrammasining tarkibi.html">Daraxt diagrammasining tarkibi</a></li>
+                        <li><a href="/1.Front end/2.Css/1.Daraxt diagrammasi/3.Daraxt diagrammalaridan qutilarga.html">Daraxt diagrammalaridan qutilarga</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#" onclick="toggleSubMenu('sub-menu-2')">"HTML"ga uslub berish</a>
+                    <ul id="sub-menu-2" class="sub-menu">
+                        <li><a href="/1.Front end/2.Css/2.Uslub berish/1.HTMLga to‘g‘ridan to‘g‘ri uslub berish.html">HTMLga to‘g‘ridan to‘g‘ri uslub berish</a></li>
+                        <li><a href="/1.Front end/2.Css/2.Uslub berish/2.HTMLga alohida uslub berish.html">HTMLga alohida uslub berish</a></li>
+                    </ul>
+                </li>
+                <li><a href="/1.Front end/2.Css/3.CSS sintaksisi/3.CSS sintaksisi.html">"CSS" sintaksisi</a></li>
+                <li>
+                    <a href="#" onclick="toggleSubMenu('sub-menu-3')">Selektorlar</a>
+                    <ul id="sub-menu-3" class="sub-menu">
+                        <li><a href="/1.Front end/2.Css/4.Selektorlar/1.Selektor Turlari.html">Selektorlar turlari</a></li>
+                        <li><a href="/1.Front end/2.Css/4.Selektorlar/2.class va id selektorlari.html">Class va id selektorlari</a></li>
+                        <li><a href="/1.Front end/2.Css/4.Selektorlar/3.Selektorlarni birlashtirish.html">Selektorlarni birlashtirish</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#" onclick="toggleSubMenu('sub-menu-4')">Takrorlash</a>
+                    <ul id="sub-menu-4" class="sub-menu">
+                        <li><a href="/1.Front end/2.Css/5.Takrorkash/Termin so‘zlarni takrorlash.html">Termin so‘zlarni takrorlash</a></li>
+                        <li><a href="/1.Front end/2.Css/5.Takrorkash/Selektorlarni takrorlash.html">Selektorlarni takrorlash</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="/1.Front end/2.Css/6.CSSda kaskad nima uchun juda muhim/6.CSSda kaskad nima uchun juda muhim.html">"CSS"da "kaskad" nima uchun juda muhim?</a>
+                </li>
+                <li>
+                    <a href="/1.Front end/2.Css/7.O‘lchov birliklari/7.O‘lchov birliklari.html">O‘lchov birliklari</a>
+                </li>
+                <li>
+                    <a href="/1.Front end/2.Css/8.Qutilar/8.Qutilar.html">Qutilar</a>
+                </li>
+                <li>
+                    <a href="/1.Front end/2.Css/9.Foizlar/9.Foizlar.html">Foizlar</a>
+                </li>
+                <li>
+                    <a href="/1.Front end/2.Css/10.CSS qoidalari/CSS qoidalari.html">CSS qoidalari</a>
+                </li>
+                <li>
+                    <a href="/1.Front end/2.Css/11.CSS uslublarni HTMLdan ajratish/11.CSS uslublarni HTMLdan ajratish.html">CSS uslublarni HTMLdan ajratish</a>
+                </li>
+            </ul>
+        </div> 
+        <div id="container">
+            
+            <div id="sarlavha">
+                <h2>display</h2>
+            </div>
+            <div id="text">
+                <p>
+                    CSS xususiyati elementning blok yoki inline quti sifatida ko'rib chiqilishini 
+                    va uning bolalari uchun ishlatiladigan tartibni, masalan, 
+                    flow layout , grid yoki flex ni belgilaydi .display
+                </p>
+                <p>
+                    Rasmiy ravishda, displayxususiyat elementning ichki va tashqi ko'rsatish 
+                    turlarini o'rnatadi . Tashqi tur elementning oqim tartibidagi ishtirokini 
+                    belgilaydi ; ichki turi bolalar tartibini o'rnatadi. ning ba'zi qiymatlari 
+                    displayo'zlarining individual spetsifikatsiyalarida to'liq belgilangan; 
+                    masalan, display: flexe'lon qilinganda nima sodir bo'lishi haqida batafsil 
+                    ma'lumot CSS Flexible Box Model spetsifikatsiyasida aniqlanadi.
+                </p>
+                <style>
+                    /* Oddiy holat (havola bosilmagan) */
+                    #sinab_koring a {
+                      color: white;
+                      text-decoration: none; /* Chizig'ini olib tashlash (ixtiyoriy) */
+                    }
+                
+                    /* Havola bosilgandan keyin */
+                    #sinab_koring a:visited {
+                      color: black; /* Rangi qora bo'ladi */
+                    }
+                  </style>
+                <h2 id="sinab_koring">
+                    <a href="#sinab_koring">Sinab ko'ring</a>
+                </h2>
+                
+                <section>
+                    <div class="Sinab_koring">
+                        
+                    </div>
+                </section>
+
+                <h2>
+                    Sintaksis
+                </h2>
+                
+                <section class="section">
+                    <div class="CSS">
+                        <p>CSS</p>
+                    </div>
+                    <div class="css">
+                        <p>
+                            ::before { <br>
+                                content: /* value */; <br>
+                                /* properties */ <br>
+                            }
+                        </p>
+                    </div>
+                </section>
+                
+                <p>
+                    Agar kontent xususiyati ko'rsatilmagan bo'lsa, noto'g'ri qiymatga ega bo'lsa yoki 
+                    qiymat sifatida normal yoki hech kimga ega bo'lmasa, u holda <code class="code">::before</code> psevdo-element 
+                    ko'rsatilmaydi. U xuddi displey kabi ishlaydi: hech biri o'rnatilmagan.
+                </p>
+
+                <script>
+                    const code = ``;
+                    document.getElementById("code").textContent = code;
+                </script>
+                <h2>
+                    CSS
+                </h2>
+                <div id="CSS" style=" margin: 0 auto; width: 80%;" >
+                    <p>CSS</p>
+                    <div style="background-color: gray; margin: 0 auto; ">
+                        <p>
+                            :root { <br>
+                                --first-color: #16f; <br>
+                                --second-color: #ff7; <br>
+                              } <br><br>
+                              
+                              #firstParagraph { <br>
+                                background-color: var(--first-color); <br>
+                                color: var(--second-color); <br>
+                              } <br><br>
+                              
+                              #secondParagraph { <br>
+                                background-color: var(--second-color); <br>
+                                color: var(--first-color); <br>
+                              } <br><br>
+                              
+                              #container { <br>
+                                --first-color: #290; <br>
+                              } <br><br>
+                              
+                              #thirdParagraph { <br>
+                                background-color: var(--first-color); <br>
+                                color: var(--second-color); <br>
+                              } <br><br>
+                              
+                        </p>
+                    </div>
+                </div>
+                
+                <h2>
+                    Natija
+                </h2>
+                <style>
+                    :root {
+                    --first-color: #16f;
+                    --second-color: #ff7;
+                    }
+
+                    #firstParagraph {
+                    background-color: var(--first-color);
+                    color: var(--second-color);
+                    }
+
+                    #secondParagraph {
+                    background-color: var(--second-color);
+                    color: var(--first-color);
+                    }
+
+                    #container {
+                    --first-color: #290;
+                    }
+
+                    #thirdParagraph {
+                    background-color: var(--first-color);
+                    color: var(--second-color);
+                    }
+                </style>
+                <div id="CSS" style=" margin: 20px auto; width: 80%;" >
+                    <p>Natija</p>
+                    <div style="background-color: gray; margin: 0px auto; ">
+                        <p id="firstParagraph">
+                            This paragraph should have a blue background and yellow text.
+                          </p>
+                          <p id="secondParagraph">
+                            This paragraph should have a yellow background and blue text.
+                          </p>
+                          <div id="container">
+                            <p id="thirdParagraph">
+                              This paragraph should have a green background and yellow text.
+                            </p>
+                          </div>                          
+                    </div >
+                </div>
+               
+                
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="Css">
+    <meta name="description" content="Bu yerda Css haqida batafsil ma'lumotlar">
+    <title>Selektor turlari</title>
+    <link rel="stylesheet" href="/1.Front end/2.Css/style.css">
+    <script src="Js.js"></script>
+</head>
+<body>
+    <div id="bosh">
+        <div class="bosh">
+            <h1>CSS</h1>
+        </div>
+    </div>
+    <div id="menyu">
+    <div class="menyu">
+        <button id="toggle-btn" onclick="toggleMenu()">Menu</button>
+        <ul>
+            <li><a href="/index.html">HOME</a></li>
+            <li><a href="/1.Front end/1.Front_end.html">FRONT END</a></li>
+            <li><a href="/1.Front end/1.HTML/1.HTML.html">HTML</a></li>
+            <li><a href="/1.Front end/2.Css/Css.html">CSS</a></li>
+            <li><a href="/1.Front end/3.Js/Javascript.html">JAVASCRIPT</a></li>
+        </ul>
+    </div>
+    <div style="display: flex;">
+        <div id="menu" class="menu">
+            <h3 style="padding: 1px 2px;">CSS</h3>
+            <ul>
+                <li><a href="/1.Front end/2.Css/Css.html">CSS HOME</a></li>
+                <li>
+                    <a href="#" onclick="toggleSubMenu('sub-menu-1')">
+                        Daraxt diagrammasi
+                    </a>
+                    <ul id="sub-menu-1" class="sub-menu">
+                        <li><a href="/1.Front end/2.Css/1.Daraxt diagrammasi/1.Matnni daraxt diagrammasida ko'rsatish.html">Matnni daraxt diagrammasida ko'rsatish</a></li>
+                        <li><a href="/1.Front end/2.Css/1.Daraxt diagrammasi/2.Daraxt diagrammasining tarkibi.html">Daraxt diagrammasining tarkibi</a></li>
+                        <li><a href="/1.Front end/2.Css/1.Daraxt diagrammasi/3.Daraxt diagrammalaridan qutilarga.html">Daraxt diagrammalaridan qutilarga</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#" onclick="toggleSubMenu('sub-menu-2')">"HTML"ga uslub berish</a>
+                    <ul id="sub-menu-2" class="sub-menu">
+                        <li><a href="/1.Front end/2.Css/2.Uslub berish/1.HTMLga to‘g‘ridan to‘g‘ri uslub berish.html">HTMLga to‘g‘ridan to‘g‘ri uslub berish</a></li>
+                        <li><a href="/1.Front end/2.Css/2.Uslub berish/2.HTMLga alohida uslub berish.html">HTMLga alohida uslub berish</a></li>
+                    </ul>
+                </li>
+                <li><a href="/1.Front end/2.Css/3.CSS sintaksisi.html">"CSS" sintaksisi</a></li>
+                <li>
+                    <a href="#" onclick="toggleSubMenu('sub-menu-3')">Selektorlar</a>
+                    <ul id="sub-menu-3" class="sub-menu">
+                        <li><a href="/1.Front end/2.Css/4.Selektorlar/Selektorlar.html">Selektorlar</a></li>
+                        <li><a href="/1.Front end/2.Css/4.Selektorlar/1.Selektor Turlari.html">Selektorlar turlari</a></li>
+                        <li><a href="/1.Front end/2.Css/4.Selektorlar/2.class va id selektorlari.html">Class va id selektorlari</a></li>
+                        <li><a href="/1.Front end/2.Css/4.Selektorlar/3.Selektorlarni birlashtirish.html">Selektorlarni birlashtirish</a></li>
+                        <li><a href="/1.Front end/2.Css/4.Selektorlar/4.CSS Selektorlar.html">CSS Selektorlar</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#" onclick="toggleSubMenu('sub-menu-4')">Takrorlash</a>
+                    <ul id="sub-menu-4" class="sub-menu">
+                        <li><a href="/1.Front end/2.Css/5.Takrorkash/Termin so‘zlarni takrorlash.html">Termin so‘zlarni takrorlash</a></li>
+                        <li><a href="/1.Front end/2.Css/5.Takrorkash/Selektorlarni takrorlash.html">Selektorlarni takrorlash</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="/1.Front end/2.Css/6.CSSda kaskad nima uchun juda muhim.html">"CSS"da "kaskad" nima uchun juda muhim?</a>
+                </li>
+                <li>
+                    <a href="/1.Front end/2.Css/7.O‘lchov birliklari/7.O‘lchov birliklari.html">O‘lchov birliklari</a>
+                </li>
+                <li>
+                    <a href="/1.Front end/2.Css/8.Qutilar.html">Qutilar</a>
+                </li>
+                <li>
+                    <a href="/1.Front end/2.Css/9.Foizlar.html">Foizlar</a>
+                </li>
+                <li>
+                    <a href="/1.Front end/2.Css/10.CSS qoidalari.html">CSS qoidalari</a>
+                </li>
+                <li>
+                    <a href="/1.Front end/2.Css/11.CSS uslublarni HTMLdan ajratish/11.CSS uslublarni HTMLdan ajratish.html">CSS uslublarni HTMLdan ajratish</a>
+                </li>
+                <li>
+                    <a href="/1.Front end/2.Css/12.Ranglardan foydalanish/12.Ranglardan foydalanish.html">Ranglardan foydalanish</a>
+                </li>
+                <li>
+                    <a href="/1.Front end/2.Css/13.Shriftlar/13.Shriftlar.html">Shriftlar</a>
+                </li>
+                <li>
+                    <a href="/1.Front end/2.Css/14.CSSda Flexbox xossasi/14.CSSda Flexbox xossasi.html">"CSS"da "Flexbox" xossasi</a>
+                </li>
+            </ul>
+        </div> 
+        <div id="container">
+            
+            <div id="sarlavha">
+                <h2 style="width: 12em;">Selektorlarni birlashtirish</h2>
+            </div>
+            <div id="text">
+                <p>
+                    CSS selektorlarni birlashtirishga imkon beradi. Masalan, siz ''Belgilangan matnni 
+                    qizil rangga bo‘yashingiz kerak, lekin faqat agar u ro‘yxat elementiga kirsa.'' 
+                    Mana buni qanday qilish kerak, qoidaning selektor qismida siz ota elementi uchun Li
+                    va keyin farzand elementi uchun em selektorni yozasiz.
+                </p>
+                <p>
+                    <span style="color:darkcyan ; font-size: 18px;" >
+                        li em { color:red; }
+                    </span>
+                </p>
+                <p>
+                    Birgalikda bu selektor 'Li elementining farzandi bo‘lgan har bir em elementni tanlang ma’nosini anglatadi.
+                    Ushbu uslub qo‘llanilganda HTML quyidagicha ko‘rinadi. 
+                </p>
+                <div style="display: flex; margin: 0 auto; width: 50%; padding: 2px 18px;">
+                    <div style="border: 1px solid; margin-left: 20px; padding: 2px 18px;" >
+                        <p style="color: crimson; "><b>code</b></p>
+                        <p>
+                            <span style="color:darkcyan; font-size: 18px;" >
+                                &lt;p&gt;&lt;em&gt;
+                                    <span style="color: #000;">Bu qizil bo'lmaydi.</span>
+                                &lt;/em&gt;&lt;/p&gt; <br>
+                            </span>
+                            <span style="color: #333; font-size: 18px;" >
+                                &lt;ul&gt; <br>
+                                &nbsp; &lt;li&gt;Lekin &lt;em&gt;bu&lt;/em&gt; bo'ladi!&lt;/li&gt; <br>
+                                &nbsp; &lt;li&gt;Shunday &lt;em&gt;bo'ladi&lt;/em&gt;&lt;/li&gt; <br>
+                                &lt;/ul&gt;
+                            </span>
+                        </p>
+                    </div>
+                    <div style="border: 1px solid; padding-left: 10px; padding: 2px 18px;" >
+                        <p style="color: crimson; "><b>display</b></p>
+                        <style>
+                            li em { color:red; }
+                        </style>
+                        <p style="font-size: 18px;">
+                            <em>Bu qizil bo'lmaydi.</em>  
+                        </p>
+                        <style>
+                            li {
+                                list-style-type: none;
+                            }
+                        </style>
+                        <ul>
+                            <li>Lekin <em>bu</em> bo'ladi!</li> <br>
+                            <li>Shunday <em>bo'ladi</em></li>
+                          </ul>
+                    </div>
+                    
+                </div>
+                
+                <p>    
+                    Ro‘yxatdagi em elementi qizil rangga kiradi, ammo boshqa em elementi emas,
+                    chunki u Li tarkibiga kirmaydi. Bu turdagi selektor birlashtirilgan selektorni 
+                    yaratish uchun bo‘shliqdan foydalanadi, <span style="color:darkcyan">li</span> 
+                    space-bo‘sh joy <span style="color:darkcyan">em</span>, avlod tanlovchi deb ataladi.
+                    Aslida CSSda boshqa turdagi selektorlarning to‘liq to‘plami mavjud. Selektorlar uchun 
+                    Mozilla CSS hujjatlarini, agar ularning ko‘pini ko‘rishni istasangiz, ko‘rib chiqishingizni taklif qilaman.
+                </p>
+            </div>
+            
+        </div>
+    </div>
+    
+</body>
+</html>

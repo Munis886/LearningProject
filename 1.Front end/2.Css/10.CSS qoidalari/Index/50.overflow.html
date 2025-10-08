@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="Css">
+    <meta name="description" content="Bu yerda Css haqida batafsil ma'lumotlar">
+    <title>overflow</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="/1.Front end/2.Css/Js.js"></script>
+    
+</head>
+<body>
+    <div id="bosh">
+        <div class="bosh">
+            <h1>CSS</h1>
+        </div>
+    </div>
+    <div id="menyu">
+    <div class="menyu">
+        <ul>
+            <button id="toggle-btn" onclick="toggleMenu()">Menu</button>
+            <li><a href="/index.html">HOME</a></li>
+            <li><a href="/1.Front end/1.Front_end.html">FRONT END</a></li>
+            <li><a href="/1.Front end/1.HTML/1.HTML.html">HTML</a></li>
+            <li><a href="/1.Front end/2.Css/Css.html">CSS</a></li>
+        </ul>
+    </div>
+
+    <style>
+        /* @media (max-width: 992px) {
+        #menu {
+        width: 260px;
+        box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+}
+}
+.menu {
+height: 100%;
+width: 230px;
+background-color: #fff;
+position: fixed !important;
+z-index: 1;
+overflow: auto;
+}
+*, *:before, *:after {
+box-sizing: inherit;
+} */
+    </style>
+    
+    <div class="w3-sidebar w3collapse" >
+       
+    </div>
+    
+    <div style="display: flex;">
+        <script>
+            subtopnav_intoview();
+        </script>
+         <div id="menu" class="menu">
+            <h3 style="padding: 1px 2px;">CSS</h3>
+            <ul>
+                <li><a href="/1.Front end/2.Css/Css.html">CSS HOME</a></li>
+                <li>
+                    <a href="#" onclick="toggleSubMenu('sub-menu-1')">
+                        Daraxt diagrammasi
+                    </a>
+                    <ul id="sub-menu-1" class="sub-menu">
+                        <li><a href="/1.Front end/2.Css/1.Daraxt diagrammasi/1.Matnni daraxt diagrammasida ko'rsatish.html">Matnni daraxt diagrammasida ko'rsatish</a></li>
+                        <li><a href="/1.Front end/2.Css/1.Daraxt diagrammasi/2.Daraxt diagrammasining tarkibi.html">Daraxt diagrammasining tarkibi</a></li>
+                        <li><a href="/1.Front end/2.Css/1.Daraxt diagrammasi/3.Daraxt diagrammalaridan qutilarga.html">Daraxt diagrammalaridan qutilarga</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#" onclick="toggleSubMenu('sub-menu-2')">"HTML"ga uslub berish</a>
+                    <ul id="sub-menu-2" class="sub-menu">
+                        <li><a href="/1.Front end/2.Css/2.Uslub berish/1.HTMLga to‘g‘ridan to‘g‘ri uslub berish.html">HTMLga to‘g‘ridan to‘g‘ri uslub berish</a></li>
+                        <li><a href="/1.Front end/2.Css/2.Uslub berish/2.HTMLga alohida uslub berish.html">HTMLga alohida uslub berish</a></li>
+                    </ul>
+                </li>
+                <li><a href="/1.Front end/2.Css/3.CSS sintaksisi/3.CSS sintaksisi.html">"CSS" sintaksisi</a></li>
+                <li>
+                    <a href="#" onclick="toggleSubMenu('sub-menu-3')">Selektorlar</a>
+                    <ul id="sub-menu-3" class="sub-menu">
+                        <li><a href="/1.Front end/2.Css/4.Selektorlar/1.Selektor Turlari.html">Selektorlar turlari</a></li>
+                        <li><a href="/1.Front end/2.Css/4.Selektorlar/2.class va id selektorlari.html">Class va id selektorlari</a></li>
+                        <li><a href="/1.Front end/2.Css/4.Selektorlar/3.Selektorlarni birlashtirish.html">Selektorlarni birlashtirish</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#" onclick="toggleSubMenu('sub-menu-4')">Takrorlash</a>
+                    <ul id="sub-menu-4" class="sub-menu">
+                        <li><a href="/1.Front end/2.Css/5.Takrorkash/Termin so‘zlarni takrorlash.html">Termin so‘zlarni takrorlash</a></li>
+                        <li><a href="/1.Front end/2.Css/5.Takrorkash/Selektorlarni takrorlash.html">Selektorlarni takrorlash</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="/1.Front end/2.Css/6.CSSda kaskad nima uchun juda muhim/6.CSSda kaskad nima uchun juda muhim.html">"CSS"da "kaskad" nima uchun juda muhim?</a>
+                </li>
+                <li>
+                    <a href="/1.Front end/2.Css/7.O‘lchov birliklari/7.O‘lchov birliklari.html">O‘lchov birliklari</a>
+                </li>
+                <li>
+                    <a href="/1.Front end/2.Css/8.Qutilar/8.Qutilar.html">Qutilar</a>
+                </li>
+                <li>
+                    <a href="/1.Front end/2.Css/9.Foizlar/9.Foizlar.html">Foizlar</a>
+                </li>
+                <li>
+                    <a href="/1.Front end/2.Css/10.CSS qoidalari/CSS qoidalari.html">CSS qoidalari</a>
+                </li>
+                <li>
+                    <a href="/1.Front end/2.Css/11.CSS uslublarni HTMLdan ajratish/11.CSS uslublarni HTMLdan ajratish.html">CSS uslublarni HTMLdan ajratish</a>
+                </li>
+            </ul>
+        </div> 
+        
+        <div id="container">
+            
+            <div id="sarlavha">
+                <h2 style="width: 8em; font-variant: normal;">overflow</h2>
+            </div>
+            <div id="text">
+                  
+                <p style="font-variant: no-common-ligatures proportional-nums;">
+                    Overflow CSS stenografiya xususiyati kontent elementning 
+                    toʻldirish qutisiga (toshib ketishi) gorizontal va/yoki vertikal 
+                    yoʻnalishda mos kelmasa, kerakli harakatni oʻrnatadi.
+                </p>
+
+                <style>
+                    .Eslatma {
+                        position: relative; /* Konteynerni nisbiy pozitsiyaga qo'yamiz */
+                        padding: 15px 15px 5px 10px;
+                    }
+                    .Eslatma::before {
+                        content: "i";
+                        position: absolute;
+                        top: 2px; /* Belgilangan joylashuv */
+                        left: 1px; /* Chapdan joylashuv */
+                        background-color: #60a5fa;
+                        color: white;
+                        font-weight: bold;
+                        width: 16px;
+                        height: 16px;
+                        border-radius: 50%;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        font-size: 12px;
+                    }
+                </style>
+                
+                
+                <style>
+                    a {
+                        text-decoration: none;
+                    }
+                    #sinab_koring {
+                        font-weight: 500;
+                    }
+                </style>
+                <section style="padding-left: 10em;">
+                    <h2 id="sinab_koring">
+                        <a href="#Sinab ko'ring">Sinab ko'ring</a>
+                    </h2>
+                    <iframe src="/1.Front end/2.Css/10.CSS qoidalari/Index/Misol/50.overflow/pages/css/overflow.html" 
+                    frameborder="0" width="80%" height="419px"></iframe>
+                </section>
+                
+                
+                <style>
+                    #CSS {
+                        border-radius: 5px;
+                        background-color:darkgrey;
+                    }
+                    #CSS p {
+                        padding-bottom: 0;
+                        margin: 0;
+                    }
+                </style>
+                
+                <h2 style="font-variant:inherit;">
+                    Tarkibiy xususiyatlar
+                </h2>
+                <p>
+                    Bu xususiyat quyidagi CSS xususiyatlarining qisqartmasi hisoblanadi:
+                </p>
+                <ul>
+                    <li><a href="">overflow-x</a></li>
+                    <li><a href="">overflow-y</a></li>
+                </ul>
+
+                <h2>
+                    Sintaksis
+                </h2>
+
+                <div id="CSS" style=" margin: 10px auto; width: 80%;" >
+                    <p>CSS</p>
+                    <div style="background-color: #343434; margin: 0 auto; ">
+                        <p>
+                            /* Keyword values */ <br>
+                            overflow: visible; <br>
+                            overflow: hidden; <br>
+                            overflow: clip; <br>
+                            overflow: scroll; <br>
+                            overflow: auto; <br>
+                            overflow: hidden visible; <br><br>
+                            
+                            /* Global values */ <br>
+                            overflow: inherit; <br>
+                            overflow: initial; <br>
+                            overflow: revert; <br>
+                            overflow: revert-layer; <br>
+                            overflow: unset; <br>
+                        </p>
+                    </div>
+                </div>
+                <p>
+                    Overflow xususiyati bir yoki ikkita &lt;overflow&gt; 
+                    kalit so'z qiymati sifatida belgilanadi. Agar faqat 
+                    bitta kalit so'z ko'rsatilgan bo'lsa, overflow-x va 
+                    overflow-y bir xil qiymatga o'rnatiladi. Agar ikkita 
+                    kalit so'z ko'rsatilgan bo'lsa, birinchi qiymat gorizontal 
+                    yo'nalishdagi overflow-x uchun, ikkinchisi esa vertikal 
+                    yo'nalishdagi overflow-y uchun amal qiladi.
+                </p>
+                <h2>
+                    Values
+                </h2>
+                <dl>
+                    <dt id="visible">
+                        <span style="background: #343434; border-radius: 4px; padding: 1px 2px; color: #f2f2f2;">
+                            <a href="#visible" style="color: aliceblue;">visible</a>
+                        </span>
+                    </dt>
+                    <dd>
+                        To‘ldiriladigan kontent kesilmagan va elementning to‘ldirish qutisidan 
+                        tashqarida ko‘rinishi mumkin. Elementlar qutisi aylantirish konteyneri emas. 
+                        Bu overflow xususiyatining standart qiymati.
+                    </dd> 
+                </dl>
+                <div style="display: flex; margin: 15px auto; width: 80%;" >
+                    <div  style="width: 1%; background-color: cyan; border-radius: 15px 0 0 15px;">
+                        
+                    </div>
+                    
+                    <div style="background-color: aquamarine; padding: 15px 15px; border-radius: 0 10px 10px 0; display: flex;">
+                        <div class="Eslatma">
+                        
+                        </div>
+                        <p style="padding: 0; margin: 0;">
+                            <b>Eslatma:</b> Kalit so‘z qiymatining qoplamasi avtomatik uchun eski qiymat taxallusidir. 
+                            Overlay yordamida aylantirish chiziqlari joy egallash o'rniga tarkibning ustiga chiziladi.
+                        </p>
+                       
+                    </div>
+                </div>
+
+                <p>
+                    Media soʻrovlar sintaksisi haqida maʼlumot olish 
+                    uchun Media soʻrovlaridan foydalanish boʻlimiga qarang.
+                </p>
+
+                <h2>
+                    Tavsif
+                </h2>
+                
+                <p>
+                    Media so'rovining &lt;media-query-list&gt; tarkibiga 
+                    &lt; media-type&gt;s, &lt;media-feature&gt;s va mantiqiy operatorlar kiradi.
+                </p>
+                
+                <h2 style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">
+                    Media turlari
+                </h2>
+
+                <p>
+                    <span style="background: #353535; padding: 1px 5px; border-radius: 3px; color: #fff;">
+                        &lt;media-type&gt;</span> qurilmaning umumiy toifasini tavsiflaydi. 
+                        <span style="background: #353535; padding: 1px 5px; border-radius: 3px; color: #fff;">only</span> 
+                        mantiqiy operatordan foydalanilgandan tashqari, 
+                        media turi ixtiyoriy
+                        <span style="background: #353535; padding: 1px 5px; border-radius: 3px; color: #fff;">
+                            all</span>&nbsp; 
+                            turi nazarda tutilgan.
+                </p>
+                <dl>
+                   <dt>
+                        <span style="background: #353535; padding: 1px 5px; border-radius: 3px; color: #fff;">all</span>
+                   </dt>
+                   <dd>
+                    Barcha qurilmalar uchun javob beradi.
+                   </dd>
+                   <dt>
+                    <span style="background: #353535; padding: 1px 5px; border-radius: 3px; color: #fff;">print</span> 
+                   </dt>
+                   <dd>
+                        Chop etishni oldindan ko'rish rejimida ekranda ko'rilgan 
+                        sahifalangan materiallar va hujjatlar uchun mo'ljallangan. 
+                        (Ushbu formatlarga xos bo'lgan formatlash muammolari haqida 
+                        ma'lumot olish uchun sahifalangan mediaga qarang.)
+                   </dd>
+                   <dt>
+                    <span style="background: #353535; padding: 1px 5px; border-radius: 3px; color: #fff;">screen</span> 
+                   </dt>
+                   <dd>
+                        Asosan ekranlar uchun mo'ljallangan.
+                   </dd>
+                </dl>
+                <style>
+                    .Eslatma {
+                        position: relative; /* Konteynerni nisbiy pozitsiyaga qo'yamiz */
+                        padding: 15px 15px 5px 10px;
+                    }
+                    .Eslatma::before {
+                        content: "i";
+                        position: absolute;
+                        top: 2px; /* Belgilangan joylashuv */
+                        left: 1px; /* Chapdan joylashuv */
+                        background-color: #60a5fa;
+                        color: white;
+                        font-weight: bold;
+                        width: 16px;
+                        height: 16px;
+                        border-radius: 50%;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        font-size: 12px;
+                    }
+                </style>
+                
+                <div style="display: flex; margin: 15px auto; width: 80%;" >
+                    <div  style="width: 1%; background-color: cyan; border-radius: 15px 0 0 15px;">
+                        
+                    </div>
+                    
+                    <div style="background-color: aquamarine; padding: 15px 15px; border-radius: 0 10px 10px 0; display: flex;">
+                        <div class="Eslatma">
+                        
+                        </div>
+                        <p style="padding: 0; margin: 0;">
+                            <b>Eslatma:</b> Kalit so‘z qiymatining qoplamasi avtomatik uchun eski qiymat 
+                            taxallusidir. Overlay yordamida aylantirish chiziqlari joy egallash o'rniga 
+                            tarkibning ustiga chiziladi.
+                        </p>
+                       
+                    </div>
+                </div>
+                <h2 style="font-family: monospace;">
+                    Media xususiyatlari
+                </h2>  
+                <p>
+                    <i style="background: #343434; border-radius: 4px; padding: 1px; color: #f2f2f2;">&lt;media feature&gt;</i> foydalanuvchi agenti, chiqish qurilmasi yoki 
+                    muhitning o'ziga xos xususiyatlarini tavsiflaydi. Media funksiyasi 
+                    ifodalari ularning mavjudligi, qiymati yoki qiymatlar diapazoni 
+                    uchun sinovdan o‘tkaziladi va butunlay ixtiyoriydir. Har bir media 
+                    xususiyati ifodasi qavslar bilan o'ralgan bo'lishi kerak.
+                </p>
+                <dl>
+                    <dt>
+                        <span style="background: #343434; border-radius: 4px; padding: 1px 2px; color: #f2f2f2;">
+                            <a href="/1.Front end/2.Css/10.CSS qoidalari/Index/Misol/40.@media/20.prefers-reduced-motion.html" style="color: aliceblue;">prefers-reduced-motion</a>
+                        </span> 
+                    </dt>
+                    <dd>
+                        Foydalanuvchi sahifada kamroq harakatni afzal ko'radi. Media soʻrovlari darajasi 5-ga qoʻshilgan.
+                    </dd>
+                    <!--salom dunyo -->
+                </dl>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>

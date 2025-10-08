@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="Javascript, Java script">
+    <meta name="description" content="Bu yerda Javascript haqida batafsil ma'lumot olamiz">
+    <link rel="stylesheet" href="/2.Backend/1.Node js/style.css">
+    <title>Node js</title>
+    <script src="/2.Backend/1.Node js/script.js"></script>
+    <script src="/2.Backend/1.Node js/Js.js"></script>
+</head>
+<body>
+    <div id="bosh">
+        <div class="bosh">
+            <h1>Node js</h1>
+        </div>
+    </div>
+
+     <div id="menyu">
+    <div class="menyu">
+        <button id="toggle-btn" onclick="toggleMenu()">Menu</button>
+        <ul>
+            <li><a href="/index.html">HOME</a></li>
+            <li><a href="/1.Front end/1.Front_end.html">FRONT END</a></li>
+            <li><a href="/1.Front end/1.HTML/1.HTML.html">HTML</a></li>
+            <li><a href="/1.Front end/2.Css/Css.html">CSS</a></li>
+            <li><a href="/1.Front end/3.Js/Javascript.html">JavaScript</a></li>
+            <li><a href="/2.Backend/1.Node js/Node js.html">Node js</a></li>
+        </ul>
+    </div>
+    </div>
+    <div class="body">
+        <div id="menu" class="menu">
+            <h3>Node js</h3>
+            <ul>
+                <li>
+                    <a href="#" onclick="toggleSubMenu('sub-menu-1')">
+                        <span>1</span> Node jsga kirish
+                    </a>
+                    <ul id="sub-menu-1" class="sub-menu">
+                        <li>
+                            <a href="/2.Backend/1.Node js/1.Node jsga kirish/1.Node jsga kirish.html">
+                                1.1"Node js"ga kirish 
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/2.Backend/1.Node js/2.Node o'zi nima/2.Node o'zi nima.html">
+                                1.2."Node" o'zi nima?
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/2.Backend/1.Node js/3.Node.js ishni boshlash/3.Node.js ishni boshlash.html">
+                                1.3.Node.js Ishni boshlash
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/2.Backend/1.Node js/4.Node.js modullari/4.Node.js modullari.html">
+                                1.4.Node.js modullari
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/2.Backend/1.Node js/5.Node.js HTTP moduli/5.Node.js HTTP moduli.html">
+                                1.5.Node.js HTTP moduli
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/2.Backend/1.Node js/6.Node.js fayl tizimi moduli/6.Node.js fayl tizimi moduli.html">
+                                1.6.Node.js fayl tizimi moduli
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/2.Backend/1.Node js/7.Node.js URL moduli/7.Node.js URL moduli.html">
+                                1.7.Node.js URL moduli
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/2.Backend/1.Node js/8.Node.js NPM/8.Node.js NPM.html">
+                                1.8.Node.js NPM
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/2.Backend/1.Node js/9.Node.js hodisalari/9.Node.js hodisalari.html">
+                                1.9.Node.js hodisalari
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/2.Backend/1.Node js/10.Node.js fayllarni yuklash/10.Node.js fayllarni yuklash.html">
+                                1.10.Node.js fayllarni yuklash
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/2.Backend/1.Node js/11.Node.js elektron pochta xabarini yuborish/11.Node.js elektron pochta xabarini yuborish.html">
+                                1.11.Node.js elektron pochta xabarini yuborish
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                
+            </ul>
+        </div> 
+
+        <div id="container">
+            <div id="sarlavha">
+                <h2>
+                    Node.js fayllarni yuklash
+                </h2>
+            </div>
+            <div id="text">
+
+                <h3>
+                    Ajoyib modul
+                </h3>
+                <p>
+                    Fayllarni yuklash bilan ishlash uchun juda yaxshi modul mavjud, "Qo'rqinchli".
+                </p>
+
+                <p>
+                    Formidable modulini NPM yordamida yuklab olish va o'rnatish mumkin:
+                </p>
+              
+                <div class="oddiy_chegara">
+
+                    <div class="chegara_ichida2">
+                        <pre>
+                            C:\Users\Your Name>npm install formidable
+                        </pre>
+                    </div>
+                </div>
+
+                
+
+                <p>
+                    Formidable modulini yuklab olganingizdan so'ng, modulni istalgan ilovaga qo'shishingiz mumkin:
+                </p>
+              
+
+                <div class="oddiy_chegara">
+                    <div class="chegara_ichida">
+                        <pre>
+                            var formidable = require('formidable');
+                        </pre>
+                    </div>
+                </div>
+
+                <h2>
+                    Fayllarni yuklash
+                </h2>
+
+                <p>
+                    Endi siz Node.js-da foydalanuvchiga fayllarni kompyuteringizga 
+                    yuklash imkonini beruvchi veb-sahifa yaratishga tayyormiz:
+                </p>
+
+                <h2>
+                    1-qadam: Yuklash formasini yarating
+                </h2>
+
+                <p>
+                    Yuklash maydoni bilan HTML formasini yozuvchi Node.js faylini yarating:
+                </p>
+
+
+                <div class="oddiy_chegara">
+                    <h2>
+                        Misol
+                    </h2>
+                    <p>
+                        Ushbu kod HTML formasini ishlab chiqaradi:
+                    </p>
+                    <div class="chegara_ichida">
+                        <pre>
+                            var http = require('http');
+
+                            http.createServer(function (req, res) {
+                              res.writeHead(200, {'Content-Type': 'text/html'});
+                              res.write('&lt;form action=&quot;fileupload&quot; method=&quot;post&quot; enctype=&quot;multipart/form-data&quot;&gt;');
+                              res.write('&lt;input type=&quot;file&quot; name=&quot;filetoupload&quot;&gt;&lt;br&gt;');
+                              res.write('&lt;input type=&quot;submit&quot;&gt;');
+                              res.write('&lt;/form&gt;');
+                              return res.end();
+                            }).listen(8080);
+                        </pre>
+                    </div>
+                </div>
+
+                <h2>
+                    2-qadam: Yuklangan faylni tahlil qiling
+                </h2>
+
+                <p>
+                    Yuklangan fayl serverga yetib borgach, 
+                    uni tahlil qilish imkoniyatiga ega bo'lish 
+                    uchun "Formidable" modulini qo'shing.
+                </p>
+
+                <p>
+                    Fayl yuklanganda va tahlil qilinganda, 
+                    u kompyuteringizdagi vaqtinchalik jildga joylashtiriladi.
+                </p>
+
+                <div class="oddiy_chegara">
+                    <h2>
+                        Misol
+                    </h2>
+                    <p>
+                        Fayl yuklanadi va vaqtinchalik jildga joylashtiriladi:
+                    </p>
+                    <div class="chegara_ichida">
+                        <pre>
+                            var http = require('http');
+                            var formidable = require('formidable');
+                            
+                            http.createServer(function (req, res) {
+                              if (req.url == '/fileupload') {
+                                var form = new formidable.IncomingForm();
+                                form.parse(req, function (err, fields, files) {
+                                  res.write('File uploaded');
+                                  res.end();
+                                });
+                              } else {
+                                res.writeHead(200, {'Content-Type': 'text/html'});
+                                res.write('&lt;form action=&quot;fileupload&quot; method=&quot;post&quot; enctype=&quot;multipart/form-data&quot;&gt;');
+                                res.write('&lt;input type=&quot;file&quot; name=&quot;filetoupload&quot;&gt;&lt;br&gt;');
+                                res.write('&lt;input type=&quot;submit&quot;&gt;');
+                                res.write('&lt;/form&gt;');
+                                return res.end();
+                              }
+                            }).listen(8080);
+                        </pre>
+                    </div>
+                </div>
+
+                <h2>
+                    3-qadam: Faylni saqlang
+                </h2>
+
+                <p>
+                    Fayl serverga muvaffaqiyatli yuklanganda, u vaqtinchalik jildga joylashtiriladi.
+                </p>
+
+                <p>
+                    Ushbu katalogga yo'lni "fayllar" ob'ektida topish mumkin, 
+                    bu parse()usulning qayta qo'ng'iroq qilish funktsiyasida 
+                    uchinchi argument sifatida uzatiladi.
+                </p>
+
+                <p>
+                    Faylni o'zingiz tanlagan jildga ko'chirish uchun 
+                    Fayl tizimi modulidan foydalaning va fayl nomini o'zgartiring:
+                </p>
+
+                <div class="oddiy_chegara">
+                    <h2>
+                        Misol
+                    </h2>
+                    <p>
+                        fs modulini qo'shing va faylni joriy jildga ko'chiring:
+                    </p>
+                    <div class="chegara_ichida">
+                        <pre>
+                            var http = require('http');
+                            var formidable = require('formidable');
+                            var fs = require('fs');
+                            
+                            http.createServer(function (req, res) {
+                              if (req.url == '/fileupload') {
+                                var form = new formidable.IncomingForm();
+                                form.parse(req, function (err, fields, files) {
+                                  var oldpath = files.filetoupload.filepath;
+                                  var newpath = 'C:/Users/Your Name/' + files.filetoupload.originalFilename;
+                                  fs.rename(oldpath, newpath, function (err) {
+                                    if (err) throw err;
+                                    res.write('File uploaded and moved!');
+                                    res.end();
+                                  });
+                             });
+                              } else {
+                                res.writeHead(200, {'Content-Type': 'text/html'});
+                                res.write('&lt;form action=&quot;fileupload&quot; method=&quot;post&quot; enctype=&quot;multipart/form-data&quot;&gt;');
+                                res.write('&lt;input type=&quot;file&quot; name=&quot;filetoupload&quot;&gt;&lt;br&gt;');
+                                res.write('&lt;input type=&quot;submit&quot;&gt;');
+                                res.write('&lt;/form&gt;');
+                                return res.end();
+                              }
+                            }).listen(8080);
+                        </pre>
+                    </div>
+                </div>
+
+            </div>
+        </div> 
+    </div>
+   
+</body>
+</html>

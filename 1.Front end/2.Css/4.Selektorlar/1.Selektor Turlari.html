@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="Css">
+    <meta name="description" content="Bu yerda Css haqida batafsil ma'lumotlar">
+    <title>Selektor turlari</title>
+    <link rel="stylesheet" href="/1.Front end/2.Css/style.css">
+    <script src="Js.js"></script>
+</head>
+<body>
+    <div id="bosh">
+        <div class="bosh">
+            <h1>CSS</h1>
+        </div>
+    </div>
+    <div id="menyu">
+    <div class="menyu">
+        <button id="toggle-btn" onclick="toggleMenu()">Menu</button>
+        <ul>
+            <li><a href="/index.html">HOME</a></li>
+            <li><a href="/1.Front end/1.Front_end.html">FRONT END</a></li>
+            <li><a href="/1.Front end/1.HTML/1.HTML.html">HTML</a></li>
+            <li><a href="/1.Front end/2.Css/Css.html">CSS</a></li>
+            <li><a href="/1.Front end/3.Js/Javascript.html">JAVASCRIPT</a></li>
+        </ul>
+    </div>
+    <div class="body">
+        <div id="menu" class="menu">
+            <h3 style="padding: 1px 2px;">CSS</h3>
+            <ul>
+                <li><a href="/1.Front end/2.Css/Css.html">CSS HOME</a></li>
+                <li>
+                    <a href="#" onclick="toggleSubMenu('sub-menu-1')">
+                        Daraxt diagrammasi
+                    </a>
+                    <ul id="sub-menu-1" class="sub-menu">
+                        <li><a href="/1.Front end/2.Css/1.Daraxt diagrammasi/1.Matnni daraxt diagrammasida ko'rsatish.html">Matnni daraxt diagrammasida ko'rsatish</a></li>
+                        <li><a href="/1.Front end/2.Css/1.Daraxt diagrammasi/2.Daraxt diagrammasining tarkibi.html">Daraxt diagrammasining tarkibi</a></li>
+                        <li><a href="/1.Front end/2.Css/1.Daraxt diagrammasi/3.Daraxt diagrammalaridan qutilarga.html">Daraxt diagrammalaridan qutilarga</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#" onclick="toggleSubMenu('sub-menu-2')">"HTML"ga uslub berish</a>
+                    <ul id="sub-menu-2" class="sub-menu">
+                        <li><a href="/1.Front end/2.Css/2.Uslub berish/1.HTMLga to‘g‘ridan to‘g‘ri uslub berish.html">HTMLga to‘g‘ridan to‘g‘ri uslub berish</a></li>
+                        <li><a href="/1.Front end/2.Css/2.Uslub berish/2.HTMLga alohida uslub berish.html">HTMLga alohida uslub berish</a></li>
+                    </ul>
+                </li>
+                <li><a href="/1.Front end/2.Css/3.CSS sintaksisi/3.CSS sintaksisi.html">"CSS" sintaksisi</a></li>
+                <li>
+                    <a href="#" onclick="toggleSubMenu('sub-menu-3')">Selektorlar</a>
+                    <ul id="sub-menu-3" class="sub-menu">
+                        <li><a href="/1.Front end/2.Css/4.Selektorlar/Selektorlar.html">Selektorlar</a></li>
+                        <li><a href="/1.Front end/2.Css/4.Selektorlar/1.Selektor Turlari.html">Selektorlar turlari</a></li>
+                        <li><a href="/1.Front end/2.Css/4.Selektorlar/2.class va id selektorlari.html">Class va id selektorlari</a></li>
+                        <li><a href="/1.Front end/2.Css/4.Selektorlar/3.Selektorlarni birlashtirish.html">Selektorlarni birlashtirish</a></li>
+                        <li><a href="/1.Front end/2.Css/4.Selektorlar/4.CSS Selektorlar.html">CSS Selektorlar</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#" onclick="toggleSubMenu('sub-menu-4')">Takrorlash</a>
+                    <ul id="sub-menu-4" class="sub-menu">
+                        <li><a href="/1.Front end/2.Css/5.Takrorkash/Termin so‘zlarni takrorlash.html">Termin so‘zlarni takrorlash</a></li>
+                        <li><a href="/1.Front end/2.Css/5.Takrorkash/Selektorlarni takrorlash.html">Selektorlarni takrorlash</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="/1.Front end/2.Css/6.CSSda kaskad nima uchun juda muhim/6.CSSda kaskad nima uchun juda muhim.html">"CSS"da "kaskad" nima uchun juda muhim?</a>
+                </li>
+                <li>
+                    <a href="/1.Front end/2.Css/7.O‘lchov birliklari/7.O‘lchov birliklari.html">O‘lchov birliklari</a>
+                </li>
+                <li>
+                    <a href="/1.Front end/2.Css/8.Qutilar/8.Qutilar.html">Qutilar</a>
+                </li>
+                <li>
+                    <a href="/1.Front end/2.Css/9.Foizlar/9.Foizlar.html">Foizlar</a>
+                </li>
+                <li>
+                    <a href="/1.Front end/2.Css/10.CSS qoidalari/CSS qoidalari.html">CSS qoidalari</a>
+                </li>
+                <li>
+                    <a href="/1.Front end/2.Css/11.CSS uslublarni HTMLdan ajratish/11.CSS uslublarni HTMLdan ajratish.html">CSS uslublarni HTMLdan ajratish</a>
+                </li>
+                <li>
+                    <a href="/1.Front end/2.Css/12.Ranglardan foydalanish/12.Ranglardan foydalanish.html">Ranglardan foydalanish</a>
+                </li>
+                <li>
+                    <a href="/1.Front end/2.Css/13.Shriftlar/13.Shriftlar.html">Shriftlar</a>
+                </li>
+                <li>
+                    <a href="/1.Front end/2.Css/14.CSSda Flexbox xossasi/14.CSSda Flexbox xossasi.html">"CSS"da "Flexbox" xossasi</a>
+                </li>
+            </ul>
+        </div> 
+        <div id="container">
+            <div id="sarlavha">
+                <h2 style="width: 9em;">Selektor turlari</h2>
+            </div>       
+
+            <div id="text">
+                <p>
+                    Selektorlarning bir nechta turli guruhlari mavjud 
+                    va sizga qaysi turdagi selektor kerakligini bilish uchun 
+                    to'g'ri vositani topishga yordam beradi. 
+                    Ushbu maqolaning pastki maqolalarida biz selektorlarning 
+                    turli guruhlarini batafsilroq ko'rib chiqamiz.
+                </p>
+                <h2>
+                    Tur, sinf va ID tanlagichlari
+                </h2>
+                
+                <p>
+                    Tur tanlagichlari HTML elementiga mo'ljallangan, masalan &lt;h1&gt;:
+                </p>
+                <div class="css">
+                    <p><b>css</b></p>
+                    <div class="css_tana">
+                        <p style="margin: 0;">
+                            <span style="color: blueviolet;">h1</span> { <br>
+                                 <br>
+                              }
+                        </p>
+                    </div>
+                </div> 
+                <p>
+                    Class selektorlari o'z atributi uchun ma'lum bir qiymatga ega bo'lgan elementni nishonga oladi class:
+                </p>
+                <div class="css">
+                    <p><b>css</b></p>
+                    <div class="css_tana">
+                        <p>
+                            <span style="color: blueviolet;">.box</span> { <br>
+                                 <br>
+                              }
+                        </p>
+                    </div>
+                </div> 
+                <p>
+                    ID selektorlari o'z atributi uchun ma'lum qiymatga ega bo'lgan elementni nishonga oladi id:
+                </p>
+                <div class="css">
+                    <p><b>css</b></p>
+                    <div class="css_tana">
+                        <p>
+                            <span style="color: blueviolet;">#unique</span> { <br>
+                                 <br>
+                              }
+                        </p>
+                    </div>
+                </div> 
+                <h2>
+                    Atribut selektorlari
+                </h2>
+                <p>
+                    Ushbu selektorlar guruhi elementda ma'lum bir atribut mavjudligiga qarab elementlarni tanlashning turli usullarini beradi:
+                </p>
+                <div class="css">
+                    <p><b>css</b></p>
+                    <div class="css_tana">
+                        <p>
+                            <span style="color: blueviolet;">a[title]</span> { <br>
+                                 <br>
+                              }
+                        </p>
+                    </div>
+                </div> 
+                <p>
+                    Yoki hatto ma'lum bir qiymatga ega atribut mavjudligiga qarab tanlov qiling:
+                </p>
+                <div class="css">
+                    <p><b>css</b></p>
+                    <div class="css_tana">
+                        <p>
+                            <span style="color: blueviolet;">a[href="https://example.com"]</span> { <br>
+                                 <br>
+                              }
+                        </p>
+                    </div>
+                </div> 
+                <h2>
+                    Psevdosinflar va psevdoelementlar
+                </h2>
+                <p>
+                    Ushbu selektorlar guruhi elementning ma'lum holatlarini shakllantiradigan psevdo-sinflarni o'z ichiga oladi. 
+                    Masalan, psevdo <span class="maxsus">:hover</span>-sinf elementni faqat sichqoncha ko'rsatgichi ustiga olib kelganda tanlaydi:
+                </p>
+                <div class="css">
+                    <p><b>css</b></p>
+                    <div class="css_tana">
+                        <p>
+                            <span style="color: blueviolet;">a:hover</span> { <br>
+                                 <br>
+                              }
+                        </p>
+                    </div>
+                </div> 
+                <p>
+                    Shuningdek, u psevdoelementlarni o'z ichiga oladi, ular elementning o'zi emas, 
+                    balki uning ma'lum bir qismini tanlaydi. Masalan, ::first-linehar doim element 
+                    ichidagi matnning birinchi qatorini tanlaydi ( &lt;p&gt;quyida a) &lt;span&gt; 
+                    birinchi formatlangan qatorga o‘ralgan va keyin tanlangandek ishlaydi.
+                </p>
+                <div class="css">
+                    <p><b>css</b></p>
+                    <div class="css_tana">
+                        <p>
+                            <span style="color: blueviolet;">p::first-line</span> { <br>
+                                 <br>
+                              }
+                        </p>
+                    </div>
+                </div> 
+                <h2>
+                    Kombinatorlar
+                </h2>
+                <p>
+                    Yakuniy selektor guruhi bizning hujjatlarimizdagi elementlarni maqsad qilish uchun 
+                    boshqa selektorlarni birlashtiradi. Quyida, masalan, &lt;article&gt; bolalar birlashtiruvchi 
+                    ( >) yordamida elementlarning bevosita bolalari bo'lgan paragraflar tanlanadi:
+                </p>
+                <div class="css">
+                    <p><b>css</b></p>
+                    <div class="css_tana">
+                        <p>
+                            <span style="color: blueviolet;">article > p</span> { <br>
+                                 <br>
+                              }
+                        </p>
+                    </div>
+                </div>
+                <h2>
+                    Udacity
+                </h2>
+                <p>
+                    Xullas, Ushbu maqolada biz CSS selektorlarini tanishtirdik, ular sizga ma'lum 
+                    HTML elementlarini maqsad qilib qo'yish imkonini beradi. Keyinchalik, tur, sinf 
+                    va identifikatorni tanlash vositalarini batafsil ko'rib chiqamiz.
+                    CSS selektor brauzerga qoida qaysi elementlarga ta'sir qilishini aytadi.
+                    Aslida siz foydalanishingiz mumkin bo'lgan bir nechta turli xil selektorlar bor,
+                    ularning juda ko'pi mavjud, ammo hozir biz ulardan bir nechtasini ko'rib chiqamiz.    
+                </p>
+                <p>
+                    p { color:blue } <br>
+                    em { font-size:large } 
+                </p>
+                <p>
+                    Eng sodda, bu tur selektori, bu shunchaki <b>p</b> yoki <b>em</b> kabi HTML elementlarining
+                    bir turi u hatto html hujjatining butun tanasiga qo'llaniladigan qoida bo'lishi mumkin.
+                </p>
+                <p>
+                    body { font-family:cursive }
+                </p>
+                <p>
+                    Masalan, bu yerda hujjat turini tanlash uchun shriftni o'zgartiradigan qoidalar to'plami,
+                    ayniqsa foydalidir.
+                </p>
+                <p>
+                    <span style="color: crimson;">&lt;h1&gt;</span> CSS mo'jizalari <span style="color: crimson;">&lt;/h1&gt;</span> <br>
+                    <span style="color: chocolate">&lt;h2&gt;</span> Selectors <span style="color: chocolate">&lt;/h2&gt;</span>
+                </p>
+                <p>
+                    Agar web sahifada haqiqatan ham stilni qo'llamoqchi bo'lsangiz, masalan, h1 va h2 sarlavha elementlari va 
+                    hattoki bitta CSS ga oid bo'lim sarlavhalarini ishlatadigan maqola yozsangiz ham selektor muayyan turdagi
+                    barcha elementlarga qo'llaniladi. Lekin baribir har bir sarlavha elementi uchun bitta CSS qoidasini yozish
+                    kerak,
+                </p>
+                <p>
+                    h1 { font-size: 48pt; <br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   font family: sans-serif; } <br>
+                </p>
+                <p>
+                    h2 { font-size: 32pt; <br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   font family: sans-serif; } <br>
+                </p>
+                <p>
+                    Bular har biri h1,h2 elementga yo'naltirilgan va ushbu uslublarni qo'llash, bu har bir 
+                    h1,h2 elementga mos keladi va shu kabi stillarni h1,h2 qo'llaydi va hokazo. 
+                </p>
+            </div>
+
+           
+            
+        </div>
+    </div>
+    
+</body>
+</html>

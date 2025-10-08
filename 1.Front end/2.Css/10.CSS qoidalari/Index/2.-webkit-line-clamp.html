@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="Css">
+    <meta name="description" content="Bu yerda Css haqida batafsil ma'lumotlar">
+    <title>-webkit-line-clamp</title>
+    <link rel="stylesheet" href="/1.Front end/2.Css/style.css">
+    <script src="/1.Front end/2.Css/Js.js"></script>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <div id="bosh">
+        <div class="bosh">
+            <h1>CSS</h1>
+        </div>
+    </div>
+    <div id="menyu">
+    <div class="menyu">
+        <button id="toggle-btn" onclick="toggleMenu()">Menu</button>
+        <ul>
+            <li><a href="/index.html">HOME</a></li>
+            <li><a href="/1.Front end/1.Front_end.html">FRONT END</a></li>
+            <li><a href="/1.Front end/1.HTML/1.HTML.html">HTML</a></li>
+            <li><a href="/1.Front end/2.Css/Css.html">CSS</a></li>
+        </ul>
+    </div>
+    <div class="body">
+        <div id="menu" class="menu">
+            <h3>CSS</h3>
+            <ul>
+                <li><a href="/1.Front end/2.Css/Css.html">CSS HOME</a></li>
+                <li>
+                    <a href="#" onclick="toggleSubMenu('sub-menu-1')">
+                        Daraxt diagrammasi
+                    </a>
+                    <ul id="sub-menu-1" class="sub-menu">
+                        <li><a href="/1.Front end/2.Css/1.Daraxt diagrammasi/1.Matnni daraxt diagrammasida ko'rsatish.html">Matnni daraxt diagrammasida ko'rsatish</a></li>
+                        <li><a href="/1.Front end/2.Css/1.Daraxt diagrammasi/2.Daraxt diagrammasining tarkibi.html">Daraxt diagrammasining tarkibi</a></li>
+                        <li><a href="/1.Front end/2.Css/1.Daraxt diagrammasi/3.Daraxt diagrammalaridan qutilarga.html">Daraxt diagrammalaridan qutilarga</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#" onclick="toggleSubMenu('sub-menu-2')">"HTML"ga uslub berish</a>
+                    <ul id="sub-menu-2" class="sub-menu">
+                        <li><a href="/1.Front end/2.Css/2.Uslub berish/1.HTMLga to‘g‘ridan to‘g‘ri uslub berish.html">HTMLga to‘g‘ridan to‘g‘ri uslub berish</a></li>
+                        <li><a href="/1.Front end/2.Css/2.Uslub berish/2.HTMLga alohida uslub berish.html">HTMLga alohida uslub berish</a></li>
+                    </ul>
+                </li>
+                <li><a href="/1.Front end/2.Css/3.CSS sintaksisi/3.CSS sintaksisi.html">"CSS" sintaksisi</a></li>
+                <li>
+                    <a href="#" onclick="toggleSubMenu('sub-menu-3')">Selektorlar</a>
+                    <ul id="sub-menu-3" class="sub-menu">
+                        <li><a href="/1.Front end/2.Css/4.Selektorlar/1.Selektor Turlari.html">Selektorlar turlari</a></li>
+                        <li><a href="/1.Front end/2.Css/4.Selektorlar/2.class va id selektorlari.html">Class va id selektorlari</a></li>
+                        <li><a href="/1.Front end/2.Css/4.Selektorlar/3.Selektorlarni birlashtirish.html">Selektorlarni birlashtirish</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#" onclick="toggleSubMenu('sub-menu-4')">Takrorlash</a>
+                    <ul id="sub-menu-4" class="sub-menu">
+                        <li><a href="/1.Front end/2.Css/5.Takrorkash/Termin so‘zlarni takrorlash.html">Termin so‘zlarni takrorlash</a></li>
+                        <li><a href="/1.Front end/2.Css/5.Takrorkash/Selektorlarni takrorlash.html">Selektorlarni takrorlash</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="/1.Front end/2.Css/6.CSSda kaskad nima uchun juda muhim/6.CSSda kaskad nima uchun juda muhim.html">"CSS"da "kaskad" nima uchun juda muhim?</a>
+                </li>
+                <li>
+                    <a href="/1.Front end/2.Css/7.O‘lchov birliklari/7.O‘lchov birliklari.html">O‘lchov birliklari</a>
+                </li>
+                <li>
+                    <a href="/1.Front end/2.Css/8.Qutilar/8.Qutilar.html">Qutilar</a>
+                </li>
+                <li>
+                    <a href="/1.Front end/2.Css/9.Foizlar/9.Foizlar.html">Foizlar</a>
+                </li>
+                <li>
+                    <a href="/1.Front end/2.Css/10.CSS qoidalari/CSS qoidalari.html">CSS qoidalari</a>
+                </li>
+                <li>
+                    <a href="/1.Front end/2.Css/11.CSS uslublarni HTMLdan ajratish/11.CSS uslublarni HTMLdan ajratish.html">CSS uslublarni HTMLdan ajratish</a>
+                </li>
+            </ul>
+        </div> 
+        <div id="container">
+            
+            <div id="sarlavha">
+                <h2>-webkit-line-clamp</h2>
+            </div>
+            <div id="text" class="qisqa">
+                  
+                <p>
+                    CSS xususiyati <span class="maxsus">`line-clamp`</span> 
+                    blok tarkibini belgilangan qatordan oshib 
+                    ketmasligini cheklashga imkon beradi.
+                </p>
+                
+                <div class="Eslatma">
+                    
+                    <div class="Eslatma_tana">
+                        <p>
+                            <b>Eslatma:</b> Eski tizimlarni qo‘llab-quvvatlash 
+                            uchun <span class="maxsus">`-webkit-line-clamp`</span> xususiyati faqat 
+                            <span class="maxsus">`display`</span> 
+                            xususiyati <span class="maxsus">`-webkit-box`</span> yoki 
+                            <span class="maxsus">`-webkit-inline-box`</span> 
+                            qilib o‘rnatilgan va 
+                            <span class="maxsus">`-webkit-box-orient`</span> xususiyati 
+                            <span class="maxsus">`vertical`</span> qilib belgilangan holatda ishlaydi. 
+                            Ushbu prefiksli xususiyatlar eskirgan bo‘lsa-da, 
+                            ushbu uch xususiyatning o‘zaro bog‘liqligi to‘liq 
+                            belgilangan xatti-harakat bo‘lib, 
+                            qo‘llab-quvvatlanishda davom etadi.
+
+                        </p>
+                       
+                    </div>
+                </div>
+                <p>
+                    Ko‘pgina holatlarda siz ortiqcha qismini 
+                    yashirish (overflow: hidden) sozlamasini 
+                    o‘rnatishni ham xohlaysiz, aks holda mazmun 
+                    kesilmaydi, lekin belgilangan satrlar 
+                    sonidan keyin ellipsis (uch nuqta) ko‘rsatiladi.
+                </p>
+
+                <p>
+                    Anchor elementlariga qo‘llanganda, qisqartirish matn oxirida emas, balki o‘rtasida ham sodir bo‘lishi mumkin.
+                </p>
+
+                <h2>
+                    Sintaksis
+                </h2>
+
+                <div id="CSS">
+                    <p>CSS</p>
+                    <div class="CSS">
+                        <p>
+                            <span class="kul">/ * Kalit so'zning qiymati * /</span> <br>
+                            <span class="crimson">-webkit-line-clamp</span>: none; <br><br>
+
+                            <span class="kul">/* &lt;integer&gt; (&lt;butun son&gt;) qiymatlar */</span> <br>
+                            <span class="crimson">-webkit-line-clamp</span>: 3; <br>
+                            <span class="crimson">-webkit-line-clamp</span>: 10; <br><br>
+
+                            <span class="kul">/ * Global qiymatlar * /</span> <br>
+                            <span class="crimson">-webkit-line-clamp</span>: inherit; <br>
+                            <span class="crimson">-webkit-line-clamp</span>: initial; <br>
+                            <span class="crimson">-webkit-line-clamp</span>: revert; <br>
+                            <span class="crimson">-webkit-line-clamp</span>: revert-layer; <br>
+                            <span class="crimson">-webkit-line-clamp</span>: unset; <br>
+
+                        </p>
+                    </div>
+                </div>
+                
+
+                
+                <h2>
+                    Qadriyatlar
+                </h2>
+                <span class="maxsus">
+                    <a href="#">none</a> <br>
+                </span>
+                <p>
+                    &nbsp;&nbsp; Bu qiymat kontentning siqilmasligini bildiradi.
+                </p>
+                <span class="maxsus">
+                    <a href="#">&lt;integer&gt;</a>
+                </span>
+                <p>
+                    
+                    &nbsp; Bu qiymat tarkib siqib qo'yiladigan qatorlar sonini bildiradi. 0 dan katta bo'lishi kerak.
+                </p>
+                <h2>
+                    Rasmiy sintaksis
+                </h2>
+                <div id="CSS">
+                    <p>∞</p>
+                    <div class="CSS">
+                        <pre>
+                            line-clamp = 
+                            none                                   |
+                            &lt;integer [1,∞]&gt; || &lt;'block-ellipsis'&gt;  
+                          
+                          &lt;block-ellipsis&gt; = 
+                            none      |
+                            auto      |
+                            &lt;string&gt;  
+                        </pre>
+                    </div>
+                </div>
+                
+                <h2>
+                    Misollar
+                </h2>
+                <h2>
+                    Paragrafni qisqartirish
+                </h2>
+                <h2>
+                    HTML
+                </h2>
+                <div id="CSS">
+                    <p>HTML</p>
+                    <div class="CSS">
+                            <pre>
+                                Ushbu misolda &lt;code&gt;-webkit-line-clamp&lt;/code&gt; xususiyati 3 
+                                ga o‘rnatilgan, ya’ni matn uch satrdan keyin qisqartiriladi. 
+                                Matn qisqartirilgan joyda ellipsis (uch nuqta) ko‘rsatiladi.
+                            </pre>
+                    </div>
+                </div>
+               <h2>
+                CSS
+               </h2>
+               <div id="CSS">
+                <p>CSS</p>
+                <div class="CSS">
+                    <p>
+                        p { <br>
+                            width: 300px; <br>
+                            display: -webkit-box; <br>
+                            -webkit-box-orient: vertical; <br>
+                            -webkit-line-clamp: 3; <br>
+                            overflow: hidden; <br>
+                          }                          
+                    </p>
+                </div>
+            </div>
+
+            <style>
+                .Natija {
+                  width: 300px;
+                  display: -webkit-box;
+                  -webkit-box-orient: vertical;
+                  -webkit-line-clamp: 3;
+                  overflow: hidden;
+                  font-size: 16px;
+                }
+            </style>
+            <h2>
+                Natija
+            </h2>
+            <div id="CSS">
+                <p>Natija</p>
+                <div class="Natija">
+                    <p>
+                        Ushbu misolda `<code>-webkit-line-clamp</code>` 
+                        xususiyati `3` ga o‘rnatilgan, ya’ni matn uch 
+                        satrdan keyin qisqartiriladi. Matn qisqartirilgan 
+                        joyda ellipsis (uch nuqta) ko‘rsatiladi.
+                      </p>
+                </div>
+            </div>
+            <h2>
+                Texnik xususiyatlari
+            </h2>
+            <div id="CSS">
+                <p>Spetsifikatsiya</p>
+                <div class="CSS">
+                    <p class="kok">
+                        CSS Overflow moduli 4-darajali # propdef-line-clamp                    
+                    </p>
+                </div>
+            </div>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>

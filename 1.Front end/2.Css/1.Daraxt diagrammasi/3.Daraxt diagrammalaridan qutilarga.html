@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="Css">
+    <meta name="description" content="Bu yerda Css haqida batafsil ma'lumotlar">
+    <title>Daraxt diagrammalaridan qutilarga</title>
+    <link rel="stylesheet" href="/1.Front end/2.Css/style.css">
+    <script src="Js.js"></script>
+    <style>
+        ol {display: flex;}
+        .qizil li {
+            color: red;
+            margin: 0 10px;
+        }
+    </style>
+</head>
+<body>
+    <div id="bosh">
+        <div class="bosh">
+            <h1>CSS</h1>
+        </div>
+    </div>
+    <div id="menyu">
+    <div class="menyu">
+        <ul>
+            <button id="toggle-btn" onclick="toggleMenu()">Menu</button>
+            <li><a href="/index.html">HOME</a></li>
+            <li><a href="/1.Front end/1.Front_end.html">FRONT END</a></li>
+            <li><a href="/1.Front end/1.HTML/1.HTML.html">HTML</a></li>
+            <li><a href="/1.Front end/2.Css/2.Css.html">CSS</a></li>
+        </ul>
+    </div>
+    <div class="body">
+        <div id="menu" class="menu">
+            <h3 style="padding: 1px 2px;">CSS</h3>
+            <ul>
+                <li><a href="/1.Front end/2.Css/Css.html">CSS HOME</a></li>
+                <li>
+                    <a href="#" onclick="toggleSubMenu('sub-menu-1')">
+                        Daraxt diagrammasi
+                    </a>
+                    <ul id="sub-menu-1" class="sub-menu">
+                        <li><a href="/1.Front end/2.Css/1.Daraxt diagrammasi/1.Matnni daraxt diagrammasida ko'rsatish.html">Matnni daraxt diagrammasida ko'rsatish</a></li>
+                        <li><a href="/1.Front end/2.Css/1.Daraxt diagrammasi/2.Daraxt diagrammasining tarkibi.html">Daraxt diagrammasining tarkibi</a></li>
+                        <li><a href="/1.Front end/2.Css/1.Daraxt diagrammasi/3.Daraxt diagrammalaridan qutilarga.html">Daraxt diagrammalaridan qutilarga</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#" onclick="toggleSubMenu('sub-menu-2')">"HTML"ga uslub berish</a>
+                    <ul id="sub-menu-2" class="sub-menu">
+                        <li><a href="/1.Front end/2.Css/2.Uslub berish/1.HTMLga to‘g‘ridan to‘g‘ri uslub berish.html">HTMLga to‘g‘ridan to‘g‘ri uslub berish</a></li>
+                        <li><a href="/1.Front end/2.Css/2.Uslub berish/2.HTMLga alohida uslub berish.html">HTMLga alohida uslub berish</a></li>
+                    </ul>
+                </li>
+                <li><a href="/1.Front end/2.Css/3.CSS sintaksisi/3.CSS sintaksisi.html">"CSS" sintaksisi</a></li>
+                <li>
+                    <a href="#" onclick="toggleSubMenu('sub-menu-3')">Selektorlar</a>
+                    <ul id="sub-menu-3" class="sub-menu">
+                        <li><a href="/1.Front end/2.Css/4.Selektorlar/Selektorlar.html">Selektorlar</a></li>
+                        <li><a href="/1.Front end/2.Css/4.Selektorlar/1.Selektor Turlari.html">Selektorlar turlari</a></li>
+                        <li><a href="/1.Front end/2.Css/4.Selektorlar/2.class va id selektorlari.html">Class va id selektorlari</a></li>
+                        <li><a href="/1.Front end/2.Css/4.Selektorlar/3.Selektorlarni birlashtirish.html">Selektorlarni birlashtirish</a></li>
+                        <li><a href="/1.Front end/2.Css/4.Selektorlar/4.CSS Selektorlar.html">CSS Selektorlar</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#" onclick="toggleSubMenu('sub-menu-4')">Takrorlash</a>
+                    <ul id="sub-menu-4" class="sub-menu">
+                        <li><a href="/1.Front end/2.Css/5.Takrorkash/Termin so‘zlarni takrorlash.html">Termin so‘zlarni takrorlash</a></li>
+                        <li><a href="/1.Front end/2.Css/5.Takrorkash/Selektorlarni takrorlash.html">Selektorlarni takrorlash</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="/1.Front end/2.Css/6.CSSda kaskad nima uchun juda muhim/6.CSSda kaskad nima uchun juda muhim.html">"CSS"da "kaskad" nima uchun juda muhim?</a>
+                </li>
+                <li>
+                    <a href="/1.Front end/2.Css/7.O‘lchov birliklari/7.O‘lchov birliklari.html">O‘lchov birliklari</a>
+                </li>
+                <li>
+                    <a href="/1.Front end/2.Css/8.Qutilar/8.Qutilar.html">Qutilar</a>
+                </li>
+                <li>
+                    <a href="/1.Front end/2.Css/9.Foizlar/9.Foizlar.html">Foizlar</a>
+                </li>
+                <li>
+                    <a href="/1.Front end/2.Css/10.CSS qoidalari/CSS qoidalari.html">CSS qoidalari</a>
+                </li>
+                <li>
+                    <a href="/1.Front end/2.Css/11.CSS uslublarni HTMLdan ajratish/11.CSS uslublarni HTMLdan ajratish.html">CSS uslublarni HTMLdan ajratish</a>
+                </li>
+                <li>
+                    <a href="/1.Front end/2.Css/12.Ranglardan foydalanish/12.Ranglardan foydalanish.html">Ranglardan foydalanish</a>
+                </li>
+                <li>
+                    <a href="/1.Front end/2.Css/13.Shriftlar/13.Shriftlar.html">Shriftlar</a>
+                </li>
+                <li>
+                    <a href="/1.Front end/2.Css/14.CSSda Flexbox xossasi/14.CSSda Flexbox xossasi.html">"CSS"da "Flexbox" xossasi</a>
+                </li>
+            </ul>
+        </div> 
+        <div id="container">
+        
+            <div id="sarlavha">
+                <h2 style="width: 19em;">Daraxt diagrammalaridan qutilarga</h2>
+            </div>
+            <div id="text">
+                <p>
+                    Xullas, siz allaqchon brauzer qanday qilib HTML matnini daraxt tuzilishidagi
+                    DOM kabi o'zgarishini ko'rdingiz keling, qanday o'zgarishi mumkinligini ko'rib 
+                    chiqaylik bu daraxt tuzilishini rasmini men boradigan ekranda ko'rishimiz mumkin.
+                </p>
+                <p>Bu qizil qizil so'zlar.</p>
+                <ol class="qizil">
+                    <li>Apple apple berry berry sauce sauce sauce.<br>
+                        Cook it on the stove and serve it to your boss.
+                    <li>Betty bought a bit of butter,
+                        but the butter's burning bitter.<br>
+                    <li>Crisp cookies claim Charlie's cookout crown.<br>  Clever Clara
+                        clocked the crows at <em>c</em> (clearly connivance!)
+                    <li>Daring drivers drove down Devil's Ditch in Dodges.
+                    <li>Evil eggs explode everywhere. Eww!
+                </ol>
+                <p>
+                    bizning HTML sahifamizdan birini yuklab oling va buni dasturchi vositalari yordamida
+                    tekshiramiz, keling men HTML sahifalarda daraxt strukturasi borligini bilaman,
+                    lekin bu qanday qo'llaniladi, sahifa qanday ko'rinishga egaligini ko'rib chiqamiz.
+                    Ushbu element ol sifatida ko'rsatilgan katta katakcha va ushbu elementlarning har biri
+                    li ichida kichikroq katakcha sifatida katta katakcha butun kengligini to'ldiradi ular 
+                    har birida kichikroq, sahifaning tahminan beshdan birini egallaganga o'xshaydi va bu yerda 
+                    stillar panelida buni ishlab chiquvchi vositalaridagi diagrammada ko'rsatilgandan ko'rishimiz
+                    mumkin ba'zi qismlarini maydonlar va chegaralar bilan belgilangan va bu maydonni to'ldirish
+                    mumkin bo'lganlar: bu yerda CSS kodi bilan biror narsa qilish bu 20 piksel bo'sh joyni
+                    aytadi, shuning uchun biz ilgari brauzer matnni o'qishini ko'rganmiz. 
+                </p>
+                <p>
+                    HTML hujjati uni o'qiydi va uni daraxt tuzilishiga aylantiradi va bizda savol tug'iladi:
+                    qanday qilib u o'sha yerdan ikki o'lchovli web sahifa joylashuv tartibining ekrani tomon
+                    oladi? yaxshi bu katakchalar juda ko'p har bir elementga javob bergan ko'rsatilgan holda
+                    sahifada paydo bo'ladigan katakchaga joylashtirilgan va ushbu katakchalar boshqasiga joylashadi.
+                    katakchalar boshqa katakchalarga yaxshi joylashadi, bu ish daraxt strukturasi tomonidan boshqariladi
+                    hamda ozgina CSS yordami bilan. 
+                </p>
+                <p>
+                    &lt;ul&gt; <br>
+                    &nbsp;&lt;li&gt; Things <br>
+                    &nbsp;&lt;li&gt; Stuff <br>
+                    &nbsp;&lt;li&gt; Bears <br>
+                    &lt;/ul&gt;
+                </p>
+                <p>
+                    Masalan html kodi ushbu ro'yxatda har doim bir xilga daraxtga o'tkaziladi va 
+                    bu daraxtning tuzilishi har doim bitta katta katakchaga aylanadi, va u katakchada
+                    uchta kichik katakcha bo'ladi, ammo keyin bu katakchalar chiqariladi, ya'ni vertikal 
+                    yoki gorizantalligi, rangining pushti yoki boshqa ekanligini siz CSS orqali boshqarishingiz
+                    mumkin.
+                </p>
+               
+            </div>
+            
+        </div>
+    </div>
+    
+</body>
+</html>

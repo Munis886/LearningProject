@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="Css">
+    <meta name="description" content="Bu yerda Css haqida batafsil ma'lumotlar">
+    <title>Selektorlarni takrorlash</title>
+    <link rel="stylesheet" href="/1.Front end/2.Css/style.css">
+    <script src="/1.Front end/2.Css/Js.js"></script>
+</head>
+<body>
+    <div id="bosh">
+        <div class="bosh">
+            <h1>CSS</h1>
+        </div>
+    </div>
+    <div id="menyu">
+    <div class="menyu">
+        <ul>
+            <button id="toggle-btn" onclick="toggleMenu()">Menu</button>
+            <li><a href="/index.html">HOME</a></li>
+            <li><a href="/1.Front end/1.Front_end.html">FRONT END</a></li>
+            <li><a href="/1.Front end/1.HTML/1.HTML.html">HTML</a></li>
+            <li><a href="/1.Front end/2.Css/Css.html">CSS</a></li>
+        </ul>
+    </div>
+    <div class="body">
+        <div id="menu" class="menu">
+            <h3 style="padding: 1px 2px;">CSS</h3>
+            <ul>
+                <li><a href="/1.Front end/2.Css/Css.html">CSS HOME</a></li>
+                <li>
+                    <a href="#" onclick="toggleSubMenu('sub-menu-1')">
+                        Daraxt diagrammasi
+                    </a>
+                    <ul id="sub-menu-1" class="sub-menu">
+                        <li><a href="/1.Front end/2.Css/1.Daraxt diagrammasi/1.Matnni daraxt diagrammasida ko'rsatish.html">Matnni daraxt diagrammasida ko'rsatish</a></li>
+                        <li><a href="/1.Front end/2.Css/1.Daraxt diagrammasi/2.Daraxt diagrammasining tarkibi.html">Daraxt diagrammasining tarkibi</a></li>
+                        <li><a href="/1.Front end/2.Css/1.Daraxt diagrammasi/3.Daraxt diagrammalaridan qutilarga.html">Daraxt diagrammalaridan qutilarga</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#" onclick="toggleSubMenu('sub-menu-2')">"HTML"ga uslub berish</a>
+                    <ul id="sub-menu-2" class="sub-menu">
+                        <li><a href="/1.Front end/2.Css/2.Uslub berish/1.HTMLga to‘g‘ridan to‘g‘ri uslub berish.html">HTMLga to‘g‘ridan to‘g‘ri uslub berish</a></li>
+                        <li><a href="/1.Front end/2.Css/2.Uslub berish/2.HTMLga alohida uslub berish.html">HTMLga alohida uslub berish</a></li>
+                    </ul>
+                </li>
+                <li><a href="/1.Front end/2.Css/3.CSS sintaksisi.html">"CSS" sintaksisi</a></li>
+                <li>
+                    <a href="#" onclick="toggleSubMenu('sub-menu-3')">Selektorlar</a>
+                    <ul id="sub-menu-3" class="sub-menu">
+                        <li><a href="/1.Front end/2.Css/4.Selektorlar/1.Selektor Turlari.html">Selektorlar turlari</a></li>
+                        <li><a href="/1.Front end/2.Css/4.Selektorlar/2.class va id selektorlari.html">Class va id selektorlari</a></li>
+                        <li><a href="/1.Front end/2.Css/4.Selektorlar/3.Selektorlarni birlashtirish.html">Selektorlarni birlashtirish</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#" onclick="toggleSubMenu('sub-menu-4')">Takrorlash</a>
+                    <ul id="sub-menu-4" class="sub-menu">
+                        <li><a href="/1.Front end/2.Css/5.Takrorkash/Termin so‘zlarni takrorlash.html">Termin so‘zlarni takrorlash</a></li>
+                        <li><a href="/1.Front end/2.Css/5.Takrorkash/Selektorlarni takrorlash.html">Selektorlarni takrorlash</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="/1.Front end/2.Css/6.CSSda kaskad nima uchun juda muhim.html">"CSS"da "kaskad" nima uchun juda muhim?</a>
+                </li>
+                <li>
+                    <a href="/1.Front end/2.Css/7.O‘lchov birliklari.html">O‘lchov birliklari</a>
+                </li>
+                <li>
+                    <a href="/1.Front end/2.Css/8.Qutilar.html"></a>
+                </li>
+                <li>
+                    <a href="/1.Front end/2.Css/9.Foizlar/9.Foizlar.html">Foizlar</a>
+                </li>
+                <li>
+                    <a href="/1.Front end/2.Css/10.CSS qoidalari/CSS qoidalari.html">CSS qoidalari</a>
+                </li>
+                <li>
+                    <a href="/1.Front end/2.Css/11.CSS uslublarni HTMLdan ajratish/11.CSS uslublarni HTMLdan ajratish.html">CSS uslublarni HTMLdan ajratish</a>
+                </li>
+                <li>
+                    <a href="/1.Front end/2.Css/12.Ranglardan foydalanish/12.Ranglardan foydalanish.html">Ranglardan foydalanish</a>
+                </li>
+                <li>
+                    <a href="/1.Front end/2.Css/13.Shriftlar/13.Shriftlar.html">Shriftlar</a>
+                </li>
+                <li>
+                    <a href="/1.Front end/2.Css/14.CSSda Flexbox xossasi/14.CSSda Flexbox xossasi.html">"CSS"da "Flexbox" xossasi</a>
+                </li>
+            </ul>
+        </div> 
+        <div id="container">
+            
+            <div id="sarlavha">
+                <h2 style="width: 12em;">Selektorlarni takrorlash</h2>
+            </div>
+            <div id="text">
+                <p>
+                    
+                </p>
+                <ul>
+                    <style>
+                        div #text ul li {
+                            list-style-type: none;
+                        }
+                    </style>
+                    <li>
+                        <p>
+                            3 turdagi CSS selektorlari haqida bilib oldingiz: <b>tur</b>, <b>klas</b> va <b>ID</b> selektorlar!
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            <b>Tur</b> selektorlaridan h1 yoki body kabi "HTML" elementlarning muayyan turiga uslubni 
+                            qo‘llash uchun foydalanadilar. Tur selektorlari faqat "HTML" element turining 
+                            nomidan foydalanib yoziladi.
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            <b>Klas</b> selektorlari 'class' atributi uchun ma’lum bir qiymatga ega bo‘lgan bir nechta 
+                            HTML elementlari uchun uslubni belgilash uchun ishlatiladi. Klas selektori nomi sifatida 
+                            istagan so‘zni ishlatishingiz mumkin! Klas selektorlari klas nomi oldida nuqta bilan yoziladi: 
+                            'p class=blue' kabi elementlar uchun klas selektori '.blue' deb yoziladi.
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            ID selektorlari bitta "HTML" elementiga qo‘llanganda ishlatiladi, 
+                            bu esa "id" atributiga ega bo‘lishi kerak. Sahifada faqat bitta "id" elementi bo'lishi mumkin. 
+                            Shuningdek, "id" uchun xohlagan ismni tanlashingiz mumkin, xuddi "klas" selektori kabi. 
+                            "ID" selektorlari "#" belgisidan foydalanib yoziladi: masalan, "p id=sidebar" elementi uchun, 
+                            "id" selektori #sidebar deb yoziladi.
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            <b>Selektor turi</b> "HTML"dagi elementlarni belgilashni eng oddiy ko‘rinishidir. 
+                            Selektor turida belgilanadigan "HTML" elementining nomi keltiriladi(em yoki li kabi).
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            <b>klas</b>(class) "HTML"da atribut hisoblanadi va uning yordamida bir hil uslub qo‘llamoqchi 
+                            bo‘lgan elementlarni bitta guruhga jamlaysiz.
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            <b>id</b> atribyuti esa bitta elementni belgilash uchun yagona bo‘lishi shart.
+                        </p>
+                    </li>
+                </ul>
+                <div>
+                    
+                </div>
+                <p>
+                   
+                </p>
+            </div>
+            
+            
+        </div>
+    </div>
+    
+</body>
+</html>

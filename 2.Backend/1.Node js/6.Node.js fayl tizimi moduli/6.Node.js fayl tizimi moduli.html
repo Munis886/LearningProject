@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="Javascript, Java script">
+    <meta name="description" content="Bu yerda Javascript haqida batafsil ma'lumot olamiz">
+    <link rel="stylesheet" href="/2.Backend/1.Node js/style.css">
+    <title>Node js</title>
+    <script src="/2.Backend/1.Node js/script.js"></script>
+    <script src="/2.Backend/1.Node js/Js.js"></script>
+</head>
+<body>
+    <div id="bosh">
+        <div class="bosh">
+            <h1>Node js</h1>
+        </div>
+    </div>
+
+     <div id="menyu">
+    <div class="menyu">
+        <button id="toggle-btn" onclick="toggleMenu()">Menu</button>
+        <ul>
+            <li><a href="/index.html">HOME</a></li>
+            <li><a href="/1.Front end/1.Front_end.html">FRONT END</a></li>
+            <li><a href="/1.Front end/1.HTML/1.HTML.html">HTML</a></li>
+            <li><a href="/1.Front end/2.Css/Css.html">CSS</a></li>
+            <li><a href="/1.Front end/3.Js/Javascript.html">JavaScript</a></li>
+            <li><a href="/2.Backend/1.Node js/Node js.html">Node js</a></li>
+        </ul>
+    </div>
+    </div>
+    <div class="body">
+        <div id="menu" class="menu">
+            <h3>Node js</h3>
+            <ul>
+                <li>
+                    <a href="#" onclick="toggleSubMenu('sub-menu-1')">
+                        <span>1</span> Node jsga kirish
+                    </a>
+                    <ul id="sub-menu-1" class="sub-menu">
+                        <li>
+                            <a href="/2.Backend/1.Node js/1.Node jsga kirish/1.Node jsga kirish.html">
+                                1.1"Node js"ga kirish 
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/2.Backend/1.Node js/2.Node o'zi nima/2.Node o'zi nima.html">
+                                1.2."Node" o'zi nima?
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/2.Backend/1.Node js/3.Node.js ishni boshlash/3.Node.js ishni boshlash.html">
+                                1.3.Node.js Ishni boshlash
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/2.Backend/1.Node js/4.Node.js modullari/4.Node.js modullari.html">
+                                1.4.Node.js modullari
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/2.Backend/1.Node js/5.Node.js HTTP moduli/5.Node.js HTTP moduli.html">
+                                1.5.Node.js HTTP moduli
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/2.Backend/1.Node js/6.Node.js fayl tizimi moduli/6.Node.js fayl tizimi moduli.html">
+                                1.6.Node.js fayl tizimi moduli
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/2.Backend/1.Node js/7.Node.js URL moduli/7.Node.js URL moduli.html">
+                                1.7.Node.js URL moduli
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/2.Backend/1.Node js/8.Node.js NPM/8.Node.js NPM.html">
+                                1.8.Node.js NPM
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/2.Backend/1.Node js/9.Node.js hodisalari/9.Node.js hodisalari.html">
+                                1.9.Node.js hodisalari
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/2.Backend/1.Node js/10.Node.js fayllarni yuklash/10.Node.js fayllarni yuklash.html">
+                                1.10.Node.js fayllarni yuklash
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/2.Backend/1.Node js/11.Node.js elektron pochta xabarini yuborish/11.Node.js elektron pochta xabarini yuborish.html">
+                                1.11.Node.js elektron pochta xabarini yuborish
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                
+            </ul>
+        </div> 
+
+        <div id="container">
+            <div id="sarlavha">
+                <h2>
+                    Node.js fayl tizimi moduli
+                </h2>
+            </div>
+            <div id="text">
+
+                <h3>
+                    Node.js fayl serveri sifatida
+                </h3>
+                <p>
+                    Node.js ning fs (file system) moduli kompyuterning fayl tizimi bilan ishlash imkonini beradi.
+                </p>
+
+                <p>
+                    Fayl tizimi (File System) modulini qo‘shish uchun 
+                    <span class="crimson">require()</span> metodidan foydalaning:
+                </p>
+
+                
+                <div class="oddiy_chegara">
+                    <div class="chegara_ichida">
+                        <p>
+                            var fs = require('fs');
+                        </p>
+                    </div>
+                </div>
+
+                <p>
+                    Fayl tizimi moduli uchun umumiy foydalanish:
+                </p>
+                <ul>
+                    <li>Fayllarni o'qing</li>
+                    <li>Fayllarni yarating</li>
+                    <li>Fayllarni yangilash</li>
+                    <li>Fayllarni o'chirish</li>
+                    <li>Fayllarni qayta nomlash</li>
+                </ul>
+
+                <h2>
+                    Fayllarni o'qish
+                </h2>
+                <p>
+                    <span class="crimson">fs.readFile()</span> metodi kompyuteringizdagi fayllarni o‘qish uchun ishlatiladi.
+                </p>
+                <p>
+                    Bizda quyidagi HTML fayl (Node.js bilan bir xil papkada joylashgan) bor deb faraz qilaylik:
+                </p>
+
+                <div class="oddiy_chegara">
+                    <p>
+                        demofile1.html
+                    </p>
+                    <div class="chegara_ichida">
+                        <pre>
+                            &lt;html&gt;
+                            &lt;body&gt;
+                            &lt;h1&gt;My Header&lt;/h1&gt;
+                            &lt;p&gt;My paragraph.&lt;/p&gt;
+                            &lt;/body&gt;
+                            &lt;/html&gt;
+                        </pre>
+                    </div>
+                </div>
+
+                <p>
+                    HTML faylni o'qiydigan Node.js faylini yarating va tarkibni qaytaring:
+                </p>
+
+                <div class="oddiy_chegara">
+                    <h2>
+                        Misol
+                    </h2>
+                    <div class="chegara_ichida">
+                        <pre>
+                            var http = require('http');
+                            var fs = require('fs');
+                            http.createServer(function (req, res) {
+                              fs.readFile('demofile1.html', function(err, data) {
+                                res.writeHead(200, {'Content-Type': 'text/html'});
+                                res.write(data);
+                                return res.end();
+                              });
+                            }).listen(8080);
+                        </pre>
+                    </div>
+                </div>
+
+                <p>
+                    Yuqoridagi kodni "demo_readfile.js" nomli faylga saqlang va faylni ishga tushiring:
+                </p>
+
+              
+                <div class="oddiy_chegara">
+                    <p>
+                        demo_readfile.js dasturini ishga tushiring:
+                    </p>
+                    <div class="chegara_ichida2">
+                        <p>
+                            C:\Users\Your Name>node demo_readfile.js
+                        </p>
+                    </div>
+                </div>
+
+               
+
+                <p>
+                    Agar siz kompyuteringizda bir xil amallarni bajargan bo'lsangiz, 
+                    misoldagi kabi natijani ko'rasiz: 
+                    <a href="http://localhost:8080">http://localhost:8080</a>
+                </p>
+
+               
+                <h2>
+                    Fayllar yaratish
+                </h2>
+
+                <p>
+                    Fayl tizimi modulida yangi fayllar yaratish usullari mavjud:
+                </p>
+
+                <ul class="crimson">
+                    <li>fs.appendFile()</li>
+                    <li>fs.open()</li>
+                    <li>fs.writeFile()</li>
+                </ul>
+
+                <p>
+                    Usul <span class="crimson">fs.appendFile()</span> belgilangan tarkibni faylga qo'shadi. Agar fayl mavjud bo'lmasa, fayl yaratiladi:
+                </p>
+                <div class="oddiy_chegara">
+                    <h3>
+                        Misol
+                    </h3>
+                    <p>
+                        appendFile() usuli yordamida yangi fayl yarating:
+                    </p>
+                    <div class="chegara_ichida">
+                        <pre>
+                            var fs = require('fs');
+
+                            fs.appendFile('mynewfile1.txt', 'Hello content!', function (err) {
+                              if (err) throw err;
+                              console.log('Saved!');
+                            });
+                        </pre>
+                    </div>
+                </div>
+
+                <p>
+                    <span class="crimson">fs.open()</span> metodi ikkinchi 
+                    argument sifatida "flag" qabul qiladi. 
+                    Agar "w" (yozish) bayrog‘i berilgan bo‘lsa, ko‘rsatilgan 
+                    fayl yozish uchun ochiladi. Agar fayl mavjud bo‘lmasa, 
+                    bo‘sh fayl yaratiladi.
+                </p>
+               
+
+                <div class="oddiy_chegara">
+                    <h2>
+                        Misol
+                    </h2>
+                    <p>
+                        Open() usuli yordamida yangi, bo'sh fayl yarating:
+                    </p>
+                    <div class="chegara_ichida">
+                            <pre id="code">
+                                var fs = require('fs');
+
+                                fs.open('mynewfile2.txt', 'w', function (err, file) {
+                                &nbsp;  if (err) throw err;
+                                &nbsp;  console.log('Saved!');
+                                });
+                            </pre>
+                    </div>
+                </div>
+
+                <p>
+                    Usul <span class="crimson">fs.writeFile()</span> belgilangan fayl va 
+                    agar mavjud bo'lsa, tarkibni almashtiradi. 
+                    Agar fayl mavjud bo'lmasa, ko'rsatilgan tarkibni 
+                    o'z ichiga olgan yangi fayl yaratiladi:
+                </p>
+
+                <div class="oddiy_chegara">
+                    <h2>
+                        Misol
+                    </h2>
+                    <p>
+                        writeFile() usuli yordamida yangi fayl yarating:
+                    </p>
+                    <div class="chegara_ichida">
+                            <pre>
+                                var fs = require('fs');
+
+                                fs.writeFile('mynewfile3.txt', 'Hello content!', function (err) {
+                                &nbsp;  if (err) throw err;
+                                &nbsp;  console.log('Saved!');
+                                });
+                            </pre>
+                    </div>
+                </div>
+
+                <h2>
+                    Fayllarni yangilash
+                </h2>
+
+                <p>
+                    Fayl tizimi modulida fayllarni yangilash usullari mavjud:
+                </p>
+
+                <ul class="crimson">
+                    <li>fs.appendFile()</li>
+                    <li>fs.writeFile()</li>
+                </ul>
+
+                <p>
+                    Usul <span class="crimson">fs.appendFile()</span> belgilangan 
+                    faylning oxiriga ko'rsatilgan tarkibni qo'shadi:
+                </p>
+
+                <div class="oddiy_chegara">
+                    <h2>
+                        Misol
+                    </h2>
+                    <p>
+                        "Bu mening matnim" qo'shing. "mynewfile1.txt" faylining oxirigacha:
+                    </p>
+                    <div class="chegara_ichida">
+                        <pre>
+                            var fs = require('fs');
+
+                            fs.appendFile('mynewfile1.txt', ' This is my text.', function (err) {
+                            &nbsp;  if (err) throw err;
+                            &nbsp;  console.log('Updated!');
+                            });
+                        </pre>
+                    </div>
+                </div>
+
+                <p>
+                    Usul <span class="crimson">fs.writeFile()</span> belgilangan fayl va tarkibni almashtiradi:
+                </p>
+
+                <div class="oddiy_chegara">
+                    <h2>
+                        Misol
+                    </h2>
+                    <p>
+                        "mynewfile3.txt" faylining mazmunini almashtiring:
+                    </p>
+                    <div class="chegara_ichida">
+                        <pre>
+                            var fs = require('fs');
+
+                            fs.writeFile('mynewfile3.txt', 'This is my text', function (err) {
+                            &nbsp;  if (err) throw err;
+                            &nbsp;  console.log('Replaced!');
+                            });
+                        </pre> 
+                    </div>
+                </div>
+
+                <h2>
+                    Fayllarni o'chirish
+                </h2>
+
+                <p>
+                    Fayl tizimi moduli bilan faylni o'chirish uchun <span class="crimson">fs.unlink()</span> usuldan foydalaning.
+                </p>
+
+                <p>
+                    Usul <span class="crimson">fs.unlink()</span> belgilangan faylni o'chiradi:
+                </p>
+                <div class="oddiy_chegara">
+                    <h3>
+                        Misol
+                    </h3>
+
+                    <p>
+                        "mynewfile2.txt" faylini o'chirib tashlang:
+                    </p>
+                    <div class="chegara_ichida">
+                            <pre>
+                                var fs = require('fs');
+
+                                fs.unlink('mynewfile2.txt', function (err) {
+                                &nbsp;  if (err) throw err;
+                                &nbsp;  console.log('File deleted!');
+                                });
+                            </pre>
+                    </div>
+                </div>
+
+                <h2>
+                    Fayllarni qayta nomlash
+                </h2>
+
+                <p>
+                    Fayl tizimi moduli bilan fayl nomini o'zgartirish uchun 
+                    <span class="crimson">fs.rename()</span> usuldan foydalaning.
+                </p>
+
+                <p>
+                    Usul <span class="crimson">fs.rename()</span> belgilangan fayl nomini o'zgartiradi:
+                </p>
+                <div class="oddiy_chegara">
+                    
+                    <h2>
+                        Misol
+                    </h2>
+                    <p>
+                        "mynewfile1.txt" nomini "myrenamedfile.txt" qilib o'zgartiring:
+                    </p>
+                    <div class="chegara_ichida">
+                            <pre>
+                                var fs = require('fs');
+
+                                fs.rename('mynewfile1.txt', 'myrenamedfile.txt', function (err) {
+                                &nbsp;  if (err) throw err;
+                                &nbsp;  console.log('File Renamed!');
+                                });
+                            </pre>
+                    </div>
+                </div>
+                <h2>
+                    Fayllarni yuklash
+                </h2>
+                <p>
+                    Fayllarni kompyuteringizga yuklash uchun Node.js dan ham foydalanishingiz mumkin.
+                </p>
+                <p>
+                    Qanday qilib Node.js fayllarni yuklash bo'limida o'qing.
+                </p>
+
+            </div>
+        </div> 
+    </div>
+   
+</body>
+</html>

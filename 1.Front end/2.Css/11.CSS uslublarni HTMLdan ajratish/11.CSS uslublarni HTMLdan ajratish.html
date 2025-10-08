@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="Css">
+    <meta name="description" content="Bu yerda Css haqida batafsil ma'lumotlar">
+    <title>CSS uslublarni HTMLdan ajratish</title>
+    <link rel="stylesheet" href="/1.Front end/2.Css/style.css">
+    <script src="/1.Front end/2.Css/Js.js"></script>
+    
+</head>
+<body>
+    <div id="bosh">
+        <div class="bosh">
+            <h1>CSS</h1>
+        </div>
+    </div>
+    <div id="menyu">
+    <div class="menyu">
+        <ul>
+            <button id="toggle-btn" onclick="toggleMenu()">Menu</button>
+            <li><a href="/index.html">HOME</a></li>
+            <li><a href="/1.Front end/1.Front_end.html">FRONT END</a></li>
+            <li><a href="/1.Front end/1.HTML/1.HTML.html">HTML</a></li>
+            <li><a href="/1.Front end/2.Css/Css.html">CSS</a></li>
+        </ul>
+    </div>
+    <div class="body">
+        <div id="menu" class="menu">
+            <h3 style="padding: 1px 2px;">CSS</h3>
+            <ul>
+                <li><a href="/1.Front end/2.Css/Css.html">CSS HOME</a></li>
+                <li>
+                    <a href="#" onclick="toggleSubMenu('sub-menu-1')">
+                        Daraxt diagrammasi
+                    </a>
+                    <ul id="sub-menu-1" class="sub-menu">
+                        <li><a href="/1.Front end/2.Css/1.Daraxt diagrammasi/1.Matnni daraxt diagrammasida ko'rsatish.html">Matnni daraxt diagrammasida ko'rsatish</a></li>
+                        <li><a href="/1.Front end/2.Css/1.Daraxt diagrammasi/2.Daraxt diagrammasining tarkibi.html">Daraxt diagrammasining tarkibi</a></li>
+                        <li><a href="/1.Front end/2.Css/1.Daraxt diagrammasi/3.Daraxt diagrammalaridan qutilarga.html">Daraxt diagrammalaridan qutilarga</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#" onclick="toggleSubMenu('sub-menu-2')">"HTML"ga uslub berish</a>
+                    <ul id="sub-menu-2" class="sub-menu">
+                        <li><a href="/1.Front end/2.Css/2.Uslub berish/1.HTMLga to‘g‘ridan to‘g‘ri uslub berish.html">HTMLga to‘g‘ridan to‘g‘ri uslub berish</a></li>
+                        <li><a href="/1.Front end/2.Css/2.Uslub berish/2.HTMLga alohida uslub berish.html">HTMLga alohida uslub berish</a></li>
+                    </ul>
+                </li>
+                <li><a href="/1.Front end/2.Css/3.CSS sintaksisi/3.CSS sintaksisi.html">"CSS" sintaksisi</a></li>
+                <li>
+                    <a href="#" onclick="toggleSubMenu('sub-menu-3')">Selektorlar</a>
+                    <ul id="sub-menu-3" class="sub-menu">
+                        <li><a href="/1.Front end/2.Css/4.Selektorlar/Selektorlar.html">Selektorlar</a></li>
+                        <li><a href="/1.Front end/2.Css/4.Selektorlar/1.Selektor Turlari.html">Selektorlar turlari</a></li>
+                        <li><a href="/1.Front end/2.Css/4.Selektorlar/2.class va id selektorlari.html">Class va id selektorlari</a></li>
+                        <li><a href="/1.Front end/2.Css/4.Selektorlar/3.Selektorlarni birlashtirish.html">Selektorlarni birlashtirish</a></li>
+                        <li><a href="/1.Front end/2.Css/4.Selektorlar/4.CSS Selektorlar.html">CSS Selektorlar</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#" onclick="toggleSubMenu('sub-menu-4')">Takrorlash</a>
+                    <ul id="sub-menu-4" class="sub-menu">
+                        <li><a href="/1.Front end/2.Css/5.Takrorkash/Termin so‘zlarni takrorlash.html">Termin so‘zlarni takrorlash</a></li>
+                        <li><a href="/1.Front end/2.Css/5.Takrorkash/Selektorlarni takrorlash.html">Selektorlarni takrorlash</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="/1.Front end/2.Css/6.CSSda kaskad nima uchun juda muhim/6.CSSda kaskad nima uchun juda muhim.html">"CSS"da "kaskad" nima uchun juda muhim?</a>
+                </li>
+                <li>
+                    <a href="/1.Front end/2.Css/7.O‘lchov birliklari/7.O‘lchov birliklari.html">O‘lchov birliklari</a>
+                </li>
+                <li>
+                    <a href="/1.Front end/2.Css/8.Qutilar/8.Qutilar.html">Qutilar</a>
+                </li>
+                <li>
+                    <a href="/1.Front end/2.Css/9.Foizlar/9.Foizlar.html">Foizlar</a>
+                </li>
+                <li>
+                    <a href="/1.Front end/2.Css/10.CSS qoidalari/CSS qoidalari.html">CSS qoidalari</a>
+                </li>
+                <li>
+                    <a href="/1.Front end/2.Css/11.CSS uslublarni HTMLdan ajratish/11.CSS uslublarni HTMLdan ajratish.html">CSS uslublarni HTMLdan ajratish</a>
+                </li>
+                <li>
+                    <a href="/1.Front end/2.Css/12.Ranglardan foydalanish/12.Ranglardan foydalanish.html">Ranglardan foydalanish</a>
+                </li>
+                <li>
+                    <a href="/1.Front end/2.Css/13.Shriftlar/13.Shriftlar.html">Shriftlar</a>
+                </li>
+                <li>
+                    <a href="/1.Front end/2.Css/14.CSSda Flexbox xossasi/14.CSSda Flexbox xossasi.html">"CSS"da "Flexbox" xossasi</a>
+                </li>
+            </ul>
+        </div> 
+        <div id="container">
+            
+            <div id="sarlavha">
+                <h2 style="width: 15em;">CSS uslublarni HTMLdan ajratish</h2>
+            </div>
+
+            <div id="text">
+                <p>
+                    HTMLda CSS stillarini qo'llash uchun brauzerga bildiradigan
+                    bir necha xil usullar mavjud. Siz ulardan birini allaqachon
+                    ko'rgansiz. Biz shunchaki CSS kodini olamiz va shunchaki uni
+                    HTML elementlari style elementiga joylashtiramiz. 
+                </p>
+                <p>
+                    &lt;style&gt; <br>
+                        #CSS { <br>
+                            border-radius: 5px; <br>
+                            background-color:darkgrey; <br>
+                        } <br>
+                        #CSS p { <br>
+                            padding-bottom: 0; <br>
+                            margin: 0; <br>
+                        } <br>
+                    &lt;/style&gt;
+                </p>
+                <p>
+                    Ammo bu tartibsizroq bo'lishi mumkin. Web sayt juda ko'p HTML hujjatlariga ega bo'lishi 
+                    va ularning barchasida bir xil stilni qo'llamoqchi bo'lishi juda oddiy,
+                    aslida. Ushbu sahifalarning har biriga bir xil CSS kodini nusxalash
+                    katta bo'shliqni yo'qotishi mumkin. Agar biz unga o'zgartirish kiritmoqchi
+                    bo'lsak, biz barcha fayllarni o'zgartirishimiz kerak bo'lib qoladi.
+                    Shunday qilib, buni amalga oshirishning yana bir usuli bor. Biz 
+                    CSSni alohida faylga yozishimiz va HTMLni ushbu faylga bog'lashimiz mumkin.
+                    Buni bajarish uchun HTMLning boshiga maxsus tegni qo'yishimiz va stil
+                    faylga tenglashtirishimiz va keyin URL orqali yoki CSS faylning fayl 
+                    nomini ko'rsatamiz. Nisbiy URL manzillari qoidalarini eslaysizmi?
+                    Agar internetdagi biror-bir joyda joylashgan CSS faylidan foydalansak,
+                    biz bu yerda to'liq URL manzilini yozamiz. Ammo agar CSS fayl bizning
+                    HTML bilan bir xil katalogda bo'lsa, va deylik u style.css deb nomlangan
+                    bo'lsa, biz shunchaki bu fayl nomini shu yerga qo'yamiz. Ushbu bog'lanish
+                    elementi HTML faylining bosh elementiga kiradi.
+                    Masalan sarlavha elementidan keyin biz uni qo'yishimiz mumkin.
+                    Brauzer ushbu HTML faylni yuklaganida u avtomatik ravishda style.css ni
+                    yuklaydi va mana bu stillarni ushbu fayl elementlariga qo'llaydi.    
+                </p>  
+                <h2 style="font-size: 2rem; line-height: 2.5rem; font-family: PolySans, Open Sans, sans-serif;
+                            font-weight: 400;">
+                    Uslublar jadvalini(keyinchalik stylesheet deb ketiladi) "HTML" hujjatiga bo‘glash
+                </h2>
+                <p>
+                    "HTML" faylingizga staylshit bog‘lash uchun, "HTML" faylning head elementi ichiga link elementini qo'shing. 
+                    Link elementi sintaksisi quyidagicha ko‘rinishda bo‘ladi:
+                </p>
+                <p>
+                    <div style="width: 70%; margin: auto; border: 1px solid #333; border-radius: 20px;">
+                        <div></div>
+                        <div style="padding: 20px;">
+                            <code style="padding: 20px;">
+                                <span class="token" style="color: rgb(15, 43, 61);">&lt;</span><span class="token" style="color: navy;">link</span>
+                                <span class="token" style="color: navy;"> </span>
+                                <span class="token" style="color: rgb(2, 124, 124);">rel</span><span class="token attr-equals" style="color: rgb(15, 43, 61);">=</span><span class="token" style="color: rgb(15, 43, 61);">"</span>
+                                <span class="token" style="color: rgb(221, 17, 68);">stylesheet</span>
+                                <span class="token" style="color: rgb(15, 43, 61);">"</span>
+                                <span class="token" style="color: navy;"> </span>
+                                <span class="token" style="color: rgb(2, 124, 124);">href</span>
+                                <span class="token attr-equals" style="color: rgb(15, 43, 61);">=</span>
+                                <span class="token" style="color: rgb(15, 43, 61);">"</span>
+                                <span class="token" style="color: rgb(221, 17, 68);">style.css</span>
+                                <span class="token" style="color: rgb(15, 43, 61);">"</span>
+                                <span class="token" style="color: rgb(15, 43, 61);">&gt;</span>
+                            </code>
+                        </div>
+                    </div>
+                </p>
+                
+                <p>
+                    Agar boshqa veb-serverda joylashgan staylshitni ulansangiz, 
+                    href atributida to‘liq "URL" manzildan foydalanasiz. Agar o‘zingizning 
+                    "HTML" faylingiz bilan bir xil papkadagi staylshitni bog‘layotgan bo‘lsangiz, 
+                    fayl nomini nisbiy "URL" manzil sifatida ishlatishingiz mumkin.
+                </p>
+               <h2 style="font-weight: 600;">
+                "Stylesheet"mi yoki "style element"mi - ikkalasi ham emas!
+               </h2>
+               <p>
+                E’tibor bering, "CSS" kodingizni &lt;style&gt;&lt;/style&gt; elementi ichiga yozishingiz mumkin, masalan...
+               </p>
+               <div style="border: 1px solid black; border-radius: 5px; margin: 10px 75px;">
+                    <p>
+                        &lt;style&gt; <br>
+                            p{color:blue;} <br>
+                          &lt;/style&gt; <br>
+                    </p>
+               </div>
+               <p>
+                Ammo ikkalasini ham bir vaqtning o‘zida qilmaganligingiz ma’qul! 
+                Boshqacha qilib aytganda, yozgan "CSS" kodlaringizni "stylesheet"ga 
+                joylashtirganingizda, style elementidan foydalanishingiz shart emas - 
+                "CSS" kodlaringizni to‘g‘ridan to‘g‘ri "stylesheet" faylga hech narsa 
+                qo‘shmasdan kiritishingiz mumkin:
+               </p>
+               <div style="border: 1px solid black; border-radius: 5px; margin: 10px 75px;">
+                <p>
+                    p{color:blue;}
+                </p>
+                </div>
+                <p>
+                    Quyidagi mashqni bajarish uchun shunday qiling, shunchaki 
+                    "CSS" kodni to‘g‘ridan-to‘g‘ri style.css faylingizga kiriting 
+                    (ushbu faylga "CSS" kod yozayotganingizda style elementi ishlatmang).
+                </p>
+            </div>
+        </div>
+    </div>
+
+    
+</body>
+</html>

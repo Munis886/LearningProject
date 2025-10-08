@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="Javascript, Java script">
+    <meta name="description" content="Bu yerda Javascript haqida batafsil ma'lumot olamiz">
+    <link rel="stylesheet" href="/2.Backend/1.Node js/style.css">
+    <title>Node js</title>
+    <script src="/2.Backend/1.Node js/script.js"></script>
+    <script src="/2.Backend/1.Node js/Js.js"></script>
+</head>
+<body>
+    <div id="bosh">
+        <div class="bosh">
+            <h1>Node js</h1>
+        </div>
+    </div>
+
+     <div id="menyu">
+    <div class="menyu">
+        <button id="toggle-btn" onclick="toggleMenu()">Menu</button>
+        <ul>
+            <li><a href="/index.html">HOME</a></li>
+            <li><a href="/1.Front end/1.Front_end.html">FRONT END</a></li>
+            <li><a href="/1.Front end/1.HTML/1.HTML.html">HTML</a></li>
+            <li><a href="/1.Front end/2.Css/Css.html">CSS</a></li>
+            <li><a href="/1.Front end/3.Js/Javascript.html">JavaScript</a></li>
+            <li><a href="/2.Backend/1.Node js/Node js.html">Node js</a></li>
+        </ul>
+    </div>
+    </div>
+    <div class="body">
+        <div id="menu" class="menu">
+            <h3>Node js</h3>
+            <ul>
+                <li>
+                    <a href="#" onclick="toggleSubMenu('sub-menu-1')">
+                        <span>1</span> Node jsga kirish
+                    </a>
+                    <ul id="sub-menu-1" class="sub-menu">
+                        <li>
+                            <a href="/2.Backend/1.Node js/1.Node jsga kirish/1.Node jsga kirish.html">
+                                1.1"Node js"ga kirish 
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/2.Backend/1.Node js/2.Node o'zi nima/2.Node o'zi nima.html">
+                                1.2."Node" o'zi nima?
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/2.Backend/1.Node js/3.Node.js ishni boshlash/3.Node.js ishni boshlash.html">
+                                1.3.Node.js Ishni boshlash
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/2.Backend/1.Node js/4.Node.js modullari/4.Node.js modullari.html">
+                                1.4.Node.js modullari
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/2.Backend/1.Node js/5.Node.js HTTP moduli/5.Node.js HTTP moduli.html">
+                                1.5.Node.js HTTP moduli
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/2.Backend/1.Node js/6.Node.js fayl tizimi moduli/6.Node.js fayl tizimi moduli.html">
+                                1.6.Node.js fayl tizimi moduli
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/2.Backend/1.Node js/7.Node.js URL moduli/7.Node.js URL moduli.html">
+                                1.7.Node.js URL moduli
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/2.Backend/1.Node js/8.Node.js NPM/8.Node.js NPM.html">
+                                1.8.Node.js NPM
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/2.Backend/1.Node js/9.Node.js hodisalari/9.Node.js hodisalari.html">
+                                1.9.Node.js hodisalari
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/2.Backend/1.Node js/10.Node.js fayllarni yuklash/10.Node.js fayllarni yuklash.html">
+                                1.10.Node.js fayllarni yuklash
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/2.Backend/1.Node js/11.Node.js elektron pochta xabarini yuborish/11.Node.js elektron pochta xabarini yuborish.html">
+                                1.11.Node.js elektron pochta xabarini yuborish
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                
+            </ul>
+        </div> 
+
+        <div id="container">
+            <div id="sarlavha">
+                <h2>
+                    Node.js HTTP moduli
+                </h2>
+            </div>
+            <div id="text">
+
+                <h3>
+                    O'rnatilgan HTTP moduli
+                </h3>
+                <p>
+                    Node.js-da HTTP deb nomlangan o'rnatilgan modul mavjud bo'lib, 
+                    u Node.js-ga Hyper Text Transfer Protocol (HTTP) 
+                    orqali ma'lumotlarni uzatish imkonini beradi.
+                </p>
+
+                <p>
+                    HTTP modulini kiritish uchun quyidagi require()usuldan foydalaning:
+                </p>
+
+                
+                <div class="oddiy_chegara">
+                    <div class="chegara_ichida">
+                        <p>
+                            var http = require('http');
+                        </p>
+                    </div>
+                </div>
+
+                <h3>
+                    Node.js veb-server sifatida
+                </h3>
+                <p>
+                    HTTP moduli server portlarini tinglaydigan va mijozga javob beradigan HTTP serverini yaratishi mumkin.
+                </p>
+                <p>
+                    &nbsp; <span class="crimson">createServer()</span> HTTP serverini yaratish uchun quyidagi usuldan foydalaning :
+                </p>
+                <style>
+                    .h3 {
+                        font-family: monospace;
+                    }
+                </style>
+                <div class="oddiy_chegara">
+                    <h3 class="h3">
+                        Misol
+                    </h3>
+                    <div class="chegara_ichida">
+                        <p>
+                            var http = require('http'); <br><br>
+
+                            //create a server object:<br>
+                            http.createServer(function (req, res) {<br>
+                                &nbsp;  res.write('Hello World!'); //write a response to the client<br>
+                                &nbsp;  res.end(); //end the response<br>
+                            }).listen(8080); //the server object listens on port 8080<br>
+                        </p>
+                    </div>
+                </div>
+
+                <p>
+                    Usulga o'tgan funktsiya http.createServer(), 
+                    kimdir 8080 portidagi kompyuterga kirishga 
+                    harakat qilganda bajariladi.
+                </p>
+
+                <p>
+                    Yuqoridagi kodni "demo_http.js" nomli 
+                    faylga saqlang va faylni ishga tushiring:
+                </p>
+
+              
+                <div class="oddiy_chegara">
+                    <p>
+                        demo_http.js dasturini ishga tushiring:
+                    </p>
+                    <div class="chegara_ichida2">
+                        <p>
+                            C:\Users\Your Name>node demo_http.js
+                        </p>
+                    </div>
+                </div>
+
+               
+
+                <p>
+                    Agar siz kompyuteringizda bir xil amallarni bajargan bo'lsangiz, misoldagi kabi natijani ko'rasiz: 
+                    <a href="http://localhost:8080">http://localhost:8080</a>
+                </p>
+
+               
+                <h3>
+                    HTTP sarlavhasini qo'shing
+                </h3>
+
+                <p>
+                    Agar HTTP serverining javobi HTML sifatida ko'rsatilishi kerak bo'lsa, 
+                    siz to'g'ri kontent turiga ega HTTP sarlavhasini kiritishingiz kerak:
+                </p>
+
+                <div class="oddiy_chegara">
+                    <h3>
+                        Misol
+                    </h3>
+                    <p>
+                        Node.js faylida "myfirstmodule" modulidan foydalaning:
+                    </p>
+                    <div class="chegara_ichida">
+                        <p>
+                            var http = require('http'); <br>
+                            var dt = require('./myfirstmodule');<br><br>
+                            
+                            http.createServer(function (req, res) {<br>
+                              res.writeHead(200, {'Content-Type': 'text/html'});<br>
+                              res.write("The date and time are currently: " + dt.myDateTime());<br>
+                              res.end();<br>
+                            }).listen(8080);<br>
+                        </p>
+                    </div>
+                </div>
+                <p>
+                    <span class="crimson">`res.writeHead()`</span> metodining birinchi argumenti holat kodidir, `200` esa hammasi yaxshi ekanligini bildiradi. Ikkinchi argument esa javob sarlavhalarini o‘z ichiga olgan obyekt hisoblanadi.
+                </p>
+
+                <h2>
+                    So'rovlar qatorini o'qing
+                </h2>
+                <p>
+                    <span class="crimson">http.createServer()</span> funksiyasiga uzatilgan funksiya, 
+                    mijozdan keladigan so'rovni obyekt sifatida 
+                    (http.IncomingMessage obyekti) 
+                    ifodalovchi <span class="crimson">req</span> argumentiga ega.
+                </p>
+
+               
+                <p>
+                    Ushbu obyekt "url" nomli xususiyatga ega bo‘lib, 
+                    u domen nomidan keyin keladigan URL qismida saqlanadi.
+                </p>
+
+                <div class="oddiy_chegara">
+                    <p>
+                        demo_http_url.js
+                    </p>
+                    <div class="chegara_ichida">
+                            <pre id="code">
+                                var http = require('http');
+                                http.createServer(function (req, res) {
+                                  res.writeHead(200, {'Content-Type': 'text/html'});
+                                  res.write(req.url);
+                                  res.end();
+                                }).listen(8080);
+                            </pre>
+                    </div>
+                </div>
+
+                <p>
+                    Yuqoridagi kodni "demo_http_url.js" nomli faylga saqlang va faylni ishga tushiring:
+                </p>
+
+                <div class="oddiy_chegara">
+                    <p>
+                        demo_http_url.js dasturini ishga tushiring:
+                    </p>
+                    <div class="chegara_ichida2">
+                            <p>
+                                C:\Users\Your Name>node demo_http_url.js
+                            </p>  
+                    </div>
+                </div>
+
+                <p>
+                    Agar siz kompyuteringizda bir xil amallarni bajargan bo'lsangiz, 
+                    ushbu ikkita manzilni ochishda ikki xil natijani ko'rishingiz kerak:
+                </p>
+
+                <p>
+                    <a href="http://localhost:8080/summer">http://localhost:8080/summer</a>
+                </p>
+
+
+                <div class="oddiy_chegara">
+                    <p>
+                        Bu natijani beradi:
+                    </p>
+                    <div class="chegara_ichida">
+                            <p>
+                                /summer
+                            </p>  
+                    </div>
+                </div>
+
+                <p>
+                    <a href="http://localhost:8080/winter">http://localhost:8080/winter</a>
+                </p>
+
+                <div class="oddiy_chegara">
+                    <p>
+                        Bu natijani beradi:
+                    </p>
+                    <div class="chegara_ichida">
+                            <p>
+                                /winter
+                            </p>  
+                    </div>
+                </div>
+
+                <h2>
+                    So'rovlar qatorini ajrating
+                </h2>
+
+                <p>
+                    So'rovlar qatorini URL moduli kabi o'qilishi mumkin 
+                    bo'lgan qismlarga osongina ajratish uchun 
+                    o'rnatilgan modullar mavjud.
+                </p>
+
+                <div class="oddiy_chegara">
+                    <h3>
+                        Misol
+                    </h3>
+
+                    <p>
+                        So'rovlar qatorini o'qilishi mumkin bo'lgan qismlarga ajrating:
+                    </p>
+                    <div class="chegara_ichida">
+                            <pre>
+                                var http = require('http');
+                                <b>var url = require('url');</b>
+                                
+                                http.createServer(function (req, res) {
+                                  res.writeHead(200, {'Content-Type': 'text/html'});
+                                  var q = url.parse(req.url, true).query;
+                                  var txt = q.year + " " + q.month;
+                                  res.end(txt);
+                                }).listen(8080);
+                            </pre>
+                    </div>
+                </div>
+
+                <p>
+                    Yuqoridagi kodni "demo_querystring.js" deb nomlangan faylga saqlang va faylni ishga tushiring:
+                </p>
+
+                <div class="oddiy_chegara">
+                    
+
+                    <p>
+                        demo_querystring.js dasturini ishga tushiring:
+                    </p>
+                    <div class="chegara_ichida2">
+                            <pre>
+                                C:\Users\Your Name>node demo_querystring.js
+                            </pre>
+                    </div>
+                </div>
+                <p>
+                    Manzil:
+                </p>
+                <p>
+                    <a href="http://localhost:8080/?year=2017&month=Iyul">http://localhost:8080/?year=2017&month=Iyul</a>
+                </p>
+
+
+                <div class="oddiy_chegara">
+                    <p>
+                        Bu natijani beradi:
+                    </p>
+                    <div class="chegara_ichida">
+                            <pre>
+                                2017 July
+                            </pre>
+                    </div>
+                </div>
+                <p>
+                    Node.js URL moduli bobida URL moduli haqida koʻproq oʻqing .
+                </p>
+            </div>
+        </div> 
+    </div>
+   
+</body>
+</html>

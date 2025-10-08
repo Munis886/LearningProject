@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="Javascript, Java script">
+    <meta name="description" content="Bu yerda Javascript haqida batafsil ma'lumot olamiz">
+    <link rel="stylesheet" href="/2.Backend/1.Node js/style.css">
+    <title>Node js</title>
+    <script src="/2.Backend/1.Node js/script.js"></script>
+    <script src="/2.Backend/1.Node js/Js.js"></script>
+</head>
+<body>
+    <div id="bosh">
+        <div class="bosh">
+            <h1>Node js</h1>
+        </div>
+    </div>
+
+     <div id="menyu">
+    <div class="menyu">
+        <button id="toggle-btn" onclick="toggleMenu()">Menu</button>
+        <ul>
+            <li><a href="/index.html">HOME</a></li>
+            <li><a href="/1.Front end/1.Front_end.html">FRONT END</a></li>
+            <li><a href="/1.Front end/1.HTML/1.HTML.html">HTML</a></li>
+            <li><a href="/1.Front end/2.Css/Css.html">CSS</a></li>
+            <li><a href="/1.Front end/3.Js/Javascript.html">JavaScript</a></li>
+            <li><a href="/2.Backend/1.Node js/Node js.html">Node js</a></li>
+        </ul>
+    </div>
+    </div>
+    <div class="body">
+        <div id="menu" class="menu">
+            <h3>Node js</h3>
+            <ul>
+                <li>
+                    <a href="#" onclick="toggleSubMenu('sub-menu-1')">
+                        <span>1</span> Node jsga kirish
+                    </a>
+                    <ul id="sub-menu-1" class="sub-menu">
+                        <li>
+                            <a href="/2.Backend/1.Node js/1.Node jsga kirish/1.Node jsga kirish.html">
+                                1.1"Node js"ga kirish 
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/2.Backend/1.Node js/2.Node o'zi nima/2.Node o'zi nima.html">
+                                1.2."Node" o'zi nima?
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/2.Backend/1.Node js/3.Node.js ishni boshlash/3.Node.js ishni boshlash.html">
+                                1.3.Node.js Ishni boshlash
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/2.Backend/1.Node js/4.Node.js modullari/4.Node.js modullari.html">
+                                1.4.Node.js modullari
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/2.Backend/1.Node js/5.Node.js HTTP moduli/5.Node.js HTTP moduli.html">
+                                1.5.Node.js HTTP moduli
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/2.Backend/1.Node js/6.Node.js fayl tizimi moduli/6.Node.js fayl tizimi moduli.html">
+                                1.6.Node.js fayl tizimi moduli
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/2.Backend/1.Node js/7.Node.js URL moduli/7.Node.js URL moduli.html">
+                                1.7.Node.js URL moduli
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/2.Backend/1.Node js/8.Node.js NPM/8.Node.js NPM.html">
+                                1.8.Node.js NPM
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/2.Backend/1.Node js/9.Node.js hodisalari/9.Node.js hodisalari.html">
+                                1.9.Node.js hodisalari
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/2.Backend/1.Node js/10.Node.js fayllarni yuklash/10.Node.js fayllarni yuklash.html">
+                                1.10.Node.js fayllarni yuklash
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/2.Backend/1.Node js/11.Node.js elektron pochta xabarini yuborish/11.Node.js elektron pochta xabarini yuborish.html">
+                                1.11.Node.js elektron pochta xabarini yuborish
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                
+            </ul>
+        </div> 
+
+        <div id="container">
+            <div id="sarlavha">
+                <h2>
+                    Node.js URL moduli
+                </h2>
+            </div>
+            <div id="text">
+
+                <h3>
+                    O'rnatilgan URL moduli
+                </h3>
+                <p>
+                    URL moduli veb-manzilni o'qilishi mumkin bo'lgan qismlarga ajratadi.
+                </p>
+
+                <p>
+                    URL modulini kiritish uchun quyidagi
+                    <span class="crimson">require()</span> usuldan foydalaning:
+                </p>
+
+                
+                <div class="oddiy_chegara">
+                    <div class="chegara_ichida">
+                        <p>
+                            var url = require('url');
+                        </p>
+                    </div>
+                </div>
+
+                <p>
+                    Usul yordamida manzilni tahlil qiling 
+                    <span class="crimson">url.parse()</span> va u manzilning har bir 
+                    qismiga xossa sifatida URL obyektini qaytaradi:
+                </p>
+
+               
+               
+              
+
+                <div class="oddiy_chegara">
+                    <h2>
+                        Misol
+                    </h2>
+                    <p>
+                        Veb-manzilni o'qilishi mumkin bo'lgan qismlarga bo'ling:
+                    </p>
+                    <div class="chegara_ichida">
+                        <pre>
+                            var url = require('url');
+                            var adr = 'http://localhost:8080/default.htm?year=2017&month=february';
+                            var q = url.parse(adr, true);
+                            
+                            console.log(q.host); <span class="kul">//'localhost:8080' ni qaytaradi</span>
+                            console.log(q.pathname); //returns '/default.htm'
+                            console.log(q.search); //returns '?year=2017&month=february'
+                            
+                            var qdata = q.query; //returns an object: { year: 2017, month: 'february' }
+                            console.log(qdata.month); //returns 'february'
+                        </pre>
+                    </div>
+                </div>
+
+               <h2>
+                    Node.js fayl serveri
+               </h2>
+
+               <p>
+                    Endi biz so'rovlar qatorini qanday tahlil qilishni bilamiz 
+                    va oldingi bobda Node.js fayl serveri sifatida o'zini 
+                    tutishini bilib oldik. Keling, ikkalasini birlashtirib, 
+                    mijoz so'ragan faylga xizmat qilaylik.
+               </p>
+                <div class="oddiy_chegara">
+                    <p>
+                        summer.html
+                    </p>
+                    <div class="chegara_ichida">
+                        <pre>
+                            &lt;!DOCTYPE html&gt;
+                            &lt;html&gt;
+                            &lt;body&gt;
+                            &lt;h1&gt;Summer&lt;/h1&gt;
+                            &lt;p&gt;I love the sun!&lt;/p&gt;
+                            &lt;/body&gt;
+                            &lt;/html&gt;
+                        </pre>
+                    </div>
+                </div>
+
+               
+
+              
+                <div class="oddiy_chegara">
+                    <p>
+                        winter.html
+                    </p>
+                    <div class="chegara_ichida">
+                        <pre>
+                            &lt;!DOCTYPE html&gt;
+                            &lt;html&gt;
+                            &lt;body&gt;
+                            &lt;h1&gt;Winter&lt;/h1&gt;
+                            &lt;p&gt;I love the snow!&lt;/p&gt;
+                            &lt;/body&gt;
+                            &lt;/html&gt;
+                        </pre>
+                    </div>
+                </div>
+
+               
+
+                <p>
+                    So'ralgan faylni ochadigan va kontentni mijozga qaytaradigan 
+                    Node.js faylini yarating. Agar biror narsa noto'g'ri bo'lsa, 
+                    404 xatosini yuboring:
+                </p>
+
+              
+
+                <div class="oddiy_chegara">
+                    <p>
+                        demo_fileserver.js:
+                    </p>
+                    <div class="chegara_ichida">
+                        <pre>
+                            const http = require('http');
+                            const url = require('url');
+                            const fs = require('fs');
+                            const path = require('path');
+
+                            const server = http.createServer((req, res) => {
+                            &nbsp;  const parsedUrl = url.parse(req.url, true);
+                            &nbsp;  const pathname = parsedUrl.pathname;
+                            &nbsp;  // Use path.join to create a safe and correct file path
+                            &nbsp;  const filePath = path.join(__dirname, pathname);
+                            
+                            &nbsp;  // Check if the file exists before attempting to read it
+                            &nbsp;  fs.access(filePath, fs.constants.F_OK, (err) => {
+                                &nbsp;&nbsp;    if (err) {
+                                    &nbsp;&nbsp;&nbsp;      res.writeHead(404, { 'Content-Type': 'text/html' });
+                                    &nbsp;&nbsp;&nbsp;  res.end('404 Not Found');
+                                    &nbsp;&nbsp;&nbsp;  return;
+                                &nbsp;&nbsp;    }
+                            
+                                &nbsp;        fs.readFile(filePath, (err, data) => {
+                                    &nbsp;&nbsp;      if (err) {
+                                        &nbsp;&nbsp;&nbsp;    res.writeHead(500, { 'Content-Type': 'text/html' });
+                                        &nbsp;&nbsp;&nbsp;    res.end('500 Internal Server Error');
+                                        &nbsp;&nbsp;&nbsp;    return;
+                                        &nbsp;&nbsp;&nbsp;  }
+                            
+                                        &nbsp;&nbsp;      res.writeHead(200, { 'Content-Type': 'text/html' });
+                                        &nbsp;&nbsp;      res.end(data);
+                                        &nbsp;&nbsp;    });
+                                        &nbsp;  });
+                            });
+                            
+                            server.listen(8080, () => {
+                                &nbsp;      console.log('Server is running on port 8080');
+                            });                            
+                        </pre>
+                    </div>
+                </div>
+
+                <p>
+                    Faylni ishga tushirishni unutmang:
+                </p>
+               
+
+                <div class="oddiy_chegara">
+
+                    <p>
+                        demo_fileserver.js dasturini ishga tushiring:
+                    </p>
+                    <div class="chegara_ichida2">
+                            <pre id="code">
+                                C:\Users\Your Name>node demo_fileserver.js
+                            </pre>
+                    </div>
+                </div>
+
+                <p>
+                    Agar siz kompyuteringizda bir xil amallarni bajargan bo'lsangiz, 
+                    ushbu ikkita manzilni ochishda ikki xil natijani ko'rishingiz kerak:
+                </p>
+                <p>
+                    <a href="http://localhost:8080/summer.html">http://localhost:8080/summer.html</a>
+                </p>
+                <div class="oddiy_chegara">
+                    <p>
+                        Bu natijani beradi:
+                    </p>
+                    <div class="chegara_ichida">
+                        <pre>
+                            <h1>Summer</h1>
+                            <p>I love the sun!</p>
+                        </pre>
+                    </div>
+                </div>
+
+                <p>
+                    <a href="http://localhost:8080/winter.html">http://localhost:8080/winter.html</a>
+                </p>
+
+                <div class="oddiy_chegara">
+                    
+                    <p>
+                        Bu natijani beradi:
+                    </p>
+                    <div class="chegara_ichida">
+                        <pre>
+                            <h1>Winter</h1>
+                            <p>I love the snow!</p>
+                        </pre>
+                    </div>
+                </div>
+
+            </div>
+        </div> 
+    </div>
+   
+</body>
+</html>

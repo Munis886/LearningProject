@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="Css">
+    <meta name="description" content="Bu yerda Css haqida batafsil ma'lumotlar">
+    <title>-webkit-text-fill-color</title>
+    <link rel="stylesheet" href="/1.Front end/2.Css/style.css">
+    <script src="/1.Front end/2.Css/Js.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="bosh">
+        <div class="bosh">
+            <h1>CSS</h1>
+        </div>
+    </div>
+    <div id="menyu">
+        
+    <div class="menyu">
+        <button id="toggle-btn" onclick="toggleMenu()">Menu</button>
+        <ul>
+            <li><a href="/index.html">HOME</a></li>
+            <li><a href="/1.Front end/1.Front_end.html">FRONT END</a></li>
+            <li><a href="/1.Front end/1.HTML/1.HTML.html">HTML</a></li>
+            <li><a href="/1.Front end/2.Css/Css.html">CSS</a></li>
+            <li><a href="/1.Front end/3.Js/Javascript.html">JavaScript</a></li>
+            <li><a href="/2.Backend/1.Node js/Node js.html">Node js</a></li>
+        </ul>
+    </div>
+
+    <div class="body">
+        <div id="menu" class="menu">
+            <h3>CSS</h3>
+            <ul>
+                <li><a href="/1.Front end/2.Css/Css.html">CSS HOME</a></li>
+                <li>
+                    <a href="#" onclick="toggleSubMenu('sub-menu-1')">
+                        Daraxt diagrammasi
+                    </a>
+                    <ul id="sub-menu-1" class="sub-menu">
+                        <li><a href="/1.Front end/2.Css/1.Daraxt diagrammasi/1.Matnni daraxt diagrammasida ko'rsatish.html">Matnni daraxt diagrammasida ko'rsatish</a></li>
+                        <li><a href="/1.Front end/2.Css/1.Daraxt diagrammasi/2.Daraxt diagrammasining tarkibi.html">Daraxt diagrammasining tarkibi</a></li>
+                        <li><a href="/1.Front end/2.Css/1.Daraxt diagrammasi/3.Daraxt diagrammalaridan qutilarga.html">Daraxt diagrammalaridan qutilarga</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#" onclick="toggleSubMenu('sub-menu-2')">"HTML"ga uslub berish</a>
+                    <ul id="sub-menu-2" class="sub-menu">
+                        <li><a href="/1.Front end/2.Css/2.Uslub berish/1.HTMLga to‘g‘ridan to‘g‘ri uslub berish.html">HTMLga to‘g‘ridan to‘g‘ri uslub berish</a></li>
+                        <li><a href="/1.Front end/2.Css/2.Uslub berish/2.HTMLga alohida uslub berish.html">HTMLga alohida uslub berish</a></li>
+                    </ul>
+                </li>
+                <li><a href="/1.Front end/2.Css/3.CSS sintaksisi.html">"CSS" sintaksisi</a></li>
+                <li>
+                    <a href="#" onclick="toggleSubMenu('sub-menu-3')">Selektorlar</a>
+                    <ul id="sub-menu-3" class="sub-menu">
+                        <li><a href="/1.Front end/2.Css/4.Selektorlar/1.Selektor Turlari.html">Selektorlar turlari</a></li>
+                        <li><a href="/1.Front end/2.Css/4.Selektorlar/2.class va id selektorlari.html">Class va id selektorlari</a></li>
+                        <li><a href="/1.Front end/2.Css/4.Selektorlar/3.Selektorlarni birlashtirish.html">Selektorlarni birlashtirish</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#" onclick="toggleSubMenu('sub-menu-4')">Takrorlash</a>
+                    <ul id="sub-menu-4" class="sub-menu">
+                        <li><a href="/1.Front end/2.Css/5.Takrorkash/Termin so‘zlarni takrorlash.html">Termin so‘zlarni takrorlash</a></li>
+                        <li><a href="/1.Front end/2.Css/5.Takrorkash/Selektorlarni takrorlash.html">Selektorlarni takrorlash</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="/1.Front end/2.Css/6.CSSda kaskad nima uchun juda muhim/6.CSSda kaskad nima uchun juda muhim.html">"CSS"da "kaskad" nima uchun juda muhim?</a>
+                </li>
+                <li>
+                    <a href="/1.Front end/2.Css/7.O‘lchov birliklari/7.O‘lchov birliklari.html">O‘lchov birliklari</a>
+                </li>
+                <li>
+                    <a href="/1.Front end/2.Css/8.Qutilar/8.Qutilar.html">Qutilar</a>
+                </li>
+                <li>
+                    <a href="/1.Front end/2.Css/9.Foizlar/9.Foizlar.html">Foizlar</a>
+                </li>
+                <li>
+                    <a href="/1.Front end/2.Css/10.CSS qoidalari/CSS qoidalari.html">CSS qoidalari</a>
+                </li>
+                <li>
+                    <a href="/1.Front end/2.Css/11.CSS uslublarni HTMLdan ajratish/11.CSS uslublarni HTMLdan ajratish.html">CSS uslublarni HTMLdan ajratish</a>
+                </li>
+            </ul>
+        </div> 
+        <div id="container">
+            
+            <div id="sarlavha">
+                <h2>-webkit-text-stroke</h2>
+            </div>
+            <div id="text" class="qisqa">
+                  
+                <p>
+                    CSS xossasi matn belgilari uchun chiziqlarning kengligi va rangini belgilaydi. 
+                    Bu longhand xususiyatlari uchun stenografiya xususiyati va.
+                    <span class="maxsus">-webkit-text-stroke</span> 
+                    <span class="maxsus">-webkit-text-stroke-width</span> 
+                    <span class="maxsus">-webkit-text-stroke-color</span>
+                </p>         
+                
+                <div id="CSS">
+                    <p>CSS</p>
+                    <div class="CSS">
+                        <pre>
+                            /* Width and color values */
+                            -webkit-text-stroke: 4px navy;
+                            
+                            /* Global values */
+                            -webkit-text-stroke: inherit;
+                            -webkit-text-stroke: initial;
+                            -webkit-text-stroke: revert;
+                            -webkit-text-stroke: revert-layer;
+                            -webkit-text-stroke: unset;
+                        </pre>
+                    </div>
+                </div>
+                
+                <h2>
+                    Tarkibiy xususiyatlar
+                </h2>
+                
+                <p>
+                    Bu xususiyat quyidagi CSS xususiyatlarining qisqartmasi hisoblanadi:
+                </p>
+
+                <ul>
+                    <li>
+                        <span class="maxsus">
+                            <a href="#">-webkit-text-stroke-color</a>
+                        </span>
+                    </li>
+                    <li>
+                        <span class="maxsus"><a href="#">-webkit-text-stroke-width</a></span>
+                    </li>
+                </ul>
+                
+                <h2>
+                    Sintaksis
+                </h2>
+
+                <h2 style="font-weight: lighter;">
+                    Qadriyatlar
+                </h2>
+
+                <span class="maxsus">
+                    <a href="#">&lt;length&gt;</a>
+                </span>
+                <p>
+                    Qon tomirining kengligi.
+                </p>
+                
+                <h2>
+                    Rasmiy sintaksis
+                </h2>
+                <div id="CSS">
+                    <p>∞</p>
+                    <div class="CSS">
+                        <pre>
+                            -webkit-text-stroke = 
+                            <line-width>  ||
+                            <color>       
+                          
+                          <line-width> = 
+                            <length [0,∞]>  |
+                            thin            |
+                            medium          |
+                            thick                                  
+                        </pre>
+                    </div>
+                </div>
+                
+                <h2>
+                    Misollar
+                </h2>
+
+                <h2 class="weight100">
+                    Qizil matn chizig'ini qo'shish
+                </h2>
+                
+               <h2 class="weight100">
+                    HTML
+               </h2>
+
+               <div id="CSS">
+                <p>HTML</p>
+                <div class="CSS">
+                    <p>
+                        &lt;<span class="green">p</span> <span class="crimson">id</span> =
+                        "<span class="green">example</span>"&gt;
+                        The stroke of this text is red.&lt;/<span class="green">p</span>&gt;           
+                    </p>
+                </div>
+                </div>
+            <h2>
+                CSS
+            </h2>
+            <div id="CSS">
+                <p>CSS</p>
+                <div class="CSS">
+                    <pre>
+                        <span class="binafsha">#example</span> {
+                            <span class="crimson">font-size</span>: 3em;
+                            <span class="crimson">margin</span>: 0;
+                            <span class="crimson">-webkit-text-stroke</span>: 2px red;
+                          }
+                    </pre>
+                </div>
+            </div>
+
+            <style>
+                #example {
+                            font-size: 3em;
+                            margin: 0;
+                            -webkit-text-stroke: 2px red;
+                          }
+            </style>
+
+            <h2>
+                Natija
+            </h2>
+
+            <div id="CSS">
+                <p>Natija</p>
+                <div class="CSS">
+                    <p id = "example">Ushbu matnning konturi qizil.</p>
+                </div>
+            </div>
+
+            <h2>
+                Texnik xususiyatlari
+            </h2>
+            
+            <div id="CSS">
+                <p>Spetsifikatsiya</p>
+                <div class="CSS">
+                    <p class="kok">
+                        Moslik # the-webkit-text-stroke       
+                    </p>
+                </div>
+            </div>
+
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>

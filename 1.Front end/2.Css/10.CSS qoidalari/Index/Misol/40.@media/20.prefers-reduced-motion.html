@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="Css">
+    <meta name="description" content="Bu yerda Css haqida batafsil ma'lumotlar">
+    <title>prefers-reduced-motion</title>
+    <link rel="stylesheet" href="/1.Front end/2.Css/10.CSS qoidalari/Index/style.css">
+    <script src="/1.Front end/2.Css/Js.js"></script>
+    
+</head>
+<body>
+    <div id="bosh">
+        <div class="bosh">
+            <h1>CSS</h1>
+        </div>
+    </div>
+    <div id="menyu">
+    <div class="menyu">
+        <ul>
+            <button id="toggle-btn" onclick="toggleMenu()">Menu</button>
+            <li><a href="/index.html">HOME</a></li>
+            <li><a href="/1.Front end/1.Front_end.html">FRONT END</a></li>
+            <li><a href="/1.Front end/1.HTML/1.HTML.html">HTML</a></li>
+            <li><a href="/1.Front end/2.Css/Css.html">CSS</a></li>
+        </ul>
+    </div>
+    <div style="display: flex;">
+        <div id="menu" class="menu">
+            <h3 style="padding: 1px 2px;">CSS</h3>
+            <ul>
+                <li><a href="/1.Front end/2.Css/Css.html">CSS HOME</a></li>
+                <li>
+                    <a href="#" onclick="toggleSubMenu('sub-menu-1')">
+                        Daraxt diagrammasi
+                    </a>
+                    <ul id="sub-menu-1" class="sub-menu">
+                        <li><a href="/1.Front end/2.Css/1.Daraxt diagrammasi/1.Matnni daraxt diagrammasida ko'rsatish.html">Matnni daraxt diagrammasida ko'rsatish</a></li>
+                        <li><a href="/1.Front end/2.Css/1.Daraxt diagrammasi/2.Daraxt diagrammasining tarkibi.html">Daraxt diagrammasining tarkibi</a></li>
+                        <li><a href="/1.Front end/2.Css/1.Daraxt diagrammasi/3.Daraxt diagrammalaridan qutilarga.html">Daraxt diagrammalaridan qutilarga</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#" onclick="toggleSubMenu('sub-menu-2')">"HTML"ga uslub berish</a>
+                    <ul id="sub-menu-2" class="sub-menu">
+                        <li><a href="/1.Front end/2.Css/2.Uslub berish/1.HTMLga to‘g‘ridan to‘g‘ri uslub berish.html">HTMLga to‘g‘ridan to‘g‘ri uslub berish</a></li>
+                        <li><a href="/1.Front end/2.Css/2.Uslub berish/2.HTMLga alohida uslub berish.html">HTMLga alohida uslub berish</a></li>
+                    </ul>
+                </li>
+                <li><a href="/1.Front end/2.Css/3.CSS sintaksisi/3.CSS sintaksisi.html">"CSS" sintaksisi</a></li>
+                <li>
+                    <a href="#" onclick="toggleSubMenu('sub-menu-3')">Selektorlar</a>
+                    <ul id="sub-menu-3" class="sub-menu">
+                        <li><a href="/1.Front end/2.Css/4.Selektorlar/1.Selektor Turlari.html">Selektorlar turlari</a></li>
+                        <li><a href="/1.Front end/2.Css/4.Selektorlar/2.class va id selektorlari.html">Class va id selektorlari</a></li>
+                        <li><a href="/1.Front end/2.Css/4.Selektorlar/3.Selektorlarni birlashtirish.html">Selektorlarni birlashtirish</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#" onclick="toggleSubMenu('sub-menu-4')">Takrorlash</a>
+                    <ul id="sub-menu-4" class="sub-menu">
+                        <li><a href="/1.Front end/2.Css/5.Takrorkash/Termin so‘zlarni takrorlash.html">Termin so‘zlarni takrorlash</a></li>
+                        <li><a href="/1.Front end/2.Css/5.Takrorkash/Selektorlarni takrorlash.html">Selektorlarni takrorlash</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="/1.Front end/2.Css/6.CSSda kaskad nima uchun juda muhim/6.CSSda kaskad nima uchun juda muhim.html">"CSS"da "kaskad" nima uchun juda muhim?</a>
+                </li>
+                <li>
+                    <a href="/1.Front end/2.Css/7.O‘lchov birliklari/7.O‘lchov birliklari.html">O‘lchov birliklari</a>
+                </li>
+                <li>
+                    <a href="/1.Front end/2.Css/8.Qutilar/8.Qutilar.html">Qutilar</a>
+                </li>
+                <li>
+                    <a href="/1.Front end/2.Css/9.Foizlar/9.Foizlar.html">Foizlar</a>
+                </li>
+                <li>
+                    <a href="/1.Front end/2.Css/10.CSS qoidalari/CSS qoidalari.html">CSS qoidalari</a>
+                </li>
+                <li>
+                    <a href="/1.Front end/2.Css/11.CSS uslublarni HTMLdan ajratish/11.CSS uslublarni HTMLdan ajratish.html">CSS uslublarni HTMLdan ajratish</a>
+                </li>
+            </ul>
+        </div> 
+        
+        <div id="container">
+            
+            <div id="sarlavha">
+                <h2 style="width: 12em; font-variant: normal;">prefers-reduced-motion</h2>
+            </div>
+            <div id="text">
+                <style>
+            
+                    .Ogohlantirish-box {
+                        background-color: #2c1b1b;
+                        color: #ffcc00;
+                        border-left: 5px solid #ffcc00;
+                        padding: 15px 20px;
+                        border-radius: 4px;
+                        position: relative;
+                        max-width: 80%;
+                        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+                        margin: 1px auto;
+                    }
+            
+                    .Ogohlantirish-box::before {
+                        content: '\26A0'; /* Unicode for warning symbol */
+                        font-size: 24px;
+                        position: absolute;
+                        top: 32px;
+                        left: 10px;
+                        transform: translateY(-50%);
+                        color: #ffcc00;
+                    }
+            
+                    .Ogohlantirish-text {
+                        margin-left: 30px;
+                    }
+                </style>
+                <div class="Ogohlantirish-box">
+                    <div class="Ogohlantirish-text">
+                        <strong>Ogohlantirish:</strong> Ushbu sahifaning pastki qismidagi o'rnatilgan 
+                        misolda ba'zi o'quvchilar uchun muammoli bo'lishi mumkin bo'lgan o'lchov 
+                        harakati mavjud. Vestibulyar harakat buzilishi bo'lgan o'quvchilar 
+                        animatsiyani ko'rishdan oldin o'z qurilmalarida harakatni kamaytirish 
+                        funksiyasini yoqishni xohlashlari mumkin.
+                    </div>
+                </div>
+                <p>
+                    Majburiy bo'lmagan harakat miqdorini minimallashtirish uchun foydalanuvchi 
+                    o'z qurilmasida sozlamani yoqgan yoki yo'qligini aniqlash uchun 
+                    <span style="background: #343434; color: #f2f2f2; padding: 0 4px;">prefers-reduced-motion</span> li 
+                    <a href="#">CSS media xususiyati</a>dan 
+                    foydalaniladi. Sozlama qurilmadagi brauzerga 
+                    foydalanuvchi harakatga asoslangan animatsiyalarni olib tashlaydigan, kamaytiradigan 
+                    yoki almashtiradigan interfeysni afzal ko'rishini bildirish uchun ishlatiladi.
+                </p>
+                <p>
+                    Bunday animatsiyalar vestibulyar harakat buzilishi bo'lganlar uchun 
+                    noqulaylik tug'dirishi mumkin. Katta ob'ektlarni masshtablash yoki 
+                    panorama qilish kabi animatsiyalar vestibulyar harakat tetiklari bo'lishi mumkin.
+                </p>
+                
+                <style>
+                    a {
+                        text-decoration: none;
+                    }
+                </style>
+                 <div id="CSS" style=" margin: 10px auto; width: 80%;" >
+                    <p>CSS</p>
+                    <div style="background-color: #343434; margin: 0 auto; ">
+                        <p>
+                            <span style="color: green; font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;">@media</span> (<span style="color: green;">prefers-reduced-motion</span>) { <br>
+                                /* styles to apply if a user's device settings are set to reduced motion */ <br>
+                              } <br>
+                        </p>
+                    </div>
+                </div>
+                
+                <style>
+                    #CSS {
+                        border-radius: 5px;
+                        background-color:darkgrey;
+                    }
+                    #CSS p {
+                        padding-bottom: 0;
+                        margin: 0;
+                    }
+                </style>
+                
+                <h2 style="font-variant: common-ligatures small-caps;">
+                    Sintaksis
+                </h2>
+                <dl>
+                    <dt>
+                        <span style="background: #353535; padding: 1px 5px; border-radius: 3px; color: #fff;">no-preference</span>
+                    </dt>
+                    <dd>
+                        Foydalanuvchi qurilmada hech qanday afzal ko'rmaganligini bildiradi. Ushbu kalit so'z qiymati noto'g'ri deb baholanadi.
+                    </dd>
+                    <dt>
+                        <span style="background: #353535; padding: 1px 5px; border-radius: 3px; color: #fff;">reduce</span>
+                    </dt>
+                    <dd>
+                        Foydalanuvchi o'z qurilmasida harakatni kamaytirish uchun sozlamani yoqganligini 
+                        bildiradi. Ushbu kalit so'z qiymati rost deb baholanadi.
+                    </dd>
+                </dl>
+                <h2>
+                    Foydalanuvchi afzalliklari
+                </h2>
+                <p>
+                    Firefox uchun 
+                    <span style="background: #353535; padding: 1px 5px; border-radius: 3px; color: #fff;">
+                        reduce</span> so'rovi bajariladi, agar:
+                </p>
+                <ul>
+                    <li>
+                        GTK/GNOME-da: Sozlamalar > Maxsus imkoniyatlar > Ko‘rish > Qisqartirilgan animatsiya yoqilgan.
+                        <ul>
+                            <li>
+                                GNOME-ning eski versiyalarida GNOME Tweaks > Umumiy yorlig'i 
+                                (yoki versiyaga qarab Tashqi ko'rinish) > Animatsiyalar o'chirilgan.
+                            </li>
+                            <li>
+                                Shu bilan bir qatorda, GTK 3 konfiguratsiya faylining [Settings] 
+                                blokiga gtk-enable-animations = false ni qo‘shing.
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        Plazma/KDE-da: Tizim sozlamalari > Ish joyidagi xatti-harakatlar -> 
+                        Umumiy xatti-harakat > “Animatsiya tezligi” toʻliq “Instant”ga oʻrnatiladi.
+                    </li>
+                    <li>
+                        Windows 10 da: Sozlamalar > Kirish qulayligi > Displey > Windowsda animatsiyalarni ko‘rsatish.
+                    </li>
+                    <li>
+                        Windows 11 da: Sozlamalar > Maxsus imkoniyatlar > Vizual effektlar > Animatsiya effektlari
+                    </li>
+                    <li>
+                        MacOS tizimida: Tizim sozlamalari > Maxsus imkoniyatlar > Displey > Harakatni kamaytirish.
+                    </li>
+                    <li>
+                        iOS-da: Sozlamalar > Maxsus imkoniyatlar > Harakat.
+                    </li>
+                    <li>
+                        Android 9+ da: Sozlamalar > Maxsus imkoniyatlar > Animatsiyalarni olib tashlash.
+                    </li>
+                    <li>
+                        Firefox-da about:config: ui.prefersReducedMotion deb nomlangan raqam 
+                        afzalligini qo'shing va uning qiymatini to'liq animatsiya uchun 0 ga 
+                        yoki harakatni qisqartirish afzalligini ko'rsatish uchun 1 ga o'rnating. 
+                        Ushbu parametrga kiritilgan o'zgartirishlar darhol kuchga kiradi.
+                    </li>
+                </ul>
+
+                <h2>
+                    Animatsiya masshtabini tanlash
+                </h2>
+                <h2>
+                    HTML
+                </h2>
+                <div id="CSS" style=" margin: 10px auto; width: 80%;" >
+                    <p>HTML</p>
+                    <div style="background-color: #343434; margin: 0 auto; ">
+                        <p>
+                            &lt;div class="animation"&gt;animated box&lt;/div&gt;
+                        </p>
+                    </div>
+                </div>
+                
+
+                <h2>
+                    CSS
+                </h2>
+                <div id="CSS" style=" margin: 10px auto; width: 80%;" >
+                    <p>HTML</p>
+                    <div style="background-color: #343434; margin: 0 auto; ">
+                        <p>
+                            .animation { <br>
+                                animation: pulse 1s linear infinite both; <br>
+                                background-color: purple; <br>
+                              } <br>
+                              
+                              /* Tone down the animation to avoid vestibular motion triggers. */ <br>
+                              @media (prefers-reduced-motion) { <br>
+                                .animation { <br>
+                                  animation: dissolve 4s linear infinite both; <br>
+                                  background-color: green; <br>
+                                  text-decoration: overline; <br>
+                                }
+                              }
+                        </p>
+                    </div>
+                </div>
+                
+                <h2>
+                    Natija
+                </h2>
+                <style>
+                    .animation {
+                      animation: pulse 1s linear infinite both;
+                      background-color: purple;
+                      color: #fff;
+                      font: 1.2em sans-serif;
+                      width: 10em;
+                      padding: 1em;
+                      border-radius: 1em;
+                      text-align: center;
+                    }
+
+                /* Tone down the animation to avoid vestibular motion triggers. */
+                @media (prefers-reduced-motion) {
+                  .animation {
+                    animation: dissolve 4s linear infinite both;
+                    background-color: green;
+                    text-decoration: overline;
+                      }
+                    }
+                  
+                </style>
+                <div id="CSS" style=" margin: 10px auto; width: 80%;" >
+                    <p>Natija</p>
+                    <div style="background-color: #343434; margin: 0 auto; padding: 30px 80px;">
+                        <div class="animation">animated box</div>
+                    </div>
+                </div>
+              
+                
+             
+               
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>

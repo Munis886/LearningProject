@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="Css">
+    <meta name="description" content="Bu yerda Css haqida batafsil ma'lumotlar">
+    <title>Selektor turlari</title>
+    <link rel="stylesheet" href="/1.Front end/2.Css/style.css">
+    <script src="Js.js"></script>
+</head>
+<body>
+    <div id="bosh">
+        <div class="bosh">
+            <h1>CSS</h1>
+        </div>
+    </div>
+    <div id="menyu">
+    <div class="menyu">
+        <button id="toggle-btn" onclick="toggleMenu()">Menu</button>
+        <ul>
+            <li><a href="/index.html">HOME</a></li>
+            <li><a href="/1.Front end/1.Front_end.html">FRONT END</a></li>
+            <li><a href="/1.Front end/1.HTML/1.HTML.html">HTML</a></li>
+            <li><a href="/1.Front end/2.Css/Css.html">CSS</a></li>
+            <li><a href="/1.Front end/3.Js/Javascript.html">JAVASCRIPT</a></li>
+        </ul>
+    </div>
+    <div style="display: flex;">
+        <div id="menu" class="menu">
+            <h3 style="padding: 1px 2px;">CSS</h3>
+            <ul>
+                <li><a href="/1.Front end/2.Css/Css.html">CSS HOME</a></li>
+                <li>
+                    <a href="#" onclick="toggleSubMenu('sub-menu-1')">
+                        Daraxt diagrammasi
+                    </a>
+                    <ul id="sub-menu-1" class="sub-menu">
+                        <li><a href="/1.Front end/2.Css/1.Daraxt diagrammasi/1.Matnni daraxt diagrammasida ko'rsatish.html">Matnni daraxt diagrammasida ko'rsatish</a></li>
+                        <li><a href="/1.Front end/2.Css/1.Daraxt diagrammasi/2.Daraxt diagrammasining tarkibi.html">Daraxt diagrammasining tarkibi</a></li>
+                        <li><a href="/1.Front end/2.Css/1.Daraxt diagrammasi/3.Daraxt diagrammalaridan qutilarga.html">Daraxt diagrammalaridan qutilarga</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#" onclick="toggleSubMenu('sub-menu-2')">"HTML"ga uslub berish</a>
+                    <ul id="sub-menu-2" class="sub-menu">
+                        <li><a href="/1.Front end/2.Css/2.Uslub berish/1.HTMLga to‘g‘ridan to‘g‘ri uslub berish.html">HTMLga to‘g‘ridan to‘g‘ri uslub berish</a></li>
+                        <li><a href="/1.Front end/2.Css/2.Uslub berish/2.HTMLga alohida uslub berish.html">HTMLga alohida uslub berish</a></li>
+                    </ul>
+                </li>
+                <li><a href="/1.Front end/2.Css/3.CSS sintaksisi/3.CSS sintaksisi.html">"CSS" sintaksisi</a></li>
+                <li>
+                    <a href="#" onclick="toggleSubMenu('sub-menu-3')">Selektorlar</a>
+                    <ul id="sub-menu-3" class="sub-menu">
+                        <li><a href="/1.Front end/2.Css/4.Selektorlar/1.Asosiy CSS Selektorlari/1.Asosiy CSS Selektorlari.html">Asosiy CSS Selektorlar</a></li>
+                        <li><a href="/1.Front end/2.Css/4.Selektorlar/1.Selektor Turlari.html">Selektorlar turlari</a></li>
+                        <li><a href="/1.Front end/2.Css/4.Selektorlar/2.class va id selektorlari.html">Class va id selektorlari</a></li>
+                        <li><a href="/1.Front end/2.Css/4.Selektorlar/3.Selektorlarni birlashtirish.html">Selektorlarni birlashtirish</a></li>
+                        <li><a href="/1.Front end/2.Css/4.Selektorlar/4.CSS Selektorlar.html">CSS Selektorlar</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#" onclick="toggleSubMenu('sub-menu-4')">Takrorlash</a>
+                    <ul id="sub-menu-4" class="sub-menu">
+                        <li><a href="/1.Front end/2.Css/5.Takrorkash/Termin so‘zlarni takrorlash.html">Termin so‘zlarni takrorlash</a></li>
+                        <li><a href="/1.Front end/2.Css/5.Takrorkash/Selektorlarni takrorlash.html">Selektorlarni takrorlash</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="/1.Front end/2.Css/6.CSSda kaskad nima uchun juda muhim/6.CSSda kaskad nima uchun juda muhim.html">"CSS"da "kaskad" nima uchun juda muhim?</a>
+                </li>
+                <li>
+                    <a href="/1.Front end/2.Css/7.O‘lchov birliklari.html">O‘lchov birliklari</a>
+                </li>
+                <li>
+                    <a href="/1.Front end/2.Css/8.Qutilar.html">Qutilar</a>
+                </li>
+                <li>
+                    <a href="/1.Front end/2.Css/9.Foizlar.html">Foizlar</a>
+                </li>
+                <li>
+                    <a href="/1.Front end/2.Css/10.CSS qoidalari.html">CSS qoidalari</a>
+                </li>
+                <li>
+                    <a href="/1.Front end/2.Css/11.CSS uslublarni HTMLdan ajratish/11.CSS uslublarni HTMLdan ajratish.html">CSS uslublarni HTMLdan ajratish</a>
+                </li>
+                <li>
+                    <a href="/1.Front end/2.Css/12.Ranglardan foydalanish/12.Ranglardan foydalanish.html">Ranglardan foydalanish</a>
+                </li>
+                <li>
+                    <a href="/1.Front end/2.Css/13.Shriftlar/13.Shriftlar.html">Shriftlar</a>
+                </li>
+                <li>
+                    <a href="/1.Front end/2.Css/14.CSSda Flexbox xossasi/14.CSSda Flexbox xossasi.html">"CSS"da "Flexbox" xossasi</a>
+                </li>
+            </ul>
+        </div> 
+        <div id="container">
+            
+            
+            <div id="sarlavha">
+                <h2 style="width: 15em;">Selektor: class va id selektorlari</h2>
+            </div>
+            <div id="text">
+                <p>
+                    Siz har doim ham bir xil turdagi barcha elementlarni bir xil tarzda uslublashni xohlamaysiz.
+                    Misol uchun, agar sizning hujjatingiz yon panelli maqola bo'lsa, siz yon paneldagi va maqoladagi 
+                    paragraf elementlariga boshqa uslubni qo'llashingiz mumkin. Buni qilishning usullaridan biri HTML 
+                    teglariga maxsus atributni, ya'ni class atributini qo'yishdir. Kompyuter tillarida sinf bir xil 
+                    xususiyatlarga ega bo'lgan narsalar guruhi uchun haqiqatan ham keng tarqalgan so'zdir.
+                    Hisoblashda davom etar ekansiz, turli tillardagi darslarning boshqa ko'plab misollarini ko'rasiz. 
+                    Ammo hozircha bu yerda html-dagi class faqat maxsus atribut bo'lib, biz aytishimiz mumkinki,
+                    masalan, ba'zi paragraflar boshqa paragraflarga qaraganda boshqacha uslubga ega bo'lishi kerak.
+                    
+                </p>
+                <p>
+                    Xo‘sh, qanday qilib sinfni yaratish kerak?
+                </p>
+                <p>
+                    bu classga qanday qilib nom berish va undan foydalanishni boshlash uchun siz ba’zi HTML elementlariga
+                    class atributini qo‘shishingiz                 
+                </p>
+                <p>
+                    <span style="color:darkcyan ;">&lt;p class="<span style="color: darkgoldenrod;">introduction</span>"&gt;</span> <br>
+                    Bu sinfga ega paragraf.  <span style="color:darkcyan ;"> &lt;/p&gt; </span><br>
+                    <span style="color:darkcyan ;"> &lt;p class="<span style="color: darkorange;">followup</span>"&gt;</span> <br>
+                    Bu boshqa sinfga ega <span style="color:darkcyan ;"> &lt;/p&gt; </span>
+                </p>
+                <p>
+                    va xuddi shu nom bilan CSS qoidalar to‘plamini yaratishingiz kerak.     
+                </p>
+                <p>
+                    <span style="color:darkcyan ;">
+                        .introduction { <br>
+                    &nbsp;&nbsp; font-size: larger; <br>
+                        }
+                    </span>
+                </p>
+                <p>
+                    <span style="color:darkcyan ;">
+                        .followup { <br>
+                    &nbsp;&nbsp; color: dimgray; <br>
+                        }
+                    </span>
+                </p>
+                <p>
+                    va classga CSS qoidalarini qo'llash usuli nuqta bilan boshlanadigan selektorni yozishdir.
+                    Sahifada siz qoidani qo'llashni istagan bir nechta elementlar bo'lishi mumkin bo'lgan hollarda siz 
+                    foydalanishingiz kerak bo'lgan narsa classlardir.
+                </p>
+                <p>
+                    Agar siz uni qo'llash uchun faqat bitta element bo'lishini bilsangiz, class o'rniga id atributidan foydalanib 
+                    buni aniqroq qilishingiz mumkin. 
+                </p>
+                <p>
+                    <span style="color: #333">
+                        &lt;div <span style="color: brown;">id</span>="<span style="color: chocolate;">main-article</span>"&gt; <br>
+                &nbsp;&nbsp;&nbsp; <span style="color: #000;">CSS kuchukchalarni kuldiradi</span> <br>
+                        &lt;/div&gt; <br><br>
+                    
+                        &lt;div 
+                        <span style="color: brown;">id</span>="<span style="color: chocolate;">sidebar</span>"&gt; <br>
+                &nbsp;&nbsp;&nbsp; <span style="color: #000;">OK, aslida emas.</span> <br>
+                        &lt;/div&gt;    <br>
+                    </span>
+                </p>
+                <p>
+                    Id va sinf o'rtasidagi farq shundaki, id noyob bo'lishi kerak. Sahifada 
+                    ma'lum bir identifikatorga ega faqat bitta element bo'lishi mumkin. Aksincha, bir xil sinfga ega bo'lgan 
+                    elementlarning soni har qanday bo'lishi mumkin. Id qiymatlari sinf qadriyatlari bilan bir xil joydan kelib chiqadi, 
+                    siz ularni shunchaki tuzasiz. Lekin selektordagi nuqta oʻrniga id boʻyicha elementlarga uslubni qoʻllash uchun
+                    siz # (xesh) belgisi yoki raqam belgisi yoki shulardan birini qoʻyasiz.
+                </p>
+                <p>
+                    <span style="color:darkcyan ;">
+                        #sidebar { <br>
+                    &nbsp;&nbsp; float: right; <br>
+                    &nbsp;&nbsp; width: 20%; <br>
+                    &nbsp;&nbsp; border: 1px solid green; <br>
+                        }
+                    </span>
+                </p>
+            </div>
+           
+            
+        </div>
+    </div>
+    
+</body>
+</html>

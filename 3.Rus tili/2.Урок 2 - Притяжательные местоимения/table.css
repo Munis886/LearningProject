@@ -1,0 +1,36 @@
+body {
+    background-color: #f0d888;
+}
+.table1 {
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+td {
+    text-align: center;
+    border: 1px solid black;
+}
+th {
+    background-color: #f1d86a;
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+.table tr {
+    background-color: #f0d888;
+}
+.table1 tr:nth-child(even) {
+    background-color: rgb(255, 223, 80);
+}
+
+.table2 {
+    width: 80%;
+    margin: 0 auto;
+    border: 1px solid black;
+    border-collapse: collapse;
+    margin-bottom: 25px;
+}
+b {
+    color: red;
+}

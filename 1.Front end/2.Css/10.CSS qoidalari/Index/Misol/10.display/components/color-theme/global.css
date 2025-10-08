@@ -1,0 +1,9 @@
+html[data-theme="light"] {
+  --csstools-color-scheme--light: initial;
+  color-scheme: light;
+}
+
+html[data-theme="dark"] {
+  --csstools-color-scheme--light:  ;
+  color-scheme: dark;
+}

@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="Javascript, Java script">
+    <meta name="description" content="Bu yerda Javascript haqida batafsil ma'lumot olamiz">
+    <link rel="stylesheet" href="/2.Backend/1.Node js/style.css">
+    <title>Node js</title>
+    <script src="/2.Backend/1.Node js/script.js"></script>
+    <script src="/2.Backend/1.Node js/Js.js"></script>
+</head>
+<body>
+    <div id="bosh">
+        <div class="bosh">
+            <h1>Node js</h1>
+        </div>
+    </div>
+
+     <div id="menyu">
+    <div class="menyu">
+        <button id="toggle-btn" onclick="toggleMenu()">Menu</button>
+        <ul>
+            <li><a href="/index.html">HOME</a></li>
+            <li><a href="/1.Front end/1.Front_end.html">FRONT END</a></li>
+            <li><a href="/1.Front end/1.HTML/1.HTML.html">HTML</a></li>
+            <li><a href="/1.Front end/2.Css/Css.html">CSS</a></li>
+            <li><a href="/1.Front end/3.Js/Javascript.html">JavaScript</a></li>
+            <li><a href="/2.Backend/1.Node js/Node js.html">Node js</a></li>
+        </ul>
+    </div>
+    </div>
+    <div class="body">
+        <div id="menu" class="menu">
+            <h3>Node js</h3>
+            <ul>
+                <li>
+                    <a href="#" onclick="toggleSubMenu('sub-menu-1')">
+                        <span>1</span> Node jsga kirish
+                    </a>
+                    <ul id="sub-menu-1" class="sub-menu">
+                        <li>
+                            <a href="/2.Backend/1.Node js/1.Node jsga kirish/1.Node jsga kirish.html">
+                                1.1"Node js"ga kirish 
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/2.Backend/1.Node js/2.Node o'zi nima/2.Node o'zi nima.html">
+                                1.2."Node" o'zi nima?
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/2.Backend/1.Node js/3.Node.js ishni boshlash/3.Node.js ishni boshlash.html">
+                                1.3.Node.js Ishni boshlash
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/2.Backend/1.Node js/4.Node.js modullari/4.Node.js modullari.html">
+                                1.4.Node.js modullari
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/2.Backend/1.Node js/5.Node.js HTTP moduli/5.Node.js HTTP moduli.html">
+                                Node.js HTTP moduli
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/2.Backend/1.Node js/6.Node.js fayl tizimi moduli/6.Node.js fayl tizimi moduli.html">
+                                Node.js fayl tizimi moduli
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/2.Backend/1.Node js/7.Node.js URL moduli/7.Node.js URL moduli.html">
+                                Node.js URL moduli
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/2.Backend/1.Node js/8.Node.js NPM/8.Node.js NPM.html">
+                                1.8.Node.js NPM
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/2.Backend/1.Node js/9.Node.js hodisalari/9.Node.js hodisalari.html">
+                                1.9.Node.js hodisalari
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/2.Backend/1.Node js/10.Node.js fayllarni yuklash/10.Node.js fayllarni yuklash.html">
+                                1.10.Node.js fayllarni yuklash
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/2.Backend/1.Node js/11.Node.js elektron pochta xabarini yuborish/11.Node.js elektron pochta xabarini yuborish.html">
+                                1.11.Node.js elektron pochta xabarini yuborish
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                
+            </ul>
+        </div> 
+
+        <div id="container">
+            <div id="sarlavha">
+                <h2>
+                    Node.js modullari
+                </h2>
+            </div>
+            <div id="text">
+
+                <h3>
+                    Node.js-dagi modul nima?
+                </h3>
+                <p>
+                    Modullarni JavaScript kutubxonalari bilan bir xil deb hisoblang.
+                </p>
+                <p>
+                    Ilovangizga kiritmoqchi bo'lgan funktsiyalar to'plami.
+                </p>
+
+                <h3>
+                    O'rnatilgan modullar
+                </h3>
+
+               <p>
+                    Node.js o'rnatilgan modullar to'plamiga ega bo'lib, 
+                    ulardan boshqa o'rnatmasdan foydalanishingiz mumkin.
+               </p>
+
+               
+               
+                <p>
+                    Modullarning toʻliq roʻyxati uchun <a href="https://www.w3schools.com/nodejs/ref_modules.asp">oʻrnatilgan modullar maʼlumotnomamizga</a> qarang .
+                </p>
+
+                <h3>
+                    Modullarni kiriting
+                </h3>
+                <style>
+                    
+                </style>
+                <p>
+                    Modulni kiritish uchun <span class="crimson">require()</span> 
+                    modul nomi bilan funksiyadan foydalaning:
+                </p>
+
+                <div class="oddiy_chegara">
+                    <div class="chegara_ichida">
+                        <p>
+                            var http = require('http');
+                        </p>
+                    </div>
+                </div>
+
+                <p>
+                    Endi sizning ilovangiz HTTP moduliga kirish huquqiga ega va server yaratishi mumkin:
+                </p>
+
+                <div class="oddiy_chegara">
+                    <div class="chegara_ichida">
+                        <p>
+                            http.createServer(function (req, res) { <br>
+                              &nbsp;   res.writeHead(200, {'Content-Type': 'text/html'});<br>
+                              &nbsp;   res.end('Hello World!');<br>
+                              }).listen(8080);<br>
+                        </p>
+                    </div>
+                </div>
+
+                <h3>
+                    O'z modullaringizni yarating
+                </h3>
+
+                <p>
+                    Siz o'zingizning modullaringizni yaratishingiz 
+                    va ularni ilovalaringizga osongina kiritishingiz mumkin.
+                </p>
+
+                <p>
+                    Quyidagi misol sana va vaqt obyektini qaytaradigan modul yaratadi:
+                </p>
+                <div class="oddiy_chegara">
+                    <h3>
+                        Misol
+                    </h3>
+                    <p>
+                        Joriy sana va vaqtni qaytaradigan modul yarating:
+                    </p>
+                    <div class="chegara_ichida">
+                        <p>
+                            exports.myDateTime = function () { <br>
+                              &nbsp;  return Date();<br>
+                              };
+                        </p>
+                    </div>
+                </div>
+
+               
+
+                <p>
+                    <span class="crimson">exports</span> Xususiyatlar va usullarni modul faylidan 
+                    tashqarida mavjud qilish uchun kalit so'zdan foydalaning .
+                </p>
+
+                <p>
+                    Yuqoridagi kodni "myfirstmodule.js" deb nomlangan faylga saqlang.
+                </p>
+
+                <h3>
+                    O'z modulingizni qo'shing
+                </h3>
+
+                <p>
+                    Endi siz modulni istalgan Node.js faylingizga kiritishingiz va undan foydalanishingiz mumkin.
+                </p>
+
+                <div class="oddiy_chegara">
+                    <h3>
+                        Misol
+                    </h3>
+                    <p>
+                        Node.js faylida "myfirstmodule" modulidan foydalaning:
+                    </p>
+                    <div class="chegara_ichida">
+                        <p>
+                            var http = require('http'); <br>
+                            var dt = require('./myfirstmodule');<br><br>
+                            
+                            http.createServer(function (req, res) {<br>
+                              res.writeHead(200, {'Content-Type': 'text/html'});<br>
+                              res.write("The date and time are currently: " + dt.myDateTime());<br>
+                              res.end();<br>
+                            }).listen(8080);<br>
+                        </p>
+                    </div>
+                </div>
+                <p>
+                    E'tibor bering, biz <span class="crimson">./</span> modulni topish uchun foydalanamiz, 
+                    ya'ni modul Node.js fayli bilan bir xil papkada joylashgan.
+                </p>
+                <p>
+                    Yuqoridagi kodni "demo_module.js" deb nomlangan faylga saqlang va faylni ishga tushiring:
+                </p>
+
+                <div class="oddiy_chegara">
+                    <p>
+                        demo_module.js dasturini ishga tushiring:
+                    </p>
+                    <div class="chegara_ichida2">
+                        <p>
+                            C:\Users\Your Name>node demo_module.js
+                        </p>
+                    </div>
+                </div>
+                <p>
+                    Agar siz kompyuteringizda bir xil amallarni bajargan bo'lsangiz, 
+                    misoldagi kabi natijani ko'rasiz: http://localhost:8080
+
+                </p>
+            </div>
+            
+        </div> 
+    </div>
+   
+</body>
+</html>

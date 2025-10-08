@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>img</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="bosh">
+        <div class="bosh">
+            <h1>Inline elementlar</h1>
+        </div>
+    </div>
+
+    <div id="menyu">
+        <div class="menyu">
+            <ul>
+                <li><a href="/index.html">HOME</a></li>
+                <li><a href="#"></a></li>
+                <li><a href="#"></a></li>
+            </ul>
+        </div>
+    </div>
+    <div id="container">
+        <div id="text">
+
+            <div class="orqaga">
+                <a href="/1.Front end/1.HMTL/Elementlar/inline elementlar.html">&lt;&lt;orqaga</a>
+            </div>
+            
+            <h2>&lt;img&gt; - Rasmlarni qo'shish</h2>
+            
+        </div>
+        <div id="text">
+            <p>
+                Mushuklarning rasmlari xaritalarisiz, yoki yangi fotosuratlar, diagrammalar,
+                va reklamalar bannerlarsiz internet nima bo'lar edi? Rasmlar Internetning
+                juda muvaffaqqiyatli ekanligining muhim qismidir. Siz o'zingizni veb-sahifangizga 
+                rasmlarni qanday kiritish haqida savol tug'ilgandir. Bu ajablanarli emas. 
+                Buning uchun HMTL elementi mavjud. Ushbu element rasm uchun &lt;<span style="color: dodgerblue;">img</span>&gt; va 
+                &lt;<span style="color: dodgerblue;">a</span>&gt; element 
+                bilan bir xil ishlaydi, ammo ba'zi muhim farqlar bilan. 
+            </p>
+            <p>
+                &lt;a <span style="color: aqua;">href</span>
+                =
+                <span style="color: brown;">"http://github.com"</span>&gt;<br>
+                &nbsp;&nbsp;&nbsp;Github <br>
+                &lt;/a&gt;
+            </p>
+            <p>
+                Havolalar uchun element
+                <span style="color:dodgerblue">href</span> deb nomlangan bitta atributdan foydalanadi, uning qiymati siz bog'lanmoqchi 
+                bo'lgan sahifaning URL manzilidir. Ammo img elementi ikkita atributdan foydalanadi
+                <span style="color:dodgerblue">src</span> va <span style="color:dodgerblue">alt</span>,        
+            </p>
+            <p>
+                <span style="color: darkred;">code:</span> <br>
+                &lt;img <span style="color: aqua;">src</span>
+                = <span style="color: brown;">"https://placebear.com/800/600"</span> 
+                <span style="color: aqua;">alt</span> = <span style="color: brown;">"photo of some bears"</span> &gt; <br>  
+
+            </p>
+            <p>
+                <span style="color: darkred;">display:</span> <br>
+                <img src="https://placebear.com/800/600" alt="photo of some bears">   
+            </p>
+            <p>
+                <span style="color:dodgerblue">src</span> manba bu sizning web sahifangizga joylashtirmoqchi 
+                bo'lgan rasmning URL manzili. <span style="color:dodgerblue">alt</span> alternativani anglatadi
+                va tasvirning matnli tavsifi. Bu yerda paydo bo'lgan matn odatda alternativa deb nomlanadi.
+                Endi HTML ni yozganingizda, ikkala atributni ham qo'shishingiz kerak. <span style="color:dodgerblue">src</span> 
+                atributi brauzerga tasvirni qayerdan olish kerakligini, tasvir manbai nima ekanligini anglatadi.
+                <span style="color:dodgerblue">alt</span> atributi brauzerga qaysi rasmni tasvirlay olmasligini aytadi. 
+                Masalan, fayl serverda bo'lmasa yoki ushbu rasmni yuklab olishdan oldin foydalanuvchining tarmoq ulanishlari 
+                ishlamasa, muqobil matn paydo bo'ladi va bu mobil qurilmalar uchun odatiy holdir.
+                Yoki foydalanuvchilar rasmlarni ko'rmasa, masalan, ular ko'r bo'lsa. Esda tutish kerak
+                bo'lgan narsa: img elementini sizning HTML faylingizga yozib qoldirish rasm faylingizni 
+                HTML faylingizga ko'chirmaydi. Bu shunchaki brauzerga ushbu rasm faylni qayerdan topish
+                kerakligini, uning manbasi nima ekanligini aytadi. Rasm fayli hali ham lokal disk
+                yoki serverning biror-bir joyida joylashgan bo'lishi kerak. IMG elementi bo'sh elementdir, 
+                masalan BR kabi. U hech qanday matn tarkibiga ega emas va unga yaqin teg yo'q.
+                Yodda tutingki, HTML elementning tarkibi p elementida bo'lgani kabi, ochiq va yopiq teglar
+                orasidagi matn bo'ladi. Bu yerda ishlatadigan ma'noda src va alt rasm, tegi mazmunga ega 
+                emas, ular ushbu elementning HTML atributilari IMG elementi Inline (ichki) element.
+                Siz rasmni matnning o'rtasiga qo'yishingiz mumkin. Agar rasm atrofidagi matndan uzunroq
+                bo'lsa, unda matn atrofida bo'sh joylar hosil qiladi.               
+            </p>
+    
+        </div>
+        <div id="sarlavha">
+            <h2 style="width: 15em;">Fayllar va nisbiy "URL" manzillar</h2>
+        </div>
+        <div id="text">
+            <p>
+                Ushbu rasm URL manzilini avvalroq sezgan bo'lishingiz mumkin. U placebear.com degan saytdan olingan, 
+                ayiqlarning ko'plab tasvirlari mavjud. Agar siz o'lchamlari 800 dan 600 pikselgacha
+                bo'lgan rasmni xohlasangiz, placebore.com ayiqni tasviri ekanligiga amin bo'lsangiz sizga buni topib 
+                beradi.
+            </p>
+            <p>
+                &lt;img <span style="color: aqua;">src</span>
+                = <span style="color: brown;">"https://placebear.com/800/600"</span> 
+                <span style="color: aqua;">alt</span> = <span style="color: brown;">"photo of some bears"</span> &gt;
+            </p>
+            <p>
+                Ushbu rasmni note.html faylimga qo'shish uchun, men uni &lt;img&gt; tegiga qo'shaman, va 
+                brauzerim ushbu HTML faylni ochganda, placebore.com saytiga kirib, ushbu rasmni, kerakligini 
+                bildiradi, va sahifaga joylashtiradi.    
+            </p>
+        </div>
+    </div>
+</body>
+</html>

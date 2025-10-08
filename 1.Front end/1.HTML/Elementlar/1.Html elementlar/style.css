@@ -1,0 +1,95 @@
+/*elementlardagi marginlarni yo'qotadi*/
+body, h1,h2 {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: darkgrey;
+}
+
+#bosh {
+    background-color:chocolate;
+    padding: 10px 0;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.bosh {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.menyu {
+    width: 70%;
+    margin: 0 auto;
+}
+
+#menyu {
+    background-color:dimgray;
+    width: 80%;
+    margin: 0 auto;
+}
+
+#menyu ul {
+    margin: 0;
+}
+#menyu ul li{
+    list-style-type: none;
+    display: inline;
+}
+
+#menyu ul li a {
+    text-decoration: none;
+    color: #fff;
+    padding: 5px 10px;
+    display: inline-block;
+}
+
+#container {
+    width: 80%;
+    margin: 0 auto;
+    font-size: 17px;
+    background-color: bisque;
+}
+#sarlavha h2{
+    margin: 10px 0;
+    border-radius: 0 10px 10px 0;
+    background-color: greenyellow;
+    padding: 5px 5px;
+    text-align: center;
+}
+
+#text ol li a{
+    text-decoration: none;
+    color: black;
+}
+
+#text {
+    padding: 2px 10px;
+}
+
+#text p{
+    padding: 2px 25px;
+    margin: 2px 0;
+    font-size: 17px;
+}
+
+.sayt {
+    color: blue;
+    text-align: right;
+    margin: 0 auto;
+}
+
+.orqaga a {
+    text-decoration: none;
+    color: #333;
+}
+
+#text p code {
+    background-color: #555;
+    font-family: Times; 
+    border-radius: 15px 0 10px 15px;
+    padding: 3px;
+    color: #fff;
+}

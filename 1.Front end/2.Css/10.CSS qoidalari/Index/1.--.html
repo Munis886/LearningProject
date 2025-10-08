@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="Css">
+    <meta name="description" content="Bu yerda Css haqida batafsil ma'lumotlar">
+    <title>--*</title>
+    <link rel="stylesheet" href="/1.Front end/2.Css/style.css">
+    <script src="/1.Front end/2.Css/Js.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="bosh">
+        <div class="bosh">
+            <h1>CSS</h1>
+        </div>
+    </div>
+    <div id="menyu">
+    <div class="menyu">
+        <button id="toggle-btn" onclick="toggleMenu()">Menu</button>
+        <ul>
+            <li><a href="/index.html">HOME</a></li>
+            <li><a href="/1.Front end/1.Front_end.html">FRONT END</a></li>
+            <li><a href="/1.Front end/1.HTML/1.HTML.html">HTML</a></li>
+            <li><a href="/1.Front end/2.Css/Css.html">CSS</a></li>
+        </ul>
+    </div>
+    <div class="body">
+        <div id="menu" class="menu">
+            <h3>CSS</h3>
+            <ul>
+                <li><a href="/1.Front end/2.Css/Css.html">CSS HOME</a></li>
+                <li>
+                    <a href="#" onclick="toggleSubMenu('sub-menu-1')">
+                        Daraxt diagrammasi
+                    </a>
+                    <ul id="sub-menu-1" class="sub-menu">
+                        <li><a href="/1.Front end/2.Css/1.Daraxt diagrammasi/1.Matnni daraxt diagrammasida ko'rsatish.html">Matnni daraxt diagrammasida ko'rsatish</a></li>
+                        <li><a href="/1.Front end/2.Css/1.Daraxt diagrammasi/2.Daraxt diagrammasining tarkibi.html">Daraxt diagrammasining tarkibi</a></li>
+                        <li><a href="/1.Front end/2.Css/1.Daraxt diagrammasi/3.Daraxt diagrammalaridan qutilarga.html">Daraxt diagrammalaridan qutilarga</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#" onclick="toggleSubMenu('sub-menu-2')">"HTML"ga uslub berish</a>
+                    <ul id="sub-menu-2" class="sub-menu">
+                        <li><a href="/1.Front end/2.Css/2.Uslub berish/1.HTMLga to‘g‘ridan to‘g‘ri uslub berish.html">HTMLga to‘g‘ridan to‘g‘ri uslub berish</a></li>
+                        <li><a href="/1.Front end/2.Css/2.Uslub berish/2.HTMLga alohida uslub berish.html">HTMLga alohida uslub berish</a></li>
+                    </ul>
+                </li>
+                <li><a href="/1.Front end/2.Css/3.CSS sintaksisi/3.CSS sintaksisi.html">"CSS" sintaksisi</a></li>
+                <li>
+                    <a href="#" onclick="toggleSubMenu('sub-menu-3')">Selektorlar</a>
+                    <ul id="sub-menu-3" class="sub-menu">
+                        <li><a href="/1.Front end/2.Css/4.Selektorlar/1.Selektor Turlari.html">Selektorlar turlari</a></li>
+                        <li><a href="/1.Front end/2.Css/4.Selektorlar/2.class va id selektorlari.html">Class va id selektorlari</a></li>
+                        <li><a href="/1.Front end/2.Css/4.Selektorlar/3.Selektorlarni birlashtirish.html">Selektorlarni birlashtirish</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#" onclick="toggleSubMenu('sub-menu-4')">Takrorlash</a>
+                    <ul id="sub-menu-4" class="sub-menu">
+                        <li><a href="/1.Front end/2.Css/5.Takrorkash/Termin so‘zlarni takrorlash.html">Termin so‘zlarni takrorlash</a></li>
+                        <li><a href="/1.Front end/2.Css/5.Takrorkash/Selektorlarni takrorlash.html">Selektorlarni takrorlash</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="/1.Front end/2.Css/6.CSSda kaskad nima uchun juda muhim/6.CSSda kaskad nima uchun juda muhim.html">"CSS"da "kaskad" nima uchun juda muhim?</a>
+                </li>
+                <li>
+                    <a href="/1.Front end/2.Css/7.O‘lchov birliklari/7.O‘lchov birliklari.html">O‘lchov birliklari</a>
+                </li>
+                <li>
+                    <a href="/1.Front end/2.Css/8.Qutilar/8.Qutilar.html">Qutilar</a>
+                </li>
+                <li>
+                    <a href="/1.Front end/2.Css/9.Foizlar/9.Foizlar.html">Foizlar</a>
+                </li>
+                <li>
+                    <a href="/1.Front end/2.Css/10.CSS qoidalari/CSS qoidalari.html">CSS qoidalari</a>
+                </li>
+                <li>
+                    <a href="/1.Front end/2.Css/11.CSS uslublarni HTMLdan ajratish/11.CSS uslublarni HTMLdan ajratish.html">CSS uslublarni HTMLdan ajratish</a>
+                </li>
+            </ul>
+        </div> 
+        <div id="container">
+            
+            <div id="sarlavha">
+                <h2>Xususiy xususiyatlar (--*): CSS o‘zgaruvchilari</h2>
+            </div>
+            <div id="text" class="qisqa">
+                  
+
+                <p>
+                    Xususiyat nomlari <span class="maxsus">--</span> prefiksi bilan boshlansa, masalan, 
+                    <span class="maxsus">--example-name</span>, ular **maxsus xususiyatlar** 
+                    bo‘lib, <span class="maxsus">var()</span> funksiyasi yordamida boshqa 
+                    deklaratsiyalarda ishlatilishi mumkin 
+                    bo‘lgan qiymatni o‘z ichiga oladi.
+                </p>
+                <p>
+                    Maxsus xususiyatlar o‘zi e’lon qilingan 
+                    element(lar) doirasida amal qiladi va 
+                    kaskadga qatnashadi: bunday maxsus xususiyatning 
+                    qiymati kaskad algoritmi tomonidan belgilangan 
+                    deklaratsiyadan olinadi.
+                </p>
+                <h2>
+                    Sintaksis
+                </h2>
+
+                <div id="CSS">
+                    <p>CSS</p>
+                    <div class="CSS">
+                        <p>
+                            <span class="crimson">--some-keyword</span>: left; <br>
+                            <span class="crimson">--some-color</span>: #0000ff; <br>
+                            <span class="crimson">--some-complex-value</span>: 3px 6px rgb(20 32 54); <br>
+                        </p>
+                    </div>
+                </div>
+                
+                    <span class="maxsus1">
+                        <a href="#">
+                            &lt;declaration-value&gt;
+                        </a>
+                    </span>
+                
+                <p>
+                    Ushbu qiymat bitta yoki bir nechta tokenlarning istalgan 
+                    ketma-ketligiga mos keladi, agar ketma-ketlikda ruxsat 
+                    etilmagan tokenlar bo‘lmasa. Bu, yaroqli deklaratsiya 
+                    qiymati sifatida mavjud bo‘lishi mumkin bo‘lgan 
+                    barcha narsani ifodalaydi.
+                </p>
+
+                 <style>
+                    
+                </style>
+
+                <div class="Eslatma">
+
+                    <div class="Eslatma_tana">
+                        <b>Eslatma:</b> Maxsus xususiyat nomlari 
+                        katta-kichik harflarga sezgir — `--my-color` va `--My-color` 
+                        alohida maxsus xususiyatlar sifatida ko‘rib chiqiladi.
+                    </div>
+                </div>
+
+                <h2>
+                    Misol
+                </h2>
+                <h2>
+                    HTML
+                </h2>
+                
+                <div id="CSS">
+                    <p>HTML</p>
+                    <div class="CSS">
+                        
+                        <p>
+                            &lt;p <span class="crimson">id</span>=&quot;<span class="green">firstParagraph</span>&quot;&gt; <br>
+                            Ushbu paragraf ko‘k fon va sariq matnga ega bo‘lishi kerak. <br>
+                      &lt;/p&gt; <br>
+                      &lt;p id=&quot;secondParagraph&quot;&gt; <br>
+                      Ushbu paragraf sariq fon va ko‘k matnga ega bo‘lishi kerak. <br>
+                      &lt;/p&gt; <br>
+                      &lt;div id=&quot;container&quot;&gt; <br>
+                        &lt;p id=&quot;thirdParagraph&quot;&gt; <br>
+                        Ushbu paragraf yashil fon va sariq matnga ega bo‘lishi kerak. <br>
+                        &lt;/p&gt; <br>
+                      &lt;/div&gt;  <br>
+                        </p>
+                    </div>
+                </div>
+
+                <script>
+                    const code = ``;
+                    document.getElementById("code").textContent = code;
+                </script>
+                <h2>
+                    CSS
+                </h2>
+                <div id="CSS">
+                    <p>CSS</p>
+                    <div class="CSS">
+                        <p>
+                            :root { <br>
+                                --first-color: #16f; <br>
+                                --second-color: #ff7; <br>
+                              } <br><br>
+                              
+                              #firstParagraph { <br>
+                                background-color: var(--first-color); <br>
+                                color: var(--second-color); <br>
+                              } <br><br>
+                              
+                              #secondParagraph { <br>
+                                background-color: var(--second-color); <br>
+                                color: var(--first-color); <br>
+                              } <br><br>
+                              
+                              #container { <br>
+                                --first-color: #290; <br>
+                              } <br><br>
+                              
+                              #thirdParagraph { <br>
+                                background-color: var(--first-color); <br>
+                                color: var(--second-color); <br>
+                              } <br><br>
+                              
+                        </p>
+                    </div>
+                </div>
+                
+                <h2>
+                    Natija
+                </h2>
+                <style>
+                    :root {
+                    --first-color: #16f;
+                    --second-color: #ff7;
+                    }
+
+                    #firstParagraph {
+                    background-color: var(--first-color);
+                    color: var(--second-color);
+                    }
+
+                    #secondParagraph {
+                    background-color: var(--second-color);
+                    color: var(--first-color);
+                    }
+
+                    #contayiner {
+                    --first-color: #290;
+                    }
+
+                    #thirdParagraph {
+                    background-color: var(--first-color);
+                    color: var(--second-color);
+                    }
+                </style>
+                <div id="CSS">
+                    <p>Natija</p>
+                    <div class="CSS">
+                        <p id="firstParagraph">
+                            This paragraph should have a blue background and yellow text.
+                          </p>
+                          <p id="secondParagraph">
+                            This paragraph should have a yellow background and blue text.
+                          </p>
+                          <div id="contayiner">
+                            <p id="thirdParagraph">
+                              This paragraph should have a green background and yellow text.
+                            </p>
+                          </div>                          
+                    </div >
+                </div>
+               
+                
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>

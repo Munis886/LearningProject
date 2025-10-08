@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="Css">
+    <meta name="description" content="Bu yerda Css haqida batafsil ma'lumotlar">
+    <title>font-variant</title>
+    <link rel="stylesheet" href="/1.Front end/2.Css/style.css">
+    <script src="/1.Front end/2.Css/Js.js"></script>
+    
+</head>
+<body>
+    <div id="bosh">
+        <div class="bosh">
+            <h1>CSS</h1>
+        </div>
+    </div>
+    <div id="menyu">
+    <div class="menyu">
+        <ul>
+            <button id="toggle-btn" onclick="toggleMenu()">Menu</button>
+            <li><a href="/index.html">HOME</a></li>
+            <li><a href="/1.Front end/1.Front_end.html">FRONT END</a></li>
+            <li><a href="/1.Front end/1.HTML/1.HTML.html">HTML</a></li>
+            <li><a href="/1.Front end/2.Css/Css.html">CSS</a></li>
+        </ul>
+    </div>
+    <div style="display: flex;">
+        <div id="menu" class="menu">
+            <h3 style="padding: 1px 2px;">CSS</h3>
+            <ul>
+                <li><a href="/1.Front end/2.Css/Css.html">CSS HOME</a></li>
+                <li>
+                    <a href="#" onclick="toggleSubMenu('sub-menu-1')">
+                        Daraxt diagrammasi
+                    </a>
+                    <ul id="sub-menu-1" class="sub-menu">
+                        <li><a href="/1.Front end/2.Css/1.Daraxt diagrammasi/1.Matnni daraxt diagrammasida ko'rsatish.html">Matnni daraxt diagrammasida ko'rsatish</a></li>
+                        <li><a href="/1.Front end/2.Css/1.Daraxt diagrammasi/2.Daraxt diagrammasining tarkibi.html">Daraxt diagrammasining tarkibi</a></li>
+                        <li><a href="/1.Front end/2.Css/1.Daraxt diagrammasi/3.Daraxt diagrammalaridan qutilarga.html">Daraxt diagrammalaridan qutilarga</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#" onclick="toggleSubMenu('sub-menu-2')">"HTML"ga uslub berish</a>
+                    <ul id="sub-menu-2" class="sub-menu">
+                        <li><a href="/1.Front end/2.Css/2.Uslub berish/1.HTMLga to‘g‘ridan to‘g‘ri uslub berish.html">HTMLga to‘g‘ridan to‘g‘ri uslub berish</a></li>
+                        <li><a href="/1.Front end/2.Css/2.Uslub berish/2.HTMLga alohida uslub berish.html">HTMLga alohida uslub berish</a></li>
+                    </ul>
+                </li>
+                <li><a href="/1.Front end/2.Css/3.CSS sintaksisi/3.CSS sintaksisi.html">"CSS" sintaksisi</a></li>
+                <li>
+                    <a href="#" onclick="toggleSubMenu('sub-menu-3')">Selektorlar</a>
+                    <ul id="sub-menu-3" class="sub-menu">
+                        <li><a href="/1.Front end/2.Css/4.Selektorlar/1.Selektor Turlari.html">Selektorlar turlari</a></li>
+                        <li><a href="/1.Front end/2.Css/4.Selektorlar/2.class va id selektorlari.html">Class va id selektorlari</a></li>
+                        <li><a href="/1.Front end/2.Css/4.Selektorlar/3.Selektorlarni birlashtirish.html">Selektorlarni birlashtirish</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#" onclick="toggleSubMenu('sub-menu-4')">Takrorlash</a>
+                    <ul id="sub-menu-4" class="sub-menu">
+                        <li><a href="/1.Front end/2.Css/5.Takrorkash/Termin so‘zlarni takrorlash.html">Termin so‘zlarni takrorlash</a></li>
+                        <li><a href="/1.Front end/2.Css/5.Takrorkash/Selektorlarni takrorlash.html">Selektorlarni takrorlash</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="/1.Front end/2.Css/6.CSSda kaskad nima uchun juda muhim/6.CSSda kaskad nima uchun juda muhim.html">"CSS"da "kaskad" nima uchun juda muhim?</a>
+                </li>
+                <li>
+                    <a href="/1.Front end/2.Css/7.O‘lchov birliklari/7.O‘lchov birliklari.html">O‘lchov birliklari</a>
+                </li>
+                <li>
+                    <a href="/1.Front end/2.Css/8.Qutilar/8.Qutilar.html">Qutilar</a>
+                </li>
+                <li>
+                    <a href="/1.Front end/2.Css/9.Foizlar/9.Foizlar.html">Foizlar</a>
+                </li>
+                <li>
+                    <a href="/1.Front end/2.Css/10.CSS qoidalari/CSS qoidalari.html">CSS qoidalari</a>
+                </li>
+            </ul>
+        </div> 
+        <div id="container">
+            
+            <div id="sarlavha">
+                <h2 style="width: 9em; font-variant: small-caps;">font-variant</h2>
+            </div>
+            <div id="text">
+                  
+                <p>
+                    <kbd>Font-variant</kbd> CSS stenografiya xususiyati(<a href="#">shorthand property</a>) 
+                    shrift uchun barcha shrift variantlarini o'rnatish imkonini beradi.
+                </p>
+
+                <p>
+                    Shuningdek, shrift stenografiyasidan foydalanib, CSS 2.1 darajasida 
+                    (ya'ni oddiy yoki kichik harflar) belgilangan font-variantning 
+                    <kbd>&lt;font-variant-css2&gt;</kbd> qiymatlarini o'rnatishingiz mumkin.
+                </p>
+                <style>
+                    a {
+                        text-decoration: none;
+                    }
+                </style>
+                <section style="padding-left: 10em;">
+                    <h2 id="sinab_koring">
+                        <a href="#Sinab ko'ring">Sinab ko'ring</a>
+                    </h2>
+                    <iframe src="/1.Front end/2.Css/10.CSS qoidalari/Index/Misol/30.font-variant/pages/css/font-variant.html" 
+                    frameborder="0" width="80%" height="402px"></iframe>
+                </section>
+                
+                
+                <style>
+                    #CSS {
+                        border-radius: 5px;
+                        background-color:darkgrey;
+                    }
+                    #CSS p {
+                        padding-bottom: 0;
+                        margin: 0;
+                    }
+                </style>
+                <section>
+                    
+                </section>
+                
+
+                <h2>
+                    Tarkibiy xususiyatlar
+                </h2>
+                <p>
+                    Bu xususiyat quyidagi CSS xususiyatlarining qisqartmasi hisoblanadi:
+                </p>
+                <style>
+                    .ul {
+                        padding-left: 45px;
+                    }
+                </style>
+                <ul class="ul">
+                    <li><a href="#">font-variant-alternates</a></li>
+                    <li><a href="#">font-variant-caps</a></li>
+                    <li><a href="#">font-variant-east-asian</a></li>
+                    <li><a href="#">font-variant-emoji</a></li>
+                    <li><a href="#">font-variant-ligatures</a></li>
+                    <li><a href="#">font-variant-numeric</a></li>
+                    <li><a href="#">font-variant-position</a></li>
+                </ul>
+
+                <!--
+                <h2>
+                    Rasmiy sintaksis
+                </h2>
+                <div id="CSS" style=" margin: 0 auto; width: 80%;" >
+                    <p></p>
+                    <div style="background-color: #343434; margin: 0 auto; ">
+                        <p>
+                            -webkit-line-clamp =  <br>
+                            none             | <br>
+                            &lt;integer [1,∞]&gt;  
+                        </p>
+                    </div>
+                </div>
+                -->
+                <h2>
+                    Misollar
+                </h2>
+                <h2>
+                    Paragrafni qisqartirish
+                </h2>
+                <h2>
+                    HTML
+                </h2>
+                <div id="CSS" style=" margin: 0 auto; width: 80%;" >
+                    <p>HTML</p>
+                    <div style="background-color: #343434; margin: 0 auto; ">
+                        <p>
+                            &lt;p&gt; <br>
+                              In this example the &lt;code&gt;-webkit-line-clamp&lt;/code&gt; property is set to 
+                              &lt;code&gt;3&lt;/code&gt;, which means the text is clamped after three lines. An ellipsis 
+                              will be shown at the point where the text is clamped. <br>
+                            &lt;/p&gt;
+
+                        </p>
+                    </div>
+                </div>
+               <h2>
+                CSS
+               </h2>
+               <div id="CSS" style=" margin: 0 auto; width: 80%;" >
+                <p>CSS</p>
+                <div style="background-color: #343434; margin: 0 auto; ">
+                    <p>
+                        p { <br>
+                            width: 300px; <br>
+                            display: -webkit-box; <br>
+                            -webkit-box-orient: vertical; <br>
+                            -webkit-line-clamp: 3; <br>
+                            overflow: hidden; <br>
+                          }                          
+                    </p>
+                </div>
+            </div>
+
+            <style>
+                .p {
+                  width: 300px;
+                  display: -webkit-box;
+                  -webkit-box-orient: vertical;
+                  -webkit-line-clamp: 3;
+                  line-clamp: 3;
+                  overflow: hidden;
+                }
+            </style>
+            <h2>
+                Natija
+            </h2>
+            <div id="CSS" style=" margin: 0 auto; width: 80%;" >
+                <p>Natija</p>
+                <div style="background-color: #fff; margin: 0 auto; border: 1px solid #333;">
+                    <p class="p">
+                        In this example the <code>-webkit-line-clamp</code> property is set to
+                        <code>3</code>, which means the text is clamped after three lines. An ellipsis
+                        will be shown at the point where the text is clamped.
+                      </p>
+                </div>
+            </div>
+            <h2>
+                Texnik xususiyatlari
+            </h2>
+            <div id="CSS" style=" margin: 0 auto; width: 80%;" >
+                <p>Spetsifikatsiya</p>
+                <div style="background-color: #343434; margin: 0 auto; ">
+                    <p style="color: #16f;">
+                        CSS Overflow moduli 4-darajali # propdef-line-clamp                    
+                    </p>
+                </div>
+            </div>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>

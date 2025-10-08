@@ -1,0 +1,150 @@
+.CSS_table {
+    display: flex; 
+    margin: auto; 
+    width: 80%;
+}
+
+#text > p {
+    padding: 10px 25px;
+}
+
+#CSS {
+    background: rgb(59, 59, 59);
+    margin: 0 auto; 
+    width: 70%;
+}
+
+.menu {
+    overflow-y: auto;
+    overflow: hidden;
+}
+
+.qisqa {
+    width: 80%;
+    margin: 0 auto;
+    padding: 0px 20px;
+    margin-top: 15px;
+}
+
+#CSS {
+  background: rgb(59, 59, 59);
+  margin: 20px auto; 
+  width: 80%;
+  border-radius: 0 5px 5px 0;
+}
+
+#CSS > p{
+  padding: 2px 20px;
+  border-bottom: 2px solid #000;
+  margin: 0;
+  color: #fff;
+}
+
+.CSS p{
+  padding: 12px 20px;
+  background-color: gray;
+  color: #000;
+  border: none;
+  margin: 0;
+  border-radius: 0 5px 5px 0;
+}
+
+.CSS {
+  background-color: gray; 
+  margin: 0 auto; 
+}
+
+:root{
+  --code-token-attribute-name: #ff97a0;
+  --code-background-inline: #343434;
+  --background-primary: #1b1b1b;
+  /* .CSS uchun rang */
+  --code-background-block: #343434;
+  --icon-information: #5e9eff;
+  --background-information: #013e70;
+  --text-secondary: #cdcdcd;
+  --note-background: var(--background-information);
+  --note-theme: var(--icon-information);
+  --elem-radius: 0.25rem;
+}
+
+.Eslatma {
+  display: flex; 
+  margin: 15px auto; 
+  width: 80%;
+  border-left: 3px solid var(--note-theme);
+  border-radius: var(--elem-radius);
+  color: var(--text-secondary);
+}
+
+/* .Eslatma .chap_yon {
+  width: 1%; 
+  background-color: cyan; 
+  border-radius: 15px 0 0 15px;
+} */
+
+.Eslatma .Eslatma_tana {
+  background-color: var(--note-background); 
+  padding: 15px 12px 15px 36px; 
+  border-radius: 0 10px 10px 0;
+  
+}
+
+.Eslatma_tana {
+    position: relative; /* Konteynerni nisbiy pozitsiyaga qo'yamiz */
+    padding: 15px 15px 5px 10px;
+    }
+
+.Eslatma_tana::before {
+    content: "i";
+    position: absolute;
+    top: 17px; /* Belgilangan joylashuv */
+    left: 10px; /* Chapdan joylashuv */
+    right: 10px; /* O'ngdan joylashuv */
+    background-color: var(--note-theme);
+    color: white;
+    font-weight: bold;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+  }
+
+.Eslatma_tana > p{
+  margin: 0;
+  padding: 0;
+}
+
+.sarlavha {
+  padding-left: 5em;
+}
+
+.CSS_table ul{
+  margin: auto;
+  width: 25%;
+}
+.CSS_table ul li a {
+  color: black;
+  background-color: darkgray;
+  border-radius: 4px;
+  padding: 4px 6px;
+}
+.CSS_table ul li a:hover {
+  text-decoration: none;
+}
+.CSS_table ul li {
+  margin: auto;
+  margin: 12px 3px;
+  list-style-type: none;
+}
+
+pre {
+  margin-top: 1px;
+  margin-bottom: 1px;
+  text-align: left;
+  white-space: pre-line;
+  font-family: sans-serif;
+}

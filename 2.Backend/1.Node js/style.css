@@ -1,0 +1,322 @@
+/*elementlardagi marginlarni yo'qotadi*/
+body, h1 {
+    margin: 0;
+    padding: 0;
+}
+
+#bosh {
+    background-color:chocolate;
+    margin: 0 auto;
+}
+
+.bosh {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.menyu {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+}
+
+#menyu {
+    background-color:dimgray; 
+    margin: 0 auto;
+}
+
+.menyu ul li{
+    list-style-type: none;
+    display: inline;
+}
+
+.menyu ul {
+    margin: 0;
+    padding: 0;
+}
+
+.menyu ul li a {
+    text-decoration: none;
+    color: #fff;
+    padding: 5px 10px;
+    display: inline-block;
+}
+
+.body {
+    margin: 0;
+    display: flex;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.menu {
+    width: 300px;
+    height: 100vh;
+    position:absolute;
+    overflow-y: auto;
+    top: 0;
+    background: var(--moviy-rang);
+    z-index: 1000;
+    left: -300px; /* Menu yashirilgan holatda */
+    transition: left 0.3s; /* Silliq ko'rinish uchun o'tish */
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+  }
+  
+.menu.active {
+    left: 0; /* Menu ko'rinadigan holatda */
+    position:relative;
+  }
+
+#menu h3 {
+    padding-left: 15px;;
+    margin: 2px 3px;
+    color: #fff;
+    display: inline-block;
+}
+#menu ul li{   
+      list-style-type: none;
+      
+  }
+#menu ul {
+      padding: 0;
+      margin: 0;
+  }
+#menu ul li a {
+      display: block;
+      margin: 1px 0;
+      color: #000; /* Dastlabki matn rangi */
+      background-color: #f0f0f0; /* Dastlabki fon rangi */
+      padding: 6px 15px 6px 20px;
+      text-decoration: none;
+      font-family: "Montserrat",;
+      font-style: normal;
+    }
+  
+  /* Kursor ustiga kelsa */
+div #menu ul li a:hover {
+      background-color: var(--tugma-uchun); /* Kursor ustiga kelsa fon rangi */
+      color: #fff; /* Kursor ustiga kelsa matn rangi */
+    }
+  
+    /* Bosilgan holat */
+#menu  a:active {
+      background-color: #0003d3 !important; /* Bosilgan holat fon rangi */
+      color: #fff !important; /* Bosilgan holat matn rangi */
+    }
+
+body {
+    background-color: bisque;
+}
+
+#container {
+    width: 100%;
+    margin: 0 auto;
+    font-size: 17px;
+    background-color: bisque;
+    overflow-y: auto;
+    height: 100vh;
+}
+#text img {
+    padding: 2px 25px;
+}
+#text h2 {
+    font-family: "Segoe UI", Arial, sans-serif;
+    font-weight: 500;
+}
+#text {
+    padding: 10px 40px;
+}
+
+#text p{
+    margin: 10px 4px;
+    
+}
+
+.text1{
+    display: flex; 
+    margin: auto; 
+    width: 80%;
+}
+
+.matn p, .matn h2 {
+    padding: 0;
+}
+
+#sarlavha h2, #sarlavha h1 {
+    display: inline-block; /* Elementni inline-block qilib sozlash */
+    width: auto; /* Kenglikni avtomatik qilish */
+    margin: 10px 0;
+    border-radius: 0 10px 10px 0;
+    background-color: rgb(47, 172, 255);
+    padding: 5px 25px;
+    text-align: center;
+}
+
+
+.sub-menu {
+    display: none; /* Yashirilgan holatda */
+    padding-left: 25px; /* Ichkariga siljitish */
+    background-color: var(--tugma-uchun);
+  }
+  
+.sub-menu li {
+    margin: 0 0 1px 5px;
+  }
+
+.fa-book:before {
+    content: "\f02d";
+}
+:root {
+    --some-color: #0000ff;
+    --javob-uchun: #ff0000;
+    --moviy-rang: #323fb2;
+    --thead-uchun: #123456;
+    --tugma-uchun: #526509;
+    --matn-uchun: #726709;
+    --kul-rang: rgb(113, 113, 101);
+}
+
+.green {
+    color: green;
+}
+
+.moviy {
+    color: var(--moviy-rang);
+}
+
+
+.havo_chegara {
+    border: 1.5px solid #6491FC;  
+    width: 70%; 
+    margin: 8px auto; 
+    border-radius: 0 0 60px 0; 
+    margin-top: 15px;
+    padding: 10px 20px;
+}
+
+.qora_chegara {
+    border: 1.5px solid #649;  
+    width: 70%; 
+    margin: 8px auto; 
+    border-radius: 6px; 
+    margin-top: 15px;
+    padding-left: 15px;
+}
+.oddiy_chegara h2,.oddiy_chegara h3{
+    margin: 0;
+    padding: 4px 0;
+    font-family: "Segoe UI", Arial, sans-serif;
+    font-weight: 500;
+}
+.oddiy_chegara {
+    background: #E7E9EB;
+    width: 70%; 
+    margin: 7px 15px; 
+    border-radius: 5px; 
+    padding: 10px 20px;
+    padding-left: 25px;
+}
+
+.sariq_chegara {
+    background: #dcf599;
+    width: 70%; 
+    margin: 7px 15px; 
+    border-radius: 5px; 
+    padding: 10px 20px;
+    padding-left: 25px;
+}
+
+.chegara_ichida {
+    border-left: 4px solid #04AA6D;
+    width: auto;
+    background-color: #fff;
+    color: #000;  
+    margin: 8px auto; 
+    padding: 8px 12px;
+    font-family: Consolas, Menlo, "courier new", monospace;
+}
+
+.chegara_ichida2{
+    border-left: 4px solid #04AA6D;
+    background-color: black;
+    color: white;
+    font-family: Consolas, Menlo, "courier new", monospace;
+    padding: 8px 12px;
+    margin-top: 16px !important;
+    margin-bottom: 16px !important;
+}
+
+.yashil_maydon {
+    border: 1.5px solid #650;  
+    width: 70%; 
+    margin: 8px auto; 
+    margin-top: 15px;
+    padding-left: 15px;
+}
+
+div p {
+    padding: 0;
+    margin: 5px 2px;
+}
+
+
+.center-box {
+    margin: 10px auto
+}
+
+.center-align {
+    text-align: center;
+}
+
+.maxsus_sozlar {
+    border: 1px solid #343;
+    border-radius: 4px;
+    width: auto;
+    padding: 2px;
+    
+}
+.ul li, .ol li {
+    margin: 10px 0px;
+    line-height: 1.4; 
+}
+
+table {              
+    width: 70%;
+    border-collapse: collapse;
+    margin: 10px auto;
+}
+table, th, td {
+    border: 1px solid black;
+    
+}
+th, td {
+    padding: 10px;
+}
+
+.qisqa {
+    width: 70%;
+    margin: 0 auto;
+    padding: 10px 20px;
+    margin-top: 15px;
+}
+
+p .maxsus_sozlar {
+    line-height: 1.5; 
+}
+
+.crimson {
+    color: crimson;
+    font-family: monospace;
+}
+
+pre {
+    margin-top: 1px;
+    margin-bottom: 1px;
+    text-align: left;
+    white-space: pre-line;
+    font-family: Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.kul {
+    color: var(--kul-rang);
+}

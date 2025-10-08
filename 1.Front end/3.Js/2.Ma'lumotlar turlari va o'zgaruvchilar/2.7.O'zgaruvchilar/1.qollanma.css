@@ -1,0 +1,57 @@
+.kirish {
+    font-size: 19px;
+}
+
+.text h3, .text h4 {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    color: #343434;
+}
+
+.text a {
+    text-decoration: none;
+}
+
+.green {
+    color: green;
+}
+
+.maslahat {
+    background: #fffbd9;
+    display: flex;
+    width: 90%;
+}
+
+.maslahat p {
+    padding: 3px 4px;
+    margin: 5px 4px;
+}
+
+.maslahat .color {
+    width: 5px;
+    background: #ffef70;
+}
+
+.border {
+    border: 1px solid black;
+    margin: 5px 4px;
+    padding: 3px 4px;
+    width: 90%;
+}
+
+.text p {
+    padding-left: 45px;
+}
+.text ol{
+    padding-left: 55px;
+
+}
+.matn li{
+    padding: 15px 0;
+    
+}
+.text a {
+    vertical-align: baseline;
+    line-height: 1.68;
+}

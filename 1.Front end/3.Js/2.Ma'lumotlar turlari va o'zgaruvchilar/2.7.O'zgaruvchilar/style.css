@@ -1,0 +1,10 @@
+#sarlavha h2 {
+    width: 13em;
+}
+
+.scrolling-text {
+    margin: 0;
+    padding: 0;
+    color: hotpink;
+    font-family: "Fira Code", Consolas, Monaco, "Andale Mono", "Ubuntu Mono", monospace;;
+  }
