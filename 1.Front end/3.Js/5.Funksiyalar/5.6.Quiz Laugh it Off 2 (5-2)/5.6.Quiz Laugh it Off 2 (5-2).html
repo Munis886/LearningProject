@@ -770,7 +770,29 @@
                     </p>
                 </div>
 
-                
+                <div class="havo_chegara">
+                    <p>
+                        <b>Natija:</b>
+                        <script>
+                            function laugh(num) {
+                            let laughter = ""; // Bo'sh string yaratamiz
+
+                            // "ha" ni num marta qo'shamiz
+                            for (let i = 0; i < num; i++) {
+                            laughter += "ha";
+                            }
+                            // Ohiriga "!" qo'shamiz
+                            laughter += "!";
+
+                            return laughter; // Natijani qaytaramiz
+                            }
+
+                            // Test qilish
+                            document.write(laugh(3), "<br>"); // "hahaha!" chiqaradi
+                            document.write("<b>Natija:</b> ", laugh(5)); // "hahahahaha!" chiqaradi
+                        </script>
+                    </p>
+                </div>
             </div>
         </div>
     </div> 
