@@ -398,6 +398,8 @@ pre {
     font-weight: 500;
     color: black;
     transition: 0.4s;
+    
+    border-radius: 0 8px 8px 0;
 }
 
 .li_3 a:hover {
