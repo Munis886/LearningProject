@@ -363,6 +363,7 @@ pre {
     background: greenyellow;
     border-radius: 0 8px 8px 0;
     font-size: 25px;
+    box-shadow: 0 0 8px #333;
 }
 
 .li_1 {
