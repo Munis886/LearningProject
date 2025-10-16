@@ -18,8 +18,8 @@
 
      <div id="menyu">
     <div class="menyu">
+        <button id="toggle-btn" onclick="toggleMenu()">Menu</button>
         <ul>
-            <button id="toggle-btn" onclick="toggleMenu()">Menu</button>
             <li><a href="/index.html">HOME</a></li>
             <li><a href="/1.Front end/1.Front_end.html">FRONT END</a></li>
             <li><a href="/1.Front end/1.HTML/1.HTML.html">HTML</a></li>
@@ -705,9 +705,22 @@
         </div> 
 
         <div id="container">
-            <div id="sarlavha">
-                <h2 style="width: 11em;">"console.log" funksiyasi</h2>
+            <div class="sarlavha">
+                <ul>
+                    <li class="li_1">
+                        <a href="/1.Front end/3.Js/1.JavaScript nima/1.4.Har hil brauzerlarda Developer Tools panelidan foydalanish/1.4.Har hil brauzerlarda Developer Tools panelidan foydalanish.html">⟨</a>
+                    </li>
+                    <li class="li_2">
+                        "console.log" funksiyasi
+                    </li>
+                    <li class="li_3">
+                        <a href="/1.Front end/3.Js/1.JavaScript nima/1.6.JavaScript tilini ishlashini ko‘rsatish/1.6.JavaScript tilini ishlashini ko‘rsatish.html">
+                            ⟩
+                        </a>
+                    </li>
+                </ul>
             </div>
+
             <div id="text">
                 <p>
                     Dasturchi vositalari to‘g‘ridan-to‘g‘ri  brauzerda tuzatish ishlarini bajarish
@@ -784,16 +797,16 @@
                 </p>
 
                 <div class="havo_chegara">
-                    <pre>
+                    <p>
                         <b>
                             Prints:
                         </b>
                         <script>
                             for (var i = 0; i < 10; i++) {
-                                document.writeln(i);
+                                document.writeln(i + "</br>");
                                 }
                         </script>
-                    </pre>
+                    </p>
                     
                 </div>
             </div>
