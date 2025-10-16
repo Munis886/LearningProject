@@ -798,26 +798,23 @@
                     
                     Ikki muhim jihat:<br><br>
                 </p>
-                <div>
-                    <table>
-                        <thead>
-                            <tr>
-                                <th class="th">console.log()</th>
-                                
-                                
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td class="td">
-                                    JavaScript Console-ga qiymatni 
-                                    chop etish uchun foydalaning
-                                </td>
-
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
+                <table>
+                <thead>
+                    <tr>
+                    <th class="th">console.log()</th>
+                    <th class="th2"></th>
+                    <th class="th">return</th>
+                </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                    <td class="td">JavaScript Console-ga qiymatni chop etish uchun foydalaning</td>
+                    <td></td>
+                    <td class="td2">Funktsiyani ijro etishni to'xtatish va qo'ng'iroqni qaytarib berishni qaytarish uchun foydalaning
+                    </td>
+                </tr>
+                </tbody>
+            </table>
                 <p>                    
                     - `return` kalit so‘zi funksiyaning bajarilishini 
                     to‘xtatadi va chaqiruvchiga qiymatni qaytaradi. 
@@ -845,24 +842,46 @@
                     <p>
                         <b>Natija:</b>
                         <script>
-                            function isPrime(integer) {
-                                for(var x = 2; x < integer; x++){
-                                if (integer % x === 0) {
-                            document.write(integer + " is divisible by " + x);
-                                return false;
+                                // 1. Siz taqdim etgan isPrime funksiyasi
+                                function isPrime(integer) {
+                                    for(var x = 2; x < integer; x++){
+                                        if (integer % x === 0) {
+                                            // Bu console.log faqat brauzer konsolida ko'rinadi
+                                            console.log(integer + " is divisible by " + x);
+                                            return false;
+                                        }
+                                    } 
+                                    return true;
                                 }
-                                } return true;
+                                // 2. Kiritilgan ma'lumot (o'qish - READ qismi)
+                                const tekshiriladiganSon = 11;
+                                
+                                // 3. Hisoblash va natijani olish
+                                const natija = isPrime(tekshiriladiganSon);
+                                
+                                // 4. Natijani web-sahifaga chop etish (OUTPUT qismi)
+                                const natijaElementi = document.getElementById('natija');
+                                
+                                // Natijani foydalanuvchiga tushunarli qilib ko'rsatish
+                                if (natija) {
+                                    natijaElementi.innerHTML = `**${tekshiriladiganSon}** soni **TUB SON** hisoblanadi. (Natija: <span style="color: green;">${natija}</span>)`;
+                                } else {
+                                    natijaElementi.innerHTML = `**${tekshiriladiganSon}** soni **TUB SON EMAS**. (Natija: <span style="color: red;">${natija}</span>)`;
                                 }
                         </script>
                     </p>
                 </div>
                 <p>
+                    Ushbu misol ikkalasi o'rtasidagi asosiy farqni ko'rsatishi 
+                    kerak.
+                </p>
+                <p>
                     Bizda bir funksiya bor, u butun sonni ikki va 
-                    undan katta qiymatda prost son ekanligini tekshiradi.<br><br>
+                    undan katta qiymatda tub son ekanligini tekshiradi.<br><br>
                     
                     Funksiya qanday ishlashini misol bilan ko‘ramiz:<br><br>
                     
-                    Agar berilgan son prost bo‘lsa, funksiya `true` qaytaradi. 
+                    Agar berilgan son tub bo‘lsa, funksiya `true` qaytaradi. 
                     Aks holda, son bo‘linuvchi birinchi sondan foydalanib 
                     xabarni konsolga chiqaradi va `false` qaytaradi.<br><br>
                     
@@ -926,8 +945,8 @@
 
                 <div class="qora_chegara">
                     <p>
-                        function isThisWorking(input) {
-                            console.log("Printing: isThisWorking was called and " + input + " was passed in as an argument.");
+                        function isThisWorking(input) { <br>
+                        &nbsp;    console.log("Printing: isThisWorking was called and " + input + " was passed in as an argument."); <br>
                           }
                     </p>
                 </div>
