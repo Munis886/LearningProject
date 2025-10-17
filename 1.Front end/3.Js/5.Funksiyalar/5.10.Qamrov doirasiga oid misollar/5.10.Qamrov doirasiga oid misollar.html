@@ -707,64 +707,145 @@
         </div> 
         
         <div id="container">
-            <div id="sarlavha">
-                <h2>
-                    Qamrov doirasiga oid misollar
-                </h2>
+            <div class="sarlavha">
+                <ul>
+                    <li class="li_1">
+                        <a href="/1.Front end/3.Js/5.Funksiyalar/5.9.Qamrov doirasi/5.9.Qamrov doirasi.html">⟨</a>
+                    </li>
+                    <li class="li_2">
+                        Qamrov doirasiga oid misollar
+                    </li>
+                    <li class="li_3">
+                        <a href="/1.Front end/3.Js/5.Funksiyalar/5.11.Soyalash/5.11.Soyalash.html">
+                            ⟩
+                        </a>
+                    </li>
+                </ul>
             </div>
+            
             <div id="text" class="qisqa">
 
                 <h3>
                     Qamrov doirasi kutubxonasiga misollar
                 </h3>
-                
 
                 <p>
-                    Keling, bir oz vaqt ajratib "doiralar" (scope) haqida gaplashamiz. <br>
+                    JavaScriptda sizda ikki xil turdagi 
+                    global va funksiyalar doirasidagi miqyosi bor.
 
-                    Oddiy sintaksis xatolaridan tashqari, "doiralar" har qanday dasturlash 
-                    tilidagi ko‘plab kodlash xatolarining asosiy sabablaridan biri bo‘ladi.<br>
-                    
-                    Dasturchilar "doira" haqida gapirganda, ular dasturda ma’lum bir 
-                    identifikator, masalan, o‘zgaruvchi yoki funksiya nomi, ko‘rinadigan 
-                    yoki kirish mumkin bo‘lgan qismni nazarda tutadi.<br>
-                    
-                    Bir narsaning doirada (scope ichida) borligini aniqlash dastlab 
-                    biroz murakkab bo‘lishi mumkin.<br>
-                    
-                    Shuning uchun analogiya bilan boshlaylik.<br>
-                    
-                    >> Hey.<br><br>
-                    
-                    >> Hey.<br><br>
-                    
-                    >> "Great Expectations" kitobini qayerdan topishim mumkinligini bilasizmi?<br><br>
-                    
-                    >> Ha, bu klassik adabiyot bo‘limida, menga ergashing.<br><br>
-                    
-                    >> Mukammal.<br><br>
-                    
-                    >> Yaqinda ko‘rgan misolda, Jeyms o‘z istagan kitobi 
-                    haqida ma’lumot olishga muvaffaq bo‘ldi, chunki u 
-                    kutubxonada bo‘lgan paytda kitob haqida so‘radi.<br><br>
-                    
-                    Siz aytishingiz mumkin, kitobning qayerda ekanligi haqidagi 
-                    ma’lumot doira ichida (scope) bo‘lgan.<br><br>
-                    
-                    >> Hey, men "Great Expectations" kitobini 
-                    qidiryapman. Uni qayerdan topsam bo‘ladi?<br><br>
-                    
-                    >> Ha, kutubxona mana bu yerda.<br><br>
-                    
-                    Men bilan nega so‘rayapsiz, tushunmayapman.<br><br>
-                    
-                    >> To‘g‘ri, ha, bu mantiqan to‘g‘ri.<br><br>
-                    
-                    >> Ikkinchi misolda, Jeyms kutubxonadan tashqarida bo‘lganida, 
-                    u istagan ma’lumot va ma’lumot so‘rayotgan joy bir doirada bo‘lmagan.<br><br>
-                    
-                    Shuning uchun u kitobni topa olmadi va kitobni qanday 
-                    topish haqida ma’lumot olish uchun hech kimdan so‘ray olmadi.
+                    Agar siz barcha funksiyalaringizdan 
+                    tashqarida identifikatorni aniqlasangiz, 
+                    u global miqyosda hisoblanadi.
+                </p>
+                <table>
+                    <thead>
+                        <tr>
+                            <th class="th">global scope</th>
+                            <th class="th2"></th>
+                            <th class="th">function scope</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="td">Identifikatorlarga sizning dasturingiz ichida hamma joyda kirish mumkin</td>
+                            <td></td>
+                            <td class="td2">Identifikatorlarga har bir joyda har joyda aniqlanishi mumkin</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <p>
+                    Demak, o‘zgaruvchiga dasturning 
+                    hamma joyida murojaat qilish mumkin.
+
+                    U global miqyosda ishlaydi.
+
+                    Sizning dasturingizdagi barcha funksiyalar global 
+                    miqyosda belgilangan parametrlarga kirish huquqiga ega.
+
+                    Boshqa tomondan, 
+                    sizda funksiyalar doirasi ham bor.
+
+                    Agar identifikator funksiyaning ichida aniqlansa, 
+                    u funksiyaning ichida hamma joyda, ya’ni 
+
+                    shu funksiyaning ichidagi boshqa 
+                    funksiyalarda ham ko‘rinadi.
+                </p>
+                <div class="oddiy_chegara">
+                    <pre>
+                        var james = "I'm looking for this book...";
+
+                        function library() {
+                            var librarian = "Oh, "
+                        }
+                    </pre>
+                </div>
+                <p>
+                    Ushbu misolda, james o‘zgaruvchisi 
+                    global miqyosda berilgan.
+
+                    librarian o‘zgaruvchisi
+                    funksiya doirasiga ega.
+
+                    Va bu o‘zgaruvchi kutubxona 
+                    funksiyasida ham, 
+
+                    klassik adabiyot funksiyasida ham mavjud.
+
+                    Shuningdek, book ham 
+                    funksiyalar doirasiga ega, 
+
+                    ammo u faqat klassik adabiyot 
+                    funksiyasida ko‘rinadi.
+
+                    Agar siz book o‘zgaruvchisiga 
+                    klassik adabiyot funksiyasidan tashqarida 
+
+                    murojaat qilishga urinsangiz, 
+                    ma’lumotnoma xatosi paydo bo‘ladi.
+
+                    Ushbu usulning ishlashishundaki, 
+                    JavaScript mexanizmi identifikatorni 
+
+                    topishga harakat qilganda, 
+                    masalan bu yerda james 
+                    o‘zgaruvchisi deylik.
+
+                    Birinchidan, bu identifikatorlar 
+                    joriy funksiyadan aniqlay oladimi va 
+
+                    agar u shu yerda topilsa, u bajariladi, 
+
+                    lekin agar u joriy funksiyadan topilmasa, 
+                    u bir darajaga, so‘ngra boshqa darajaga 
+                    o‘tadi 
+
+                    va keyin boshqa daraja va h.k.
+
+                    Va u boshqa funksiyalarda bo‘lmaguncha 
+                    tashqi funksiyalarga o‘tishda 
+
+                    davom etadi.
+
+                    Bu degani, u global miqyosga chiqdi, deganidir.
+
+                    Agar JavaScript mexanizmi barcha 
+                    tashqi funksiyalarni va global miqyosni 
+
+                    tekshirsa-da va o‘shanda ham identifikatorni 
+                    topolmasa, unda xato qaytariladi.
+
+                    Bu yerda u identifikatorni topdi.
+
+                    James bu yerda global miqyosda bor.
+
+                    Endi siz global va funksiya doiralari 
+                    haqida bilimga ega bo‘lganingizdan so‘ng, 
+
+                    bilib olganlaringizni amalda qo‘llashga vaqt ajratamiz.
+
+
+
                 </p>
                 <div class="havo_chegara">
                     <p>
