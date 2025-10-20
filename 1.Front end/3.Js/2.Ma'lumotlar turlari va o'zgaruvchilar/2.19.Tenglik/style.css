@@ -1,9 +1,4 @@
-.havo_chegara {
-    border: 1.5px solid #6491FC; 
-    margin: auto; 
-    border-radius: 0 0 45px 0; 
-    margin-top: 15px;
-}
+
 .green {
     color: green;
 }
@@ -36,6 +31,10 @@ p {
 }
 
 .maxsus {
+    display: inline;
     box-shadow: 0px 0px 2px 0px #333;
     font-family: Fira Code, Source Code Pro, monospace;
+    font-weight: 500;
+    line-height: 2;
 }
+

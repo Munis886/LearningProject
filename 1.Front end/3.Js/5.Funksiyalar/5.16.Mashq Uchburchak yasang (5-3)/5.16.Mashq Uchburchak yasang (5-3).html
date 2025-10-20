@@ -707,11 +707,22 @@
         </div> 
         
         <div id="container">
-            <div id="sarlavha">
-                <h1>
-                    Mashq: Uchburchak yasang (5-3)
-                </h1>
+            <div class="sarlavha">
+                <ul>
+                    <li class="li_1">
+                        <a href="/1.Front end/3.Js/5.Funksiyalar/5.15.Ko‘tarishni takrorlash/5.15.Ko‘tarishni takrorlash.html">⟨</a>
+                    </li>
+                    <li class="li_2">
+                        Mashq: Uchburchak yasang (5-3)
+                    </li>
+                    <li class="li_3">
+                        <a href="/1.Front end/3.Js/5.Funksiyalar/5.17.Funksiya ifodalari/5.17.Funksiya ifodalari.html">
+                            ⟩
+                        </a>
+                    </li>
+                </ul>
             </div>
+
             <div id="text" class="qisqa">
                 <h2>
                     Ko‘rsatmalar:
@@ -807,7 +818,7 @@
                        // creates a line of * for a given length
                        function makeLine(length) {
                         var line = "";
-                        for (var j = 1; j <= length; j++) {
+                        for (var j = 1; j &lt;= length; j++) {
                             line += "* ";
                         }
                         return line + "\n";
@@ -816,7 +827,7 @@
                     // builds a triangle of given height
                     function buildTriangle(size) {
                         var triangle = "";
-                        for (var i = 1; i <= size; i++) {
+                        for (var i = 1; i &lt;= size; i++) {
                             triangle += makeLine(i);
                         }
                         return triangle;
@@ -833,7 +844,33 @@
                     </pre>
                 </div>
 
+                <div class="havo_chegara">
+                    <pre>
+                        <b>Natija</b>
+                        <script>
+                            // creates a line of * for a given length
+                            function makeLine(length) {
+                            var line = "";
+                            for (var j = 1; j <= length; j++) {
+                            line += "* ";
+                            }
+                            return line + "\n";
+                            }
 
+                            // builds a triangle of given height
+                            function buildTriangle(size) {
+                            var triangle = "";
+                            for (var i = 1; i <= size; i++) {
+                            triangle += makeLine(i);
+                            }
+                            return triangle;
+                            }
+
+                            // test your code
+                            document.write(buildTriangle(10));
+                        </script>
+                    </pre>
+                </div>
 
 
             </div>
