@@ -707,11 +707,22 @@
         </div> 
         
         <div id="container">
-            <div id="sarlavha">
-                <h1>
-                    Mashq: Inline (5-6)
-                </h1>
+            <div class="sarlavha">
+                <ul>
+                    <li class="li_1">
+                        <a href="/1.Front end/3.Js/5.Funksiyalar/5.21.Mashq Cry (5-5)/5.21.Mashq Cry (5-5).html">⟨</a>
+                    </li>
+                    <li class="li_2">
+                        Mashq: Inline (5-6)
+                    </li>
+                    <li class="li_3">
+                        <a href="/1.Front end/3.Js/5.Funksiyalar/5.23.Xulosa/5.23.Xulosa.html">
+                            ⟩
+                        </a>
+                    </li>
+                </ul>
             </div>
+            
             <div id="text" class="qisqa">
                 <h2>
                     Ko‘rsatmalar:
@@ -743,17 +754,17 @@
                
                 <div class="yashil_maydon">
                     <pre>
-                        /*
-                        * Programming Quiz: Inline Functions (5-6)
+                        <span class="yashil">/*
+                        * Dasturlash viktorinasi: INN chiziq funksiyalari (5-6)
                         */
                        
                        /*
                         * QUIZ REQUIREMENTS
-                        * - Your code should have an `emotions()` function
-                        * - Your code should call the `emotions()` function
-                        * - Your `emotions()` function call should have an inline function expression passed as the second parameter
-                        * - Your function expression should return the expected output
-                        */
+                        * - Sizning kodingiz `emotions()` funksiyasi bo'lishi kerak
+                        * - Sizning kodingiz `emotions()` deb atashi kerak
+                        * - Sizning `emotions()` funktsiyasi qo'ng'iroq bo'lishi kerak.
+                        * - Sizning funktsiya ifodasi kutilgan natijani qaytarishi kerak
+                        */</span>
                        
                        // emotions() function definition
                        function emotions(myString, myFunc) {
@@ -773,7 +784,27 @@
                     </pre>
                 </div>
 
+                <div class="havo_chegara">
+                    <p>
+                        <b>
+                            Natija:
+                        </b>
+                        <script>
+                            function emotions(myString, myFunc) {
+                                document.write("I am " + myString + ", " + myFunc(2));
+                            }
 
+                            // Solution
+                            emotions("happy", function(num) {
+                                var sound = "";
+                                for (var i = 0; i < num; i++) {
+                                    sound += "ha";
+                                }
+                                return sound + "!";
+                            });
+                        </script>
+                    </p>
+                </div>
                 
             </div>
         </div> 
