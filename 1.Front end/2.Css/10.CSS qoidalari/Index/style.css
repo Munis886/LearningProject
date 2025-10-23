@@ -168,16 +168,14 @@ dt,dd {
 }
 
 #CSS p:not(.CSS p){
+  background-color: var(--code-background-inline);
   padding: 2px 20px;
   border-bottom: 2px solid #000;
   padding-bottom: 0;
   margin: 0;
   color: #fff;
+  border-radius: 3px 3px 0 0;
 }
-
-
-
-
 
 .body {
     margin: 0;
