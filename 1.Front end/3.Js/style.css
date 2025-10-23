@@ -301,8 +301,17 @@ div p {
     border: 1px solid black;
     
 }
+.sayt {
+    color: blue;
+    text-align: right;
+    margin: 0 auto;
+    font-style: italic;
+}
 
-
+.sayt a {
+    text-decoration: none;
+    color: blue; 
+}
 .qisqa {
     width: 75%;
     margin: 0 auto;
