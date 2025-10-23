@@ -352,13 +352,6 @@ iframe {
   margin: 0 auto;
 }
 
-.CSS {
-  background: rgb(59, 59, 59);
-  margin: 0 auto; 
-  width: 80%;
-  border-radius: 5px 5px 0 0;
-}
-
 .CSS p{
   background-color: var(--code-background-block);
   color: var(--text-secondary);
