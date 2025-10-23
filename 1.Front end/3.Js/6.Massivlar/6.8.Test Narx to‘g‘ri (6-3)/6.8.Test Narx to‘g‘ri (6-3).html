@@ -707,11 +707,22 @@
         </div> 
         
         <div id="container">
-            <div id="sarlavha">
-                <h1>
-                    Test: Narx to‘g‘ri (6-3)
-                </h1>
+            <div class="sarlavha">
+                <ul>
+                    <li class="li_1">
+                        <a href="/1.Front end/3.Js/6.Massivlar/6.7.Test Jamoa qurish (6-2)/6.7.Test Jamoa qurish (6-2).html">⟨</a>
+                    </li>
+                    <li class="li_2">
+                        Test: Narx to‘g‘ri (6-3)
+                    </li>
+                    <li class="li_3">
+                        <a href="/1.Front end/3.Js/6.Massivlar/6.9.Massiv xususiyatlari va metodlari/6.9.Massiv xususiyatlari va metodlari.html">
+                            ⟩
+                        </a>
+                    </li>
+                </ul>
             </div>
+            
             <div id="text" class="qisqa">
 
                 <h3>
@@ -739,17 +750,18 @@
                <h3>
                 Kodingiz:
                </h3>
-               <div class="yashil_maydon">
+                <div class="yashil_maydon">
                     <pre>
+                        <span class="yashil">    
                         /*
-                        * Programming Quiz: The Price is Right (6-3)
+                        * Dasturlash testi: Narx to'g'ri (6-3)
                         */
                        /*
-                        * QUIZ REQUIREMENTS
-                        * - Your code should have a variable `prices`
-                        * - The variable `prices` should be an array having different values for the 1st, 3rd, and 7th elements
-                        * - Your code should print `prices` to the console as an array. Do not iterate over the elements. 
-                        */
+                        * Viktorinalar talablari
+                        * - Sizning kodingiz "narxlar" o'zgaruvchisiga ega bo'lishi kerak
+                        * - “narxlar” oʻzgaruvchisi 1, 3 va 7-elementlar uchun turli qiymatlarga ega massiv boʻlishi kerak.
+                        * - Sizning kodingiz konsolda “narxlar”ni massiv sifatida chop etishi kerak. Elementlar ustida takrorlanmang.
+                        */</span>
                         
                        var prices = [1.23, 48.11, 90.11, 8.50, 9.99, 1.00, 1.10, 67.00];
                        
@@ -758,12 +770,26 @@
                        prices[7] = 67.01;
                        
                        console.log(prices);
-                       // your code goes here
+                       <span class="kul">// sizning kodingiz shu yerda</span>
                              
                     </pre>
-               </div>
+                </div>
                 
+                <div class="havo_chegara">
+                    <p>
+                        <b>Natija:</b>
+                        <script>
+                            var prices = [1.23, 48.11, 90.11, 8.50, 9.99, 1.00, 1.10, 67.00];
 
+                            prices[1] = 41.24;
+                            prices[3] = 8.51;
+                            prices[7] = 67.01;
+
+                            document.write(prices);
+                            // sizning kodingiz shu yerda
+                        </script>
+                    </p>
+                </div>
 
             </div>
         </div> 
