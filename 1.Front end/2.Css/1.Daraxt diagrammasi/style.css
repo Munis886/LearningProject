@@ -29,13 +29,13 @@ div .menyu ul li{
     list-style-type: none;
     display: inline;
 }
-
+/* 
 #menyu ul li a {
     text-decoration: none;
     color: #fff;
     padding: 5px 10px;
     display: inline-block;
-}
+} */
 
 .body {
     margin: 0;

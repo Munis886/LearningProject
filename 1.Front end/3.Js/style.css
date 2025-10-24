@@ -380,7 +380,7 @@ pre {
 }
 
 .li_1 {
-    padding: 5px 5px;
+    padding: 0;
     font-weight: 350;
     border-right: 1px solid bisque;
 }
@@ -389,6 +389,7 @@ pre {
     font-weight: 500;
     color: black;
     transition: 0.4s;
+    padding: 5px 5px;
 }
 
 .li_1 a:hover {
@@ -403,7 +404,7 @@ pre {
 }
 
 .li_3 {
-    padding: 5px 5px;
+    padding: 0;
     font-weight: 350;
     border-left: 1px solid bisque;
 }
@@ -412,7 +413,7 @@ pre {
     font-weight: 500;
     color: black;
     transition: 0.4s;
-    
+    padding: 5px 5px;
     border-radius: 0 8px 8px 0;
 }
 
