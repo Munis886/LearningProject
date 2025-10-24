@@ -706,11 +706,22 @@
             </ul>
         </div> 
         <div id="container">
-            <div id="sarlavha">
-                <h1>
-                    Test: Qvidich Kubogi (6-5)
-                </h1>
+            <div class="sarlavha">
+                <ul>
+                    <li class="li_1">
+                        <a href="/1.Front end/3.Js/6.Massivlar/6.14.Test Kamalak ranglari (6-4)/6.14.Test Kamalak ranglari (6-4).html">⟨</a>
+                    </li>
+                    <li class="li_2">
+                        Test: Qvidich Kubogi (6-5)
+                    </li>
+                    <li class="li_3">
+                        <a href="/1.Front end/3.Js/6.Massivlar/6.16.Test Jamoaga qo‘shilish (6-6)/6.16.Test Jamoaga qo‘shilish (6-6).html">
+                            ⟩
+                        </a>
+                    </li>
+                </ul>
             </div>
+
             <div id="text" class="qisqa">
 
                 <p>
@@ -746,27 +757,43 @@
                 <div class="yashil_maydon">
                     <div>
                         <pre>
-                            /*
-                            * Programming Quiz: Quidditch Cup (6-5)
+                            <span class="yashil">
+                                /*
+                            * Dasturlash testi: Kvidish kubogi (6-5)
                             */
                            /*
-                            * QUIZ REQUIREMENTS
-                            * - Your code should have a function `hasEnoughPlayers()`
-                            * - Your function `hasEnoughPlayers()` should accept one parameter
+                            * Viktorina TALABLARI
+                            * - Sizning kodingizda `hasEnoughPlayers()` funksiyasi bo'lishi kerak
+                            * - `hasEnoughPlayers()` funksiyangiz bitta parametrni qabul qilishi kerak
                             * - Your function `hasEnoughPlayers()` should return the expected output - a Boolean value - true or false
-                            * - Return true if the array size is atleast 7, otherwise false. 
+                            * - Agar massiv hajmi kamida 7 bo'lsa, true qiymatini qaytaring, aks holda noto'g'ri.
                             */
+                            </span>
                             
-                           // your code goes here
+                           <span class="kul">// Sizning kodingiz shu yerda bo'ladi</span>
                            
                            function hasEnoughPlayers(team) {
                                return team.length >= 7;
                            }
                            
                            var team = ["Oliver Wood", "Angelina Johnson", "Katie Bell", "Alicia Spinnet", "George Weasley", "Fred Weasley", "Harry Potter"];
-                           console.log(hasEnoughPlayers(team)); // true chiqadi
+                           console.log(hasEnoughPlayers(team)); <span class="kul">// true chiqadi</span>
                         </pre>
                     </div>
+                </div>
+
+                <div class="havo_chegara">
+                    <p>
+                        <b>Natija:</b>
+                        <script>
+                            function hasEnoughPlayers(team) {
+                            return team.length >= 7;
+                            }
+
+                            var team = ["Oliver Wood", "Angelina Johnson", "Katie Bell", "Alicia Spinnet", "George Weasley", "Fred Weasley", "Harry Potter"];
+                            document.write(hasEnoughPlayers(team)); // true chiqadi
+                        </script>
+                    </p>
                 </div>
             </div>
         </div> 

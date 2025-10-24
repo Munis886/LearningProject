@@ -7,6 +7,7 @@
     <meta name="description" content="Bu yerda Css haqida batafsil ma'lumotlar">
     <title>"CSS"da "kaskad" nima uchun juda muhim?</title>
     <link rel="stylesheet" href="/1.Front end/2.Css/style.css">
+    <link rel="stylesheet" href="style.css">
     <script src="/1.Front end/2.Css/Js.js"></script>
     
 </head>
@@ -18,8 +19,8 @@
     </div>
     <div id="menyu">
     <div class="menyu">
+        <button id="toggle-btn" onclick="toggleMenu()">Menu</button>
         <ul>
-            <button id="toggle-btn" onclick="toggleMenu()">Menu</button>
             <li><a href="/index.html">HOME</a></li>
             <li><a href="/1.Front end/1.Front_end.html">FRONT END</a></li>
             <li><a href="/1.Front end/1.HTML/1.HTML.html">HTML</a></li>
@@ -95,10 +96,22 @@
             </ul>
         </div> 
         <div id="container">
-            
-            <div id="sarlavha">
-                <h2 style="width: 12em;">"CSS"da "kaskad" nima uchun juda muhim?</h2>
+            <div class="sarlavha">
+                <ul>
+                    <li class="li_1">
+                        <a href="/1.Front end/2.Css/5.Takrorkash/Termin so‘zlarni takrorlash.html">⟨</a>
+                    </li>
+                    <li class="li_2">
+                        "CSS"da "kaskad" nima uchun juda muhim?
+                    </li>
+                    <li class="li_3">
+                        <a href="/1.Front end/2.Css/7.O‘lchov birliklari/7.O‘lchov birliklari.html">
+                            ⟩
+                        </a>
+                    </li>
+                </ul>
             </div>
+
             <div id="text">
                 <p>
                     Yaxshi. Shunday qilib, siz CSSda bajarishingiz mumkin bo'lgan bir nechta 
@@ -152,27 +165,13 @@
                 </p>
                 <p>
                     <style>
-                        .body {
-                            color:white;
-                            background-color: black;
-                        }
-
-                        .p {
-                            color:pink;
-                            margin: 0;
-                        }
-                        em {
-                            color:red;
-                        }
-                        h1 em {
-                            color: orange;
-                        }
+                       
                     </style>
                 </p>
-                <div style="width: 60%; background-color: #343434; margin: 0 auto; border-radius: 6px 6px 0 0;">
-                    <p style="margin: 0;">body</p>
+                <div class="body_bottom">
+                    <p>body</p>
                     <div class="body">
-                        <p class="p">
+                        <p>
                             body { <br>
                                 color:white; <br>
                                 background-color: black; <br>
@@ -535,7 +534,7 @@
                     Pastroqda qo‘llaniladigan uslub yuqorida qo‘llanilgan uslub ustidan g‘olib kelishi mumkin, ya’ni yuqorida qo‘llanilgan uslub o‘z kuchini yo‘qotadi. Masalan, agar body elementi color: red uslubiga ega bo‘lsa, lekin body elementi ichida p paragraf elementi bo‘lsa va unga color: blue uslubi qo‘llanilgan bo‘lsa, ko‘k rang ushbu paragrafga va uning ichidagi har qanday elementlarga qo‘llaniladi:
                 </p>
                 
-                <div style="width: 20em; background-color: #343434; margin-left: 25px; margin-bottom: 25px;  border-radius: 6px 6px 0 0;">
+                <div class="body_bottom">
                     <p style="margin: 0;">body</p>
                     <div class="body">
                         <p style="margin: 0;">

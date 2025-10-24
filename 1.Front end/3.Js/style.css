@@ -213,10 +213,10 @@ body {
     font:x-large;
 }
 
-.havo_chegara {
+.havo_chegara, .natija {
     border: 1.5px solid #6491FC;    
     margin: 8px auto; 
-    width: 80%;
+    width: 79%;
     border-radius: 0 0 60px 0; 
     margin-top: 15px;
     padding: 6px 8px;

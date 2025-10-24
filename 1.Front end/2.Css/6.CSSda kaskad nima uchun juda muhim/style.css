@@ -1,0 +1,30 @@
+.body {
+    padding: 20px;
+    background-color: black;
+    color: white;
+}
+
+.box {
+    padding: 0 20px;
+    margin: 0 auto;
+    width: 80%;
+}
+
+.body_bottom {
+    color:white;
+    background-color: #333;
+}
+
+.body_bottom p {
+    margin: 0;
+    padding: 10px 20px;
+    font-weight: bold;
+}
+
+em {
+    color:red;
+}
+h1 em {
+    color: orange;
+}
+

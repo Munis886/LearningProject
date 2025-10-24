@@ -706,10 +706,20 @@
             </ul>
         </div> 
         <div id="container">
-            <div id="sarlavha">
-                <h1>
-                    Test: Jamoaga qo‘shilish (6-6)
-                </h1>
+            <div class="sarlavha">
+                <ul>
+                    <li class="li_1">
+                        <a href="/1.Front end/3.Js/6.Massivlar/6.15.Test Qvidich Kubogi (6-5)/6.15.Test Qvidich Kubogi (6-5).html">⟨</a>
+                    </li>
+                    <li class="li_2">
+                        Test: Jamoaga qo‘shilish (6-6)
+                    </li>
+                    <li class="li_3">
+                        <a href="/1.Front end/3.Js/6.Massivlar/6.17.Test Hujjatlarni tekshirish (6-7)/6.17.Test Hujjatlarni tekshirish (6-7).html">
+                            ⟩
+                        </a>
+                    </li>
+                </ul>
             </div>
             
             <div id="text" class="qisqa">
@@ -721,7 +731,7 @@
                     Oldingi mashqda siz "Firefly" 
                     nomli xit-shousidan Mal kapitani 
                     ekipaji uchun <span class="maxus">crew</span> 
-                    nomli maasiv yaratdingiz.
+                    nomli massiv yaratdingiz.
                 </p>
 
                 <p>
@@ -773,9 +783,11 @@
                 <div class="yashil_maydon">
                     <div>
                         <pre>
+                            <span class="yashil">
                             /*
-                            * Programming Quiz: Joining the Crew (6-6)
+                            * Dasturlash testi: Ekipajga qo'shilish (6-6)
                             */
+                            </span>
                            
                            var captain = "Mal";
                            var second = "Zoe";
@@ -795,6 +807,30 @@
                            console.log(crew);
                         </pre>
                     </div>
+                </div>
+
+                <div class="natija">
+                    <p>
+                        <b>Natija:</b>
+                        <script>
+                            var captain = "Mal";
+                           var second = "Zoe";
+                           var pilot = "Wash";
+                           var companion = "Inara";
+                           var mercenary = "Jayne";
+                           var mechanic = "Kaylee";
+                           
+                           var crew = [captain, second, pilot, companion, mercenary, mechanic];
+                           
+                           var doctor = "Simon";
+                           var sister = "River";
+                           var shepherd = "Book";
+                           
+                           // your code goes here
+                           crew.push(doctor, sister, shepherd);
+                           document.write(crew);
+                        </script>
+                    </p>
                 </div>
             </div>
         </div> 
