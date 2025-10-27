@@ -819,9 +819,64 @@
                     Massiv indekslari
                 </h3>
                 <p>
-                    Arrayob'ektlar element indekslari sifatida ixtiyoriy satrlardan foydalana olmaydi ( assotsiativ massivdagi kabi ), lekin manfiy bo'lmagan butun sonlardan (yoki ularning tegishli satr shaklidan) foydalanishi kerak. Butun sonlar orqali oʻrnatish yoki kirish elementni massiv roʻyxatining oʻzidan oʻrnatmaydi yoki olinmaydi, balki ushbu massivning obyekt xossalari toʻplami bilan bogʻlangan oʻzgaruvchini oʻrnatadi yoki unga kirish imkonini beradi . Massivning obyekt xossalari va massiv elementlari ro‘yxati alohida bo‘lib, massivning o‘tish va mutatsiya amallarini ushbu nomlangan xususiyatlarga qo‘llash mumkin emas.
+                    Array ob'ektlar element indekslari sifatida ixtiyoriy 
+                    satrlardan foydalana olmaydi ( assotsiativ massivdagi kabi ), 
+                    lekin manfiy bo'lmagan butun sonlardan (yoki ularning tegishli satr shaklidan) 
+                    foydalanishi kerak. Butun sonlar orqali oʻrnatish yoki kirish elementni massiv 
+                    roʻyxatining oʻzidan oʻrnatmaydi yoki olinmaydi, balki ushbu massivning obyekt 
+                    xossalari toʻplami bilan bogʻlangan oʻzgaruvchini oʻrnatadi yoki unga kirish 
+                    imkonini beradi. Massivning obyekt xossalari va massiv elementlari ro‘yxati 
+                    alohida bo‘lib, massivning o‘tish va mutatsiya amallarini ushbu nomlangan 
+                    xususiyatlarga qo‘llash mumkin emas.
                 </p>
-            </div> 
+                <p>
+                    Massiv elementlari ham xossa bo‘lgani kabi ob’yekt xossalaridir 
+                    <span class="maxsus">toString</span>(aniq bo‘lsa-da, <span class="maxsus">toString()</span> bu usul). Shunga qaramay, 
+                    massiv elementiga quyidagi tarzda kirishga urinish sintaksis 
+                    xatosini keltirib chiqaradi, chunki xususiyat nomi haqiqiy emas:
+                </p>
+                <style>
+                    .css_tana p{
+                        background: #4b0b16;
+                        color:aliceblue;
+                    }
+                </style>
+                <div class="css">
+                    <p>JS</p>
+                    
+                    <div class="css_tana">
+                        <p>arr.0; <span class="kul">// sintaksis xatosi</span></p>
+                    </div>
+                </div>
+
+                <p>
+                    JavaScript sintaksisi raqam bilan boshlanadigan xususiyatlarga 
+                    nuqta belgisi o'rniga qavs belgisi yordamida kirishni talab qiladi. 
+                    Bundan tashqari, massiv indekslarini (masalan, o'rniga ) keltirish mumkin, 
+                    lekin odatda kerak emas.years['2']years[2]
+                </p>
+
+                <p>
+                    In maxfiy konvertatsiya orqali JavaScript dvigateli tomonidan satrga majburlanadi 2. 
+                    Natijada, va ob'ektdagi ikki xil uyaga murojaat qiladi va quyidagi misol bo'lishi 
+                    mumkin :years[2]toString'2''02'yearstrue
+                </p>
+                <style>
+                    .css_tana p{
+                        background: darkgrey;
+                        color:aliceblue;
+                    }
+                </style>
+
+                <div class="css">
+                    <p>JS</p>
+                    
+                    <div class="css_tana">
+                        <p>console.log(years["2"] !== years["02"]);</p>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
    
 </body>
