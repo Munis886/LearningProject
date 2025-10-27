@@ -128,7 +128,7 @@ body {
     
 }
 
-#text {
+#text, .text {
     padding: 10px 40px;
     text-align: justify;
 }
