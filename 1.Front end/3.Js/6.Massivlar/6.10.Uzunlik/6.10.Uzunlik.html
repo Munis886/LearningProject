@@ -801,6 +801,7 @@
                         text-decoration: none;
                         }
                 </style>
+
                 <div class="css">
                     <p>JS</p>
                         
@@ -813,21 +814,62 @@
                     </div>
                 </div>
 
-                <div class="natija">
-                    <p>
-                        <b>Natija</b>
-                        <script>
-                            const fruits = [];
-                            fruits.push("banana", "apple", "peach");
-                            document.write(fruits.length); // 3
-                        </script>
-                    </p>
-                </div>
-
                 <p>
                     Xususiyatni JavaScript massivida o'rnatayotganda, agar xususiyat haqiqiy massiv 
                     indeksi bo'lsa va bu indeks massivning joriy chegaralaridan tashqarida bo'lsa, 
-                    vosita massiv lengthxususiyatini mos ravishda yangilaydi:
+                    vosita massiv length xususiyatini mos ravishda yangilaydi:
+                </p>
+
+                <div class="css">
+                    <p>JS</p>
+                        
+                    <div class="css_tana">
+                        <p>
+                            fruits[5] = "mango"; <br>
+                            console.log(fruits[5]); // 'mango' <br>
+                            console.log(Object.keys(fruits)); // ['0', '1', '2', '5'] <br>   
+                            console.log(fruits.length); // 6 <br>
+                        </p>
+                    </div>
+                </div>
+
+                <p>
+                    Ko'paytirish <span class="maxsus">length</span> massivni yangi elementlar yaratmasdan 
+                    bo'sh joylar qo'shish orqali kengaytiradi - hatto <span class="maxsus">undefined</span>.
+                </p>
+
+                <div class="css">
+                    <p>JS</p>
+                        
+                    <div class="css_tana">
+                        <p>
+                            fruits.length = 10; <br>
+                            console.log(fruits); // ['banana', 'apple', 'peach', empty x 2, 'mango', empty x 4] <br>
+                            console.log(Object.keys(fruits)); // ['0', '1', '2', '5'] <br>
+                            console.log(fruits.length); // 10 <br>
+                            console.log(fruits[8]); // undefined <br>
+                        </p>
+                    </div>
+                </div>
+
+                <p>
+                    Biroq, xususiyatni kamaytirish <span class="maxsus">length</span> elementlarni o'chiradi.
+                </p>
+
+                <div class="css">
+                    <p>JS</p>
+                        
+                    <div class="css_tana">
+                        <p>
+                            fruits.length = 2; <br>
+                            console.log(Object.keys(fruits)); // ['0', '1'] <br>
+                            console.log(fruits.length); // 2 <br>
+                        </p>
+                    </div>
+                </div>
+
+                <p>
+                    Bu sahifada batafsilroq tushuntirilgan length.
                 </p>
             </div>
         </div> 

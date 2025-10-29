@@ -433,7 +433,7 @@ pre {
 
 .css {
   background: rgb(59, 59, 59);
-  border-radius: 0;
+  border-radius: 0px 0px 4px 4px;
   width: 80%;
   margin: 0 auto;
 }
@@ -450,7 +450,7 @@ pre {
   color: #000;
   border: none;
   margin: 0;
-  border-radius: 0px 0px 5px 5px;
+  border-radius: 0px 0px 4px 4px;
 }
 
 .css_tana, .css_tana h1{
