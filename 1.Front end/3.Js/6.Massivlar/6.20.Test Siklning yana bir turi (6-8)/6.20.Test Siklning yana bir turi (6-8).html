@@ -706,10 +706,20 @@
             </ul>
         </div> 
         <div id="container">
-            <div id="sarlavha">
-                <h1>
-                    Test: Siklning yana bir turi (6-8)
-                </h1>
+            <div class="sarlavha">
+                <ul>
+                    <li class="li_1">
+                        <a href="/1.Front end/3.Js/6.Massivlar/6.19.Sikl forEach/6.19.Sikl forEach.html">⟨</a>
+                    </li>
+                    <li class="li_2">
+                        Test: Siklning yana bir turi (6-8)
+                    </li>
+                    <li class="li_3">
+                        <a href="/1.Front end/3.Js/6.Massivlar/6.21.Map metodi/6.21.Map metodi.html">
+                            ⟩
+                        </a>
+                    </li>
+                </ul>
             </div>
             
             <div id="text" class="qisqa">
@@ -740,10 +750,7 @@
 
                 <div class="yashil_maydon">
                     <pre>
-                        var test = [12, 929, 11, 3, 199, 1000, 7, 1, 24, 37, 4,
-                        19, 300, 3775, 299, 36, 209, 148, 169, 299,
-                        6, 109, 20, 58, 139, 59, 3, 1, 139
-                    ];
+                        var test = [12, 929, 11, 3, 199, 1000, 7, 1, 24, 37, 4, 19, 300, 3775, 299, 36, 209, 148, 169, 299, 6, 109, 20, 58, 139, 59, 3, 1, 139];
                     
                     test.forEach(function(item, index) {
                         if (item % 3 === 0) {
@@ -766,6 +773,22 @@
                     </pre>
                 </div>
                 
+
+                <div class="natija">
+                    <p>
+                        <b>Natija:</b>
+                        <script>
+                            var test = [12, 929, 11, 3, 199, 1000, 7, 1, 24, 37, 4, 19, 300, 3775, 299, 36, 209, 148, 169, 299, 6, 109, 20, 58, 139, 59, 3, 1, 139];
+
+                            test.forEach(function(item, index) {
+                            if (item % 3 === 0) {
+                            test[index] = item + 100;
+                            }
+                            });
+                            document.write(test);
+                        </script>
+                    </p>
+                </div>
             </div>
         </div> 
     </div>
