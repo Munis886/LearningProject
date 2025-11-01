@@ -128,12 +128,12 @@ body {
     
 }
 
-#text {
+#text, .text {
     padding: 10px 40px;
     text-align: justify;
 }
 
-#text p{
+#text > p{
     margin: 14px 10px;
 }
 
@@ -423,4 +423,37 @@ pre {
     transition: 0.4s;
 }
 
+.css p{
+  background-color: var(--code-background-block);
+  color: var(--text-secondary);
+  border: none;
+  margin: 0;
+  border-radius: 5px 5px 0 0 ;
+}
 
+.css {
+  background: rgb(59, 59, 59);
+  border-radius: 0px 0px 4px 4px;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.css > p{
+  padding: 6px 20px;
+  margin: 0 auto;
+  color: white;
+  font-size: large;
+}
+
+.css_tana p{
+  padding: 12px 20px;
+  color: #000;
+  border: none;
+  margin: 0;
+  border-radius: 0px 0px 4px 4px;
+}
+
+.css_tana, .css_tana h1{
+  border-top: 2px solid #000;
+  margin: 0 auto; 
+}

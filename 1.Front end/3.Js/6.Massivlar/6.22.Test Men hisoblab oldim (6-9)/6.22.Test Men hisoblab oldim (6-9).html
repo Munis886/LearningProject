@@ -555,7 +555,7 @@
                     <ul id="sub-menu-6" class="sub-menu">
                         <li>
                             <a href="/1.Front end/3.Js/6.Massivlar/6.1.Massivlarga kirish/6.1.Massivlarga kirish.html">
-                                6.1.Funksiyalarga kirish
+                                6.1.Massivlarga kirish
                             </a>
                         </li>
                         <li>
@@ -709,10 +709,20 @@
         </div>
         
         <div id="container">
-            <div id="sarlavha">
-                <h1>
-                    Test: Men hisoblab oldim (6-9)
-                </h1>
+            <div class="sarlavha">
+                <ul>
+                    <li class="li_1">
+                        <a href="/1.Front end/3.Js/6.Massivlar/6.21.Map metodi/6.21.Map metodi.html">⟨</a>
+                    </li>
+                    <li class="li_2">
+                        Test: Men hisoblab oldim (6-9)
+                    </li>
+                    <li class="li_3">
+                        <a href="/1.Front end/3.Js/6.Massivlar/6.23.Massivlar ichida massivlar/6.23.Massivlar ichida massivlar.html">
+                            ⟩
+                        </a>
+                    </li>
+                </ul>
             </div>
 
             <div id="text" class="qisqa">
@@ -785,7 +795,7 @@
                         </style>
                         <p class="p">
                               /*
-                                * Programming Quiz: I Got Bills (6-9)
+                                * * Dasturlash testi: Menda hisob-kitoblar bor (6-9)
                                 *
                                 * Use the .map() method to take the bills array below and create a second array
                                 * of numbers called totals. The totals array should contains each amount from the
@@ -822,7 +832,20 @@
                     </pre>
                 </div>
 
-                
+                <div class="natija">
+                    <p>
+                        <b>Natija:</b>
+                        <script>
+                            var bills = [50.23, 19.12, 34.01, 100.11, 12.15, 9.90, 29.11, 12.99, 10.00, 99.22, 102.20, 100.10, 6.77, 2.22];
+
+                            var totals = bills.map(function(bill) {
+                            return Number((bill * 1.15).toFixed(2));
+                            });
+
+                            document.write(totals);
+                        </script>
+                    </p>
+                </div>
             </div>
         </div> 
     </div>

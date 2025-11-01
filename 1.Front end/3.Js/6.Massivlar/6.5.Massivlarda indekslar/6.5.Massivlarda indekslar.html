@@ -553,7 +553,7 @@
                     <ul id="sub-menu-6" class="sub-menu">
                         <li>
                             <a href="/1.Front end/3.Js/6.Massivlar/6.1.Massivlarga kirish/6.1.Massivlarga kirish.html">
-                                6.1.Funksiyalarga kirish
+                                6.1.Massivlarga kirish
                             </a>
                         </li>
                         <li>
@@ -807,7 +807,79 @@
                     </p>
                 </div>
             </div>
-        </div> 
+            <div class="sarlavha">
+                <ul>
+                    <li class="li_2">
+                        MDN
+                    </li>
+                </ul>
+            </div>
+            <div id="text" class="qisqa">
+                <h3>
+                    Massiv indekslari
+                </h3>
+                <p>
+                    Array ob'ektlar element indekslari sifatida ixtiyoriy 
+                    satrlardan foydalana olmaydi ( assotsiativ massivdagi kabi ), 
+                    lekin manfiy bo'lmagan butun sonlardan (yoki ularning tegishli satr shaklidan) 
+                    foydalanishi kerak. Butun sonlar orqali oʻrnatish yoki kirish elementni massiv 
+                    roʻyxatining oʻzidan oʻrnatmaydi yoki olinmaydi, balki ushbu massivning obyekt 
+                    xossalari toʻplami bilan bogʻlangan oʻzgaruvchini oʻrnatadi yoki unga kirish 
+                    imkonini beradi. Massivning obyekt xossalari va massiv elementlari ro‘yxati 
+                    alohida bo‘lib, massivning o‘tish va mutatsiya amallarini ushbu nomlangan 
+                    xususiyatlarga qo‘llash mumkin emas.
+                </p>
+                <p>
+                    Massiv elementlari ham xossa bo‘lgani kabi ob’yekt xossalaridir 
+                    <span class="maxsus">toString</span>(aniq bo‘lsa-da, <span class="maxsus">toString()</span> bu usul). Shunga qaramay, 
+                    massiv elementiga quyidagi tarzda kirishga urinish sintaksis 
+                    xatosini keltirib chiqaradi, chunki xususiyat nomi haqiqiy emas:
+                </p>
+                <style>
+                    .css_tana p{
+                        background: #4b0b16;
+                        color:aliceblue;
+                    }
+                    .css_tana a {
+                        color:aliceblue;
+                        text-decoration: none;
+                    }
+                </style>
+                <div class="css">
+                    <p>JS</p>
+                    
+                    <div class="css_tana">
+                        <p>arr.0; <span class="kul">// sintaksis xatosi</span></p>
+                    </div>
+                </div>
+
+                <p>
+                    JavaScript sintaksisi raqam bilan boshlanadigan xususiyatlarga 
+                    nuqta belgisi o'rniga qavs belgisi yordamida kirishni talab qiladi. 
+                    Bundan tashqari, massiv indekslarini (masalan, o'rniga ) keltirish mumkin, 
+                    lekin odatda kerak emas.years['2']years[2]
+                </p>
+
+                <p>
+                    In maxfiy konvertatsiya orqali JavaScript dvigateli tomonidan satrga majburlanadi 2. 
+                    Natijada, va ob'ektdagi ikki xil uyaga murojaat qiladi va quyidagi misol bo'lishi 
+                    mumkin :years[2]toString'2''02'yearstrue
+                </p>
+
+                <div class="css">
+                    <p>JS</p>
+                    
+                    <div class="css_tana">
+                        <p>console.log(years["2"] <a href="http://127.0.0.1:5501/1.Front%20end/3.Js/2.Ma'lumotlar%20turlari%20va%20o'zgaruvchilar/2.19.Tenglik/2.19.Tenglik.html#!==">!==</a> years["02"]);</p>
+                    </div>
+                </div>
+
+                <p>
+                    Faqat years['2']haqiqiy massiv indeksi. years['02']massiv iteratsiyasida tashrif buyurilmaydigan ixtiyoriy string xususiyatidir.
+                </p>
+                
+            </div>
+        </div>
     </div>
    
 </body>

@@ -392,15 +392,25 @@ body, h1 {
 .matn p, .matn h2 {
     padding: 0;
 }
+:root {
+    --some-color: #0000ff;
+    --javob-uchun: #ff0000;
+    --moviy-rang: #323fb2;
+    --thead-uchun: #123456;
+    --tugma-uchun: #526509;
+    --matn-uchun: #726709;
+    --kul-rang: rgb(113, 113, 101);
+}
 
 #sarlavha h2, #sarlavha h1 {
     display: inline-block; /* Elementni inline-block qilib sozlash */
     width: auto; /* Kenglikni avtomatik qilish */
     margin: 10px 0;
     border-radius: 0 10px 10px 0;
-    background-color: greenyellow;
+    background-color: var(--thead-uchun);
     padding: 5px 25px;
     text-align: center;
+    color: var(--text-secondary);
 }
 
 
@@ -417,15 +427,7 @@ body, h1 {
 .fa-book:before {
     content: "\f02d";
 }
-:root {
-    --some-color: #0000ff;
-    --javob-uchun: #ff0000;
-    --moviy-rang: #323fb2;
-    --thead-uchun: #123456;
-    --tugma-uchun: #526509;
-    --matn-uchun: #726709;
-    --kul-rang: rgb(113, 113, 101);
-}
+
 
 .green {
     color: green;

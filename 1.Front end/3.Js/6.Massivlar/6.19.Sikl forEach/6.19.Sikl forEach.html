@@ -553,7 +553,7 @@
                     <ul id="sub-menu-6" class="sub-menu">
                         <li>
                             <a href="/1.Front end/3.Js/6.Massivlar/6.1.Massivlarga kirish/6.1.Massivlarga kirish.html">
-                                6.1.Funksiyalarga kirish
+                                6.1.Massivlarga kirish
                             </a>
                         </li>
                         <li>
@@ -706,10 +706,20 @@
             </ul>
         </div> 
         <div id="container">
-            <div id="sarlavha">
-                <h1>
-                    Sikl forEach
-                </h1>
+            <div class="sarlavha">
+                <ul>
+                    <li class="li_1">
+                        <a href="/1.Front end/3.Js/6.Massivlar/6.18.Massivli sikl/6.18.Massivli sikl.html">⟨</a>
+                    </li>
+                    <li class="li_2">
+                        Sikl forEach
+                    </li>
+                    <li class="li_3">
+                        <a href="/1.Front end/3.Js/6.Massivlar/6.20.Test Siklning yana bir turi (6-8)/6.20.Test Siklning yana bir turi (6-8).html">
+                            ⟩
+                        </a>
+                    </li>
+                </ul>
             </div>
             
             <div id="text" class="qisqa">
@@ -727,7 +737,11 @@
                     
                     ularni donut teshiklari sifatida sotishga qaror qilsak,
                     quyidagi kodni yozishimiz mumkin.
-                    
+                </p>
+                <div class="center-align">
+                    <img src="image_2025-10-29_12-47-36.png" alt="kod" width="50%">
+                </div>
+                <p>
                     Bu kod juda oddiy ko'rinadi, lekin
                     aslida juda dahshatli.
                     
@@ -746,7 +760,11 @@
                     massivdagi indeksni ko'rsatish uchun o'zgaruvchidan foydalanishingiz mumkin.
                     
                     Va keyin yuragingiz xohlagan manipulyatsiyani bajarish uchun ushbu indeksni aylantiring.
-                    
+                </p>
+                <div class="center-align">
+                    <img src="image_2025-10-29_13-48-27.png" alt="kod" width="50%">
+                </div>
+                <p>
                     bu misolda i o'zgaruvchisi
                     massiv indeksini ifodalash uchun ishlatiladi.
                     
@@ -765,7 +783,11 @@
                     
                     Mana
                     forEach deb nomlangan usulga misol.
-                    
+                </p>
+                <div class="center-align">
+                    <img src="image_2025-10-29_13-51-58.png" alt="kod" width="50%">
+                </div>
+                <p>
                     forEach dan elementlar va massiv ustida aylanish uchun foydalanish mumkin.
                     
                     myAwesomeFunction - bu faqat
@@ -787,7 +809,11 @@
                     
                     Va nihoyat massiv, bu
                     siz boshlagan massiv.
-                    
+                </p>
+                <div class="center-align">
+                    <img src="image_2025-10-29_14-10-07.png" alt="kod" width="50%">
+                </div>
+                <p>
                     Bu yerda
                     oldingi donuts massivi bilan har biriga misol.
                     
@@ -818,7 +844,11 @@
                     bizning kodimizning boshqa joylarida ishlatilmasligini bilganimiz sababli,
                     
                     biz uni shunday inline funksiya ifodasi sifatida belgilashimiz mumkin.
-                    
+                </p>
+                <div class="center-align">
+                    <img src="Screenshot_1.png" alt="code" width="50%">
+                </div>
+                <p>
                     Qarang, ancha toza.                  
                 </p>
                 
@@ -913,7 +943,7 @@
                     (0 dan boshlab). Massiv o‘zi esa 
                     <span class="maxsus">array</span> 
                     parametri orqali belgilanadi, bu 
-                    elementlarni boshqatish uchun qulay.
+                    elementlarni boshqarish uchun qulay.
                 </p>
 
                 <p>
@@ -926,7 +956,7 @@
                     parametri massiv elementi qiymatini oladi, 
                     <span class="maxsus">index</span> parametri esa element indeksiga teng bo‘ladi 
                     (0 dan boshlab). Massiv o‘zi esa <span class="maxsus">array</span> parametri 
-                    orqali belgilanadi, bu elementlarni boshqatish uchun qulay.
+                    orqali belgilanadi, bu elementlarni boshqarish uchun qulay.
                 </p>
 
                 <p>
@@ -953,6 +983,45 @@
 
                 <p>
                     Keyingi sahifada siz massivni o‘zgartirish uchun forEach() metodidan foydalangan holda test o‘tasiz.
+                </p>
+
+            </div>
+
+            <div class="sarlavha">
+                <ul>
+                    <li class="li_2">
+                        MDN
+                    </li>
+                </ul>
+            </div>
+
+            <div class="text qisqa">
+                <h3>
+                    Massiv usullari va bo'sh uyalar
+                </h3>
+
+                <p>
+                    Massiv usullari siyrak massivlarda bo'sh uyalarga duch kelganda turli 
+                    xatti-harakatlarga ega. Umuman olganda, eski usullar (masalan, forEach) 
+                    bo'sh slotlarni o'z ichiga olgan indekslardan farq qiladi undefined.
+                </p>
+                <style>
+                    .maxsus a{
+                        text-decoration: none;
+                        color: brown;
+                    }
+                </style>
+                <p>
+                    Bo'sh o'rindiqlar uchun maxsus ishlovga ega bo'lgan usullarga quyidagilar kiradi: 
+                    <span class="maxsus"><a href="#concat" id="concat">concat()</a></span>, 
+                    <span class="maxsus"><a href="#copyWithin" id="copyWithin">copyWithin()</a></span>, 
+                    <span class="maxsus">every()</span>, <span class="maxsus">filter()</span>, 
+                    <span class="maxsus">flat()</span>, <span class="maxsus">flatMap()</span>, 
+                    <span class="maxsus">forEach()</span>, <span class="maxsus">indexOf()</span>,
+                    lastIndexOf(), map(), reduce(), reduceRight(), reverse(), slice(), some(), sort()va splice().
+                    forEachBo'sh joylarga umuman kirmaslik kabi takrorlash usullari . Boshqa usullar, masalan concat, 
+                    copyWithin, va hokazo, nusxa ko'chirishda bo'sh joylarni saqlaydi, shuning uchun oxirida 
+                    massiv hali ham siyrak.
                 </p>
             </div>
         </div> 
