@@ -743,7 +743,7 @@
                 </div>
                 <p>
                     Bu kod juda oddiy ko'rinadi, lekin
-                    aslida juda dahshatli.
+                    aslida juda daxshatli.
                     
                     Bu takrorlanadi va
                     ko'p miqdordagi donutlar uchun kengaytirilmaydi.
@@ -902,9 +902,6 @@
                     sikllaridan farq qiladi:
                 </p>
 
-
-
-                
                 <div class="oddiy_chegara">
                     <pre>
                         for (var i = 0; i &lt; donuts.length; i++) {
@@ -986,11 +983,16 @@
                 </p>
 
             </div>
-
+            <style>
+                .li_2 a{
+                     text-decoration: none;
+                     color: black;
+                }
+            </style>
             <div class="sarlavha">
                 <ul>
                     <li class="li_2">
-                        MDN
+                        <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array#array_methods_and_empty_slots">MDN</a>
                     </li>
                 </ul>
             </div>
@@ -1008,14 +1010,15 @@
                 <style>
                     .maxsus a{
                         text-decoration: none;
-                        color: brown;
+                        color:darkcyan;
+                        font-weight: 600;
                     }
                 </style>
                 <p>
                     Bo'sh o'rindiqlar uchun maxsus ishlovga ega bo'lgan usullarga quyidagilar kiradi: 
                     <span class="maxsus"><a href="#concat" id="concat">concat()</a></span>, 
                     <span class="maxsus"><a href="#copyWithin" id="copyWithin">copyWithin()</a></span>, 
-                    <span class="maxsus">every()</span>, <span class="maxsus">filter()</span>, 
+                    <span class="maxsus"><a href="#every()" id="every()">every()</a></span>, <span class="maxsus">filter()</span>, 
                     <span class="maxsus">flat()</span>, <span class="maxsus">flatMap()</span>, 
                     <span class="maxsus">forEach()</span>, <span class="maxsus">indexOf()</span>,
                     lastIndexOf(), map(), reduce(), reduceRight(), reverse(), slice(), some(), sort()va splice().
@@ -1023,6 +1026,28 @@
                     copyWithin, va hokazo, nusxa ko'chirishda bo'sh joylarni saqlaydi, shuning uchun oxirida 
                     massiv hali ham siyrak.
                 </p>
+
+                <div class="code">
+                    <p>
+                        JS
+                    </p>
+                    <pre>
+                        <code>
+                            const colors = ["red", "yellow", "blue"];
+                            colors[5] = "purple";
+                            colors.forEach((item, index) => {
+                            console.log(`${index}: ${item}`);
+                            });
+                            // Output:
+                            // 0: red
+                            // 1: yellow
+                            // 2: blue
+                            // 5: purple
+
+                            colors.reverse(); // ['purple', empty × 2, 'blue', 'yellow', 'red']
+                        </code>
+                    </pre>
+                </div>
             </div>
         </div> 
     </div>
