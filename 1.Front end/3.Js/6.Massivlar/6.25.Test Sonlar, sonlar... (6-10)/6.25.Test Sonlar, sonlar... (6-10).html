@@ -709,10 +709,20 @@
         </div>
         
         <div id="container">
-            <div id="sarlavha">
-                <h1>
-                    Test: Sonlar, sonlar... (6-10)
-                </h1>
+            <div class="sarlavha">
+                <ul>
+                    <li class="li_1">
+                        <a href="/1.Front end/3.Js/6.Massivlar/6.24.2D Donutlar massivi/6.24.2D Donutlar massivi.html">⟨</a>
+                    </li>
+                    <li class="li_2">
+                        Test: Sonlar, sonlar... (6-10)
+                    </li>
+                    <li class="li_3">
+                        <a href="/1.Front end/3.Js/6.Massivlar/6.26.6-dars. Xulosa/6.26.6-dars. Xulosa.html">
+                            ⟩
+                        </a>
+                    </li>
+                </ul>
             </div>
 
             <div id="text" class="qisqa">
@@ -755,9 +765,6 @@
                            Bu kod har bir sonni tekshiradi va juft bo‘lsa 
                            "even", toq bo‘lsa "odd" satri bilan almashtiradi:
 
-
-
-
                             var numbers = [
                                 [243, 12, 23, 12, 45, 45, 78, 66, 223, 3],
                                 [34, 2, 1, 553, 23, 4, 66, 23, 4, 55],
@@ -771,8 +778,8 @@
                                 [76, 7, 9, 6, 3, 73, 77, 100, 56, 100]
                             ];
 
-                            for (var i = 0; i < numbers.length; i++) {
-                                for (var j = 0; j < numbers[i].length; j++) {
+                            for (var i = 0; i &lt; numbers.length; i++) {
+                                for (var j = 0; j &lt; numbers[i].length; j++) {
                                     if (numbers[i][j] % 2 === 0) {
                                         numbers[i][j] = "even";
                                     } else {
@@ -789,6 +796,49 @@
                     <p>
                         Natijada, barcha sonlar "even" yoki "odd" ga almashtiriladi.
                     </p>
+                </div>  
+                <style>
+                    .oddiy_chegara {
+                        border: 2px solid black;
+                        padding: 10px;
+                        margin-bottom: 20px;
+                        overflow-x: scroll;
+                        overflow: hidden;
+                        white-space: nowrap;
+                        text-overflow: ellipsis;
+                        width: 100%;
+                    }
+                </style>
+                <div class="oddiy_chegara">
+                        <p>
+                            <b>Natija</b>
+                            <script>
+                                var numbers = [
+                                    [243, 12, 23, 12, 45, 45, 78, 66, 223, 3],
+                                    [34, 2, 1, 553, 23, 4, 66, 23, 4, 55],
+                                    [67, 56, 45, 553, 44, 55, 5, 428, 452, 3],
+                                    [12, 31, 55, 445, 79, 44, 674, 224, 4, 21],
+                                    [4, 2, 3, 52, 13, 51, 44, 1, 67, 5],
+                                    [5, 65, 4, 5, 5, 6, 5, 43, 23, 4424],
+                                    [74, 532, 6, 7, 35, 17, 89, 43, 43, 66],
+                                    [53, 6, 89, 10, 23, 52, 111, 44, 109, 80],
+                                    [67, 6, 53, 537, 2, 168, 16, 2, 1, 8],
+                                    [76, 7, 9, 6, 3, 73, 77, 100, 56, 100]
+                                    ];
+
+                                    for (var i = 0; i < numbers.length; i++) {
+                                    for (var j = 0; j < numbers[i].length; j++) {
+                                    if (numbers[i][j] % 2 === 0) {
+                                    numbers[i][j] = "even";
+                                    } else {
+                                    numbers[i][j] = "odd";
+                                    }
+                                    }
+                                    }
+                                    document.write(numbers);
+                            </script>
+                        </p>
+                </div>
             </div>
         </div> 
     </div>
