@@ -248,28 +248,33 @@
                     obyektini tuzaylik, bunda yoshimiz, ismimiz, tug'ilgan sanamiz 
                     va hokazo ma'lumotlar bo'ladi.
                 </p>
+
                 <p>
                     JavaScript:
                 </p>
                 <div class="oddiy_chegara">
                     <p>
                         var shaxs = { <br>
-                            ism: "Mo'minjon", yosh: 15, sana: "2001_02_24"};
+                        ism: "Mo'minjon", yosh: 15, sana: "2001_02_24"};
                     </p>
 
                 </div>
+
+                <div class="oddiy_chegara">
+                    <p>
+                        <script>
+                            var shaxs = {
+                            ism: "Mo'minjon", yosh: 15, sana: "2001_02_24"};
+                            document.write("Mening ismim: " + shaxs.ism + "<br>");
+                        </script>
+                    </p>
+                </div>
+
                 <p>
                     Demak, shaxs nomli obyektga ism, yosh, sana kabi 3 ta xususiyat
                     kiritdik va ularga birma-bir qiymatlar berib chiqdik.
                 </p>
 
-                <script>
-                    // var user = prompt("Iltimos ismingizni kiriting: ");
-                    // alert(user);
-
-                    // var x = mult(5, 5);
-                    // document.write(x);
-                </script>
                 <p>
                     bu yerda prompt funksiyasi orqali user o'zgaruvchisiga 
                     qiymat kiritilyapti va alert funksiyasi orqali qiymat 
