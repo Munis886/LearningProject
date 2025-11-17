@@ -26,9 +26,9 @@
             <li><a href="/1.Front end/1.Front_end.html">FRONT END</a></li>
             <li><a href="/1.Front end/1.HTML/1.HTML.html">HTML</a></li>
             <li><a href="/1.Front end/2.Css/Css.html">CSS</a></li>
-            <li><a href="/1.Front end/3.Js/Javascript.html">JavaScript</a></li>
-            <li><a href="/1.Front end/4.JavaScript/Javascript.html">JAVASCRIPT</a></li>
-            <li><a href="/2.Backend/1.Node js/Node js.html">Node js</a></li>
+            <li><a href="/1.Front end/3.Js/Javascript.html">JAVASCRIPT</a></li>
+            <li><a href="/1.Front end/4.JavaScript/Javascript.html">ES6</a></li>
+            <li><a href="/2.Backend/1.Node js/Node js.html">NODE JS</a></li>
         </ul>
     </div>
     </div>
@@ -186,7 +186,7 @@
                     </a>
                     <ul id="sub-menu-5" class="sub-menu">
                         <li>
-                            <a href="/1.Front end/4.JavaScript/5-Bo'lim/1.Obyektlar. Kirish/1.Obyektlar. Kirish.html">
+                            <a href="/1.Front end/4.JavaScript/4-Bo'lim/4.1.Funksiya/4.1.Funksiya.html">
                                 5.1.Obyektlar. Kirish
                             </a>
                         </li>
@@ -200,7 +200,7 @@
                                 5.3.Parametrlardan foydalanish
                             </a>
                         </li>
-                        
+
                         <li>
                             <a href="/1.Front end/4.JavaScript/4-Bo'lim/4.4.Return javob qaytarish/4.4.Return javob qaytarish.html">
                                 5.4.Return javob qaytarish
@@ -214,114 +214,115 @@
                         </li>
                     </ul>
                 </li>
-                
             </ul>
         </div>  
 
         <div id="container">
             <div id="sarlavha">
-                <h2>Funksiya</h2>
+                <h2>Obyektlar. Kirish</h2>
             </div>
             <div id="text" class="qisqa">
                 <p>
-                    Funksiya o'zi operatorlarni guruhidir. Misol bilan o'rgatishga
-                    harakat qilaman. Masalan siz biror o'yin dasturini tuzdingiz.
-                    Keyin o'yinni foydalanuvchi tomonidan o'ynalayotgan bo'lsa 
-                    o'yin ohiriga yetgan yoki aksinchaligini tekshirish uchun 100 lab 
-                    qator kod yozdingiz. Keyin o'sha kodni dasturni, har joyida 
-                    har xil qilib 10-15 marta yozib chiqish kerak bo'ladi. Keyin 
-                    dasturni kodlari ham ko'payib ketadi. O'sha 100 lab qator kodlarni 
-                    bitta funksiyaga yozib shu funksiyani (operatorlar guruhini)
-                    har joyda bitta nomlangan funksiya bilan yozib chiqsangiz bu 
-                    juda yaxshi yo'l, Bu gaplarga tushunmagan bo'lishingiz mumkin
-                    lekin yaqin daqiqalar ichida bunga tushunib olasiz. 
+                    JavaScriptda o'zgaruvchilar ma'lumotlar konteynerlaridir.  
                 </p>
                             
                 <p>
-                    Funksiyani e'lon qilish uchun function xizmatchi so'zi mavjud.
+                    Shuningdek obyektlar ham, lekin obyektlar o'z ichida juda 
+                    ko'plab ma'lumotlarni saqlay oladi. Shuning uchun hozirda 
+                    ko'plab ma'lumotlarni saqlash uchun obyektlardan foydalaniladi.
                 </p>
 
                 <p>
-                    Umumiy ko'rinishi:
+                    Hayotda har bir narsaning obyekti mavjud. Masalan o'zimizni 
+                    olaylik, biz ham obyektmiz! Ya'ni katta bir obyektmiz. 
+                    Shu obyekt ko'plab xususiyatlarga va boshqa ko'plab narsalarga
+                    ega bo'ladi. 
+                </p>
+
+                <p>
+                    Keling shuni kodlar orqali ko'rsatay.
                 </p>
                 
-                <pre>
-                    function funksiya_nomi(){
-                        // operatorlar guruhi
-                    }
-                </pre>
-
                 <p>
-                    Funksiyalarni e'lon qilishda harflar, raqamlar, tagchiziq va 
-                    dollar belgilaridan foydalanishingiz mumkin.
+                    Odamning kichik-kichik xususiyatlaridan bitta kichik shaxs 
+                    obyektini tuzaylik, bunda yoshimiz, ismimiz, tug'ilgan sanamiz 
+                    va hokazo ma'lumotlar bo'ladi.
                 </p>
-
                 <p>
-                    Funksiyani e'lon qilib, undan foydalanish uchun funksiya nomini 
-                    yozish kerak.
-                </p>
-
-                <p>
-                    Endi bitta misol ko'ramiz: Sizga faqat JavaScript kodlarini 
-                    keltiraman:
-                </p>
-
-                <pre>
-                    function funksiya1() {
-                        alert{
-                            "Bu bizning birinchi funksiyamiz!!!"
-                        }
-                    }
-                </pre>
-
-                <p>
-                    Biz bu yerda function xizmatchi so'zi bilan funksiya e'lon
-                    qilyapmiz funksiya1 esa funksiya nomi ya'ni biz funksiyadan foydalanish 
-                    uchun funksiya1(); deb yozsak bo'ladi. Keyin ochuvchi va yopuvchi 
-                    bloklarni ichida alert() funksiyasi orqali xabar chiqarish 
-                    kodini yozdik. Endi shu funksiyani ishlatish uchun, 
-                    &lt;&lt;&lt; funksiya1(); &gt;&gt;&gt; ko'rinishida yozsak 
-                    biz funksiyani chaqirgan bo'lamiz. Keling yaxshisi shuni HMTL va 
-                    JavaScript kodlarini yozib keltiray.
+                    JavaScript:
                 </p>
                 <div class="oddiy_chegara">
-                    <pre>
-                        &lt;!DOCTYPE html&gt;
-                        &lt;html lang="en"&gt;
-                        &lt;head&gt;
-                            &lt;meta charset="UTF-8"&gt;
-                            &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
-                            &lt;meta http-equiv="X-UA-Compatible" content="ie=edge"&gt;
-                            &lt;title&gt;Funksiya&lt;/title&gt;
-                            &lt;script&gt;
-                                function funksiya1() {
-                            &nbsp;    alert("Bu bizning birinchi funksiya");
-                                }
-                            &nbsp;    // funksiyaga chaqirish
-                            &nbsp;    funksiya1();
-                            &lt;/script&gt;
-                        &lt;/head&gt;
-                            &lt;body&gt;
-                        &nbsp;        &lt;button onclick="funksiya1()"&gt;Funksiyani chaqirish&lt;/button&gt;
-                            &lt;/body&gt;
-                        &lt;/html&gt;
-                    </pre>
-                </div>
-
-                <div class="havo_chegara">
-                    <script>
-                        function funksiya1() {
-                        alert("Bu bizning birinchi funksiya");
-                        }
-                        // funksiyaga chaqirish
-                        funksiya1();
-                    </script>
                     <p>
-                        <b>Natija:</b> <button onclick="funksiya1()">Funksiyani chaqirish</button>
+                        var shaxs = { <br>
+                            ism: "Mo'minjon", yosh: 15, sana: "2001_02_24"};
+                    </p>
+
+                </div>
+                <p>
+                    Demak, shaxs nomli obyektga ism, yosh, sana kabi 3 ta xususiyat
+                    kiritdik va ularga birma-bir qiymatlar berib chiqdik.
+                </p>
+
+                <script>
+                    // var user = prompt("Iltimos ismingizni kiriting: ");
+                    // alert(user);
+
+                    // var x = mult(5, 5);
+                    // document.write(x);
+                </script>
+                <p>
+                    bu yerda prompt funksiyasi orqali user o'zgaruvchisiga 
+                    qiymat kiritilyapti va alert funksiyasi orqali qiymat 
+                    ekranga chiqarilyapti. 
+                </p>
+
+                <hr>
+
+                <p>
+                    Confirm funksiyasi ikkita qiymatga ega true va 
+                    false. <br>
+                    Bunda OK va Canel tugmalari mavjud.
+                </p>
+
+                <p>
+                    Agar foydalanuvchi OK tugmasini bossa 
+                    Confirm funksiyasi true qiymatini qaytaradi.
+                </p>
+
+                <p>
+                    Agar foydalanuvchi Canel tugmasini bossa Confirm 
+                    funksiyasi false qiymatini qaytaradi.
+                </p>
+
+                <p>
+                    Misol:
+                </p>
+
+                <div class="oddiy_chegara">
+                    <p>
+                        var result = confirm("Veb-saytdan chiqmoqchimisiz?"); <br>
+                        if (result == true) { <br>
+                            &nbsp; alert("Tashrifingiz uchun rahmat"); <br>
+                        } <br>
+                        else { <br>
+                            alert("Biz bilan qolganingiz uchun rahmat"); <br>
+                        }
+                    </p>
+                </div>
+                <div>
+                    <p>
+                        <script>
+                            // var result = confirm("Veb-saytdan chiqmoqchimisiz?");
+                            // if (result == true) {
+                            // alert("Tashrifingiz uchun rahmat");
+                            // }
+                            // else {
+                            // alert("Biz bilan qolganingiz uchun rahmat");
+                            // }
+                        </script>
                     </p>
                 </div>
             </div>
-            
         </div> 
     </div>
    
