@@ -298,40 +298,62 @@
                     <p>
                         var shaxs = { <br>
                             ism: "Mo'minjon", yosh: 15, b: 173 <br>
-                        }; <br>
+                        }; <br> 
+                    </p>
+                    <p class="oddiy_chegara">
+                        <script>
+                            var shaxs = {
+                                ism: "Mo'minjon", yosh: 15, b: 173
+                                };
+                                document.write("Mening ismim: " + shaxs.ism + "<br>");
+                                document.write("Mening yoshim: " + shaxs['yosh']);
+                                document.write("<br> Mening bo'yim: " + shaxs.b);
+                        </script>
+                    </p>
+                    <p>
                         <span class="kul">//birinchi usul:</span> <br>
                         var x = person.yosh; 
+                    </p>
+                    <p>
+                        <span class="kul">//ikkinchi usul:</span> <br>
+                        var y = person['yosh']; 
                     </p>
                 </div>
 
                 <p>
-                    Misol:
+                    Obyektni ichidagi ma'lumotlarga(o'zgaruvchilarga) ikki xil yo'l bilan
+                    murojaat qilish mumkin ekan.
                 </p>
 
+                <p>
+                    JavaScript dasturlash tilida ma'lumotlarni uzunligini bilish uchun 
+                    length funksiyasi qo'shilgan.
+                </p>
+
+                <p>
+                    Ishlatishni keltiraman:
+                </p>
                 <div class="oddiy_chegara">
                     <p>
-                        var result = confirm("Veb-saytdan chiqmoqchimisiz?"); <br>
-                        if (result == true) { <br>
-                            &nbsp; alert("Tashrifingiz uchun rahmat"); <br>
-                        } <br>
-                        else { <br>
-                            alert("Biz bilan qolganingiz uchun rahmat"); <br>
-                        }
+                        var c = {
+                            ism: "JavaScript"
+                        }; <br>
+                        document.write(c.ism.length); <br>
                     </p>
-                </div>
-                <div>
-                    <p>
+                    <p class="oddiy_chegara">
                         <script>
-                            // var result = confirm("Veb-saytdan chiqmoqchimisiz?");
-                            // if (result == true) {
-                            // alert("Tashrifingiz uchun rahmat");
-                            // }
-                            // else {
-                            // alert("Biz bilan qolganingiz uchun rahmat");
-                            // }
+                            var c = { ism: "JavaScript" };
+                            document.write(c.ism.length);
                         </script>
                     </p>
                 </div>
+
+                <p>
+                    Bu kodlar ishga tushsa bizga 10 yozuvi chiqadi.
+                </p>
+                <p>
+                    Iltimos, yaxshilab o'qib chiqing!
+                </p>
             </div>
         </div> 
     </div>
