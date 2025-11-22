@@ -26,9 +26,9 @@
             <li><a href="/1.Front end/1.Front_end.html">FRONT END</a></li>
             <li><a href="/1.Front end/1.HTML/1.HTML.html">HTML</a></li>
             <li><a href="/1.Front end/2.Css/Css.html">CSS</a></li>
-            <li><a href="/1.Front end/3.Js/Javascript.html">JavaScript</a></li>
-            <li><a href="/1.Front end/4.JavaScript/Javascript.html">JAVASCRIPT</a></li>
-            <li><a href="/2.Backend/1.Node js/Node js.html">Node js</a></li>
+            <li><a href="/1.Front end/3.Js/Javascript.html">JAVASCRIPT</a></li>
+            <li><a href="/1.Front end/4.JavaScript/Javascript.html">ES6</a></li>
+            <li><a href="/2.Backend/1.Node js/Node js.html">NODE JS</a></li>
         </ul>
     </div>
     </div>
@@ -179,6 +179,7 @@
                         </li>
                     </ul>
                 </li>
+
                 <li>
                     <a href="#" onclick="toggleSubMenu('sub-menu-5')">
                         <b>5-Bo'lim</b>
@@ -199,7 +200,6 @@
                                 5.3.Obyektlarni initsiyalizatsiyalash
                             </a>
                         </li>
-
                         <li>
                             <a href="/1.Front end/4.JavaScript/4-Bo'lim/4.4.Return javob qaytarish/4.4.Return javob qaytarish.html">
                                 5.4.Return javob qaytarish
@@ -213,99 +213,86 @@
                         </li>
                     </ul>
                 </li>
-
             </ul>
         </div>  
 
         <div id="container">
             <div id="sarlavha">
-                <h2>Break va Continue</h2>
+                <h2>Obyektlarni initsiyalizatsiyalash</h2>
             </div>
             <div id="text" class="qisqa">
                 <p>
-                    break operatori siklni yoki o'zi boshqa hisob kitob jarayonini
-                    to'xtatish uchun ishlatiladi. 
+                    Avvalgi darsda JavaScript dasturlash tilida oddiy yo'l bilan obyekt
+                    bilan ishlashni ko'rgandik. Oldingi ko'rinishda qilingan obyektlar faqat 
+                    o'rganish uchun edi. Endi obyekt bilan ishlashni mustahkamlaymiz.
                 </p>
                             
                 <p>
-                   Misol uchun sizga birorta ma'lumot kerak, sikl sizga kerak
-                   ma'lumotni topish uchun birma-bir tekshiryabdi, agar 1000 ta sonni
-                   ichida 656 soni sizga kerak bo'lsa, o'sha son chiqganida qolganlarni 
-                   birma-bir ko'rib chiqishi kerakmaydi, o'sha yerda sikl to'xtalishi kerak
-                   ya'ni ortiqcha hisob kitobdan qutilish uchun ishlatiladi.
+                    Hozir sizga obyektlarni yaratishni standart yo'lini ko'rsataman.
+                    Ya'ni obyekt konstruktorini yaratishni ko'ramiz:
+                </p>
+
+                <p class="oddiy_chegara">
+                    function person(name.age, color) { <br>
+                       &nbsp; this.name = name; <br>
+                       &nbsp; this.age = age; <br>
+                       &nbsp; this.color = color; <br>
+                    }
                 </p>
 
                 <p>
-                    1-Misol: 0 dan 10 gacha sikl takrorlanadi,
-                    7 soni kelganda siklni to'xtatish kerak.
+                    Tepadagi person nomli funksiya obyekt konstruktoridir.
                 </p>
                 
-                <pre>
-                    for (i = 0; i &lt;= 10; i++) {
-                    &nbsp;   if (i == 7) {
-                    &nbsp;&nbsp;   break;
-                    &nbsp;    }
-                    &nbsp;    document.write(i+ "&lt;br/&gt;");
-                    &nbsp; }
-                </pre>
+                <p>
+                    this xizmatchi so'zi xozirgi obyektni anglatadi.
+                </p>
 
-                <div class="havo_chegara">
+                <p>
+                    Eslatma: this bu o'zgaruvchi emas, bu bizga obyektlar 
+                    konstruktorlarini yaratishda zarur bo'ladi.
+                </p>
+
+                <p>
+                    Demak obyekt konstruktorini yaratishni o'rgandik. 
+                    Endigi navbat new xizmatchi so'zini o'rganishga.
+                </p>
+
+                <p>
+                    new xizmatchi so'zi obyektlarni o'z toifasida yaratishga imkon beradi.
+                </p>
+
+                <div class="oddiy_chegara">
                     <p>
-                        <b>Natija:</b>
+                        <b>Misol:</b> <br>
+                        var p1 = new person("Mo'minjon", 15, "ko'k"); <br> 
+                        var p2 = new person("Doniyor", 16, "oq"); <br>
+                        <span class="kul">//ma'lumotlarni ekranga chiqaramiz</span> <br>
+                        document.write(p1.age); <br>
+                        document.write(p2.name); <br>
                         <script>
-                            for (i = 0; i <= 10; i++) {
-                                if (i == 7) {
-                                    break;
-                                }
-                                document.write(i+ "<br/>");
-                                }
-                        </script>
-                    </p>
-                </div>
-                <p>
-                    bunda i, 7 ga teng bo'lsa sikl tugatiladi.
-                </p>
-
-                <p>
-                    continue operatori birorta songa borganda 
-                    undan sakrab o'tib ketishda ishlatiladi. Misol uchun 
-                    1 dan 15 gacha son berilgan, 9-songa borganida undan sakrab o'tib 
-                    10-sondan ekranga chiqarishni davom qilishi lozim.
-                </p>
-
-                <p>
-                    2-Misol: 0 dan 10 gacha sikl takrorlanadi,
-                    5 ga borganida sakrab o'tib 6 dan ekranga
-                    chiqarishni boshlashi lozim.
-                </p>
-
-                <pre>
-                    for (i=0; i <= 10; i++){
-                        if (i == 5){
-                            continue;
-                        }
-                        document.write(i + "&lt;br/&gt;");
-                    }
-                </pre>
-
-                <p>
-                    bunda bizga ekranga quyidagicha sonlar chiqadi.
-                </p>
-                <div class="havo_chegara">
-                    <p>
-                        <b>Natija:</b>
-                        <script>
-                            for (i=0; i <= 10; i++){
-                                if (i == 5){
-                                    continue;
-                                }
-                                document.write(i + "<br/>");
+                            function person(name,age,color) {
+                            this.name = name;
+                            this.age = age;
+                            this.color = color;
                             }
+
+                            var p1 = new person("Mo'minjon", 15, "ko'k");
+                            var p2 = new person("Doniyor", 16, "oq");
+                            
+                            //ma'lumotlarni ekranga chiqaramiz
+                            document.writeln(p1.name);
+                            document.writeln(p1.age);
+                            document.writeln(p2.color);
                         </script>
                     </p>
                 </div>
+
+                <p>
+                    Bu yerda p1 va p2 person toifasidagi obyektlardir
+                </p>
+
             </div>
-            
         </div> 
     </div>
    
