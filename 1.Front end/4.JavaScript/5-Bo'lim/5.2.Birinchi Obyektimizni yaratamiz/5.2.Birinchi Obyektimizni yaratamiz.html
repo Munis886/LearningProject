@@ -267,10 +267,10 @@
                     <p>
                         <b>Misol:</b> <br>
                         var p1 = new person("Mo'minjon", 15, "ko'k"); <br> 
-                        var p2 = new person("Anvar", 16, "qizil"); <br>
+                        var p2 = new person("Doniyor", 16, "oq"); <br>
                         <span class="kul">//ma'lumotlarni ekranga chiqaramiz</span> <br>
-                        document.write("Birinchi shaxsning ismi: " + p1.name + "&lt;br&gt;"); <br>
-                        document.write("Ikkinchi shaxsning ismi: " + p2.name + "&lt;br&gt;"); <br>
+                        document.write(p1.age); <br>
+                        document.write(p2.name); <br>
                         <script>
                             function person(name,age, color) {
                             this.name = name;
@@ -279,7 +279,7 @@
                             }
 
                             var p1 = new person("Mo'minjon", 15, "ko'k");
-                            var p2 = new person("Anvar", 16, "qizil");
+                            var p2 = new person("Anvar", 16, "oq");
                             //ma'lumotlarni ekranga chiqaramiz
                             document.write(p1.age);
                             document.write(p2.name);
@@ -288,89 +288,9 @@
                 </div>
 
                 <p>
-                    Demak, shaxs nomli obyektga ism, yosh, sana kabi 3 ta xususiyat
-                    kiritdik va ularga birma-bir qiymatlar berib chiqdik.
+                    Bu yerda p1 va p2 person toifasidagi obyektlardir
                 </p>
 
-                <p>
-                    1) "=" belgisi bilan obyektga ma'lumotlar yozamiz, ma'lumotlarni
-                    vergul bilan ajratib yozarkanmiz.
-                </p>
-
-                <p>
-                    2) Figurali qavslar ichiga yozish kerak ekan
-                </p>
-
-                <hr>
-
-                <p>
-                    Obyektlarning ichidagi ma'lumotlarga quyidagi 2 ta yo'l bilan 
-                    murojaat qila olamiz. Misol bilan keltiraman
-                </p>
-                <p>
-                    JavaScript:
-                </p>
-                
-                <div class="oddiy_chegara">
-                    <p>
-                        var shaxs = { <br>
-                            ism: "Mo'minjon", yosh: 15, b: 173 <br>
-                        }; <br> 
-                    </p>
-                    <p class="oddiy_chegara">
-                        <script>
-                            var shaxs = {
-                                ism: "Mo'minjon", yosh: 15, b: 173
-                                };
-                                document.write("Mening ismim: " + shaxs.ism + "<br>");
-                                document.write("Mening yoshim: " + shaxs['yosh']);
-                                document.write("<br> Mening bo'yim: " + shaxs.b);
-                        </script>
-                    </p>
-                    <p>
-                        <span class="kul">//birinchi usul:</span> <br>
-                        var x = person.yosh; 
-                    </p>
-                    <p>
-                        <span class="kul">//ikkinchi usul:</span> <br>
-                        var y = person['yosh']; 
-                    </p>
-                </div>
-
-                <p>
-                    Obyektni ichidagi ma'lumotlarga(o'zgaruvchilarga) ikki xil yo'l bilan
-                    murojaat qilish mumkin ekan.
-                </p>
-
-                <p>
-                    JavaScript dasturlash tilida ma'lumotlarni uzunligini bilish uchun 
-                    length funksiyasi qo'shilgan.
-                </p>
-
-                <p>
-                    Ishlatishni keltiraman:
-                </p>
-                <div class="oddiy_chegara">
-                    <p>
-                        var c = {
-                            ism: "JavaScript"
-                        }; <br>
-                        document.write(c.ism.length); <br>
-                    </p>
-                    <p class="oddiy_chegara">
-                        <script>
-                            var c = { ism: "JavaScript" };
-                            document.write(c.ism.length);
-                        </script>
-                    </p>
-                </div>
-
-                <p>
-                    Bu kodlar ishga tushsa bizga 10 yozuvi chiqadi.
-                </p>
-                <p>
-                    Iltimos, yaxshilab o'qib chiqing!
-                </p>
             </div>
         </div> 
     </div>
