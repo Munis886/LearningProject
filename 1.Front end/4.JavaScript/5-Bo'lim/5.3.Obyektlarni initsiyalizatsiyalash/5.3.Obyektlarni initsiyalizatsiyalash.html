@@ -221,76 +221,37 @@
                 <h2>Obyektlarni initsiyalizatsiyalash</h2>
             </div>
             <div id="text" class="qisqa">
-                <p>
-                    Avvalgi darsda JavaScript dasturlash tilida oddiy yo'l bilan obyekt
-                    bilan ishlashni ko'rgandik. Oldingi ko'rinishda qilingan obyektlar faqat 
-                    o'rganish uchun edi. Endi obyekt bilan ishlashni mustahkamlaymiz.
-                </p>
-                            
-                <p>
-                    Hozir sizga obyektlarni yaratishni standart yo'lini ko'rsataman.
-                    Ya'ni obyekt konstruktorini yaratishni ko'ramiz:
-                </p>
+                
 
                 <p class="oddiy_chegara">
-                    function person(name.age, color) { <br>
-                       &nbsp; this.name = name; <br>
-                       &nbsp; this.age = age; <br>
-                       &nbsp; this.color = color; <br>
-                    }
+                    var John = {name: "John", age: 25}; <br>
+                    var James = {name: "James", age:21};
                 </p>
 
                 <p>
-                    Tepadagi person nomli funksiya obyekt konstruktoridir.
+                    O'zi aslida xuddi tepadagidek qilib yozish shart emas
                 </p>
                 
                 <p>
-                    this xizmatchi so'zi xozirgi obyektni anglatadi.
+                    Quyidagicha qilib yozgan yaxshi:
                 </p>
 
                 <p>
-                    Eslatma: this bu o'zgaruvchi emas, bu bizga obyektlar 
-                    konstruktorlarini yaratishda zarur bo'ladi.
+                    var John = { <br>
+                        name: "John", <br>
+                        age: 25 <br>
+                    }; <br>
+                    <br>
+                    var James = { <br>
+                        name: "James", <br>
+                        age: 21 <br>
+                    };
                 </p>
 
                 <p>
-                    Demak obyekt konstruktorini yaratishni o'rgandik. 
-                    Endigi navbat new xizmatchi so'zini o'rganishga.
+                    Bularni sintaksisini o'rganib qo'ysangiz bo'ldi!
                 </p>
 
-                <p>
-                    new xizmatchi so'zi obyektlarni o'z toifasida yaratishga imkon beradi.
-                </p>
-
-                <div class="oddiy_chegara">
-                    <p>
-                        <b>Misol:</b> <br>
-                        var p1 = new person("Mo'minjon", 15, "ko'k"); <br> 
-                        var p2 = new person("Doniyor", 16, "oq"); <br>
-                        <span class="kul">//ma'lumotlarni ekranga chiqaramiz</span> <br>
-                        document.write(p1.age); <br>
-                        document.write(p2.name); <br>
-                        <script>
-                            function person(name,age,color) {
-                            this.name = name;
-                            this.age = age;
-                            this.color = color;
-                            }
-
-                            var p1 = new person("Mo'minjon", 15, "ko'k");
-                            var p2 = new person("Doniyor", 16, "oq");
-                            
-                            //ma'lumotlarni ekranga chiqaramiz
-                            document.writeln(p1.name);
-                            document.writeln(p1.age);
-                            document.writeln(p2.color);
-                        </script>
-                    </p>
-                </div>
-
-                <p>
-                    Bu yerda p1 va p2 person toifasidagi obyektlardir
-                </p>
 
             </div>
         </div> 
