@@ -226,25 +226,48 @@
 
                 <p>
                     Funksiya operatorlar guruhidir. Metod esa obyektlar bilan
-                    
-                </p>
-
-                <p class="oddiy_chegara">
-                    <script>
-                        var John = {name: "John", age: 25};
-                        var James = {name: "James", age:21};
-                        document.writeln(John.name, " uning yoshi ", John.age, " da </br>");
-                        document.write(James.name, " uning yoshi ", James.age, " da.");
-                    </script>
+                    ishlash uchun va metod this xizmatchi so'zi bilan 
+                    uyg'unlashadi.
                 </p>
                 <p>
-                    O'zi aslida xuddi tepadagidek qilib yozish shart emas
+                    Misol keltiraman:
+                </p>
+                <p class="oddiy_chegara">
+                    function person(name, age){ <br>
+                    &nbsp;    this.name = name; <br>
+                    &nbsp;    this.age = age;<br>
+                    &nbsp;    this.changeName = function (name) {<br>
+                        &nbsp;&nbsp;            this.name = name;<br>
+                        &nbsp;&nbsp;    } <br>
+                    } 
+                </p>
+                <p class="oddiy_chegara">
+                    <script>
+                        function person(name, age){
+                            this.name = name;
+                            this.age = age;
+                            this.changeName = function (name) {
+                                this.name = name;
+                            }
+                        }
+                    </script>
+                </p>
+                <p> 
+                    //p nomli obyektga ma'lumotlarni uzatyapmiz <br>
+                    var p = new person("Mo'minjon", 15)
                 </p>
                 
                 <p>
-                    Quyidagicha qilib yozgan yaxshi:
+                    // person nomli konstruktorni ichidagi changeName funksiyasi
+                    //orqali p obyektidagi ismni (name) xususiyatini o'zgartirayabmiz
+                    p.changeName("Hurrambek");
                 </p>
 
+                <hr>
+
+                <p>
+                    Bunday funksiyalarni konstruktorni tashqarisida ham qilish mumkin:
+                </p>
                 <p class="oddiy_chegara">
                     var John = { <br>
                         name: "John", <br>
