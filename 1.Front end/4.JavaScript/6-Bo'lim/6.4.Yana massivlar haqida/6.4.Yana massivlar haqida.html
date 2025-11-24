@@ -245,50 +245,39 @@
 
         <div id="container">
             <div id="sarlavha">
-                <h2>Massiv xususiyatlari va metodlari</h2>
+                <h2>Yana massivlar haqida</h2>
             </div> 
             <div id="text" class="qisqa">
                 
                 <p>
-                    Massivni uzunligini aniqlash uchun length funksiyasi mavjud. 
+                    Massivlarga murojaat qilishni boshqa yo'lini ham ko'ramiz. 
                 </p>
 
                 <p>
-                    var abc = ["A", "b", "C", "d"]; <br>
-                    document.write(abc.length); // Natija: 4
+                    var person = []; <br>
+                    // bu bo'sh massiv
                 </p>
 
                 <p>
-                    kodni ishga tushirsak bizda 4 degan yozuv chiqadi.
+                    person["name"] = "John"; <br>
+                    person["age"] = 30; <br>
+                    document.write(person["age"]); // Natija: 30
                 </p>
 
-                <p>
-                    Massivlarni qo'shish uchun concat();
-                </p>
-
-                <p>
-                    ishlatilishi:
-                </p>
-
-                <p>
-                    var c1 = ["HTML", "CSS"]; <br>
-                    var c2 = ["JavaScript", "ReactJS"]; <br>
-                    var kurslar = c1.concat(c2); <br>
-                    document.write(kurslar); // Natija: HTML,CSS,JavaScript,React
-                </p>
-
-                <p>
-                    c1 ning davomiga c2dagi ma'lumotlar qo'shiladi.
-                </p>
                 <p class="oddiy_chegara">
-                    <b>Natija:</b>
+                    <b>
+                        Natija:
+                    </b>
                     <script>
-                        var c1 = ["HTML", "CSS"];
-                        var c2 = ["JavaScript", "ReactJS"];
-                        var kurslar = c1.concat(c2);
-                        document.write(kurslar); // Natija: HTML,CSS,JavaScript,React
+                        var person = [];
+                        // bu bo'sh massiv
+                        person["name"] = "John";
+                        person["age"] = 30;
+                        document.write(person["age"]); // Natija: 30
                     </script>
                 </p>
+
+               
             </div>
         </div> 
     </div>

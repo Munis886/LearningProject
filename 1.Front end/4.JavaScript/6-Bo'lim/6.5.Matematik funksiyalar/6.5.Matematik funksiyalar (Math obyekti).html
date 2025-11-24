@@ -245,49 +245,86 @@
 
         <div id="container">
             <div id="sarlavha">
-                <h2>Massiv xususiyatlari va metodlari</h2>
+                <h2>Matematik funksiyalar (Math obyekti)</h2>
             </div> 
             <div id="text" class="qisqa">
                 
                 <p>
-                    Massivni uzunligini aniqlash uchun length funksiyasi mavjud. 
+                    Keling endi biroz matematik funksiyalarni o'rganaylik. 
                 </p>
 
                 <p>
-                    var abc = ["A", "b", "C", "d"]; <br>
-                    document.write(abc.length); // Natija: 4
+                    document.write(Math.PI); <br>
+                    kodni ishga tushirsak: 3.141592653589793 kabi son chiqadi.
                 </p>
 
-                <p>
-                    kodni ishga tushirsak bizda 4 degan yozuv chiqadi.
-                </p>
-
-                <p>
-                    Massivlarni qo'shish uchun concat();
-                </p>
-
-                <p>
-                    ishlatilishi:
-                </p>
-
-                <p>
-                    var c1 = ["HTML", "CSS"]; <br>
-                    var c2 = ["JavaScript", "ReactJS"]; <br>
-                    var kurslar = c1.concat(c2); <br>
-                    document.write(kurslar); // Natija: HTML,CSS,JavaScript,React
-                </p>
-
-                <p>
-                    c1 ning davomiga c2dagi ma'lumotlar qo'shiladi.
-                </p>
                 <p class="oddiy_chegara">
-                    <b>Natija:</b>
+                    <b>
+                        Natija:
+                    </b>
                     <script>
-                        var c1 = ["HTML", "CSS"];
-                        var c2 = ["JavaScript", "ReactJS"];
-                        var kurslar = c1.concat(c2);
-                        document.write(kurslar); // Natija: HTML,CSS,JavaScript,React
+                        document.write(Math.PI);
                     </script>
+                </p>
+
+                <p>
+                    Endi kvadrat ildizni topishni ko'ramiz: <br>
+
+                    var n = Math.sqrt(4); <br>
+                    document.write(n); <br>
+                </p>
+
+                <p class="oddiy_chegara">
+                    <b>
+                        Natija:
+                    </b>
+                    <script>
+                        var n = Math.sqrt(4);
+                        document.write(n);
+                    </script>
+                </p>
+
+                <p>
+                    kodlarni ishga tushirsak bizda quyidagicha javob chiqadi: 2 <br>
+                    Chunki 4 ning kvadrat ildizi 2 ga teng.
+                </p>
+
+                <p>
+                    Keling bitta mitti dastur tuzamiz bunda foydalanuvchidan son
+                    kiritishni so'raydi va foydalanuvchi kiritadi keyin shu sonni 
+                    ildizini chiqarib beruvchi dastur tuzamiz.
+                </p>
+
+                <p>
+                    var n = prompt("Son kiriting:");
+                    var m = Math.sqrt(n);
+                    alert(n + " ning kvadrat ildizi " + m + " ga teng");
+                </p>
+
+                <p>
+                    dasturni ishlatib ko'ring!
+                </p>
+
+                <p>
+                    Matematik funksiyalar:
+                </p>
+                <p>
+                    1) abs(x) - absolyut qiymat olish <br>
+                    2) cos(x) - kosinus <br>
+                    3) sin(c) - sinus <br>
+                    4) log(x) - x ning logarifmi <br>
+                    5) max(x, y, z, ..., n) - berilgan sonlardan eng katta qiymatni qaytaradi <br>
+                    6) min(x, y, z, ..., n) - berilgan sonlardan eng kichik qiymatni qaytaradi <br>
+                    7) pow(x, y) - x ning y-darajasini qaytaradi <br>
+                    8) random(x) - x ga tasodifiy son beradi <br>
+                    9) round(x) - x ni yaxlitlaydi <br>
+                    10) sqrt(x) - x ning kvadrat ildizini qaytaradi <br>
+                    11) tan(x) - tangens <br>
+                </p>
+
+                <p>
+                    Eslatma: Matematik funksiyalardan foydalanayotgan radian o'lchov 
+                    birligida berish lozim!
                 </p>
             </div>
         </div> 
