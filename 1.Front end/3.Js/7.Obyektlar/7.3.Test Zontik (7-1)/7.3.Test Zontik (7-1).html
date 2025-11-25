@@ -702,7 +702,11 @@
                                 7.2.Kodda obyektlar
                             </a>
                         </li>
-                        
+                        <li>
+                            <a href="/1.Front end/3.Js/7.Obyektlar/7.3.Test Zontik (7-1)/7.3.Test Zontik (7-1).html">
+                                7.3.Test Zontik (7-1)
+                            </a>
+                        </li>
                     </ul>
                 </li>
             </ul>
@@ -966,154 +970,106 @@
                 <div class="havo_chegara">
                     <p>
                         <b>MASLAHAT:</b> Obyektlarning barcha xususiyat va metodlarini figurali 
-                        qavs ichiga olishni unutmang: var myObject = {salomlashuv: "salom", nomi: 
-                        "Julia"};. Bundan tashqari, obyekt shunchaki yana bir ma’lumot turi 
-                        ekanligini unutmang. var myString = "hello"; o‘zgaruvchi deklaratsiyasidan 
+                        qavs ichiga olishni unutmang: <span class="maxsus">var myObject = {salomlashuv: "salom", nomi: 
+                        "Julia"};</span>. Bundan tashqari, obyekt shunchaki yana bir ma’lumot turi 
+                        ekanligini unutmang. <span class="maxsus">var myString = "hello";</span> o‘zgaruvchi deklaratsiyasidan 
                         keyin nuqtali vergul qo‘yganingiz kabi, obyekt deklaratsiyasi oxiriga 
                         ham nuqtali vergul qo‘yishni unutmang.
                     </p>
                 </div>
-                <p>
-                    Siz soyabonning obyekt ekanligini operator 
-                    turidan foydalanib tekshirishingiz mumkin.
 
-                    Operator turi sizga ma’lumot 
-                    turini bildiradigan satrni qaytaradi.
-
-                    Biroq, bo‘sh obyekt qiziq emas, albatta.
-                </p>
-                <div class="chegara_ichida">
+                <h3>
+                    Kodingiz:
+                </h3>
+                
+                <div class="yashil_maydon">
                     <pre>
-                        var umbrella = {
-                            color: "pink"
+                        /*
+                        * Programming Quiz: Umbrella (7-1)
+                        */
+                        /*
+                        * QUIZ REQUIREMENTS
+                        * - Your code should have a variable `umbrella`
+                        * - The variable `umbrella` should be an object
+                        * - Your `umbrella` object should have the `color` and `isOpen` property
+                        * - Your `umbrella` object should have an `open()` method that toggles the value of `isOpen` property
+                        * - Your `umbrella` object should have an `close()` method that toggles the value of `isOpen`
+                        */
+
+                        var umbrella =  {
+                            color: "pink", // 1. color xususiyati
+                            isOpen: false, // 2. isOpen xususiyati (dastlab yopiq)
+                            open: function() { // 3. open() metodi
+                                if (this.isOpen === false) { // Agar yopiq bo'lsa
+                                    this.isOpen = true; // Ochiq holatga o'tkazamiz
+                                    return "Julia opens the umbrella!";
+                                } else {
+                                    return "The umbrella is already opened!"; // Agar ochiq bo'lsa
+                                }
+                            },
+                            close: function() { // Yopish uchun close() metodini qo'shamiz
+                                if (this.isOpen === true) { // Agar ochiq bo'lsa
+                                    this.isOpen = false; // Yopiq holatga o'tkazamiz
+                                    return "Julia closes the umbrella!";
+                                } else {
+                                    return "The umbrella is already closed!"; // Agar yopiq bo'lsa
+                                }
+                            }
                         };
+
+                        // Misol uchun foydalanish:
+                        console.log(umbrella.open()); // "Julia opens the umbrella!"
+                        // console.log(umbrella.isOpen); // true
+                        console.log(umbrella.close()); // "Julia closes the umbrella!"
+                        // console.log(umbrella.isOpen); // false
                     </pre>
                 </div>
-                <p>
-                    Obyektlar xususiyatlar va ular bajara 
-                    oladigan narsalarga ega.
-
-                    Ushbu ma’lumotni qo‘shishda har bir ma’lumot 
-                    qismini kalit qiymati juftligi sifatida belgilashingiz mumkin.
-
-                    Bu yerda biz rang deb nomlangan 
-                    xususiyat kalitini belgiladik va 
-
-                    uning qiymati pushti, 
-                    chunki bu pushti soyabon.
-
-                    Ushbu soyabon ham yopiladi, 
-                    shuning uchun 
-
-                    siz isOpen deb nomlangan xususiyat qo‘shishingiz 
-                    va uning boshlang‘ich qiymatini yolg‘on deb belgilashingiz mumkin.
-                </p>
                 <div class="chegara_ichida">
-                    <pre>
-                        var umbrella = {
-                            color: "pink",
-                            isOpen: false
-                        };
-                    </pre>
-                </div>
-                <p>
-                    Endi sizda soyabon obyekti bor, 
-                    u pushti va u yopiq.
-
-                    Soyabonni ochish - bu soyabonni 
-                    qila oladigan vazifadir.
-
-                    Bu soyabonni tavsiflovchi xususiyat emas.
-
-                    Obyektni qila oladigan ish bu usuldir.
-                </p>
-                <div class="chegara_ichida">
-                    <pre>
-                        var umbrella = {
-                            color: "pink",
-                            isOpen: false,
-                            open: function() {
-                            if (umbrella.isOpen === true) {
-                                return "The umbrella is already opened!";
-                            } else {
-                                umbrella.isOpen = true;
-                                return "Julia opens the umbrella!"; }  
-                        &nbsp;} 
-                        };
-                    </pre>
-                    <script>
-                        var umbrella = {
-                            color: "pink",
-                            isOpen: false,
-                            open: function() {
-                            if (umbrella.isOpen === true) {
-                                return "The umbrella is already opened!";
-                            } else {
-                                umbrella.isOpen = true;
-                                return "Julia opens the umbrella!";
-                            }  
-                        } 
-                        };
-                        document.write("<b>natija:</b> ", umbrella.open());
-                    </script>
-                </div>
-                <p>
-                    Usul bu faqat obyekt bilan 
-                    bog‘liq bo‘lgan funksiyadir.
-
-                    Siz aslida usullarni avval ham ko‘rgansiz.
-
-                    Push va popni 
-                    o‘chirganingizni eslang.
-
-                    Push va pop bu qatorga elementlarni 
-                    qo‘shish va olib tashlash usullaridir.
-
-                    Bu yerda soyabonni ochadigan usul.
-
-                    Agar hozir siz biroz chalkashib 
-                    ketsangiz ham, hammasi soz.
-
-                    Avvaliga tushunishingiz uchun 
-                    obyektlar qiyin ko‘rinishi mumkin.
-
-                    Ammo qunt qiling.
-
-                    Biz obyektlarni qanday yaratishni 
-                    batafsilroq ko‘rib chiqamiz.
-
-                    Xususiyatlar, usullarni belgilang va 
-                    ushbu obyektlardan kodingizda foydalaning.
-                </p>   
-
-                <div class="center-align">
-                    <video src="/1.Front end/3.Js/7.Obyektlar/7.2.Kodda obyektlar/2 - Kodda obyektlar.mp4" controls width="55%"></video>
-                </div>
-
-                <div class="havo_chegara">
                     <p>
-                        <b>Maslahat:</b> Shuni ta’kidlash kerakki, biz real obyektlarni JavaScript obyektlari 
-                        sifatida namoyish etishimiz mumkin bo‘lsa-da, o'xshashlik har doim ham mavjud 
-                        bo‘lavermaydi. Bu obyektlarning tuzilishi va maqsadi haqida o‘ylash uchun 
-                        yaxshi vaqt, ammo dasturchi sifatida o‘sishni davom etarkansiz, JavaScript 
-                        obyektlari haqiqiy obyektlardan ancha farqlanishi mumkinligini tushuna boshlaysiz.
+                        <b>Natija:</b>
+                        <script>
+                            /*
+                            * Programming Quiz: Umbrella (7-1)
+                            */
+                            /*
+                            * QUIZ REQUIREMENTS
+                            * - Your code should have a variable `umbrella`
+                            * - The variable `umbrella` should be an object
+                            * - Your `umbrella` object should have the `color` and `isOpen` property
+                            * - Your `umbrella` object should have an `open()` method that toggles the value of `isOpen` property
+                            * - Your `umbrella` object should have an `close()` method that toggles the value of `isOpen`
+                            */
+
+                            var umbrella = {
+                            color: "pink", // 1. color xususiyati
+                            isOpen: false, // 2. isOpen xususiyati (dastlab yopiq)
+                            open: function() { // 3. open() metodi
+                            if (this.isOpen === false) { // Agar yopiq bo'lsa
+                            this.isOpen = true; // Ochiq holatga o'tkazamiz
+                            return "Julia opens the umbrella!";
+                            } else {
+                            return "The umbrella is already opened!"; // Agar ochiq bo'lsa
+                            }
+                            },
+                            close: function() { // Yopish uchun close() metodini qo'shamiz
+                            if (this.isOpen === true) { // Agar ochiq bo'lsa
+                            this.isOpen = false; // Yopiq holatga o'tkazamiz
+                            return "Julia closes the umbrella!";
+                            } else {
+                            return "The umbrella is already closed!"; // Agar yopiq bo'lsa
+                            }
+                            }
+                            };
+
+                            // Misol uchun foydalanish:
+                            document.write(umbrella.open(), " "); // "Julia opens the umbrella!"
+                            // console.log(umbrella.isOpen); // true
+                            document.write(umbrella.close()); // "Julia closes the umbrella!"
+                            // console.log(umbrella.isOpen); // false
+                        </script>
                     </p>
                 </div>
-                <hr>
-                <div class="havo_chegara">
-                    <p>
-                        <b>NOTE:</b> typeof operatori undan keyin kelgan ma’lumot turi nomini qaytaradi. Masalan:
-                    </p>
-                </div>
-
-                <div class="chegara_ichida">
-                    <pre>
-                        typeof "hello" // "string" qaytariladi
-                        typeof true // "boolean" qaytariladi
-                        typeof [1, 2, 3] // "object"  qaytariladi (Massiv obyekt turidir)
-                        typeof function hello() { } // "function"  qaytariladi
-                    </pre>
-                </div>
+                
             </div>
         </div> 
     </div>
