@@ -5,12 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="keywords" content="Javascript, Java script">
     <meta name="description" content="Bu yerda Javascript haqida batafsil ma'lumot olamiz">
-    <link rel="stylesheet" href="/1.Front end/4.JavaScript/style.css">
+    <link rel="stylesheet" href="/1.Front end/3.Js/style.css">
+    <link rel="stylesheet" href="style.css">
     <title>Java script</title>
-    <script src="/1.Front end/4.JavaScript/script.js"></script>
-    <script src="/1.Front end/4.JavaScript/Js.js"></script>
+    <script src="/1.Front end/3.Js/script.js"></script>
 </head>
+
 <body>
+    
     <div id="bosh">
         <div class="bosh">
             <h1>JavaScript</h1>
@@ -22,11 +24,10 @@
         <button id="toggle-btn" onclick="toggleMenu()">Menu</button>
         <ul>
             <li><a href="/index.html">HOME</a></li>
-            <li><a href="/1.Front end/1.Front_end.html">FRONT END</a></li>
+            <li><a href="/1.Front end/1.Front_end.html">Front end</a></li>
             <li><a href="/1.Front end/1.HTML/1.HTML.html">HTML</a></li>
             <li><a href="/1.Front end/2.Css/Css.html">CSS</a></li>
             <li><a href="/1.Front end/3.Js/Javascript.html">JavaScript</a></li>
-            <li><a href="/1.Front end/4.JavaScript/Javascript.html">JAVASCRIPT2</a></li>
             <li><a href="/2.Backend/1.Node js/Node js.html">Node js</a></li>
         </ul>
     </div>
@@ -554,7 +555,7 @@
                     <ul id="sub-menu-6" class="sub-menu">
                         <li>
                             <a href="/1.Front end/3.Js/6.Massivlar/6.1.Massivlarga kirish/6.1.Massivlarga kirish.html">
-                                6.1.Funksiyalarga kirish
+                                6.1.Massivlarga kirish
                             </a>
                         </li>
                         <li>
@@ -705,7 +706,7 @@
                     </ul>
                 </li>
             </ul>
-            <h3><a href="/1.Front end/4.JavaScript/Javascript.html">JavaScript - sodda</a></h3>
+            <h3><a style="color: aliceblue; text-decoration: none;" href="/1.Front end/4.JavaScript/Javascript.html">JavaScript - sodda</a></h3>
             <ul>
                 <li>
                     <a href="#" onclick="toggleSubMenu('sub-menu-2.1')">
@@ -912,80 +913,208 @@
                     </ul>
                 </li>
             </ul>
-        </div>  
-
+        </div>
+        
         <div id="container">
-            <div id="sarlavha">
-                <h2>Java Scriptda Hello world</h2>
+            <div class="sarlavha">
+                <ul>
+                    <li class="li_1">
+                        <a href="/1.Front end/3.Js/7.Obyektlar/7.2.Kodda obyektlar/7.2.Kodda obyektlar.html">⟨</a>
+                    </li>
+                    <li class="li_2">
+                        Test Zontik (7-1)
+                    </li>
+                    <li class="li_3">
+                        <a href="#">
+                            ⟩
+                        </a>
+                    </li>
+                </ul>
             </div>
+
             <div id="text" class="qisqa">
-                <p>
-                    JavaScript HTML hujjatni ichida yashaydi 
-                </p>
-                <p>
-                    HTMLda JavaScript kodlari &lt;script&gt; &lt;/script&gt; teglari
-                    orasida yoziladi. 
-                </p>
-                <p>
-                    JavaScript HTML ning "head" yoki "body" teglari orasiga yozish 
-                    mumkin.
-                </p>
-                <p>
-                    Keling endi JavaScriptda HelloWorld yozuvini ekranga chiqarishni
-                    ko'ramiz.
-                </p>
-                <p>
-                    HTML va JavaScript kodlari:
-                </p>
-                <pre>
-                    <code>
-                        &lt;html&gt;
-                        &nbsp; &lt;head&gt; &lt;/head&gt;
-                        &nbsp; &lt;body&gt;
-                        &nbsp;&nbsp; &lt;script&gt;
-                        &nbsp;&nbsp;&nbsp; document.write("Hello World");
-                        &nbsp;&nbsp; &lt;/script&gt;
-                        &nbsp; &lt;body&gt;
-                        &lt;html&gt;
-                    </code>
-                </pre>
 
-                <p>
-                    Bu yerda "document.write()" funksiyasi ekranga xabar chiqaradi. <br><br>
-
-                    <b>Eslatma:</b> Tepadagi kodlarni kiritib html kengaytmasida saqlab olib
-                    ishga tushirib ko'ring!
-                </p> 
-                <script>
-                    document.write("Hello World");
-                </script>
-                <p>
-                    Biz HTML dagi ko'plab formatlash kodlarini JavaScriptda ham
-                    ishlatishimiz mumkin, masalan h1, h2, b, i va hokazo teglarni 
-                    yozishimiz mumkin.
-                </p>
+                <h3>
+                    Ko‘rsatmalar:
+                </h3>
                 
                 <p>
-                    Misol keltiraman:
+                    Oldingi videolavhadagi umbrella misolidan foydalanib, 
+                    <span class="maxsus">open()</span> metodiga taqlid qilib, 
+                    <span class="maxsus">close()</span> metodini yaratishingiz 
+                    mumkin. Agar boshida muammolar bo‘lsa, xavotirlanmang! 
+                    Keyinchalik ushbu darsda bu haqida batafsilroq gaplashamiz.
                 </p>
 
-                <pre>
-                    <code>
-                        &lt;html&gt;
-                        &nbsp; &lt;head&gt; &lt;/head&gt;
-                        &nbsp; &lt;body&gt;
-                        &nbsp;&nbsp; &lt;script&gt;
-                        &nbsp;&nbsp;&nbsp; document.write("&lt;h1&gt;Hello World&lt;/h1&gt;");
-                        &nbsp;&nbsp; &lt;/script&gt;
-                        &nbsp; &lt;body&gt;
-                        &lt;html&gt;
-                    </code>
-                </pre>
-                 <script>
-                    document.write("<h1>Hello World</h1>");
-                </script>
+                <div class="chegara_ichida">
+                    <pre>
+                        var umbrella = { 
+                        color: "pink",
+                        isOpen: false,
+                        open: function() { 
+                            if (umbrella.isOpen === true) {
+                            return "The umbrella is already opened!";
+                            } else {
+                            umbrella.isOpen = true;
+                            return "Julia opens the umbrella!";
+                            }
+                        }
+                        };
+                    </pre>
+                </div>
+
+                <div class="havo_chegara">
+                    <p>
+                        <b>MASLAHAT:</b> Obyektlarning barcha xususiyat va metodlarini figurali 
+                        qavs ichiga olishni unutmang: var myObject = {salomlashuv: "salom", nomi: 
+                        "Julia"};. Bundan tashqari, obyekt shunchaki yana bir ma’lumot turi 
+                        ekanligini unutmang. var myString = "hello"; o‘zgaruvchi deklaratsiyasidan 
+                        keyin nuqtali vergul qo‘yganingiz kabi, obyekt deklaratsiyasi oxiriga 
+                        ham nuqtali vergul qo‘yishni unutmang.
+                    </p>
+                </div>
+                <p>
+                    Siz soyabonning obyekt ekanligini operator 
+                    turidan foydalanib tekshirishingiz mumkin.
+
+                    Operator turi sizga ma’lumot 
+                    turini bildiradigan satrni qaytaradi.
+
+                    Biroq, bo‘sh obyekt qiziq emas, albatta.
+                </p>
+                <div class="chegara_ichida">
+                    <pre>
+                        var umbrella = {
+                            color: "pink"
+                        };
+                    </pre>
+                </div>
+                <p>
+                    Obyektlar xususiyatlar va ular bajara 
+                    oladigan narsalarga ega.
+
+                    Ushbu ma’lumotni qo‘shishda har bir ma’lumot 
+                    qismini kalit qiymati juftligi sifatida belgilashingiz mumkin.
+
+                    Bu yerda biz rang deb nomlangan 
+                    xususiyat kalitini belgiladik va 
+
+                    uning qiymati pushti, 
+                    chunki bu pushti soyabon.
+
+                    Ushbu soyabon ham yopiladi, 
+                    shuning uchun 
+
+                    siz isOpen deb nomlangan xususiyat qo‘shishingiz 
+                    va uning boshlang‘ich qiymatini yolg‘on deb belgilashingiz mumkin.
+                </p>
+                <div class="chegara_ichida">
+                    <pre>
+                        var umbrella = {
+                            color: "pink",
+                            isOpen: false
+                        };
+                    </pre>
+                </div>
+                <p>
+                    Endi sizda soyabon obyekti bor, 
+                    u pushti va u yopiq.
+
+                    Soyabonni ochish - bu soyabonni 
+                    qila oladigan vazifadir.
+
+                    Bu soyabonni tavsiflovchi xususiyat emas.
+
+                    Obyektni qila oladigan ish bu usuldir.
+                </p>
+                <div class="chegara_ichida">
+                    <pre>
+                        var umbrella = {
+                            color: "pink",
+                            isOpen: false,
+                            open: function() {
+                            if (umbrella.isOpen === true) {
+                                return "The umbrella is already opened!";
+                            } else {
+                                umbrella.isOpen = true;
+                                return "Julia opens the umbrella!"; }  
+                        &nbsp;} 
+                        };
+                    </pre>
+                    <script>
+                        var umbrella = {
+                            color: "pink",
+                            isOpen: false,
+                            open: function() {
+                            if (umbrella.isOpen === true) {
+                                return "The umbrella is already opened!";
+                            } else {
+                                umbrella.isOpen = true;
+                                return "Julia opens the umbrella!";
+                            }  
+                        } 
+                        };
+                        document.write("<b>natija:</b> ", umbrella.open());
+                    </script>
+                </div>
+                <p>
+                    Usul bu faqat obyekt bilan 
+                    bog‘liq bo‘lgan funksiyadir.
+
+                    Siz aslida usullarni avval ham ko‘rgansiz.
+
+                    Push va popni 
+                    o‘chirganingizni eslang.
+
+                    Push va pop bu qatorga elementlarni 
+                    qo‘shish va olib tashlash usullaridir.
+
+                    Bu yerda soyabonni ochadigan usul.
+
+                    Agar hozir siz biroz chalkashib 
+                    ketsangiz ham, hammasi soz.
+
+                    Avvaliga tushunishingiz uchun 
+                    obyektlar qiyin ko‘rinishi mumkin.
+
+                    Ammo qunt qiling.
+
+                    Biz obyektlarni qanday yaratishni 
+                    batafsilroq ko‘rib chiqamiz.
+
+                    Xususiyatlar, usullarni belgilang va 
+                    ushbu obyektlardan kodingizda foydalaning.
+                </p>   
+
+                <div class="center-align">
+                    <video src="/1.Front end/3.Js/7.Obyektlar/7.2.Kodda obyektlar/2 - Kodda obyektlar.mp4" controls width="55%"></video>
+                </div>
+
+                <div class="havo_chegara">
+                    <p>
+                        <b>Maslahat:</b> Shuni ta’kidlash kerakki, biz real obyektlarni JavaScript obyektlari 
+                        sifatida namoyish etishimiz mumkin bo‘lsa-da, o'xshashlik har doim ham mavjud 
+                        bo‘lavermaydi. Bu obyektlarning tuzilishi va maqsadi haqida o‘ylash uchun 
+                        yaxshi vaqt, ammo dasturchi sifatida o‘sishni davom etarkansiz, JavaScript 
+                        obyektlari haqiqiy obyektlardan ancha farqlanishi mumkinligini tushuna boshlaysiz.
+                    </p>
+                </div>
+                <hr>
+                <div class="havo_chegara">
+                    <p>
+                        <b>NOTE:</b> typeof operatori undan keyin kelgan ma’lumot turi nomini qaytaradi. Masalan:
+                    </p>
+                </div>
+
+                <div class="chegara_ichida">
+                    <pre>
+                        typeof "hello" // "string" qaytariladi
+                        typeof true // "boolean" qaytariladi
+                        typeof [1, 2, 3] // "object"  qaytariladi (Massiv obyekt turidir)
+                        typeof function hello() { } // "function"  qaytariladi
+                    </pre>
+                </div>
             </div>
-            
         </div> 
     </div>
    
