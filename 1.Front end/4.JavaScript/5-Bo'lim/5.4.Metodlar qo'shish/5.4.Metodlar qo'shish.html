@@ -207,6 +207,67 @@
                         </li>
                     </ul>
                 </li>
+
+                <li>
+                    <a href="#" onclick="toggleSubMenu('sub-menu-6')">
+                        <b>6-Bo'lim</b>
+                    </a>
+                    <ul id="sub-menu-6" class="sub-menu">
+                        <li>
+                            <a href="/1.Front end/4.JavaScript/6-Bo'lim/6.1.Massivlar/6.1.Massivlar.html">
+                              6.1.Massivlar
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/1.Front end/4.JavaScript/6-Bo'lim/6.2.Massivlar yaratishni boshqa yo'llari/6.2.Massivlar yaratishni boshqa yo'llari.html">
+                                6.2.Massivlar yaratishni boshqa yo'llari
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/1.Front end/4.JavaScript/6-Bo'lim/6.3.Massiv xususiyatlari va metodlari/6.3.Massiv xususiyatlari va metodlari.html">
+                                6.3.Massiv xususiyatlari va metodlari
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/1.Front end/4.JavaScript/6-Bo'lim/6.4.Yana massivlar haqida/6.4.Yana massivlar haqida.html">
+                                6.4.Yana massivlar haqida
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+
+                <li>
+                    <a href="#" onclick="toggleSubMenu('sub-menu-6')">
+                        <b>6-Bo'lim</b>
+                    </a>
+                    <ul id="sub-menu-6" class="sub-menu">
+                        <li>
+                            <a href="/1.Front end/4.JavaScript/6-Bo'lim/6.1.Massivlar/6.1.Massivlar.html">
+                              6.1.Massivlar
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/1.Front end/4.JavaScript/6-Bo'lim/6.2.Massivlar yaratishni boshqa yo'llari/6.2.Massivlar yaratishni boshqa yo'llari.html">
+                                6.2.Massivlar yaratishni boshqa yo'llari
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/1.Front end/4.JavaScript/6-Bo'lim/6.3.Massiv xususiyatlari va metodlari/6.3.Massiv xususiyatlari va metodlari.html">
+                                6.3.Massiv xususiyatlari va metodlari
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/1.Front end/4.JavaScript/6-Bo'lim/6.4.Yana massivlar haqida/6.4.Yana massivlar haqida.html">
+                                6.4.Yana massivlar haqida
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/1.Front end/4.JavaScript/6-Bo'lim/6.5.Matematik funksiyalar (Math obyekti)/6.5.Matematik funksiyalar (Math obyekti).html">
+                                6.5.Matematik funksiyalar (Math obyekti)
+                            </a>
+                        </li>
+                    </ul>
+                </li>
             </ul>
         </div>  
 
@@ -250,6 +311,7 @@
                                 this.name = name;
                             }
                         }
+                        // document.write(p.ChangeName("Hurrambek"));
                     </script>
                 </p>
                 <p> 
@@ -268,8 +330,9 @@
                 <p>
                     Bunday funksiyalarni konstruktorni tashqarisida ham qilish mumkin:
                 </p>
+
                 <p class="oddiy_chegara">
-                    function person(name, age) { <br>
+                    var John = { <br>
                         name: "John", <br>
                         age: 25 <br>
                     }; <br>
@@ -281,16 +344,45 @@
                 </p>
 
                 <p class="oddiy_chegara">
-                    <script>
-                        document.writeln(John.name, " uning yoshi ", John.age, " da </br>");
-                        document.write(James.name, " uning yoshi ", James.age, " da.");
-                    </script>
+                    function person(name, age){ <br>
+                    &nbsp;    this.name = name; <br> 
+                    &nbsp;    this.age = age;<br>
+                    &nbsp;    this.yearofBirth = bornYear; //tug'ilgan yil <br>
+                    &nbsp;&nbsp;} <br>
+                    &nbsp;function bornYear(){ <br>
+                    &nbsp;&nbsp;    return 2016 - this.age; <br>
+                        &nbsp;&nbsp;    } <br><br>
+                    var p = new person("Mo'minjon", 15); <br>
+                    document.write(p.yearofBirth());
+                </p>
+
+                <p>
+                    Bu kodlarni ishga tushirsak bizga 2001 soni chiqadi.
+                    Chunki bornYear funksiyasida qaytaruvchi qiymatni
+                    quyidagicha yozgandik:
                 </p>
                 <p>
-                    Bularni sintaksisini o'rganib qo'ysangiz bo'ldi!
+                    return 2016 - this.age;
                 </p>
+                <p>
+                    Bu degani 2016-yildan biz kiritgan yilni olib tashlab yearOfBirth
+                    konteyneriga yozib qo'yadi.
+                </p>
+                <p class="oddiy_chegara">
+                    <script>
+                        function person(name, age){
+                        this.name = name;
+                        this.age = age;
+                        this.yearofBirth = bornYear; //tug'ilgan yil
+                        }
+                        function bornYear(){
+                        return 2016 - this.age;
+                        }
 
-
+                        var p = new person("Mo'minjon", 15);
+                        document.write(p.yearofBirth());
+                    </script>
+                </p>
             </div>
         </div> 
     </div>

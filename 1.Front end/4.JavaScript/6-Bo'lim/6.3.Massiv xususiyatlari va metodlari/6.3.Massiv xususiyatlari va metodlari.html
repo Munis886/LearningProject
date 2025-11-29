@@ -26,9 +26,9 @@
             <li><a href="/1.Front end/1.Front_end.html">FRONT END</a></li>
             <li><a href="/1.Front end/1.HTML/1.HTML.html">HTML</a></li>
             <li><a href="/1.Front end/2.Css/Css.html">CSS</a></li>
-            <li><a href="/1.Front end/3.Js/Javascript.html">JavaScript</a></li>
-            <li><a href="/1.Front end/4.JavaScript/Javascript.html">JAVASCRIPT</a></li>
-            <li><a href="/2.Backend/1.Node js/Node js.html">Node js</a></li>
+            <li><a href="/1.Front end/3.Js/Javascript.html">JAVASCRIPT</a></li>
+            <li><a href="/1.Front end/4.JavaScript/Javascript.html">ES6</a></li>
+            <li><a href="/2.Backend/1.Node js/Node js.html">NODE JS</a></li>
         </ul>
     </div>
     </div>
@@ -200,16 +200,14 @@
                                 5.3.Obyektlarni initsiyalizatsiyalash
                             </a>
                         </li>
-
                         <li>
                             <a href="/1.Front end/4.JavaScript/5-Bo'lim/5.4.Metodlar qo'shish/5.4.Metodlar qo'shish.html">
                                 5.4.Metodlar qo'shish
                             </a>
                         </li>
-                        
                     </ul>
                 </li>
-                
+
                 <li>
                     <a href="#" onclick="toggleSubMenu('sub-menu-6')">
                         <b>6-Bo'lim</b>
@@ -231,71 +229,67 @@
                             </a>
                         </li>
                         <li>
-                            <a href="/1.Front end/4.JavaScript/5-Bo'lim/5.4.Metodlar qo'shish/5.4.Metodlar qo'shish.html">
-                                6.4.
+                            <a href="/1.Front end/4.JavaScript/6-Bo'lim/6.4.Yana massivlar haqida/6.4.Yana massivlar haqida.html">
+                                6.4.Yana massivlar haqida
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/1.Front end/4.JavaScript/6-Bo'lim/6.5.Matematik funksiyalar/6.5.Matematik funksiyalar (Math obyekti).html">
+                                6.5.Matematik funksiyalar (Math obyekti)
                             </a>
                         </li>
                     </ul>
                 </li>
-
-            </ul>
+           </ul>
         </div>  
 
         <div id="container">
             <div id="sarlavha">
-                <h2>Funksiya parametrlari</h2>
-            </div>
+                <h2>Massiv xususiyatlari va metodlari</h2>
+            </div> 
             <div id="text" class="qisqa">
+                
                 <p>
-                    Funksiya parametrlari mavjuddir funksiya ichida
-                    parametrlarni e'lon qilish uchun qavslarni ichida yoziladi. 
-                </p>
-                            
-                <p>
-                    Funksiyalarni parametrlarini hoxlagancha qo'shish mumkin.
+                    Massivni uzunligini aniqlash uchun length funksiyasi mavjud. 
                 </p>
 
                 <p>
-                    Endi bitta misol ko'ramiz. Bunda funksiyaning bitta satrli
-                    parametri mavjud bo'ladi.
+                    var abc = ["A", "b", "C", "d"]; <br>
+                    document.write(abc.length); // Natija: 4
                 </p>
 
                 <p>
-                    HTML va JavaScript kodlar:
+                    kodni ishga tushirsak bizda 4 degan yozuv chiqadi.
                 </p>
 
-                <div class="oddiy_chegara">
-                    <pre>
-                        &lt;!DOCTYPE html&gt;
-                        &lt;html lang="en"&gt;
-                    &nbsp;    &lt;head&gt;
-                    &nbsp;&nbsp;        &lt;meta charset="UTF-8"&gt;
-                    &nbsp;&nbsp;        &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
-                    &nbsp;&nbsp;        &lt;meta http-equiv="X-UA-Compatible" content="ie=edge"&gt;
-                    &nbsp;&nbsp;        &lt;title&gt;Funksiya&lt;/title&gt;
-                    &nbsp;&nbsp;        &lt;script&gt;
-                    &nbsp;&nbsp;&nbsp;            function ism_chiqar(ism) {
-                    &nbsp;&nbsp;&nbsp;        &nbsp;    alert("Salom " + ism);
-                    &nbsp;&nbsp;&nbsp;            }
-                    &nbsp;&nbsp;        &nbsp;    // funksiyani parametr bilan chaqirish
-                    &nbsp;&nbsp;        &nbsp;    ism_chiqar("Mo'minjon");
-                    &nbsp;&nbsp;        &lt;/script&gt;
-                    &nbsp;    &lt;/head&gt;
-                    &nbsp;        &lt;body&gt;
-                    &nbsp;    &nbsp;        Biz funksiyani yozuvli parametr bilan chaqirdik.
-                    &nbsp;        &lt;/body&gt;
-                        &lt;/html&gt;
-                    </pre>
-                </div>
-                <script>
-                        function ism_chiqar(ism) {
-                        alert("Salom " + ism);
-                        }
-                        // funksiyaga parametr bilan chaqirish
-                        ism_chiqar("Munis bek");
-                </script>
+                <p>
+                    Massivlarni qo'shish uchun concat();
+                </p>
+
+                <p>
+                    ishlatilishi:
+                </p>
+
+                <p>
+                    var c1 = ["HTML", "CSS"]; <br>
+                    var c2 = ["JavaScript", "ReactJS"]; <br>
+                    var kurslar = c1.concat(c2); <br>
+                    document.write(kurslar); // Natija: HTML,CSS,JavaScript,React
+                </p>
+
+                <p>
+                    c1 ning davomiga c2dagi ma'lumotlar qo'shiladi.
+                </p>
+                <p class="oddiy_chegara">
+                    <b>Natija:</b>
+                    <script>
+                        var c1 = ["HTML", "CSS"];
+                        var c2 = ["JavaScript", "ReactJS"];
+                        var kurslar = c1.concat(c2);
+                        document.write(kurslar); // Natija: HTML,CSS,JavaScript,React
+                    </script>
+                </p>
             </div>
-            
         </div> 
     </div>
    

@@ -76,6 +76,11 @@ body, h1 {
     display: inline-block;
 }
 
+#menu h3 a {
+    text-decoration: none;
+    color: #fff;
+}
+
 #menu ul li{   
       list-style-type: none;
       
