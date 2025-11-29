@@ -928,13 +928,13 @@
             <div class="sarlavha">
                 <ul>
                     <li class="li_1">
-                        <a href="/1.Front end/3.Js/7.Obyektlar/7.3.Test Zontik (7-1)/7.3.Test Zontik (7-1).html">⟨</a>
+                        <a href="/1.Front end/3.Js/7.Obyektlar/7.4.Obyektlar/7.4.Obyektlar.html">⟨</a>
                     </li>
                     <li class="li_2">
-                        Obyektlar
+                        Obyekt literallari
                     </li>
                     <li class="li_3">
-                        <a href="/1.Front end/3.Js/7.Obyektlar/7.5.Obyekt literallari/7.5.Obyekt literallari.html">
+                        <a href="#">
                             ⟩
                         </a>
                     </li>
@@ -944,31 +944,9 @@
             <div id="text" class="qisqa">
 
                 <h3>
-                    Obyektlar
+                    Obyekt literallari
                 </h3>
-                
-                <p>
-                    Shu paytgacha siz asosan primitiv 
-                    ma’lumotlar turlari bilan ishladingiz.
-                </p>
-                <div>
-                    <style>
-                        .p {
-                            text-align: center;
-                            color: green;
-                            font: 2em sans-serif;
-                            padding: 10px;
-                            width: fit-content;
-                            font-weight: 500;
-                            background-color: #f0f0f0;
-                            margin: auto;
-                        }
-                    </style>
-                    <p class="p">
-                        Primitiv data types <br>
-                        stirngs numbers booleans undefined null
-                    </p>
-                </div>
+
                 <p>
                     Ushbu turlar: satrlar, raqamlar, mantiqiy qiymatlar, 
                     aniqlanmagan va null bo‘lgan qiymatlar.
@@ -980,124 +958,51 @@
                     bu primitiv satr ma’lumoti turidir.
                 </p>
                 <div class="chegara_ichida">
-                    <p>
-                        &gt; typeof "hello"<br>
-                        &lt; "string" <br>
-                        &gt;
-                    </p>
+                    <pre>
+                        var sister = {
+                            name: "Sarah", 
+                            age: 23,
+                            parents: [ "alice", "andy" ],
+                            siblings: ["julia"],
+                            favoriteColor: "purple",
+                            pets: true
+                          };
+                    </pre>
                 </div>
+                
+                <ul>
+                    <li>
+                        "key" - kalit (xususiyat yoki metod nomi) va uning "qiymati" bir-biridan nuqtali vergul bilan ajratiladi
+                    </li>
+                    <li>
+                        key: value juftliklar bir-biridan vergul bilan ajratiladi
+                    </li>
+                    <li>
+                        Yaxlit obyekt { } figurali qavs ichiga olinadi.
+                    </li>
+                </ul>
+
                 <p>
-                    Hayron qoladigan joyi yo‘q.
-
-                    Ammo siz buning o‘rniga ushbu 
-                    massiv turini so‘rasangiz, 
-                <div class="chegara_ichida">
-                    <p>
-                        &gt; typeof "hello"<br>
-                        &lt; "string" <br>
-                        &gt; typeof [1,2,3,4];<br>
-                    </p>
-                </div>
-                    u qatorni ko‘rsatishini kutgan 
-                    bo‘lardingiz, to‘g‘rimi?
-
-                    U esa buning o‘rniga ob’ektni qaytaradi.
-                
-                <div class="chegara_ichida">
-                    <p>
-                        &gt; typeof "hello"<br>
-                        &lt; "string" <br>
-                        &gt; typeof [1,2,3,4];<br>
-                        &lt; "object"<br>
-                    </p>
-                </div>
-                
-                    Xo‘sh, bu nimasi unda?
-
-                    Ob’ekt bu har qanday ma’lumot 
-                    qiymatini saqlashga imkon beradigan 
-
-                    JavaScriptdagi ma’lumotlar tuzilmasidir.
-
-                    Va siz kalit yordamida ma’lumotlarni 
-                    kuzatib borishingiz mumkin.
-
-                    Ob’ektni aniqlash sintaksisiga 
-                    kirishdan oldin, keling, 
-
-                    odamni ifodalovchi ob’ektga qanday ma’lumot 
-                    kerak bo‘lishi mumkinligi haqida o‘ylab ko‘raylik.
-
-                    Faqatgina shaxsning ismini o‘z ichiga 
-                    olgan o‘zgaruvchi yetarli emas, albatta.
-
-                    Biror kishining yoshi, ota-onasi, 
-                    opa-singillari, 
-
-                    sevimli ranglari va hokazolar bo‘lgan ob’ekt bo‘lsin.
-
-                    Shunday qilib, ob’ektlar odam to‘g‘risidagi 
-                    barcha ma’lumotlarni alohida-alohida qilingan 
-
-                    o‘zgaruvchilardagi belgilashning o‘rniga, 
-                    ushbu ma’lumotni guruhlashga ham imkon beradi.
-
-                    Bu yerda ko‘rsatilgan ma’lumotlar kabi.
-
-                    Ma’noli tuzilishga imkon beradi.
-
-                    Mana bu sister deb nomlangan 
-                    o‘zgaruvchida saqlanadigan ob’ekt.
-
-                    Ob’ekt ma’lumotlari, sister haqida 
-                    ma’lumot, figurali qavs ichida kalit 
-
-                    qiymat juftlari ro‘yxati 
-                    sifatida saqlanishi mumkin.
-
-                    Siz dastlab ushbu kodni o‘qish 
-                    qiyinligini sezgandirsiz.
-
-                    O‘qish qulayligini oshirish uchun 
-                    har bir kalit qiymat juftligi 
-
-                    bilan ob’ektlarni formatlash odatiy holdir.
-
-                    E’tibor bering, sintaksis o‘zgarmadi, 
-                    biz har bir verguldan keyin yangi 
-
-                    qator qo‘shdik va har bir juftlikni ajratdik.
-
+                    Lug‘atda so‘z ta’rifini qidirib topish kabi, 
+                    obyektning key:value juftligidagi key kaliti 
+                    obyekt haqida ma’lumotni topishga imkon beradi. 
+                    Quyida siz yaratgan obyektdan foydalanib, sister 
+                    ota-onasi haqida ma’lumot olishga misollar.
                 </p>
 
                 <div class="chegara_ichida">
-                    <pre>
-                        var umbrella = { 
-                        color: "pink",
-                        isOpen: false,
-                        open: function() { 
-                            if (umbrella.isOpen === true) {
-                            return "The umbrella is already opened!";
-                            } else {
-                            umbrella.isOpen = true;
-                            return "Julia opens the umbrella!";
-                            }
-                        }
-                        };
-                    </pre>
-                </div>
-
-                <div class="havo_chegara">
                     <p>
-                        <b>MASLAHAT:</b> Obyektlarning barcha xususiyat va metodlarini figurali 
-                        qavs ichiga olishni unutmang: <span class="maxsus">var myObject = {salomlashuv: "salom", nomi: 
-                        "Julia"};</span>. Bundan tashqari, obyekt shunchaki yana bir ma’lumot turi 
-                        ekanligini unutmang. <span class="maxsus">var myString = "hello";</span> o‘zgaruvchi deklaratsiyasidan 
-                        keyin nuqtali vergul qo‘yganingiz kabi, obyekt deklaratsiyasi oxiriga 
-                        ham nuqtali vergul qo‘yishni unutmang.
+                        // kalitdan foydalanib qiymatni olishga misollar <br>
+                        sister["parents"] // [ "alice", "andy" ] qaytaradi <br>
+                        sister.parents // ["alice", "andy"] qaytaradi 
                     </p>
                 </div>
 
+                <p>
+                    Bu sister["parents"] kabi ishlatish bracket notation 
+                    (qavs sababli!) deb, sister.parents esa dot notation 
+                    (nuqta sababli!) deb ataladi.
+                </p>
                 <h3>
                     Kodingiz:
                 </h3>
