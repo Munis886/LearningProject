@@ -19,8 +19,8 @@
 
      <div id="menyu">
     <div class="menyu">
+        <button id="toggle-btn" onclick="toggleMenu()">Menu</button>
         <ul>
-            <button id="toggle-btn" onclick="toggleMenu()">Menu</button>
             <li><a href="/index.html">HOME</a></li>
             <li><a href="/1.Front end/1.Front_end.html">FRONT END</a></li>
             <li><a href="/1.Front end/1.HTML/1.HTML.html">HTML</a></li>
@@ -706,11 +706,22 @@
         </div> 
         
         <div id="container">
-            <div id="sarlavha">
-                <h2>
-                    "String" ma’lumot turining indeksi
-                </h2>
+            <div class="sarlavha">
+                <ul>
+                    <li class="li_1">
+                        <a href="/1.Front end/3.Js/2.Ma'lumotlar turlari va o'zgaruvchilar/2.8.Test Harorat o‘lchov birliklarini o‘zgartirish/2.8.Test Harorat o‘lchov birliklarini o‘zgartirish(2-2).html">⟨</a>
+                    </li>
+                    <li class="li_2">
+                        "String" ma’lumot turining indeksi
+                    </li>
+                    <li class="li_3">
+                        <a href="/1.Front end/3.Js/2.Ma'lumotlar turlari va o'zgaruvchilar/2.10.Matnlarda maxsus belgilarni ishlatish/2.10.Matnlarda maxsus belgilarni ishlatish.html">
+                            ⟩
+                        </a>
+                    </li>
+                </ul>
             </div>
+
             <div id="text" class="qisqa">
                 
             <h3>Indekslash</h3>
@@ -720,16 +731,12 @@
                 uchun, uning belgisi joylashgan manzilni indeksidan foydalanishingiz mumkin. Belgilar indeksini 
                 to‘rtburchak qavs ichida (birinchi belgi sifatida [0] dan boshlab) qo‘ying.
             </p>
-            <div style="border: 1px solid; text-align: center; 
-            width: 40%; margin: auto; border-radius: 5px;">
+            <div class="chegara_ichida">
                 <p>
                     "James"[0];
                 </p>
             </div>
-            <div style="border: 1px solid #6491FC; 
-            text-align: center; width: 40%; 
-            margin: auto; border-radius: 0 0 25px 0; 
-            margin-top: 15px;">
+            <div class="havo_chegara">
                 <p>
                     <b>Natija:</b> "J"
                 </p>
@@ -738,17 +745,13 @@
             <p>
                 yoki bu jarayonni odatda o‘zgaruvchi ishlatgan holda, mana bu tarzda ko‘rasiz:
             </p>
-            <div style="border: 1px solid; 
-            width: 40%; margin: auto; border-radius: 5px;">
+            <div class="chegara_ichida">
                 <p>
                     var name = "James"; <br>
                     name[0];
                 </p>
             </div>
-            <div style="border: 1px solid #6491FC; 
-            text-align: center; width: 40%; 
-            margin: auto; border-radius: 0 0 25px 0; 
-            margin-top: 15px;">
+            <div class="havo_chegara">
                 <p>
                     <b>Natija:</b> "J"
                 </p>
@@ -763,17 +766,13 @@
            <p>
                 Quyidagi kod satrlarini ishga tushirgandan so‘ng qaysi belgi JavaScript konsoliga chop etiladi.
            </p>
-           <div style="border: 1px solid; 
-            width: 40%; margin: auto; border-radius: 5px;">
+           <div class="oddiy_chegara">
                 <p>
                     var quote = "Stay awhile and listen!"; <br>
                     console.log(quote[6]);
                </p>
             </div>
-            <div style="border: 1px solid #6491FC; 
-            text-align: center; width: 40%; 
-            margin: auto; border-radius: 0 0 25px 0; 
-            margin-top: 15px; margin-bottom: 15px;" >
+            <div class="havo_chegara">
                 <p>
                     <b>Natija:</b> "w"
                 </p>
