@@ -140,6 +140,67 @@ body {
     content: "\f02d";
 }
 
+.sarlavha ul {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+    margin: 10px 0;
+    align-items: center;
+}
+
+.sarlavha ul {
+    display: inline-flex;
+    width: auto;
+    background: greenyellow;
+    border-radius: 0 8px 8px 0;
+    font-size: 25px;
+    box-shadow: 0 0 8px #333;
+}
+
+.li_1 {
+    padding: 0;
+    font-weight: 350;
+    border-right: 1px solid bisque;
+}
+
+.li_1 a {
+    font-weight: 500;
+    color: black;
+    transition: 0.4s;
+    padding: 5px 5px;
+}
+
+.li_1 a:hover {
+    font-weight: 600;
+    color: seagreen;
+    transition: 0.4s;
+}
+
+.li_2 {
+    padding: 5px 15px 5px 16px;
+    font-weight: 550; 
+}
+
+.li_3 {
+    padding: 0;
+    font-weight: 350;
+    border-left: 1px solid bisque;
+}
+
+.li_3 a {
+    font-weight: 500;
+    color: black;
+    transition: 0.4s;
+    padding: 5px 5px;
+    border-radius: 0 8px 8px 0;
+}
+
+.li_3 a:hover {
+    font-weight: 600;
+    color: seagreen;
+    transition: 0.4s;
+}
+
 
 
 
