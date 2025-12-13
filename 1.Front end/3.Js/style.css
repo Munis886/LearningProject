@@ -317,7 +317,7 @@ div p {
     color: blue; 
 }
 .qisqa {
-    width: 75%;
+    width: 70%;
     margin: 0 auto;
     padding: 10px 20px;
     margin-top: 15px;
@@ -368,7 +368,7 @@ pre {
     font-family: "Fira Code", Consolas, Monaco, "Andale Mono", "Ubuntu Mono", monospace;;
 }
 
-
+/* sarlavha uchun */
 .sarlavha ul {
     display: flex;
     list-style-type: none;
