@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>html elementlari</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="Js.js"></script>
+</head>
+<body>
+    <div id="bosh">
+            <div class="bosh">
+                <h1>html elementlar</h1>
+            </div>
+    </div>
+    
+    <div id="menyu">
+        <div class="menyu">
+            <button id="toggle-btn" onclick="toggleMenu()">Menu</button>   
+            <ul>
+                <li><a href="/index.html">HOME</a></li>
+                <li><a href="/1.Front end/1.Front_end.html">FRONT END</a></li>
+            </ul>
+        </div>
+    </div> 
+
+    <div class="body">
+        <div id="menu" class="menu">
+            <h3>HTML</h3>   
+            <ul>
+                <li><a href="/1.Front end/1.HTML/1.HTML.html">HTML HOME</a></li>
+                <li>
+                    <a href="#" onclick="toggleSubMenu('sub-menu-1')">Elementlar</a>
+                    <ul id="sub-menu-1" class="sub-menu">
+                        <li>
+                            <span></span>
+                            <a href="/1.Front end/1.HTML/Elementlar/Elementlar.html">Elementlar haqida</a>
+                        </li>
+                        <li>
+                            <span></span>
+                            <a href="/1.Front end/1.HTML/Elementlar/1.Html elementlar.html">HTML elementlar</a>
+                        </li>
+                        <li>
+                            <span></span>
+                            <a href="/1.Front end/1.HTML/Elementlar/2.block elementlar.html">Block elementlar</a>
+                        </li>
+                        <li>
+                            <span></span>
+                            <a href="/1.Front end/1.HTML/Elementlar/3.inline elementlar.html">Inline elementlar</a>
+                        </li>
+                    </ul>
+                </li>
+                <li><a href="/1.Front end/1.HTML/Atributlar/Atributlar.html">Atributlar</a></li>
+                <li>
+                    <a href="#" onclick="toggleSubMenu('sub-menu-2')">Belgilar</a>
+                    <ul id="sub-menu-2" class="sub-menu">
+                        <li><a href="/1.Front end/1.HTML/Belgilar/Belgilar.html">Belgilar</a></li>
+                        <li><a href="/1.Front end/1.HTML/Belgilar/1.Belgi 1-300.html">Belgi 1-300</a></li>
+                        <li><a href="/1.Front end/1.HTML/Belgilar/2.Belgi 9000-10000.html">Belgi 9000-10000</a></li>
+                        <li><a href="/1.Front end/1.HTML/Belgilar/3.Belgi 65000-66000.html">Belgi 65000-66000</a></li>
+                        <li><a href="/1.Front end/1.HTML/Belgilar/4.Belgi 127000-128000.html">Belgi 127000-128000</a></li>
+                        <li><a href="/1.Front end/1.HTML/Belgilar/5.Belgi 128000-129000.html">Belgi 128000-129000</a></li>
+                        <li><a href="/1.Front end/1.HTML/Belgilar/6.Belgi alifbo.html">Belgi alifbo</a></li>
+                    </ul>
+                </li>
+                <li></li>
+                <li></li>
+            </ul>
+        </div>
+        <div id="container">
+        
+            <div class="sarlavha">
+                <ul>
+                    <li class="li_1">
+                        <a href="/1.Front end/1.HTML/Elementlar/Elementlar.html">⟨</a>
+                    </li>
+                    <li class="li_2">
+                        html elementlar
+                    </li>
+                    <li class="li_3">
+                        <a href="/1.Front end/1.HTML/Elementlar/2.block elementlar.html">
+                            ⟩
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            
+            <div id="text">
+                <p>Har qanday Web sahifa ikkita qismdan tashkil topadi. Bular sarlavha qismi va asosiy qism. 
+                    Sarlavha qismida Web sahifa haqidagi ma’lumot joylashadi, asosiy qismda esa Web sahifaning 
+                    mazmuni bilan tasvirlanish qoidalari joylashadi. Sarlavha qismi quyidagi ochiluvchi
+                    &nbsp;
+                    <em>
+                        &lt;head&gt;
+                    </em>
+                    &nbsp;va yopiluvchi&nbsp;
+                    <em>&lt;/head&gt;</em>
+                    teglari orasida joylashadi. Asosiy qism esa&nbsp;
+                    <em>&lt;body&gt;</em>
+                    &nbsp;va&nbsp;<em>&lt;/body&gt;</em>&nbsp;
+                    teglari orasida joylashadi. Odatda sarlavha qismi oldidan qo`llanilayotgan 
+                    HTML standartlari haqida ma’lumot yoziladi. 
+                </p>
+                <p>
+                    Har qanday Web sahifaning umumiy ko`rinishi quyidagicha bo`ladi:
+                </p>
+               
+                <p>
+                    &lt;!Doctype html&gt; <br>           
+                    &lt;html lang="en"&gt; <br>
+                        &nbsp;&lt;<span class="red">head</span>&gt; <br>
+                        &nbsp;&nbsp;&lt;title&gt; 
+                            Hujjat sarlavhasi 
+                            &lt;/title&gt; <br>
+                        &nbsp;&lt;/<span class="red">head</span>&gt; <br>
+                        &nbsp;&lt;<span class="red">body</span>&gt; <br>
+                        &nbsp;&nbsp;    Asosiy qism <br>
+                        &nbsp;&lt;/<span class="red">body</span>&gt; <br>
+                    &lt;/html&gt; <br>
+                </p>
+                <ol>
+                    <li> 
+                        <b>
+                            <a href="/1.Front end/1.HTML/Elementlar/1.Html elementlar/1.Doctype.html">
+                                &lt;!Doctype html&gt;
+                            </a>  
+                        </b> veb sahifani qaysi HTML versiyada yozilganligi haqida ma'lumot beradi
+                        
+                    <li> 
+                        <b>
+                            <a href="/1.Front end/1.HTML/Elementlar/1.Html elementlar/2.html.html">
+                                &lt;html&gt; &lt;/html&gt;
+                            </a>
+                        </b>
+                         Web sahifani ochish va yopish tegi
+                    <li>
+                        <b>
+                            <a href="/1.Front end/1.HTML/Elementlar/1.Html elementlar/3.head.html">&lt;head&gt; &lt;/head&gt;</a>
+                        </b> - Bosh qism
+                    </li>
+                    <li>
+                        <b>
+                            <a href="/1.Front end/1.HTML/Elementlar/1.Html elementlar/4.title.html">&lt;title&gt; &lt;/title&gt;</a> 
+                        </b> - hujjat sarlavhasi
+                    </li>
+                    <li>
+                        <b>
+                            <a href="/1.Front end/1.HTML/Elementlar/1.Html elementlar/5.meta.html">&lt;meta&gt;</a>
+                        </b> 
+                    </li>
+                    <li>
+                        <b>
+                            <a href="/1.Front end/1.HTML/Elementlar/1.Html elementlar/6.body.html">&lt;body&gt; &lt;/body&gt;</a>
+                        </b> 
+                    </li>             
+                </ol>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>

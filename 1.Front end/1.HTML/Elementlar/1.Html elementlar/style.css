@@ -11,7 +11,6 @@ body {
 #bosh {
     background-color:chocolate;
     padding: 10px 0;
-    width: 80%;
     margin: 0 auto;
 }
 
@@ -27,7 +26,6 @@ body {
 
 #menyu {
     background-color:dimgray;
-    width: 80%;
     margin: 0 auto;
 }
 
@@ -47,7 +45,6 @@ body {
 }
 
 #container {
-    width: 80%;
     margin: 0 auto;
     font-size: 17px;
     background-color: bisque;
