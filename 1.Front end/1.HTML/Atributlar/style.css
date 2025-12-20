@@ -121,44 +121,81 @@ table th,td {
 
 
 .menu {
-  height: 100%;
-  background-color: #333;
-  position:fixed;
-  top: 0;
-  left: -250px; /* Menu yashirilgan holatda */
-  transition: left 0.3s; /* Silliq ko'rinish uchun o'tish */
-}
-
+    width: 250px;
+    height: 100vh;
+    position:absolute;
+    overflow-y: auto;
+    overflow: hidden;
+    top: 0;
+    background: dimgray;
+    z-index: 1000;
+    left: -250px; /* Menu yashirilgan holatda */
+    transition: left 0.3s; /* Silliq ko'rinish uchun o'tish */
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+  }
+  
 .menu.active {
-  left: 0; /* Menu ko'rinadigan holatda */
-  position:relative;
-}
+    left: 0; /* Menu ko'rinadigan holatda */
+    position:relative;
+  }
 
-#menu li{   
-    list-style-type: none;
-}
-#menu ul {
+#menu h3 {
+    padding: 2px 3px;
+    margin: 2px 3px;
+    color: #fff;
+    display: inline-block;
+    margin: 0;
     padding: 0;
 }
+
+#menu ul li{   
+      list-style-type: none;
+  }
+#menu ul {
+      padding: 0;
+      margin: 0;
+  }
+  
 #menu ul li a {
-    display: block;
-    margin: 1px 0;
-    color: #000; /* Dastlabki matn rangi */
-    background-color: #f0f0f0; /* Dastlabki fon rangi */
-    padding: 4px 25px;
-    text-decoration: none;
-    white-space: nowrap;
-  }
-
-/* Kursor ustiga kelsa */
-div #menu ul li a:hover {
-    background-color: #d3d3d3; /* Kursor ustiga kelsa fon rangi */
-    color: #fff; /* Kursor ustiga kelsa matn rangi */
-  }
-
-  /* Bosilgan holat */
+      display: block;
+      margin: 1px 0;
+      color: #000; /* Dastlabki matn rangi */
+      background-color: #f0f0f0; /* Dastlabki fon rangi */
+      padding: 6px 25px;
+      text-decoration: none;
+    }
+  
+  /* Kursor ustiga kelsa */
+#menu ul li a:hover {
+      background-color: #33d3; /* Kursor ustiga kelsa fon rangi */
+      color: #fff; /* Kursor ustiga kelsa matn rangi */
+    }
+  
+    /* Bosilgan holat */
 #menu  a:active {
-    background-color: #0003d3 !important; /* Bosilgan holat fon rangi */
-    color: #fff !important; /* Bosilgan holat matn rangi */
-  }
+      background-color: #0003d3 !important; /* Bosilgan holat fon rangi */
+      color: #fff !important; /* Bosilgan holat matn rangi */
+    }
 
+
+  /* Kursor ustiga kelsa */
+  div #menu ul li a:hover {
+      background-color: #d3d3d3; /* Kursor ustiga kelsa fon rangi */
+      color: #fff; /* Kursor ustiga kelsa matn rangi */
+    }
+  
+    /* Bosilgan holat */
+  #menu  a:active {
+      background-color: #0003d3 !important; /* Bosilgan holat fon rangi */
+      color: #fff !important; /* Bosilgan holat matn rangi */
+    }
+
+.sub-menu {
+    display: none; /* Yashirilgan holatda */
+    padding-left: 25px; /* Ichkariga siljitish */
+    background-color: dimgray;
+  }
+  
+.sub-menu li {
+    margin: 0 0 1px 5px;
+}
