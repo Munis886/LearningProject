@@ -1126,7 +1126,28 @@
                     ammo bu hali ham ishlamadi.
 
                     Birinchi farzand nima bo‘ldi?
-
+                </p>
+                <div class="oddiy_chegara">
+                    <pre>
+                        person.1stChild;
+                    </pre>
+                </div>
+                <div class="natija">
+                    <p>
+                        <b>Naijta:</b>
+                        <script>
+                            var person = {
+                            "name": "John",
+                            "age": 55,
+                            "1stChild": "James",
+                            "2ndChild": "Jarrod",
+                            "3rdChild": "Alexis"
+                        };
+                        document.write(" Uncaught SyntaxError: Invalid or unexpected token");
+                        </script>
+                    </p>
+                </div>
+                <p>
                     Voy, bizda sintaktik xato yuz berdi.
 
                     Nuqtali yozuvdan foydalanganimiz 
@@ -1156,7 +1177,34 @@
                     nusxa ko‘chirsak, 
 
                     bizda xatolik kelib chiqadi. 
-
+                </p>
+                <div class="oddiy_chegara">
+                    <pre>
+                        var person = {
+                            name: "John",
+                            age: 55,
+                            1stChild: "James",
+                            2ndChild: "Jarrod",
+                            3rdChild: "Alexis"
+                            };
+                    </pre>
+                </div>
+                <div class="natija">
+                    <p>
+                        <b>Naijta:</b>
+                        <script>
+                            var person = {
+                            "name": "John",
+                            "age": 55,
+                            "1stChild": "James",
+                            "2ndChild": "Jarrod",
+                            "3rdChild": "Alexis"
+                        };
+                        document.write(" Uncaught SyntaxError: Invalid or unexpected token");
+                        </script>
+                    </p>
+                </div>
+                <p>
                     Ha, shuning uchun ba’zida qo‘shtirnoq 
                     ob’ekt xususiyatlarini nomlashda 
 
@@ -1174,7 +1222,17 @@
                     saqlab turadigan 
 
                     massivga aylantirishimiz kerak.
-
+                </p>
+                <div class="oddiy_chegara">
+                    <pre>
+                        var person = {
+                            name: "John",
+                            age: 55,
+                            children: ["James", "Jarrod", "Alexis"]
+                            };
+                    </pre>
+                </div>
+                <p>
                     Ha, bu juda yaxshi.
 
                     Yaxshi, keling, keyingi misolga o‘taylik.
@@ -1185,7 +1243,25 @@
 
                     Ammo men oldinga boraman va 
                     baribir ularni ko‘rsataman.
-
+                </p>
+                <div class="oddiy_chegara">
+                    <pre>
+                        var garage = {
+                            "fire truck": {
+                                "color": "red",
+                                "wheels": 6,
+                                "operational": true
+                            },
+                            "race-car": {
+                                "color": "blue",
+                                "wheels": 4,
+                                "operational": false
+                            }
+                        };
+                    </pre>
+                </div>
+                
+                <p>
                     Shunday qilib, biz yana xususiyat nomlari 
                     uchun qo‘shtirnoqlarni ishlatmoqdamiz va 
 
@@ -1206,16 +1282,83 @@
                     konsoliga nusxalab va sinab ko‘rsak, 
 
                     nimani nazarda tutayotganimni bilib olamiz.
-
-                    Xo‘sh, garage.fire truck deymiz va 
-                    mana bu yerda sintaksis xatosi mavjud.
-
+                </p>
+                <div class="oddiy_chegara">
+                    <pre>
+                        var garage = {
+                            "fire truck": {
+                                "color": "red",
+                                "wheels": 6,
+                                "operational": true
+                            },
+                            "race-car": {
+                                "color": "blue",
+                                "wheels": 4,
+                                "operational": false
+                            }
+                        };
+                    </pre>
+                </div>
+                <div class="natija">
+                    <p>
+                        <b>Naijta:</b>
+                        <script>
+                            var garage = {
+                            "fire truck": {
+                                "color": "red",
+                                "wheels": 6,
+                                "operational": true
+                            },
+                            "race-car": {
+                                "color": "blue",
+                                "wheels": 4,
+                                "operational": false
+                            }
+                        };
+                        document.write('undefined');
+                        </script>
+                    </p>
+                </div>
+                <p>
+                    Xo‘sh, garage.fire truck deymiz
+                </p>
+                <div class="oddiy_chegara">
+                    <pre>
+                        garage.fire truck;
+                    </pre>
+                </div>
+                <p>
+                    va mana bu yerda sintaksis xatosi mavjud.
+                </p>
+                <div class="natija">
+                    <p>
+                        <b>Naijta:</b>
+                        <script>
+                            document.write(" Uncaught SyntaxError: Invalid or unexpected token");
+                        </script>
+                    </p>
+                </div>
+                <p>
                     Va bizning chiziqcha uchun ham xuddi 
                     shu narsa, 
 
                     agar biz race-car desak ham 
                     yana bir sintaktik xato.
-
+                </p>
+                <div class="oddiy_chegara">
+                    <pre>
+                        garage.race-car;
+                    </pre>
+                </div>
+                <div class="natija">
+                    <p>
+                        <b>Naijta:</b>
+                        <script>
+                            document.write(" Uncaught SyntaxError: Invalid or unexpected token");
+                        </script>
+                    </p>
+                </div>
+                <p>
                     Endi bu ikki xil misolni ko‘rsatishimning sababi, 
 
                     chunki bu ikkala xususiyat ham ko‘p 
@@ -1284,7 +1427,9 @@
 
                     uchun ham yaxshidir.
                 </p>
-
+                <div class="center-align">
+                    <video src="7.6.Nomlash kelishuvlari.mp4" controls width="65%"></video>
+                </div>
                 <div class="oddiy_chegara">
                     <h3>
                         Question 1 of 2
