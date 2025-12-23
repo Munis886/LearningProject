@@ -943,13 +943,13 @@
             <div class="sarlavha">
                 <ul>
                     <li class="li_1">
-                        <a href="/1.Front end/3.Js/7.Obyektlar/7.7.Obyektlar bo‘yicha xulosa/7.7.Obyektlar bo‘yicha xulosa.html">⟨</a>
+                        <a href="/1.Front end/3.Js/7.Obyektlar/7.8.Test Menyu tarkibi (7-2)/7.8.Test Menyu tarkibi (7-2).html">⟨</a>
                     </li>
                     <li class="li_2">
-                        Test: Menyu tarkibi (7-2)
+                        Test: Bank hisoblari 1 (7-3)
                     </li>
                     <li class="li_3">
-                        <a href="/1.Front end/3.Js/7.Obyektlar/7.9 Test Bank hisoblari 1 (7-3)/7.9 Test Bank hisoblari 1 (7-3).html">
+                        <a href="#">
                             ⟩
                         </a>
                     </li>
@@ -961,53 +961,78 @@
                     Ko‘rsatmalar:
                 </h2>
                 <p>
-                    Quyidagi menyu tarkibiy qismlari uchun <span class="maxsus">breakfast</span> obyektini yarating:
+                    Berilgan obyekt uchun:
                 </p>
                 <div class="oddiy_chegara">
-                    <p>
-                        The Lumberjack - $9.95 <br>
-                        eggs, sausage, toast, hashbrowns, pancakes
-                    </p>
+                    <pre>
+                        var savingsAccount = {
+                        balance: 1000,
+                        interestRatePercent: 1,
+                        deposit: function addMoney(amount) {
+                            if (amount > 0) {
+                            savingsAccount.balance += amount;
+                            }
+                        },
+                        withdraw: function removeMoney(amount) {
+                            var verifyBalance = savingsAccount.balance - amount;
+                            if (amount > 0 && verifyBalance >= 0) {
+                            savingsAccount.balance -= amount;
+                            }
+                        }
+                        };
+                    </pre>
                 </div>
 
                 <p>
-                    Obyektda <span class="maxsus">name</span>, 
-                    <span class="maxsus">price</span> va 
-                    <span class="maxsus">ingredients</span> nomli xususiyatlar bo‘lishi kerak.
+                    quyidagi hisob ma’lumotini qaytaradigan yangi printAccountSummary() metodini qo‘shing:
                 </p>
-
                 
-                
-                <h3>
+                <div class="oddiy_chegara">
+                    <p>
+                        Welcome! <br>
+                        Your balance is currently $1000 and your interest rate is 1%.
+                    </p>
+                </div>
+                <h2>
                     Kodingiz:
-                </h3>
-                
-                
+                </h2>
                 <div class="yashil_maydon">
                     <pre>
-                        /*
-                         * Dasturlash testi: Menyu bandlari (7-2)
-                         * “nonushta” nomli obyekt yarating.
-                         * Ob'ekt "nom", "narx" va "ingredientlar" uchun xususiyatlarni o'z ichiga olishi kerak.
-                         * Butun ob'ektni konsolda chop eting
-                        */
-                                            
-                        // sizning kodingiz shu yerda
+                            /*
+                            * Programming Quiz: Bank Accounts 1 (7-3)
+                            */
 
-                        var breakfast = {
-                            name: "The Lumberjack", // 1. nomi
-                            price: 9.95,            // 2. narxi
-                            ingredients: [          // 3. ingredientlar ro'yxati
-                                "eggs",
-                                "sausage",
-                                "toast",
-                                "hashbrowns",
-                                "pancakes"
-                            ]
-                        };
+                            /*
+                            * QUIZ REQUIREMENTS
+                            * - Your code should have an object `savingsAccount` 
+                            * - Your `savingsAccount` object should have the `balance` and `interestRatePercent` property
+                            * - Your `savingsAccount` object should have a `printAccountSummary()` method
+                            * - Your `printAccountSummary()` method should return the EXACT expected message
+                            * - BE CAREFUL ABOUT THE PUNCTUATION, SPACES, AND EXACT WORDS TO BE PRINTED.
+                            */
 
-                        // Ob'ektni konsolga chiqaramiz
-                        console.log(breakfast);
+
+                            var savingsAccount = {
+                                balance: 1000,
+                                interestRatePercent: 1,
+                                deposit: function addMoney(amount) {
+                                    if (amount > 0) {
+                                        savingsAccount.balance += amount;
+                                    }
+                                },
+                                withdraw: function removeMoney(amount) {
+                                    var verifyBalance = savingsAccount.balance - amount;
+                                    if (amount > 0 && verifyBalance >= 0) {
+                                        savingsAccount.balance -= amount;
+                                    }
+                                },
+                                printAccountSummary: function() { // printAccountSummary metodini qo'shamiz
+                                    return "Welcome!\nYour balance is currently $" + this.balance + " and your interest rate is " + this.interestRatePercent + "%."; 
+                                }
+                            };
+
+                            // Metodni chaqirish
+                            console.log(savingsAccount.printAccountSummary());
                     </pre>
                 </div>
 
