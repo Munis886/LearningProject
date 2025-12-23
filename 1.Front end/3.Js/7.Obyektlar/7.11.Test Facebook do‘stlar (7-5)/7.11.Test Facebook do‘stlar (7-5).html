@@ -943,13 +943,13 @@
             <div class="sarlavha">
                 <ul>
                     <li class="li_1">
-                        <a href="/1.Front end/3.Js/7.Obyektlar/7.8.Test Menyu tarkibi (7-2)/7.8.Test Menyu tarkibi (7-2).html">⟨</a>
+                        <a href="/1.Front end/3.Js/7.Obyektlar/7.9 Test Bank hisoblari 1 (7-3)/7.9 Test Bank hisoblari 1 (7-3).html">⟨</a>
                     </li>
                     <li class="li_2">
-                        Test: Bank hisoblari 1 (7-3)
+                        Test: Facebook do‘stlar (7-5)
                     </li>
                     <li class="li_3">
-                        <a href="/1.Front end/3.Js/7.Obyektlar/7.10.Test Bank hisoblari 2 (7-4)/7.10.Test Bank hisoblari 2 (7-4).html">
+                        <a href="#">
                             ⟩
                         </a>
                     </li>
@@ -961,78 +961,25 @@
                     Ko‘rsatmalar:
                 </h2>
                 <p>
-                    Berilgan obyekt uchun:
-                </p>
-                <div class="oddiy_chegara">
-                    <pre>
-                        var savingsAccount = {
-                        balance: 1000,
-                        interestRatePercent: 1,
-                        deposit: function addMoney(amount) {
-                            if (amount > 0) {
-                            savingsAccount.balance += amount;
-                            }
-                        },
-                        withdraw: function removeMoney(amount) {
-                            var verifyBalance = savingsAccount.balance - amount;
-                            if (amount > 0 && verifyBalance >= 0) {
-                            savingsAccount.balance -= amount;
-                            }
-                        }
-                        };
-                    </pre>
-                </div>
-
-                <p>
-                    quyidagi hisob ma’lumotini qaytaradigan yangi printAccountSummary() metodini qo‘shing:
+                    Endi facebookProfile nomli obyekt yarating. Unda quyidagi xususiyatlar bo‘lsin:
                 </p>
                 
-                <div class="oddiy_chegara">
-                    <p>
-                        Welcome! <br>
-                        Your balance is currently $1000 and your interest rate is 1%.
-                    </p>
-                </div>
+                <ol>
+                    <li>Ismmingiz - <span class="maxsus">name</span></li>
+                    <li>Sizning <span class="maxsus">friends</span> do‘stlaringiz ismlari va</li>
+                    <li>siz chop etgan <span class="maxsus">messages</span> xabarlaringiz (satrlar ko‘rinishida) massivi</li>
+
+                </ol>
+                <p>
+                    Shuningdek, obyekt 4 ta metodga ega bo‘lsin:
+                </p>
                 <h2>
                     Kodingiz:
                 </h2>
                 <div class="yashil_maydon">
                     <pre>
-                            /*
-                            * Programming Quiz: Bank Accounts 1 (7-3)
-                            */
-
-                            /*
-                            * QUIZ REQUIREMENTS
-                            * - Your code should have an object `savingsAccount` 
-                            * - Your `savingsAccount` object should have the `balance` and `interestRatePercent` property
-                            * - Your `savingsAccount` object should have a `printAccountSummary()` method
-                            * - Your `printAccountSummary()` method should return the EXACT expected message
-                            * - BE CAREFUL ABOUT THE PUNCTUATION, SPACES, AND EXACT WORDS TO BE PRINTED.
-                            */
-
-
-                            var savingsAccount = {
-                                balance: 1000,
-                                interestRatePercent: 1,
-                                deposit: function addMoney(amount) {
-                                    if (amount > 0) {
-                                        savingsAccount.balance += amount;
-                                    }
-                                },
-                                withdraw: function removeMoney(amount) {
-                                    var verifyBalance = savingsAccount.balance - amount;
-                                    if (amount > 0 && verifyBalance >= 0) {
-                                        savingsAccount.balance -= amount;
-                                    }
-                                },
-                                printAccountSummary: function() { // printAccountSummary metodini qo'shamiz
-                                    return "Welcome!\nYour balance is currently $" + this.balance + " and your interest rate is " + this.interestRatePercent + "%."; 
-                                }
-                            };
-
-                            // Metodni chaqirish
-                            console.log(savingsAccount.printAccountSummary());
+                            <h2>Quiz Question</h2>
+                            Quyidagilardan qaysi birlari savingsAccount obyektining xususiyati va metodlariga murojaat qilish uchun yaroqli usul bo‘ladi?
                     </pre>
                 </div>
 
