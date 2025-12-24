@@ -1060,11 +1060,56 @@
                 <p>
                     Veb-saytni so‘raganingizda, ushbu veb-sayt u qaysi dasturlash tilida ishlab chiqilmasin, 
                     HTML bilan ishlaydi. Brauzer HTML oqimini qabul qiladi. Bayt turli xil belgilarni 
-                    (masalan, teg boshlanishi &lt; 
-                    belgisi va href kabi atributni, yopuvchi belgi &lt; kabilarni) aniqlaydigan murakkab 
+                    (masalan, teg boshlanishi <span class="maxsus">&lt;</span> 
+                    belgisi va <span class="maxsus">href</span> kabi atributni, yopuvchi belgi 
+                    <span class="maxsus">&lt;</span> kabilarni) aniqlaydigan murakkab 
                     (lekin to‘liq hujjatlashtirilgan) tahlil qilish jarayonidan o‘tadi. Tekshuruvdan so‘ng, 
                     tokenlashtirish deb nomlangan jarayon sodir bo‘ladi. Tokenlashtirish bir vaqtning o‘zida 
                     bitta belgini oladi va tokenlar yaratadi. Tokenlar:
+                </p>
+                <ul>
+                    <li>DOCTYPE - hujjat turi</li>
+                    <li>teg boshlanishi</li>
+                    <li>teg tugashi</li>
+                    <li>izoh</li>
+                    <li>belgi</li>
+                    <li>faylning yakuni</li>
+                </ul>
+
+                <p>
+                    Bir soniya tanaffus qilaylik. 
+                    Bunday holatda, brauzer server tomonidan yuborilgan 
+                    baytlarni qabul qiladi. Brauzer baytlarni teglarga 
+                    o‘zgartiradi va tokenlar ro‘yxatini tuzish uchun teglarni o‘qiydi.
+                </p>
+
+                <p>
+                    Ushbu belgi ro‘yxati keyinchalik daraxtlarni qurish bosqichidan 
+                    o‘tadi. Ushbu bosqichning natijasida daraxt tuzilishi DOM hisoblanadi!
+                </p>
+
+                <p>
+                    Illya videoda aytgan ikkita muhim narsalarga ishora qilmoqchiman:
+                </p>
+
+                <div class="havo_chegara">
+                    <p>
+                        HTML tarkibini va xususiyatlarini, bog‘lamalar 
+                        orasidagi barcha munosabatlarni saqlaydigan daraxt tuzilishi
+                    </p>
+                </div>
+
+                <div class="havo_chegara">
+                    <p>
+                        DOM bu HTMLning to‘liq yoyilgan ko‘rinishidir
+                    </p>
+                </div>
+
+                <p>
+                    Shunday qilib, DOM qabul qilingan HTML hujjatining o‘zaro munosabatlari va atributlari 
+                    modelidir (namoyishidir). DOM "Document Object Model" degan ma’noni anglatishini unutmang. 
+                    Men o‘rgangan narsalarimdan kelib chiqib aytsam, biror narsani tushunmasangiz, 
+                    shunchaki orqaga qarab o‘qing:
                 </p>
             </div>
         </div> 
