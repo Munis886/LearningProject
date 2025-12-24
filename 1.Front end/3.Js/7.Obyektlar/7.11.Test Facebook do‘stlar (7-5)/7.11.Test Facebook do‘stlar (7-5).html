@@ -943,13 +943,13 @@
             <div class="sarlavha">
                 <ul>
                     <li class="li_1">
-                        <a href="/1.Front end/3.Js/7.Obyektlar/7.9 Test Bank hisoblari 1 (7-3)/7.9 Test Bank hisoblari 1 (7-3).html">⟨</a>
+                        <a href="/1.Front end/3.Js/7.Obyektlar/7.10.Test Bank hisoblari 2 (7-4)/7.10.Test Bank hisoblari 2 (7-4).html">⟨</a>
                     </li>
                     <li class="li_2">
                         Test: Facebook do‘stlar (7-5)
                     </li>
                     <li class="li_3">
-                        <a href="#">
+                        <a href="/1.Front end/3.Js/7.Obyektlar/7.12.Test Yana donutlar (7-6)/7.12.Test Yana donutlar (7-6).html">
                             ⟩
                         </a>
                     </li>
@@ -973,13 +973,45 @@
                 <p>
                     Shuningdek, obyekt 4 ta metodga ega bo‘lsin:
                 </p>
+                <ol>
+                    <li><span class="maxsus">postMessage(message)</span> - massivga yangi xabar satrini qo‘shadi</li>
+                    <li><span class="maxsus">deleteMessage(index)</span> - uzatilgan indeksga mos xabarni massivdan o‘chiradi</li>
+                    <li><span class="maxsus">addFriend()</span> - do‘stlar sonini 1 ga oshiradi</li>
+                    <li><span class="maxsus">removeFriend()</span> - do‘stlar sonini 1 ga kamaytiradi</li>
+                </ol>
                 <h2>
                     Kodingiz:
                 </h2>
                 <div class="yashil_maydon">
                     <pre>
-                            <h2>Quiz Question</h2>
-                            Quyidagilardan qaysi birlari savingsAccount obyektining xususiyati va metodlariga murojaat qilish uchun yaroqli usul bo‘ladi?
+                        /*
+                        * Programming Quiz: Donuts Revisited (7-6)
+                        */
+
+                        /*
+                        * QUIZ REQUIREMENTS
+                        * - Your code sshould have an array named `donuts`
+                        * - Your `donuts` array should call the `forEach()` method
+                        * - Your `forEach()` loop should output the donut summaries
+                        * - BE CAREFUL ABOUT THE PUNCTUATION, SPACES, AND EXACT WORDS TO BE PRINTED.
+                        */
+
+                        // This is an array of objects. 
+                        var donuts = [
+                            { type: "Jelly", cost: 1.22 },
+                            { type: "Chocolate", cost: 2.45 },
+                            { type: "Cider", cost: 1.59 },
+                            { type: "Boston Cream", cost: 5.99 }
+                        ];
+
+
+                        // your code goes here
+
+                        // forEach() metodini chaqirish
+                        donuts.forEach(function(donut) {
+                            console.log(donut.type + " donuts cost $" + donut.cost.toFixed(2) + " each");
+                        });
+
                     </pre>
                 </div>
 

@@ -943,13 +943,13 @@
             <div class="sarlavha">
                 <ul>
                     <li class="li_1">
-                        <a href="/1.Front end/3.Js/7.Obyektlar/7.9 Test Bank hisoblari 1 (7-3)/7.9 Test Bank hisoblari 1 (7-3).html">⟨</a>
+                        <a href="/1.Front end/3.Js/7.Obyektlar/7.10.Test Bank hisoblari 2 (7-4)/7.10.Test Bank hisoblari 2 (7-4).html">⟨</a>
                     </li>
                     <li class="li_2">
-                        Test: Bank hisoblari 2 (7-4)
+                        Test: Yana donutlar (7-6)
                     </li>
                     <li class="li_3">
-                        <a href="/1.Front end/3.Js/7.Obyektlar/7.11.Test Facebook do‘stlar (7-5)/7.11.Test Facebook do‘stlar (7-5).html">
+                        <a href="#">
                             ⟩
                         </a>
                     </li>
@@ -957,29 +957,36 @@
             </div>
 
             <div id="text" class="qisqa">
+
+                <p>
+                    Donut obyektlari massivi berilgan.
+                </p>
+                
+                <div class="oddiy_chegara">
+                    <pre>
+                        var donuts = [
+                        { type: "Jelly", cost: 1.22 },
+                        { type: "Chocolate", cost: 2.45 },
+                        { type: "Cider", cost: 1.59 },
+                        { type: "Boston Cream", cost: 5.99 }
+                        ];
+                    </pre>
+                </div>
                 <h2>
                     Ko‘rsatmalar:
                 </h2>
+
                 <p>
-                    Oldingi testdagi obyektdan foydalanib, quyidagi savolga javob bering:
+                    Ushbu forEach() metodi yordamida massivdagi har bir donut uchun quyidagi 
+                    kabi xulosalarni konsolda chop eting (console.log foydalangan holda).
                 </p>
+
                 <div class="oddiy_chegara">
                     <pre>
-                        var savingsAccount = {
-                          balance: 1000,
-                          interestRatePercent: 1,
-                          deposit: function addMoney(amount) {
-                            if (amount > 0) {
-                              savingsAccount.balance += amount;
-                            }
-                          },
-                          withdraw: function removeMoney(amount) {
-                            var verifyBalance = savingsAccount.balance - amount;
-                            if (amount > 0 && verifyBalance >= 0) {
-                              savingsAccount.balance -= amount;
-                            }
-                          }
-                        };
+                        Jelly donuts cost $1.22 each
+                        Chocolate donuts cost $2.45 each
+                        Cider donuts cost $1.59 each
+                        Boston Cream donuts cost $5.99 each
                     </pre>
                 </div>
 
@@ -988,8 +995,73 @@
                 </h2>
                 <div class="yashil_maydon">
                     <pre>
-                            <h2>Quiz Question</h2>
-                            Quyidagilardan qaysi birlari savingsAccount obyektining xususiyati va metodlariga murojaat qilish uchun yaroqli usul bo‘ladi?
+                        /*
+                        * Programming Quiz: Facebook Friends (7-5)
+                        */
+
+                        /*
+                        * QUIZ REQUIREMENTS
+                        * - Your code should have an object `facebookProfile`
+                        * - The `facebookProfile` object should have the `name` (string), `friends` (number), and `messages` (array of strings) property
+                        * - Your `facebookProfile` object should have the `postMessage()`, `deleteMessage()`, `addFriend()` and `removeFriend()` method
+                        * - Carefully implement the desired functionality of each method, as decribed above
+                        */
+
+
+                        // TIP - 
+                        // In an array, 
+                        // - addition at the end is done using push() method
+                        // - addition at a specific index is done using splice() method
+                        // - deletion from the beginning is done using pop() method
+                        // - deletion from a specific index is done using splice() method
+
+                        // your code goes here
+
+                        var facebookProfile = {
+                            name: "Ismingiz", // Ismingizni kiriting
+                            friends: 0, // Dastlab do'stlar soni 0
+                            messages: [], // Xabarlar massivi
+
+                            // 1. postMessage(message) - yangi xabar qo'shadi
+                            postMessage: function(message) {
+                                this.messages.push(message); // Yangi xabarni massivga qo'shadi
+                            },
+
+                            // 2. deleteMessage(index) - berilgan indeksdagi xabarni o'chiradi
+                            deleteMessage: function(index) {
+                                if (index >= 0 && index < this.messages.length) { // Indeks to'g'ri ekanligini tekshirish
+                                    this.messages.splice(index, 1); // Berilgan indeksdagi xabarni o'chiradi
+                                } else {
+                                    console.log("Xato: Indeks to'g'ri emas."); // Xato xabari
+                                }
+                            },
+
+                            // 3. addFriend() - do'stlar sonini 1 ga oshiradi
+                            addFriend: function() {
+                                this.friends += 1; // Do'stlar sonini oshiradi
+                            },
+
+                            // 4. removeFriend() - do'stlar sonini 1 ga kamaytiradi
+                            removeFriend: function() {
+                                if (this.friends > 0) { // Agar do'stlar soni 0 dan katta bo'lsa
+                                    this.friends -= 1; // Do'stlar sonini kamaytiradi
+                                } else {
+                                    console.log("Xato: Do'stlar soni 0 dan kam bo'lmaydi."); // Xato xabari
+                                }
+                            }
+                        };
+
+                        // Misol uchun foydalanish:
+                        facebookProfile.name = "Munis"; // Ismni o'rnatamiz
+                        facebookProfile.addFriend(); // Do'st qo'shamiz
+                        facebookProfile.postMessage("Salom, bu mening birinchi xabarim!"); // Xabar qo'shamiz
+                        facebookProfile.postMessage("Ikkinchi xabar."); // Ikkinchi xabar qo'shamiz
+
+                        console.log(facebookProfile.messages); // Xabarlarni ko'rsatamiz
+                        console.log(facebookProfile.friends); // Do'stlar sonini ko'rsatamiz
+
+                        facebookProfile.deleteMessage(0); // Birinchi xabarni o'chiramiz
+                        console.log(facebookProfile.messages); // Yangilangan xabarlarni ko'rsatamiz
                     </pre>
                 </div>
 
