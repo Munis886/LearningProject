@@ -109,7 +109,7 @@ div #menu ul li a:hover {
     }
   
     /* Bosilgan holat */
-#menu  a:active {
+#menu a:active {
       background-color: #0003d3 !important; /* Bosilgan holat fon rangi */
       color: #fff !important; /* Bosilgan holat matn rangi */
     }
