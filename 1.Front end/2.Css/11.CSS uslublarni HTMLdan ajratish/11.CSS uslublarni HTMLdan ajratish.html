@@ -18,8 +18,8 @@
     </div>
     <div id="menyu">
     <div class="menyu">
+        <button id="toggle-btn" onclick="toggleMenu()">Menu</button>
         <ul>
-            <button id="toggle-btn" onclick="toggleMenu()">Menu</button>
             <li><a href="/index.html">HOME</a></li>
             <li><a href="/1.Front end/1.Front_end.html">FRONT END</a></li>
             <li><a href="/1.Front end/1.HTML/1.HTML.html">HTML</a></li>
@@ -96,11 +96,21 @@
             </ul>
         </div> 
         <div id="container">
-            
-            <div id="sarlavha">
-                <h2 style="width: 15em;">CSS uslublarni HTMLdan ajratish</h2>
+            <div class="sarlavha">
+                <ul>
+                    <li class="li_1">
+                        <a href="/1.Front end/2.Css/10.CSS qoidalari/CSS qoidalari.html">⟨</a>
+                    </li>
+                    <li class="li_2">
+                        CSS ni o'rganamiz
+                    </li>
+                    <li class="li_3">
+                        <a href="/1.Front end/2.Css/12.Ranglardan foydalanish/12.Ranglardan foydalanish.html">
+                            ⟩
+                        </a>
+                    </li>
+                </ul>
             </div>
-
             <div id="text">
                 <p>
                     HTMLda CSS stillarini qo'llash uchun brauzerga bildiradigan
@@ -108,18 +118,20 @@
                     ko'rgansiz. Biz shunchaki CSS kodini olamiz va shunchaki uni
                     HTML elementlari style elementiga joylashtiramiz. 
                 </p>
-                <p>
-                    &lt;style&gt; <br>
-                        #CSS { <br>
-                            border-radius: 5px; <br>
-                            background-color:darkgrey; <br>
-                        } <br>
-                        #CSS p { <br>
-                            padding-bottom: 0; <br>
-                            margin: 0; <br>
-                        } <br>
-                    &lt;/style&gt;
-                </p>
+                <div class="oddiy_chegara">
+                    <p>
+                        &lt;style&gt; <br>
+                            #CSS { <br>
+                                border-radius: 5px; <br>
+                                background-color:darkgrey; <br>
+                            } <br>
+                            #CSS p { <br>
+                                padding-bottom: 0; <br>
+                                margin: 0; <br>
+                            } <br>
+                        &lt;/style&gt;
+                    </p>
+                </div>
                 <p>
                     Ammo bu tartibsizroq bo'lishi mumkin. Web sayt juda ko'p HTML hujjatlariga ega bo'lishi 
                     va ularning barchasida bir xil stilni qo'llamoqchi bo'lishi juda oddiy,
@@ -182,11 +194,11 @@
                <p>
                 E’tibor bering, "CSS" kodingizni &lt;style&gt;&lt;/style&gt; elementi ichiga yozishingiz mumkin, masalan...
                </p>
-               <div style="border: 1px solid black; border-radius: 5px; margin: 10px 75px;">
+               <div class="oddiy_chegara">
                     <p>
                         &lt;style&gt; <br>
-                            p{color:blue;} <br>
-                          &lt;/style&gt; <br>
+                        &nbsp;    p{color:blue;} <br>
+                        &lt;/style&gt; <br>
                     </p>
                </div>
                <p>
@@ -196,10 +208,10 @@
                 "CSS" kodlaringizni to‘g‘ridan to‘g‘ri "stylesheet" faylga hech narsa 
                 qo‘shmasdan kiritishingiz mumkin:
                </p>
-               <div style="border: 1px solid black; border-radius: 5px; margin: 10px 75px;">
-                <p>
-                    p{color:blue;}
-                </p>
+               <div class="oddiy_chegara">
+                    <p>
+                        p{color:blue;}
+                    </p>
                 </div>
                 <p>
                     Quyidagi mashqni bajarish uchun shunday qiling, shunchaki 
