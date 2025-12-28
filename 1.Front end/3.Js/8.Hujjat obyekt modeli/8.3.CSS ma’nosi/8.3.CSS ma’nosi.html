@@ -992,13 +992,13 @@
             <div class="sarlavha">
                 <ul>
                     <li class="li_1">
-                        <a href="/1.Front end/3.Js/7.Obyektlar/7.6.Nomlash kelishuvlari/7.6.Nomlash kelishuvlari.html">⟨</a>
+                        <a href="/1.Front end/3.Js/7.Obyektlar/7.13.Xulosa/7.13.Xulosa.html">⟨</a>
                     </li>
                     <li class="li_2">
-                        Obyektlar bo‘yicha xulosa
+                        CSS ma’nosi
                     </li>
                     <li class="li_3">
-                        <a href="/1.Front end/3.Js/7.Obyektlar/7.8.Test Menyu tarkibi (7-2)/7.8.Test Menyu tarkibi (7-2).html">
+                        <a href="#">
                             ⟩
                         </a>
                     </li>
@@ -1006,62 +1006,66 @@
             </div>
 
             <div id="text" class="qisqa">
-
-                <p>
-                    Obyektlar JavaScriptning eng muhim ma’lumot tuzilmalaridan biridir. 
-                    Ularni hamma joyda ko‘rishga tayyor bo‘ling!
-                </p>
-                <p>
-                    Ular xususiyatlar - obyekt haqida ma’lumot va metodlar - obyektning funksiyalari yoki imkoniyatlariga ega. 
-                    Obyektlar nihoyatda foydali ma’lumot turidir va siz JavaScript yoki boshqa obyektga yo‘naltirilgan dasturlash 
-                    tilida ishlaganda ularni ko‘p ko‘rasiz.
-                </p>
-
                 <h3>
-                    Object literallari, methodlari va xususiyatlari
+                    CSS ma’nosi
                 </h3>
-
                 <p>
-                    Siz obyektlarni object-literal notation yordamida aniqlashingiz mumkin:
+                    Ehtimol, siz bunday narsalarni juda ko‘p ko‘rishga (va yozishga) odatlangandirsiz:
                 </p>
-
-                <div class="oddiy_chegara">
-                    <pre>
-                        var myObj = { 
-                        color: "orange",
-                        shape: "sphere",
-                        type: "food",
-                        eat: function() { return "yummy" }
-                        };
-
-                        myObj.eat(); <span class="kul">// metod</span>
-                        myObj.color; <span class="kul">// xususiyat</span>
-                    </pre>
-                </div>
                 
-                <h3>
-                    Nomlash kelishuvi
-                </h3>
-                <p>
-                    Nomlashda katta-yu kichik harflar va sonlardan bemalol foydalanishingiz mumkin, 
-                    biroq xususiyat nomini raqam bilan boshlamang.
-                </p>
-                <p>
-                    Satrlarni qo‘shtirnoqqa olmang, va agar xususiyat nomi bir nechta so‘zdan iborat bo‘lsa, 
-                    "camelCase" - tuya notatsiyasidan foydalaning. Nomlashda defisdan foydalanmang:
-                </p>
                 <div class="oddiy_chegara">
                     <pre>
-                        var richard = {
-                            "1stSon": true;
-                            "loves-snow": true;
-                          };
-                          
-                          richard.1stSon <span class="kul">// xato</span>
-                          richard.loves-snow <span class="kul">// xato</span>
+                        .header {
+                            max-width: 100%;
+                            margin-left: auto;
+                            margin-right: auto
+                        }
+                        
+                        .header.header--clone .header__navbar {
+                            height: 4.5rem
+                        }
+                        
+                        .header.header--stick {
+                            top: 0;
+                            background-color: #ffffff;
+                            z-index: 8000;
+                            box-shadow: 0px 1px 2px rgba(0,0,0,0.1)
+                        }
+                        
+                        .header__navbar {
+                            max-width: 73.75rem;
+                            margin-left: auto;
+                            margin-right: auto;
+                            height: 4.5rem;
+                            padding: 0 1.5em
+                        }
                     </pre>
                 </div>
+                <p>
+                    ...siz CSSni bilasiz! CSSda kod yozish mahoratingiz ushbu bo‘limda yordam beradi!
+                </p>
 
+                <p>
+                    Shuni hisobga olgan holda, quyidagi savollarga javob berishingiz 
+                    qulay ekanligiga ishonch hosil qilaylik.
+                </p>
+
+                <p>
+                    Shunday qilib, bu ID, sinf va teg orqali elementlarni qanday tanlash haqida 
+                    qisqacha ma’lumot edi. Ishonasizmi yoki yo‘qmi, shu tarzda HTML elementlarini 
+                    tanlash qobiliyati aslida ushbu bo‘limda juda muhim malaka bo‘ladi, unda 
+                    JavaScript va DOMdan foydalanib sahifa elementlariga qanday kirishni bilib olamiz!
+                </p>
+
+                <p>
+                    Agar siz ushbu bo‘lim bilan ozgina qiynalsangiz HTML va CSSni ko‘rib chiqishingiz kerak
+                </p>
+
+                <p>
+                    Yaxshi - keling buni boshlaymiz! 🙌🏼
+                </p>
+
+                
             </div>
         </div> 
     </div>
