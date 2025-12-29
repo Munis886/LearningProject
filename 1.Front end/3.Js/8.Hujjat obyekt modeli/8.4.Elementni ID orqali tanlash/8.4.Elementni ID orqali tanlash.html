@@ -997,13 +997,13 @@
             <div class="sarlavha">
                 <ul>
                     <li class="li_1">
-                        <a href="/1.Front end/3.Js/8.Hujjat obyekt modeli/8.2.DOM (hujjat obyekti modeli)/8.2.DOM (hujjat obyekti modeli).html">⟨</a>
+                        <a href="/1.Front end/3.Js/8.Hujjat obyekt modeli/8.3.CSS ma’nosi/8.3.CSS ma’nosi.html">⟨</a>
                     </li>
                     <li class="li_2">
-                        CSS ma’nosi
+                        Elementni ID orqali tanlash
                     </li>
                     <li class="li_3">
-                        <a href="/1.Front end/3.Js/8.Hujjat obyekt modeli/8.4.Elementni ID orqali tanlash/8.4.Elementni ID orqali tanlash.html">
+                        <a href="#">
                             ⟩
                         </a>
                     </li>
@@ -1012,65 +1012,120 @@
 
             <div id="text" class="qisqa">
                 <h3>
-                    CSS ma’nosi
+                    Elementni ID orqali tanlash
                 </h3>
                 <p>
-                    Ehtimol, siz bunday narsalarni juda ko‘p ko‘rishga (va yozishga) odatlangandirsiz:
+                    Keling, qandaydir ID atributdan foydalanib elementlarga murojaat qilish uchun JavaScript va DOMdan qanday foydalanishimiz mumkinligini ko‘rib chiqamiz.
                 </p>
                 
+                <p>
+                    Oldingi bo‘limdagi hujjat obyekti esingizdami? Yaxshi, 
+                    endi biz undan foydalanishni boshlaymiz! Shuni esda tutingki, 
+                    hujjat obyekti JavaScript kabi hamdir. Bu kalit/qiymat juftligiga ega 
+                    ekanligini anglatadi. Ba’zi qiymatlar shunchaki ma’lumotlarning bir qismi, 
+                    boshqalari esa funksiyalarning ayrim turini ta’minlaydigan funksiyalar 
+                    (shuningdek, metodlar deb nomlanadi!) DOM ni birinchi usulini ko‘rib chiqamiz. 
+                    <span class="maxsus">.getElementById()</span> metodi:
+                </p>
+
                 <div class="oddiy_chegara">
-                    <pre>
-                        .header {
-                            max-width: 100%;
-                            margin-left: auto;
-                            margin-right: auto
-                        }
-                        
-                        .header.header--clone .header__navbar {
-                            height: 4.5rem
-                        }
-                        
-                        .header.header--stick {
-                            top: 0;
-                            background-color: #ffffff;
-                            z-index: 8000;
-                            box-shadow: 0px 1px 2px rgba(0,0,0,0.1)
-                        }
-                        
-                        .header__navbar {
-                            max-width: 73.75rem;
-                            margin-left: auto;
-                            margin-right: auto;
-                            height: 4.5rem;
-                            padding: 0 1.5em
-                        }
-                    </pre>
+                    <p>
+                        document.getElementById();
+                    </p>
                 </div>
-                <p>
-                    ...siz CSSni bilasiz! CSSda kod yozish mahoratingiz ushbu bo‘limda yordam beradi!
-                </p>
-
-                <p>
-                    Shuni hisobga olgan holda, quyidagi savollarga javob berishingiz 
-                    qulay ekanligiga ishonch hosil qilaylik.
-                </p>
-
-                <p>
-                    Shunday qilib, bu ID, sinf va teg orqali elementlarni qanday tanlash haqida 
-                    qisqacha ma’lumot edi. Ishonasizmi yoki yo‘qmi, shu tarzda HTML elementlarini 
-                    tanlash qobiliyati aslida ushbu bo‘limda juda muhim malaka bo‘ladi, unda 
-                    JavaScript va DOMdan foydalanib sahifa elementlariga qanday kirishni bilib olamiz!
-                </p>
-
-                <p>
-                    Agar siz ushbu bo‘lim bilan ozgina qiynalsangiz HTML va CSSni ko‘rib chiqishingiz kerak
-                </p>
-
-                <p>
-                    Yaxshi - keling buni boshlaymiz! 🙌🏼
-                </p>
-
                 
+                <p>
+                    Agar biz yuqoridagi kodni konsolda ishlatsak, biz hech narsa ololmaymiz, 
+                    chunki olish uchun biron bir elementning IDsini ko‘rsatmadik! Biz topmoqchi 
+                    bo‘lgan element IDni <span class="maxsus">.getElementByID()</span>ga satrni uzatib, keyin uni topib bizga qaytaradi:
+                </p>
+
+               <div class="oddiy_chegara">
+                    <p>
+                        document.getElementById('footer');
+                    </p>
+               </div>
+
+                <p>
+                    Ushbu metod haqida ko‘proq ma’lumot olishni istasangiz hujjatlar sahifasini 
+                    ko‘rib chiqing: 
+                    <a href="https://developer.mozilla.org/en-US/docs/Web/API/Document/getElementById">
+                        https://developer.mozilla.org/en-US/docs/Web/API/Document/getElementById
+                    </a>
+                    <br>
+                    Keling ushbu MDN hujjati sahifasidan ushbu metodni ishlatishda foydalanmiz.
+                </p>
+
+                <div class="center-align">
+                    <video src="DOM L1 31 — Выбор содержимого.mp4" controls width="65%"></video>
+                </div>
+                
+                <p>
+                    Hozirgina nimalarni bajarganimizni takrorlashimiz uchun:
+                </p>
+
+                <ul>
+                    <li>
+                        biz ko‘rib chiqqan sahifa uchun DevToolsni ochdik
+                    </li>
+                    <li>
+                        Console paneliga o‘tdik
+                    </li>
+                    <li>
+                        biz document.getElementById('content'); ni konsolda ishga tushirdik
+                    </li>
+                </ul>
+
+                <p>
+                    Ushbu kodni ishga tushirish, hujjat obyekti ID "kontentiga" ega 
+                    bo‘lgan elementni butun daraxtga o‘xshash tuzilishni ishlashiga olib keladi.
+                </p>
+
+                <div class="center-align">
+                    <video src="DOM L1 35 — Просмотр возвращенного узла.mp4" controls width="65%"></video>
+                </div>
+
+                <h2>
+                    Selecting By ID Recap
+                </h2>
+
+                <p>
+                    In this section, we learned how to select a DOM element by its ID:
+                </p>
+
+                <ul>
+                    <li>
+                        <span class="maxsus">.getElementById()</span>
+                    </li>
+                </ul>
+
+                <p>
+                    There are a couple of important things to keep in mind about this method:
+                </p>
+
+                <ul>
+                    <li>
+                        it is called on the <span class="maxsus">document</span> object
+                    </li>
+                    <li>
+                        it returns a single item
+                    </li>
+                </ul>
+
+                <div class="oddiy_chegara">
+                    <p>
+                        <span class="kul">// "qo'ng'iroq" identifikatoriga ega elementni tanlang</span> <br>
+                        document.getElementById('callout');
+                    </p>
+                </div>
+
+                <h2>
+                    Further Research
+                </h2>
+
+                <ul>
+                    <li><a href="https://developer.mozilla.org/en-US/docs/Web/API/Document/getElementById">.getElementById()</a> on MDN</li>
+                </ul>
             </div>
         </div> 
     </div>

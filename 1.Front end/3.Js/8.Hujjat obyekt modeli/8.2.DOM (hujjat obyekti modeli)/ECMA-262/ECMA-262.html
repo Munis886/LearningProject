@@ -7,7 +7,7 @@
     <meta name="description" content="Bu yerda Javascript haqida batafsil ma'lumot olamiz">
     <link rel="stylesheet" href="/1.Front end/3.Js/style.css">
     <link rel="stylesheet" href="style.css">
-    <title>Java script</title>
+    <title>ECMAScript</title>
     <script src="/1.Front end/3.Js/script.js"></script>
 </head>
 
@@ -996,81 +996,180 @@
         <div id="container">
             <div class="sarlavha">
                 <ul>
-                    <li class="li_1">
-                        <a href="/1.Front end/3.Js/8.Hujjat obyekt modeli/8.2.DOM (hujjat obyekti modeli)/8.2.DOM (hujjat obyekti modeli).html">⟨</a>
-                    </li>
                     <li class="li_2">
-                        CSS ma’nosi
-                    </li>
-                    <li class="li_3">
-                        <a href="/1.Front end/3.Js/8.Hujjat obyekt modeli/8.4.Elementni ID orqali tanlash/8.4.Elementni ID orqali tanlash.html">
-                            ⟩
-                        </a>
+                        ECMA-262
                     </li>
                 </ul>
             </div>
 
             <div id="text" class="qisqa">
                 <h3>
-                    CSS ma’nosi
+                    ECMA-262, 16 - nashr, 2025-yil iyun
+                    ECMAScript® 2025 til spetsifikatsiyasi
                 </h3>
-                <p>
-                    Ehtimol, siz bunday narsalarni juda ko‘p ko‘rishga (va yozishga) odatlangandirsiz:
-                </p>
+                <img src="ecma-logo.svg" alt="ecma logo" width="200px">
                 
-                <div class="oddiy_chegara">
-                    <pre>
-                        .header {
-                            max-width: 100%;
-                            margin-left: auto;
-                            margin-right: auto
-                        }
-                        
-                        .header.header--clone .header__navbar {
-                            height: 4.5rem
-                        }
-                        
-                        .header.header--stick {
-                            top: 0;
-                            background-color: #ffffff;
-                            z-index: 8000;
-                            box-shadow: 0px 1px 2px rgba(0,0,0,0.1)
-                        }
-                        
-                        .header__navbar {
-                            max-width: 73.75rem;
-                            margin-left: auto;
-                            margin-right: auto;
-                            height: 4.5rem;
-                            padding: 0 1.5em
-                        }
-                    </pre>
+                <div class="chegara_ichida">
+                    <h3>
+                        Ushbu spetsifikatsiya haqida
+                    </h3>
+                    <p>
+                        https://tc39.es/ecma262/ manzilidagi hujjat eng aniq va zamonaviy 
+                        ECMAScript spetsifikatsiyasi hisoblanadi. Unda eng so'nggi yillik 
+                        qisqacha ma'lumot mazmuni, shuningdek, ushbu qisqacha ma'lumot olinganidan 
+                        beri har qanday tayyor takliflar ( taklif jarayonida 4-bosqichga yetgan 
+                        va shuning uchun bir nechta amalga oshirishlarda amalga oshirilgan va 
+                        keyingi amaliy qayta ko'rib chiqishda bo'ladigan takliflar) mavjud.
+                    </p>
+                    <p>
+                        Ushbu hujjat bitta sahifa va bir nechta sahifa sifatida mavjud .
+                    </p>
+
+                    <h3>
+                        Ushbu spetsifikatsiyaga hissa qo'shish
+                    </h3>
+
+                    <p>
+                        Ushbu spetsifikatsiya GitHub’da ECMAScript hamjamiyati yordamida ishlab chiqilgan. 
+                        Ushbu spetsifikatsiyani ishlab chiqishga hissa qo‘shishning bir qancha usullari mavjud:
+                    </p>
+
+                    <p>
+                        GitHub ombori: https://github.com/tc39/ecma262 <br>
+                        Muammolar: Barcha muammolar , Yangi muammoni yuborish <br>
+                        Pull Requests: Barcha Pull Requests , Yangi Pull Request yarating <br>
+                        Sinov to'plami: Test262 <br>
+                        Muharrirlar:
+                    </p>
+                    <ul>
+                        <li>Shu-yu Guo ( @_shu )</li>
+                        <li>Maykl Fikarra ( @smooshMap )</li>
+                        <li>Kevin Gibbons ( @bakkoting )</li>
+                    </ul>
+                    <p>
+                        Jamiyat:
+                    </p>
+                    <ul>
+                        <li>Diskurs: https://es.discourse.group/</li>
+                        <li>Chat: Matritsa</li>
+                        <li>Pochta orqali jo'natishRo'yxatArxivlar: https://esdiscuss.org/</li>
+                    </ul>
+
+                    <p>
+                        Qarangkolofonushbu hujjat qanday yaratilgani haqida qo'shimcha ma'lumot olish uchun.
+                    </p>
                 </div>
-                <p>
-                    ...siz CSSni bilasiz! CSSda kod yozish mahoratingiz ushbu bo‘limda yordam beradi!
-                </p>
-
-                <p>
-                    Shuni hisobga olgan holda, quyidagi savollarga javob berishingiz 
-                    qulay ekanligiga ishonch hosil qilaylik.
-                </p>
-
-                <p>
-                    Shunday qilib, bu ID, sinf va teg orqali elementlarni qanday tanlash haqida 
-                    qisqacha ma’lumot edi. Ishonasizmi yoki yo‘qmi, shu tarzda HTML elementlarini 
-                    tanlash qobiliyati aslida ushbu bo‘limda juda muhim malaka bo‘ladi, unda 
-                    JavaScript va DOMdan foydalanib sahifa elementlariga qanday kirishni bilib olamiz!
-                </p>
-
-                <p>
-                    Agar siz ushbu bo‘lim bilan ozgina qiynalsangiz HTML va CSSni ko‘rib chiqishingiz kerak
-                </p>
-
-                <p>
-                    Yaxshi - keling buni boshlaymiz! 🙌🏼
-                </p>
-
                 
+                <h2>
+                    Kirish
+                </h2>
+
+                <p>
+                    Ushbu Ecma standarti ECMAScript 2025 tilini belgilaydi. 
+                    Bu <b>ECMAScript tili</b> spetsifikatsiyasining o'n oltinchi nashridir. 
+                    <b>Birinchi nashr 1997-yilda nashr etilgan</b>idan beri ECMAScript dunyoda eng 
+                    ko'p ishlatiladigan umumiy maqsadli dasturlash tillaridan biriga aylandi. 
+                    U eng ko'p veb-brauzerlarga o'rnatilgan til sifatida tanilgan, ammo server 
+                    va o'rnatilgan ilovalar uchun ham keng qo'llanilgan.
+                </p>
+
+                <p>
+                    ECMAScript bir nechta asl texnologiyalarga asoslangan bo'lib, eng mashhurlari 
+                    JavaScript (Netscape) va JScript (Microsoft) hisoblanadi. Tilni Netscape kompaniyasida 
+                    Brendan Eich ixtiro qilgan va birinchi marta o'sha kompaniyaning Navigator 2.0 brauzerida 
+                    paydo bo'lgan. U Netscape'ning barcha keyingi brauzerlarida va Internet Explorer 3.0 dan 
+                    boshlab Microsoft'ning barcha brauzerlarida paydo bo'lgan.
+                </p>
+
+                <p>
+                    <b>ECMAScript tili spetsifikatsiyasini ishlab chiqish 1996-yil noyabr oyida boshlangan.</b> 
+                    Ushbu Ecma standartining birinchi nashri 1997-yil iyun oyida Ecma Bosh Assambleyasi 
+                    tomonidan qabul qilingan.
+                </p>
+
+                <p>
+                    Ushbu Ecma standarti tezkor protsedura asosida qabul qilish uchun ISO/IEC JTC 1 ga taqdim etildi 
+                    va 1998-yil aprel oyida ISO/IEC 16262 xalqaro standarti sifatida tasdiqlandi. 1998-yil iyun oyida 
+                    Ecma Bosh Assambleyasi <b>ECMA-262 ning ikkinchi nashrini ISO/IEC 16262</b> bilan to'liq moslashtirish 
+                    uchun tasdiqladi. Birinchi va ikkinchi nashrlar o'rtasidagi o'zgarishlar tahririyat xarakteriga ega.
+                </p>
+
+
+
+                <p>
+                    Standartning <b>uchinchi nashri</b>da kuchli muntazam ifodalar, satrlarni yaxshiroq qayta ishlash, 
+                    yangi boshqaruv operatorlari, try/catch istisnolarini qayta ishlash, xatolarni aniqroq aniqlash, 
+                    raqamli chiqish uchun formatlash va kelajakdagi til o'sishini oldindan ko'ra bilishda kichik 
+                    o'zgarishlar kiritildi. <b>ECMAScript standartining uchinchi nashri 1999-yil dekabr oyida Ecma Bosh 
+                    Assambleyasi tomonidan qabul qilingan va 2002-yil iyun oyida ISO/IEC 16262:2002 sifatida nashr etilgan.</b>
+                </p>
+                
+                <p>
+                    <b>Uchinchi nashr</b> nashr etilgandan so'ng, ECMAScript Butunjahon o'rgimchak to'ri bilan birgalikda keng 
+                    qo'llanila boshlandi va u yerda deyarli barcha veb-brauzerlar tomonidan qo'llab-quvvatlanadigan dasturlash 
+                    tiliga aylandi. <b>ECMAScriptning to'rtinchi nashri</b>ni ishlab chiqish uchun katta ishlar qilindi. Biroq, bu ish 
+                    tugallanmagan va <b>ECMAScriptning to'rtinchi nashri</b> sifatida nashr etilmagan, ammo uning bir qismi <b>oltinchi 
+                    nashr</b>ni ishlab chiqishga kiritilgan.
+                </p>
+
+                <p>
+                    <b>ECMAScriptning beshinchi nashri</b> (ECMA-262 5 - nashri sifatida nashr etilgan) brauzer dasturlari orasida keng 
+                    tarqalgan til spetsifikatsiyasining de-fakto talqinlarini kodlashtirdi va uchinchi nashr nashr etilganidan 
+                    beri paydo bo'lgan yangi funksiyalarni qo'llab-quvvatladi. Bunday funksiyalar quyidagilarni o'z ichiga 
+                    oladi aksessuar xususiyatlari, obyektlarni aks ettiruvchi yaratish va tekshirish, xususiyat atributlarini 
+                    dastur orqali boshqarish, qo'shimcha massiv manipulyatsiyasi funktsiyalari, JSON obyekt kodlash formatini 
+                    qo'llab-quvvatlash va xatolarni tekshirish va dastur xavfsizligini yaxshilaydigan qat'iy rejim. <b>Beshinchi 
+                    nashr Ecma Bosh Assambleyasi tomonidan 2009-yil dekabr oyida qabul qilingan.</b>
+                </p>
+
+                <p>
+                    <b>Beshinchi nashr</b> tezkor protsedura asosida qabul qilish uchun ISO/IEC JTC 1 ga taqdim etildi va ISO/IEC 
+                    16262:2011 xalqaro standarti sifatida tasdiqlandi. ECMAScript standartining 5.1 nashri kichik tuzatishlarni 
+                    o'z ichiga olgan va ISO/IEC 16262:2011 bilan bir xil matndir. <b>5.1 nashri Ecma Bosh Assambleyasi tomonidan 
+                    2011 yil iyun oyida qabul qilingan.</b>
+                </p>
+
+                <p>
+                    <b>Oltinchi nashr</b>ning maqsadli ishlab chiqilishi 2009-yilda, beshinchi nashr nashrga tayyorlanayotgan paytda 
+                    boshlangan. Biroq, bundan oldin, 1999-yilda uchinchi nashr nashr etilishidan boshlab, muhim tajribalar va 
+                    tilni takomillashtirish bo'yicha loyihalash ishlari olib borildi. Haqiqiy ma'noda, oltinchi nashrning 
+                    yakunlanishi o'n besh yillik sa'y-harakatlarning yakunidir. Ushbu nashrning maqsadlari katta ilovalarni 
+                    yaxshiroq qo'llab-quvvatlash, kutubxona yaratish va ECMAScript-dan boshqa tillar uchun kompilyatsiya maqsadi 
+                    sifatida foydalanishni o'z ichiga olgan. Uning asosiy yaxshilanishlaridan ba'zilari modullar, sinf deklaratsiyalari, 
+                    leksik bloklarni qamrab olishni o'z ichiga olgan.iteratorlar va generatorlar, asinxron dasturlash uchun va'dalar, 
+                    buzuvchi naqshlar va to'g'ri quyruq chaqiruvlari. O'rnatilgan ECMAScript kutubxonasi xaritalar, to'plamlar va 
+                    ikkilik raqamli qiymatlar massivlarini o'z ichiga olgan qo'shimcha ma'lumotlar abstraksiyalarini, shuningdek, 
+                    satrlar va muntazam ifodalardagi Unicode qo'shimcha belgilarini qo'shimcha qo'llab-quvvatlash uchun kengaytirildi. 
+                    O'rnatilganlar shuningdek, subklasslash orqali kengaytirilishi mumkin bo'ldi. Oltinchi nashr muntazam, qo'shimcha 
+                    til va kutubxonani takomillashtirish uchun asos yaratadi. <b>Oltinchi nashr 2015-yil iyun oyida Bosh Assambleya 
+                    tomonidan qabul qilingan.</b>
+                </p>
+
+                <p>
+                    ECMAScript 2016 Ecma TC39 ning yangi yillik nashr kadensiyasi va ochiq ishlab chiqish jarayoni ostida chiqarilgan 
+                    birinchi ECMAScript nashri bo'ldi. To'liq GitHub-da keyingi ishlab chiqish uchun asos bo'lib xizmat qilish uchun 
+                    ECMAScript 2015 manba hujjatidan oddiy matnli manba hujjati yaratildi. Ushbu standart ishlab chiqilgan yil davomida 
+                    minglab xatolarni tuzatish, tahririy tuzatishlar va boshqa yaxshilanishlarni ifodalovchi yuzlab pull requests va 
+                    muammolar yuborildi. Bundan tashqari, ushbu sa'y-harakatlarga yordam berish uchun Ecmarkup, Ecmarkdown va Grammarkdown 
+                    kabi ko'plab dasturiy vositalar ishlab chiqildi. ES2016 shuningdek, yangi eksponentatsiya operatorini qo'llab-quvvatlashni 
+                    o'z ichiga oldi va ga yangi usul Array.prototype qo'shdi includes.
+                </p>
+
+                <p>
+                    ECMAScript 2017 Async Functions, Shared Memory va Atomics ni kichikroq til va kutubxona yaxshilanishlari, 
+                    xatolarni tuzatish va tahririy yangilanishlar bilan birga taqdim etdi. Async funksiyalari va'da qaytaruvchi 
+                    funksiyalar uchun sintaksisni taqdim etish orqali asinxron dasturlash tajribasini yaxshilaydi. Shared Memory 
+                    va Atomics yangixotira modelibu ko'p qirraliagent parallel protsessorlarda ham aniq belgilangan ijro tartibini 
+                    ta'minlaydigan atom operatsiyalari yordamida aloqa qilish dasturlari. Shuningdek, u Object: Object.values, 
+                    Object.entries, va larda yangi statik usullarni ham o'z ichiga olgan Object.getOwnPropertyDescriptors.
+                </p>
+
+                <p>
+                    ECMAScript 2018 asinxron iteratsiyani qo'llab-quvvatlashni taqdim etdi asinxron iteratorprotokol va 
+                    asinxron generatorlar. Shuningdek, u to'rtta yangi muntazam ifoda xususiyatlarini o'z ichiga oldi: 
+                    bayroq dotAll , nomlangan ta'qib guruhlari, Unicode xususiyatlarining qochishlari va orqaga qarash 
+                    tasdiqlari. Va nihoyat, u obyektni saqlash va yoyish xususiyatlarini o'z ichiga oldi.
+                </p>
             </div>
         </div> 
     </div>
