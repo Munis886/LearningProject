@@ -239,12 +239,13 @@ body {
 }
 
 .oddiy_chegara {
-    border: 1.5px solid #349;  
+    border: 1.5px solid #c7c7c7;  
     width: 80%; 
     margin: 7px auto; 
     border-radius: 5px; 
-    padding: 6px 8px;
+    padding: 16px 8px;
     padding-left: 25px;
+    box-shadow: 0 0 1px #999999;
 }
 
 .chegara_ichida {
@@ -317,7 +318,7 @@ div p {
     color: blue; 
 }
 .qisqa {
-    width: 70%;
+    width: 65%;
     margin: 0 auto;
     padding: 10px 20px;
     margin-top: 15px;
