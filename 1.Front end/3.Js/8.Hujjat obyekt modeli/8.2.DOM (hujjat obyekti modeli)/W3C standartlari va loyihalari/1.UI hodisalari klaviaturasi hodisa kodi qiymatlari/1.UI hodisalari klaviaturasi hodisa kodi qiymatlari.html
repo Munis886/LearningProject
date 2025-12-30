@@ -1001,283 +1001,204 @@
         <div id="container">
             <div class="sarlavha">
                 <ul>
-                    <li class="li_1">
-                        <a href="/1.Front end/3.Js/8.Hujjat obyekt modeli/8.1.Kirish/8.1.Kirish.html">⟨</a>
-                    </li>
                     <li class="li_2">
-                        DOM (hujjat obyekti modeli)
-                    </li>
-                    <li class="li_3">
-                        <a href="/1.Front end/3.Js/8.Hujjat obyekt modeli/8.3.CSS ma’nosi/8.3.CSS ma’nosi.html">
-                            ⟩
-                        </a>
+                        W3C standartlari va loyihalari
                     </li>
                 </ul>
             </div>
 
             <div id="text" class="qisqa">
-
+                <h3>
+                    W3C vebni oldinga siljishga yordam beradigan bir qator texnik 
+                    hisobotlarni (standartlar va qo'llab-quvvatlovchi eslatmalar) nashr etadi.
+                </h3>
                 <p>
-                    Ushbu bo’limda biz hujjat obyekti modellari, ko‘proq 
-                    DOM deb tanilgan haqida ma’lumotlarni ko’rib chiqamiz.
+                    API, Internationalization yoki WAI-ARIA kabi atamalarni qidiring
                 </p>
                 
                 <p>
-                    "the DOM" so‘zlari barcha dasturchilar saytlarida va interaktiv JavaScript kodini 
-                    yozish uchun qo‘llanmalarda ishlatiladi. Ammo bu o‘zi nima? Siz DOMdan foydalangan 
-                    bo‘lishingiz mumkin va u hali nima ekanligini aniq bilmayapsiz. Bu brauzermi? 
-                    Bu JavaScript ning alohida qismimi? ¯\_(ツ)_/¯
-                </p>
-                <div class="center-align">
-                    <video src="L1 14 — Что такое DOM, версия 1.mp4" controls width="65%"></video>
-                </div>
-                <p>
-                    DOM Document Object Model degan ma’noni anglatadi,
-
-                    lekin ko‘pincha DOM deb qisqartirilib aytiladi.
-
-                    Xo‘sh, DOM aynan nimani anglatadi, elementlar  
-
-                    panelidagi bosiladigan narsalar to‘plaminimi?
-
-                    yoki DOM nima ekanligini tushuntirish uchun
-
-                    brauzer tomonidan ko‘rsatiladigan HTML nimi?
-
-                    Brauzerda ko‘rinayotgan barcha narsalarni qanday qilib
-
-                    HTML manbadan olishni bilish foydadan holi emas.
-
-                    Veb-sahifaga so‘rov jo‘natganingizdan so‘ng
-
-                    HTML sahifada nima sodir bo‘lishini
-
-                    tushuntirib beradigan, Google da ish olib boruvchi
-
-                    Ilya Grigorikning quyidagi videosini ko‘rib chiqing.
-                </p>
-                <div class="center-align">
-                    <video src="L1 12 — Объяснение DOM от Ильи.mp4" controls width="65%"></video>
-                </div>
-                <p>
-                    Videoni takrorlash uchun quyidagi amallar bajariladi:
-                </p>
-
-                <ul>
-                    <li>HTML qabul qilinadi</li>
-                    <li>HTML teglari tokenlarga o‘zgartiriladi</li>
-                    <li>tokenlar bog‘lamalarga aylantiriladi</li>
-                    <li>Bog‘lamalar DOMga o‘zgartiriladi</li>
-                </ul>
-
-                <p>
-                    Veb-saytni so‘raganingizda, ushbu veb-sayt u qaysi dasturlash tilida ishlab chiqilmasin, 
-                    HTML bilan ishlaydi. Brauzer HTML oqimini qabul qiladi. Bayt turli xil belgilarni 
-                    (masalan, teg boshlanishi <span class="maxsus">&lt;</span> 
-                    belgisi va <span class="maxsus">href</span> kabi atributni, yopuvchi belgi 
-                    <span class="maxsus">&lt;</span> kabilarni) aniqlaydigan murakkab 
-                    (lekin to‘liq hujjatlashtirilgan) tahlil qilish jarayonidan o‘tadi. Tekshuruvdan so‘ng, 
-                    tokenlashtirish deb nomlangan jarayon sodir bo‘ladi. Tokenlashtirish bir vaqtning o‘zida 
-                    bitta belgini oladi va tokenlar yaratadi. Tokenlar:
-                </p>
-                <ul>
-                    <li>DOCTYPE - hujjat turi</li>
-                    <li>teg boshlanishi</li>
-                    <li>teg tugashi</li>
-                    <li>izoh</li>
-                    <li>belgi</li>
-                    <li>faylning yakuni</li>
-                </ul>
-
-                <p>
-                    Bir soniya tanaffus qilaylik. 
-                    Bunday holatda, brauzer server tomonidan yuborilgan 
-                    baytlarni qabul qiladi. Brauzer baytlarni teglarga 
-                    o‘zgartiradi va tokenlar ro‘yxatini tuzish uchun teglarni o‘qiydi.
-                </p>
-
-                <p>
-                    Ushbu belgi ro‘yxati keyinchalik daraxtlarni qurish bosqichidan 
-                    o‘tadi. Ushbu bosqichning natijasida daraxt tuzilishi DOM hisoblanadi!
-                </p>
-
-                <p>
-                    Illya videoda aytgan ikkita muhim narsalarga ishora qilmoqchiman:
-                </p>
-
-                <div class="havo_chegara">
-                    <p>
-                        HTML tarkibini va xususiyatlarini, bog‘lamalar 
-                        orasidagi barcha munosabatlarni saqlaydigan daraxt tuzilishi
-                    </p>
-                </div>
-
-                <div class="havo_chegara">
-                    <p>
-                        DOM bu HTMLning to‘liq yoyilgan ko‘rinishidir
-                    </p>
-                </div>
-
-                <p>
-                    Shunday qilib, DOM qabul qilingan HTML hujjatining o‘zaro munosabatlari va atributlari 
-                    modelidir (namoyishidir). DOM "Document Object Model" degan ma’noni anglatishini unutmang. 
-                    Men o‘rgangan narsalarimdan kelib chiqib aytsam, biror narsani tushunmasangiz, 
-                    shunchaki orqaga qarab o‘qing:
-                </p>
-
-                <p>
-                    Hujjat obyekt modeli
-                </p>
-
-                <p>
-                    ...bo‘lishi mumkin…
-                </p>
-
-                <p>
-                    Hujjatning obyekt modeli!
-                </p>
-
-                <p>
-                    Esingizda bo‘lsin, JavaScript obyekti xususiyatlarga va qiymatlarga ega bo‘lgan 
-                    daraxtga o‘xshash tuzilma. Shuning uchun DOM brauzer tomonidan taqdim etilgan 
-                    maxsus obyekt yordamida kirishi mumkin bo‘lgan: <span class="maxsus">document</span>
-                </p>
-                <p>
-                    Bunga urinib ko‘ring:
-                </p>
-                <ol>
-                    <li>
-                        ushbu sahifada konsolni oching
-                    </li>
-                </ol>
-                <ul>
-                    <li>
-                        <span class="maxsus">document</span> so‘zini yozing
-                        <ul>
-                            <li>
-                                xushyor bo‘ling, uni e’lon qilmang (<span class="maxsus">const document</span>)
-                            </li>
-                            <li>
-                                xushyor bo‘ling, uni qo‘shtirnoqqa olmang (<span class="maxsus">"document"</span>)
-                            </li>
-                        </ul>
-                    </li>
-                    <li>
-                        enter tugmachasini bosing
-                    </li>
-                </ul>
-                <div class="center-align">
-                    <img src="ud117-l1-document-object-in-console.jpg" alt="JPeG">
-                </div>
-                <p class="center-align">
-                    <span class="kul">
-                        DevTools konsol panelida <span class="maxsus">document</span> obyektini ko‘rish.
-                    </span>
-                </p>
-
-                <p>
-                    <span class="maxsus">document</span> obyekt brauzer tomonidan ta’minlanadi va HTML hujjatining namoyishi hisoblanadi. 
-                    Ushbu obyekt JavaScript tilida mavjud emas. ECMAScript - bu JavaScriptga asoslangan 
-                    tildir va u faqat obyekt modeliga ishora qiladi, uning "Global Object" tanlovida:
-                </p>
-
-                <div class="havo_chegara">
-                    <p>
-                        Ushbu xususiyatlarda belgilanganlarga qo‘shimcha ravishda global obyekt 
-                        qo‘shimcha aniqlangan xususiyatlarga ega bo‘lishi mumkin. Bunga qiymati 
-                        global obyekti bo‘lgan xususiyat kirishi mumkin; Masalan, HTML hujjat 
-                        obyekti modelida global obyektning oyna xususiyati global obyektning o‘zi
-                         hisoblanadi. (<a href="/1.Front end/3.Js/8.Hujjat obyekt modeli/8.2.DOM (hujjat obyekti modeli)/ECMA-262/ECMA-262.html">source</a>)
-                    </p>
-                </div>
-
-                <p>
-                    Aslida, bu <span class="maxsus">hujjat</span> obyekti JavaScriptning bir qismi emasligini bildiradi, 
-                    lekin u allaqachon mavjud va JavaScript kodi uchun bemalol mavjud bo‘lishi mumkin.
-                </p>
-
-                <p>
-                    DOM W3C tomonidan standartlashtirilgan. DOMni tashkil etadigan bir qator xususiyatlar 
-                    mavjud, bu yerda bir nechtasi:
-                </p>
-
-                <ul>
-                    <li>
-                        Asosiy xususiyatlar
-                    </li>
-                    <li>
-                        Hodisalar xususiyatlari
-                    </li>
-                    <li>
-                        Stil xususiyatlari
-                    </li>
-                    <li>
-                        Tasdiqlash xususiyatlari
-                    </li>
-                    <li>
-                        Yuklash va saqlash xususiyatlari
-                    </li>
-                </ul>
-
-                <p>
-                    DOMning barcha xususiyatlari ro‘yxatini ko‘rish uchun bu yerni ko‘rib 
-                    chiqing: <a href="/1.Front end/3.Js/8.Hujjat obyekt modeli/8.2.DOM (hujjat obyekti modeli)/W3C standartlari va loyihalari/W3C standartlari va loyihalari.html">https://www.w3.org/standards/techs/dom#w3c_all</a>
+                    Teglar (DOM) bo'yicha filtrlangan 5 ta oila bo'yicha 10 ta hisobot ko'rsatilmoqda.
                 </p>
 
                 <h2>
-                    DOM takrorlash
+                    UI tadbirlari
+                </h2>
+
+                <p><span class="maxsus">Standart</span></p>
+                
+                <h2>
+                    <a href="">UI hodisalari klaviaturasi hodisa kodi qiymatlari</a>
                 </h2>
 
                 <p>
-                    DOM "Document Object Model" degan ma’noni anglatadi va daraxtga o‘xshash tuzilish bo‘lib, 
-                    HTML hujjatining namoyishi, elementlar o‘rtasidagi o‘zaro bog‘liqlik bo‘lib, elementlarning 
-                    tarkibi va xususiyatlarini o‘z ichiga oladi.
+                    Biz ko'rib chiqadigan birinchi usul <span class="maxsus">.getElementsByClassName()</span>:
+                </p>
+
+                <div class="oddiy_chegara">
+                    <p>
+                        document.getElementsByClassName();
+                    </p>
+                </div>
+
+                <p>
+                    Xuddi shunday <span class="maxsus">.getElementById()</span>, agar biz yuqoridagi kodni konsolda ishga tushirsak, 
+                    hech narsa olmaymiz, chunki biz unga qidirish kerak bo'lgan klassni aytmagan edik! Xuddi 
+                    <span class="maxsus">.getElementById()</span>, <span class="maxsus">.getElementsByClassName()</span> 
+                    biz uni qidirish/qaytarishni istagan klass 
+                    satri bilan chaqirishimizni kutmoqdamiz:
+                </p>
+
+                <div class="oddiy_chegara">
+                    <p>
+                        document.getElementsByClassName('brand-color');
+                    </p>
+                </div>
+
+                <p>
+                    Agar siz ushbu usul haqida ko'proq ma'lumot olishni istasangiz, uning MDNdagi hujjatlar sahifasini ko'rib chiqing: 
+                    https://developer.mozilla.org/en-US/docs/Web/API/Document/getElementsByClassName(yangi yorliqda ochiladi) <br>
+
+                    Keling, ushbu usuldan foydalanib ko'rish uchun ushbu MDN hujjatlari sahifasidan foydalanaylik.
+                </p>
+
+                <div class="center-align">
+                    <video src="DOM L1 40 — GetElementsByClassName.mp4" controls width="65%"></video>
+                </div>
+
+                <div class="havo_chegara">
+                    <h2>S dan ehtiyot bo'ling!</h2>
+                </div>
+
+                <div class="havo_chegara">
+                    <p>
+                        Bilaman, biz hali ko'rib chiqmaganmiz , lekin ikkalasiga nisbatan 
+                        <span class="maxsus">.getElementsByTagName()</span> 
+                        farq qiladigan narsa bor va men buni ta'kidlamoqchiman, 
+                        chunki ularni o'tkazib yuborish oson bo'lishi mumkin; ikkalasi ham va ularning 
+                        nomida qo'shimcha "s" harfi bor. <span class="maxsus">.getElementById()</span> 
+                        <span class="maxsus">.getElementsByClassName()</span> 
+                        <span class="maxsus">.getElementsByTagName()</span> 
+                        <span class="maxsus">.getElementsByClassName()</span>
+                        <span class="maxsus">.getElementsByTagName()</span>
+                    </p>
+                </div>
+
+                <div class="havo_chegara">
+                    <p>
+                        Men buni shunchaki ta'kidlamoqchi edim, chunki kodni ishga 
+                        tushirayotganda ko'p marta "s" harfi yo'qolib qolgan.
+                    </p>
+                </div>
+
+                <div class="havo_chegara">
+                    <div class="oddiy_chegara">
+                        document.getElementByClassName('highlight-spanned');
+                    </div>
+                </div>
+
+                <div class="havo_chegara">
+                    <p>
+                        Yuqoridagi kod ishlamaydi , chunki DOM usuli yo'q 
+                        <span class="maxsus">.getElementByClassName()</span> (yagona "Element" bilan).
+                    </p>
+                </div>
+
+                <h2>
+                    Elementlarga ularning yorlig'i orqali kirish
+                </h2>
+
+                <p>
+                    <span class="maxsus">.getElementById()</span> va ni ko'rib chiqqandan so'ng 
+                    <span class="maxsus">.getElementsByClassName()</span>, 
+                    yangi <span class="maxsus">.getElementsByTagName()</span> usul ko'zga juda oson ko'rinishi kerak:
+                </p>
+
+                <div class="oddiy_chegara">
+                    <p>
+                        document.getElementsByTagName('p');
+                    </p>
+                </div>
+
+                <p>
+                    Keling, ushbu usuldan foydalanib ko'rish uchun ushbu MDN hujjatlari sahifasidan foydalanaylik: <br>
+                    <a href="https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model/Introduction">
+                        https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model/Introduction
+                    </a>
+                </p>
+
+                <div class="center-align">
+                    <video src="DOM L1 43 — GetElementsByTagName.mp4" controls width="65%"></video>
+                </div>
+
+                <h2>
+                    Nima qaytarildi?
+                </h2>
+
+                <div class="center-align">
+                    <video src="DOM L1 48 — Возвращает структуру, подобную массиву.mp4" controls width="65%"></video>
+                </div>
+
+                <p>
+                    <span class="maxsus">.getElementsByClassName()</span> Biz hozirgina elementlarning massivga o'xshash ma'lumotlar 
+                    tuzilmasini qaytaradiganini ko'rdik. Lekin element nima o'zi?
                 </p>
 
                 <p>
-                    DOM quyidagi emas:
-                </p>
-
-                <ul>
-                    <li>
-                        JavaScript tilining bir qismi
-                    </li>
-                </ul>
-
-                <p>
-                    DOM bu:
-                </p>
-
-                <ul>
-                    <li>
-                        brauzer tomonidan qurilgan
-                    </li>
-                    <li>
-                        document obyekti yordamida JavaScript kodida global ravishda murojaat qilish mumkin
-                    </li>
-                </ul>
-
-                <p>
-                    DOMdan har doim foydalanib kelganmiz va ushbu kurs davomida yana foydalanamiz!
+                    Keyingi bo'limda biz Elementlar va Tugunlarni ko'rib chiqamiz.
                 </p>
 
                 <h2>
-                    Keyingi o‘rganishlar uchun
+                    Bir vaqtning o'zida bir nechta elementlarni tanlash haqida qisqacha ma'lumot
                 </h2>
+
+                <p>
+                    Ushbu bo'limda biz bir nechta DOM elementlarini tanlashning ikkita usulini o'rgandik:
+                </p>
 
                 <ul>
                     <li>
-                        DOM Introduction
+                        .getElementsByClassName()
                     </li>
                     <li>
-                        Section 8.2 Parsing HTML documents from the W3C's HTML Documentation
+                        .getElementsByTagName()
+                    </li>
+                </ul>
+
+                <p>
+                    Ushbu ikkita usul haqida bir nechta muhim narsalarni yodda tutish kerak:
+                </p>
+
+                <ul>
+                    <li>
+                        ikkala usul ham documentob'ektdan foydalanadi
                     </li>
                     <li>
-                        DOM Specification on W3C
+                        ikkalasi ham bir nechta elementlarni qaytaradi
                     </li>
                     <li>
-                        HTML Document Object Model mentioned in the ECMAScript Specification
-                        - the language specification used by JavaScript
+                        qaytarilgan ro'yxat massiv emas
+                    </li>
+                </ul>
+
+                <div class="oddiy_chegara">
+                    <p>
+                        <span class="kul">// "accent-color" sinfiga ega bo'lgan barcha belgini tanlash</span> <br>
+                        document.getElementsByClassName('accent-color'); <br><br>
+
+                        <span class="kul">// barcha "span"ni tanlash</span> <br>
+                        document.getElementsByTagName('span');
+                    </p>
+                </div>
+
+                <h3>
+                    Keyingi tadqiqotlar
+                </h3>
+                <ul>
+                    <li>
+                        <a href="https://developer.mozilla.org/en-US/docs/Web/API/Document/getElementsByClassName">.getElementsByClassName()</a> MDNda
+                    </li>
+                    <li>
+                        <a href="https://developer.mozilla.org/en-US/docs/Web/API/Element/getElementsByTagName">.getElementsByTagName()</a> MDNda
                     </li>
                 </ul>
             </div>
