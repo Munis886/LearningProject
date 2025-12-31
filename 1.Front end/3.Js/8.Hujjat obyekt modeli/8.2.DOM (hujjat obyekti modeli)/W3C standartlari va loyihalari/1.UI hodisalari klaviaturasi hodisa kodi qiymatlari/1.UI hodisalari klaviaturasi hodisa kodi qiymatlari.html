@@ -7,7 +7,7 @@
     <meta name="description" content="Bu yerda Javascript haqida batafsil ma'lumot olamiz">
     <link rel="stylesheet" href="/1.Front end/3.Js/style.css">
     <link rel="stylesheet" href="style.css">
-    <title>Java script</title>
+    <title>UI hodisalari klaviaturasi hodisa kodi qiymatlari</title>
     <script src="/1.Front end/3.Js/script.js"></script>
 </head>
 
@@ -1002,36 +1002,43 @@
             <div class="sarlavha">
                 <ul>
                     <li class="li_2">
-                        W3C standartlari va loyihalari
+                        UI hodisalari klaviaturasi hodisa kodi qiymatlari
                     </li>
                 </ul>
             </div>
-
+            
             <div id="text" class="qisqa">
-                <h3>
-                    W3C vebni oldinga siljishga yordam beradigan bir qator texnik 
-                    hisobotlarni (standartlar va qo'llab-quvvatlovchi eslatmalar) nashr etadi.
+                <p>
+                    W3C tavsiyasi ,2025-yil 22-aprel
+                </p>
+                <p>
+                    Ushbu hujjat haqida batafsil ma'lumot
+                </p>
+                <p>
+                    Mualliflik huquqi © 2025 World Wide Web Consortium . W3C® <sup>javobgarligi</sup> , savdo belgisi va ruxsat beruvchi hujjat litsenziyasi qoidalari qo'llaniladi.
+                </p>
+
+                <h3 class="h3">
+                    Abstrakt
                 </h3>
+
                 <p>
-                    API, Internationalization yoki WAI-ARIA kabi atamalarni qidiring
+                    Ushbu spetsifikatsiya UI Events Specification [UIEvents] ning bir 
+                    qismi sifatida belgilangan KeyboardEvent.code atributi uchun qiymatlarni 
+                    belgilaydi . Kod qiymati foydalanuvchi tomonidan bosilayotgan jismoniy 
+                    kalitni aniqlash uchun ishlatilishi mumkin bo'lgan kalit hodisasi haqidagi 
+                    ma'lumotlarni o'z ichiga oladi.
                 </p>
                 
-                <p>
-                    Teglar (DOM) bo'yicha filtrlangan 5 ta oila bo'yicha 10 ta hisobot ko'rsatilmoqda.
-                </p>
-
-                <h2>
-                    UI tadbirlari
-                </h2>
-
-                <p><span class="maxsus">Standart</span></p>
-                
-                <h2>
-                    <a href="">UI hodisalari klaviaturasi hodisa kodi qiymatlari</a>
-                </h2>
+                <h3 class="h3">
+                    Ushbu hujjatning holati
+                </h3>
 
                 <p>
-                    Biz ko'rib chiqadigan birinchi usul <span class="maxsus">.getElementsByClassName()</span>:
+                    Ushbu bo'limda ushbu hujjat nashr etilgan paytdagi holati tasvirlangan. 
+                    Joriy W3C nashrlari ro'yxati va ushbu texnik hisobotning so'nggi tahriri 
+                    bilan W3C texnik hisobotlari indeksida https://www.w3.org/TR/ manzilida 
+                    tanishishingiz mumkin .
                 </p>
 
                 <div class="oddiy_chegara">
@@ -1041,164 +1048,88 @@
                 </div>
 
                 <p>
-                    Xuddi shunday <span class="maxsus">.getElementById()</span>, agar biz yuqoridagi kodni konsolda ishga tushirsak, 
+                    <i>
+                        Xuddi shunday <span class="maxsus">.getElementById()</span>, agar biz yuqoridagi kodni konsolda ishga tushirsak, 
                     hech narsa olmaymiz, chunki biz unga qidirish kerak bo'lgan klassni aytmagan edik! Xuddi 
                     <span class="maxsus">.getElementById()</span>, <span class="maxsus">.getElementsByClassName()</span> 
                     biz uni qidirish/qaytarishni istagan klass 
                     satri bilan chaqirishimizni kutmoqdamiz:
-                </p>
-
-                <div class="oddiy_chegara">
-                    <p>
-                        document.getElementsByClassName('brand-color');
-                    </p>
-                </div>
-
-                <p>
-                    Agar siz ushbu usul haqida ko'proq ma'lumot olishni istasangiz, uning MDNdagi hujjatlar sahifasini ko'rib chiqing: 
-                    https://developer.mozilla.org/en-US/docs/Web/API/Document/getElementsByClassName(yangi yorliqda ochiladi) <br>
-
-                    Keling, ushbu usuldan foydalanib ko'rish uchun ushbu MDN hujjatlari sahifasidan foydalanaylik.
-                </p>
-
-                <div class="center-align">
-                    <video src="DOM L1 40 — GetElementsByClassName.mp4" controls width="65%"></video>
-                </div>
-
-                <div class="havo_chegara">
-                    <h2>S dan ehtiyot bo'ling!</h2>
-                </div>
-
-                <div class="havo_chegara">
-                    <p>
-                        Bilaman, biz hali ko'rib chiqmaganmiz , lekin ikkalasiga nisbatan 
-                        <span class="maxsus">.getElementsByTagName()</span> 
-                        farq qiladigan narsa bor va men buni ta'kidlamoqchiman, 
-                        chunki ularni o'tkazib yuborish oson bo'lishi mumkin; ikkalasi ham va ularning 
-                        nomida qo'shimcha "s" harfi bor. <span class="maxsus">.getElementById()</span> 
-                        <span class="maxsus">.getElementsByClassName()</span> 
-                        <span class="maxsus">.getElementsByTagName()</span> 
-                        <span class="maxsus">.getElementsByClassName()</span>
-                        <span class="maxsus">.getElementsByTagName()</span>
-                    </p>
-                </div>
-
-                <div class="havo_chegara">
-                    <p>
-                        Men buni shunchaki ta'kidlamoqchi edim, chunki kodni ishga 
-                        tushirayotganda ko'p marta "s" harfi yo'qolib qolgan.
-                    </p>
-                </div>
-
-                <div class="havo_chegara">
-                    <div class="oddiy_chegara">
-                        document.getElementByClassName('highlight-spanned');
-                    </div>
-                </div>
-
-                <div class="havo_chegara">
-                    <p>
-                        Yuqoridagi kod ishlamaydi , chunki DOM usuli yo'q 
-                        <span class="maxsus">.getElementByClassName()</span> (yagona "Element" bilan).
-                    </p>
-                </div>
-
-                <h2>
-                    Elementlarga ularning yorlig'i orqali kirish
-                </h2>
-
-                <p>
-                    <span class="maxsus">.getElementById()</span> va ni ko'rib chiqqandan so'ng 
-                    <span class="maxsus">.getElementsByClassName()</span>, 
-                    yangi <span class="maxsus">.getElementsByTagName()</span> usul ko'zga juda oson ko'rinishi kerak:
-                </p>
-
-                <div class="oddiy_chegara">
-                    <p>
-                        document.getElementsByTagName('p');
-                    </p>
-                </div>
-
-                <p>
-                    Keling, ushbu usuldan foydalanib ko'rish uchun ushbu MDN hujjatlari sahifasidan foydalanaylik: <br>
-                    <a href="https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model/Introduction">
-                        https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model/Introduction
-                    </a>
-                </p>
-
-                <div class="center-align">
-                    <video src="DOM L1 43 — GetElementsByTagName.mp4" controls width="65%"></video>
-                </div>
-
-                <h2>
-                    Nima qaytarildi?
-                </h2>
-
-                <div class="center-align">
-                    <video src="DOM L1 48 — Возвращает структуру, подобную массиву.mp4" controls width="65%"></video>
-                </div>
-
-                <p>
-                    <span class="maxsus">.getElementsByClassName()</span> Biz hozirgina elementlarning massivga o'xshash ma'lumotlar 
-                    tuzilmasini qaytaradiganini ko'rdik. Lekin element nima o'zi?
+                    </i>
                 </p>
 
                 <p>
-                    Keyingi bo'limda biz Elementlar va Tugunlarni ko'rib chiqamiz.
+                    Ushbu hujjat Veb-ilovalar ishchi guruhi tomonidan Tavsiya 
+                    trekidan foydalangan holda Tavsiya sifatida nashr etildi
                 </p>
-
-                <h2>
-                    Bir vaqtning o'zida bir nechta elementlarni tanlash haqida qisqacha ma'lumot
-                </h2>
 
                 <p>
-                    Ushbu bo'limda biz bir nechta DOM elementlarini tanlashning ikkita usulini o'rgandik:
+                    W3C ushbu spetsifikatsiyani veb uchun standart sifatida keng qo'llashni tavsiya qiladi.
                 </p>
-
-                <ul>
-                    <li>
-                        .getElementsByClassName()
-                    </li>
-                    <li>
-                        .getElementsByTagName()
-                    </li>
-                </ul>
 
                 <p>
-                    Ushbu ikkita usul haqida bir nechta muhim narsalarni yodda tutish kerak:
+                    W3C tavsiyasi - bu keng ko'lamli konsensusga erishgandan so'ng, 
+                    W3C va uning a'zolari tomonidan ma'qullanadigan va Ishchi guruh 
+                    a'zolari tomonidan amalga oshirish uchun royaltisiz litsenziyalash 
+                    majburiyatlari mavjud bo'lgan spetsifikatsiya.
                 </p>
 
-                <ul>
-                    <li>
-                        ikkala usul ham documentob'ektdan foydalanadi
-                    </li>
-                    <li>
-                        ikkalasi ham bir nechta elementlarni qaytaradi
-                    </li>
-                    <li>
-                        qaytarilgan ro'yxat massiv emas
-                    </li>
-                </ul>
+                <p>
+                    Ushbu hujjat W3C Patent Siyosatiga muvofiq faoliyat yurituvchi 
+                    guruh tomonidan ishlab chiqilgan . W3C guruhning natijalari bilan 
+                    bog'liq ravishda qilingan har qanday patent ma'lumotlarining ommaviy 
+                    ro'yxatini yuritadi ; ushbu sahifada patentni oshkor qilish bo'yicha 
+                    ko'rsatmalar ham mavjud. Shaxsning fikricha , muhim da'vo(lar)ni o'z 
+                    ichiga olgan patent haqida haqiqiy ma'lumotga ega bo'lgan shaxs W3C 
+                    Patent Siyosatining 6-bo'limiga muvofiq ma'lumotlarni oshkor qilishi shart .
+                </p>
 
-                <div class="oddiy_chegara">
-                    <p>
-                        <span class="kul">// "accent-color" sinfiga ega bo'lgan barcha belgini tanlash</span> <br>
-                        document.getElementsByClassName('accent-color'); <br><br>
+                <p>
+                    Ushbu hujjat 2023-yil 3-noyabrdagi W3C Jarayon Hujjati bilan tartibga solinadi .
+                </p>
 
-                        <span class="kul">// barcha "span"ni tanlash</span> <br>
-                        document.getElementsByTagName('span');
-                    </p>
-                </div>
-
-                <h3>
-                    Keyingi tadqiqotlar
+                <h3 class="h3">
+                    1. Kirish
                 </h3>
+
+                <p>
+                    Ushbu hujjat turli klaviatura tartiblari haqida umumiy ma'lumot beradi 
+                    va codehar bir tugma uchun ishlatilishi kerak bo'lgan qiymatlarni belgilaydi. 
+                    [UIEvents-key]key da tasvirlangan qiymatlardan farqli o'laroq , qiymatlar faqat 
+                    tugmaning klaviaturadagi jismoniy joylashuviga asoslangan va foydalanuvchining 
+                    joriy joylashuviga qarab o'zgarmaydi.code
+                </p>
+
+                <p>
+                    Ushbu spetsifikatsiya ilgari DOM 3-darajali KeyboardEvent codeValues ​​deb nomlangan edi.
+                </p>
+
+                <h3 class="h3">
+                    1.1. Stilistik an'analar
+                </h3>
+
+                <p>
+                    Ushbu spetsifikatsiya quyidagi konventsiyalardan foydalanadi:
+                </p>
+
                 <ul>
                     <li>
-                        <a href="https://developer.mozilla.org/en-US/docs/Web/API/Document/getElementsByClassName">.getElementsByClassName()</a> MDNda
+                        Kalitga bosilgan kalit qopqog'i yoki yorlig'i sifatida ko'rsatiladi. 
+                        Bu↓ yaratilgan =va qiymatlaridan qat'i nazar, foydalanuvchi nuqtai nazaridan 
+                        kalitga murojaat qilish uchun ishlatiladi .keycodeKeyboardEvent
                     </li>
                     <li>
-                        <a href="https://developer.mozilla.org/en-US/docs/Web/API/Element/getElementsByTagName">.getElementsByTagName()</a> MDNda
+                        Belgini ifodalovchi gliflar quyidagicha ko'rsatilgan: "𣧂".
+                    </li>
+                    <li>
+                        Unicode kod nuqtalari quyidagicha ko'rsatiladi: U+003D.
+                    </li>
+                    <li>
+                        Yaroqli kalit atribut qiymatlari (ya'ni, atribut qiymati key) quyidagicha ko'rsatiladi: 
+                        , , yoki ."ArrowDown""=""q""Q"
+                    </li>
+                    <li>
+                        Kalit kod atributining haqiqiy qiymatlari (ya'ni, atribut qiymati code) quyidagicha ko'rsatiladi: 
+                        , yoki ."ArrowDown""Equal""KeyQ"
                     </li>
                 </ul>
             </div>
