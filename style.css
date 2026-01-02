@@ -38,19 +38,40 @@ body,div,ul,li,h1,h2{
 }
 
 #front_end {
-    display: flex;
     /* height: 100%; */
     background-image: url(/images/1.Front-end.jpg);
     background-size: cover; /* Rasm butun sahifani qoplashi */
     background-position: center; /* Rasm markazda bo'lishi */
     background-repeat: no-repeat; /* Rasm takrorlanmasligi */
-    
     height: 550px;
     
 }
+
+.top {
+    grid-column: 1 / 3;
+    height: 10%;
+    
+}
+
+.top p {
+    margin: 0 auto;
+    padding: 26px;
+    background-color: turquoise;
+    text-shadow: 1px 0px yellowgreen;
+    width: 70%;
+    border-radius: 8px 25px;
+    opacity: 0.2;
+}
+
+.bottom {
+    display: flex;
+    height: 90%;
+}
+
 .front_end {
+    height: 90%;
     width: 50%;
-    margin: auto 10px; 
+    margin: auto 54px 0; 
     display: flex;
 }
 
@@ -65,7 +86,7 @@ body,div,ul,li,h1,h2{
 
 .ul li {
     display: block;
-       
+    height: 90%;   
 }
 
 .ul li {
