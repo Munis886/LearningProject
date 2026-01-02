@@ -1012,215 +1012,83 @@
             <div class="sarlavha">
                 <ul>
                     <li class="li_1">
-                        <a href="/1.Front end/3.Js/8.Hujjat obyekt modeli/8.4.Elementni ID orqali tanlash/8.4.Elementni ID orqali tanlash.html">⟨</a>
+                        <a href="/1.Front end/3.Js/8.Hujjat obyekt modeli/8.5.Sahifa elementlarini sinf yoki teg bo'yicha tanlang/8.5.Sahifa elementlarini sinf yoki teg bo'yicha tanlang.html">⟨</a>
                     </li>
                     <li class="li_2">
-                        Sahifa elementlarini sinf yoki teg bo'yicha tanlang
-                    </li>
-                    <li class="li_3">
-                        <a href="/1.Front end/3.Js/8.Hujjat obyekt modeli/8.6.Tugunlar, elementlar va interfeyslar... Voy Xudoyim!/8.6.Tugunlar, elementlar va interfeyslar... Voy Xudoyim!.html">
-                            ⟩
-                        </a>
+                        Element: getElementsByTagName() usuli
                     </li>
                 </ul>
             </div>
 
             <div id="text" class="qisqa">
-                <h3>
-                    Bir vaqtning o'zida bir nechta elementlarni tanlash
-                </h3>
                 <p>
-                    HTML tuzilishi va CSS uslublarini o'rganishdan esingizdami, identifikator noyob bo'lishi kerak - 
-                    ya'ni ikki yoki undan ortiq elementlar hech qachon bir xil identifikatorga ega bo'lmasligi kerak. 
-                    IDlar noyob bo'lgani uchun va HTMLda ushbu identifikator bilan faqat bitta element bo'lgani uchun, 
-                    document.getElementById()ular faqat bitta elementni qaytaradi. Xo'sh, qanday qilib bir nechta 
-                    DOM elementlarini tanlaymiz?
-                </p>
-                
-                <p>
-                    Keyingi ikkita DOM usulini ko'rib chiqamiz, ikkalasi ham bir nechta elementlarni qaytaradi:
+                    Usul berilgan teg nomi bilan elementlarning 
+                    Element.getElementsByTagName() jonli 
+                    ijrosini qaytaradi .HTMLCollection
                 </p>
 
-                <ul>
-                    <li><span class="maxsus">.getElementsByClassName()</span></li>
-                    <li><span class="maxsus">.getElementsByTagName()</span></li>
-                </ul>
-                
+                <p>
+                    Belgilangan elementning barcha avlodlari qidiriladi, 
+                    lekin elementning o'zi qidirilmaydi. Qaytarilgan ro'yxat 
+                    jonliElement.getElementsByTagName() , ya'ni u o'zini DOM daraxti 
+                    bilan avtomatik ravishda yangilaydi. Shuning uchun, agar 
+                    DOM chaqiruvlar orasida o'zgarsa, bir xil element va 
+                    argumentlar bilan qayta-qayta chaqirishga hojat yo'q.
+                </p>
+
+                <p>
+                    HTML hujjatidagi HTML elementi chaqirilganda, uni qidirishdan oldin 
+                    argument kichik harflar bilan yoziladi. Bu HTML hujjatida tuya 
+                    shaklidagi SVG elementlarini (masalan, ) getElementsByTagName 
+                    moslashtirishga urinishda keraksizdir . Buning o'rniga, teg 
+                    nomining bosh harflarini saqlab qoladigan dan foydalaning.
+                    &lt;linearGradient&gt; Element.getElementsByTagNameNS()
+                </p>
+
+                <p>
+                    Element.getElementsByTagNamega o'xshaydi Document.getElementsByTagName(), 
+                    faqat u faqat ko'rsatilgan elementning avlodlari 
+                    bo'lgan elementlarni qidiradi.
+                </p>
+
                 <h2>
-                    Elementlarga ularning sinfi bo'yicha kirish
+                    Sintaksis
                 </h2>
 
-                <p>
-                    Biz ko'rib chiqadigan birinchi usul <span class="maxsus">.getElementsByClassName()</span>:
-                </p>
-
-                <div class="oddiy_chegara">
+                <div class="css">
                     <p>
-                        document.getElementsByClassName();
+                        JS
                     </p>
-                </div>
-
-                <p>
-                    Xuddi shunday <span class="maxsus">.getElementById()</span>, agar biz yuqoridagi kodni konsolda ishga tushirsak, 
-                    hech narsa olmaymiz, chunki biz unga qidirish kerak bo'lgan klassni aytmagan edik! Xuddi 
-                    <span class="maxsus">.getElementById()</span>, <span class="maxsus">.getElementsByClassName()</span> 
-                    biz uni qidirish/qaytarishni istagan klass 
-                    satri bilan chaqirishimizni kutmoqdamiz:
-                </p>
-
-                <div class="oddiy_chegara">
-                    <p>
-                        document.getElementsByClassName('brand-color');
-                    </p>
-                </div>
-
-                <p>
-                    Agar siz ushbu usul haqida ko'proq ma'lumot olishni istasangiz, uning MDNdagi hujjatlar sahifasini ko'rib chiqing: 
-                    https://developer.mozilla.org/en-US/docs/Web/API/Document/getElementsByClassName(yangi yorliqda ochiladi) <br>
-
-                    Keling, ushbu usuldan foydalanib ko'rish uchun ushbu MDN hujjatlari sahifasidan foydalanaylik.
-                </p>
-
-                <div class="center-align">
-                    <video src="DOM L1 40 — GetElementsByClassName.mp4" controls width="65%"></video>
-                </div>
-
-                <div class="havo_chegara">
-                    <h2>S dan ehtiyot bo'ling!</h2>
-                </div>
-
-                <div class="havo_chegara">
-                    <p>
-                        Bilaman, biz hali ko'rib chiqmaganmiz , lekin ikkalasiga nisbatan 
-                        <span class="maxsus">.getElementsByTagName()</span> 
-                        farq qiladigan narsa bor va men buni ta'kidlamoqchiman, 
-                        chunki ularni o'tkazib yuborish oson bo'lishi mumkin; ikkalasi ham va ularning 
-                        nomida qo'shimcha "s" harfi bor. <span class="maxsus">.getElementById()</span> 
-                        <span class="maxsus">.getElementsByClassName()</span> 
-                        <span class="maxsus">.getElementsByTagName()</span> 
-                        <span class="maxsus">.getElementsByClassName()</span>
-                        <span class="maxsus">.getElementsByTagName()</span>
-                    </p>
-                </div>
-
-                <div class="havo_chegara">
-                    <p>
-                        Men buni shunchaki ta'kidlamoqchi edim, chunki kodni ishga 
-                        tushirayotganda ko'p marta "s" harfi yo'qolib qolgan.
-                    </p>
-                </div>
-
-                <div class="havo_chegara">
-                    <div class="oddiy_chegara">
-                        document.getElementByClassName('highlight-spanned');
+                    <div class="css_tana">
+                        <p>
+                            getElementsByTagName(tagName)
+                        </p>
                     </div>
                 </div>
 
-                <div class="havo_chegara">
-                    <p>
-                        Yuqoridagi kod ishlamaydi , chunki DOM usuli yo'q 
-                        <span class="maxsus">.getElementByClassName()</span> (yagona "Element" bilan).
-                    </p>
-                </div>
+                <h3>
+                    Parametrlar
+                </h3>
 
-                <h2>
-                    Elementlarga ularning yorlig'i orqali kirish
-                </h2>
-
-                <p>
-                    <span class="maxsus">.getElementById()</span> va ni ko'rib chiqqandan so'ng 
-                    <span class="maxsus">.getElementsByClassName()</span>, 
-                    yangi <span class="maxsus">.getElementsByTagName()</span> usul ko'zga juda oson ko'rinishi kerak:
-                </p>
-
-                <div class="oddiy_chegara">
-                    <p>
-                        document.getElementsByTagName('p');
-                    </p>
-                </div>
-
-                <p>
-                    Keling, ushbu usuldan foydalanib ko'rish uchun ushbu MDN hujjatlari sahifasidan foydalanaylik: <br>
-                    <a href="/1.Front end/3.Js/8.Hujjat obyekt modeli/8.2.DOM (hujjat obyekti modeli)/DOMga kirish/DOMga kirish.html">
-                        https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model/Introduction
-                    </a>
-                </p>
-
-                <div class="center-align">
-                    <video src="DOM L1 43 — GetElementsByTagName.mp4" controls width="65%"></video>
-                </div>
-
-                <h2>
-                    Nima qaytarildi?
-                </h2>
-
-                <div class="center-align">
-                    <video src="DOM L1 48 — Возвращает структуру, подобную массиву.mp4" controls width="65%"></video>
-                </div>
-
-                <p>
-                    <span class="maxsus">.getElementsByClassName()</span> Biz hozirgina elementlarning massivga o'xshash ma'lumotlar 
-                    tuzilmasini qaytaradiganini ko'rdik. Lekin element nima o'zi?
-                </p>
-
-                <p>
-                    Keyingi bo'limda biz Elementlar va Tugunlarni ko'rib chiqamiz.
-                </p>
-
-                <h2>
-                    Bir vaqtning o'zida bir nechta elementlarni tanlash haqida qisqacha ma'lumot
-                </h2>
-
-                <p>
-                    Ushbu bo'limda biz bir nechta DOM elementlarini tanlashning ikkita usulini o'rgandik:
-                </p>
-
-                <ul>
-                    <li>
-                        .getElementsByClassName()
-                    </li>
-                    <li>
-                        .getElementsByTagName()
-                    </li>
-                </ul>
-
-                <p>
-                    Ushbu ikkita usul haqida bir nechta muhim narsalarni yodda tutish kerak:
-                </p>
-
-                <ul>
-                    <li>
-                        ikkala usul ham document ob'ektdan foydalanadi
-                    </li>
-                    <li>
-                        ikkalasi ham bir nechta elementlarni qaytaradi
-                    </li>
-                    <li>
-                        qaytarilgan ro'yxat massiv emas
-                    </li>
-                </ul>
-
-                <div class="oddiy_chegara">
-                    <p>
-                        <span class="kul">// "accent-color" sinfiga ega bo'lgan barcha belgini tanlash</span> <br>
-                        document.getElementsByClassName('accent-color'); <br><br>
-
-                        <span class="kul">// barcha "span"ni tanlash</span> <br>
-                        document.getElementsByTagName('span');
-                    </p>
-                </div>
+                <dl>
+                    <dt>
+                        <span class="maxsus">tagName</span>
+                    </dt>
+                    <dd>
+                        Qidiriladigan malakali nom. Maxsus satr "*"barcha elementlarni 
+                        ifodalaydi. XHTML bilan moslik uchun kichik harflardan foydalanish kerak.
+                    </dd>
+                </dl>
 
                 <h3>
-                    Keyingi tadqiqotlar
+                    Qaytish qiymati
                 </h3>
-                <ul>
-                    <li>
-                        <a href="/1.Front end/3.Js/8.Hujjat obyekt modeli/8.5.Sahifa elementlarini sinf yoki teg bo'yicha tanlang/1.Document getElementsByClassName() method/1.Document getElementsByClassName() method.html">.getElementsByClassName()</a> MDNda
-                    </li>
-                    <li>
-                        <a href="/1.Front end/3.Js/8.Hujjat obyekt modeli/8.5.Sahifa elementlarini sinf yoki teg bo'yicha tanlang/2.Element getElementsByTagName() method/2.Element getElementsByTagName() method.html">.getElementsByTagName()</a> MDNda
-                    </li>
-                </ul>
+
+                <p>
+                    Mos keladigan teg nomiga ega elementlarning paydo bo'lish 
+                    tartibida jonli efiri . Agar hech qanday element topilmasa, 
+                    u bo'sh.HTMLCollectionHTMLCollection
+                </p>
             </div>
         </div> 
     </div>
