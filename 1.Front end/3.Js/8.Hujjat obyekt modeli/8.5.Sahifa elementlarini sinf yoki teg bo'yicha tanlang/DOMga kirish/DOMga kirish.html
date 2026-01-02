@@ -6,7 +6,6 @@
     <meta name="keywords" content="Javascript, Java script">
     <meta name="description" content="Bu yerda Javascript haqida batafsil ma'lumot olamiz">
     <link rel="stylesheet" href="/1.Front end/3.Js/style.css">
-    <link rel="stylesheet" href="style.css">
     <title>Java script</title>
     <script src="/1.Front end/3.Js/script.js"></script>
 </head>
@@ -786,16 +785,6 @@
                                 8.4.Elementni ID orqali tanlash
                             </a>
                         </li>
-                        <li>
-                            <a href="/1.Front end/3.Js/8.Hujjat obyekt modeli/8.5.Sahifa elementlarini sinf yoki teg bo'yicha tanlang/8.5.Sahifa elementlarini sinf yoki teg bo'yicha tanlang.html">
-                                8.5.Sahifa elementlarini sinf yoki teg bo'yicha tanlang
-                            </a>
-                        </li>
-                        <li>
-                            <a href="/1.Front end/3.Js/8.Hujjat obyekt modeli/8.6.Tugunlar, elementlar va interfeyslar... Voy Xudoyim!/8.6.Tugunlar, elementlar va interfeyslar... Voy Xudoyim!.html">
-                                8.6.Tugunlar, elementlar va interfeyslar... Voy Xudoyim!
-                            </a>
-                        </li>
                     </ul>
                 </li>
             </ul>
@@ -1012,215 +1001,282 @@
             <div class="sarlavha">
                 <ul>
                     <li class="li_1">
-                        <a href="/1.Front end/3.Js/8.Hujjat obyekt modeli/8.4.Elementni ID orqali tanlash/8.4.Elementni ID orqali tanlash.html">⟨</a>
+                        <a href="/1.Front end/3.Js/8.Hujjat obyekt modeli/8.5.Sahifa elementlarini sinf yoki teg bo'yicha tanlang/8.5.Sahifa elementlarini sinf yoki teg bo'yicha tanlang.html">⟨</a>
                     </li>
                     <li class="li_2">
-                        Sahifa elementlarini sinf yoki teg bo'yicha tanlang
-                    </li>
-                    <li class="li_3">
-                        <a href="/1.Front end/3.Js/8.Hujjat obyekt modeli/8.6.Tugunlar, elementlar va interfeyslar... Voy Xudoyim!/8.6.Tugunlar, elementlar va interfeyslar... Voy Xudoyim!.html">
-                            ⟩
-                        </a>
+                        Hujjat obyekti modeli (DOM)
                     </li>
                 </ul>
             </div>
 
             <div id="text" class="qisqa">
-                <h3>
-                    Bir vaqtning o'zida bir nechta elementlarni tanlash
-                </h3>
+
                 <p>
-                    HTML tuzilishi va CSS uslublarini o'rganishdan esingizdami, identifikator noyob bo'lishi kerak - 
-                    ya'ni ikki yoki undan ortiq elementlar hech qachon bir xil identifikatorga ega bo'lmasligi kerak. 
-                    IDlar noyob bo'lgani uchun va HTMLda ushbu identifikator bilan faqat bitta element bo'lgani uchun, 
-                    document.getElementById()ular faqat bitta elementni qaytaradi. Xo'sh, qanday qilib bir nechta 
-                    DOM elementlarini tanlaymiz?
+                    Document Object Model ( DOM ) veb-sahifalarni skriptlar yoki 
+                    dasturlash tillariga xotirada hujjatning tuzilishini - masalan, 
+                    veb-sahifani ifodalovchi HTMLni - ifodalash orqali bog'laydi. 
+                    Odatda bu JavaScriptga ishora qiladi, garchi HTML, SVG yoki XML 
+                    hujjatlarini obyekt sifatida modellashtirish asosiy JavaScript 
+                    tilining bir qismi bo'lmasa ham.
                 </p>
                 
                 <p>
-                    Keyingi ikkita DOM usulini ko'rib chiqamiz, ikkalasi ham bir nechta elementlarni qaytaradi:
+                    DOM mantiqiy daraxtga ega hujjatni ifodalaydi. 
+                    Daraxtning har bir shoxi tugun bilan tugaydi va har 
+                    bir tugun obyektlarni o'z ichiga oladi. DOM usullari 
+                    daraxtga dasturiy kirish imkonini beradi. Ular yordamida 
+                    siz hujjatning tuzilishini, uslubini yoki tarkibini 
+                    o'zgartirishingiz mumkin.
                 </p>
 
-                <ul>
-                    <li><span class="maxsus">.getElementsByClassName()</span></li>
-                    <li><span class="maxsus">.getElementsByTagName()</span></li>
-                </ul>
-                
-                <h2>
-                    Elementlarga ularning sinfi bo'yicha kirish
+                <p>
+                    Tugunlarga shuningdek, hodisalarni qayta ishlovchi qurilmalar 
+                    biriktirilgan bo'lishi mumkin. Hodisa ishga tushirilgandan 
+                    so'ng, hodisalarni qayta ishlovchi qurilmalar bajariladi.
+                </p>
+
+                <h2 class="h2">
+                    Kontseptsiyalar va qo'llanilishi
                 </h2>
 
                 <p>
-                    Biz ko'rib chiqadigan birinchi usul <span class="maxsus">.getElementsByClassName()</span>:
+                    Document Object Model (DOM) veb-hujjatlar uchun dasturlash interfeysi hisoblanadi. 
+                    U sahifani ifodalaydi, shunda dasturlar hujjat tuzilishini, uslubini va mazmunini 
+                    o'zgartirishi mumkin. DOM hujjatni tugunlar va obyektlar sifatida ifodalaydi; 
+                    shu tariqa dasturlash tillari sahifa bilan o'zaro ta'sir qilishi mumkin.
                 </p>
-
-                <div class="oddiy_chegara">
-                    <p>
-                        document.getElementsByClassName();
-                    </p>
-                </div>
 
                 <p>
-                    Xuddi shunday <span class="maxsus">.getElementById()</span>, agar biz yuqoridagi kodni konsolda ishga tushirsak, 
-                    hech narsa olmaymiz, chunki biz unga qidirish kerak bo'lgan klassni aytmagan edik! Xuddi 
-                    <span class="maxsus">.getElementById()</span>, <span class="maxsus">.getElementsByClassName()</span> 
-                    biz uni qidirish/qaytarishni istagan klass 
-                    satri bilan chaqirishimizni kutmoqdamiz:
+                    Veb-sahifa - bu brauzer oynasida yoki HTML manbai sifatida ko'rsatilishi mumkin 
+                    bo'lgan hujjat. Ikkala holatda ham u bir xil hujjat, ammo Document Object Model 
+                    (DOM) tasviri uni boshqarishga imkon beradi. Veb-sahifaning obyektga yo'naltirilgan 
+                    tasviri sifatida uni JavaScript kabi skript tili bilan o'zgartirish mumkin.
                 </p>
-
-                <div class="oddiy_chegara">
-                    <p>
-                        document.getElementsByClassName('brand-color');
-                    </p>
-                </div>
 
                 <p>
-                    Agar siz ushbu usul haqida ko'proq ma'lumot olishni istasangiz, uning MDNdagi hujjatlar sahifasini ko'rib chiqing: 
-                    https://developer.mozilla.org/en-US/docs/Web/API/Document/getElementsByClassName(yangi yorliqda ochiladi) <br>
-
-                    Keling, ushbu usuldan foydalanib ko'rish uchun ushbu MDN hujjatlari sahifasidan foydalanaylik.
+                    Masalan, DOM ushbu kod parchasidagi usul hujjatdagi querySelectorAllbarcha 
+                    elementlarning ro'yxatini qaytarishi kerakligini belgilaydi:&lt;p&gt;
                 </p>
 
-                <div class="center-align">
-                    <video src="DOM L1 40 — GetElementsByClassName.mp4" controls width="65%"></video>
-                </div>
-
-                <div class="havo_chegara">
-                    <h2>S dan ehtiyot bo'ling!</h2>
-                </div>
-
-                <div class="havo_chegara">
-                    <p>
-                        Bilaman, biz hali ko'rib chiqmaganmiz , lekin ikkalasiga nisbatan 
-                        <span class="maxsus">.getElementsByTagName()</span> 
-                        farq qiladigan narsa bor va men buni ta'kidlamoqchiman, 
-                        chunki ularni o'tkazib yuborish oson bo'lishi mumkin; ikkalasi ham va ularning 
-                        nomida qo'shimcha "s" harfi bor. <span class="maxsus">.getElementById()</span> 
-                        <span class="maxsus">.getElementsByClassName()</span> 
-                        <span class="maxsus">.getElementsByTagName()</span> 
-                        <span class="maxsus">.getElementsByClassName()</span>
-                        <span class="maxsus">.getElementsByTagName()</span>
-                    </p>
-                </div>
-
-                <div class="havo_chegara">
-                    <p>
-                        Men buni shunchaki ta'kidlamoqchi edim, chunki kodni ishga 
-                        tushirayotganda ko'p marta "s" harfi yo'qolib qolgan.
-                    </p>
-                </div>
-
-                <div class="havo_chegara">
-                    <div class="oddiy_chegara">
-                        document.getElementByClassName('highlight-spanned');
+                <div class="css">
+                    <p>JS</p>
+                    <div class="css_tana">
+                        <pre>
+                            const paragraphs = document.querySelectorAll("p");
+                            // paragraphs[0] is the first &lt;p&gt; element
+                            // paragraphs[1] is the second &lt;p&gt; element, etc.
+                            alert(paragraphs[0].nodeName);
+                        </pre>
                     </div>
                 </div>
 
-                <div class="havo_chegara">
-                    <p>
-                        Yuqoridagi kod ishlamaydi , chunki DOM usuli yo'q 
-                        <span class="maxsus">.getElementByClassName()</span> (yagona "Element" bilan).
-                    </p>
-                </div>
+                <p>
+                    Veb-sahifalarni boshqarish va yaratish uchun mavjud bo'lgan barcha xususiyatlar, 
+                    usullar va hodisalar obyektlarga ajratilgan. Masalan, documenthujjatning o'zini 
+                    ifodalovchi obyekt, HTML jadvallariga kirish uchun DOM interfeysini tableamalga 
+                    oshiradigan har qanday obyektlar HTMLTableElementva boshqalar barchasi obyektlardir.
+                </p>
 
-                <h2>
-                    Elementlarga ularning yorlig'i orqali kirish
+                <p>
+                    DOM birgalikda ishlaydigan bir nechta APIlar yordamida qurilgan. 
+                    Asosiy DOM har qanday hujjatni va uning ichidagi obyektlarni tavsiflovchi 
+                    obyektlarni belgilaydi. Bu DOMga yangi xususiyatlar va imkoniyatlarni 
+                    qo'shadigan boshqa APIlar tomonidan kerak bo'lganda kengaytiriladi. 
+                    Masalan, HTML DOM API asosiy DOMga HTML hujjatlarini ifodalash uchun 
+                    qo'llab-quvvatlaydi va SVG API SVG hujjatlarini ifodalash uchun qo'llab-quvvatlaydi.
+                </p>
+
+                <h2 class="h2">
+                    DOM daraxti nima?
                 </h2>
 
                 <p>
-                    <span class="maxsus">.getElementById()</span> va ni ko'rib chiqqandan so'ng 
-                    <span class="maxsus">.getElementsByClassName()</span>, 
-                    yangi <span class="maxsus">.getElementsByTagName()</span> usul ko'zga juda oson ko'rinishi kerak:
+                    DOM daraxti - bu tugunlari HTML yoki XML hujjatining tarkibini 
+                    ifodalovchi daraxt tuzilishi . Har bir HTML yoki XML hujjatida 
+                    DOM daraxti tasviri mavjud. Masalan, quyidagi hujjatni ko'rib chiqing:
+                </p>
+                <div class="css">
+                    <p>
+                        HTML
+                    </p>
+                    <div class="css_tana">
+                        <pre>
+                            &lt;html lang=&quot;en&quot;&gt;
+                            &nbsp;  &lt;head&gt;
+                            &nbsp;&nbsp;    &lt;title&gt;My Document&lt;/title&gt;
+                            &nbsp;  &lt;/head&gt;
+                            &nbsp;  &lt;body&gt;
+                            &nbsp;&nbsp;    &lt;h1&gt;Header&lt;/h1&gt;
+                            &nbsp;&nbsp;    &lt;p&gt;Paragraph&lt;/p&gt;
+                            &nbsp;  &lt;/body&gt;
+                            &lt;/html&gt;
+                        </pre>
+                    </div>
+                </div>
+                <p>
+                    Uning DOM daraxti quyidagicha ko'rinadi:
+                </p>
+                <div class="center-align">
+                    <img src="using_the_w3c_dom_level_1_core-doctree.jpg" alt="using_the_w3c_dom_level_1_core-doctree" width="50%">
+                </div>
+                <p>
+                    Yuqoridagi daraxt yuqoridagi hujjatning DOM daraxtiga o'xshash bo'lsa-da, 
+                    ular bir xil emas, chunki haqiqiy DOM daraxti bo'sh joyni saqlab qoladi .
+                </p>
+                <p>
+                    Veb-brauzer HTML hujjatini tahlil qilganda, 
+                    u DOM daraxtini yaratadi va keyin uni hujjatni ko'rsatish uchun ishlatadi.
                 </p>
 
-                <div class="oddiy_chegara">
-                    <p>
-                        document.getElementsByTagName('p');
-                    </p>
-                </div>
+                <h2 class="h2">
+                    DOM va JavaScript
+                </h2>
+
+                
 
                 <p>
-                    Keling, ushbu usuldan foydalanib ko'rish uchun ushbu MDN hujjatlari sahifasidan foydalanaylik: <br>
-                    <a href="/1.Front end/3.Js/8.Hujjat obyekt modeli/8.5.Sahifa elementlarini sinf yoki teg bo'yicha tanlang/DOMga kirish/DOMga kirish.html">
-                        https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model/Introduction
+                    Oldingi qisqa misol, deyarli barcha misollar singari, JavaScript. 
+                    Ya'ni, u JavaScriptda yozilgan , lekin hujjat va uning elementlariga 
+                    kirish uchun DOMdan foydalanadi . DOM dasturlash tili emas, 
+                    lekin usiz JavaScript tilida veb-sahifalar, HTML hujjatlari, 
+                    SVG hujjatlari va ularning tarkibiy qismlari haqida hech qanday model 
+                    yoki tushuncha bo'lmas edi. Hujjatning umumiy ko'rinishi, sarlavha, 
+                    hujjat ichidagi jadvallar, jadval sarlavhalari, jadval katakchalari 
+                    ichidagi matn va hujjatdagi boshqa barcha elementlar ushbu hujjat uchun 
+                    hujjat obyekti modelining qismlari hisoblanadi. Ularning barchasiga 
+                    DOM va JavaScript kabi skript tili yordamida kirish va ularni boshqarish mumkin.
+                </p>
+
+                <p>
+                    DOM JavaScript tilining bir qismi emas, balki veb-saytlar yaratish uchun 
+                    ishlatiladigan veb-API hisoblanadi. JavaScript boshqa kontekstlarda ham 
+                    ishlatilishi mumkin. Masalan, Node.js kompyuterda JavaScript dasturlarini 
+                    ishga tushiradi, lekin boshqa API to'plamini taqdim etadi va DOM API Node.js 
+                    ish vaqtining asosiy qismi emas.
+                </p>
+
+                <p>
+                    DOM biron bir dasturlash tilidan mustaqil bo'lish uchun yaratilgan bo'lib, 
+                    hujjatning strukturaviy ko'rinishini bitta, izchil API orqali taqdim etish 
+                    mumkin edi. Ko'pgina veb-ishlab chiquvchilar DOMdan faqat JavaScript orqali 
+                    foydalansalar ham, DOM implementatsiyalari har qanday til uchun yaratilishi 
+                    mumkin, bu Python misolida ko'rsatilgan:
+                </p>
+
+                <div class="css">
+                    <p>Python</p>
+                    <div class="css_tana">
+                        <pre>
+                            # Python DOM misoli 
+                            import xml.dom.minidom as m
+                            doc = m.parse(r"C:\Projects\Py\chap1.xml")
+                            doc.nodeName # DOM property of document object
+                            p_list = doc.getElementsByTagName("para")
+                        </pre>
+                    </div>
+                </div>
+                <p>
+                    Vebda JavaScript yozishda qanday texnologiyalar ishtirok etishi haqida 
+                    ko'proq ma'lumot olish uchun 
+                    <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/JavaScript_technologies_overview">
+                        JavaScript texnologiyalariga umumiy nuqtai nazarga qarang.
                     </a>
                 </p>
 
-                <div class="center-align">
-                    <video src="DOM L1 43 — GetElementsByTagName.mp4" controls width="65%"></video>
-                </div>
-
-                <h2>
-                    Nima qaytarildi?
-                </h2>
-
-                <div class="center-align">
-                    <video src="DOM L1 48 — Возвращает структуру, подобную массиву.mp4" controls width="65%"></video>
-                </div>
-
-                <p>
-                    <span class="maxsus">.getElementsByClassName()</span> Biz hozirgina elementlarning massivga o'xshash ma'lumotlar 
-                    tuzilmasini qaytaradiganini ko'rdik. Lekin element nima o'zi?
-                </p>
-
-                <p>
-                    Keyingi bo'limda biz Elementlar va Tugunlarni ko'rib chiqamiz.
-                </p>
-
-                <h2>
-                    Bir vaqtning o'zida bir nechta elementlarni tanlash haqida qisqacha ma'lumot
+                <h2 class="h2">
+                    DOMga kirish
                 </h2>
 
                 <p>
-                    Ushbu bo'limda biz bir nechta DOM elementlarini tanlashning ikkita usulini o'rgandik:
+                    DOM dan foydalanishni boshlash uchun siz biron bir maxsus ish qilishingiz shart emas. 
+                    Siz API dan to'g'ridan-to'g'ri JavaScript da, brauzer tomonidan boshqariladigan dastur 
+                    ichidan foydalanasiz.
                 </p>
 
+                <p>
+                    Script yaratganingizda, u 
+                    &lt;script&gt; element ichida yoki veb-sahifaga kiritilgan bo'lsin, 
+                    darhol hujjatning o'zini yoki veb-sahifadagi turli elementlarni 
+                    (hujjatning avlod elementlari) boshqarish uchun documentyoki 
+                    windowobyektlari uchun API dan foydalanishni boshlashingiz mumkin. 
+                    Sizning DOM dasturlashingiz quyidagi misol kabi oddiy bo'lishi mumkin, 
+                    u funksiyadan foydalanib konsolda xabarni ko'rsatadi console.log():
+                </p>
+
+                <div class="css">
+                    <p>HTML</p>
+                    <div class="css_tana">
+                        <pre>
+                            &lt;body onload=&quot;console.log('Welcome to my home page!');&quot;&gt;
+                              &hellip;
+                            &lt;/body&gt;
+                        </pre>
+                    </div>
+                </div>
+                <p>
+                    Sahifa tuzilishini (HTMLda yozilgan) va DOM manipulyatsiyasini 
+                    (JavaScriptda yozilgan) aralashtirish odatda tavsiya etilmasligi sababli, 
+                    JavaScript qismlari bu yerda birlashtiriladi va HTMLdan ajratiladi.
+                </p>
+
+                <p>
+                    Masalan, quyidagi funksiya yangi h1 elementini yaratadi, 
+                    shu elementga matn qo'shadi va keyin uni hujjat daraxtiga qo'shadi:
+                </p>
+
+                <div class="css">
+                    <p>HTML</p>
+                    <div class="css_tana">
+                        <pre>
+                            &lt;html lang=&quot;en&quot;&gt;
+                              &lt;head&gt; &lt;/head&gt;
+                              &lt;body&gt;
+                                &lt;script&gt;
+                                  // create a couple of elements in an otherwise empty HTML page
+                                  const heading = document.createElement(&quot;h1&quot;);
+                                  const headingText = document.createTextNode(&quot;Big Head!&quot;);
+                                  heading.appendChild(headingText);
+                                  document.body.appendChild(heading);
+                                &lt;/script&gt;
+                              &lt;/body&gt;
+                            &lt;/html&gt;
+                        </pre>
+                    </div>
+                </div>
+
+                <h2 class="h2">
+                    DOM interfeyslari
+                </h2>
+
+                <p>
+                    Quyida DOM spetsifikatsiyasi tomonidan belgilangan barcha interfeyslar keltirilgan:
+                </p>
                 <ul>
-                    <li>
-                        .getElementsByClassName()
-                    </li>
-                    <li>
-                        .getElementsByTagName()
-                    </li>
+                    <li><a href="#">AbortController</a></li>
+                    <li><a href="#">AbortSignal</a></li>
+                    <li><a href="#">AbstractRange</a></li>
+                    <li><a href="#">Attr</a></li>
+                    <li><a href="#">CDATASection</a></li>
+                    <li><a href="#">CharacterData</a></li>
+                    <li><a href="#">Comment</a></li>
+                    <li><a href="#">CustomEvent</a></li>
+                    <li><a href="#">Document</a></li>
+                    <li><a href="#">DocumentFragment</a></li>
+                    <li><a href="#">DocumentType</a></li>
+                    <li><a href="#">DOMError Deprecated</a></li>
                 </ul>
 
                 <p>
-                    Ushbu ikkita usul haqida bir nechta muhim narsalarni yodda tutish kerak:
+                    Ushbu qo'llanma DOM ierarxiyasini boshqarish uchun foydalanishingiz mumkin 
+                    bo'lgan obyektlar va haqiqiy narsalar haqida. Ularning qanday ishlashini 
+                    tushunish chalkash bo'lishi mumkin bo'lgan ko'plab jihatlar mavjud. Masalan, 
+                    HTML elementini ifodalovchi obyekt o'z <span class="maxsus">name</span> xususiyatini 
+                    <span class="maxsus">HTMLFormElement</span> interfeysdan, 
+                    <span class="maxsus">className</span> xususiyatini 
+                    esa <span class="maxsus">HTMLElement</span> 
+                    interfeysdan <span class="maxsus">form</span> oladi. Ikkala holatda ham, kerakli xususiyat 
+                    o'sha form obyektida bo'ladi.
                 </p>
-
-                <ul>
-                    <li>
-                        ikkala usul ham document ob'ektdan foydalanadi
-                    </li>
-                    <li>
-                        ikkalasi ham bir nechta elementlarni qaytaradi
-                    </li>
-                    <li>
-                        qaytarilgan ro'yxat massiv emas
-                    </li>
-                </ul>
-
-                <div class="oddiy_chegara">
-                    <p>
-                        <span class="kul">// "accent-color" sinfiga ega bo'lgan barcha belgini tanlash</span> <br>
-                        document.getElementsByClassName('accent-color'); <br><br>
-
-                        <span class="kul">// barcha "span"ni tanlash</span> <br>
-                        document.getElementsByTagName('span');
-                    </p>
-                </div>
-
-                <h3>
-                    Keyingi tadqiqotlar
-                </h3>
-                <ul>
-                    <li>
-                        <a href="/1.Front end/3.Js/8.Hujjat obyekt modeli/8.5.Sahifa elementlarini sinf yoki teg bo'yicha tanlang/1.Document getElementsByClassName() method/1.Document getElementsByClassName() method.html">.getElementsByClassName()</a> MDNda
-                    </li>
-                    <li>
-                        <a href="/1.Front end/3.Js/8.Hujjat obyekt modeli/8.5.Sahifa elementlarini sinf yoki teg bo'yicha tanlang/2.Element getElementsByTagName() method/2.Element getElementsByTagName() method.html">.getElementsByTagName()</a> MDNda
-                    </li>
-                </ul>
             </div>
         </div> 
     </div>
