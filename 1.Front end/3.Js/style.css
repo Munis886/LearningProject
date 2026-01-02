@@ -484,25 +484,25 @@ pre {
     border-radius: 15px 0 0 15px;
   } */
   
-  .Eslatma .Eslatma_tana {
+.Eslatma .Eslatma_tana {
     background-color: var(--note-background); 
     padding: 15px 12px 15px 36px; 
     border-radius: 0 10px 10px 0;
     
   }
   
-  .Eslatma_tana {
+.Eslatma_tana {
       position: relative; /* Konteynerni nisbiy pozitsiyaga qo'yamiz */
       padding: 15px 15px 5px 10px;
       }
   
-  .Eslatma_tana > p {
+.Eslatma_tana > p {
     margin: 0;
     padding: 0;
     color: white;
   }
   
-  .Eslatma_tana::before {
+.Eslatma_tana::before {
       content: "i";
       position: absolute;
       top: 17px; /* Belgilangan joylashuv */
@@ -514,6 +514,59 @@ pre {
       width: 16px;
       height: 16px;
       border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 12px;
+}
+
+
+.Ogohlantirish {
+    display: flex; 
+    margin: 15px auto; 
+    width: 80%;
+    border-left: 3px solid rgba(170, 22, 22, 0.8);
+    border-radius: var(--elem-radius);
+    color: var(--text-secondary);
+  }
+  
+  /* .Eslatma .chap_yon {
+    width: 1%; 
+    background-color: cyan; 
+    border-radius: 15px 0 0 15px;
+  } */
+  
+.Ogohlantirish .Ogohlantirish_tana {
+    background-color: rgba(163, 32, 32, 0.3); 
+    padding: 15px 12px 15px 36px; 
+    border-radius: 0 10px 10px 0;
+  }
+  
+.Ogohlantirish_tana {
+      position: relative; /* Konteynerni nisbiy pozitsiyaga qo'yamiz */
+      padding: 15px 15px 5px 10px;
+      }
+  
+.Ogohlantirish_tana > p {
+    margin: 0;
+    padding: 0;
+    color: #333;
+  }
+  
+.Ogohlantirish_tana::before {
+      content: "i";
+      position: absolute;
+      top: 17px; /* Belgilangan joylashuv */
+      left: 10px; /* Chapdan joylashuv */
+      right: 10px; /* O'ngdan joylashuv */
+      bottom: 0px;
+      background-color: brown;
+      opacity: 0.6;
+      color: white;
+      font-weight: bold;
+      width: 16px;
+      height: 16px;
+      border-radius: 2px 2px;
       display: flex;
       align-items: center;
       justify-content: center;

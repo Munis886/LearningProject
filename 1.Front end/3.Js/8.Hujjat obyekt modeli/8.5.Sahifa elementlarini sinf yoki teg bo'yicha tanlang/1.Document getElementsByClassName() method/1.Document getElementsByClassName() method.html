@@ -1012,54 +1012,66 @@
             <div class="sarlavha">
                 <ul>
                     <li class="li_1">
-                        <a href="/1.Front end/3.Js/8.Hujjat obyekt modeli/8.4.Elementni ID orqali tanlash/8.4.Elementni ID orqali tanlash.html">⟨</a>
+                        <a href="/1.Front end/3.Js/8.Hujjat obyekt modeli/8.5.Sahifa elementlarini sinf yoki teg bo'yicha tanlang/8.5.Sahifa elementlarini sinf yoki teg bo'yicha tanlang.html">⟨</a>
                     </li>
                     <li class="li_2">
-                        Sahifa elementlarini sinf yoki teg bo'yicha tanlang
-                    </li>
-                    <li class="li_3">
-                        <a href="/1.Front end/3.Js/8.Hujjat obyekt modeli/8.6.Tugunlar, elementlar va interfeyslar... Voy Xudoyim!/8.6.Tugunlar, elementlar va interfeyslar... Voy Xudoyim!.html">
-                            ⟩
-                        </a>
+                        Document: getElementsByClassName() method
                     </li>
                 </ul>
             </div>
 
             <div id="text" class="qisqa">
-                <h3>
-                    Bir vaqtning o'zida bir nechta elementlarni tanlash
-                </h3>
                 <p>
-                    HTML tuzilishi va CSS uslublarini o'rganishdan esingizdami, identifikator noyob bo'lishi kerak - 
-                    ya'ni ikki yoki undan ortiq elementlar hech qachon bir xil identifikatorga ega bo'lmasligi kerak. 
-                    IDlar noyob bo'lgani uchun va HTMLda ushbu identifikator bilan faqat bitta element bo'lgani uchun, 
-                    document.getElementById()ular faqat bitta elementni qaytaradi. Xo'sh, qanday qilib bir nechta 
-                    DOM elementlarini tanlaymiz?
-                </p>
-                
-                <p>
-                    Keyingi ikkita DOM usulini ko'rib chiqamiz, ikkalasi ham bir nechta elementlarni qaytaradi:
+                    <span class="maxsus">getElementsByClassName</span>
+                    Interfeys usuli berilgan Documentbarcha sinf nomlariga ega bo'lgan 
+                    barcha bolalar elementlarining massivga o'xshash obyektini qaytaradi.
                 </p>
 
-                <ul>
-                    <li><span class="maxsus">.getElementsByClassName()</span></li>
-                    <li><span class="maxsus">.getElementsByTagName()</span></li>
-                </ul>
+                <p>
+                    Ob'ektga chaqirilganda document, ildiz tugunini o'z ichiga olgan holda, 
+                    to'liq hujjat qidiriladi. Siz shuningdek, 
+                    <span class="maxsus">getElementsByClassName()</span> istalgan 
+                    elementga ham murojaat qilishingiz mumkin; u faqat berilgan klass nomlari 
+                    bilan ko'rsatilgan ildiz elementining avlodlari bo'lgan elementlarni qaytaradi.
+                </p>
                 
-                <h2>
-                    Elementlarga ularning sinfi bo'yicha kirish
+                <div class="Ogohlantirish">
+                    <div class="Ogohlantirish_tana">
+                        <p>
+                            Ogohlantirish: Bu jonli HTMLCollection. 
+                            DOMdagi o'zgarishlar o'zgarishlar yuz berganda 
+                            massivda aks etadi. Agar ushbu massiv tomonidan 
+                            tanlangan element endi selektorga mos kelmasa, u 
+                            avtomatik ravishda o'chiriladi. Iteratsiya maqsadlarida 
+                            bunga e'tibor bering.
+                        </p>
+                    </div>
+                </div>
+                
+                <h2 class="h2">
+                    Sintaksis
                 </h2>
 
-                <p>
-                    Biz ko'rib chiqadigan birinchi usul <span class="maxsus">.getElementsByClassName()</span>:
-                </p>
-
-                <div class="oddiy_chegara">
-                    <p>
-                        document.getElementsByClassName();
-                    </p>
+                <div class="css">
+                    <p>JS</p>
+                    <div class="css_tana">
+                        <p>
+                            getElementsByClassName(names)
+                        </p>
+                    </div>
                 </div>
 
+                <h3 class="h3">
+                    Parametrlar
+                </h3>
+                <dl>
+                    <dt>
+                        <span class="maxsus">names</span>
+                    </dt>
+                    <dd>
+                        Mos keladigan sinf nomi(lari)ni ifodalovchi satr; bir nechta sinf nomlari bo'sh joy bilan ajratilgan.
+                    </dd>
+                </dl>
                 <p>
                     Xuddi shunday <span class="maxsus">.getElementById()</span>, agar biz yuqoridagi kodni konsolda ishga tushirsak, 
                     hech narsa olmaymiz, chunki biz unga qidirish kerak bo'lgan klassni aytmagan edik! Xuddi 
@@ -1190,7 +1202,7 @@
 
                 <ul>
                     <li>
-                        ikkala usul ham document ob'ektdan foydalanadi
+                        ikkala usul ham documentob'ektdan foydalanadi
                     </li>
                     <li>
                         ikkalasi ham bir nechta elementlarni qaytaradi
@@ -1215,7 +1227,7 @@
                 </h3>
                 <ul>
                     <li>
-                        <a href="/1.Front end/3.Js/8.Hujjat obyekt modeli/8.5.Sahifa elementlarini sinf yoki teg bo'yicha tanlang/1.Document getElementsByClassName() method/1.Document getElementsByClassName() method.html">.getElementsByClassName()</a> MDNda
+                        <a href="https://developer.mozilla.org/en-US/docs/Web/API/Document/getElementsByClassName">.getElementsByClassName()</a> MDNda
                     </li>
                     <li>
                         <a href="https://developer.mozilla.org/en-US/docs/Web/API/Element/getElementsByTagName">.getElementsByTagName()</a> MDNda
