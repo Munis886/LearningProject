@@ -1,0 +1,336 @@
+@import url("../code-example/common.css");
+@import url("../prev-next/index.css");
+@import url("../notecard/index.css");
+@import url("../code-example/prism.css");
+
+.content-section {
+  line-height: var(--font-line-content);
+}
+
+.content-section :target {
+    scroll-margin-top: var(--sticky-header-height);
+  }
+
+.content-section h2,.content-section h3,.content-section h4,.content-section h5,.content-section h6 {
+    margin: 1rem 0 0;
+    font-weight: var(--font-weight-normal);
+  }
+
+.content-section h2 {
+    font-size: var(--font-size-larger);
+  }
+
+.content-section h3 {
+    font-size: var(--font-size-large);
+  }
+
+.content-section h4 {
+    font-size: var(--font-size-medium);
+  }
+
+.content-section h5,.content-section h6 {
+    font-size: var(--font-size-normal);
+    font-weight: var(--font-weight-bold);
+  }
+
+:is(.content-section a):visited {
+      color: var(--color-link-visited);
+    }
+
+/* Regular links */
+
+:is(.content-section a):not([href^="#"]) {
+      -webkit-text-decoration: underline;
+      text-decoration: underline;
+    }
+
+:is(.content-section a):not([href^="#"]):hover {
+        -webkit-text-decoration: none;
+        text-decoration: none;
+      }
+
+/* Anchor links */
+
+[href^="#"]:is(.content-section a) {
+      -webkit-text-decoration: none;
+      text-decoration: none;
+    }
+
+[href^="#"]:is(.content-section a):hover {
+        -webkit-text-decoration: underline;
+        text-decoration: underline;
+      }
+
+.content-section blockquote {
+    margin-inline: 0;
+    color: var(--color-text-secondary);
+    border-inline-start: 0.25rem solid var(--color-border-primary);
+  }
+
+:is(.content-section blockquote)  > p {
+      padding: 1rem 2rem;
+    }
+
+.content-section pre,.content-section code {
+    font-family: var(--font-family-code);
+    background-color: var(--color-background-secondary);
+  }
+
+.content-section pre {
+    white-space: pre-wrap;
+  }
+
+.content-section pre:not(.code-example pre) {
+    padding: 1rem;
+
+    overflow: auto;
+
+    border: 1px solid var(--color-border-primary);
+    border-radius: 0.25rem;
+  }
+
+.css-formal-syntax:is(.content-section pre:not(.code-example pre)) {
+      margin-bottom: 0;
+
+      text-wrap: wrap;
+
+      border-bottom-right-radius: 0;
+      border-bottom-left-radius: 0;
+    }
+
+.css-formal-syntax:is(.content-section pre:not(.code-example pre))  ~ footer {
+        padding: 0.5rem 1rem;
+        margin-bottom: 1rem;
+
+        border: 1px solid var(--color-border-primary);
+        border-top: 0;
+        border-bottom-right-radius: 0.25rem;
+        border-bottom-left-radius: 0.25rem;
+      }
+
+.content-section code {
+    padding: 0.125em 0.25em;
+    border-radius: var(--radius-normal);
+  }
+
+.content-section kbd {
+    padding: 0.0625em 0.125em;
+
+    font-family: var(--font-family-code);
+
+    color: var(--color-text-secondary);
+
+    background-color: var(--color-background-primary);
+    border: 1px solid var(--color-border-primary);
+    border-bottom-width: 2px;
+    border-radius: var(--radius-normal);
+  }
+
+.content-section img {
+    display: block;
+
+    margin: 2rem auto;
+
+    background-color: var(--color-white);
+    border: 1px solid var(--color-border-primary);
+    border-radius: 0.25rem;
+  }
+
+.content-section table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+
+:is(.content-section table) tr {
+      background-color: var(--color-background-primary);
+    }
+
+:is(.content-section table) thead tr,:is(.content-section table) tr:nth-of-type(2n) {
+      background-color: var(--color-background-page);
+    }
+
+:is(.content-section table) th,:is(.content-section table) td {
+      padding: 0.5rem 0.75rem;
+      border: 1px solid var(--color-border-primary);
+    }
+
+:is(.content-section table) th {
+      font-weight: var(--font-weight-normal);
+      text-align: left;
+    }
+
+.properties:is(.content-section table) th,.properties:is(.content-section table) td {
+        border-width: 1px 0;
+      }
+
+.properties:is(.content-section table) th {
+        font-weight: var(--font-weight-bold);
+        background-color: transparent;
+      }
+
+.content-section .code-example,.content-section mdn-code-example,.content-section mdn-live-sample-result {
+    margin: 1rem 0;
+  }
+
+:is(.content-section .code-example,.content-section mdn-code-example,.content-section mdn-live-sample-result) + :is(.content-section .code-example,.content-section mdn-code-example,.content-section mdn-live-sample-result) {
+      margin-top: 1.5rem;
+    }
+
+.content-section interactive-example {
+    display: block;
+    height: 375px;
+    margin: 1rem 0;
+  }
+
+[name^="JavaScript Demo:" i]:is(.content-section interactive-example) {
+      height: 444px;
+    }
+
+[height="shorter"]:is(.content-section interactive-example) {
+      height: 364px;
+    }
+
+[height="taller"]:is(.content-section interactive-example) {
+      height: 654px;
+    }
+
+[height="tabbed-shorter"]:is(.content-section interactive-example) {
+      height: 351px;
+      margin-top: 1.5rem;
+    }
+
+[height="tabbed-standard"]:is(.content-section interactive-example) {
+      height: 421px;
+    }
+
+[height="tabbed-taller"]:is(.content-section interactive-example) {
+      height: 631px;
+    }
+
+@media (width <= 992px) {
+
+.content-section interactive-example {
+      height: 675px;
+  }
+
+      [name^="JavaScript Demo:" i]:is(.content-section interactive-example) {
+        height: 513px;
+      }
+
+      [height="shorter"]:is(.content-section interactive-example) {
+        height: 433px;
+      }
+
+      [height="taller"]:is(.content-section interactive-example) {
+        height: 725px;
+      }
+
+      [height="tabbed-shorter"]:is(.content-section interactive-example) {
+        height: 487px;
+      }
+
+      [height="tabbed-standard"]:is(.content-section interactive-example) {
+        height: 548px;
+      }
+
+      [height="tabbed-taller"]:is(.content-section interactive-example) {
+        height: 774px;
+      }
+    }
+
+/* Definition list */
+
+:is(.content-section dl) dl {
+      padding-left: 1rem;
+      border-left: 1px solid var(--color-border-primary);
+    }
+
+:is(.content-section dl) dd {
+      margin-left: 1rem;
+
+      /* Move description closer to term. */
+    }
+
+:is(:is(.content-section dl) dd) p:first-child {
+        margin-top: 0.5rem;
+      }
+
+:is(.content-section dl) ul {
+      margin: 1rem 0 2rem;
+    }
+
+:is(.content-section dl) dt a[href^="#"] {
+      color: inherit;
+    }
+
+:is(:is(.content-section dl) dt a[href^="#"]):hover::before {
+        position: absolute;
+
+        margin-top: 0.3em;
+        margin-left: -0.9em;
+
+        font-size: var(--font-size-small);
+
+        color: var(--color-text-secondary);
+
+        content: "#";
+      }
+
+:is(.content-section ul.specifications-list) li:has(details) {
+      margin-left: -1.25rem;
+      list-style: none;
+    }
+
+:is(.content-section ul.specifications-list) details {
+      width: 100%;
+    }
+
+[open]:is(:is(.content-section ul.specifications-list) details)  > summary {
+          margin-bottom: 0.5rem;
+        }
+
+:is([open]:is(:is(.content-section ul.specifications-list) details) > summary)::before {
+            transform: rotate(90deg);
+          }
+
+:is(:is(.content-section ul.specifications-list) details) summary {
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+      }
+
+:is(:is(:is(.content-section ul.specifications-list) details) summary)::before {
+          display: inline-block;
+
+          flex-shrink: 0;
+
+          width: 1rem;
+          height: 1rem;
+
+          margin: 0.125rem;
+
+          content: "";
+
+          background-color: currentcolor;
+
+          -webkit-mask-image: url("../icon/chevron-right.svg");
+
+                  mask-image: url("../icon/chevron-right.svg");
+          -webkit-mask-size: cover;
+                  mask-size: cover;
+        }
+
+:is(:is(:is(.content-section ul.specifications-list) details) summary):hover {
+          background-color: var(--color-background-secondary);
+        }
+
+:is(:is(:is(.content-section ul.specifications-list) details) summary):hover:has(a:hover) {
+            /* Don't highlight, as link click doesn't toggle. */
+            background-color: unset;
+          }
+
+/* Article footer */
+
+.content-section.article-footer {
+    margin: 2rem 0;
+  }

@@ -43,7 +43,7 @@ body,div,ul,li,h1,h2{
     background-size: cover; /* Rasm butun sahifani qoplashi */
     background-position: center; /* Rasm markazda bo'lishi */
     background-repeat: no-repeat; /* Rasm takrorlanmasligi */
-    height: 550px;
+    height: 440px;
     
 }
 
@@ -57,6 +57,8 @@ body,div,ul,li,h1,h2{
     margin: 0 auto;
     padding: 26px;
     background-color: turquoise;
+    -webkit-text-stroke: 1px black;
+    font-size: large;
     text-shadow: 1px 0px yellowgreen;
     width: 70%;
     border-radius: 8px 25px;

@@ -7,8 +7,9 @@
     <meta name="description" content="Bu yerda Css haqida batafsil ma'lumotlar">
     <title>@media</title>
     <link rel="stylesheet" href="/1.Front end/2.Css/style.css">
-    <link rel="stylesheet" href="style.css">    
     <script src="/1.Front end/2.Css/Js.js"></script>
+    <link rel="stylesheet" href="style.css">    
+    <link rel="stylesheet" href="/1.Front end/2.Css/10.CSS qoidalari/style.css">
     
 </head>
 <body>
@@ -19,8 +20,8 @@
     </div>
     <div id="menyu">
     <div class="menyu">
+        <button id="toggle-btn" onclick="toggleMenu()">Menu</button>
         <ul>
-            <button id="toggle-btn" onclick="toggleMenu()">Menu</button>
             <li><a href="/index.html">HOME</a></li>
             <li><a href="/1.Front end/1.Front_end.html">FRONT END</a></li>
             <li><a href="/1.Front end/1.HTML/1.HTML.html">HTML</a></li>
@@ -90,9 +91,9 @@
             <div id="sarlavha">
                 <h2>@media</h2>
             </div>
-            <div id="text qisqa">
+            <div class="text qisqa">
                   
-                <p style="font-variant: no-common-ligatures proportional-nums;">
+                <p>
                     @media CSS at-qoidasi bir yoki bir nechta media so'rovlari 
                     natijasiga asoslangan uslublar jadvalining bir qismini qo'llash 
                     uchun ishlatilishi mumkin. Uning yordamida siz media so'rovi va 
@@ -100,38 +101,12 @@
                     kontent ishlatilayotgan qurilmaga mos keladigan bo'lsa.
                 </p>
 
-                <style>
-                    .Eslatma {
-                        position: relative; /* Konteynerni nisbiy pozitsiyaga qo'yamiz */
-                        padding: 15px 15px 5px 10px;
-                    }
-                    .Eslatma::before {
-                        content: "i";
-                        position: absolute;
-                        top: 2px; /* Belgilangan joylashuv */
-                        left: 1px; /* Chapdan joylashuv */
-                        background-color: #60a5fa;
-                        color: white;
-                        font-weight: bold;
-                        width: 16px;
-                        height: 16px;
-                        border-radius: 50%;
-                        display: flex;
-                        align-items: center;
-                        justify-content: center;
-                        font-size: 12px;
-                    }
-                </style>
-                <div style="display: flex; margin: 15px auto; width: 80%;" >
-                    <div  style="width: 1%; background-color: cyan; border-radius: 15px 0 0 15px;">
-                        
-                    </div>
+
+
+                <div class="Eslatma">
                     
-                    <div style="background-color: aquamarine; padding: 15px 15px; border-radius: 0 10px 10px 0; display: flex;">
-                        <div class="Eslatma">
-                        
-                        </div>
-                        <p style="padding: 0; margin: 0;">
+                    <div class="Eslatma_tana"> 
+                        <p>
                             <b>Eslatma:</b> JavaScript-da @media yordamida yaratilgan qoidalarga 
                             CSMediaRule CSS obyekt modeli interfeysi orqali kirish mumkin.
                         </p>
@@ -244,7 +219,7 @@
                         Asosan ekranlar uchun mo'ljallangan.
                    </dd>
                 </dl>
-                <style>
+                <!-- <style>
                     .Eslatma {
                         position: relative; /* Konteynerni nisbiy pozitsiyaga qo'yamiz */
                         padding: 15px 15px 5px 10px;
@@ -265,18 +240,13 @@
                         justify-content: center;
                         font-size: 12px;
                     }
-                </style>
+                </style> -->
                 
-                <div style="display: flex; margin: 15px auto; width: 80%;" >
-                    <div  style="width: 1%; background-color: cyan; border-radius: 15px 0 0 15px;">
-                        
-                    </div>
+                <div class="Eslatma">
+
                     
-                    <div style="background-color: aquamarine; padding: 15px 15px; border-radius: 0 10px 10px 0; display: flex;">
-                        <div class="Eslatma">
-                        
-                        </div>
-                        <p style="padding: 0; margin: 0;">
+                    <div class="Eslatma_tana">
+                        <p>
                             <b>Eslatma:</b> CSS2.1 va Media Queries 3 bir nechta qo'shimcha media turlarini 
                             (tty, tv, proyeksiya, portativ, brayl, bo'rttirma va aural) aniqladi, lekin 
                             ular Media Queries 4 da eskirgan va ishlatilmasligi kerak.

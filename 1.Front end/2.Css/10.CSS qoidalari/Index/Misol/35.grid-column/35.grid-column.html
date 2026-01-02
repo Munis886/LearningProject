@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <title>CSS Demo: font-variant</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="../../css/codemirror.css?v=220ae8b" rel="stylesheet" />
+    <link rel="stylesheet" href="../../css/editor-css.css?v=220ae8b" />
+    <link rel="stylesheet" href="../.././live-examples/css-examples/fonts/font-variant.css" />
+  </head>
+
+  <body>
+    <section class="css-editor-container">
+      <header class="output-header border-rounded-top">
+        <h4 class="output-heading">CSS Demo: font-variant</h4>
+        <button id="reset" class="reset" type="button">Reset</button>
+      </header>
+      <noscript>
+        <div id="warning-no-script" class="warning-container">
+          <div class="warning">
+            Interactive examples cannot be shown because JavaScript is disabled.
+          </div>
+        </div>
+      </noscript>
+      <div id="warning-no-support" class="warning-container hidden">
+        <div class="warning">
+          This feature is not supported by your current browser. Check Browser
+          compatibility for more details.
+        </div>
+      </div>
+      <div
+        id="editor-wrapper"
+        class="editor-wrapper border-rounded-bottom hidden"
+      >
+        <section id="example-choice-list" class="example-choice-list" data-property="font-variant">
+  <div class="example-choice" initial-choice="true">
+    <pre><code class="language-css">font-variant: normal;</code></pre>
+    <button type="button" class="copy hidden" aria-hidden="true">
+      <span class="visually-hidden">Copy to Clipboard</span>
+    </button>
+  </div>
+
+  <div class="example-choice">
+    <pre><code class="language-css">font-variant: no-common-ligatures proportional-nums;</code></pre>
+    <button type="button" class="copy hidden" aria-hidden="true">
+      <span class="visually-hidden">Copy to Clipboard</span>
+    </button>
+  </div>
+
+  <div class="example-choice">
+    <pre><code class="language-css">font-variant: common-ligatures tabular-nums;</code></pre>
+    <button type="button" class="copy hidden" aria-hidden="true">
+      <span class="visually-hidden">Copy to Clipboard</span>
+    </button>
+  </div>
+
+  <div class="example-choice">
+    <pre><code class="language-css">font-variant: small-caps slashed-zero;</code></pre>
+    <button type="button" class="copy hidden" aria-hidden="true">
+      <span class="visually-hidden">Copy to Clipboard</span>
+    </button>
+  </div>
+</section>
+
+<div id="output" class="output hidden">
+  <section id="default-example">
+    <div id="example-element">
+      <p>Difficult waffles</p>
+      <table>
+        <tr>
+          <td><span class="tabular">0O</span></td>
+        </tr>
+        <tr>
+          <td><span class="tabular">3.14</span></td>
+        </tr>
+        <tr>
+          <td><span class="tabular">2.71</span></td>
+        </tr>
+      </table>
+    </div>
+  </section>
+</div>
+
+      </div>
+    </section>
+    <div id="user-message" class="user-message" aria-hidden="true">Copied!</div>
+    <script src="../../js/codemirror.js?v=220ae8b"></script>
+    <script src="../../js/editor-css.js?v=220ae8b"></script>
+    
+  </body>
+</html>
