@@ -1012,137 +1012,233 @@
             <div class="sarlavha">
                 <ul>
                     <li class="li_1">
-                        <a href="/1.Front end/3.Js/8.Hujjat obyekt modeli/8.3.CSS ma’nosi/8.3.CSS ma’nosi.html">⟨</a>
+                        <a href="/1.Front end/3.Js/8.Hujjat obyekt modeli/8.4.Elementni ID orqali tanlash/8.4.Elementni ID orqali tanlash.html">⟨</a>
                     </li>
                     <li class="li_2">
-                        Elementni ID orqali tanlash
-                    </li>
-                    <li class="li_3">
-                        <a href="/1.Front end/3.Js/8.Hujjat obyekt modeli/8.5.Sahifa elementlarini sinf yoki teg bo'yicha tanlang/8.5.Sahifa elementlarini sinf yoki teg bo'yicha tanlang.html">
-                            ⟩
-                        </a>
+                        Hujjat: getElementById() usuli
                     </li>
                 </ul>
             </div>
 
             <div id="text" class="qisqa">
-                <h3>
-                    Elementni ID orqali tanlash
-                </h3>
+
                 <p>
-                    Keling, qandaydir ID atributdan foydalanib elementlarga murojaat qilish 
-                    uchun JavaScript va DOMdan qanday foydalanishimiz mumkinligini ko‘rib chiqamiz.
+                    <span class="maxsus">getElementById()</span> Interfeys usuli, xususiyati ko'rsatilgan satrga mos keladigan elementni 
+                    ifodalovchi obyektni Document qaytaradi. Element identifikatorlari ko'rsatilgan taqdirda 
+                    noyob bo'lishi shart bo'lganligi sababli, ular ma'lum bir elementga tezda kirishning 
+                    foydali usuli hisoblanadi. <span class="maxsus">Elementid</span>
                 </p>
                 
                 <p>
-                    Oldingi bo‘limdagi hujjat obyekti esingizdami? Yaxshi, 
-                    endi biz undan foydalanishni boshlaymiz! Shuni esda tutingki, 
-                    hujjat obyekti JavaScript kabi hamdir. Bu kalit/qiymat juftligiga ega 
-                    ekanligini anglatadi. Ba’zi qiymatlar shunchaki ma’lumotlarning bir qismi, 
-                    boshqalari esa funksiyalarning ayrim turini ta’minlaydigan funksiyalar 
-                    (shuningdek, metodlar deb nomlanadi!) DOM ni birinchi usulini ko‘rib chiqamiz. 
-                    <span class="maxsus">.getElementById()</span> metodi:
+                    Agar siz identifikatorga ega bo'lmagan elementga kirish huquqiga ega bo'lishingiz kerak bo'lsa, 
+                    querySelector() elementni topish uchun istalgan selektordan foydalanishingiz mumkin .
                 </p>
 
-                <div class="oddiy_chegara">
-                    <p>
-                        document.getElementById();
-                    </p>
+                <div class="Eslatma">
+
+                    <div class="Eslatma_tana">
+                        <p>
+                            Izoh: IDlar hujjat ichida noyob bo'lishi kerak. Agar hujjatdagi ikki yoki undan ortiq elementlar bir xil identifikatorga ega bo'lsa, bu usul topilgan birinchi elementni qaytaradi.
+                        </p>
+                    </div>
                 </div>
                 
-                <p>
-                    Agar biz yuqoridagi kodni konsolda ishlatsak, biz hech narsa ololmaymiz, 
-                    chunki olish uchun biron bir elementning IDsini ko‘rsatmadik! Biz topmoqchi 
-                    bo‘lgan element IDni <span class="maxsus">.getElementByID()</span>ga satrni 
-                    uzatib, keyin uni topib bizga qaytaradi:
-                </p>
-
-               <div class="oddiy_chegara">
+                <h2 class="h2">
+                    Sintaksis   
+                </h2>
+               <div class="css">
                     <p>
-                        document.getElementById('footer');
+                        JS
                     </p>
+                    <div class="css_tana">
+                        <p>
+                            getElementById(id)
+                        </p>
+                    </div>
                </div>
 
+                <div class="Eslatma">
+                    <div class="Eslatma_tana">
+                        <p>
+                            Eslatma:"Id" Ushbu usul nomidagi bosh harflar kodning ishlashi uchun 
+                            to'g'ri bo'lishi kerak getElementByID() ; bu haqiqiy emas va qanchalik 
+                            tabiiy ko'rinmasin, ishlamaydi.
+                        </p>
+                    </div>
+                </div>
+
+                <h3 class="h3">
+                    Parametrlar
+                </h3>
+                <dt>
+                    <dl>
+                        <span class="maxsus">id</span>
+                    </dl>
+                    <dd>
+                        Topiladigan elementning identifikatori. ID - bu hujjat ichida noyob bo'lgan 
+                        katta-kichik harflarga sezgir satr; faqat bitta element berilgan identifikatorga 
+                        ega bo'lishi kerak.
+                    </dd>
+                </dt>
+                
+                <h3 class="h3">Qaytish qiymati</h3>
+
                 <p>
-                    Ushbu metod haqida ko‘proq ma’lumot olishni istasangiz hujjatlar sahifasini 
-                    ko‘rib chiqing: 
-                    <a href="/1.Front end/3.Js/8.Hujjat obyekt modeli/8.4.Elementni ID orqali tanlash/1.Hujjat getElementById() usuli/1.Hujjat getElementById() usuli.html">
-                        https://developer.mozilla.org/en-US/docs/Web/API/Document/getElementById
-                    </a>
-                    <br>
-                    Keling ushbu MDN hujjati sahifasidan ushbu metodni ishlatishda foydalanmiz.
+                    Element Belgilangan identifikatorga mos keladigan DOM element obyektini 
+                    tavsiflovchi yoki hujjatda nullmos keladigan element topilmagan bo'lsa.
                 </p>
 
-                <div class="center-align">
-                    <video src="DOM L1 31 — Выбор содержимого.mp4" controls width="65%"></video>
+                <h2 class="h2">
+                    Misollar
+                </h2>
+
+                <h3 class="h3">HTML</h3>
+                
+                <div class="css">
+                    <p>HTML</p>
+                    <div class="css_tana">
+                        <pre>
+                            &lt;p id=&quot;para&quot;&gt;Some text here&lt;/p&gt;
+                            &lt;button&gt;blue&lt;/button&gt;
+                            &lt;button&gt;red&lt;/button&gt;
+                        </pre>
+                    </div>
+                </div>
+
+                <h2 class="h2">
+                    JavaScript
+                </h2>
+
+                <div class="css">
+                    <p>JS</p>
+                    <div class="css_tana">
+                        <pre>
+                            function changeColor(newColor) {
+                                const elem = document.getElementById("para");
+                                elem.style.color = newColor;
+                              }
+                              
+                              document.querySelectorAll("button").forEach((button) => {
+                                button.addEventListener("click", (event) => {
+                                  changeColor(event.target.textContent.toLowerCase());
+                                });
+                            });
+                        </pre>
+                    </div>
                 </div>
                 
-                <p>
-                    Hozirgina nimalarni bajarganimizni takrorlashimiz uchun:
-                </p>
+                <h2 class="h2">
+                    Natija
+                </h2>
 
-                <ul>
-                    <li>
-                        biz ko‘rib chiqqan sahifa uchun DevToolsni ochdik
-                    </li>
-                    <li>
-                        Console paneliga o‘tdik
-                    </li>
-                    <li>
-                        biz document.getElementById('content'); ni konsolda ishga tushirdik
-                    </li>
-                </ul>
-
-                <p>
-                    Ushbu kodni ishga tushirish, hujjat obyekti ID "kontentiga" ega 
-                    bo‘lgan elementni butun daraxtga o‘xshash tuzilishni ishlashiga olib keladi.
-                </p>
-
-                <div class="center-align">
-                    <video src="DOM L1 35 — Просмотр возвращенного узла.mp4" controls width="65%"></video>
+                <div class="css">
+                    <p>Natija</p>
+                    
+                    <div class="css_tana">
+                        <p id="para">
+                            Some text here
+                        </p>
+                        <p>
+                            <button>blue</button>
+                            <button>red</button>
+                        </p>
+                    </div>
+                    <script>
+                        function changeColor(newColor) {
+                                const elem = document.getElementById("para");
+                                elem.style.color = newColor;
+                              }
+                              
+                              document.querySelectorAll("button").forEach((button) => {
+                                button.addEventListener("click", (event) => {
+                                  changeColor(event.target.textContent.toLowerCase());
+                                });
+                            });
+                    </script>
                 </div>
 
-                <h2>
-                    Selecting By ID Recap
+                <h2 class="h2">
+                    Foydalanish bo'yicha eslatmalar
                 </h2>
 
                 <p>
-                    In this section, we learned how to select a DOM element by its ID:
+                    <span class="maxsus">Document.querySelector()</span> 
+                    va 
+                    <span class="maxsus">Document.querySelectorAll()</span> kabi boshqa 
+                    elementlarni qidirish usullaridan 
+                    farqli o'laroq, <span class="maxsus">getElementById()</span> faqat global 
+                    obyektning usuli sifatida mavjud document va DOMdagi barcha element obyektlarida 
+                    usul sifatida mavjud emas. ID qiymatlari butun hujjat bo'ylab noyob 
+                    bo'lishi kerakligi sababli, funksiyaning "mahalliy" versiyalariga ehtiyoj yo'q.
                 </p>
 
-                <ul>
-                    <li>
-                        <span class="maxsus">.getElementById()</span>
-                    </li>
-                </ul>
+                <h2 class="h2">
+                    Misol
+                </h2>
 
-                <p>
-                    There are a couple of important things to keep in mind about this method:
-                </p>
-
-                <ul>
-                    <li>
-                        it is called on the <span class="maxsus">document</span> object
-                    </li>
-                    <li>
-                        it returns a single item
-                    </li>
-                </ul>
-
-                <div class="oddiy_chegara">
+                <div class="css">
+                    <p>HTML</p>
+                    <div class="css_tana">
+                        <pre>
+                            &lt;div id=&quot;parent-id&quot;&gt;
+                              &lt;p&gt;hello word1&lt;/p&gt;
+                              &lt;p id=&quot;test1&quot;&gt;hello word2&lt;/p&gt;
+                              &lt;p&gt;hello word3&lt;/p&gt;
+                              &lt;p&gt;hello word4&lt;/p&gt;
+                            &lt;/div&gt;
+                        </pre>
+                    </div>
+                </div>
+                <p></p>
+                <div class="css">
                     <p>
-                        <span class="kul">// "qo'ng'iroq" identifikatoriga ega elementni tanlang</span> <br>
-                        document.getElementById('callout');
+                        JS
                     </p>
+                    <div class="css_tana">
+                        <pre>
+                            const parentDOM = document.getElementById("parent-id");
+                            const test1 = parentDOM.getElementById("test1");
+                        </pre>
+                    </div>
                 </div>
 
-                <h2>
-                    Further Research
-                </h2>
+                <p>
+                    Agar berilgan element bo'lmasa id, bu funksiya ni qaytaradi null. 
+                    E'tibor bering, id parametr katta-kichik harflarga sezgir, 
+                    shuning uchun element o'rniga document.getElementById("Main")qaytariladi, 
+                    chunki bu usul maqsadlari uchun "M" va "m" har xil.null
+                    &lt;div id=&quot;main&quot;&gt;&lt;/div&gt;
+                </p>
 
-                <ul>
-                    <li><a href="/1.Front end/3.Js/8.Hujjat obyekt modeli/8.4.Elementni ID orqali tanlash/1.Hujjat getElementById() usuli/1.Hujjat getElementById() usuli.html">.getElementById()</a> on MDN</li>
-                </ul>
+                <p>
+                    Hujjatda bo'lmagan elementlar bo'yicha qidirilmaydi. 
+                    Element yaratishda va unga identifikator berishda, 
+                    unga kirishdan oldin getElementById()uni hujjat daraxtiga 
+                    yoki shunga o'xshash usul bilan kiritishingiz kerak 
+                    :Node.insertBefore()getElementById()
+                </p>
+
+                <div class="css">
+                    <p>
+                        JS
+                    </p>
+                    <div class="css_tana">
+                        <p>
+                            const element = document.createElement("div");
+                            element.id = "test"; <br>
+                            const el = document.getElementById("test"); // el will be null!
+                        </p>
+                    </div>
+                </div>
+                <p>
+                    HTML bo'lmagan hujjatlarda DOM implementatsiyasi qaysi atributlar 
+                    ID turiga tegishli ekanligi haqida ma'lumotga ega bo'lishi kerak. 
+                    "id" nomli atributlar, agar hujjatning DTD-sida shunday belgilanmagan 
+                    bo'lsa, ID turiga tegishli emas. XHTMLid, XUL va boshqalarning keng 
+                    tarqalgan holatlarida atribut ID turiga tegishli deb belgilangan. 
+                    Atributlar ID turiga tegishli yoki tegishli emasligini bilmaydigan 
+                    implementatsiyalar ni qaytarishi kutilmoqda .null
+                </p>
             </div>
         </div> 
     </div>

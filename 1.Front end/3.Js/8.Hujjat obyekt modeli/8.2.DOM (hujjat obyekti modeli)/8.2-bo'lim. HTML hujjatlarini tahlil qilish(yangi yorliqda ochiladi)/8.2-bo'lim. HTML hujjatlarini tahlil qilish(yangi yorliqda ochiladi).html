@@ -6,7 +6,6 @@
     <meta name="keywords" content="Javascript, Java script">
     <meta name="description" content="Bu yerda Javascript haqida batafsil ma'lumot olamiz">
     <link rel="stylesheet" href="/1.Front end/3.Js/style.css">
-    <link rel="stylesheet" href="style.css">
     <title>Java script</title>
     <script src="/1.Front end/3.Js/script.js"></script>
 </head>
@@ -786,16 +785,6 @@
                                 8.4.Elementni ID orqali tanlash
                             </a>
                         </li>
-                        <li>
-                            <a href="/1.Front end/3.Js/8.Hujjat obyekt modeli/8.5.Sahifa elementlarini sinf yoki teg bo'yicha tanlang/8.5.Sahifa elementlarini sinf yoki teg bo'yicha tanlang.html">
-                                8.5.Sahifa elementlarini sinf yoki teg bo'yicha tanlang
-                            </a>
-                        </li>
-                        <li>
-                            <a href="/1.Front end/3.Js/8.Hujjat obyekt modeli/8.6.Tugunlar, elementlar va interfeyslar... Voy Xudoyim!/8.6.Tugunlar, elementlar va interfeyslar... Voy Xudoyim!.html">
-                                8.6.Tugunlar, elementlar va interfeyslar... Voy Xudoyim!
-                            </a>
-                        </li>
                     </ul>
                 </li>
             </ul>
@@ -1012,137 +1001,77 @@
             <div class="sarlavha">
                 <ul>
                     <li class="li_1">
-                        <a href="/1.Front end/3.Js/8.Hujjat obyekt modeli/8.3.CSS ma’nosi/8.3.CSS ma’nosi.html">⟨</a>
+                        <a href="/1.Front end/3.Js/8.Hujjat obyekt modeli/8.2.DOM (hujjat obyekti modeli)/8.2.DOM (hujjat obyekti modeli).html">⟨</a>
                     </li>
                     <li class="li_2">
-                        Elementni ID orqali tanlash
-                    </li>
-                    <li class="li_3">
-                        <a href="/1.Front end/3.Js/8.Hujjat obyekt modeli/8.5.Sahifa elementlarini sinf yoki teg bo'yicha tanlang/8.5.Sahifa elementlarini sinf yoki teg bo'yicha tanlang.html">
-                            ⟩
-                        </a>
+                        13.2 HTML hujjatlarini tahlil qilish
                     </li>
                 </ul>
             </div>
 
             <div id="text" class="qisqa">
-                <h3>
-                    Elementni ID orqali tanlash
-                </h3>
+
                 <p>
-                    Keling, qandaydir ID atributdan foydalanib elementlarga murojaat qilish 
-                    uchun JavaScript va DOMdan qanday foydalanishimiz mumkinligini ko‘rib chiqamiz.
+                    <i>
+                        Ushbu bo'lim faqat foydalanuvchi agentlari, 
+                        ma'lumotlarni qidirish vositalari va muvofiqlikni 
+                        tekshirish vositalariga tegishli.
+                    </i>
+                </p>
+
+                <p style="background: greenyellow;">
+                    <em>
+                        XML hujjatlarini DOM daraxtlariga tahlil qilish qoidalari keyingi 
+                        " XML sintaksisi " bo'limida ko'rib chiqiladi.
+                    </em>
                 </p>
                 
                 <p>
-                    Oldingi bo‘limdagi hujjat obyekti esingizdami? Yaxshi, 
-                    endi biz undan foydalanishni boshlaymiz! Shuni esda tutingki, 
-                    hujjat obyekti JavaScript kabi hamdir. Bu kalit/qiymat juftligiga ega 
-                    ekanligini anglatadi. Ba’zi qiymatlar shunchaki ma’lumotlarning bir qismi, 
-                    boshqalari esa funksiyalarning ayrim turini ta’minlaydigan funksiyalar 
-                    (shuningdek, metodlar deb nomlanadi!) DOM ni birinchi usulini ko‘rib chiqamiz. 
-                    <span class="maxsus">.getElementById()</span> metodi:
+                    Foydalanuvchi agentlari resurslardan DOM daraxtlarini yaratish uchun ushbu 
+                    bo'limda tasvirlangan tahlil qoidalaridan foydalanishlari kerak. 
+                    Birgalikda, bu qoidalar HTML tahlil qiluvchitext/html deb ataladigan narsani belgilaydi.
                 </p>
 
-                <div class="oddiy_chegara">
-                    <p>
-                        document.getElementById();
-                    </p>
-                </div>
+                <p>
+                    <em>
+                        Ushbu spetsifikatsiyada tasvirlangan HTML sintaksisi SGML va XML ga 
+                        juda o'xshash bo'lsa-da, u o'zining tahlil qoidalariga ega bo'lgan alohida tildir.
+                    </em>
+                </p>
+
+                <p>
+                    <em>
+                        HTML ning ba'zi oldingi versiyalari (xususan, HTML2 dan HTML4 gacha) 
+                        SGML ga asoslangan va SGML tahlil qilish qoidalaridan foydalangan. 
+                        Biroq, HTML hujjatlari uchun haqiqiy SGML tahlilini amalga oshirgan 
+                        veb-brauzerlar kam (agar mavjud bo'lsa); HTML ni SGML ilovasi sifatida 
+                        qat'iy boshqargan yagona foydalanuvchi agentlari tarixan validatorlar 
+                        bo'lgan. Natijada yuzaga kelgan chalkashlik - validatorlar hujjatlar 
+                        bitta vakillikka ega ekanligini da'vo qilishlari, keng tarqalgan 
+                        veb-brauzerlar esa boshqa vakillikni o'zaro amalga oshirishlari 
+                        bilan - o'nlab yillar davomidagi unumdorlikni behuda sarfladi. 
+                        Shunday qilib, HTML ning bu versiyasi SGML bo'lmagan asosga qaytadi.
+                    </em>
+                </p>
+
+                <p>
+                    Muvofiqlik tekshiruvchilari uchun, agar resurs HTML sintaksisida ekanligi aniqlansa, 
+                    u HTML hujjatidir .
+                </p>
+
+                <p>
+                    <em>
+                        Terminologiya bo'limida aytib o'tilganidek, nom maydonini aniq ko'rsatmagan 
+                        element turlariga havolalar har doim HTML nom maydonidagi elementlarga 
+                        ishora qiladi. Masalan, agar spetsifikatsiya " menuelement" haqida gapirsa, 
+                        u holda bu mahalliy nomga ega element menu, nom maydoni 
+                        "http://www.w3.org/1999/xhtml" va interfeys HTMLMenuElement. 
+                        Iloji bo'lsa, bunday elementlarga havolalar ularning ta'rifiga giperhavola qilinadi.
+                    </em>
+                </p>
+
                 
-                <p>
-                    Agar biz yuqoridagi kodni konsolda ishlatsak, biz hech narsa ololmaymiz, 
-                    chunki olish uchun biron bir elementning IDsini ko‘rsatmadik! Biz topmoqchi 
-                    bo‘lgan element IDni <span class="maxsus">.getElementByID()</span>ga satrni 
-                    uzatib, keyin uni topib bizga qaytaradi:
-                </p>
-
-               <div class="oddiy_chegara">
-                    <p>
-                        document.getElementById('footer');
-                    </p>
-               </div>
-
-                <p>
-                    Ushbu metod haqida ko‘proq ma’lumot olishni istasangiz hujjatlar sahifasini 
-                    ko‘rib chiqing: 
-                    <a href="/1.Front end/3.Js/8.Hujjat obyekt modeli/8.4.Elementni ID orqali tanlash/1.Hujjat getElementById() usuli/1.Hujjat getElementById() usuli.html">
-                        https://developer.mozilla.org/en-US/docs/Web/API/Document/getElementById
-                    </a>
-                    <br>
-                    Keling ushbu MDN hujjati sahifasidan ushbu metodni ishlatishda foydalanmiz.
-                </p>
-
-                <div class="center-align">
-                    <video src="DOM L1 31 — Выбор содержимого.mp4" controls width="65%"></video>
-                </div>
                 
-                <p>
-                    Hozirgina nimalarni bajarganimizni takrorlashimiz uchun:
-                </p>
-
-                <ul>
-                    <li>
-                        biz ko‘rib chiqqan sahifa uchun DevToolsni ochdik
-                    </li>
-                    <li>
-                        Console paneliga o‘tdik
-                    </li>
-                    <li>
-                        biz document.getElementById('content'); ni konsolda ishga tushirdik
-                    </li>
-                </ul>
-
-                <p>
-                    Ushbu kodni ishga tushirish, hujjat obyekti ID "kontentiga" ega 
-                    bo‘lgan elementni butun daraxtga o‘xshash tuzilishni ishlashiga olib keladi.
-                </p>
-
-                <div class="center-align">
-                    <video src="DOM L1 35 — Просмотр возвращенного узла.mp4" controls width="65%"></video>
-                </div>
-
-                <h2>
-                    Selecting By ID Recap
-                </h2>
-
-                <p>
-                    In this section, we learned how to select a DOM element by its ID:
-                </p>
-
-                <ul>
-                    <li>
-                        <span class="maxsus">.getElementById()</span>
-                    </li>
-                </ul>
-
-                <p>
-                    There are a couple of important things to keep in mind about this method:
-                </p>
-
-                <ul>
-                    <li>
-                        it is called on the <span class="maxsus">document</span> object
-                    </li>
-                    <li>
-                        it returns a single item
-                    </li>
-                </ul>
-
-                <div class="oddiy_chegara">
-                    <p>
-                        <span class="kul">// "qo'ng'iroq" identifikatoriga ega elementni tanlang</span> <br>
-                        document.getElementById('callout');
-                    </p>
-                </div>
-
-                <h2>
-                    Further Research
-                </h2>
-
-                <ul>
-                    <li><a href="/1.Front end/3.Js/8.Hujjat obyekt modeli/8.4.Elementni ID orqali tanlash/1.Hujjat getElementById() usuli/1.Hujjat getElementById() usuli.html">.getElementById()</a> on MDN</li>
-                </ul>
             </div>
         </div> 
     </div>

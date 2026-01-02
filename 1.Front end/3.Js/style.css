@@ -127,10 +127,9 @@ body {
     height: 100vh;
 }
 
-.h2  {
+.h2,.h3 {
     padding: 2px 25px;
     font-weight: 510;
-    
 }
 
 #text, .text {
@@ -188,6 +187,10 @@ body {
     --tugma-uchun: #526509;
     --matn-uchun: #726709;
     --kul-rang: rgb(113, 113, 101);
+    --background-information: #013e70;
+    --note-background: var(--background-information);
+    --icon-information: #5e9eff;
+    --note-theme: var(--icon-information);
 }
 
 .green, .yashil {
@@ -455,7 +458,7 @@ pre {
 
 .css_tana p{
   padding: 12px 20px;
-  color: #000;
+  color: #fff000;
   border: none;
   margin: 0;
   border-radius: 0px 0px 4px 4px;
@@ -464,4 +467,55 @@ pre {
 .css_tana, .css_tana h1{
   border-top: 2px solid #000;
   margin: 0 auto; 
+}
+
+.Eslatma {
+    display: flex; 
+    margin: 15px auto; 
+    width: 80%;
+    border-left: 3px solid var(--note-theme);
+    border-radius: var(--elem-radius);
+    color: var(--text-secondary);
+  }
+  
+  /* .Eslatma .chap_yon {
+    width: 1%; 
+    background-color: cyan; 
+    border-radius: 15px 0 0 15px;
+  } */
+  
+  .Eslatma .Eslatma_tana {
+    background-color: var(--note-background); 
+    padding: 15px 12px 15px 36px; 
+    border-radius: 0 10px 10px 0;
+    
+  }
+  
+  .Eslatma_tana {
+      position: relative; /* Konteynerni nisbiy pozitsiyaga qo'yamiz */
+      padding: 15px 15px 5px 10px;
+      }
+  
+  .Eslatma_tana > p {
+    margin: 0;
+    padding: 0;
+    color: white;
+  }
+  
+  .Eslatma_tana::before {
+      content: "i";
+      position: absolute;
+      top: 17px; /* Belgilangan joylashuv */
+      left: 10px; /* Chapdan joylashuv */
+      right: 10px; /* O'ngdan joylashuv */
+      background-color: var(--note-theme);
+      color: white;
+      font-weight: bold;
+      width: 16px;
+      height: 16px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 12px;
 }
