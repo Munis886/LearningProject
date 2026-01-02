@@ -6,7 +6,6 @@
     <meta name="keywords" content="Javascript, Java script">
     <meta name="description" content="Bu yerda Javascript haqida batafsil ma'lumot olamiz">
     <link rel="stylesheet" href="/1.Front end/3.Js/style.css">
-    <link rel="stylesheet" href="style.css">
     <title>Java script</title>
     <script src="/1.Front end/3.Js/script.js"></script>
 </head>
@@ -1059,9 +1058,9 @@
                     elementlarning ro'yxatini qaytarishi kerakligini belgilaydi:&lt;p&gt;
                 </p>
 
-                <div>
+                <div class="css">
                     <p>JS</p>
-                    <div>
+                    <div class="css_tana">
                         <pre>
                             const paragraphs = document.querySelectorAll("p");
                             // paragraphs[0] is the first &lt;p&gt; element
@@ -1070,184 +1069,214 @@
                         </pre>
                     </div>
                 </div>
-                <div class="havo_chegara">
+
+                <p>
+                    Veb-sahifalarni boshqarish va yaratish uchun mavjud bo'lgan barcha xususiyatlar, 
+                    usullar va hodisalar obyektlarga ajratilgan. Masalan, documenthujjatning o'zini 
+                    ifodalovchi obyekt, HTML jadvallariga kirish uchun DOM interfeysini tableamalga 
+                    oshiradigan har qanday obyektlar HTMLTableElementva boshqalar barchasi obyektlardir.
+                </p>
+
+                <p>
+                    DOM birgalikda ishlaydigan bir nechta APIlar yordamida qurilgan. 
+                    Asosiy DOM har qanday hujjatni va uning ichidagi obyektlarni tavsiflovchi 
+                    obyektlarni belgilaydi. Bu DOMga yangi xususiyatlar va imkoniyatlarni 
+                    qo'shadigan boshqa APIlar tomonidan kerak bo'lganda kengaytiriladi. 
+                    Masalan, HTML DOM API asosiy DOMga HTML hujjatlarini ifodalash uchun 
+                    qo'llab-quvvatlaydi va SVG API SVG hujjatlarini ifodalash uchun qo'llab-quvvatlaydi.
+                </p>
+
+                <h2 class="h2">
+                    DOM daraxti nima?
+                </h2>
+
+                <p>
+                    DOM daraxti - bu tugunlari HTML yoki XML hujjatining tarkibini 
+                    ifodalovchi daraxt tuzilishi . Har bir HTML yoki XML hujjatida 
+                    DOM daraxti tasviri mavjud. Masalan, quyidagi hujjatni ko'rib chiqing:
+                </p>
+                <div class="css">
                     <p>
-                        HTML tarkibini va xususiyatlarini, bog‘lamalar 
-                        orasidagi barcha munosabatlarni saqlaydigan daraxt tuzilishi
+                        HTML
                     </p>
+                    <div class="css_tana">
+                        <pre>
+                            &lt;html lang=&quot;en&quot;&gt;
+                            &nbsp;  &lt;head&gt;
+                            &nbsp;&nbsp;    &lt;title&gt;My Document&lt;/title&gt;
+                            &nbsp;  &lt;/head&gt;
+                            &nbsp;  &lt;body&gt;
+                            &nbsp;&nbsp;    &lt;h1&gt;Header&lt;/h1&gt;
+                            &nbsp;&nbsp;    &lt;p&gt;Paragraph&lt;/p&gt;
+                            &nbsp;  &lt;/body&gt;
+                            &lt;/html&gt;
+                        </pre>
+                    </div>
                 </div>
-
-                <div class="havo_chegara">
-                    <p>
-                        DOM bu HTMLning to‘liq yoyilgan ko‘rinishidir
-                    </p>
-                </div>
-
                 <p>
-                    Shunday qilib, DOM qabul qilingan HTML hujjatining o‘zaro munosabatlari va atributlari 
-                    modelidir (namoyishidir). DOM "Document Object Model" degan ma’noni anglatishini unutmang. 
-                    Men o‘rgangan narsalarimdan kelib chiqib aytsam, biror narsani tushunmasangiz, 
-                    shunchaki orqaga qarab o‘qing:
+                    Uning DOM daraxti quyidagicha ko'rinadi:
                 </p>
-
-                <p>
-                    Hujjat obyekt modeli
-                </p>
-
-                <p>
-                    ...bo‘lishi mumkin…
-                </p>
-
-                <p>
-                    Hujjatning obyekt modeli!
-                </p>
-
-                <p>
-                    Esingizda bo‘lsin, JavaScript obyekti xususiyatlarga va qiymatlarga ega bo‘lgan 
-                    daraxtga o‘xshash tuzilma. Shuning uchun DOM brauzer tomonidan taqdim etilgan 
-                    maxsus obyekt yordamida kirishi mumkin bo‘lgan: <span class="maxsus">document</span>
-                </p>
-                <p>
-                    Bunga urinib ko‘ring:
-                </p>
-                <ol>
-                    <li>
-                        ushbu sahifada konsolni oching
-                    </li>
-                </ol>
-                <ul>
-                    <li>
-                        <span class="maxsus">document</span> so‘zini yozing
-                        <ul>
-                            <li>
-                                xushyor bo‘ling, uni e’lon qilmang (<span class="maxsus">const document</span>)
-                            </li>
-                            <li>
-                                xushyor bo‘ling, uni qo‘shtirnoqqa olmang (<span class="maxsus">"document"</span>)
-                            </li>
-                        </ul>
-                    </li>
-                    <li>
-                        enter tugmachasini bosing
-                    </li>
-                </ul>
                 <div class="center-align">
-                    <img src="ud117-l1-document-object-in-console.jpg" alt="JPeG">
+                    <img src="using_the_w3c_dom_level_1_core-doctree.jpg" alt="using_the_w3c_dom_level_1_core-doctree" width="50%">
                 </div>
-                <p class="center-align">
-                    <span class="kul">
-                        DevTools konsol panelida <span class="maxsus">document</span> obyektini ko‘rish.
-                    </span>
+                <p>
+                    Yuqoridagi daraxt yuqoridagi hujjatning DOM daraxtiga o'xshash bo'lsa-da, 
+                    ular bir xil emas, chunki haqiqiy DOM daraxti bo'sh joyni saqlab qoladi .
+                </p>
+                <p>
+                    Veb-brauzer HTML hujjatini tahlil qilganda, 
+                    u DOM daraxtini yaratadi va keyin uni hujjatni ko'rsatish uchun ishlatadi.
+                </p>
+
+                <h2 class="h2">
+                    DOM va JavaScript
+                </h2>
+
+                
+
+                <p>
+                    Oldingi qisqa misol, deyarli barcha misollar singari, JavaScript. 
+                    Ya'ni, u JavaScriptda yozilgan , lekin hujjat va uning elementlariga 
+                    kirish uchun DOMdan foydalanadi . DOM dasturlash tili emas, 
+                    lekin usiz JavaScript tilida veb-sahifalar, HTML hujjatlari, 
+                    SVG hujjatlari va ularning tarkibiy qismlari haqida hech qanday model 
+                    yoki tushuncha bo'lmas edi. Hujjatning umumiy ko'rinishi, sarlavha, 
+                    hujjat ichidagi jadvallar, jadval sarlavhalari, jadval katakchalari 
+                    ichidagi matn va hujjatdagi boshqa barcha elementlar ushbu hujjat uchun 
+                    hujjat obyekti modelining qismlari hisoblanadi. Ularning barchasiga 
+                    DOM va JavaScript kabi skript tili yordamida kirish va ularni boshqarish mumkin.
                 </p>
 
                 <p>
-                    <span class="maxsus">document</span> obyekt brauzer tomonidan ta’minlanadi va HTML hujjatining namoyishi hisoblanadi. 
-                    Ushbu obyekt JavaScript tilida mavjud emas. ECMAScript - bu JavaScriptga asoslangan 
-                    tildir va u faqat obyekt modeliga ishora qiladi, uning "Global Object" tanlovida:
+                    DOM JavaScript tilining bir qismi emas, balki veb-saytlar yaratish uchun 
+                    ishlatiladigan veb-API hisoblanadi. JavaScript boshqa kontekstlarda ham 
+                    ishlatilishi mumkin. Masalan, Node.js kompyuterda JavaScript dasturlarini 
+                    ishga tushiradi, lekin boshqa API to'plamini taqdim etadi va DOM API Node.js 
+                    ish vaqtining asosiy qismi emas.
                 </p>
 
-                <div class="havo_chegara">
-                    <p>
-                        Ushbu xususiyatlarda belgilanganlarga qo‘shimcha ravishda global obyekt 
-                        qo‘shimcha aniqlangan xususiyatlarga ega bo‘lishi mumkin. Bunga qiymati 
-                        global obyekti bo‘lgan xususiyat kirishi mumkin; Masalan, HTML hujjat 
-                        obyekti modelida global obyektning oyna xususiyati global obyektning o‘zi
-                         hisoblanadi. (
-                        <a href="/1.Front end/3.Js/8.Hujjat obyekt modeli/8.2.DOM (hujjat obyekti modeli)/ECMA-262/ECMA-262.html">
-                            manba
-                        </a>)
-                    </p>
+                <p>
+                    DOM biron bir dasturlash tilidan mustaqil bo'lish uchun yaratilgan bo'lib, 
+                    hujjatning strukturaviy ko'rinishini bitta, izchil API orqali taqdim etish 
+                    mumkin edi. Ko'pgina veb-ishlab chiquvchilar DOMdan faqat JavaScript orqali 
+                    foydalansalar ham, DOM implementatsiyalari har qanday til uchun yaratilishi 
+                    mumkin, bu Python misolida ko'rsatilgan:
+                </p>
+
+                <div class="css">
+                    <p>Python</p>
+                    <div class="css_tana">
+                        <pre>
+                            # Python DOM misoli 
+                            import xml.dom.minidom as m
+                            doc = m.parse(r"C:\Projects\Py\chap1.xml")
+                            doc.nodeName # DOM property of document object
+                            p_list = doc.getElementsByTagName("para")
+                        </pre>
+                    </div>
                 </div>
-
                 <p>
-                    Aslida, bu <span class="maxsus">hujjat</span> obyekti JavaScriptning bir qismi emasligini bildiradi, 
-                    lekin u allaqachon mavjud va JavaScript kodi uchun bemalol mavjud bo‘lishi mumkin.
+                    Vebda JavaScript yozishda qanday texnologiyalar ishtirok etishi haqida 
+                    ko'proq ma'lumot olish uchun 
+                    <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/JavaScript_technologies_overview">
+                        JavaScript texnologiyalariga umumiy nuqtai nazarga qarang.
+                    </a>
                 </p>
 
-                <p>
-                    DOM W3C tomonidan standartlashtirilgan. DOMni tashkil etadigan bir qator xususiyatlar 
-                    mavjud, bu yerda bir nechtasi:
-                </p>
-
-                <ul>
-                    <li>
-                        Asosiy xususiyatlar
-                    </li>
-                    <li>
-                        Hodisalar xususiyatlari
-                    </li>
-                    <li>
-                        Stil xususiyatlari
-                    </li>
-                    <li>
-                        Tasdiqlash xususiyatlari
-                    </li>
-                    <li>
-                        Yuklash va saqlash xususiyatlari
-                    </li>
-                </ul>
-
-                <p>
-                    DOMning barcha xususiyatlari ro‘yxatini ko‘rish uchun bu yerni ko‘rib 
-                    chiqing: <a href="/1.Front end/3.Js/8.Hujjat obyekt modeli/8.2.DOM (hujjat obyekti modeli)/W3C standartlari va loyihalari/W3C standartlari va loyihalari.html">https://www.w3.org/standards/techs/dom#w3c_all</a>
-                </p>
-
-                <h2>
-                    DOM takrorlash
+                <h2 class="h2">
+                    DOMga kirish
                 </h2>
 
                 <p>
-                    DOM "Document Object Model" degan ma’noni anglatadi va daraxtga o‘xshash tuzilish bo‘lib, 
-                    HTML hujjatining namoyishi, elementlar o‘rtasidagi o‘zaro bog‘liqlik bo‘lib, elementlarning 
-                    tarkibi va xususiyatlarini o‘z ichiga oladi.
+                    DOM dan foydalanishni boshlash uchun siz biron bir maxsus ish qilishingiz shart emas. 
+                    Siz API dan to'g'ridan-to'g'ri JavaScript da, brauzer tomonidan boshqariladigan dastur 
+                    ichidan foydalanasiz.
                 </p>
 
                 <p>
-                    DOM quyidagi emas:
+                    Script yaratganingizda, u 
+                    &lt;script&gt; element ichida yoki veb-sahifaga kiritilgan bo'lsin, 
+                    darhol hujjatning o'zini yoki veb-sahifadagi turli elementlarni 
+                    (hujjatning avlod elementlari) boshqarish uchun documentyoki 
+                    windowobyektlari uchun API dan foydalanishni boshlashingiz mumkin. 
+                    Sizning DOM dasturlashingiz quyidagi misol kabi oddiy bo'lishi mumkin, 
+                    u funksiyadan foydalanib konsolda xabarni ko'rsatadi console.log():
                 </p>
 
-                <ul>
-                    <li>
-                        JavaScript tilining bir qismi
-                    </li>
-                </ul>
+                <div class="css">
+                    <p>HTML</p>
+                    <div class="css_tana">
+                        <pre>
+                            &lt;body onload=&quot;console.log('Welcome to my home page!');&quot;&gt;
+                              &hellip;
+                            &lt;/body&gt;
+                        </pre>
+                    </div>
+                </div>
+                <p>
+                    Sahifa tuzilishini (HTMLda yozilgan) va DOM manipulyatsiyasini 
+                    (JavaScriptda yozilgan) aralashtirish odatda tavsiya etilmasligi sababli, 
+                    JavaScript qismlari bu yerda birlashtiriladi va HTMLdan ajratiladi.
+                </p>
 
                 <p>
-                    DOM bu:
+                    Masalan, quyidagi funksiya yangi h1 elementini yaratadi, 
+                    shu elementga matn qo'shadi va keyin uni hujjat daraxtiga qo'shadi:
                 </p>
 
-                <ul>
-                    <li>
-                        brauzer tomonidan qurilgan
-                    </li>
-                    <li>
-                        document obyekti yordamida JavaScript kodida global ravishda murojaat qilish mumkin
-                    </li>
-                </ul>
+                <div class="css">
+                    <p>HTML</p>
+                    <div class="css_tana">
+                        <pre>
+                            &lt;html lang=&quot;en&quot;&gt;
+                              &lt;head&gt; &lt;/head&gt;
+                              &lt;body&gt;
+                                &lt;script&gt;
+                                  // create a couple of elements in an otherwise empty HTML page
+                                  const heading = document.createElement(&quot;h1&quot;);
+                                  const headingText = document.createTextNode(&quot;Big Head!&quot;);
+                                  heading.appendChild(headingText);
+                                  document.body.appendChild(heading);
+                                &lt;/script&gt;
+                              &lt;/body&gt;
+                            &lt;/html&gt;
+                        </pre>
+                    </div>
+                </div>
 
-                <p>
-                    DOMdan har doim foydalanib kelganmiz va ushbu kurs davomida yana foydalanamiz!
-                </p>
-
-                <h2>
-                    Keyingi o‘rganishlar uchun
+                <h2 class="h2">
+                    DOM interfeyslari
                 </h2>
 
+                <p>
+                    Quyida DOM spetsifikatsiyasi tomonidan belgilangan barcha interfeyslar keltirilgan:
+                </p>
                 <ul>
-                    <li>
-                        <a href="">DOMga kirish</a>
-                    </li>
-                    <li>
-                        Section 8.2 Parsing HTML documents from the W3C's HTML Documentation
-                    </li>
-                    <li>
-                        DOM Specification on W3C
-                    </li>
-                    <li>
-                        <a href="/1.Front end/3.Js/8.Hujjat obyekt modeli/8.2.DOM (hujjat obyekti modeli)/ECMA-262/ECMA-262.html">HTML Document Object Model mentioned in the ECMAScript Specification</a>
-                        - JavaScript tomonidan ishlatiladigan til spetsifikatsiyasi
-                    </li>
+                    <li><a href="#">AbortController</a></li>
+                    <li><a href="#">AbortSignal</a></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
                 </ul>
+
+                <p>
+                    Ushbu qo'llanma DOM ierarxiyasini boshqarish uchun foydalanishingiz mumkin 
+                    bo'lgan obyektlar va haqiqiy narsalar haqida. Ularning qanday ishlashini 
+                    tushunish chalkash bo'lishi mumkin bo'lgan ko'plab jihatlar mavjud. Masalan, 
+                    HTML elementini ifodalovchi obyekt o'z <span class="maxsus">name</span> xususiyatini 
+                    <span class="maxsus">HTMLFormElement</span> interfeysdan, 
+                    <span class="maxsus">className</span> xususiyatini 
+                    esa <span class="maxsus">HTMLElement</span> 
+                    interfeysdan <span class="maxsus">form</span> oladi. Ikkala holatda ham, kerakli xususiyat 
+                    o'sha form obyektida bo'ladi.
+                </p>
             </div>
         </div> 
     </div>
