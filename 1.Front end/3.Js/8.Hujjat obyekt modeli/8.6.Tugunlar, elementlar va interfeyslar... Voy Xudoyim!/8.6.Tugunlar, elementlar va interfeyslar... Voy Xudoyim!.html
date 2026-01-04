@@ -1018,7 +1018,7 @@
                         Tugunlar, elementlar va interfeyslar... Voy Xudoyim!
                     </li>
                     <li class="li_3">
-                        <a href="#">
+                        <a href="/1.Front end/3.Js/8.Hujjat obyekt modeli/8.7.Elementlarga kirishning ko'proq usullari/8.7.Elementlarga kirishning ko'proq usullari.html">
                             ⟩
                         </a>
                     </li>
@@ -1146,6 +1146,85 @@
                 <div class="center-align">
                     <video src="DOM L1 64 — Интерфейс Element.mp4" controls width="65%"></video>
                 </div>
+
+                <div class="havo_chegara">
+                    <p>
+                        Avval ko'rib chiqqan obyektdagi .getElementsByClassName()usulni eslaysizmi? 
+                        Element interfeysini ko'rib chiqayotganingizda, uning ham usuli borligini payqagan 
+                        bo'lishingiz mumkin! Element interfeysi Document interfeysidan emas, 
+                        balki Node interfeysidan meros bo'lib oladi (ha, Document interfeysi ham bor!). 
+                        Element interfeysi obyektdagi bilan bir xil ishni bajaradigan o'z interfeysiga ega.
+                        document.getElementsByClassName().getElementsByClassName()document
+
+                        documentBu shuni anglatadiki, siz obyektdan elementni tanlash uchun foydalanishingiz mumkin , keyin esa ushbu elementga murojaat qilib .getElementsByClassName(), o'sha elementning avlodlari bo'lgan klass nomiga ega elementlar ro'yxatini olishingiz mumkin!
+                    </p>
+                    <div class="oddiy_chegara">
+                        <pre>
+                            // selects the DOM element with an ID of "sidebar"
+                            const sidebarElement = document.getElementById('sidebar');
+
+                            // searches within the "sidebar" element for any elements with a class of "sub-heading"
+                            const subHeadingList = sidebarElement.getElementsByClassName('sub-heading');
+                        </pre>
+                    </div>
+                </div>
+
+                <div class="center-align">
+                    <video src="DOM_L1_69_Element_Udacity_1080p_h264_you.mp4" controls width="65%"></video>
+                    <p>
+                        Barcha turli interfeyslarni tekshirish uchun bu yerga qarang: 
+                        <a href="https://developer.mozilla.org/en-US/docs/Web/API">Veb API interfeyslari</a>
+                    </p>
+                </div>
+
+                <h3>
+                    Xulosa
+                </h3>
+
+                <p>
+                    Umid qilamanki, bu bir qator jabhalarda ma'rifiy saboq bo'ldi! Siz interfeyslar, 
+                    xususiyatlar va usullar haqida bilib oldingiz; interfeys chizmaga o'xshaydi, 
+                    xususiyatlar ma'lumot yoki ma'lumotlarning qismlariga o'xshaydi va usullar 
+                    funksionallikdir.
+                </p>
+
+                <p>
+                    Shuningdek, biz bir nechta maxsus interfeyslarni ko'rib chiqdik:
+                </p>
+
+                <ul>
+                    <li>Tugun interfeysi</li>
+                    <li>Element interfeysi</li>
+                </ul>
+
+                <p>
+                    Biz ushbu ikkala interfeysning ham xususiyatlar va usullarga 
+                    ega ekanligini ko'rdik. Shuningdek, biz Element interfeysi 
+                    Node interfeysidan barcha xususiyatlar va usullarni qanday 
+                    meros qilib olishini ko'rdik.
+                </p>
+
+                <h3>
+                    Keyingi tadqiqotlar
+                </h3>
+
+                <ul>
+                    <li>
+                        <a href="https://developer.mozilla.org/en-US/docs/Web/API/Node">
+                            Tugun interfeysi
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://developer.mozilla.org/en-US/docs/Web/API/Element">
+                            Element interfeysi
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://developer.mozilla.org/en-US/docs/Web/API">
+                            Veb API interfeyslari ro'yxati
+                        </a>
+                    </li>
+                </ul>
             </div>
         </div> 
     </div>

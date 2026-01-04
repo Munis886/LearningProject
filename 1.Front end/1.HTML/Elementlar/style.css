@@ -141,7 +141,7 @@ body {
     transition: 0.4s;
 }
 
-#text {
+#text, .text {
     padding: 10px 40px;
     margin: 10px auto;
 }
@@ -279,6 +279,7 @@ div #menu ul li a:hover {
 }
 
 .multi-column {
-        column-count: 2; /* 2 ta ustunga bo'linadi */
-        column-gap: 35px; /* Ustunlar orasidagi masofa */
-      }
+    column-gap: 35px; /* Ustunlar orasidagi masofa */
+    column-count: 2; /* 2 ta ustunga bo'linadi */
+}
+

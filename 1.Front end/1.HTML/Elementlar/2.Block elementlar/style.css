@@ -24,8 +24,9 @@ body {
     background-color: bisque;
 }
 
-#text {
-    margin: 0 auto;
+#text, .text {
+    padding: 10px 40px;
+    margin: 10px auto;
 }
 
 #text p{

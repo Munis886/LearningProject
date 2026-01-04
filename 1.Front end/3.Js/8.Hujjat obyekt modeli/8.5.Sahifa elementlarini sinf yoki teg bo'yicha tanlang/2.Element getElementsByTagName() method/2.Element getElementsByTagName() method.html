@@ -1089,6 +1089,33 @@
                     tartibida jonli efiri. Agar hech qanday element topilmasa, 
                     u bo'sh .HTMLCollection HTMLCollection
                 </p>
+
+                <h2 class="h2">
+                    Misollar
+                </h2>
+
+                <div class="css">
+                    <p>
+                        JS
+                    </p>
+                    <div class="css_tana">
+                        <pre>
+                            // Check the status of each data cell in a table
+                            const table = document.getElementById("forecast-table");
+                            const cells = table.getElementsByTagName("td");
+                            
+                            for (const cell of cells) {
+                              const status = cell.getAttribute("data-status");
+                              if (status === "open") {
+                                // Grab the data
+                              }
+                            } 
+                        </pre>
+                    </div>
+                </div>
+                <h2>
+                    Texnik xususiyatlar
+                </h2>
             </div>
         </div> 
     </div>

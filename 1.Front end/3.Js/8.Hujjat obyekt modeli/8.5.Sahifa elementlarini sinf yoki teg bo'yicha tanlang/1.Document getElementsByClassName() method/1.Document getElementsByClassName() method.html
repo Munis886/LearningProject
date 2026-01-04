@@ -1072,167 +1072,236 @@
                         Mos keladigan sinf nomi(lari)ni ifodalovchi satr; bir nechta sinf nomlari bo'sh joy bilan ajratilgan.
                     </dd>
                 </dl>
+
+                <h3 class="h3">
+                    Qaytish qiymati
+                </h3>
                 <p>
-                    Xuddi shunday <span class="maxsus">.getElementById()</span>, agar biz yuqoridagi kodni konsolda ishga tushirsak, 
-                    hech narsa olmaymiz, chunki biz unga qidirish kerak bo'lgan klassni aytmagan edik! Xuddi 
-                    <span class="maxsus">.getElementById()</span>, <span class="maxsus">.getElementsByClassName()</span> 
-                    biz uni qidirish/qaytarishni istagan klass 
-                    satri bilan chaqirishimizni kutmoqdamiz:
+                    <a href="https://developer.mozilla.org/en-US/docs/Web/API/HTMLCollection">
+                        HTMLCollection
+                    </a> Topilgan elementlarning jonli efiri .
                 </p>
 
-                <div class="oddiy_chegara">
-                    <p>
-                        document.getElementsByClassName('brand-color');
-                    </p>
-                </div>
+                <h2 class="h2">
+                    Misollar
+                </h2>
 
                 <p>
-                    Agar siz ushbu usul haqida ko'proq ma'lumot olishni istasangiz, uning MDNdagi hujjatlar sahifasini ko'rib chiqing: 
-                    https://developer.mozilla.org/en-US/docs/Web/API/Document/getElementsByClassName(yangi yorliqda ochiladi) <br>
-
-                    Keling, ushbu usuldan foydalanib ko'rish uchun ushbu MDN hujjatlari sahifasidan foydalanaylik.
+                    "Test" klassiga ega bo'lgan barcha elementlarni oling:
                 </p>
-
-                <div class="center-align">
-                    <video src="DOM L1 40 — GetElementsByClassName.mp4" controls width="65%"></video>
-                </div>
-
-                <div class="havo_chegara">
-                    <h2>S dan ehtiyot bo'ling!</h2>
-                </div>
-
-                <div class="havo_chegara">
+                <div class="css">
                     <p>
-                        Bilaman, biz hali ko'rib chiqmaganmiz , lekin ikkalasiga nisbatan 
-                        <span class="maxsus">.getElementsByTagName()</span> 
-                        farq qiladigan narsa bor va men buni ta'kidlamoqchiman, 
-                        chunki ularni o'tkazib yuborish oson bo'lishi mumkin; ikkalasi ham va ularning 
-                        nomida qo'shimcha "s" harfi bor. <span class="maxsus">.getElementById()</span> 
-                        <span class="maxsus">.getElementsByClassName()</span> 
-                        <span class="maxsus">.getElementsByTagName()</span> 
-                        <span class="maxsus">.getElementsByClassName()</span>
-                        <span class="maxsus">.getElementsByTagName()</span>
+                        JS
                     </p>
-                </div>
-
-                <div class="havo_chegara">
-                    <p>
-                        Men buni shunchaki ta'kidlamoqchi edim, chunki kodni ishga 
-                        tushirayotganda ko'p marta "s" harfi yo'qolib qolgan.
-                    </p>
-                </div>
-
-                <div class="havo_chegara">
-                    <div class="oddiy_chegara">
-                        document.getElementByClassName('highlight-spanned');
+                    <div class="css_tana">
+                        <p>
+                            document.getElementsByClassName("test");
+                        </p>
                     </div>
                 </div>
 
-                <div class="havo_chegara">
+                <p>
+                    "Qizil" va "test" sinflariga ega bo'lgan barcha elementlarni oling:
+                </p>
+
+                <div class="css">
                     <p>
-                        Yuqoridagi kod ishlamaydi , chunki DOM usuli yo'q 
-                        <span class="maxsus">.getElementByClassName()</span> (yagona "Element" bilan).
+                        JS
                     </p>
+                    <div class="css_tana">
+                        <p>
+                            document.getElementsByClassName("red test");
+                        </p>
+                    </div>
                 </div>
 
-                <h2>
-                    Elementlarga ularning yorlig'i orqali kirish
+                <p>
+                    "Asosiy" identifikatoriga ega element ichida "test" 
+                    klassiga ega bo'lgan barcha elementlarni oling:
+                </p>
+
+                <div class="css">
+                    <p>
+                        JS
+                    </p>
+                    <div class="css_tana">
+                        <p>
+                            document.getElementById("main").getElementsByClassName("test");
+                        </p>
+                    </div>
+                </div>
+
+                <p>
+                    Birinchi elementni "test" klassi bilan oling 
+                    yoki undefinedmos keladigan element bo'lmasa:
+                </p>
+
+                <div class="css">
+                    <p>
+                        JS
+                    </p>
+                    <div class="css_tana">
+                        <p>
+                            document.getElementsByClassName("test")[0];
+                        </p>
+                    </div>
+                </div>
+
+                <p>
+                    Shuningdek, biz Array.prototype metodlaridan istalgan obyektda this 
+                    qiymatini metod sifatida HTMLCollectionuzatish orqali foydalanishimiz 
+                    mumkin . Bu yerda biz "test" klassiga ega bo'lgan barcha div 
+                    elementlarini topamiz:HTMLCollection
+                </p>
+
+                <div class="css">
+                    <p>
+                        JS
+                    </p>
+                    <div class="css_tana">
+                        <pre>
+                            const testElements = document.getElementsByClassName("test");
+                            const testDivs = Array.prototype.filter.call(
+                              testElements,
+                              (testElement) => testElement.nodeName === "DIV",
+                            );
+                        </pre>
+                    </div>
+                </div>
+
+                <h2 class="h2">
+                    Sinfi "test" bo'lgan birinchi elementni oling
                 </h2>
 
                 <p>
-                    <span class="maxsus">.getElementById()</span> va ni ko'rib chiqqandan so'ng 
-                    <span class="maxsus">.getElementsByClassName()</span>, 
-                    yangi <span class="maxsus">.getElementsByTagName()</span> usul ko'zga juda oson ko'rinishi kerak:
+                    Bu eng ko'p ishlatiladigan operatsiya usuli.
                 </p>
 
-                <div class="oddiy_chegara">
+                <div class="css">
+                    <p>HTML</p>
+                    <div class="css_tana">
+                        <pre>
+                            &lt;div id=&quot;parent-id&quot;&gt;
+                            &lt;p&gt;hello world 1&lt;/p&gt;
+                            &lt;p class=&quot;test&quot;&gt;hello world 2&lt;/p&gt;
+                            &lt;p&gt;hello world 3&lt;/p&gt;
+                            &lt;p&gt;hello world 4&lt;/p&gt;
+                          &lt;/div&gt;
+                        </pre>
+                    </div>
+                </div>
+
+                <div class="css">
                     <p>
-                        document.getElementsByTagName('p');
+                        JS
                     </p>
+                    <div class="css_tana">
+                        <pre>
+                            const parentDOM = document.getElementById("parent-id");
+
+                            const test = parentDOM.getElementsByClassName("test"); // a list of matching elements, *not* the element itself
+                            console.log(test); // HTMLCollection[1]
+                            
+                            const testTarget = parentDOM.getElementsByClassName("test")[0]; // the first element, as we wanted
+                            console.log(testTarget); // <p class="test">hello world 2</p>
+                        </pre>
+                    </div>
                 </div>
 
-                <p>
-                    Keling, ushbu usuldan foydalanib ko'rish uchun ushbu MDN hujjatlari sahifasidan foydalanaylik: <br>
-                    <a href="/1.Front end/3.Js/8.Hujjat obyekt modeli/8.2.DOM (hujjat obyekti modeli)/DOMga kirish/DOMga kirish.html">
-                        https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model/Introduction
-                    </a>
-                </p>
-
-                <div class="center-align">
-                    <video src="DOM L1 43 — GetElementsByTagName.mp4" controls width="65%"></video>
-                </div>
-
-                <h2>
-                    Nima qaytarildi?
-                </h2>
-
-                <div class="center-align">
-                    <video src="DOM L1 48 — Возвращает структуру, подобную массиву.mp4" controls width="65%"></video>
-                </div>
-
-                <p>
-                    <span class="maxsus">.getElementsByClassName()</span> Biz hozirgina elementlarning massivga o'xshash ma'lumotlar 
-                    tuzilmasini qaytaradiganini ko'rdik. Lekin element nima o'zi?
-                </p>
-
-                <p>
-                    Keyingi bo'limda biz Elementlar va Tugunlarni ko'rib chiqamiz.
-                </p>
-
-                <h2>
-                    Bir vaqtning o'zida bir nechta elementlarni tanlash haqida qisqacha ma'lumot
+                <h2 class="h2">
+                    Bir nechta sinflarga misol
                 </h2>
 
                 <p>
-                    Ushbu bo'limda biz bir nechta DOM elementlarini tanlashning ikkita usulini o'rgandik:
+                    document.getElementsByClassNamedocument.querySelectorva ga juda o'xshash ishlaydi 
+                    <span class="maxsus">document.querySelectorAll.</span> 
+                    Faqat BARCHA sinf nomlari ko'rsatilgan elementlar tanlanadi.
                 </p>
 
-                <ul>
-                    <li>
-                        .getElementsByClassName()
-                    </li>
-                    <li>
-                        .getElementsByTagName()
-                    </li>
-                </ul>
-
-                <p>
-                    Ushbu ikkita usul haqida bir nechta muhim narsalarni yodda tutish kerak:
-                </p>
-
-                <ul>
-                    <li>
-                        ikkala usul ham documentob'ektdan foydalanadi
-                    </li>
-                    <li>
-                        ikkalasi ham bir nechta elementlarni qaytaradi
-                    </li>
-                    <li>
-                        qaytarilgan ro'yxat massiv emas
-                    </li>
-                </ul>
-
-                <div class="oddiy_chegara">
-                    <p>
-                        <span class="kul">// "accent-color" sinfiga ega bo'lgan barcha belgini tanlash</span> <br>
-                        document.getElementsByClassName('accent-color'); <br><br>
-
-                        <span class="kul">// barcha "span"ni tanlash</span> <br>
-                        document.getElementsByTagName('span');
-                    </p>
-                </div>
-
-                <h3>
-                    Keyingi tadqiqotlar
+                <h3 class="h3">
+                    HTML
                 </h3>
-                <ul>
-                    <li>
-                        <a href="https://developer.mozilla.org/en-US/docs/Web/API/Document/getElementsByClassName">.getElementsByClassName()</a> MDNda
-                    </li>
-                    <li>
-                        <a href="https://developer.mozilla.org/en-US/docs/Web/API/Element/getElementsByTagName">.getElementsByTagName()</a> MDNda
-                    </li>
-                </ul>
+                <div class="css">
+                    <p>
+                        HTML
+                    </p>
+                    <div class="css_tana">
+                        <pre>
+                            &lt;span class=&quot;orange fruit&quot;&gt;Orange Fruit&lt;/span&gt;
+                            &lt;span class=&quot;orange juice&quot;&gt;Orange Juice&lt;/span&gt;
+                            &lt;span class=&quot;apple juice&quot;&gt;Apple Juice&lt;/span&gt;
+                            &lt;span class=&quot;foo bar&quot;&gt;Something Random&lt;/span&gt;
+                            &lt;textarea id=&quot;resultArea&quot;&gt;&lt;/textarea&gt;
+                        </pre>
+                    </div>
+                </div>
+
+                <h2 class="h2">
+                    JavaScript
+                </h2>
+
+                <div class="css">
+                    <p>
+                        JS
+                    </p>
+                    <div class="css_tana">
+                        <pre>
+                            // getElementsByClassName only selects elements that have both given classes
+                            const allOrangeJuiceByClass = document.getElementsByClassName("orange juice");
+                            let result = "document.getElementsByClassName('orange juice')";
+                            for (const el of allOrangeJuiceByClass) {
+                              result += `\n  ${el.textContent}`;
+                            }
+                            
+                            // querySelector only selects full complete matches
+                            const allOrangeJuiceQuery = document.querySelectorAll(".orange.juice");
+                            result += "\n\ndocument.querySelectorAll('.orange.juice')";
+                            for (const el of allOrangeJuiceQuery) {
+                              result += `\n  ${el.textContent}`;
+                            }
+                            
+                            document.getElementById("resultArea").value = result;   
+                        </pre>
+                    </div>
+                </div>
+                <h2 class="h2">
+                    Natija
+                </h2>
+
+
+                <div class="css">
+                    <p>
+
+                    </p>
+                    <div class="css_tana">
+                        <p>
+                            <span class="orange fruit">Orange Fruit</span>
+                            <span class="orange juice">Orange Juice</span>
+                            <span class="apple juice">Apple Juice</span>
+                            <span class="foo bar">Something Random</span>
+                            <textarea id="resultArea"></textarea>
+                        </p>
+                        <p>
+                            <script>
+                                // getElementsByClassName only selects elements that have both given classes
+                                const allOrangeJuiceByClass = document.getElementsByClassName("orange juice");
+                                let result = "document.getElementsByClassName('orange juice')";
+                                for (const el of allOrangeJuiceByClass) {
+                                result += `\n  ${el.textContent}`;
+                                }
+
+                                // querySelector only selects full complete matches
+                                const allOrangeJuiceQuery = document.querySelectorAll(".orange.juice");
+                                result += "\n\ndocument.querySelectorAll('.orange.juice')";
+                                for (const el of allOrangeJuiceQuery) {
+                                result += `\n  ${el.textContent}`;
+                                }
+
+                                document.getElementById("resultArea").value = result;
+                            </script>
+                        </p>
+                    </div>
+                </div>
             </div>
         </div> 
     </div>

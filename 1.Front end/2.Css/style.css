@@ -210,9 +210,6 @@ pre {
     padding-left: 25px;
 }
 
-
-
-
 .html {
   background: rgb(59, 59, 59);
   margin: 20px auto; 
@@ -331,4 +328,6 @@ iframe {
     color: seagreen;
     transition: 0.4s;
 }
+
+
 
