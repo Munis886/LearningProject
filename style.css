@@ -16,14 +16,14 @@ body,div,ul,li,h1,h2{
 #menyu {
     background-color: #ff7f50;
     margin: 0 auto;
-    padding: 5px;
+    padding: 1px;
 }
 
 #menyu ul li{
     display: inline;
     text-decoration: none;
-    padding: 0 10px;
-    border-right: 1px solid #333;
+    padding: 0;
+    text-align: center;
 }
 
 .menyu {
@@ -35,6 +35,15 @@ body,div,ul,li,h1,h2{
     text-decoration: none;
     color: #333;
     font-family: Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align: center;
+    padding: 0 10px;
+}
+
+.menyu li a:hover {
+    background-color: #ffa089;
+    font-weight: 500;
+    color: #fffaaa;
+    box-shadow: 0 0 8px #fffaaa;
 }
 
 #front_end {
@@ -110,6 +119,7 @@ body,div,ul,li,h1,h2{
 .ul li a:hover{
     background-color:black;
     color: aliceblue;
+    box-shadow: 0 0 8px #fff;
 }
 
 .ul li {
