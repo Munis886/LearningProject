@@ -394,6 +394,7 @@ pre {
     padding: 0;
     font-weight: 350;
     border-right: 1px solid bisque;
+    box-sizing: border-box;
 }
 
 .li_1 a {
@@ -407,6 +408,7 @@ pre {
     font-weight: 600;
     color: seagreen;
     transition: 0.4s;
+    box-sizing: border-box;
 }
 
 .li_2 {
@@ -418,6 +420,7 @@ pre {
     padding: 0;
     font-weight: 350;
     border-left: 1px solid bisque;
+    box-sizing: border-box;
 }
 
 .li_3 a {
@@ -426,12 +429,14 @@ pre {
     transition: 0.4s;
     padding: 5px 5px;
     border-radius: 0 8px 8px 0;
+    box-sizing: border-box;
 }
 
 .li_3 a:hover {
     font-weight: 600;
     color: seagreen;
     transition: 0.4s;
+    box-sizing: border-box;
 }
 
 .css p{

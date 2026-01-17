@@ -20,15 +20,17 @@ body,div,ul,li,h1,h2{
 }
 
 #menyu ul li{
-    display: inline;
+    display: inline-block;
     text-decoration: none;
     padding: 0;
     text-align: center;
+    box-sizing: border-box;
 }
 
 .menyu {
     width: 70%;
     margin: 0 auto;
+    box-sizing: border-box;
 }
 
 .menyu li a{
@@ -37,13 +39,15 @@ body,div,ul,li,h1,h2{
     font-family: Cochin, Georgia, Times, 'Times New Roman', serif;
     text-align: center;
     padding: 0 10px;
+    box-sizing: border-box;
 }
 
 .menyu li a:hover {
     background-color: #ffa089;
-    font-weight: 500;
+    font-weight: 600;
     color: #fffaaa;
     box-shadow: 0 0 8px #fffaaa;
+    box-sizing: border-box;
 }
 
 #front_end {
