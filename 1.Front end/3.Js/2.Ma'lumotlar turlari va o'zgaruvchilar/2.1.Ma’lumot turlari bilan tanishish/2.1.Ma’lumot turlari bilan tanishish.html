@@ -762,11 +762,16 @@
                     o'zgartirish uchun qayta e'lon qilinadigan tiplar
                 </p>
                 <p>
+                    variable raqam bilan boshlanmaydi va orasiga probel qo'yish mumkin emas.
+                </p>
+                <p>
                     Noprimitiv uni e'lon qilganda qiymati yo'q bo'ladi
                 </p>
-
+                <h3>
+                    //Number tipi
+                </h3>
                 <p>
-                    <b>Number</b> (tipi) ma'lumot turi JavaScriptdagi barcha raqamlar
+                    Number ma'lumot turi JavaScriptdagi barcha raqamlar
                     manfiy musbat 0 barchasi Number tipiga kiradi. <br>
                     // -1, 0, 1, NAN  <br>
                     <b>NAN</b> - bu Raqam bilan bajariladigan amallar boshqa tipda 
@@ -774,32 +779,61 @@
                     ") + )" yozilsa chiqadigan natija NAN bo'ladi. <br> 
                     Number tipi butun sonlar va haqiqiy sonlarni o'z ichiga oladi.
                 </p>
-
                 <p>
-                    //String tipi
-                </p>
-                <p>
-                    "salom", 'salom', `salom`  <br>
-                    String tipi har qanday matnni o'z ichiga oladi. 
-                    Matn bitta yoki bir nechta belgidan iborat bo'lishi 
-                    mumkin. 
-                </p>
-                <p>
-                    //Boolean tipi
-                </p>
-                <script src="main.js"></script>
-
-                <p>
-                    Biz o'zgaruvchini qaysi tipdaligini bilish uchun typeof operatoridan foydalanamiz. <br>
-
+                    Biz o'zgaruvchini qaysi tipdaligini bilish uchun 
+                    typeof operatoridan foydalanamiz. <br>
                 </p>
                 <p>
                     let x = 42; <br>
                     <span class="maxsus">console.log(typeof x);</span> <br>
                     natija: "number";
                 </p>
-                <p>
 
+                <h3>
+                    //String tipi
+                </h3>
+                <p>
+                    Odatda matn yozishni 3 ta turi bor
+                </p>
+                <ol>
+                    <li>ikkitalik qo'shtirnoq "salom", "x"</li>
+                    <li>bittalik qo'shtirnoq 'salom'</li>
+                    <li>tepaga qaraydigan qo'shtirnoq `salom`</li>
+                </ol>
+                <p>
+                    3-sida variable yozish mumkin 
+                </p>
+                <p>
+                    String tipi har qanday matnni o'z ichiga oladi. 
+                    Matn bitta yoki bir nechta belgidan iborat bo'lishi 
+                    mumkin. 
+                </p>
+                <p>
+                    <span class="maxsus">console.log(typeof "salom");</span> <br>
+                    natija: "string";
+                </p>
+                <script src="main.js"></script>
+                <h3>
+                    //Boolean tipi
+                </h3>
+
+                <p>
+                    cosnole.log(100 == 100); <br>
+                    natija: true <br>
+                    console.log(100 == 200); <br>
+                    natija: false <br>
+                </p>
+
+                <h3>
+                    undefined va null tiplari
+                </h3>
+                <p>
+                    let x; <br>
+                    console.log(x); <br>
+                    natija: undefined <br>
+                    let y = null; <br>
+                    console.log(y); <br>
+                    natija: null <br>
                 </p>
             </div>
         </div> 
