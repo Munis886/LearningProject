@@ -806,7 +806,7 @@
                 <p>
                     String tipi har qanday matnni o'z ichiga oladi. 
                     Matn bitta yoki bir nechta belgidan iborat bo'lishi 
-                    mumkin. 
+                    mumkin.
                 </p>
                 <p>
                     <span class="maxsus">console.log(typeof "salom");</span> <br>
@@ -835,13 +835,72 @@
                     console.log(y); <br>
                     natija: null <br>
                 </p>
+                <h3>None primitive tiplar</h3>
+                <p>
+                    let x = []; //Massiv<br>
+
+                    console.log(x); <br>
+                </p>
+                <p>
+                    Nima uchun bular None primitive tiplar? <br>
+                    Chunki bularga o'zgarish kiritishimiz uchun 
+                    ularni qayta e'lon qilishimiz shart emas
+                </p>
+                <p>
+                    Array bu shunday ma'lumotlar turi bo'lib, 
+                    u o'z ichiga bir nechta qiymatlarni olishi mumkin. <br>
+                    Bular number, string, boolean, undefined, null va boshqa 
+                    arraylar bo'lishi mumkin. <br>
+                    Arrayni yaratish uchun biz [] kvadrat qavslaridan foydalanamiz. <br>
+                </p>
+                <p>
+                    x ga salom so'zini qo'shish uchun x.push("salom") 
+                    deb yozishimiz mumkin
+                </p>
+                <p>
+                    let x = []; <br>
+                    x.push("salom"); <br>
+                    console.log(x); <br>
+                    natija: ["salom"] <br>
+                </p>
+                <p>
+                    let x = ["M", "A", "R", "H", "A", "B", "O"]; <br>
+                    console.log(x); <br>
+                    natija: ["M", "A", "R", "H", "A", "B", "O"] <br>
+                </p>
+                <p>
+                    let x = ["M", "A", "R", "H", "A", "B", "O"]; <br>
+                    console.log(x[1]); <br>
+                    natija: "A" <br>
+                </p>
+
+                <p>
+                    //Object tipi <br>
+                </p>
+                <p>
+                    Obyekt bu kalit-qiymat juftliklaridan iborat ma'lumotlar tuzilmasi. <br>
+                    Obyektni yaratish uchun biz {} qavslardan foydalanamiz. <br>
+                    Kalit-qiymat juftligi kalit va qiymatdan iborat bo'lib,
+                    kalit va qiymat o'rtasida : ikki nuqta bilan ajratiladi. <br>
+                    Kalit-qiymat juftliklari vergul bilan ajratiladi. <br>
+                </p>
+                <p>
+                    let x = {}; <br>
+                    
+                    x.name = "John"; <br>
+                    x.age = 30; <br>
+                    x.city = "New York"; <br>
+                    console.log(x); <br>
+                    natija: {name: "John", age: 30, city: "New York"} <br>
+                </p>
+                <p>
+                    let x = {name: "John", age: 30, city: "New York"}; <br>
+                    console.log(x); <br>
+                    natija: {name: "John", age: 30, city: "New York"} <br>
+                </p>
             </div>
         </div> 
     </div>
-    
- 
-
-   
    
 </body>
 </html>

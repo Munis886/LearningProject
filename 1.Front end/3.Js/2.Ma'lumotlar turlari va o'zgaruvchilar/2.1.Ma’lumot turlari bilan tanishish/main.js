@@ -1,5 +1,9 @@
-let x = 1;
+let x = [1]; //Massiv
 
-x = 2;
-
+x.push("salom");
+x.unshift("boshidan");
+x.pop();
+x.shift();
 console.log(x);
+
+// Demak array bir nechta ma'lumot turlarini o'z ichiga oladi
