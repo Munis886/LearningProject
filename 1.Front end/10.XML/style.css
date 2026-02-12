@@ -1,0 +1,326 @@
+/*elementlardagi marginlarni yo'qotadi*/
+body, h1 {
+    margin: 0;
+    padding: 0;
+}
+
+#bosh {
+    background-color:chocolate;
+    margin: 0 auto;
+}
+
+.bosh {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.menyu {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+}
+
+#menyu {
+    background-color:dimgray; 
+    margin: 0 auto;
+}
+
+.menyu ul li{
+    list-style-type: none;
+    display: inline;
+    border-right: 1px solid #222123;
+    text-align: center;
+}
+
+.menyu ul {
+    margin: 0;
+    padding: 0;
+}
+
+.menyu ul li a {
+    text-decoration: none;
+    color: #fff;
+    padding: 5px 10px;
+    display: inline-block;
+}
+
+.body {
+    margin: 0;
+    display: flex;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.menu {
+    width: 300px;
+    height: 100vh;
+    position:absolute;
+    overflow-y: auto;
+    top: 0;
+    background: var(--moviy-rang);
+    z-index: 1000;
+    left: -300px; /* Menu yashirilgan holatda */
+    transition: left 0.3s; /* Silliq ko'rinish uchun o'tish */
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+  }
+  
+.menu.active {
+    left: 0; /* Menu ko'rinadigan holatda */
+    position:relative;
+  }
+
+#menu h3 {
+    padding: 2px 3px;
+    margin: 2px 3px;
+    color: #fff;
+    display: inline-block;
+}
+
+#menu h3 a {
+    text-decoration: none;
+    color: #fff;
+}
+
+#menu ul li{   
+      list-style-type: none;
+      
+  }
+#menu ul {
+      padding: 0;
+      margin: 0;
+  }
+#menu ul li a {
+      display: block;
+      margin: 1px 0;
+      color: #000; /* Dastlabki matn rangi */
+      background-color: #f0f0f0; /* Dastlabki fon rangi */
+      padding: 6px 15px 6px 20px;
+      text-decoration: none;
+      font-family: "Montserrat",;
+      font-style: normal;
+    }
+  
+  /* Kursor ustiga kelsa */
+div #menu ul li a:hover {
+      background-color: var(--tugma-uchun); /* Kursor ustiga kelsa fon rangi */
+      color: #fff; /* Kursor ustiga kelsa matn rangi */
+    }
+  
+    /* Bosilgan holat */
+#menu  a:active {
+      background-color: #0003d3 !important; /* Bosilgan holat fon rangi */
+      color: #fff !important; /* Bosilgan holat matn rangi */
+    }
+
+body {
+    background-color: bisque;
+}
+
+#container {
+    width: 100%;
+    margin: 0 auto;
+    font-size: 17px;
+    background-color: #f2f2f2;
+    overflow-y: auto;
+    height: 100vh;
+}
+
+.h2  {
+    padding: 2px 25px;
+    font-weight: 510;
+    
+}
+
+#text img {
+    width: 100vh;
+}
+
+#text {
+    padding: 10px 40px;
+    
+}
+
+#text p{
+    margin: 14px 10px;
+}
+
+.text1 {
+    display: flex; 
+    margin: auto; 
+    width: 80%;
+}
+
+.matn p, .matn h2 {
+    padding: 0;
+}
+
+#sarlavha h2, #sarlavha h1 {
+    display: inline-block; /* Elementni inline-block qilib sozlash */
+    width: auto; /* Kenglikni avtomatik qilish */
+    margin: 10px 0;
+    border-radius: 0 10px 10px 0;
+    background-color: #f1ff2f;
+    padding: 5px 25px;
+    text-align: center;
+    box-shadow: 0 0 9px #000333; 
+}
+
+
+.sub-menu {
+    display: none; /* Yashirilgan holatda */
+    padding-left: 25px; /* Ichkariga siljitish */
+    background-color: var(--tugma-uchun);
+  }
+  
+.sub-menu li {
+    margin: 0 0 1px 5px;
+  }
+
+.fa-book:before {
+    content: "\f02d";
+}
+:root {
+    --some-color: #0000ff;
+    --javob-uchun: #ff0000;
+    --moviy-rang: #323fb2;
+    --thead-uchun: #123456;
+    --tugma-uchun: #526509;
+    --matn-uchun: #726709;
+    --kul-rang: rgb(113, 113, 101);
+}
+
+.green {
+    color: green;
+}
+.crimson {
+    color: crimson;
+}
+
+.moviy {
+    color: var(--moviy-rang);
+}
+
+
+.havo_chegara {
+    border: 1.5px solid #6491FC;  
+    width: 80%; 
+    margin: 8px 15px; 
+    border-radius: 0 0 60px 0; 
+    margin-top: 15px;
+    padding: 19px 20px;
+}
+
+.qora_chegara {
+    border: 1.5px solid rgb(110, 120, 101);;  
+    width: 70%; 
+    margin: 8px auto; 
+    border-radius: 6px; 
+    margin-top: 15px;
+    padding-left: 15px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.oddiy_chegara {
+    border: 1.5px solid #349;  
+    width: 80%; 
+    margin: 7px 15px; 
+    border-radius: 5px; 
+    padding: 10px 20px;
+    padding-left: 25px;
+}
+
+.chegara_ichida {
+    border: 1.5px solid #349;  
+    margin: 8px auto; 
+    border-radius: 5px; 
+    padding: 10px 20px;
+    padding-left: 25px;
+}
+
+.yashil_maydon {
+    border: 1.5px solid #650;  
+    width: 70%; 
+    margin: 8px auto; 
+    margin-top: 15px;
+    padding-left: 15px;
+}
+
+div p {
+    padding: 0;
+    margin: 5px 2px;
+}
+
+
+.center-box {
+    margin: 10px auto
+}
+
+.center-align {
+    text-align: center;
+}
+
+.maxsus_sozlar, .maxsus {
+    border: 2px solid #DFDDDD;;
+    border-radius: 4px;
+    width: auto;
+    padding: 2.5px 2px;
+    line-height: 2.9;
+}
+
+.maxsus {
+    line-height: 1.7;
+}
+
+.ul li, .ol li {
+    margin: 10px 0px;
+    line-height: 1.4; 
+}
+
+table {              
+    width: 70%;
+    border-collapse: collapse;
+    margin: 10px auto;
+}
+table, th, td {
+    border: 1px solid black;
+    
+}
+
+
+.qisqa {
+    width: 75%;
+    margin: 0 auto;
+    padding: 10px 20px;
+    margin-top: 15px;
+}
+
+
+.kul {
+    color: var(--kul-rang);
+    font-style: italic;
+}
+
+pre {
+    margin: 5px 2px;
+    padding-left: 7px;
+    text-align: left;
+    white-space: pre-line;
+    font-family: sans-serif;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+} 
+
+.sariq {
+    color: var(--matn-uchun);
+}
+
+.code {
+    padding-top: 20px;
+    background-color: #321111;
+    color: #fff;
+    border-radius: 6px;
+}
+
+.code pre {
+    background-color: #333222;
+    padding-left: 20px;
+}
