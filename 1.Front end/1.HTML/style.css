@@ -85,12 +85,15 @@ p {
   }
 
 #menu h3 {
-    padding: 2px 3px;
+    padding: 2px 13px;
     margin: 2px 3px;
     color: #fff;
     display: inline-block;
-    margin: 0;
-    padding: 0;
+}
+
+#menu h3 a {
+    text-decoration: none;
+    color: #fff;
 }
 
 #menu ul li{   
