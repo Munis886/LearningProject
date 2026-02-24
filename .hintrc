@@ -3,19 +3,9 @@
     "development"
   ],
   "hints": {
-    "axe/text-alternatives": [
-      "default",
-      {
-        "document-title": "off"
-      }
-    ],
-    "meta-charset-utf-8": "off",
-    "axe/language": [
-      "default",
-      {
-        "html-has-lang": "off"
-      }
-    ],
-    "meta-viewport": "off"
+    "axe/text-alternatives": "default",
+    "meta-charset-utf-8": "default",
+    "axe/language": "default",
+    "meta-viewport": "default"
   }
 }
