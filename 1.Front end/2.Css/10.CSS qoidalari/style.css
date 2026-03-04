@@ -83,7 +83,7 @@
   border-radius: 15px 0 0 15px;
 } */
 
-.Eslatma .Eslatma_tana {
+.Eslatma_tana {
   background-color: var(--note-background); 
   padding: 15px 12px 15px 36px; 
   border-radius: 0 10px 10px 0;
@@ -111,7 +111,7 @@
     align-items: center;
     justify-content: center;
     font-size: 12px;
-  }
+}
 
 .Eslatma_tana > p{
   margin: 0;
