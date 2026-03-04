@@ -139,6 +139,8 @@ body {
 
 #text > p{
     margin: 14px 10px;
+    line-height: var(--font-line-content);
+    font-family: Inter;
 }
 
 .text1 {
@@ -179,7 +181,8 @@ body {
 .fa-book:before {
     content: "\f02d";
 }
-:root {
+/* ranglar uchun */
+:root { 
     --some-color: #0000ff;
     --javob-uchun: #ff0000;
     --moviy-rang: #323fb2;
@@ -191,6 +194,10 @@ body {
     --note-background: var(--background-information);
     --icon-information: #5e9eff;
     --note-theme: var(--icon-information);
+}
+
+:root {
+    --font-line-content: 1.75;
 }
 
 .green, .yashil {
