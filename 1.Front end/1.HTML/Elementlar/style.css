@@ -144,6 +144,7 @@ body {
 #text, .text {
     padding: 10px 40px;
     margin: 10px auto;
+    width: 80%;
 }
 
 #text p{
@@ -292,10 +293,24 @@ div #menu ul li a:hover {
     column-count: 2; /* 2 ta ustunga bo'linadi */
 }
 
+:root{
+  --code-token-attribute-name: #ff97a0;
+  --code-background-inline: #343434;
+  --background-primary: #1b1b1b;
+  /* .CSS uchun rang */
+  --code-background-block: #343434;
+  --icon-information: #5e9eff;
+  --background-information: #013e70;
+  --text-secondary: #cdcdcd;
+  --note-background: var(--background-information);
+  --note-theme: var(--icon-information);
+  --elem-radius: 0.25rem;
+}
+
 .Eslatma {
   display: flex; 
   margin: 15px auto; 
-  width: 80%;
+  width: 80%;           
   border-left: 3px solid var(--note-theme);
   border-radius: var(--elem-radius);
   color: var(--text-secondary);
@@ -309,22 +324,21 @@ div #menu ul li a:hover {
 
 .Eslatma_tana {
   background-color: var(--note-background); 
-  padding: 15px 12px 15px 36px; 
   border-radius: 0 10px 10px 0;
-  
 }
 
 .Eslatma_tana {
     position: relative; /* Konteynerni nisbiy pozitsiyaga qo'yamiz */
-    padding: 15px 15px 5px 10px;
+    padding: 15px 15px 15px 15px;
     }
 
 .Eslatma_tana::before {
     content: "i";
     position: absolute;
-    top: 17px; /* Belgilangan joylashuv */
-    left: 10px; /* Chapdan joylashuv */
+    top: 25px; /* Belgilangan joylashuv */
+    left: 15px; /* Chapdan joylashuv */
     right: 10px; /* O'ngdan joylashuv */
+    bottom: 10px; /* Pastdan joylashuv */
     background-color: var(--note-theme);
     color: white;
     font-weight: bold;
@@ -340,4 +354,5 @@ div #menu ul li a:hover {
 .Eslatma_tana > p{
   margin: 0;
   padding: 0;
+  font-weight: 600;
 }
