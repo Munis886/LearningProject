@@ -168,7 +168,6 @@ body {
 
 table {
     margin: 0 auto;
-    text-align: center;
     border: 1px solid #333;
     border-collapse: collapse;
 }
@@ -310,7 +309,7 @@ div #menu ul li a:hover {
 .Eslatma {
   display: flex; 
   margin: 15px auto; 
-  width: 80%;           
+  width: 70%;           
   border-left: 3px solid var(--note-theme);
   border-radius: var(--elem-radius);
   color: var(--text-secondary);
