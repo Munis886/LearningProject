@@ -15,6 +15,12 @@ body {
     overflow: hidden;
 }
 
+.sayt {
+    color: blue;
+    text-align: right;
+    margin: 0 auto;
+}
+
 #bosh {
     background-color:chocolate;
     width: 100%;
