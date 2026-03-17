@@ -33,7 +33,7 @@ body, h1 {
 }
 
 .menyu ul {
-    margin: 0 50px;
+    margin: 0   ;
     padding: 0;
 }
 
@@ -131,16 +131,12 @@ body {
     
 }
 
-#text img {
-    width: 100vh;
-}
-
 #text {
     padding: 10px 40px;
     
 }
 
-#text p{
+#text > p{
     margin: 14px 10px;
 }
 
@@ -300,8 +296,8 @@ table, th, td {
     font-style: italic;
 }
 
-pre {
-    margin: 5px 2px;
+.pre {
+    margin: 0px 12px;
     padding-left: 7px;
     text-align: left;
     white-space: pre-line;
@@ -389,4 +385,26 @@ pre {
     color: seagreen;
     transition: 0.4s;
     box-sizing: border-box;
+}
+
+.css {
+    background-color: #333;
+    color: #fff;
+    padding: 0;
+    border-radius: 6px;
+    margin: 0 auto;
+    width: 80%;
+}
+
+.css > p {
+    padding: 2px 12px;
+    margin: 0;
+}
+
+.css_tana {
+    background-color: #222;
+    padding: 0;
+    border-radius: 6px;
+    margin: 0;
+    width: 100%;
 }
