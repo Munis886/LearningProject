@@ -307,7 +307,6 @@ dt,dd {
 iframe {
   display: flex;
   align-items: center;
-  margin: auto;
 }
 
 #text, .text{
@@ -360,7 +359,7 @@ iframe {
 }
 
 .CSS {
-  width: 80%;
+  width: 100%;
   margin: auto;
 }
 

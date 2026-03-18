@@ -92,7 +92,7 @@
 
 .Eslatma_tana {
     position: relative; /* Konteynerni nisbiy pozitsiyaga qo'yamiz */
-    padding: 15px 15px 5px 10px;
+    padding: 15px 15px 15px 35px;
     }
 
 .Eslatma_tana::before {

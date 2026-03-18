@@ -182,6 +182,38 @@ table th,td {
     border: 1px solid;
 }
 
+.html_table {
+                        
+    border-collapse: collapse;
+    width: 70%;
+}
+tr th{
+    border: 1px solid #ddd;
+    padding: 8px 12px;
+    background-color: #222;
+    color: aliceblue;
+}
+tbody tr td{
+    border: 1px solid #ddd;
+    padding: 8px 12px;
+    background-color: #333;
+    color: #ddd;
+}
+
+tbody tr td a {
+    color: #ddd;
+    text-decoration: none;
+}
+
+tbody tr td a:hover {
+    text-decoration: underline;
+}
+.html_table tr {
+    background-color: #f0d888;
+}
+.html_table tr:nth-child(even) {
+    background-color: rgb(255, 223, 80);
+}
 #elementlar {
     display: flex;
 }
