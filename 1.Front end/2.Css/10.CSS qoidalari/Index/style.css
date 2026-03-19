@@ -98,10 +98,6 @@ div #menu ul li a:hover {
       background-color: var(--background-primary);
   }
 
-#text {
-  background-color: var(--background-primary);
-}
-
 .CSS p, #text ul {
     padding: 12px 20px;
 }

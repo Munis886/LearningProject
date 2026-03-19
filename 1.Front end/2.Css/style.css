@@ -121,10 +121,19 @@ body {
     width: 100%;
     margin: 0 auto;
     font-size: 17px;
-    background-color: bisque;
     overflow-y: auto;
     height: 100vh;
     box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+
+    background: hsla(145, 44%, 37%, 1);
+
+    background: linear-gradient(90deg, hsla(145, 44%, 37%, 1) 0%, hsla(190, 53%, 56%, 1) 100%);
+
+    background: -moz-linear-gradient(90deg, hsla(145, 44%, 37%, 1) 0%, hsla(190, 53%, 56%, 1) 100%);
+
+    background: -webkit-linear-gradient(90deg, hsla(145, 44%, 37%, 1) 0%, hsla(190, 53%, 56%, 1) 100%);
+
+filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#348756", endColorstr="#54B6CA", GradientType=1 );
 }
 
 pre {
@@ -138,10 +147,22 @@ pre {
     width: auto; /* Kenglikni avtomatik qilish */
     margin: 10px 0;
     border-radius: 0 10px 10px 0;
-    background-color: greenyellow;
     padding: 5px 25px;
     text-align: center;
     box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+
+    background: hsla(116, 50%, 48%, 1);
+
+    background: linear-gradient(90deg, hsla(116, 50%, 48%, 1) 0%, hsla(101, 46%, 8%, 1) 100%);
+
+    background: -moz-linear-gradient(90deg, hsla(116, 50%, 48%, 1) 0%, hsla(101, 46%, 8%, 1) 100%);
+
+    background: -webkit-linear-gradient(90deg, hsla(116, 50%, 48%, 1) 0%, hsla(101, 46%, 8%, 1) 100%);
+
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#46B83D", endColorstr="#111E0B", GradientType=1 );
+
+    color: whitesmoke;
+
 }
 .sarlavha {
     padding: 8px 0px;
@@ -280,7 +301,18 @@ iframe {
 .sarlavha ul {
     display: inline-flex;
     width: auto;
-    background: greenyellow;
+    background: hsla(116, 50%, 48%, 1);
+
+    background: linear-gradient(90deg, hsla(116, 50%, 48%, 1) 0%, hsla(101, 46%, 8%, 1) 100%);
+
+    background: -moz-linear-gradient(90deg, hsla(116, 50%, 48%, 1) 0%, hsla(101, 46%, 8%, 1) 100%);
+
+    background: -webkit-linear-gradient(90deg, hsla(116, 50%, 48%, 1) 0%, hsla(101, 46%, 8%, 1) 100%);
+
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#46B83D", endColorstr="#111E0B", GradientType=1 );
+
+    color: whitesmoke;
+    
     border-radius: 0 8px 8px 0;
     font-size: 25px;
     box-shadow: 0 0 8px #333;
