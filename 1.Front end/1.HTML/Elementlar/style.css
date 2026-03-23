@@ -208,12 +208,19 @@ tbody tr td a {
 tbody tr td a:hover {
     text-decoration: underline;
 }
-.html_table tr {
-    background-color: #f0d888;
+.meta_table {
+    background-color: #333;
+    width: 80%;
 }
-.html_table tr:nth-child(even) {
-    background-color: rgb(255, 223, 80);
+td:nth-child(even) {
+    background-color: #333444;
 }
+
+td:nth-child(odd) {
+    background-color: #1f1c1c;
+}
+
+
 #elementlar {
     display: flex;
 }
