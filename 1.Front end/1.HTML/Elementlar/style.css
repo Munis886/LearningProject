@@ -212,13 +212,13 @@ tbody tr td a:hover {
     background-color: #333;
     width: 80%;
 }
-td:nth-child(even) {
-    background-color: #333444;
+tr:nth-child(even) {
+    background-color: #fff;
 }
 
-td:nth-child(odd) {
+/* td:nth-child(odd) {
     background-color: #1f1c1c;
-}
+} */
 
 
 #elementlar {
