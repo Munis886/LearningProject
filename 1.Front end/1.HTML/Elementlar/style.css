@@ -211,6 +211,7 @@ body {
     width: 80%;
     border: 1px solid #ddd;
     border-collapse: collapse;
+    margin-bottom: 20px;
 }
 
 .meta_table thead tr th{
@@ -230,7 +231,7 @@ body {
 .meta_table tr td {
     border: 1px solid #ddd;
     border-collapse: collapse;
-    padding: 5px 7px;
+    padding: 8px 13px;
 }
 
 .meta_table tr td a {
@@ -396,7 +397,7 @@ div #menu ul li a:hover {
 .Eslatma {
   display: flex; 
   margin: 15px auto; 
-  width: 70%;           
+  width: 80%;           
   border-left: 3px solid var(--note-theme);
   border-radius: var(--elem-radius);
   color: var(--text-secondary);
