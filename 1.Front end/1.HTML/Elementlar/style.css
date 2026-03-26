@@ -167,6 +167,7 @@ body {
 #text ul li {
     padding: 5px 0;
 }
+
 .orqaga a {
     text-decoration: none;
     color: #333;
@@ -182,7 +183,6 @@ body {
     padding: 8px 12px;
     background-color: #222;
     color: aliceblue;
-    border-collapse: collapse;
 } 
 .html_table tbody tr td{
     border: 1px solid #ddd;
@@ -195,6 +195,7 @@ body {
     text-align: center;
     border: 1px solid #ddd;
     border-collapse: collapse;
+    width: 90px;
 }
 
 .html_table tbody tr td a {
@@ -203,6 +204,10 @@ body {
 }
 
 .html_table tbody tr td a:hover {
+    text-decoration: underline;
+}
+
+.meta_table tbody tr td a:hover {
     text-decoration: underline;
 }
 
@@ -226,12 +231,13 @@ body {
     text-align: center;
     border: 1px solid #ddd;
     border-collapse: collapse;
+    width: 90px;
 }
 
 .meta_table tr td {
     border: 1px solid #ddd;
     border-collapse: collapse;
-    padding: 8px 13px;
+    padding: 8px 12px;
 }
 
 .meta_table tr td a {
@@ -239,7 +245,6 @@ body {
     text-decoration: none;
     margin: 0 auto;
     text-align: center;
-    padding: 5px 20px;
 }
 
 .meta_table thead tr td{

@@ -261,6 +261,36 @@ pre {
   padding: 12px 20px;
 }
 
+.css {
+  background: rgb(59, 59, 59);
+  margin: 20px auto; 
+  width: 70%;
+  border-radius: 5px 5px 0 0;
+}
+
+.css > p{
+  padding: 6px 20px;
+  border-bottom: 2px solid #000;
+  margin: 0;
+  color: white;
+  font-size: large;
+}
+
+.css_tana p{
+  padding: 12px 20px;
+  background-color: darkgray;
+  color: #000;
+  border: none;
+  margin: 0;
+  border-radius: 0 5px 5px 0;
+}
+
+.css_tana, .html_tana h1{
+  background-color: darkgray;
+  margin: 0 auto; 
+  padding: 12px 20px;
+}
+
 .maxsus {
     background: gray;
     border-radius: 4px;
