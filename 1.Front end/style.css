@@ -14,6 +14,9 @@ body {
     margin: 0 auto;
     display: flex; /* #bosh ichidagi elementlarni vertikal markazga joylashtirish uchun */
     align-items: center; /* Elementlarni vertikal markazga joylashtiradi */
+    position: sticky;
+    top: 0;
+    z-index: 1000; /* Boshqa elementlar ustida turishi uchun */
 }
 
 #bosh h1 {
@@ -59,18 +62,26 @@ body {
 #menyu {
     background-color:dimgray;
     margin: 0 auto;
+    position: sticky;
+    top: 58px; /* #bosh qismining taxminiy balandligi (padding + matn) */
+    z-index: 999;
 }
 #menyu ul {
     margin: 0;
     padding: 0;
 }
+
 #menyu ul li{
     list-style-type: none;
     display: inline;
-    border-right: 1px solid #fffff3;
-    padding: 2px 8px;
+    padding: 0 8px;
 }
 
+#text {
+    padding: 0 40px;
+    margin: 10px auto;
+    width: 70%;
+}
 #text > p{
     padding: 10px 40px;
 }
@@ -83,8 +94,22 @@ body {
 }
 
 #container {
+    display: flex;
     margin: 0 auto;
     background-color: bisque;
+}
+
+.text_left {
+    display: inline-block;
+    width: 20%;
+    margin: 0 auto;
+    padding: 0px 20px;
+}
+
+.text_left ul li {
+    list-style-type: none;
+    padding: 10px 0;
+    text-align: center;
 }
 
 .sarlavha {
@@ -96,14 +121,12 @@ body {
 .sarlavha h2{
     margin-top: 5px;
     border-radius: 0 10px 10px 0;
-    background-color: greenyellow;
     padding: 2px 6px;
 }
 
 .matn_muharriri  {
     margin-top: 5px;
     border-radius: 0 10px 10px 0;
-    background-color: greenyellow;
     padding: 2px 6px;
     width: 8em;
     text-align: center;
@@ -183,7 +206,6 @@ kbd {
 .izoh  {
     margin-top: 5px;
     border-radius: 0 10px 10px 0;
-    background-color: greenyellow;
     padding: 2px 6px;
     width: 5em;
     text-align: center;
