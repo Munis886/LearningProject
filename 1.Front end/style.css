@@ -12,9 +12,33 @@ body {
     background-color:chocolate;
     padding: 10px 0;
     margin: 0 auto;
-    
+    display: flex; /* #bosh ichidagi elementlarni vertikal markazga joylashtirish uchun */
+    align-items: center; /* Elementlarni vertikal markazga joylashtiradi */
 }
+
+#bosh h1 {
+    display: inline;
+    margin: 0;
+    padding: 0;
+}
+#bosh ul, #bosh li{
+    display: inline;
+    list-style-type: none;
+    padding: 0 10px;
+}
+#bosh ul a{
+    text-decoration: none;
+    color: wheat;
+    padding: 5px;
+}
+
+#bosh ul a:hover {
+    background-color: brown;
+    padding: 5px;
+}
+
 .bosh {
+    margin: auto;
     padding: 5px auto;
 }
 .bosh {
@@ -28,7 +52,7 @@ body {
 }
 
 .menyu {
-    width: 70%;
+    width: 80%;
     margin: 0 auto;
 }
 
@@ -44,6 +68,7 @@ body {
     list-style-type: none;
     display: inline;
     border-right: 1px solid #fffff3;
+    padding: 2px 8px;
 }
 
 #text > p{
@@ -186,6 +211,3 @@ kbd {
     color: wheat;
 }
 **/
-
-
-

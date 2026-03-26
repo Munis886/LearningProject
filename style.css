@@ -44,10 +44,11 @@ body,div,ul,li,h1,h2{
 
 .menyu li a:hover {
     background-color: #ffa089;
-    font-weight: 600;
+    font-weight: 300;
     color: #fffaaa;
-    box-shadow: 0 0 8px #fffaaa;
+    box-shadow: 0 0 3px #fffaaa;
     box-sizing: border-box;
+    padding: 0 10px;
 }
 
 #front_end {
