@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>header</title>
+    <link rel="stylesheet" href="/1.Front end/1.HTML/style.css">
+    <script src="/1.Front end/1.HTML/Elementlar/Js.js"></script>
+</head>
+<body>
+    <div id="bosh">
+        <div class="bosh">
+            <h1>HTML elementlar</h1>
+        </div>
+    </div>
+
+    <div id="menyu">
+        <div class="menyu">
+            <button id="toggle-btn" onclick="toggleMenu()">Menu</button>
+            <ul>
+                <li><a href="/index.html">HOME</a></li>
+                <li><a href="/1.Front end/1.Front_end.html">FRONT END</a></li>
+                <li><a href="#"></a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="body">
+        <div id="menu" class="menu">
+            <h3>HTML</h3>   
+            <ul>
+                <li><a href="/1.Front end/1.HTML/1.HTML.html">HTML HOME</a></li>
+                <li>
+                    <a href="#" onclick="toggleSubMenu('sub-menu-1')">Elementlar</a>
+                    <ul id="sub-menu-1" class="sub-menu">
+                        <li>
+                            <span></span>
+                            <a href="/1.Front end/1.HTML/Elementlar/Elementlar.html">Elementlar haqida</a>
+                        </li>
+                        <li>
+                            <span></span>
+                            <a href="/1.Front end/1.HTML/Elementlar/1.Html elementlar.html">HTML elementlar</a>
+                        </li>
+                        <li>
+                            <span></span>
+                            <a href="/1.Front end/1.HTML/Elementlar/2.block elementlar.html">Block elementlar</a>
+                        </li>
+                        <li>
+                            <span></span>
+                            <a href="/1.Front end/1.HTML/Elementlar/3.inline elementlar.html">Inline elementlar</a>
+                        </li>
+                    </ul>
+                </li>
+
+                <li>
+                    <a href="#" onclick="toggleSubMenu('sub-menu-2')">Belgilar</a>
+                    <ul id="sub-menu-2" class="sub-menu">
+                        <li><a href="/1.Front end/1.HTML/Belgilar/Belgilar.html">Belgilar</a></li>
+                        <li><a href="/1.Front end/1.HTML/Belgilar/1.Belgi 1-300.html">Belgi 1-300</a></li>
+                        <li><a href="/1.Front end/1.HTML/Belgilar/2.Belgi 9000-10000.html">Belgi 9000-10000</a></li>
+                        <li><a href="/1.Front end/1.HTML/Belgilar/3.Belgi 65000-66000.html">Belgi 65000-66000</a></li>
+                        <li><a href="/1.Front end/1.HTML/Belgilar/4.Belgi 127000-128000.html">Belgi 127000-128000</a></li>
+                        <li><a href="/1.Front end/1.HTML/Belgilar/5.Belgi 128000-129000.html">Belgi 128000-129000</a></li>
+                        <li><a href="/1.Front end/1.HTML/Belgilar/6.Belgi alifbo.html">Belgi alifbo</a></li>
+                    </ul>
+                </li>
+                <li></li>
+                <li></li>
+            </ul>
+        </div>
+        <div id="container">
+    
+        
+            <div id="sarlavha" >
+                <h2 style="width: 5em">&lt;header&gt;</h2>
+            </div>
+        <div id="text">
+            <p>
+                &lt;header&gt; HTML elementi kirish mazmunini, odatda kirish yoki navigatsiya 
+                    vositalari guruhini ifodalaydi. Unda ba'zi sarlavha elementlari, 
+                    shuningdek, logotip, qidiruv shakli, muallif nomi va 
+                    boshqa elementlar bo'lishi mumkin.
+            </p>
+            
+            <h3>Sinab ko'ring</h3>
+            <p>
+                &lt;!Doctype html&gt; <br>
+                &lt;html lang="en"&gt; <br>
+                    &nbsp;&lt;head&gt; <br>
+                    &nbsp;&nbsp;&lt;<span style="color: red;">title</span>&gt; 
+                        My notes 
+                        &lt;/<span style="color: red;">title</span>&gt; <br>
+                    &nbsp;&lt;/head&gt; <br>
+                    &nbsp;&lt;body&gt; <br>
+                        <br>
+                    &nbsp;&lt;/body&gt; <br>
+                &lt;/html&gt; <br>
+            </p>
+            <p>
+                Bu ochiq brauzerning elementiga joylashtirilgan hujjatni ko'rsatadigan bo'limda qanday sarlavha qo'yish kerakligini
+                brauzerga aytdi.
+            </p>
+            <p>
+                <b>head</b>da paydo bo'lgan yana bir narsa <b style="color: blue;">stillar </b>jadvallari haqida ma'lumot,
+                shuningdek sahifada qaysi shrift ranglardan foydalanishni, 
+            </p>
+            <h3>&lt;Style&gt; - Stillar</h3>
+            <p>
+                &lt;!Doctype html&gt; <br>
+                &lt;html lang="en"&gt; <br>
+                    &nbsp;&lt;head&gt; <br>
+                    &nbsp;&nbsp;&lt;<span style="color: red;">style</span>&gt; <br>
+                    &nbsp;&nbsp;&nbsp; <span style="color: darkgoldenrod;">p {</span> 
+                        <span style="color: darkgoldenrod;">color: green</span>
+                    <span style="color: darkgoldenrod;">}</span> <br>
+                    &nbsp;&nbsp;&lt;/<span style="color: red;">style</span>&gt; <br>
+                    &nbsp;&lt;/head&gt; <br>
+                    &nbsp;&lt;body&gt; <br>
+                    <br>                   
+                    &nbsp;&lt;/body&gt; <br>
+                &lt;/html&gt; <br>
+            </p>
+            <p>
+                matnni boshida qanday joylashtirishni 
+                brauzerda ishlaydigan dasturlar <b style="color: blue;">script</b>larini ham o'z ichiga oladi, bu veb-ilovalar test kabi
+                ishlaydi. 
+            </p>
+            <h3>&lt;Script&gt;</h3>
+            <p>
+                &lt;!Doctype html&gt; <br>
+                &lt;html lang="en"&gt; <br>
+                    &nbsp;&lt;head&gt; <br>
+                    &nbsp;&nbsp;&lt;<span style="color: red;">script</span>&gt; <br>
+                     <br>
+                    &nbsp;&nbsp;&lt;/<span style="color: red;">script</span>&gt; <br>
+                    &nbsp;&lt;/head&gt; <br>
+                    &nbsp;&lt;body&gt; <br>
+                    <br>                   
+                    &nbsp;&lt;/body&gt; <br>
+                &lt;/html&gt; <br>
+            </p>
+            <p>
+                bu brauzerda ishlaydi veb-ilovalarning ishlashi, masalan biz ko'rgan testlar
+                shuningdek ushbu bo'limda o'rganganlaringiz <b style="color: blue;">meta</b>da bo'lishi mumkin, bu sahifaning o'zi haqida
+                boshqa ma'lumotlar, masalan qidiruv tizimi uchun kalit so'zlar, ma'lumot, masalan html tegining
+                o'ziga ham ishora qilishi mumkin. 
+            </p>
+            <h3>&lt;meta&gt;</h3>
+            <p>
+                &lt;!Doctype html&gt; <br>
+                &lt;html lang="en"&gt; <br>
+                    &nbsp;&lt;head&gt; <br>
+                    &nbsp;&nbsp;&lt;
+                    <span style="color: red;">
+                        meta 
+                    </span> name="description" content="Notes on HTML" &gt; <br>
+                     <br>
+                    &nbsp;&lt;/head&gt; <br>
+                    &nbsp;&lt;body&gt; <br>
+                    <br>                   
+                    &nbsp;&lt;/body&gt; <br>
+                &lt;/html&gt; <br>
+            </p>
+            <p>
+                Siz aytishingiz mumkin, bu yerda sizning hujjatingiz kompyuter
+                tilida emas balki HTML tilida, lekin inson gaplashadigan ingliz, fransuz, tibetcha yoki suaxilli
+                tili kabidir. Ushbu hujjatning tarkibini tushunishga yoki talaffuz qilishga harakat qiladigan
+                dasturlar uchun, ko'rish qobiliyati buzilgan foydalanuvchilar uchun CH 80 Ingliz tilida chat
+                yoki fransuzcha Shah talaffuz qilinadi, hozirda yagona element sarlavha tegidir chunki u HTML 
+                hujjatlarida talab qilinadi, qolganlarini keyinroq veb-sayt haqida ko'proq o'rganish orqali 
+                bilib olasiz.  
+            </p>
+        </div>
+        <div id="text">
+            <h2></h2>
+            <code>
+                 
+            </code> <span></span>
+           
+            <p>
+                
+            </p>
+        </div>
+    </div>
+    </div>
+    
+    
+</body>
+</html>
