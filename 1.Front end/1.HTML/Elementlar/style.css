@@ -206,19 +206,6 @@ body {
 .html_table tbody tr td a:hover {
     text-decoration: underline;
 }
-<<<<<<< HEAD
-.meta_table {
-    background-color: #333;
-    width: 80%;
-}
-th :nth-child(odd) {
-    background-color: #333444;
-}
-
-tr :nth-child(even) {
-    background-color: #582323;
-} 
-=======
 
 .meta_table tbody tr td a:hover {
     text-decoration: underline;
@@ -280,7 +267,6 @@ tr :nth-child(even) {
     text-decoration: none;
     margin: auto;
 }
->>>>>>> 0ed761b576f2098ddca208933ffb92ab02719a54
 
 
 #elementlar {
