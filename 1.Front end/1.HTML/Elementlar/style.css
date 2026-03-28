@@ -167,47 +167,46 @@ body {
 #text ul li {
     padding: 5px 0;
 }
+
 .orqaga a {
     text-decoration: none;
     color: #333;
 }
 
-table {
-    margin: 0 auto;
-    border: 1px solid #333;
+.html_table {                 
     border-collapse: collapse;
+    margin: auto;
+    width: 80%;
 }
-
-table th,td {
-    border: 1px solid;
-}
-
-.html_table {
-                        
-    border-collapse: collapse;
-    width: 70%;
-}
-tr th{
+.html_table th {
     border: 1px solid #ddd;
     padding: 8px 12px;
     background-color: #222;
     color: aliceblue;
-}
-tbody tr td{
+} 
+.html_table tbody tr td{
     border: 1px solid #ddd;
     padding: 8px 12px;
     background-color: #333;
     color: #ddd;
+} 
+
+.html_table tbody tr td:nth-child(1) {
+    text-align: center;
+    border: 1px solid #ddd;
+    border-collapse: collapse;
+    width: 90px;
 }
 
-tbody tr td a {
+.html_table tbody tr td a {
     color: #ddd;
     text-decoration: none;
 }
 
-tbody tr td a:hover {
+.html_table tbody tr td a:hover {
     text-decoration: underline;
 }
+<<<<<<< HEAD
 .meta_table {
     background-color: #333;
     width: 80%;
@@ -219,6 +218,69 @@ th :nth-child(odd) {
 tr :nth-child(even) {
     background-color: #582323;
 } 
+=======
+
+.meta_table tbody tr td a:hover {
+    text-decoration: underline;
+}
+
+.meta_table{
+    margin: auto;
+    width: 80%;
+    border: 1px solid #ddd;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+.meta_table thead tr th{
+    border: 1px solid #ddd;
+    padding: 8px 12px;
+    background-color: #333;
+    color: aliceblue;
+    border-collapse: collapse;
+} 
+
+.meta_table tr td:nth-child(1) {
+    text-align: center;
+    border: 1px solid #ddd;
+    border-collapse: collapse;
+    width: 90px;
+}
+
+.meta_table tr td {
+    border: 1px solid #ddd;
+    border-collapse: collapse;
+    padding: 8px 12px;
+}
+
+.meta_table tr td a {
+    color: #cdcdcd;
+    text-decoration: none;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.meta_table thead tr td{
+    border: 1px solid #ddd;
+    padding: 8px 12px;
+    background-color: #333;
+} 
+
+.meta_table tbody tr:nth-child(odd) {
+    background-color: #3f3f3f;
+    color:#cdcdcd
+} 
+.meta_table tbody tr:nth-child(even) {
+    background-color: #2e2e2e;
+    color:#cdcdcd
+} 
+
+.meta_table  tr td a {
+    color: #cdcdcd;
+    text-decoration: none;
+    margin: auto;
+}
+>>>>>>> 0ed761b576f2098ddca208933ffb92ab02719a54
 
 
 #elementlar {
@@ -354,7 +416,7 @@ div #menu ul li a:hover {
 .Eslatma {
   display: flex; 
   margin: 15px auto; 
-  width: 70%;           
+  width: 80%;           
   border-left: 3px solid var(--note-theme);
   border-radius: var(--elem-radius);
   color: var(--text-secondary);

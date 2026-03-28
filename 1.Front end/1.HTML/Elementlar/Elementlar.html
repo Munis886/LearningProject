@@ -8,6 +8,7 @@
     <script src="Js.js"></script>
 </head>
 <body>
+    
     <div id="bosh">
             <div class="bosh">
                 <h1>HTML</h1>
@@ -129,7 +130,7 @@
 
 
                 <h2>
-                    Hujjat meta-fayllari
+                    Hujjat meta ma'lumotlari
                 </h2>
                 <p> 
                     Metamaʼlumotlar sahifa haqidagi maʼlumotlarni oʻz ichiga oladi. Bunga dasturiy taʼminotga 
@@ -161,10 +162,109 @@
                             </td>
                         </tr>
                         <tr>
-                            <td><a href="">&lt;head&gt;</a></td>
+                            <td><a href="">&lt;link&gt;</a></td>
                             <td>
-                                Hujjatning sarlavhasi, skriptlari va uslublar jadvallari kabi mashina tomonidan o'qiladigan ma'lumotlarni 
-                                (metadata) o'z ichiga oladi.
+                                Joriy hujjat va tashqi resurs o'rtasidagi munosabatlarni belgilaydi. Ushbu element ko'pincha 
+                                CSS-ga havola berish uchun ishlatiladi, lekin boshqa narsalar qatori sayt ikonkalarini 
+                                (ham "favikon" uslubidagi ikonkalar, ham bosh ekran va mobil qurilmalardagi ilovalar uchun ikonkalar) 
+                                o'rnatish uchun ham ishlatiladi.
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><a href="">&lt;meta&gt;</a></td>
+                            <td>
+                                 &lt;base&gt; &lt;link&gt; &lt;script&gt;, &lt;style&gt;, va &lt;title&gt; kabi boshqa HTML meta bilan bog'liq elementlar bilan ifodalab bo'lmaydigan metama'lumotlarni ifodalaydi.
+                               
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><a href="">&lt;style&gt;</a></td>
+                            <td>
+                                 Hujjat yoki hujjatning bir qismi uchun uslub ma'lumotlarini o'z ichiga oladi. U ushbu elementni o'z ichiga olgan hujjatning mazmuniga qo'llaniladigan CSS-ni o'z ichiga oladi.
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><a href="">&lt;title&gt;</a></td>
+                            <td>
+                                 Brauzerning sarlavha satrida yoki sahifa yorlig'ida ko'rsatilgan hujjat sarlavhasini belgilaydi. Unda faqat matn mavjud; 
+                                 Element ichidagi HTML teglari, agar mavjud bo'lsa, oddiy matn sifatida ham ko'rib chiqiladi.   
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <h2>
+                    Bo'lim ildizi
+                </h2>
+
+                <table class="meta_table">
+                    <thead class="">
+                        <tr>
+                            <th>Element</th>
+                            <th>Ta'rif</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><a href="/1.Front end/1.HTML/Elementlar/1.Html elementlar/2.Hujjat meta-fayllari/1.base.html">&lt;body&gt;</a></td>
+                            <td>
+                                HTML hujjatining mazmunini ifodalaydi. Hujjatda bunday element faqat bitta bo'lishi mumkin.
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <h2>Tarkibni ajratish</h2>
+
+                <p>
+                    Tarkibni bo'limlash elementlari hujjat mazmunini mantiqiy qismlarga ajratish imkonini beradi. 
+                    Sahifa mazmuni uchun keng konturni yaratish uchun bo'lim elementlaridan foydalaning, jumladan, 
+                    sarlavha va altbilgi navigatsiyasi va kontent bo'limlarini aniqlash uchun sarlavha elementlari.
+                </p>
+
+                <table class="meta_table">
+                    <thead class="">
+                        <tr>
+                            <th>Element</th>
+                            <th>Ta'rif</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><a href="/1.Front end/1.HTML/Elementlar/1.Html elementlar/2.Hujjat meta-fayllari/1.base.html">&lt;address&gt;</a></td>
+                            <td>
+                                Qo'shilgan HTML shaxs yoki odamlar yoki tashkilot uchun aloqa ma'lumotlarini taqdim etishini bildiradi.
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><a href="/1.Front end/1.HTML/Elementlar/1.Html elementlar/2.Hujjat meta-fayllari/1.base.html">&lt;article&gt;</a></td>
+                            <td>
+                                Hujjatda, sahifada, ilovada yoki saytda mustaqil ravishda tarqatilishi yoki qayta ishlatilishi uchun mo'ljallangan 
+                                mustaqil kompozitsiyani ifodalaydi. Misollar: forum posti, jurnal yoki gazeta maqolasi, blog yozuvi, mahsulot kartasi, 
+                                foydalanuvchi tomonidan yuborilgan sharh, interaktiv vidjet yoki gadjet yoki boshqa mustaqil kontent elementi.
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><a href="/1.Front end/1.HTML/Elementlar/1.Html elementlar/2.Hujjat meta-fayllari/1.base.html">&lt;aside&gt;</a></td>
+                            <td>
+                                Hujjatning mazmuni hujjatning asosiy mazmuni bilan faqat bilvosita bog'liq bo'lgan qismini ifodalaydi. 
+                                Asides ko'pincha yon panellar yoki chaqiruv qutilari sifatida taqdim etiladi.
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><a href="/1.Front end/1.HTML/Elementlar/1.Html elementlar/2.Hujjat meta-fayllari/1.base.html">&lt;footer&gt;</a></td>
+                            <td>
+                                O'zining eng yaqin ajdodi bo'limlari mazmuni yoki ildiz elementini bo'limlash uchun pastki ko'rsatkichni ifodalaydi. 
+                                &lt;/footer&gt; 
+                                odatda bo'lim muallifi haqidagi ma'lumotlarni, mualliflik huquqi ma'lumotlarini yoki tegishli 
+                                hujjatlarga havolalarni o'z ichiga oladi.
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><a href="/1.Front end/1.HTML/Elementlar/1.Html elementlar/2.Hujjat meta-fayllari/1.base.html">&lt;header&gt;</a></td>
+                            <td>
+                               Kirish mazmunini, odatda kirish yoki navigatsiya vositalari guruhini ifodalaydi. Unda ba'zi sarlavha elementlari, 
+                               shuningdek, logotip, qidiruv shakli, muallif nomi va boshqa elementlar bo'lishi mumkin.
                             </td>
                         </tr>
                     </tbody>
@@ -173,7 +273,7 @@
                 <div class="sayt">
                    <i>https://developer.mozilla.org</i>
                 </div>
-
+                <hr>
                 <p>
                     HTML da matnni bir necha qatorlarga bo'lishning ikki xil usuli bor Bizda bo'sh element 
                     bo'lgan <span class="red">br</span> element mavjud bo'lib, u bizning matnimiz 

@@ -12,9 +12,36 @@ body {
     background-color:chocolate;
     padding: 10px 0;
     margin: 0 auto;
-    
+    display: flex; /* #bosh ichidagi elementlarni vertikal markazga joylashtirish uchun */
+    align-items: center; /* Elementlarni vertikal markazga joylashtiradi */
+    position: sticky;
+    top: 0;
+    z-index: 1000; /* Boshqa elementlar ustida turishi uchun */
 }
+
+#bosh h1 {
+    display: inline;
+    margin: 0;
+    padding: 0;
+}
+#bosh ul, #bosh li{
+    display: inline;
+    list-style-type: none;
+    padding: 0 10px;
+}
+#bosh ul a{
+    text-decoration: none;
+    color: wheat;
+    padding: 5px;
+}
+
+#bosh ul a:hover {
+    background-color: brown;
+    padding: 5px;
+}
+
 .bosh {
+    margin: auto;
     padding: 5px auto;
 }
 .bosh {
@@ -28,24 +55,56 @@ body {
 }
 
 .menyu {
-    width: 70%;
+    width: 80%;
     margin: 0 auto;
 }
 
 #menyu {
     background-color:dimgray;
     margin: 0 auto;
+    position: sticky;
+    top: 56px; /* #bosh qismining taxminiy balandligi (padding + matn) */
+    z-index: 999;
 }
 #menyu ul {
     margin: 0;
     padding: 0;
 }
+
 #menyu ul li{
     list-style-type: none;
     display: inline;
-    border-right: 1px solid #fffff3;
+    padding: 0 8px;
+}
+.text_left {
+    display: inline-block;
+    margin: 0 2px;
+    padding: 0px 20px;
+    position: sticky;
+    top: 56px; /* #bosh qismining taxminiy balandligi (padding + matn) */
+    z-index: 999;
 }
 
+.text_left ol li{
+    list-style-type: none;
+    padding: 5x 20px;
+    margin: 10px 2px;
+}
+
+.text_left ol li a{
+    text-decoration: none;
+    color: #000;
+}
+
+.text_left ol li a:hover{
+    color: red;
+}
+
+#text {
+    padding: 0 20px;
+    margin: 10px 0;
+    margin-right: 200px;
+}
 #text > p{
     padding: 10px 40px;
 }
@@ -58,8 +117,16 @@ body {
 }
 
 #container {
+    display: flex;
     margin: 0 auto;
     background-color: bisque;
+}
+
+
+.text_left ul li {
+    list-style-type: none;
+    padding: 10px 0;
+    text-align: center;
 }
 
 .sarlavha {
@@ -71,14 +138,12 @@ body {
 .sarlavha h2{
     margin-top: 5px;
     border-radius: 0 10px 10px 0;
-    background-color: greenyellow;
     padding: 2px 6px;
 }
 
 .matn_muharriri  {
     margin-top: 5px;
     border-radius: 0 10px 10px 0;
-    background-color: greenyellow;
     padding: 2px 6px;
     width: 8em;
     text-align: center;
@@ -97,7 +162,6 @@ body {
     text-align: center;
     justify-content: center;
     padding: 0px 20px;
-    
 }
 
 .atom a{
@@ -158,7 +222,6 @@ kbd {
 .izoh  {
     margin-top: 5px;
     border-radius: 0 10px 10px 0;
-    background-color: greenyellow;
     padding: 2px 6px;
     width: 5em;
     text-align: center;
@@ -186,6 +249,3 @@ kbd {
     color: wheat;
 }
 **/
-
-
-
