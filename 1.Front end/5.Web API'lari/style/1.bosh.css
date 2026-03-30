@@ -1,0 +1,43 @@
+#bosh {
+    background-color:dimgrey;
+    margin: 0 auto;
+    border-bottom: 1px solid #222123;
+}
+
+.bosh {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.bosh a {
+    color:antiquewhite;
+    text-decoration: none;
+}
+
+.bosh a:hover {
+    color:aliceblue;
+    text-decoration: none;
+}
+
+.bosh ul {
+    padding: 0;
+    margin: 0;
+}
+
+.bosh ul li{
+    list-style-type: none;
+    display: inline;
+    color:antiquewhite;
+}
+
+.bosh h1 {
+    color:#FFF;
+    margin: 0;
+    padding: 0;
+}
+.navigation {
+    background-color: dimgrey;
+    color: #fff;
+    padding: 0;
+    border-bottom: 1px solid #222123;
+}

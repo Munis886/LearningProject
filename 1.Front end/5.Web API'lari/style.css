@@ -4,46 +4,6 @@ body, h1 {
     padding: 0;
 }
 
-#bosh {
-    background-color:chocolate;
-    margin: 0 auto;
-}
-
-.bosh {
-    width: 80%;
-    margin: 0 auto;
-}
-
-.menyu {
-    width: 100%;
-    margin: 0 auto;
-    display: flex;
-}
-
-#menyu {
-    background-color:dimgray; 
-    margin: 0 auto;
-}
-
-.menyu ul li{
-    list-style-type: none;
-    display: inline;
-    border-right: 1px solid #222123;
-    text-align: center;
-}
-
-.menyu ul {
-    margin: 0   ;
-    padding: 0;
-}
-
-.menyu ul li a {
-    text-decoration: none;
-    color: #fff;
-    padding: 5px 10px;
-    display: inline-block;
-}
-
 .body {
     margin: 0;
     display: flex;
@@ -51,66 +11,6 @@ body, h1 {
     overflow: hidden;
 }
 
-.menu {
-    width: 300px;
-    height: 100vh;
-    position:absolute;
-    overflow-y: auto;
-    top: 0;
-    background: var(--moviy-rang);
-    z-index: 1000;
-    left: -300px; /* Menu yashirilgan holatda */
-    transition: left 0.3s; /* Silliq ko'rinish uchun o'tish */
-    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
-  }
-  
-.menu.active {
-    left: 0; /* Menu ko'rinadigan holatda */
-    position:relative;
-  }
-
-#menu h3 {
-    padding: 2px 3px;
-    margin: 2px 3px;
-    color: #fff;
-    display: inline-block;
-}
-
-#menu h3 a {
-    text-decoration: none;
-    color: #fff;
-}
-
-#menu ul li{   
-      list-style-type: none;
-      
-  }
-#menu ul {
-      padding: 0;
-      margin: 0;
-  }
-#menu ul li a {
-      display: block;
-      margin: 1px 0;
-      color: #000; /* Dastlabki matn rangi */
-      background-color: #f0f0f0; /* Dastlabki fon rangi */
-      padding: 6px 15px 6px 20px;
-      text-decoration: none;
-      font-family: "Montserrat",;
-      font-style: normal;
-    }
-  
-  /* Kursor ustiga kelsa */
-div #menu ul li a:hover {
-      background-color: var(--tugma-uchun); /* Kursor ustiga kelsa fon rangi */
-      color: #fff; /* Kursor ustiga kelsa matn rangi */
-    }
-  
-    /* Bosilgan holat */
-#menu  a:active {
-      background-color: #0003d3 !important; /* Bosilgan holat fon rangi */
-      color: #fff !important; /* Bosilgan holat matn rangi */
-    }
 
 body {
     background-color: bisque;
@@ -140,6 +40,14 @@ body {
     margin: 14px 10px;
 }
 
+#text > p a{
+    color: #333;
+    text-decoration: none;
+}
+
+#text > p a:hover {
+    text-decoration: underline;
+}
 .text1 {
     display: flex; 
     margin: auto; 
