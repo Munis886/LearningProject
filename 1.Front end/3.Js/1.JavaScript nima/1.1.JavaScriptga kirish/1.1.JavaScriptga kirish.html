@@ -5,9 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="keywords" content="Javascript, Java script">
     <meta name="description" content="Bu yerda Javascript haqida batafsil ma'lumot olamiz">
-    <link rel="stylesheet" href="/1.Front end/3.Js/style.css">
+    <link rel="stylesheet" href="../../style.css">
     <title>Java script</title>
-    <script src="/1.Front end/3.Js/script.js"></script>
+    <script src="script.js"></script>   
 </head>
 <body>
     <div id="bosh">
@@ -15,7 +15,7 @@
             <h1>JavaScript</h1>
         </div>
     </div>
-
+    
      <div id="menyu">
     <div class="menyu">
         <button id="toggle-btn" onclick="toggleMenu()">Menu</button>
@@ -25,12 +25,14 @@
             <li><a href="/1.Front end/1.HTML/1.HTML.html">HTML</a></li>
             <li><a href="/1.Front end/2.Css/Css.html">CSS</a></li>
             <li><a href="/1.Front end/3.Js/Javascript.html">JAVASCRIPT</a></li>
+            <li><a href="/1.Front end/5.Web API'lari/Web API'lari.html">WEB API'lari</a></li>
+            <li><a href="/2.Backend/1.Node js/Node js.html">NODE JS</a></li>
         </ul>
     </div>
     </div>
     <div class="body">
         <div id="menu" class="menu">
-            <h3>JavaScript</h3>
+            <h3><a href="/1.Front end/3.Js/Javascript.html">JavaScript</a></h3>
             <ul>
                 <li>
                     <a href="#" onclick="toggleSubMenu('sub-menu-1')">
@@ -551,7 +553,7 @@
                     <ul id="sub-menu-6" class="sub-menu">
                         <li>
                             <a href="/1.Front end/3.Js/6.Massivlar/6.1.Massivlarga kirish/6.1.Massivlarga kirish.html">
-                                6.1.Funksiyalarga kirish
+                                6.1.Massivlarga kirish
                             </a>
                         </li>
                         <li>
@@ -1012,7 +1014,7 @@
                     </ul>
                 </li>
             </ul>
-        </div> 
+        </div>  
 
         <div id="container">
             <div class="sarlavha">
@@ -1021,56 +1023,37 @@
                         <a href="/1.Front end/3.Js/Javascript.html">⟨</a>
                     </li>
                     <li class="li_2">
-                       1.0 JavaScriptning tarixi
+                       1.1 Java Scriptga kirish
                     </li>
                     <li class="li_3">
-                        <a href="/1.Front end/3.Js/1.JavaScript nima/1.2.JavaScript Consoli/1.2.JavaScript Consoli.html">
+                        <a href="/1.Front end/3.Js/1.JavaScript nima/1.2.JavaScriptning tarixi/1.2.JavaScriptning tarixi.html">
                             ⟩
                         </a>
                     </li>
                 </ul>
             </div>
+            
             <div id="text">
                 <p>
-                    Java script atigi 10 kun ichida, 1995-yilda Brendan Eich tomonidan u inson Netscope 
-                    Navigatorda ishlayotgan paytda yaratilgan. Bilmaganlar uchun aytaman, Netscape Navigator
-                    internetdagi birinchi web brauzerlardan biri edi. Bugungi kunda internetda ishlash uchun siz
-                    Google Chrome, Mozilla Firefox, Apple Safari, va Microsoft Edge kabi brauzerlardan foydalanasiz.
-                    Java Script yaratilishidan oldin web-saytlar oddiy plagin yoki Java ilovasi bo'lgan HTML va
-                    CSS sahifalari sifatida mavjud bo'lgan. 
-                </p>
-                <p>
-                    Shoshmang, Java-chi?
-                </p>
-                <p>
-                    Ha yaxshi eng birinchisi ushbu kurs davomida o'rganiladigan JavaScript umuman farq qiladi
-                    va Java bilan hech qanday tarzda bog'liq emas. Gap shundaki JavaScript nomi haqida gap ketganda
-                    g'alati o'tmishga ega bo'lgan. Dastlab JavaScriptni LiveScript deb nomlashgan, ammo o'sha vaqtda
-                    Javaning mashhurligidan o'zib ketish uchun marketing strategiyasi asosida JavaScriptga o'zgartirilgan.
-                    Til rivojlanib borishi bilan bu tilning raqobatdosh variyantlari paydo bo'ldi. Shunday qilib, JavaScript
-                    rasmiy ravishda Ecma international ga olib borildi, shunda tilning rasmiy standarti shakllantirildi.
-                    Bugungi kunda tilning o'zi hali ham JavaScript deb nomlanadi. Ammo so'ngi versiyalarga ES5 yoki ES6
-                    kabi ECMAScript versiya raqamlari havola qilinadi. So'nggi paytlarda standartlar idorasi ishlab 
-                    chiqarishni yanada izchil davom ettirish uchun versiyalarni nomlaganda yilga asoslangan raqamga o'tdi.
-                    Shuning uchun hozirda ES2016, ES2017 va boshqalar mavjud. Bilaman bu sal chalkashroq. Ko'rib 
-                    chiqilgan barcha narsalar, JavaScript dunyodagi eng mashhur tillardan biriga aylanganligi va web 
-                    saytlarning dizaynini ishlab chiqishning uchta asosiy ustunlaridan biri hisoblanishidir.
-                </p>
-                <p>
-                    TIP: HTML va CSS - bu belgilash tillari. Belgilash tillari hujjat tarkibidagi elementlarni 
-                    tavsiflash va aniqlash uchun ishlatiladi. JavaScript bu dasturlash tili. Dasturlash tillari 
-                    kompyuterga ko‘rsatmalarni yetkazish uchun ishlatiladi. Dasturlash tillari kompyuterni boshqarish 
-                    va algoritmlar yozish uchun ishlatilishi mumkin.
+                    Java script bu web uchun yaratilgan dasturlash tilidir. Agar web sahifalarni yaratish
+                    uchun HTML va CSS dan foydalanishni bilsangiz, JavaScript bu sizning web saytingizni 
+                    dunyoga keltirish uchun zarur bo'lgan so'nggi qismdir. Brandan Eich 1995-yili
+                    JavaScriptni yaratganda, bu til web saytlarga interfaol va dinamik elementlarni
+                    qo'shishni osonlashtirish uchun yaratilgan. Ammo bugungi kunda JavaScript barcha 
+                    turdagi dasturlar uchun ishlatiladi. Arduino orqali robot dasturlashdan tortib
+                    Unityda o'yin dasturlash kodlarini yozishgacha. Aslida hatto ba'zi kod yozuvchi
+                    muharrir dasturlar ham JavaScript orqali yaratilgan. Gap shundaki, JavaScriptning 
+                    imkoniyatlari cheksizdir. Ushbu kursda siz JavaScript dasturlash tilining asoslari
+                    haqida bilib olasiz. Kurs davomida siz JavaScript dasturchilari tomonidan ishlatiladigan
+                    vositalar bilan tanishasiz. Va oxirida til asoslari bilan yetarli darajada tajribaga 
+                    ega ekanligingizga ishonch hosil qilishni istaymiz. Shunday qilib, har bir bo'lim o'rtasida
+                    biz ilgari o'rgangan mavzularni mustahkamlaydigan muammolar to'plamiga kirishingiz mumkin.
+                    Boshlashdan oldin, JavaScript tarixi haqida ozroq gaplashish uchun tezroq sayohat qilaylik
                 </p>
             </div>
-          
-          
+            
         </div> 
     </div>
-    
- 
-
-   
    
 </body>
 </html>
