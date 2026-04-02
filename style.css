@@ -57,8 +57,9 @@ body,div,ul,li,h1,h2{
     background-size: cover; /* Rasm butun sahifani qoplashi */
     background-position: center; /* Rasm markazda bo'lishi */
     background-repeat: no-repeat; /* Rasm takrorlanmasligi */
-    height: 440px;
-    
+    height: 50%;
+    min-height: 0vh;
+    position: relative;
 }
 
 .top {
@@ -81,14 +82,14 @@ body,div,ul,li,h1,h2{
 
 .bottom {
     display: flex;
-    height: 90%;
+    height: 55vh;
 }
 
 .front_end {
-    height: 90%;
     width: 50%;
-    margin: auto 54px 0; 
+    margin: auto; 
     display: flex;
+    height: 40vh;
 }
 
 .front_end h2 {
@@ -101,15 +102,18 @@ body,div,ul,li,h1,h2{
 }
 
 .ul li {
-    display: block;
-    height: 90%;   
+    display: block; 
 }
 
 .ul li {
     text-align: center;
 }
+
 .ul {
     margin: auto;
+    display: flex;
+    flex-direction: column;
+    width: 50%;
 }
 .ul li a {
     text-decoration: none;
@@ -141,6 +145,7 @@ body,div,ul,li,h1,h2{
     background-position: center; /* Rasm markazda bo'lishi */
     background-repeat: no-repeat; /* Rasm takrorlanmasligi */
     height: 350px;
+    min-height: 100%;
 }
 .backend {
     width: 50%;
@@ -203,7 +208,6 @@ body,div,ul,li,h1,h2{
     }
     .front_end, .backend, .Rus_tili, .ul {
         width: 100%;
-        margin: 10px 0;
     }
 }
 
