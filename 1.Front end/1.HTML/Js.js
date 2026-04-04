@@ -13,3 +13,4 @@ function toggleSubMenu(id) {
     subMenu.style.display = "block"; // Ko'rsatish
   }
 }
+

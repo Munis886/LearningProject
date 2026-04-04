@@ -6,6 +6,8 @@
     <meta name="keywords" content="Javascript, Java script">
     <meta name="description" content="Bu yerda Javascript haqida batafsil ma'lumot olamiz">
     <link rel="stylesheet" href="/1.Front end/5.Web API'lari/style.css">
+    <link rel="stylesheet" href="../../style/1.bosh.css">
+    <link rel="stylesheet" href="../../style/2.menu.css">
     <title>Hujjat obyekti modeli (DOM)</title>
     <script src="/1.Front end/3.Js/script.js"></script>
 </head>
@@ -14,23 +16,34 @@
     
     <div id="bosh">
         <div class="bosh">
-            <h1>JavaScript</h1>
+            <h1>Document</h1>
         </div>
     </div>
 
-     <div id="menyu">
-    <div class="menyu">
-        <button id="toggle-btn" onclick="toggleMenu()">Menu</button>
-        <ul>
-            <li><a href="/index.html">HOME</a></li>
-            <li><a href="/1.Front end/1.Front_end.html">FRONT END</a></li>
-            <li><a href="/1.Front end/1.HTML/1.HTML.html">HTML</a></li>
-            <li><a href="/1.Front end/2.Css/Css.html">CSS</a></li>
-            <li><a href="/1.Front end/3.Js/Javascript.html">JavaScript</a></li>
-            <li><a href="/2.Backend/1.Node js/Node js.html">Node js</a></li>
-        </ul>
+    <div id="menyu">
+        <div class="menyu">
+            <button id="toggle-btn" onclick="toggleMenu()">Menu</button>
+            <ul>
+                <li><a href="/index.html">HOME</a></li>
+                <li><a href="/1.Front end/1.Front_end.html">FRONT END</a></li>
+                <li><a href="/1.Front end/1.HTML/1.HTML.html">HTML</a></li>
+                <li><a href="/1.Front end/2.Css/Css.html">CSS</a></li>
+                <li><a href="/1.Front end/3.Js/Javascript.html">JavaScript</a></li>
+                <li><a href="/2.Backend/1.Node js/Node js.html">Node js</a></li>
+            </ul>        
+        </div>
     </div>
-    </div>
+    <div id="bosh">
+            <div class="bosh">
+                <ul>
+                    <li><a href="/1.Front end/1.Front_end.html">Front end</a></li>
+                    <li>⇛</li>
+                    <li><a href="/1.Front end/5.Web API'lari/Web API'lari.html">Web API'lari</a></li>
+                    <li>⇛</li>
+                    <li><a href="../9.Document/9.Document.html">Document</a></li>
+                </ul>
+            </div>
+        </div>
     <div class="body">
         <div id="menu" class="menu">
             <h3><a href="/1.Front end/3.Js/Javascript.html">Document Object Model</a></h3>
@@ -698,25 +711,6 @@
                     </ul>
                 </li>
                 <li>
-                    <a href="#" onclick="toggleSubMenu('sub-menu-7')">
-                        <span>
-                            7
-                        </span> <b>Comment</b>
-                    </a>
-                    <ul id="sub-menu-7" class="sub-menu">
-                        <li>
-                            <a href="/1.Front end/3.Js/7.Obyektlar/7.1.Obyektlar. Kirish/7.1.Obyektlar. Kirish.html">
-                                7.1.Obyektlar. Kirish
-                            </a>
-                        </li>
-                        <li>
-                            <a href="/1.Front end/3.Js/7.Obyektlar/7.2.Kodda obyektlar/7.2.Kodda obyektlar.html">
-                                7.2.Kodda obyektlar
-                            </a>
-                        </li>
-                    </ul>
-                </li>
-                <li>
                     <a href="#" onclick="toggleSubMenu('sub-menu-8')">
                         <span>
                             8
@@ -770,13 +764,15 @@
 
                 <p>
                     Hujjat interfeysi brauzerda yuklangan har qanday veb-sahifani ifodalaydi va veb-sahifa 
-                    tarkibiga kirish nuqtasi bo'lib xizmat qiladi, ya'ni DOM daraxti.
+                    tarkibiga kirish nuqtasi bo'lib xizmat qiladi, ya'ni <a href="../../1.Texnik xususiyatlar/D/1.Hujjat obyekti modeli (DOM)/1.Hujjat obyekti modeli (DOM).html">DOM daraxti</a>.
                 </p>
                 
                 <p>
-                    DOM daraxti boshqa elementlar qatorida &lt;body&gt; va &lt;table&gt; kabi elementlarni o'z ichiga oladi. 
-                        U sahifaning URL manzilini qanday olish va hujjatda yangi elementlarni yaratish kabi 
-                        global miqyosda hujjatning funksionalligini ta'minlaydi.
+                    DOM daraxti boshqa elementlar qatorida 
+                    <a href="/1.Front end/1.HTML/Elementlar/1.Html elementlar/6.body.html">&lt;body&gt;</a> va &lt;table&gt; 
+                    kabi elementlarni o'z ichiga oladi. 
+                    U sahifaning URL manzilini qanday olish va hujjatda yangi elementlarni yaratish kabi 
+                    global miqyosda hujjatning funksionalligini ta'minlaydi.
                 </p>
 
                 <p>

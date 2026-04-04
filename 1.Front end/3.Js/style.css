@@ -135,12 +135,15 @@ body {
 #text, .text {
     padding: 10px 40px;
     text-align: justify;
+    width: 80%;
+    margin: 10px auto;
 }
 
 #text > p{
     margin: 14px 10px;
     line-height: var(--font-line-content);
     font-family: Inter;
+    font-size: 19px;
 }
 
 .text1 {
