@@ -139,7 +139,7 @@ body {
     margin: 10px auto;
 }
 
-#text > p{
+#text > p:not(.p){
     margin: 14px 10px;
     line-height: var(--font-line-content);
     font-family: Inter;
