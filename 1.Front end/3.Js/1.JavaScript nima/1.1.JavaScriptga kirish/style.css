@@ -5,8 +5,23 @@
 }
 
 .p {
-    margin: 14px 10px;
+    margin: 2px 10px;
     padding: 6px 19px;
     font-family: Inter;
     font-size: 19px;
+}
+
+.blueviolet {
+    background-color: blueviolet;
+    border-radius: 6px;
+}
+
+.green-b {
+    background-color: green;
+    border-radius: 6px;
+}
+
+.yellow-b {
+    background-color: yellow;
+    border-radius: 6px;
 }
