@@ -139,7 +139,7 @@ body {
     margin: 10px auto;
 }
 
-#text > p:not(.p){
+.text > p:not(.p){
     margin: 14px 10px;
     line-height: var(--font-line-content);
     font-family: Inter;
@@ -383,21 +383,24 @@ pre {
 }
 
 /* sarlavha uchun */
-.sarlavha ul {
-    display: flex;
-    list-style-type: none;
-    padding: 0;
-    margin: 10px 0;
-    align-items: center;
+.sarlavha ul:hover {
+    background-color: var(--background-information);
+    color: whitesmoke;
+    transition: 0.6s;
+    
 }
 
 .sarlavha ul {
     display: inline-flex;
     width: auto;
-    background: greenyellow;
+    background:#5e9effaf;
     border-radius: 0 8px 8px 0;
     font-size: 25px;
     box-shadow: 0 0 8px #333;
+    list-style-type: none;
+    padding: 0;
+    margin: 10px 0;
+    align-items: center;
 }
 
 .li_1 {
@@ -409,14 +412,14 @@ pre {
 
 .li_1 a {
     font-weight: 500;
-    color: black;
+    color: blanchedalmond;
     transition: 0.4s;
     padding: 5px 5px;
 }
 
 .li_1 a:hover {
     font-weight: 600;
-    color: seagreen;
+    color: white;
     transition: 0.4s;
     box-sizing: border-box;
 }
@@ -435,8 +438,8 @@ pre {
 
 .li_3 a {
     font-weight: 500;
-    font-variant: normal;
     transition: 0.4s;
+    color: blanchedalmond;
     padding: 5px 5px;
     border-radius: 0 8px 8px 0;
     box-sizing: border-box;
@@ -444,7 +447,7 @@ pre {
 
 .li_3 a:hover {
     font-weight: 600;
-    color: seagreen;
+    color: white;
     transition: 0.4s;
     box-sizing: border-box;
 }
@@ -518,21 +521,21 @@ pre {
   }
   
 .Eslatma_tana::before {
-      content: "i";
-      position: absolute;
-      top: 17px; /* Belgilangan joylashuv */
-      left: 10px; /* Chapdan joylashuv */
-      right: 10px; /* O'ngdan joylashuv */
-      background-color: var(--note-theme);
-      color: white;
-      font-weight: bold;
-      width: 16px;
-      height: 16px;
-      border-radius: 50%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 12px;
+    content: "i";
+    position: absolute;
+    top: 17px; /* Belgilangan joylashuv */
+    left: 10px; /* Chapdan joylashuv */
+    right: 10px; /* O'ngdan joylashuv */
+    background-color: var(--note-theme);
+    color: white;
+    font-weight: bold;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
 }
 
 
@@ -560,7 +563,7 @@ pre {
 .Ogohlantirish_tana {
       position: relative; /* Konteynerni nisbiy pozitsiyaga qo'yamiz */
       padding: 15px 15px 5px 10px;
-      }
+}
   
 .Ogohlantirish_tana > p {
     margin: 0;
