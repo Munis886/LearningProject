@@ -437,6 +437,7 @@ pre {
     font-weight: 500;
     font-variant: normal;
     transition: 0.4s;
+    color: black;
     padding: 5px 5px;
     border-radius: 0 8px 8px 0;
     box-sizing: border-box;
