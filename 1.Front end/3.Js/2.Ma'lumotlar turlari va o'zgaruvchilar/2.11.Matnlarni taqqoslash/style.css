@@ -1,10 +1,10 @@
 .havo_chegara {
     border: 1.5px solid #6491FC; 
-    text-align: center; 
-    width: 60%; 
+    width: 80%; 
     margin: auto; 
     border-radius: 0 0 45px 0; 
     margin-top: 15px;
+    padding: 20px 15px;
 }
 
 .border {
@@ -17,7 +17,7 @@
     margin: 6px auto;
 }
 
-.deeppink {
+.text-deeppink {
     color: deeppink;
 }
 
@@ -36,4 +36,8 @@ p {
 
 .maxsus {
     box-shadow: 0 0 6px orange;
+}
+
+.text-black {
+    color: black;
 }

@@ -275,7 +275,7 @@ body {
     width: 80%; 
     margin: 8px auto; 
     margin-top: 15px;
-    padding-left: 15px;
+    padding: 20px 15px;
 }
 
 div p {
@@ -482,6 +482,7 @@ pre {
 .css_tana, .css_tana h1{
   border-top: 2px solid #000;
   margin: 0 auto; 
+  color: #fff000;
 }
 
 .Eslatma {

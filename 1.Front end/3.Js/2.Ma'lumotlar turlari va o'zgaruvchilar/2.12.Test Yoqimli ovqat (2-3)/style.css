@@ -1,9 +1,10 @@
 .havo_chegara {
     border: 1.5px solid #6491FC;  
-    width: 60%; 
+    width: 80%; 
     margin: auto; 
     border-radius: 0 0 45px 0; 
     margin-top: 15px;
+    padding: 20px 15px;
 }
 
 .border {
@@ -15,8 +16,12 @@
     margin: auto;
 }
 
-.deeppink {
+.text-deeppink {
     color: deeppink;
+}
+
+.text-black {
+    color: black;
 }
 
 body {
