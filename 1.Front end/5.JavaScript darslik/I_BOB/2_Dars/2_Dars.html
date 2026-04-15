@@ -1022,13 +1022,18 @@
                     </a>
                     <ul id="sub-menu-3.1" class="sub-menu">
                         <li>
-                            <a href="/1.Front end/4.JavaScript/1-Bo'lim/1.1.JavaScriptga kirish/1.1.JavaScriptga kirish.html">
-                                1_Dars. Salom dunyo
+                            <a href="../1_Dars/1_Dars.html">
+                                1.1. Salom dunyo
                             </a>
                         </li>
                         <li>
-                            <a href="/1.Front end/4.JavaScript/1-Bo'lim/1.2.JavaScriptda Hello World/1.2.JavaScriptda Hello World.html">
+                            <a href="../1_Dars/1.2_argument haqida.html">
                                 1.2. Argument haqida ikki og’iz gap
+                            </a>
+                        </li>
+                        <li>
+                            <a href="../2_Dars/2_Dars.html">
+                                2. WebSayt bilan muloqot 
                             </a>
                         </li>
                     </ul>
@@ -1335,9 +1340,103 @@
                     alert("Xush kelibsiz Hurmatli " + ism);
                     }
                 </script>
+                <p>
+                    Faylni saqlaymiz. Har doimgidek faylnomi.html . Keyin saqlangan faylni ochamiz 
+                    Sahifamizda bitta tugma turibdi. Ana shunga sichqoncha bilan bosamiz. 
+                </p>
                 
                 <input type="button" value="Bu yerga bosing" onclick="savol()" />
+                
+                <p>
+                    Mana bunday oyna ochiladi 
+                </p>
 
+                <img src="./4.oyna.png" alt="oyna">
+
+                <p>
+                    Yozing –degan joyga ismingizni yozib OK ni bosing… Masalan men ismimni Leonardo deb yozdim. va 
+                    OK ni bosdim. Mana bunaqa oyna chiqdi: 
+                </p>
+
+                <p>
+                    Yuqoridagi muloqotni yanada ajoyibroq qilamiz. <br>
+                    Har doimgidek Bloknot (yoki boshqa text redaktori)ni ochamiz. Quyidagi kodni yozamiz.
+                </p>
+
+                <pre class="border p">
+                    &lt;html&gt; 
+                    &nbsp; &lt;head&gt; 
+                    &nbsp;&nbsp; &lt;title&gt;Sarlavha&lt;/title&gt; 
+                    &nbsp; &lt;/head&gt; 
+                    &nbsp; &lt;body&gt; 
+                    &nbsp;&nbsp; &lt;script type=&quot;text/javascript&quot;&gt; 
+                    &nbsp;&nbsp;&nbsp; function savol() { 
+                    &nbsp;&nbsp;&nbsp; var ism=prompt(&quot;Salom birodar ismingiz nima&quot;, &quot;yozing&quot;); 
+                    &nbsp;&nbsp;&nbsp; var shahar=prompt(&quot;Qaysi shaharda yashaysiz&quot;, &quot;yozing&quot;); 
+                    &nbsp;&nbsp;&nbsp; alert( shahar+ &quot; degan shaharda &quot; +ism+ &quot; ismli odam yashar ekan&quot; ); 
+                    &nbsp;&nbsp;&nbsp; } 
+                    &nbsp;&nbsp; &lt;/script&gt; 
+
+                    &lt;input type=&quot;button&quot; value=&quot;Bu yerga bosing&quot; onclick=&quot;savol()&quot; /&gt; 
+
+                    &nbsp; &lt;/body&gt; 
+                    &lt;/html&gt; 
+                </pre>
+                
+                <p>
+                    Sahifani saqlaymiz. Qayta yana ochamiz 
+                </p>
+
+                <script type="text/javascript">
+                    function savol() {
+                    var ism=prompt("Salom birodar ismingiz nima", "yozing");
+                    var shahar=prompt("Qaysi shaharda yashaysiz", "yozing");
+                    alert( shahar+ " degan shaharda " +ism+ " ismli odam yashar ekan" );
+                    }
+                </script>
+
+                <input class="p" type="button" value="Bu yerga bosing" onclick="savol()" />
+
+                <p>
+                     Sahifadagi tugmani bosganimizda Bizga savol beriladi, Unga javob berib OK ni bosgandan keyin yana 
+                        savol beriladi. Yana OK ni bosamiz… Xo´sh keyin nima bo´ldi , tekshirib ko´ringchi… 
+                </p>
+
+                <p>
+                    WebSahifa bilan savol javob qilishni ham o´rgandik. Etibor bergan bo´lsangiz Bizga qaytarilayotgan 
+                    javob faqat ogohlantirish oynasida ochilmoqda. Shuni WebSahifani o´zida yozadigan qilsak-chi. 
+                    Masalan, websahifa ochilganda savol beriladi. Biz savolga javob beramiz va OKni bosamiz. Yozgan 
+                    javobimiz, Web saytimizni o´zida paydo bo´lsin. Buning uchun mana bu kod ishlatiladi: 
+                    <b>document.write()</b> 
+                </p>
+
+                <p>
+                    Mana sizga tayyor kod. Bloknotni ochib kodni yozing  
+                </p>
+
+                <pre class="border p">
+                    &lt;html&gt; 
+                        &lt;head&gt; 
+                            &lt;title&gt;Sarlavha&lt;/title&gt; 
+                        &lt;/head&gt; 
+                        &lt;body&gt; 
+                            &lt;script type=&quot;text/javascript&quot;&gt; 
+                                var ism=prompt(&quot;Salom birodar ismingiz nima&quot;, &quot;yozing&quot;); 
+                                document.write(&quot;Xush kelibsiz Muhtaram janob &quot; +ism); 
+                            &lt;/script&gt; 
+                        &lt;/body&gt; 
+                    &lt;/html&gt; 
+                </pre>
+
+
+                <input type="button" name="button" value="Bu yerga bosing" onclick="savol()">
+
+                <script type="text/javascript">
+                    function savol() {
+                        var ism=prompt("Salom birodar ismingiz nima", "yozing");
+                    }
+                        document.write("Xush kelibsiz Muhtaram janob " +ism);
+                </script>
 
             </div>
             
