@@ -1,0 +1,42 @@
+.border {
+    border: 1px solid black;
+    padding-left: 5px;
+    line-height: 1.1;
+}
+
+.border_r {
+    border: 1px solid green;
+    padding-left: 5px;
+    line-height: 1.1;
+    border-radius: 7px;
+}
+
+.p {
+    margin: 2px 10px;
+    padding: 6px 19px;
+    font-family: Inter;
+    font-size: 19px;
+}
+
+.blueviolet {
+    background-color: blueviolet;
+    border-radius: 6px;
+    padding-left: 8px;
+}
+
+.green-b {
+    background-color: green;
+    border-radius: 6px;
+    padding-left: 8px;
+}
+
+.yellow-b {
+    background-color: yellow;
+    border-radius: 6px;
+    padding-left: 8px;
+}
+
+.dotted {
+    border: 1px dotted black;
+    margin: 10px 0;
+}
