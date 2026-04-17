@@ -6,7 +6,6 @@
     <meta name="keywords" content="Javascript, Java script">
     <meta name="description" content="Bu yerda Javascript haqida batafsil ma'lumot olamiz">
     <link rel="stylesheet" href="../../style.css">
-    <link rel="stylesheet" href="style.css">
     <title>Java script</title>
     <script src="../../Js.js"></script>   
 </head>
@@ -1024,12 +1023,12 @@
                     <ul id="sub-menu-3.1" class="sub-menu">
                         <li>
                             <a href="../1_Dars/1_Dars.html">
-                                1.1. Salom dunyo
+                                1. Salom dunyo
                             </a>
                         </li>
                         <li>
                             <a href="../1_Dars/1.2_argument haqida.html">
-                                1.2. Argument haqida ikki og’iz gap
+                                1.1. Argument haqida ikki og’iz gap
                             </a>
                         </li>
                         <li>
@@ -1130,13 +1129,13 @@
             <div class="sarlavha">
                 <ul>
                     <li class="li_1">
-                        <a href="../2_Dars/2_Dars.html">⟨</a>
+                        <a href="/1.Front end/5.JavaScript darslik/II_BOB/2.1 Funksiya haqida ikki ogiz gap/2.1 Funksiya haqida ikki ogiz gap.html">⟨</a>
                     </li>
                     <li class="li_2">
-                       2.1 Funksiya haqida ikki og’iz gap
+                       3_Dars. Sizga qaysi ovqat yoqadi…  
                     </li>
                     <li class="li_3">
-                        <a href="javascript:alert('uzr bu sahifa hali mavjud emas')">
+                        <a href="../2.1 Funksiya haqida ikki ogiz gap/2.1 Funksiya haqida ikki ogiz gap.html">
                             ⟩
                         </a>
                     </li>
@@ -1146,56 +1145,350 @@
             <div class="text">
 
                 <p>
-                    JavaScript tilida har bir bajariladigan vazifa bu funksiya deyiladi, va u function deb yoziladi. 
-                </p>
-                <p>
-                    Masalan, Web-saytimizda ushbu matnni 
-                </p>
-
-                <p class="border">
-                     Salom! Bu java script yozuvlari 
-                     Etiboringiz uchun tashakkur  
+                    Web saytimizga yozadigan forma yaratib userdan savol so´raymiz… keyin esa unga javob qaytaramiz… 
+                    Mana tayyor kod.      
                 </p>
 
                 <p>
-                    Javascript yordamida 6 marta takrorlab yozmoqchimiz. Buning uchun bitta funksiya yaratib unga 
-                    ixtiyoriy nom beramiz, masalan yozishfunc deb nomlasak. O’sha funksiyada nima yuz berishini 
-                    ko’rsatamiz. Keyin o’sha funksiya nomini qayerga qo’ysak xuddi o’sha yozuv ko’rinadi. 
+                    Bloknot (yoki boshqa text redaktori, masalan WordPad)ni ochib yozing va Save as qilib faylnomi.html 
+                    deb nomlang. 
+                </p>
+
+                <pre class="border p">
+                    &lt;html&gt; 
+                    &lt;head&gt; 
+                    &lt;title&gt;Sarlavha&lt;/title&gt; 
+                    &lt;/head&gt; 
+                    &lt;body&gt; 
+
+                    
+
+                    &lt;script type=&quot;text/javascript&quot;&gt; 
+                    function javob() { 
+                    alert(&quot;Men uchun eng mazali taom bu &quot; +ovqat.value ) 
+                    } 
+                    &lt;/script&gt; 
+
+                    Sizga qaysi ovqat yoqadi:  
+                    &lt;input type=&quot;text&quot; size=&quot;25&quot; value=&quot; &quot; name=&quot;ovqat&quot;&gt;  
+                    &lt;input type=&quot;button&quot; value=&quot;javob berish&quot; onclick=&quot;javob()&quot;&gt; 
+
+                    
+
+                    &lt;/body&gt; 
+                    &lt;/html&gt; 
+                </pre>
+
+                <p>
+                    Keyin esa Save as =>ni bosib  Faylga  faylnomi.html deb nomlaymiz va saqlaymiz. 
                 </p>
 
                 <p>
-                    Masalan bunday 
+                    Saqlangan faylni ochib ko´ramiz… 
+                </p>
+                <p>
+                    <input type="button" value="Bu yerga bosing" onclick="prompt('Salom ismingiz nima')" >
+                </p>
+                <p>
+                    Ko´rib turganingizdek tugma rasmi, Endi tugmachani bosamiz… Nima 
+                    yuz berdi ? Opera bilan ochsangiz mana bunday oyna ochilishi kerak 
+                </p>
+                <p>
+
+                </p>
+                <img src="./1.oyna.png" alt="oyna">
+
+                <p class="p">
+                    *** *** *** *** *** *** *** 
                 </p>
 
-                <p>
-                    Kod: 
+                <p class="p">
+                    Keling bitta ajoyib kod yozib saytimiz bilan suhbat qilamiz.. Marhamat. Mana bu kodni Bloknotni ochib yozing 
                 </p>
+
+                <pre class="border p">
+                    &lt;html&gt;
+                    &lt;head&gt;
+                    &nbsp; &lt;title&gt;Sarlavha&lt;/title&gt; 
+                    &lt;/head&gt; 
+                    &lt;body&gt; 
+                    &lt;script type=&quot;text/javascript&quot;&gt; 
+                <b>&nbsp;    var ism=prompt(&quot;Salom birodar ismingiz nima&quot;, &quot;yozing&quot;); 
+                    &nbsp;    alert(&quot;Xush kelibsiz Hurmatli &quot; +ism);</b> 
+                    &lt;/script&gt; 
+                    &lt;/body&gt; 
+                    &lt;/html&gt; 
+                </pre>
+
+                <!-- <script type="button/javascript">
+                    var ism=prompt("Salom birodar ismingiz nima", "yozing");
+                    alert("Xush kelibsiz Hurmatli " +ism);
+                </script> -->
+                <p>
+                    Saqlagan faylni ochamiz… Ochilgan zahoti bizga quyidagi oyna ochiladi.
+                </p>
+                <img src="./2.oyna.png" alt="oyna">
+                <p></p>
+                <input class="p" type="button" value="Ismingizni kiriting" onclick="var ism=prompt('Salom birodar ismingiz nima', 'yozing'); alert('Xush kelibsiz Hurmatli ' +ism);">
+                
+                <p>
+                    Yozing –degan joyga ismingizni yozib OK ni bosing… Masalan men ismimni Leonardo deb yozdim. va 
+                    OK ni bosdim. Mana bunaqa oyna chiqdi: 
+                </p>
+                <img src="./3.oyna.png" alt="oyna">
+                <p class="p">*** *** ************************************</p>
+
+                <p class="p">
+                    Endi esa web saytimizda bitta tugma qo´yib. Ana shu tugma bosilganda savol beradigan qilsak.
+                </p>
+
+                <p class="p">
+                    Bu juda oson. Har doimgidek Bloknot (yoki boshqa text redaktori)ni ochib mana bu kodni yozamiz, marhamat
+                </p>
+
+                <pre class="border p">
+                    &lt;html&gt;
+                    &nbsp; &lt;head&gt;
+                    &nbsp;&nbsp; &lt;title&gt;Sarlavha&lt;/title&gt;
+                    &nbsp; &lt;/head&gt;
+                    &nbsp; &lt;body&gt;
+
+                    &nbsp;&nbsp; &lt;script type=&quot;text/javascript&quot;&gt; 
+                    &nbsp;&nbsp;&nbsp; function savol() { 
+                    &nbsp;&nbsp;&nbsp; var ism=prompt(&quot;Salom birodar ismingiz nima&quot;, &quot;yozing&quot;); 
+                    &nbsp;&nbsp;&nbsp; alert(&quot;Xush kelibsiz Hurmatli &quot; + ism); 
+                    &nbsp;&nbsp; } 
+                    &nbsp;&nbsp; &lt;/script&gt; 
+
+                    &nbsp;&nbsp; &lt;input type=&quot;button&quot; value=&quot;Bu yerga bosing&quot; onclick=&quot;savol()&quot; /&gt; 
+
+                    &nbsp; &lt;/body&gt; 
+                    &lt;/html&gt; 
+                </pre>
+
+                <script type="text/javascript">
+                    function savol() {
+                    var ism=prompt("Salom birodar ismingiz nima", "yozing");
+                    alert("Xush kelibsiz Hurmatli " + ism);
+                    }
+                </script>
+                <p>
+                    Faylni saqlaymiz. Har doimgidek faylnomi.html . Keyin saqlangan faylni ochamiz 
+                    Sahifamizda bitta tugma turibdi. Ana shunga sichqoncha bilan bosamiz. 
+                </p>
+                
+                <input type="button" value="Bu yerga bosing" onclick="savol()" />
+                
+                <p>
+                    Mana bunday oyna ochiladi 
+                </p>
+
+                <img src="./4.oyna.png" alt="oyna">
+
+                <p>
+                    Yozing –degan joyga ismingizni yozib OK ni bosing… Masalan men ismimni Leonardo deb yozdim. va 
+                    OK ni bosdim. Mana bunaqa oyna chiqdi: 
+                </p>
+                <img src="./5.oyna.png" alt="oyna">
+
+                <hr class="hr">
+                <p>
+                    Yuqoridagi muloqotni yanada ajoyibroq qilamiz. <br>
+                    Har doimgidek Bloknot (yoki boshqa text redaktori)ni ochamiz. Quyidagi kodni yozamiz.
+                </p>
+
                 <pre class="border p">
                     &lt;html&gt; 
                     &nbsp; &lt;head&gt; 
                     &nbsp;&nbsp; &lt;title&gt;Sarlavha&lt;/title&gt; 
                     &nbsp; &lt;/head&gt; 
                     &nbsp; &lt;body&gt; 
+                    &nbsp;&nbsp; &lt;script type=&quot;text/javascript&quot;&gt; 
+                    &nbsp;&nbsp;&nbsp; function savol() { 
+                    &nbsp;&nbsp;&nbsp; var ism=prompt(&quot;Salom birodar ismingiz nima&quot;, &quot;yozing&quot;); 
+                    &nbsp;&nbsp;&nbsp; var shahar=prompt(&quot;Qaysi shaharda yashaysiz&quot;, &quot;yozing&quot;); 
+                    &nbsp;&nbsp;&nbsp; alert( shahar+ &quot; degan shaharda &quot; +ism+ &quot; ismli odam yashar ekan&quot; ); 
+                    &nbsp;&nbsp;&nbsp; } 
+                    &nbsp;&nbsp; &lt;/script&gt; 
 
-                    &nbsp;&nbsp; &lt;SCRIPT language=&quot;JavaScript&quot;&gt; 
-                    &nbsp;&nbsp;&nbsp; function yozishfunc() { 
-                    &nbsp;&nbsp;&nbsp; document.write(&quot;Salom! Bu java script yozuvlari &lt;br&gt; Etiboringiz uchun tashakkur &lt;p&gt;&quot;); 
-                    &nbsp;&nbsp; } 
+                    &lt;input type=&quot;button&quot; value=&quot;Bu yerga bosing&quot; onclick=&quot;savol()&quot; /&gt; 
 
-                    &nbsp;&nbsp;&nbsp; yozishfunc(); 
-                    &nbsp;&nbsp;&nbsp; yozishfunc(); 
-                    &nbsp;&nbsp;&nbsp; yozishfunc(); 
-                    &nbsp;&nbsp;&nbsp; yozishfunc(); 
-                    &nbsp;&nbsp;&nbsp; yozishfunc(); 
-                    &nbsp;&nbsp;&nbsp; yozishfunc(); 
-                    &nbsp;&nbsp; &lt;/SCRIPT&gt; 
                     &nbsp; &lt;/body&gt; 
+                    &lt;/html&gt; 
+                </pre>
+                
+                <p>
+                    Sahifani saqlaymiz. Qayta yana ochamiz 
+                </p>
+
+                <script type="text/javascript">
+                    function savol() {
+                    var ism=prompt("Salom birodar ismingiz nima", "yozing");
+                    var shahar=prompt("Qaysi shaharda yashaysiz", "yozing");
+                    alert( shahar+ " degan shaharda " +ism+ " ismli odam yashar ekan" );
+                    }
+                </script>
+
+                <input class="p" type="button" value="Bu yerga bosing" onclick="savol()" />
+
+                <p>
+                     Sahifadagi tugmani bosganimizda Bizga savol beriladi, Unga javob berib OK ni bosgandan keyin yana 
+                        savol beriladi. Yana OK ni bosamiz… Xo´sh keyin nima bo´ldi , tekshirib ko´ringchi… 
+                </p>
+                <p>
+                    @@@@@@@
+                </p>
+                <hr class="dotted">
+                <p>
+                    WebSahifa bilan savol javob qilishni ham o´rgandik. Etibor bergan bo´lsangiz Bizga qaytarilayotgan 
+                    javob faqat ogohlantirish oynasida ochilmoqda. Shuni WebSahifani o´zida yozadigan qilsak-chi. 
+                    Masalan, websahifa ochilganda savol beriladi. Biz savolga javob beramiz va OKni bosamiz. Yozgan 
+                    javobimiz, Web saytimizni o´zida paydo bo´lsin. Buning uchun mana bu kod ishlatiladi: 
+                    <b>document.write()</b> 
+                </p>
+
+                <p>
+                    Mana sizga tayyor kod. Bloknotni ochib kodni yozing  
+                </p>
+
+                <pre class="border p">
+                    &lt;html&gt; 
+                        &lt;head&gt; 
+                            &lt;title&gt;Sarlavha&lt;/title&gt; 
+                        &lt;/head&gt; 
+                        &lt;body&gt; 
+                            &lt;script type=&quot;text/javascript&quot;&gt; 
+                    &nbsp;&nbsp;            var ism=prompt(&quot;Salom birodar ismingiz nima&quot;, &quot;yozing&quot;); 
+                    &nbsp;&nbsp;            document.write(&quot;Xush kelibsiz Muhtaram janob &quot; +ism); 
+                            &lt;/script&gt; 
+                        &lt;/body&gt; 
+                    &lt;/html&gt; 
+
+                    <span class="kul">
+                        // sahifa har yangilanganda alohida oyna chiqib yoqimsiz holatga olib keladi shuning 
+                        uchun kodga biroz o'zgarish kiritdim, scriptni tugmaga joyladim baribir natija bir xil bo'lar edi
+                    </span>
+                </pre>
+                
+                <script type="text/javascript">
+                    function sorov() {
+                        var ism = prompt("Salom birodar ismingiz nima", "yozing");
+                        document.getElementById("natija").innerHTML = "Xush kelibsiz Muhtaram janob " + ism;
+                        }    
+                </script>
+
+                <input class="p" type="button" value="Bu yerga bosing" onclick="sorov()" />
+
+                <div id="natija"></div>
+                
+                <p>
+                    va Save as qilib faylnomi.html deb nomlab saqlang. Qayta yana ochamiz… 
+                    Ochilgan zahoti bizga savol beriladi,
+                </p>
+
+                <img class="p" src="./6.oyna.png" alt="oyna">
+
+                <p>
+                    Ismingizni yozib OKni bosing, Masalan men 
+                    Muslim deb yozdim. Keyin mana bu yozuv ko´rindi… 
+                </p>
+
+                <img src="./7.oyna.png" alt="oyna">
+
+                <hr class="hr">
+
+                <p>
+                    Hozircha siz WebSayt bilan savol javob qilishni o´rganib oldingiz… 
+                </p>
+                <p>
+                    <strong>
+                        Bitta oddiy o´yin tuzamiz. O´yin quyidagicha bo´ladi. WebSayt bizga bir qancha savollar beradi. 
+                        Biz esa ularni har biriga javob beramiz. Keyin WebSaytimiz bizga kiritgan javoblarimiz asosida 
+                        hikoya tuzib beradi…
+                    </strong>
+                </p>
+
+                <p>
+                    Marhamat tayyor kodlarni oling: Bloknotni ochib kodni yozing va faylnomi.html deb saqlang
+                </p>
+
+                <p>
+                    Marhamat tayyor kodlarni oling: Bloknotni ochib kodni yozing va faylnomi.html deb saqlang
+                </p>
+
+                <pre class="border p">
+                    &lt;html&gt;
+                    &lt;head&gt;
+                    &lt;title&gt;Siz haqingizdagi hikoya&lt;/title&gt;
+                    &lt;style&gt;
+                    body {
+                    font-size: 14pt;
+                    font-family: Arial, Ties new roman, Verdana;
+                    }
+
+                    &lt;/style&gt;
+                        &lt;script language=&quot;javascript&quot;&gt;
+
+                        alert(&quot;Salom,  Hozir siz bilan ajoyib hikoya tuzamiz, Sizga 12 ta savol beramiz. Sizdan iltimosim, barcha 
+                        savollarga javob bering (Har bir savolga javob yozgandan so'ng OK yoki 'Enter' ni bosing). 
+                        Tayyormisiz?&quot;); 
+
+                        ism=prompt(&quot;ismingiz nima ?&quot;, &quot;bu yerga yozing&quot;); 
+                        familiya=prompt(&quot;Familiyangiz nima ?&quot;, &quot; &quot;); 
+                        yosh=prompt(&quot;Yoshingiz nechada ?&quot;, &quot; &quot;); 
+                        yashash=prompt(&quot;Qaysi shaharda yashaysiz ?&quot;, &quot; &quot;); 
+                        birodar=prompt(&quot;Sizning eng yaqin birodaringiz kim (ismini yozing)?&quot;, &quot; &quot;); 
+                        tanishuv=prompt(&quot;O'sha do'stingiz bilan qayerda tanishgansiz ?&quot;, &quot; &quot;); 
+                        shahar=prompt(&quot;Oxirgi marta qaysi shaharga bordingiz ?&quot;, &quot; &quot;); 
+                        transport=prompt(&quot;O'sha shaharga qaysi transportda bordingiz ?&quot;, &quot; &quot;); 
+                        rang=prompt(&quot;O'sha transportning rangi taxminan qanday edi ?&quot;, &quot; &quot;); 
+                        qaroqchi=prompt(&quot;Yo'lda kimni uchratgan edingiz, uning ismi nima edi ?&quot;, &quot; &quot;); 
+                        dedi=prompt(&quot;Siz o'sha uchratgan odamingizga nima dedingiz ?&quot;, &quot; &quot;); 
+                        hayvon=prompt(&quot;Yo'lda qaysi hayvonga duch kelgan edingiz ?&quot;, &quot; &quot;); 
+
+                        document.write(&quot;Bir bor ekan bir yo'q ekan, Hozirgi &quot; + yashash + &quot; degan shaharda &quot; + ism + &quot; degan 
+                        odam bor ekan. Uning familiyasi &quot; + familiya+  &quot; degan joyda &quot;  + birodar + &quot; bilan tanishibdi. &quot; + ism + &quot; va &quot; + birodar + &quot; do'st bo'lishibdi. Bir kuni &quot; + ism + &quot; bilan &quot; + 
+                        birodar + &quot; birgalikda &quot; + shahar + &quot;ga borishga qaror qilishibdi. Ular &quot; + rang + &quot; &quot; + transport + &quot;ga minib yo'lga 
+                        chiqibdi. Uzoq yo'l bosibdi. Yo'lda &quot;  + transport + &quot; buzilibdi. Shu payt &quot; + ism + &quot; va &quot; + birodar + &quot; oldiga baland bo'yli &quot; + qaroqchi + &quot; paydo 
+                        bo'lib Ularning yo'lini to'sibdi. Aslida &quot; + qaroqchi + &quot; qaroqchilik qilar ekan. Shunda &quot; + ism + &quot; &quot; + qaroqchi + &quot;ga qarab &quot; + dedi + &quot; - debdi. Buni eshitgan 
+                        qaroqchi -&quot; + qaroqchi + &quot;ning g'azabi kelib &quot; + ism + &quot;ga qilich ko'taribdi. Shu payt &quot; + ism + &quot;ning baxtiga uzoqdan bahaybat 
+                        yirtqich &quot; + hayvon + &quot; paydo bo'ldi va u yugurib &quot; + qaroqchi + &quot; oldiga keldi. Keyin esa &quot; + qaroqchi + &quot;ni g'ajib 
+                        tashlab o'ljaga aylantiribdi. Buni ko'rgan &quot; + ism + &quot; va &quot; + birodar + &quot; xursand bo'dilar. Chunki &quot; + hayvon + &quot; ularni &quot; + qaroqchi + &quot;dan xalos 
+                        etgandi. Shunday qilib har ikki do'st: &quot; + familiya+ &quot; &quot; + ism + &quot; va &quot; + birodar + &quot; murodu maqsadiga yetgan ekan...&quot;); 
+                        &lt;/script&gt; 
+
+                    &lt;/head&gt; 
+                    &lt;body&gt; 
+                    &lt;/body&gt; 
                     &lt;/html&gt; 
                 </pre>
 
                 <p>
-                    Funksiyaning vazifalari juda ko’p, Bu haqda keying darslarda bilib olasiz 
+                    Endi saqlangan faylni ochib ko'ramiz: 
+                    Sizga 12 ta savol beriladi, har biriga javob berib OK ni bosing… Natijada siz o'zingiz 
+                    haqingizda ajoyib hikoyani o'qiysiz 
+                    Bu o'yin mana bu yerda ham joylangan marhamat www.ijod.org/game.html  
                 </p>
+
+                <!-- <script language="javascript">
+
+                    // alert("Salom, Hozir siz bilan ajoyib hikoya tuzamiz, Sizga 12 ta savol beramiz. Sizdan iltimosim, barcha savollarga javob bering (Har bir savolga javob yozgandan so'ng OK yoki 'Enter' ni bosing).Tayyormisiz?");
+
+                    ism=prompt("ismingiz nima ?", "bu yerga yozing");
+                    familiya=prompt("Familiyangiz nima ?", " ");
+                    yosh=prompt("Yoshingiz nechada ?", " ");
+                    yashash=prompt("Qaysi shaharda yashaysiz ?", " ");
+                    birodar=prompt("Sizning eng yaqin birodaringiz kim (ismini yozing)?", " ");
+                    tanishuv=prompt("O'sha do'stingiz bilan qayerda tanishgansiz ?", " ");
+                    shahar=prompt("Oxirgi marta qaysi shaharga bordingiz ?", " ");
+                    transport=prompt("O'sha shaharga qaysi transportda bordingiz ?", " ");
+                    rang=prompt("O'sha transportning rangi taxminan qanday edi ?", " ");
+                    qaroqchi=prompt("Yo'lda kimni uchratgan edingiz, uning ismi nima edi ?", " ");
+                    dedi=prompt("Siz o'sha uchratgan odamingizga nima dedingiz ?", " ");
+                    hayvon=prompt("Yo'lda qaysi hayvonga duch kelgan edingiz ?", " ");
+
+                    document.write("Bir bor ekan bir yo'q ekan, Hozirgi " + yashash + " degan shaharda " + ism + " degan odam bor ekan. Uning familiyasi " + familiya + " U " + tanishuv + " degan joyda " + birodar + " bilan tanishibdi. " + ism + " va " + birodar + " do'st bo'lishibdi. Bir kuni " + ism + " bilan " + birodar + " birgalikda " + shahar + "ga borishga qaror qilishibdi. Ular " + rang + " " + transport + "ga minib yo'lga chiqibdi. Uzoq yo'l bosibdi. Yo'lda " + transport + " buzilibdi. Shu payt " + ism + " va " + birodar + " oldiga baland bo'yli " + qaroqchi + " paydo bo'lib Ularning yo'lini to'sibdi. Aslida " + qaroqchi + " qaroqchilik qilar ekan. Shunda " + ism + " " + qaroqchi + "ga qarab " + dedi + " - debdi. Buni eshitgan qaroqchi -" + qaroqchi + "ning g'azabi kelib " + ism + "ga qilich ko'taribdi. Shu payt " + ism + "ning baxtiga uzoqdan bahaybat yirtqich " + hayvon + " paydo bo'ldi va u yugurib " + qaroqchi + " oldiga keldi. Keyin esa " + qaroqchi + "ni g'ajib tashlab o'ljaga aylantiribdi. Buni ko'rgan " + ism + " va " + birodar + " xursand bo'dilar. Chunki " + hayvon + " ularni " + qaroqchi + "dan xalos etgandi. Shunday qilib har ikki do'st: " + familiya+ " " + ism + " va " + birodar + " murodu maqsadiga yetgan ekan...");
+                </script> -->
                                
             </div>
             
