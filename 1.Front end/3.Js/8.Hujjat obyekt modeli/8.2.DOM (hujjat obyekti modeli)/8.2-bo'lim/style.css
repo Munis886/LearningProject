@@ -1,0 +1,27 @@
+body {
+    background-color: black;
+}
+
+#container {
+    background-color: black;
+}
+
+#text {
+    background-color: black;
+    color: #8f8;
+}
+
+#text p {
+    background-color: #020;
+    padding: 10px 20px;
+}
+
+.sarlavha ul{
+    background-color: #020;
+    color: #8f8;
+}
+
+.sarlavha ul li a{
+    display: inline-block;
+    color: #8f8;
+}   

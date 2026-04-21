@@ -53,11 +53,13 @@ body {
     background-color: dimgray;
 }
 
-p {
+#text > p {
     width: 95%;
-    font-size: 17px;
+    font-size: 19px;
     padding: 0 20px;
+    line-height: 1.4;
 }
+
 .body {
     margin: 0;
     display: flex;
