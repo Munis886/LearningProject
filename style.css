@@ -34,6 +34,7 @@ body,div,ul,li,h1,h2{
 }
 
 .menyu li a{
+    display: inline-block;
     text-decoration: none;
     color: #333;
     font-family: Cochin, Georgia, Times, 'Times New Roman', serif;
@@ -95,12 +96,17 @@ body,div,ul,li,h1,h2{
 .bottom {
     display: flex;
     height: 55vh;
-}
+} 
+
+
+
 
 .front_end {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 50%;
     margin: auto; 
-    display: flex;
     height: 40vh;
 }
 
