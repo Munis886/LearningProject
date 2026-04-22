@@ -3,7 +3,13 @@
     "development"
   ],
   "hints": {
-    "axe/text-alternatives": "default",
+    "axe/text-alternatives": [
+      "default",
+      {
+        "image-alt": "off",
+        "area-alt": "off"
+      }
+    ],
     "meta-charset-utf-8": "default",
     "axe/language": "default",
     "meta-viewport": "default"

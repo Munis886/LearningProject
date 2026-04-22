@@ -53,6 +53,7 @@ body,div,ul,li,h1,h2{
 
 #front_end {
     /* height: 100%; */
+    background-image: url('./images/1.Front-end.jpg');
     background-size: cover; /* Rasm butun sahifani qoplashi */
     background-position: center; /* Rasm markazda bo'lishi */
     background-repeat: no-repeat; /* Rasm takrorlanmasligi */
