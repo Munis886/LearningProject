@@ -40,6 +40,14 @@ body {
     padding: 5px;
 }
 
+.site-name {
+    display: inline-block;
+    text-align: center;
+    margin: 0px auto; /* Sayt nomi va menyu o'rtasida bo'sh joy */
+    color: wheat;
+    font-style: italic;
+}
+
 .bosh {
     margin: auto;
     padding: 5px auto;
@@ -142,91 +150,6 @@ body {
     padding: 2px 6px;
 }
 
-.matn_muharriri  {
-    margin-top: 5px;
-    border-radius: 0 10px 10px 0;
-    padding: 2px 6px;
-    width: 8em;
-    text-align: center;
-}
-
-#atom {
-    padding: 10px 50px;
-    display: flex;
-    margin: 10px 0;
-    border-radius: 10px;
-}
-
-.atom {
-    display: inline;
-    align-items: center;
-    text-align: center;
-    justify-content: center;
-    padding: 0px 20px;
-}
-
-.atom a{
-    text-decoration: none; 
-    color: green;
-    margin: auto;
-}
-
-.atom p{
-    text-decoration: none; 
-    align-items: center;
-    color: green;
-    padding: 0 25px;
-}
-
-#visual {
-    padding: 10px 50px;
-    display: flex;
-    margin: 10px 0;
-    border-radius: 10px;
-}
-
-.visual {
-    display: inline;
-    text-align: center;
-    padding: 0 20px;
-}
-
-.visual a{
-    text-decoration: none; 
-    color:royalblue;
-    margin: 0;
-}
-
-.Izoh {
-    border-radius: 4px;
-    padding: 5px;
-    margin: 0 auto;
-    padding: 0 40px;
-    display: flex;
-    background-color: bisque;
-}
-
-kbd {
-    background-color: #eee;
-    border-radius: 3px;
-    border: 1px solid #b4b4b4;
-    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2), 0 2px 0 0 rgba(255, 255, 255, 0.7) inset;
-    color: #333;
-    display: inline-block;
-    font-size: 0.85em;
-    font-weight: 700;
-    line-height: 1;
-    padding: 2px 4px;
-    white-space: nowrap;
-}
-
-.izoh  {
-    margin-top: 5px;
-    border-radius: 0 10px 10px 0;
-    padding: 2px 6px;
-    width: 5em;
-    text-align: center;
-}
 
 
 dl dt, dl dd {
