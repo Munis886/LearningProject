@@ -217,6 +217,24 @@ body {
     border: 1px solid #ddd;
     border-collapse: collapse;
     margin-bottom: 20px;
+    table-layout: fixed;
+}
+
+.meta_table th:nth-child(1),
+.meta_table td:nth-child(1) {
+    width: 40px;
+    text-align: center;
+}
+
+.meta_table th:nth-child(2),
+.meta_table td:nth-child(2) {
+    width: 100px;
+    text-align: center;
+}
+
+.meta_table th:nth-child(3),
+.meta_table td:nth-child(3) {
+    width: calc(100% - 200px);
 }
 
 .meta_table thead tr th{
@@ -226,13 +244,6 @@ body {
     color: aliceblue;
     border-collapse: collapse;
 } 
-
-.meta_table tr td:nth-child(1) {
-    text-align: center;
-    border: 1px solid #ddd;
-    border-collapse: collapse;
-    width: 90px;
-}
 
 .meta_table tr td {
     border: 1px solid #ddd;
@@ -383,6 +394,11 @@ div #menu ul li a:hover {
 .multi-column {
     column-gap: 35px; /* Ustunlar orasidagi masofa */
     column-count: 2; /* 2 ta ustunga bo'linadi */
+}
+
+.multi-column li {
+    margin: 0 0 1px 5px;
+    line-height: 1.5; /* Satırlar arasındaki boşluk */
 }
 
 :root{
