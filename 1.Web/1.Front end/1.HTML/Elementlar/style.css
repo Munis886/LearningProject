@@ -220,20 +220,20 @@ body {
     table-layout: fixed;
 }
 
-.meta_table th:nth-child(1),
-.meta_table td:nth-child(1) {
+.block_table th:nth-child(1),
+.block_table td:nth-child(1) {
     width: 40px;
     text-align: center;
 }
 
-.meta_table th:nth-child(2),
-.meta_table td:nth-child(2) {
+.block_table th:nth-child(2),
+.block_table td:nth-child(2) {
     width: 100px;
     text-align: center;
 }
 
-.meta_table th:nth-child(3),
-.meta_table td:nth-child(3) {
+.block_table th:nth-child(3),
+.block_table td:nth-child(3) {
     width: calc(100% - 200px);
 }
 

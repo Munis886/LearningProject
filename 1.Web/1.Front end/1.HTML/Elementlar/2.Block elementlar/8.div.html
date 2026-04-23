@@ -27,7 +27,7 @@
     <div id="container">
         <div id="text">
             <div class="orqaga">
-                <a href="javascript:history.back()">&lt;&lt;orqaga</a>
+                <a href="javascript:history.back(-1)">&lt;&lt;orqaga</a>
             </div>
             <div id="sarlavha">
                 <h2>&lt;div&gt; — umumiy blok.</h2>
@@ -59,10 +59,12 @@
                 Biz div elementining chegarasini (ko‘k rangda) ko‘rinadigan qilib o‘rnatdik, shuning uchun p 
                 elementlari div ichida joylashganligini ko‘rishingiz mumkin, masalan mana bunday:
             </p>
-            <div style="border: 1px solid blue;">
-                <p style="border: 1px solid red;">Call me Ishmael.</p>
-                <p style="border: 1px solid red;">Just don't call me late for dinner.</p>
+
+            <div>
+                <p class="bordered-text">Call me Ishmael.</p>
+                <p class="bordered-text">Just don't call me late for dinner.</p>
             </div>
+
             <p>
                 "div`" elementi juda muhim element bo‘lib, u "HTML"da sahifalarni joylashtirish va 
                 tartibga solish uchun juda ko‘p ishlatiladi. 
