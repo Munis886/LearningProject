@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>button</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./Misol/10.button/css/style.css">
+</head>
+<body>
+    <div id="bosh">
+        <div class="bosh">
+            <h1>Inline elementlar</h1>
+        </div>
+    </div>
+
+    <div id="menyu">
+        <div class="menyu">
+            <ul>
+                <li><a href="/index.html">HOME</a></li>
+                <li><a href="/1.Web/Web.html">WEB</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div id="container">
+        <div id="text">
+
+            <div class="orqaga">
+                <a href="javascript:history.back()">&lt;&lt;orqaga</a>
+            </div>
+            
+            <h2>&lt;button&gt;</h2>
+
+            <p>
+              &lt;button&gt; elementi, odatda, foydalanuvchi interfeysi orqali foydalanuvchiga tugma ko'rinishida taqdim etiladi, bu erda foydalanuvchi tugmani bosishi orqali amalni bajaradi. &lt;button&gt; elementi, odatda, 'type' atributi bilan ishlatiladi, bu erda 'type' atributi tugmaning turini ifodalaydi, masalan, 'submit', 'reset' yoki 'button'.
+            </p>
+
+            <table class="html">
+                <tr>
+                    <th>Element</th>
+                    <th>Display</th>
+                </tr>
+                <tr>
+                    <td class="pre">
+                        &lt;button class=&quot;favorite styled&quot; type=&quot;button&quot;&gt; <br>
+                        &nbsp; Add to favorites <br>
+                        &lt;/button&gt;
+                    </td>
+                    <td>
+                        <button class="favorite styled" type="button">Add to favorites</button>
+                    </td>
+                </tr>
+            </table>
+
+        </div>
+        <div id="text">
+            <h2>Atributlar</h2>
+            <p>
+                Ushbu elementning atributlari global atributlarni o'z ichiga oladi.
+            </p>
+
+            <dl>
+                <dt>
+                    <span class="maxsus">
+                        autofocus
+                    </span>
+                </dt>
+
+                <dd>
+                    Bu mantiqiy atribut sahifa yuklanganda tugma kiritish fokusiga ega boʻlishi kerakligini bildiradi. Hujjatdagi faqat bitta element bu atributga ega bo'lishi mumkin.
+                </dd>
+            </dl>
+
+            <table class="html">
+                <tr>
+                    <th>Element</th>
+                    <th>Display</th>
+                </tr>
+                <tr>
+                    <td class="pre">
+                        &lt;button class=&quot;favorite styled&quot; autofocus&gt; <br>
+                        &nbsp; Add to favorites <br>
+                        &lt;/button&gt;
+                    </td>
+                    <td>
+                        <button class="favorite styled" autofocus>Add to favorites</button>
+                    </td>
+                </tr>
+            </table>
+           
+            <dl>
+                <dt>
+                    <span class="maxsus">
+                        command
+                    </span>
+                </dt>
+
+                <dd>
+                    Bu atribut, tugma bilan bog'langan buyruqni belgilaydi. command for atributi orqali ko'rsatilgan &lt;button&gt; boshqaruvi tomonidan boshqariladigan elementda bajarilishi kerak bo'lgan amalni belgilaydi. Mumkin qiymatlar:
+                </dd>
+            </dl>
+
+            <ul class="ul">
+                <li> <span class="maxsus">"show-modal"</span>
+                    <ul>
+                        <li>
+                            Tugma modal sifatida &lt;dialog&gt;ni ko'rsatadi. Agar dialog allaqachon modal bo'lsa, hech qanday chora ko'rilmaydi. Bu &lt;dialog&gt; elementida HTMLDialogElement.showModal() usulini chaqirishning deklarativ ekvivalentidir.
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+
+            <table class="html">
+                <tr>
+                    <th>Element</th>
+                    <th>Display</th>
+                </tr>
+                <tr>
+                    <td class="pre">
+                        &lt;button class=&quot;favorite styled&quot; command="show-modal" &gt; <br>
+                        &nbsp; Add to favorites <br>
+                        &lt;/button&gt;
+                    </td>
+                    <td>
+                        <button class="favorite styled" command="show-modal">Add to favorites</button>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    
+   
+</body>
+</html>
