@@ -1,458 +1,729 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Inline elementlari</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="Js.js"></script>
-</head>
-<body>
-    <div id="bosh">
-            <div class="bosh">
-                <h1>Inline elementlar</h1>
-            </div>
-    </div>
-    
-    <div id="menyu">
-        <div class="menyu">
-            <button id="toggle-btn" onclick="toggleMenu()">Menu</button>   
-            <ul>
-                <li><a href="/index.html">HOME</a></li>
-                <li><a href="/1.Front end/1.Front_end.html">FRONT END</a></li>
-                <li><a href="/1.Front end/1.HTML/1.HTML.html">HTML</a></li>
-            </ul>
-        </div>
-    </div> 
-
-    <div id="container">
-
-        <div class="sarlavha">
-            <ul>
-                <li class="li_1">
-                    <a href="./2.block elementlar.html">⟨</a>
-                </li>
-                <li class="li_2">
-                    Inline elementlar
-                </li>
-
-            </ul>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Inline elementlari</title>
+        <link rel="stylesheet" href="./style.css">
+        <script src="./Js.js"></script>
+    </head>
+    <body>
+        <div id="bosh">
+                <div class="bosh">
+                    <h1>Inline elementlar</h1>
+                </div>
         </div>
         
-        <div id="text">
-            <p>
-                'Inline' elementlar ekranda to‘liq kenglikdagi ramkani yaratmaydi. 
-                Ular matnning ko‘rinishini o‘zgartiradi yoki matnga boshqa narsalarni - 
-                masalan, qatorlar 'break'lari, rasmlar yoki giperhavolalar kiritadi.
-            </p>
-            <ul role="list" class="css-19qh3zo">
-                <li class="css-cvpopp">
-                    <code class="chakra-code css-1u83yg1">em</code> 
-                    va <code class="chakra-code css-1u83yg1">strong</code> 
-                    — Urg‘u berish (ajratib ko‘rsatish).<br>
-                    Odatda, 'em' ichidagi matn <em class="chakra-text css-o3oz8b">italic</em> 
-                    shaklida ko‘rsatiladi va 'strong' dagi matn <strong>boldface</strong> sifatida ko‘rsatiladi.
-                </li>
-                
-                <li class="css-cvpopp">
-                    <code class="chakra-code css-1u83yg1">br</code> — Qator 'break' (qator uzilishi). 
-                    <em class="chakra-text css-o3oz8b">(bo‘sh)</em><br>
-                    Qator uzilishi yangi paragraf yaratmaydi; u faqat qatorning oxirini belgilaydi.
-                </li>
-                
-                <li class="css-cvpopp">
-                    <code class="chakra-code css-1u83yg1">sub</code> 
-                    va <code class="chakra-code css-1u83yg1">sup</code> — Satr osti va satr usti.<br>
-                    Matematika va kimyo uchun foydali: Menda x<sup>3</sup>+2x<sup>2</sup> H<sub>2</sub>
-                    O molekulalari bor.</li><li class="css-cvpopp"><code class="chakra-code css-1u83yg1">mark</code> — Belgi.<br>
-                    Tez-tez ishlatilmaydi, lekin <mark> bu ajoyib belgilash.</mark>
-                </li>
-            </ul>
+        <div id="menyu">
+            <div class="menyu">
+                <button id="toggle-btn" onclick="toggleMenu()">Menu</button>   
+                <ul>
+                    <li><a href="/index.html">HOME</a></li>
+                    <li><a href="/1.Front end/1.Front_end.html">FRONT END</a></li>
+                    <li><a href="/1.Front end/1.HTML/1.HTML.html">HTML</a></li>
+                </ul>
+            </div>
+        </div> 
+        <div class="body">
+            <div id="menu" class="menu">
+                <h3>HTML</h3>   
+                <ul>
+                    <li><a href="/index.html">HTML HOME</a></li>
+                    <li>
+                            <a href="#" onclick="toggleSubMenu('sub-menu-1')">Elementlar</a>
+                            <ul id="sub-menu-1" class="sub-menu">
+                                <li>
+                                    <span></span>
+                                    <a href="/1.Front end/1.HTML/Elementlar/Elementlar.html">Elementlar haqida</a>
+                                </li>
+                                <li>
+                                    <span></span>
+                                    <a href="/1.Front end/1.HTML/Elementlar/1.Html elementlar.html">HTML elementlar</a>
+                                </li>
 
-            <p>
-                Siz ko‘rgan ba’zi 'inline' elementlar atributlardir, ular elementning o‘z nomidan tashqari qo‘shimcha 
-                ma’lumotlarni talab qiladi. <b>Atributlar</b> elementning ochuvchi tegida yoziladi.
-            </p>
+                                <li>
+                                    <span></span>
+                                    <a href="/1.Front end/1.HTML/Elementlar/2.block elementlar.html">Block elementlar</a>
+                                </li>
+                                <li>
+                                    <span></span>
+                                    <a href="/1.Front end/1.HTML/Elementlar/3.inline elementlar.html">Inline elementlar</a>
+                                </li>
+                            </ul>
+                    </li>
 
-            <ul role="list" class="css-19qh3zo">
-                <li class="css-cvpopp">
-                    <code class="chakra-code css-1u83yg1">img</code> —&nbsp;rasmlar.<br>
-                    URL bilan 'src' atributi va tavsiflovchi matnli 'alt' atributi kerak bo‘ladi.
-                </li>
-                <li class="css-cvpopp">
-                    <code class="chakra-code css-1u83yg1">a</code> — Giperhavolalar.<br>
-                    'URL'ga ega bo‘lgan 'href' atributini talab qiladi.
-                </li>
-            </ul>
-            
-            <ol class="multi-column"> 
-                <li>
-                    <b>
-                        <a href="/1.Front end/1.HTML/Elementlar/3.Inline elementlar/1.a.html">&lt;a&gt; &lt;/a&gt;</a>
-                    </b> - Gipermatnli havola
-                </li>
-                <li>
-                    <b>
-                        <a href="/1.Front end/1.HTML/Elementlar/3.Inline elementlar/9.br.html">&lt;br&gt;</a>
-                    </b> - chiziq uzilishi, bo'sh teg, enter vazifasini bajaradi
-                </li>
-                <li>
-                    <b>
-                        <a href="/1.Front end/1.HTML/Elementlar/3.Inline elementlar/18.em.html">&lt;em&gt; &lt;/em&gt;</a>
-                    </b> kursiv yozuv
-                </li>
-                <li>
-                    <b>
-                        <a href="/1.Front end/1.HTML/Elementlar/3.Inline elementlar/44.strong.html">&lt;strong&gt; &lt;/strong&gt;</a>
-                    </b> qalin yozuv
-                </li>
-                <li>
-                    <b>
-                        <a href="/1.Front end/1.HTML/Elementlar/3.Inline elementlar/28.mark .html">&lt;mark&gt; &lt;/mark&gt;</a>
-                    </b> - belgilangan so'zni orqasini sariq fonga biriktirish tegi.
-                </li>
-                <li>
-                    <b>
-                        <!-- <a href="#"></a> -->
-                    </b>
-                </li>
-                <li>
-                    <b>
-                        <a href="#">&lt;span&gt; &lt;/span&gt;</a>
-                    </b> - umumiy chiziq
-                </li>
-                <li>
-                    <b>
-                        <a href="/1.Front end/1.HTML/Elementlar/3.Inline elementlar/45.sub.html">&lt;sub&gt; &lt;/sub&gt;</a>
-                    </b> belgilangan so'zni undan oldingi so'zni pastki qismiga biriktirish tegi
-                </li>
-                <li>
-                    <b>
-                        <a href="/1.Front end/1.HTML/Elementlar/3.Inline elementlar/46.sup.html">&lt;sup&gt; &lt;/sup&gt;</a>
-                    </b> - belgilangan so'zni yoki matnni undan oldingi so'zni ustki qismiga biriktirish tegi   
-                </li>
-                <li>
-                    <b>
-                        <a href="#">&lt;&gt;</a>
-                    </b>
-                </li>
-                <li>
-                    <b>
-                        <a href="#">&lt;&gt;</a>
-                    </b>
-                </li>
-                <li>
-                    <b>
-                        <a href="#">&lt;&gt;</a>
-                    </b>
-                </li>
-                <li>
-                    <b>
-                        <a href="#">&lt;&gt;</a>
-                    </b>
-                </li>
-                <li>
-                    <b>
-                        <a href="#">&lt;&gt;</a>
-                    </b>
-                </li>
-                <li>
-                    <b>
-                        <a href="#">&lt;&gt;</a>
-                    </b>
-                </li>
-                <li>
-                    <b>
-                        <a href="#">&lt;&gt;</a>
-                    </b>
-                </li>
-                <li>
-                    <b>
-                        <a href="#">&lt;&gt;</a>
-                    </b>
-                </li>
-                <li>
-                    <b>
-                        <a href="#">&lt;&gt;</a>
-                    </b>
-                </li>
-                <li>
-                    <b>
-                        <a href="#">&lt;&gt;</a>
-                    </b>
-                </li>
-                <li>
-                    <b>
-                        <a href="#">&lt;&gt;</a>
-                    </b>
-                </li>
-                <li>
-                    <b>
-                        <a href="/1.Front end/1.HTML/Elementlar/3.Inline elementlar/21.iframe.html">&lt;iframe&gt;</a>
-                    </b>
-                </li>
-                <li>
-                    <b>
-                        <a href="/1.Front end/1.HTML/Elementlar/3.Inline elementlar/22.img.html">&lt;img&gt;</a>
-                    </b> - rasm
-                </li>
-                <li>
-                    <b>
-                        <a href="#">&lt;input&gt;</a>
-                    </b> - Kirish (Form input) elementi
-                </li>
-                <li>
-                    <b>
-                        <a href="#">&lt;&gt;</a>
-                    </b>
-                </li>
-                <li>
-                    <b>
-                        <a href="#">&lt;&gt;</a>
-                    </b>
-                </li>
-                <li>
-                    <b>
-                        <a href="#">&lt;&gt;</a>
-                    </b>
-                </li>
-                <li>
-                    <b>
-                        <a href="#">&lt;&gt;</a>
-                    </b>
-                </li>
-                <li>
-                    <b>
-                        <a href="#">&lt;&gt;</a>
-                    </b>
-                </li>
-                <li>
-                    <b>
-                        <a href="#">&lt;&gt;</a>
-                    </b>
-                </li>
-                <li>
-                    <b>
-                        <a href="#">&lt;&gt;</a>
-                    </b>
-                </li>
-                <li>
-                    <b>
-                        <a href="#">&lt;&gt;</a>
-                    </b>
-                </li>
-                <li>
-                    <b>
-                        <a href="#">&lt;&gt;</a>
-                    </b>
-                </li>
-                <li>
-                    <b>
-                        <a href="#">&lt;&gt;</a>
-                    </b>
-                </li>
-                <li>
-                    <b>
-                        <a href="#">&lt;&gt;</a>
-                    </b>
-                </li>
-                <li>
-                    <b>
-                        <a href="#">&lt;&gt;</a>
-                    </b>
-                </li>
-                <li>
-                    <b>
-                        <a href="#">&lt;&gt;</a>
-                    </b>
-                </li>
-                <li>
-                    <b>
-                        <a href="#">&lt;&gt;</a>
-                    </b>
-                </li>
-                <li>
-                    <b>
-                        <a href="#">&lt;&gt;</a>
-                    </b>
-                </li>
-                <li>
-                    <b>
-                        <a href="#">&lt;&gt;</a>
-                    </b>
-                </li>
-                <li>
-                    <b>
-                        <a href="#">&lt;&gt;</a>
-                    </b>
-                </li>
-                <li>
-                    <b>
-                        <a href="#">&lt;&gt;</a>
-                    </b>
-                </li>
-                <li>
-                    <b>
-                        <a href="#">&lt;&gt;</a>
-                    </b>
-                </li>
-                <li>
-                    <b>
-                        <a href="#">&lt;&gt;</a>
-                    </b>
-                </li>
-                <li>
-                    <b>
-                        <a href="#">&lt;&gt;</a>
-                    </b>
-                </li>
-                <li>
-                    <b>
-                        <a href="#">&lt;&gt;</a>
-                    </b>
-                </li>
-                <li>
-                    <b>
-                        <a href="#">&lt;&gt;</a>
-                    </b>
-                </li>
-                <li>
-                    <b>
-                        <a href="#">&lt;&gt;</a>
-                    </b>
-                </li>
-                <li>
-                    <b>
-                        <a href="#">&lt;&gt;</a>
-                    </b>
-                </li>
-                <li>
-                    <b>
-                        <a href="#">&lt;textarea&gt; &lt;/textarea&gt;</a>
-                    </b>
-                </li>
-                <li>
-                    <b>
-                        <a href="#">&lt;&gt;</a>
-                    </b>
-                </li>
-                <li>
-                    <b>
-                        <a href="#">&lt;&gt;</a>
-                    </b>
-                </li>
-                <li>
-                    <b>
-                        <a href="#">&lt;&gt;</a>
-                    </b>
-                </li>
-                <li>
-                    <b>
-                        <a href="#">&lt;&gt;</a>
-                    </b>
-                </li>
-                <li>
-                    <b>
-                        <a href="#">&lt;&gt;</a>
-                    </b>
-                </li>
-                <li>
-                    <b>
-                        <a href="#">&lt;&gt;</a>
-                    </b>
-                </li>
-                <li>
-                    <b>
-                        <a href="#">&lt;&gt;</a>
-                    </b>
-                </li>
-                <li>
-                    <b>
-                        <a href="#">&lt;&gt;</a>
-                    </b>
-                </li>
-                <li>
-                    <b>
-                        <a href="#">&lt;&gt;</a>
-                    </b>
-                </li>
-                <li>
-                    <b>
-                        <a href="#">&lt;&gt;</a>
-                    </b>
-                </li>
-                <li>
-                    <b>
-                        <a href="#">&lt;&gt;</a>
-                    </b>
-                </li>
-                
-                
-                
-            </ol>
-        </div>
-        <div id="sarlavha">
-            <h2>Web manzillar</h2>
-        </div>
-        <div id="text">
-            <p>
-                Web-manzillar. Internet veb-manzillarsiz internet bo'lmaydi. Internetdagi har bir sayt, sahifa,
-                rasm va fayl bittadan veb-manzili bor. Bular sizning brauzeringiz bir sahifadan
-                boshqasiga havolalarni qanday izlayotganligini va shuningdek, foydalanuvchilar
-                asosan brauzerga veb-saytga o'tishni aytishda muhim rol o'ynaydi. HTML ga 
-                biron bir rasm yoki havola qo'yganingizda, siz ushbu manzillardan foydalangan
-                holda shunday qilasiz. Veb-standartlarda ushbu manzillar uchun texnik atamalar
-                mavjud. Veb manzil yagona manba qidiruvi yoki qisqartirilgan URL deb nomlanadi.
-                 
-            </p>
-            <p>URL - Uniform Resourse Locator</p>
-            <p>
-                Bu shuni anglatadiki sizning brauzeringizga standart tarzda, masalan qandaydir
-                bir faylni joylashtirish kerakligini ko'rsatadigan manzil. Bu yerda forma so'zi 
-                shunchaki mos kelishini anglatadi. Odamlar ularni o'qiyotganda URL larni yozishning 
-                ko'plab usullari mavjud ekanligini biladi. Ba'zan siz ularni oldi panelda, http
-                yoki https bilan ko'rasiz, ba'zida esa ko'rmaysiz. Yuk mashinasi tomonida bo'lgani
-                kabi, kimdir www.our.company.com saytini taqdim qilishi mumkin. Agar siz brauzerga
-                yozsangiz bu yaxshi ishlaydi, chunki brauzer saytga borishni xohlayotganingizni
-                tahmin qiladi. Agar siz HTML kodda ishlatsangiz, bu ishlamaydi. Brauzer siz shu nomdagi
-                faylga  murojaat qilyapsiz deb ishonadi.
-                URL fayllarni HTMLga yozishda brauzerga kerak bo'lgan barcha 
-            </p>
-            <p class="blue">&lt;a href="https://www.example.com"&gt;</p>
-                <p>
-                    ma'lumotlarni taqdim etishda juda ehtiyot bo'lishimiz kerak. Ba'zan
-                    qisqa yorliqlarni olishingiz mumkin. Hozircha biz URL manzillarni 
-                    to'liq shaklda kengaytiramiz. Biz gapirayotgan versiya to'liq malakali
-                    URL yoki mutlaq URL deb nomlanadi. Ehtimol siz uni internet foydalanuvchi 
-                    sifatida ko'rgandirsiz, keling ushbu to'liq malakali shakl qanday ko'rinishda
-                    ega ekanligini ko'rib chiqaylik. URL da paydo bo'lishi mumkin bo'lgan ko'plab
-                    boshqa narsalar mavjud, ammo ular asosiysidir. Boshida veb-manzillar http
-                    yoki https bilan boshlanadi. Bu brauzerga veb serverga ulanish uchun xavfsiz
-                    shifrlardan foydalanish yoki foydalanmaslikni aytadi. 
-                    Lokal diskdagi faylning URL manzili o'rniga "file" bilan boshlanadi
-                </p>
-                <p class="blue">
-                    http://en.wikipedia.org/ <br>
-                    https://en.wikipedia.org/ <br>
-                    file:///Users/Kelly/notes.html
-                </p>
-                <p>
-                    Http, https va fayl bu barcha protokllar yoki brauzer biror narsani 
-                    olish usullaridir. Protokoldan keyin biz har doim protokolni keyingi
-                    qismdan ajratib turadigan ikki nuqta, slesh, slesh, chiziq, chiziqni
-                    ko'rib chiqamiz. Veb manzillar uchun siz keyingi qismni domen nomini 
-                    ko'rasiz. Bu brauzerga qaysi serverga ulanish kerakligini aytadi.
-                    Fayl URLlarida bu bo'lmaydi, chunki server yo'q. Bunda shunchaki 
-                    brauzer sizning kompyuteringizdan o'qiydi Shuning uchun, siz faylning
-                    URL manzilini boshqa birovga bersangiz, u uni ko'ra olmaydi.
-                    Buning sababi, xuddi shu fayl ularning kompyuterlarida mavjud emas.
-                    to'liq URLda paydo bo'ladigan oxirgi narsa bu faylga yo'l katalog nomi va
-                    URL ga murojaat qilingan fayl. Ba'zan saytning yuqori sahifasiga yoki 
-                    bosh sahifasiga bog'lasangiz, u bo'sh yoki oddiy slesh bo'ladi.
-                </p>
-        </div>
-    </div>
+                    <li>
+                        <a href="#" onclick="toggleSubMenu('sub-menu-2')">Belgilar</a>
+                        <ul id="sub-menu-2" class="sub-menu">
+                            <li><a href="/1.Front end/1.HTML/Belgilar/Belgilar.html">Belgilar</a></li>
+                            <li><a href="/1.Front end/1.HTML/Belgilar/1.Belgi 1-300.html">Belgi 1-300</a></li>
+                            <li><a href="/1.Front end/1.HTML/Belgilar/2.Belgi 9000-10000.html">Belgi 9000-10000</a></li>
+                            <li><a href="/1.Front end/1.HTML/Belgilar/3.Belgi 65000-66000.html">Belgi 65000-66000</a></li>
+                            <li><a href="/1.Front end/1.HTML/Belgilar/4.Belgi 127000-128000.html">Belgi 127000-128000</a></li>
+                            <li><a href="/1.Front end/1.HTML/Belgilar/5.Belgi 128000-129000.html">Belgi 128000-129000</a></li>
+                            <li><a href="/1.Front end/1.HTML/Belgilar/6.Belgi alifbo.html">Belgi alifbo</a></li>
+                        </ul>
+                    </li>
+                    <li></li>
+                    <li></li>
+                </ul>
+            </div>
+            <div id="container">
 
-    
-</body>
+                <div class="sarlavha">
+                    <ul>
+                        <li class="li_1">
+                            <a href="./2.block elementlar.html">⟨</a>
+                        </li>
+                        <li class="li_2">
+                            Inline elementlar
+                        </li>
+
+                    </ul>
+                </div>
+                
+                <div id="text">
+                    <p>
+                        'Inline' elementlar ekranda to‘liq kenglikdagi ramkani yaratmaydi. 
+                        Ular matnning ko‘rinishini o‘zgartiradi yoki matnga boshqa narsalarni - 
+                        masalan, qatorlar 'break'lari, rasmlar yoki giperhavolalar kiritadi.
+                    </p>
+                    <ul role="list" class="css-19qh3zo">
+                        <li class="css-cvpopp">
+                            <code class="chakra-code css-1u83yg1">em</code> 
+                            va <code class="chakra-code css-1u83yg1">strong</code> 
+                            — Urg‘u berish (ajratib ko‘rsatish).<br>
+                            Odatda, 'em' ichidagi matn <em class="chakra-text css-o3oz8b">italic</em> 
+                            shaklida ko‘rsatiladi va 'strong' dagi matn <strong>boldface</strong> sifatida ko‘rsatiladi.
+                        </li>
+                        
+                        <li class="css-cvpopp">
+                            <code class="chakra-code css-1u83yg1">br</code> — Qator 'break' (qator uzilishi). 
+                            <em class="chakra-text css-o3oz8b">(bo‘sh)</em><br>
+                            Qator uzilishi yangi paragraf yaratmaydi; u faqat qatorning oxirini belgilaydi.
+                        </li>
+                        
+                        <li class="css-cvpopp">
+                            <code class="chakra-code css-1u83yg1">sub</code> 
+                            va <code class="chakra-code css-1u83yg1">sup</code> — Satr osti va satr usti.<br>
+                            Matematika va kimyo uchun foydali: Menda x<sup>3</sup>+2x<sup>2</sup> H<sub>2</sub>
+                            O molekulalari bor.</li><li class="css-cvpopp"><code class="chakra-code css-1u83yg1">mark</code> — Belgi.<br>
+                            Tez-tez ishlatilmaydi, lekin <mark> bu ajoyib belgilash.</mark>
+                        </li>
+                    </ul>
+
+                    <p>
+                        Siz ko‘rgan ba’zi 'inline' elementlar atributlardir, ular elementning o‘z nomidan tashqari qo‘shimcha 
+                        ma’lumotlarni talab qiladi. <b>Atributlar</b> elementning ochuvchi tegida yoziladi.
+                    </p>
+
+                    <ul role="list" class="css-19qh3zo">
+                        <li class="css-cvpopp">
+                            <code class="chakra-code css-1u83yg1">img</code> —&nbsp;rasmlar.<br>
+                            URL bilan 'src' atributi va tavsiflovchi matnli 'alt' atributi kerak bo‘ladi.
+                        </li>
+                        <li class="css-cvpopp">
+                            <code class="chakra-code css-1u83yg1">a</code> — Giperhavolalar.<br>
+                            'URL'ga ega bo‘lgan 'href' atributini talab qiladi.
+                        </li>
+                    </ul>
+                    
+                    <table class="block_table">
+                        <thead class="">
+                            <tr>
+                                <th>№</th>
+                                <th>Inline element</th>
+                                <th>Ta'rif</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td><a href="./3.Inline elementlar/1.a.html">&lt;a&gt;</a></td>
+                                <td>
+                                    Gipermatnli havola. &lt;a&gt; elementi, odatda, boshqa veb-sahifaga, faylga, elektron pochta manziliga, 
+                                    telefon raqamiga yoki boshqa URL manzilga havola yaratish uchun ishlatiladi. &lt;a&gt; elementi, 
+                                    odatda, 'href' atributi bilan ishlatiladi, bu erda 'href' atributi havola manzilini ifodalaydi.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td><a href="/1.Front end/1.HTML/Elementlar/1.Html elementlar/2.Hujjat meta-fayllari/1.base.html">&lt;abbr&gt;</a></td>
+                                <td>
+                                    Qisqartma yoki akronim. &lt;abbr&gt; elementi, odatda, qisqartmalar yoki akronimlar uchun ishlatiladi, 
+                                    bu erda 'title' atributi qisqartmaning to'liq shaklini ifodalaydi.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td><a href="/1.Front end/1.HTML/Elementlar/1.Html elementlar/2.Hujjat meta-fayllari/1.base.html">&lt;acronym&gt;</a></td>
+                                <td>
+                                    Qisqartma yoki akronim. &lt;acronym&gt; elementi, odatda, qisqartmalar yoki akronimlar uchun ishlatiladi, 
+                                    bu erda 'title' atributi qisqartmaning to'liq shaklini ifodalaydi. &lt;acronym&gt; elementi HTML5 da obsolet hisoblanadi va &lt;abbr&gt; elementi bilan almashtiriladi.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>4</td>
+                                <td><a href="#">&lt;audio&gt;</a></td>
+                                <td>
+                                    Audio kontentini ifodalaydi. &lt;audio&gt; elementi, odatda, audio fayllarini veb-sahifada o'ynatish uchun ishlatiladi. &lt;audio&gt; elementi, odatda, 'src' atributi bilan ishlatiladi, bu erda 'src' atributi audio faylning manzilini ifodalaydi. &lt;audio&gt; elementi, odatda, 'controls' atributi bilan ishlatiladi, bu erda 'controls' atributi audio pleyerining boshqaruv elementlarini ko'rsatishni belgilaydi.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>5</td>
+                                <td><a href="./">&lt;b&gt;</a></td>
+                                <td>
+                                    Qalin shrift. &lt;b&gt; elementi, odatda, matnni qalin shriftda ko'rsatish uchun ishlatiladi. &lt;b&gt; elementi, o'z-o'zidan, hech qanday semantik ma'no keltirmaydi va faqatgina matnni qalin shriftda ko'rsatish uchun ishlatiladi.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>6</td>
+                                <td><a href="/1.Front end/1.HTML/Elementlar/2.Block elementlar/Tarkibni ajratish/5.header.html">&lt;bdi&gt;</a></td>
+                                <td>
+                                    Matnning bidirectional izolyatsiyasi. &lt;bdi&gt; elementi, odatda, matnning bidirectional izolyatsiyasini ta'minlash uchun ishlatiladi, 
+                                    bu erda matnning yo'nalishi avtomatik ravishda aniqlanadi va kerak bo'lganda o'zgartiriladi.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>7</td>
+                                <td><a href="/1.Front end/1.HTML/Elementlar/2.Block elementlar/Tarkibni ajratish/5.header.html">&lt;dd&gt;</a></td>
+                                <td>
+                                Tar'riflar ro'yxatida atamani tavsiflaydi. Ta'riflar ro'yxatidagi ta'rifni ifodalaydi. &lt;dd&gt; elementi, odatda, &lt;dl&gt; (ta'riflar ro'yxati) ichida ishlatiladi va &lt;dt&gt; (ta'rif atamasi) elementi bilan juftlikda ishlatiladi.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>8</td>
+                                <td><a href="/1.Web/1.Front end/">&lt;div&gt;</a></td>
+                                <td>
+                                    Umumiy blok element. &lt;div&gt; elementi, odatda, boshqa elementlarni guruhlash va ularni CSS bilan uslublash yoki JavaScript bilan manipulyatsiya qilish uchun ishlatiladi. &lt;div&gt; elementi, o'z-o'zidan, hech qanday semantik ma'no keltirmaydi va faqatgina tarkibni guruhlash uchun ishlatiladi.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>9</td>
+                                <td><a href="/1.Front end/1.HTML/Elementlar/2.Block elementlar/Tarkibni ajratish/5.header.html">&lt;dl&gt;</a></td>
+                                <td>
+                                    Ta'riflar ro'yxati. &lt;dl&gt; elementi, odatda, ta'riflar ro'yxatini ifodalaydi, bu erda har bir ta'rif atamasi (&lt;dt&gt;) va uning ta'rifi (&lt;dd&gt;) juftlikda ishlatiladi.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>10</td>
+                                <td><a href="#">&lt;dt&gt;</a></td>
+                                <td>
+                                    Ta'riflar ro'yxatida atama. Ta'riflar ro'yxatidagi atamani ifodalaydi. &lt;dt&gt; elementi, odatda, &lt;dl&gt; (ta'riflar ro'yxati) ichida ishlatiladi va &lt;dd&gt; (ta'rif) elementi bilan juftlikda ishlatiladi.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>11</td>
+                                <td><a href="/1.Front end/1.HTML/Elementlar/2.Block elementlar/Tarkibni ajratish/5.header.html">&lt;fieldset&gt;</a></td>
+                                <td>
+                                    Formadagi elementlarni guruhlash uchun ishlatiladi. &lt;fieldset&gt; elementi, odatda, bir nechta form elementlarini vizual ravishda guruhlash va ularni bir-biridan ajratish uchun ishlatiladi. &lt;fieldset&gt; elementi, odatda, &lt;legend&gt; elementi bilan juftlikda ishlatiladi, bu erda &lt;legend&gt; elementi fieldsetning sarlavhasini ifodalaydi.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>12</td>
+                                <td><a href="/1.Front end/1.HTML/Elementlar/2.Block elementlar/Tarkibni ajratish/5.header.html">&lt;figcaption&gt;</a></td>
+                                <td>
+                                    Rasm, diagramma, foto yoki boshqa media elementining sarlavhasini yoki izohini ifodalaydi. &lt;figcaption&gt; elementi, odatda, &lt;figure&gt; elementi ichida ishlatiladi, bu yerda &lt;figure&gt; elementi media elementini ifodalaydi.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>13</td>
+                                <td><a href="/1.Front end/1.HTML/Elementlar/2.Block elementlar/Tarkibni ajratish/5.header.html">&lt;figure&gt;</a></td>
+                                <td>
+                                    Rasm, diagramma, foto yoki boshqa media elementini ifodalaydi. &lt;figure&gt; elementi, odatda, media elementini va uning sarlavhasini yoki izohini o'z ichiga oladi, bu erda sarlavha yoki izoh &lt;figcaption&gt; elementi bilan ifodalanadi.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>14</td>
+                                <td><a href="/1.Front end/1.HTML/Elementlar/1.Html elementlar/2.Hujjat meta-fayllari/1.base.html">&lt;footer&gt;</a></td>
+                                <td>
+                                    O'zining eng yaqin ajdodi bo'limlari mazmuni yoki ildiz elementini bo'limlash uchun pastki ko'rsatkichni ifodalaydi. 
+                                    &lt;/footer&gt; 
+                                    odatda bo'lim muallifi haqidagi ma'lumotlarni, mualliflik huquqi ma'lumotlarini yoki tegishli 
+                                    hujjatlarga havolalarni o'z ichiga oladi.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>15</td>
+                                <td><a href="/1.Front end/1.HTML/Elementlar/2.Block elementlar/Tarkibni ajratish/5.header.html">&lt;form&gt;</a></td>
+                                <td>
+                                    Ma'lumotlarni yuborish uchun interaktiv elementlarni o'z ichiga olgan veb-sahifa qismini ifodalaydi. &lt;form&gt; elementi, odatda, foydalanuvchi tomonidan kiritilgan ma'lumotlarni serverga yuborish uchun ishlatiladi va u odatda bir yoki bir nechta form elementlarini o'z ichiga oladi, masalan, matn maydonlari, radio tugmalar, onay qutilari va yuborish tugmasi.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>16</td>
+                                <td>
+                                    <a href="/1.Front end/1.HTML/Elementlar/2.Block elementlar/Tarkibni ajratish/5.header.html">&lt;h1&gt;,</a>
+                                    <a href="/1.Front end/1.HTML/Elementlar/2.Block elementlar/Tarkibni ajratish/5.header.html">&lt;h2&gt;,</a>
+                                    <a href="/1.Front end/1.HTML/Elementlar/2.Block elementlar/Tarkibni ajratish/5.header.html">&lt;h3&gt;,</a>
+                                    <a href="/1.Front end/1.HTML/Elementlar/2.Block elementlar/Tarkibni ajratish/5.header.html">&lt;h4&gt;,</a>
+                                    <a href="/1.Front end/1.HTML/Elementlar/2.Block elementlar/Tarkibni ajratish/5.header.html">&lt;h5&gt;,</a>
+                                    <a href="/1.Front end/1.HTML/Elementlar/2.Block elementlar/Tarkibni ajratish/5.header.html">&lt;h6&gt;</a>
+                                </td>
+                                <td>
+                                Bo'lim sarlavhalarining oltita darajasini ifodalaydi. &lt;h1&gt; eng yuqori bo'lim darajasi va &lt;h6&gt; eng pasti.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>17</td>
+                                <td><a href="/1.Front end/1.HTML/Elementlar/2.Block elementlar/Tarkibni ajratish/5.header.html">&lt;header&gt;</a></td>
+                                <td>
+                                Kirish mazmunini, odatda kirish yoki navigatsiya vositalari guruhini ifodalaydi. Unda ba'zi sarlavha elementlari, 
+                                shuningdek, logotip, qidiruv shakli, muallif nomi va boshqa elementlar bo'lishi mumkin.
+                                </td>
+                            </tr>
+                            
+                            <tr>
+                                <td>18</td>
+                                <td><a href="/1.Front end/1.HTML/Elementlar/2.Block elementlar/Tarkibni ajratish/5.header.html">&lt;hgroup&gt;</a></td>
+                                <td>
+                                Sarlavhalar, muqobil sarlavha yoki shior kabi har qanday ikkinchi darajali kontent bilan guruhlangan sarlavhani ifodalaydi.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>19</td>
+                                <td><a href="/1.Front end/1.HTML/Elementlar/2.Block elementlar/Tarkibni ajratish/5.header.html">&lt;hr&gt;</a></td>
+                                <td>
+                                    Mavzular orasidagi mavzu o'zgarishini ifodalaydi. &lt;hr&gt; elementi, odatda, gorizontal chiziq sifatida ko'rsatiladi va u mavzular orasidagi vizual ajratish uchun ishlatiladi.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>20</td>
+                                <td><a href="/1.Web/1.Front end/1.HTML/Elementlar/2.Block elementlar/22.li.html">&lt;li&gt;</a></td>
+                                <td>
+                                    <code class="chakra-code css-1u83yg1">ul</code> yoki <code class="chakra-code css-1u83yg1">ol</code> ro'yxatidagi elementni ifodalaydi. &lt;li&gt; elementi, odatda, &lt;ul&gt; (tartibsiz ro'yxat) yoki &lt;ol&gt; (tartiblangan ro'yxat) ichida ishlatiladi va u ro'yxat elementini ifodalaydi.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>21</td>
+                                <td><a href="/1.Front end/1.HTML/Elementlar/2.Block elementlar/Tarkibni ajratish/5.header.html">&lt;main&gt;</a></td>
+                                <td>
+                                Hujjatning asosiy mazmunini ifodalaydi. Asosiy tarkib sohasi hujjatning markaziy mavzusi 
+                                yoki ilovaning markaziy funksionalligi bilan bevosita bogʻliq yoki kengaytirilgan tarkibdan iborat.
+                                </td>
+                            </tr>
+                            
+                            <tr>
+                                <td>22</td>
+                                <td><a href="/1.Front end/1.HTML/Elementlar/2.Block elementlar/Tarkibni ajratish/5.header.html">&lt;nav&gt;</a></td>
+                                <td>
+                                Maqsadlari joriy hujjat ichida yoki boshqa hujjatlarda navigatsiya havolalarini taqdim etish 
+                                bo'lgan sahifa qismini ifodalaydi. Navigatsiya bo'limlarining umumiy misollari menyular, 
+                                tarkiblar jadvallari va indekslardir.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>23</td>
+                                <td><a href="/1.Front end/1.HTML/Elementlar/2.Block elementlar/Tarkibni ajratish/5.header.html">&lt;ol&gt;</a></td>
+                                <td>
+                                    Tartiblangan ro'yxat. &lt;ol&gt; elementi, odatda, raqamlangan elementlar bilan ko'rsatiladigan tartiblangan ro'yxatни ifodalaydi. &lt;ol&gt; elementi, odatda, &lt;li&gt; (ro'yxat elementi) elementlarни o'z ichiga oladi, bu erda har bir &lt;li&gt; elementи ro'yxat elementни ifodalaydi.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>24</td>
+                                <td><a href="/1.Front end/1.HTML/Elementlar/2.Block elementlar/Tarkibni ajratish/5.header.html">&lt;p&gt;</a></td>
+                                <td>
+                                    Paragraf. &lt;p&gt; elementи, odatda, matnning bir yoki bir nechta jumlalarни o'z ichiga olgan paragraфни ifodalaydi. &lt;p&gt; elementи, odatda, matnning blok darajasidagi elementidir va u matnni vizual ravishda ajratish uchun ishlatiladi.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>25</td>
+                                <td><a href="/1.Front end/1.HTML/Elementlar/2.Block elementlar/Tarkibni ajratish/5.header.html">&lt;pre&gt;</a></td>
+                                <td>
+                                    Oldindan shakllangan matn. &lt;pre&gt; elementi, odatda, oldindan shakllangan matnni ifodalaydi. Bu element, odatda, matnning vizual ravishda ajratilgan ko'rinishini saqlash uchun ishlatiladi. &lt;pre&gt; elementi, odatda, matnning blok darajasidagi elementidir va u matnni vizual ravishda ajratish uchun ishlatiladi.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>26</td>
+                                <td><a href="/1.Front end/1.HTML/Elementlar/2.Block elementlar/Tarkibni ajratish/5.header.html">&lt;section&gt;</a></td>
+                                <td>
+                                    Hujjatdagi mavzuni ifodalaydi. &lt;section&gt; elementi, odatda, bir mavzu yoki mavzular guruhini ifodalaydi. &lt;section&gt; elementi, odatda, sarlavha elementini o'z ichiga oladi, bu erda sarlavha elementining matni bo'limning nomi yoki mavzusini ifodalaydi.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>27</td>
+                                <td><a href="/1.Front end/1.HTML/Elementlar/2.Block elementlar/Tarkibni ajratish/5.header.html">&lt;table&gt;</a></td>
+                                <td>
+                                    Jadval. &lt;table&gt; elementi, odatda, jadvalни ifodalaydi. &lt;table&gt; elementi, odatda, &lt;tr&gt; (jadval qatori) elementlarни o'z ichiga oladi, bu erda har bir &lt;tr&gt; elementи jadvalning bir qatorни ifodalaydi. &lt;tr&gt; elementlari, odatda, &lt;td&gt; (jadval hujayrasi) yoki &lt;th&gt; (jadval sarlavha hujayrasi) elementlarни o'z ichiga oladi, bu erda &lt;td&gt; elementи jadval hujayrasни ifodalaydi va &lt;th&gt; elementи jadval sarlavha hujayrasни ifodalaydi.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>28</td>
+                                <td><a href="./2.Block elementlar/28.ul.html">&lt;ul&gt;</a></td>
+                                <td>
+                                Tartibsiz ro'yxat. &lt;ul&gt; elementi, odatda, ko'rsatkichlar bilan ko'rsatiladigan tartibsiz ro'yxatни ifodalaydi. &lt;ul&gt; elementi, odatda, &lt;li&gt; (ro'yxat elementi) elementlarни o'z ichiga oladi, bu erda har bir &lt;li&gt; elementи ro'yxat elementни ifodalaydi.
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <ol class="multi-column"> 
+                        <li>
+                            <b>
+                                <a href="/1.Front end/1.HTML/Elementlar/3.Inline elementlar/1.a.html">&lt;a&gt; &lt;/a&gt;</a>
+                            </b> - Gipermatnli havola
+                        </li>
+                        <li>
+                            <b>
+                                <a href="/1.Front end/1.HTML/Elementlar/3.Inline elementlar/9.br.html">&lt;br&gt;</a>
+                            </b> - chiziq uzilishi, bo'sh teg, enter vazifasini bajaradi
+                        </li>
+                        <li>
+                            <b>
+                                <a href="/1.Front end/1.HTML/Elementlar/3.Inline elementlar/18.em.html">&lt;em&gt; &lt;/em&gt;</a>
+                            </b> kursiv yozuv
+                        </li>
+                        <li>
+                            <b>
+                                <a href="/1.Front end/1.HTML/Elementlar/3.Inline elementlar/44.strong.html">&lt;strong&gt; &lt;/strong&gt;</a>
+                            </b> qalin yozuv
+                        </li>
+                        <li>
+                            <b>
+                                <a href="/1.Front end/1.HTML/Elementlar/3.Inline elementlar/28.mark .html">&lt;mark&gt; &lt;/mark&gt;</a>
+                            </b> - belgilangan so'zni orqasini sariq fonga biriktirish tegi.
+                        </li>
+                        <li>
+                            <b>
+                                <!-- <a href="#"></a> -->
+                            </b>
+                        </li>
+                        <li>
+                            <b>
+                                <a href="#">&lt;span&gt; &lt;/span&gt;</a>
+                            </b> - umumiy chiziq
+                        </li>
+                        <li>
+                            <b>
+                                <a href="/1.Front end/1.HTML/Elementlar/3.Inline elementlar/45.sub.html">&lt;sub&gt; &lt;/sub&gt;</a>
+                            </b> belgilangan so'zni undan oldingi so'zni pastki qismiga biriktirish tegi
+                        </li>
+                        <li>
+                            <b>
+                                <a href="/1.Front end/1.HTML/Elementlar/3.Inline elementlar/46.sup.html">&lt;sup&gt; &lt;/sup&gt;</a>
+                            </b> - belgilangan so'zni yoki matnni undan oldingi so'zni ustki qismiga biriktirish tegi   
+                        </li>
+                        <li>
+                            <b>
+                                <a href="#">&lt;&gt;</a>
+                            </b>
+                        </li>
+                        <li>
+                            <b>
+                                <a href="#">&lt;&gt;</a>
+                            </b>
+                        </li>
+                        <li>
+                            <b>
+                                <a href="#">&lt;&gt;</a>
+                            </b>
+                        </li>
+                        <li>
+                            <b>
+                                <a href="#">&lt;&gt;</a>
+                            </b>
+                        </li>
+                        <li>
+                            <b>
+                                <a href="#">&lt;&gt;</a>
+                            </b>
+                        </li>
+                        <li>
+                            <b>
+                                <a href="#">&lt;&gt;</a>
+                            </b>
+                        </li>
+                        <li>
+                            <b>
+                                <a href="#">&lt;&gt;</a>
+                            </b>
+                        </li>
+                        <li>
+                            <b>
+                                <a href="#">&lt;&gt;</a>
+                            </b>
+                        </li>
+                        <li>
+                            <b>
+                                <a href="#">&lt;&gt;</a>
+                            </b>
+                        </li>
+                        <li>
+                            <b>
+                                <a href="#">&lt;&gt;</a>
+                            </b>
+                        </li>
+                        <li>
+                            <b>
+                                <a href="#">&lt;&gt;</a>
+                            </b>
+                        </li>
+                        <li>
+                            <b>
+                                <a href="/1.Front end/1.HTML/Elementlar/3.Inline elementlar/21.iframe.html">&lt;iframe&gt;</a>
+                            </b>
+                        </li>
+                        <li>
+                            <b>
+                                <a href="/1.Front end/1.HTML/Elementlar/3.Inline elementlar/22.img.html">&lt;img&gt;</a>
+                            </b> - rasm
+                        </li>
+                        <li>
+                            <b>
+                                <a href="#">&lt;input&gt;</a>
+                            </b> - Kirish (Form input) elementi
+                        </li>
+                        <li>
+                            <b>
+                                <a href="#">&lt;&gt;</a>
+                            </b>
+                        </li>
+                        <li>
+                            <b>
+                                <a href="#">&lt;&gt;</a>
+                            </b>
+                        </li>
+                        <li>
+                            <b>
+                                <a href="#">&lt;&gt;</a>
+                            </b>
+                        </li>
+                        <li>
+                            <b>
+                                <a href="#">&lt;&gt;</a>
+                            </b>
+                        </li>
+                        <li>
+                            <b>
+                                <a href="#">&lt;&gt;</a>
+                            </b>
+                        </li>
+                        <li>
+                            <b>
+                                <a href="#">&lt;&gt;</a>
+                            </b>
+                        </li>
+                        <li>
+                            <b>
+                                <a href="#">&lt;&gt;</a>
+                            </b>
+                        </li>
+                        <li>
+                            <b>
+                                <a href="#">&lt;&gt;</a>
+                            </b>
+                        </li>
+                        <li>
+                            <b>
+                                <a href="#">&lt;&gt;</a>
+                            </b>
+                        </li>
+                        <li>
+                            <b>
+                                <a href="#">&lt;&gt;</a>
+                            </b>
+                        </li>
+                        <li>
+                            <b>
+                                <a href="#">&lt;&gt;</a>
+                            </b>
+                        </li>
+                        <li>
+                            <b>
+                                <a href="#">&lt;&gt;</a>
+                            </b>
+                        </li>
+                        <li>
+                            <b>
+                                <a href="#">&lt;&gt;</a>
+                            </b>
+                        </li>
+                        <li>
+                            <b>
+                                <a href="#">&lt;&gt;</a>
+                            </b>
+                        </li>
+                        <li>
+                            <b>
+                                <a href="#">&lt;&gt;</a>
+                            </b>
+                        </li>
+                        <li>
+                            <b>
+                                <a href="#">&lt;&gt;</a>
+                            </b>
+                        </li>
+                        <li>
+                            <b>
+                                <a href="#">&lt;&gt;</a>
+                            </b>
+                        </li>
+                        <li>
+                            <b>
+                                <a href="#">&lt;&gt;</a>
+                            </b>
+                        </li>
+                        <li>
+                            <b>
+                                <a href="#">&lt;&gt;</a>
+                            </b>
+                        </li>
+                        <li>
+                            <b>
+                                <a href="#">&lt;&gt;</a>
+                            </b>
+                        </li>
+                        <li>
+                            <b>
+                                <a href="#">&lt;&gt;</a>
+                            </b>
+                        </li>
+                        <li>
+                            <b>
+                                <a href="#">&lt;&gt;</a>
+                            </b>
+                        </li>
+                        <li>
+                            <b>
+                                <a href="#">&lt;&gt;</a>
+                            </b>
+                        </li>
+                        <li>
+                            <b>
+                                <a href="#">&lt;&gt;</a>
+                            </b>
+                        </li>
+                        <li>
+                            <b>
+                                <a href="#">&lt;&gt;</a>
+                            </b>
+                        </li>
+                        <li>
+                            <b>
+                                <a href="#">&lt;textarea&gt; &lt;/textarea&gt;</a>
+                            </b>
+                        </li>
+                        <li>
+                            <b>
+                                <a href="#">&lt;&gt;</a>
+                            </b>
+                        </li>
+                        <li>
+                            <b>
+                                <a href="#">&lt;&gt;</a>
+                            </b>
+                        </li>
+                        <li>
+                            <b>
+                                <a href="#">&lt;&gt;</a>
+                            </b>
+                        </li>
+                        <li>
+                            <b>
+                                <a href="#">&lt;&gt;</a>
+                            </b>
+                        </li>
+                        <li>
+                            <b>
+                                <a href="#">&lt;&gt;</a>
+                            </b>
+                        </li>
+                        <li>
+                            <b>
+                                <a href="#">&lt;&gt;</a>
+                            </b>
+                        </li>
+                        <li>
+                            <b>
+                                <a href="#">&lt;&gt;</a>
+                            </b>
+                        </li>
+                        <li>
+                            <b>
+                                <a href="#">&lt;&gt;</a>
+                            </b>
+                        </li>
+                        <li>
+                            <b>
+                                <a href="#">&lt;&gt;</a>
+                            </b>
+                        </li>
+                        <li>
+                            <b>
+                                <a href="#">&lt;&gt;</a>
+                            </b>
+                        </li>
+                        <li>
+                            <b>
+                                <a href="#">&lt;&gt;</a>
+                            </b>
+                        </li>
+                        
+                        
+                        
+                    </ol>
+                </div>
+                <div id="sarlavha">
+                    <h2>Web manzillar</h2>
+                </div>
+                <div id="text">
+                    <p>
+                        Web-manzillar. Internet veb-manzillarsiz internet bo'lmaydi. Internetdagi har bir sayt, sahifa,
+                        rasm va fayl bittadan veb-manzili bor. Bular sizning brauzeringiz bir sahifadan
+                        boshqasiga havolalarni qanday izlayotganligini va shuningdek, foydalanuvchilar
+                        asosan brauzerga veb-saytga o'tishni aytishda muhim rol o'ynaydi. HTML ga 
+                        biron bir rasm yoki havola qo'yganingizda, siz ushbu manzillardan foydalangan
+                        holda shunday qilasiz. Veb-standartlarda ushbu manzillar uchun texnik atamalar
+                        mavjud. Veb manzil yagona manba qidiruvi yoki qisqartirilgan URL deb nomlanadi.
+                        
+                    </p>
+                    <p>URL - Uniform Resourse Locator</p>
+                    <p>
+                        Bu shuni anglatadiki sizning brauzeringizga standart tarzda, masalan qandaydir
+                        bir faylni joylashtirish kerakligini ko'rsatadigan manzil. Bu yerda forma so'zi 
+                        shunchaki mos kelishini anglatadi. Odamlar ularni o'qiyotganda URL larni yozishning 
+                        ko'plab usullari mavjud ekanligini biladi. Ba'zan siz ularni oldi panelda, http
+                        yoki https bilan ko'rasiz, ba'zida esa ko'rmaysiz. Yuk mashinasi tomonida bo'lgani
+                        kabi, kimdir www.our.company.com saytini taqdim qilishi mumkin. Agar siz brauzerga
+                        yozsangiz bu yaxshi ishlaydi, chunki brauzer saytga borishni xohlayotganingizni
+                        tahmin qiladi. Agar siz HTML kodda ishlatsangiz, bu ishlamaydi. Brauzer siz shu nomdagi
+                        faylga  murojaat qilyapsiz deb ishonadi.
+                        URL fayllarni HTMLga yozishda brauzerga kerak bo'lgan barcha 
+                    </p>
+                    <p class="blue">&lt;a href="https://www.example.com"&gt;</p>
+                        <p>
+                            ma'lumotlarni taqdim etishda juda ehtiyot bo'lishimiz kerak. Ba'zan
+                            qisqa yorliqlarni olishingiz mumkin. Hozircha biz URL manzillarni 
+                            to'liq shaklda kengaytiramiz. Biz gapirayotgan versiya to'liq malakali
+                            URL yoki mutlaq URL deb nomlanadi. Ehtimol siz uni internet foydalanuvchi 
+                            sifatida ko'rgandirsiz, keling ushbu to'liq malakali shakl qanday ko'rinishda
+                            ega ekanligini ko'rib chiqaylik. URL da paydo bo'lishi mumkin bo'lgan ko'plab
+                            boshqa narsalar mavjud, ammo ular asosiysidir. Boshida veb-manzillar http
+                            yoki https bilan boshlanadi. Bu brauzerga veb serverga ulanish uchun xavfsiz
+                            shifrlardan foydalanish yoki foydalanmaslikni aytadi. 
+                            Lokal diskdagi faylning URL manzili o'rniga "file" bilan boshlanadi
+                        </p>
+                        <p class="blue">
+                            http://en.wikipedia.org/ <br>
+                            https://en.wikipedia.org/ <br>
+                            file:///Users/Kelly/notes.html
+                        </p>
+                        <p>
+                            Http, https va fayl bu barcha protokllar yoki brauzer biror narsani 
+                            olish usullaridir. Protokoldan keyin biz har doim protokolni keyingi
+                            qismdan ajratib turadigan ikki nuqta, slesh, slesh, chiziq, chiziqni
+                            ko'rib chiqamiz. Veb manzillar uchun siz keyingi qismni domen nomini 
+                            ko'rasiz. Bu brauzerga qaysi serverga ulanish kerakligini aytadi.
+                            Fayl URLlarida bu bo'lmaydi, chunki server yo'q. Bunda shunchaki 
+                            brauzer sizning kompyuteringizdan o'qiydi Shuning uchun, siz faylning
+                            URL manzilini boshqa birovga bersangiz, u uni ko'ra olmaydi.
+                            Buning sababi, xuddi shu fayl ularning kompyuterlarida mavjud emas.
+                            to'liq URLda paydo bo'ladigan oxirgi narsa bu faylga yo'l katalog nomi va
+                            URL ga murojaat qilingan fayl. Ba'zan saytning yuqori sahifasiga yoki 
+                            bosh sahifasiga bog'lasangiz, u bo'sh yoki oddiy slesh bo'ladi.
+                        </p>
+                </div>
+            </div>
+        </div>
+    </body>
 </html>

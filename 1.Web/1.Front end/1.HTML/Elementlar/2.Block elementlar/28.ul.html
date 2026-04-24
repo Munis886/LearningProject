@@ -55,6 +55,57 @@
                 <li>Tomatoes</li>
                 <li>Carrots</li>
             </ul>
+
+            <table class="html">
+                <tr>
+                    <th>Element</th>
+                    <th>Display</th>
+                </tr>
+                <tr>
+                    <td class="pre">
+                        &lt;ul&gt; <br>
+                        &nbsp; &nbsp; &lt;li&gt;Lettuce&lt;/li&gt; <br>
+                        &nbsp; &nbsp; &lt;li&gt;Tomatoes&lt;/li&gt; <br>
+                        &nbsp; &nbsp; &lt;li&gt;Carrots&lt;/li&gt; <br>
+                        &lt;/ul&gt;
+                    </td>
+                    <td>
+                        <ul>
+                            <li>Lettuce</li>
+                            <li>Tomatoes</li>
+                            <li>Carrots</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="pre">
+                        &lt;ul&gt; <br>
+                        &nbsp; &lt;li&gt; <br>
+                        &nbsp;&nbsp;&nbsp;&nbsp; &lt;ul&gt; <br> 
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;        &lt;li&gt;Lettuce&lt;/li&gt; <br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;        &lt;li&gt;Tomatoes&lt;/li&gt; <br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;        &lt;li&gt;Carrots&lt;/li&gt; <br>
+                        &nbsp;&nbsp;&nbsp;&nbsp; &lt;/ul&gt; <br> 
+                        &nbsp;&lt;/li&gt; <br>
+                        &nbsp; &nbsp; &lt;li&gt;Tomatoes&lt;/li&gt; <br>
+                        &nbsp; &nbsp; &lt;li&gt;Carrots&lt;/li&gt; <br>
+                        &lt;/ul&gt;
+                    </td>
+                    <td>
+                        <ul>
+                            <li>
+                                <ul>
+                                    <li>Lettuce</li>
+                                    <li>Tomatoes</li>
+                                    <li>Carrots</li>
+                                </ul>
+                            </li>
+                            <li>Tomatoes</li>
+                            <li>Carrots</li>
+                        </ul>
+                    </td>
+                </tr>
+            </table>
         </div>
     </div>
 </body>
