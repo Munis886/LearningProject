@@ -87,7 +87,6 @@ body {
 }
 
 .sarlavha ul {
-    display: flex;
     list-style-type: none;
     padding: 0;
     margin: 10px 0;
@@ -207,17 +206,64 @@ body {
     text-decoration: underline;
 }
 
-.meta_table tbody tr td a:hover {
-    text-decoration: underline;
-}
-
-.meta_table{
+.block_table {
     margin: auto;
     width: 80%;
     border: 1px solid #ddd;
     border-collapse: collapse;
     margin-bottom: 20px;
     table-layout: fixed;
+}
+
+.block_table tbody tr td a {
+    color: #ddd;
+    text-decoration: none;
+}
+
+.block_table tbody tr td a:hover {
+    text-decoration: underline;
+}
+
+.block_table thead tr th{
+    border: 1px solid #ddd;
+    padding: 8px 12px;
+    background-color: #333;
+    color: aliceblue;
+    border-collapse: collapse;
+} 
+
+.block_table tr td {
+    border: 1px solid #ddd;
+    border-collapse: collapse;
+    padding: 8px 12px;
+}
+
+.block_table tr td a {
+    color: #cdcdcd;
+    text-decoration: none;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.block_table thead tr th{
+    border: 1px solid #ddd;
+    padding: 8px 12px;
+    background-color: #333;
+} 
+
+.block_table tbody tr:nth-child(odd) {
+    background-color: #3f3f3f;
+    color:#cdcdcd
+} 
+.block_table tbody tr:nth-child(even) {
+    background-color: #2e2e2e;
+    color:#cdcdcd
+} 
+
+.block_table  tr td a {
+    color: #cdcdcd;
+    text-decoration: none;
+    margin: auto;
 }
 
 .block_table th:nth-child(1),
@@ -235,6 +281,43 @@ body {
 .block_table th:nth-child(3),
 .block_table td:nth-child(3) {
     width: calc(100% - 200px);
+}
+
+.block_table tbody tr td a:hover {
+    text-decoration: underline;
+}
+
+.meta_table{
+    margin: auto;
+    width: 80%;
+    border: 1px solid #ddd;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    table-layout: fixed;
+}
+
+.meta_table th:nth-child(1),
+.meta_table td:nth-child(1) {
+    width: 90px;
+    text-align: center;
+}
+
+
+
+.meta_table tbody tr td:nth-child(1) {
+    text-align: center;
+    border: 1px solid #ddd;
+    border-collapse: collapse;
+    width: 90px;
+}
+
+.meta_table tbody tr td a {
+    color: #ddd;
+    text-decoration: none;
+}
+
+.meta_table tbody tr td a:hover {
+    text-decoration: underline;
 }
 
 .meta_table thead tr th{
@@ -345,6 +428,12 @@ body {
 #menu ul {
       padding: 0;
       margin: 0;
+  }
+
+.menu-row {
+      display: flex;
+      justify-content: space-between;
+      gap: 1px;
   }
   
 #menu ul li a {

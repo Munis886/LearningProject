@@ -5,12 +5,14 @@ function toggleMenu() {
   content.classList.toggle("shifted");
 }
 
-function toggleSubMenu(id) {
+function toggleSubMenu(id, button) {
   var subMenu = document.getElementById(id);
-  if (subMenu.style.display === "block") {
-    subMenu.style.display = "none"; // Yashirish
-  } else {
-    subMenu.style.display = "block"; // Ko'rsatish
+  var isOpen = subMenu && subMenu.style.display === "block";
+  if (subMenu) {
+    subMenu.style.display = isOpen ? "none" : "block";
+  }
+  if (button) {
+    button.classList.toggle("open", !isOpen);
   }
 }
 

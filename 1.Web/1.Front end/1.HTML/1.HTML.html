@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./style.css">
     <script src="Js.js"></script>
 </head>
 <body>
@@ -33,51 +33,60 @@
         <div id="menu" class="menu">
             <h3>HTML</h3>
             <ul>
-                <li><a href="/1.Front end/1.HTML/1.HTML.html">HTML HOME</a></li>
+                <li><a href="./1.HTML.html">HTML HOME</a></li>
                 <li>
-                    <a href="#" onclick="toggleSubMenu('sub-menu-1')">Elementlar</a>
+                    <div class="menu-row">
+                        <a href="/1.Web/1.Front end/1.HTML/Elementlar/Elementlar.html">Elementlar</a>
+                        <a href="#" onclick="toggleSubMenu('sub-menu-1', this)" class="toggle-arrow">&gt;</a>
+                    </div>
                     <ul id="sub-menu-1" class="sub-menu">
                         <li>
                             <span></span>
-                            <a href="/1.Web/1.Front end/1.HTML/Elementlar/Elementlar.html">Elementlar haqida</a>
+                            <a href="./Elementlar/Elementlar.html">Elementlar haqida</a>
                         </li>
                         <li>
                             <span></span>
-                            <a href="/1.Web/1.Front end/1.HTML/Elementlar/1.Html elementlar.html">HTML elementlar</a>
+                            <a href="./Elementlar/1.Html elementlar.html">HTML elementlar</a>
                         </li>
                         <li>
                             <span></span>
-                            <a href="/1.Web/1.Front end/1.HTML/Elementlar/2.block elementlar.html">Block elementlar</a>
+                            <a href="./Elementlar/2.block elementlar.html">Block elementlar</a>
                         </li>
                         <li>
                             <span></span>
-                            <a href="/1.Web/1.Front end/1.HTML/Elementlar/3.inline elementlar.html">Inline elementlar</a>
+                            <a href="./Elementlar/3.inline elementlar.html">Inline elementlar</a>
                         </li>
                     </ul>
                 </li>
                 <li>
-                    <a href="#" onclick="toggleSubMenu('sub-menu-2')">Belgilar</a>
+                    <div class="menu-row">
+                        <a href="#" onclick="toggleSubMenu('sub-menu-2')">Belgilar</a>
+                        <a href="#" onclick="toggleSubMenu('sub-menu-2', this)" class="toggle-arrow">&gt;</a>
+                    </div>
                     <ul id="sub-menu-2" class="sub-menu">
-                        <li><a href="/1.Front end/1.HTML/Belgilar/Belgilar.html">Belgilar haqida</a></li>
-                        <li><a href="/1.Front end/1.HTML/Belgilar/1.Belgi 1-300.html">Belgi 1-300</a></li>
-                        <li><a href="/1.Front end/1.HTML/Belgilar/2.Belgi 9000-10000.html">Belgi 9000-10000</a></li>
-                        <li><a href="/1.Front end/1.HTML/Belgilar/3.Belgi 65000-66000.html">Belgi 65000-66000</a></li>
-                        <li><a href="/1.Front end/1.HTML/Belgilar/4.Belgi 127000-128000.html">Belgi 127000-128000</a></li>
-                        <li><a href="/1.Front end/1.HTML/Belgilar/5.Belgi 128000-129000.html">Belgi 128000-129000</a></li>
-                        <li><a href="/1.Front end/1.HTML/Belgilar/6.Belgi alifbo.html">Belgi alifbo</a></li>
+                        <li><a href="./Belgilar/Belgilar.html">Belgilar haqida</a></li>
+                        <li><a href="./Belgilar/1.Belgi 1-300.html">Belgi 1-300</a></li>
+                        <li><a href="./Belgilar/2.Belgi 9000-10000.html">Belgi 9000-10000</a></li>
+                        <li><a href="./Belgilar/3.Belgi 65000-66000.html">Belgi 65000-66000</a></li>
+                        <li><a href="./Belgilar/4.Belgi 127000-128000.html">Belgi 127000-128000</a></li>
+                        <li><a href="./Belgilar/5.Belgi 128000-129000.html">Belgi 128000-129000</a></li>
+                        <li><a href="./Belgilar/6.Belgi alifbo.html">Belgi alifbo</a></li>
                     </ul>
                 </li>
             </ul>
             
-            <h3><a href="/1.Front end/1.HTML/Belgilash tillari/3.XML/XML.html">XML</a></h3>
+            <h3><a href="./Belgilash tillari/3.XML/XML.html">XML</a></h3>
             <ul>
                 <li>
-                    <a href="#" onclick="toggleSubMenu('sub-menu-10.1')">
-                        <span></span><b>XML qo'llanmalar</b>
-                    </a>
+                    <div class="menu-row">
+                        <a href="#" onclick="toggleSubMenu('sub-menu-10.1')">
+                            <span></span><b>XML qo'llanmalar</b>
+                        </a>
+                        <a href="#" onclick="toggleSubMenu('sub-menu-10.1', this)" class="toggle-arrow">&gt;</a>
+                    </div>
                     <ul id="sub-menu-10.1" class="sub-menu">
                         <li>
-                            <a href="/1.Front end/1.HTML/Belgilash tillari/3.XML/1.XML qo'llanmalari/1.XML qo'llanmalari.html">
+                            <a href="./Belgilash tillari/3.XML/1.XML qo'llanmalari/1.XML qo'llanmalari.html">
                                 1.1. XML kirish
                             </a>
                         </li>
