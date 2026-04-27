@@ -25,7 +25,7 @@
 
     
     <div id="container">
-        <div id="text">
+        <div id="text" class="qisqa">
             <div class="orqaga">
                 <a href="javascript:history.back()">&lt;&lt;orqaga</a>
             </div>
@@ -55,7 +55,17 @@
                 <li>Tomatoes</li>
                 <li>Carrots</li>
             </ul>
+            <p class="sayt">
+                <a href="https://learn.udacity.com/">https://learn.udacity.com/</a>  
+            </p>
+            <hr>
 
+            <h2>
+                &lt;ul&gt; HTML tartibsiz ro'yxat elementi
+            </h2>
+            <p>
+                &lt;ul&gt; HTML elementi elementlarning tartibsiz roʻyxatini ifodalaydi, odatda markirovka qilingan roʻyxat sifatida koʻrsatiladi.
+            </p>
             <table class="html">
                 <tr>
                     <th>Element</th>
@@ -80,26 +90,73 @@
                 <tr>
                     <td class="pre">
                         &lt;ul&gt; <br>
-                        &nbsp; &lt;li&gt; <br>
-                        &nbsp;&nbsp;&nbsp;&nbsp; &lt;ul&gt; <br> 
-                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;        &lt;li&gt;Lettuce&lt;/li&gt; <br>
-                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;        &lt;li&gt;Tomatoes&lt;/li&gt; <br>
-                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;        &lt;li&gt;Carrots&lt;/li&gt; <br>
-                        &nbsp;&nbsp;&nbsp;&nbsp; &lt;/ul&gt; <br> 
-                        &nbsp;&lt;/li&gt; <br>
-                        &nbsp; &nbsp; &lt;li&gt;Tomatoes&lt;/li&gt; <br>
-                        &nbsp; &nbsp; &lt;li&gt;Carrots&lt;/li&gt; <br>
+                        &nbsp;&nbsp;    &lt;li&gt;Milk&lt;/li&gt; <br>
+                        &nbsp;&nbsp;    &lt;li&gt; <br>
+                        &nbsp;&nbsp;&nbsp;        Cheese <br>
+                        &nbsp;&nbsp;&nbsp;        &lt;ul&gt; <br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;        &lt;li&gt;Blue cheese&lt;/li&gt; <br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;        &lt;li&gt;Feta&lt;/li&gt; <br>
+                        &nbsp;&nbsp;&nbsp;        &lt;/ul&gt; <br>
+                        &nbsp;&nbsp;    &lt;/li&gt; <br>
+                        &lt;/ul&gt; <br>
+                    <td>
+                        <ul>
+                            <li>Milk</li>
+                            <li>
+                                Cheese
+                                <ul>
+                                    <li>Blue cheese</li>
+                                    <li>Feta</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+            </table>
+
+            <h2>Atributlar</h2>
+            
+            <p>
+                Bu element faqat global atributlarni o'z ichiga oladi .
+            </p>
+            <dl>
+                <dt>
+                    <span class="maxsus">
+                        compact
+                    </span>
+                </dt>
+                <dd>
+                    <p>
+                        Ushbu mantiqiy atribut ro'yxatni ixcham uslubda ko'rsatish kerakligiga ishora qiladi. Ushbu atributning talqini brauzerga xosdir. Buning o'rniga CSS-dan foydalaning: ixcham atributga o'xshash effekt berish uchun CSS xususiyati line-height 80% qiymatida ishlatilishi mumkin.
+                    </p>
+                </dd>
+            </dl>
+            <table class="html">
+                <tr>
+                    <th>Element</th>
+                    <th>Display</th>
+                </tr>
+                <tr>
+                    <td class="pre">
+                        &lt;style&gt; <br>
+                        &nbsp;    .test { <br>
+                        &nbsp;&nbsp;        line-height: 80%; <br>
+                        &nbsp;    } <br>
+                        &lt;/style&gt; <br>
+                        &lt;ul compact class=&quot;test&quot;&gt; <br>
+                        &nbsp;    &lt;li&gt;Lettuce&lt;/li&gt; <br>
+                        &nbsp;    &lt;li&gt;Tomatoes&lt;/li&gt; <br>
+                        &nbsp; &lt;li&gt;Carrots&lt;/li&gt; <br>
                         &lt;/ul&gt;
                     </td>
                     <td>
-                        <ul>
-                            <li>
-                                <ul>
-                                    <li>Lettuce</li>
-                                    <li>Tomatoes</li>
-                                    <li>Carrots</li>
-                                </ul>
-                            </li>
+                        <style>
+                            .test {
+                                line-height: 80%;
+                            }
+                        </style>
+                        <ul compact class="test">
+                            <li>Lettuce</li>
                             <li>Tomatoes</li>
                             <li>Carrots</li>
                         </ul>

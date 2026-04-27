@@ -114,6 +114,27 @@ html td:nth-child(2){
     border: 1px solid #222333;
 }
 
+.maxsus {
+    border-radius: 6px;
+    background-color: #333;
+    color: #fff;
+    padding: 5px 10px;
+    margin: 5px 10px;
+}
+
+.qisqa {
+    padding: 10px 20px;
+    width: 80%;
+    margin: auto;
+}
+
+.sayt {
+    color: blue;
+    text-align: right;
+    margin: 0 auto;
+    font-style: italic;
+}
+
 
 
 
