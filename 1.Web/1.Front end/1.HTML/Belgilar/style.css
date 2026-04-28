@@ -50,10 +50,12 @@ body {
     background-color: bisque;
 }
 #sarlavha h2{
+    display: inline-block;
+    width: auto;
+    padding: 5px 25px;
     margin: 10px 0;
     border-radius: 0 10px 10px 0;
     background-color: greenyellow;
-    padding: 5px 5px;
     text-align: center;
 }
 
@@ -212,5 +214,11 @@ table th,td {
 
 .li_f {
     background-color: var(--f-color);
+}
+
+.body {
+    margin: 0;
+    display: flex;
+    overflow: hidden;
 }
 
