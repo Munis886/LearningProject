@@ -48,10 +48,39 @@
             <div class="Ogohlantirish">
                 <div class="Ogohlantirish_tana">
                     <p>
-                        <b>Ogohlantirish:</b> tabindex atributini &lt;dialog&gt; elementida ishlatmaslik kerak. Qo'shimcha eslatmalarga qarang.
+                        <b>Ogohlantirish:</b> <span class="maxsus">tabindex</span> atributini &lt;dialog&gt; elementida ishlatmaslik kerak. <a href="#">Qo'shimcha eslatmalar</a>ga qarang.
                     </p>
                 </div>
             </div>
+
+            <dl>
+                <dt>
+                    <span class="maxsus">closedby</span>
+                </dt>
+                <dd>
+                    <p>
+                        &lt;dialog&gt; elementini yopish uchun ishlatilishi mumkin bo'lgan foydalanuvchi harakatlarining turlarini belgilaydi. Ushbu atribut dialogni yopishning uchta usulini ajratib turadi:
+                    </p>
+                </dd>
+            </dl>
+            <style>
+                .ul {
+                    padding-left: 100px;
+                    list-style-type: circle;
+                    line-height: 1.4;
+                }
+            </style>
+            <ul class="ul">
+                <li>
+                    Yoritgichli rad etuvchi foydalanuvchi harakati, bunda &lt;dialog&gt; foydalanuvchi uning tashqarisiga bosgan yoki bosganida yopiladi. Bu "avtomatik" davlat popoverlarining "engil ishdan bo'shatish" xatti-harakatiga teng.
+                </li>
+                <li>
+                    Ish stoli platformalarida Esc tugmasini bosish yoki mobil platformalarda “orqaga” yoki “yopish” ishorasi kabi platformaga xos foydalanuvchi harakati.
+                </li>
+                <li>
+                    HTMLDialogElement.close() yoki &lt;form&gt; jo'natmasini chaqiruvchi bosish ishlov beruvchisi bilan <tugma> kabi ishlab chiquvchi tomonidan belgilangan mexanizm.
+                </li>
+            </ul>
         </div>
     </div>
     
