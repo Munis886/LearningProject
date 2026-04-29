@@ -6,6 +6,8 @@
     <title>Html</title>
     <link rel="stylesheet" href="../../style.css">
     <link rel="stylesheet" href="../../style/style.Ogohlantirish.css">
+    <link rel="stylesheet" href="../../style/border.css">
+    <link rel="stylesheet" href="../../style/padding.css">
 </head>
 <body>
     <div id="bosh">
@@ -81,6 +83,64 @@
                     HTMLDialogElement.close() yoki &lt;form&gt; jo'natmasini chaqiruvchi bosish ishlov beruvchisi bilan &lt;button&gt; kabi ishlab chiquvchi tomonidan belgilangan mexanizm.
                 </li>
             </ul>
+
+            <p>
+                Mumkin qiymatlar:
+            </p>
+            <dl class="border-left">
+                <dt>
+                    <span class="maxsus">any</span>
+                </dt>
+                <dd>
+                    <p>
+                        Muloqot oynasi uchta usuldan birortasi yordamida o'chirilishi mumkin.
+                    </p>
+                </dd>
+                <dt>
+                    <a href="#closerequest">
+                        <span id="closerequest" class="maxsus">
+                            closerequest
+                        </span>
+                    </a>
+                </dt>
+                <dd>
+                    <p>
+                        Muloqot oynasi platformaga xos foydalanuvchi harakati yoki ishlab chiquvchi tomonidan belgilangan mexanizm bilan o‘chirib qo‘yilishi mumkin.
+                    </p>
+                </dd>
+                <dt>
+                    <span class="maxsus">none</span>
+                </dt>
+
+                <dd>
+                    <p>
+                        Muloqot oynasi faqat ishlab chiquvchi tomonidan belgilangan mexanizm bilan o'chirilishi mumkin.
+                    </p>
+                </dd>
+            </dl>
+
+            <p>
+                Agar <span class="maxsus">&lt;dialog&gt;</span> elementida ko'rsatilgan joriy yopiq qiymat bo'lmasa, u holda
+            </p>
+            <ul class="padding-left">
+                <li>
+                    agar u showModal() yordamida ochilgan bo'lsa, u qiymat "closerequest" kabi harakat qiladi.
+                </li>
+                <li>
+                    aks holda, qiymat "yo'q" bo'lgandek harakat qiladi.
+                </li>
+            </ul>
+
+            <dl>
+                <dt>
+                    <span class="maxsus">open</span>
+                </dt>
+                <dd>
+                    <p>
+                        Muloqot oynasi faol ekanligini va o'zaro ta'sir qilish uchun mavjudligini bildiradi. Agar ochiq atribut o'rnatilmagan bo'lsa, muloqot oynasi foydalanuvchiga ko'rinmaydi. Muloqot oynalarini ko'rsatish uchun ochiq atributdan ko'ra .show() yoki .showModal() usulidan foydalanish tavsiya etiladi. Agar <span class="maxsus">&lt;dialog&gt;</span> ochiq atribut yordamida ochilsa, u modal emas.
+                    </p>
+                </dd>
+            </dl>
         </div>
     </div>
     
