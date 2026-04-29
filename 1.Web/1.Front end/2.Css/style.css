@@ -48,6 +48,7 @@ body {
     list-style-type: none;
     border-right: 1px solid #222123;
     border-radius: 15px;
+    box-shadow: 0 0 1px;
 }
 
 .menyu ul {
@@ -60,6 +61,7 @@ body {
     color: #fff;
     padding: 5px 10px;
     display: inline-block;
+    
 }
 
 .body {
@@ -91,6 +93,9 @@ body {
     background-color: hsla(176, 50%, 48%, 1);
     border-radius: 2px;
     border: 2px solid hsla(126, 50%, 48%, 1);
+    border-radius: 4px;
+    box-shadow: 0 0 3px;
+    margin-right: 8px;
 }
 
 #menu h3 {
