@@ -217,8 +217,8 @@ table th,td {
 }
 
 .body {
-    margin: 0;
     display: flex;
+    margin: 0;
     overflow: hidden;
 }
 
