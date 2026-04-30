@@ -257,13 +257,7 @@ kbd {
     border-left: 3px solid rgba(170, 22, 22, 0.8);
     border-radius: var(--elem-radius);
     color: var(--text-secondary);
-  }
-  
-  /* .Eslatma .chap_yon {
-    width: 1%; 
-    background-color: cyan; 
-    border-radius: 15px 0 0 15px;
-  } */
+}
   
 .Ogohlantirish .Ogohlantirish_tana {
     background-color: rgba(163, 32, 32, 0.3); 

@@ -29,7 +29,7 @@
     
     <div id="container">
         
-        <div id="text">
+        <div id="text" class="qisqa">
             <div class="orqaga">
                 <a href="javascript:history.back(-1)">&lt;&lt;orqaga</a>
             </div>
@@ -137,10 +137,39 @@
                 </dt>
                 <dd>
                     <p>
-                        Muloqot oynasi faol ekanligini va o'zaro ta'sir qilish uchun mavjudligini bildiradi. Agar ochiq atribut o'rnatilmagan bo'lsa, muloqot oynasi foydalanuvchiga ko'rinmaydi. Muloqot oynalarini ko'rsatish uchun ochiq atributdan ko'ra .show() yoki .showModal() usulidan foydalanish tavsiya etiladi. Agar <span class="maxsus">&lt;dialog&gt;</span> ochiq atribut yordamida ochilsa, u modal emas.
+                        Muloqot oynasi faol ekanligini va o'zaro ta'sir qilish uchun mavjudligini bildiradi. Agar ochiq atribut o'rnatilmagan bo'lsa, muloqot oynasi foydalanuvchiga ko'rinmaydi. Muloqot oynalarini ko'rsatish uchun <span class="maxsus">open</span> 
+                        atributdan ko'ra <span class="maxsus">.show()</span> yoki 
+                        <span class="maxsus">.showModal()</span> usulidan foydalanish tavsiya etiladi. Agar <span class="maxsus">&lt;dialog&gt;</span> 
+                        <span class="maxsus">open</span> atribut yordamida ochilsa, u modal emas.
                     </p>
                 </dd>
             </dl>
+
+            <div class="Eslatma">
+                <div class="Eslatma_tana">
+                    <p>
+                        <b>Eslatma:</b> Modal bo'lmagan dialog oynalarining ochiq va yopiq holatini ochiq atribut mavjudligini almashtirish orqali almashtirish mumkin bo'lsa-da, 
+                        bu yondashuv tavsiya etilmaydi. Qo'shimcha ma'lumot olish uchun ochiq bo'limiga qarang.
+                    </p>
+                </div>
+            </div>
+
+            <h2>
+                Tavsif
+            </h2>
+
+            <p>
+                HTML &lt;dialog&lt; elementi modal va modal bo'lmagan dialog oynalarini yaratish uchun ishlatiladi. Modal dialog oynalari boshqa UI elementlari bilan o'zaro ta'sirni bloklaydi va sahifaning qolgan qismini inert qiladi, modal bo'lmagan dialog oynalari esa sahifaning qolgan qismi bilan o'zaro ta'sir o'tkazishga imkon beradi.
+            </p>
+
+            <h2>
+                JavaScript yordamida dialoglarni boshqarish
+            </h2>
+
+            <p>
+                JavaScript-dan &lt;dialog&gt; elementini ko'rsatish va yopish uchun foydalanish mumkin. Modal dialogni ko'rsatish uchun showModal() usulidan va modal bo'lmagan dialogni ko'rsatish uchun show() usulidan foydalanishingiz mumkin. Muloqot oynasi close() usuli yordamida yoki &lt;dialog&gt; elementiga joylashtirilgan 
+                &lt;form&gt;ni yuborishda dialog usuli yordamida yopilishi mumkin. Modal dialoglarni Esc tugmachasini bosish orqali ham yopish mumkin.
+            </p>
         </div>
     </div>
     
