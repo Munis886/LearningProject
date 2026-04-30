@@ -161,14 +161,112 @@
             <p>
                 HTML &lt;dialog&lt; elementi modal va modal bo'lmagan dialog oynalarini yaratish uchun ishlatiladi. Modal dialog oynalari boshqa UI elementlari bilan o'zaro ta'sirni bloklaydi va sahifaning qolgan qismini inert qiladi, modal bo'lmagan dialog oynalari esa sahifaning qolgan qismi bilan o'zaro ta'sir o'tkazishga imkon beradi.
             </p>
-
-            <h2>
+            <style>
+                h3 {
+                    font-weight: 400;
+                }
+            </style>
+            <h3>
                 JavaScript yordamida dialoglarni boshqarish
-            </h2>
+            </h3>
 
             <p>
                 JavaScript-dan &lt;dialog&gt; elementini ko'rsatish va yopish uchun foydalanish mumkin. Modal dialogni ko'rsatish uchun showModal() usulidan va modal bo'lmagan dialogni ko'rsatish uchun show() usulidan foydalanishingiz mumkin. Muloqot oynasi close() usuli yordamida yoki &lt;dialog&gt; elementiga joylashtirilgan 
                 &lt;form&gt;ni yuborishda dialog usuli yordamida yopilishi mumkin. Modal dialoglarni Esc tugmachasini bosish orqali ham yopish mumkin.
+            </p>
+
+            <h3>
+                Chaqiruvchi buyruqlar yordamida modal dialoglar
+            </h3>
+
+            <p>
+                Modal dialoglar &lt;button&gt; elementlariga o'rnatilishi mumkin bo'lgan Invoker Commands API HTML atributlari buyruqlari va buyruqlari yordamida deklarativ tarzda ochilishi va yopilishi mumkin.
+            </p>
+
+            <p>
+                Buyruqning atributi &lt;button&gt; elementi bosilganda yuborilishi kerak bo'lgan maxsus buyruqni o'rnatadi, commandfor esa maqsadli dialog oynasining identifikatorini o'rnatadi. Muloqot oynalari uchun yuborilishi mumkin bo'lgan buyruqlar: "ko'rsatish-modal", "yopish" va "so'rov-yopish".
+            </p>    
+
+            <p>
+                Quyidagi HTML atributlarni &lt;button&gt; elementiga qanday qo'llashni ko'rsatadi, shuning uchun uni "my-dialog" identifikatori bilan modal 
+                &lt;dialog&gt; ochish uchun bosish mumkin.
+            </p>
+
+            <table class="html">
+                <tr>
+                    <th>Element</th>
+                    <th>Display</th>
+                </tr>
+                <tr>
+                    <td class="pre">
+                        &lt;button command=&quot;show-modal&quot; commandfor=&quot;my-dialog&quot;&gt;Open dialog&lt;/button&gt; <br><br>
+
+                        &lt;dialog id=&quot;my-dialog&quot;&gt; <br>
+                        &lt;p&gt;Ushbu dialog invoker buyrug'i yordamida ochildi.&lt;/p&gt; <br>
+                        &lt;button commandfor=&quot;my-dialog&quot; command=&quot;close&quot;&gt;Close&lt;/button&gt; <br>
+                        &lt;/dialog&gt; <br>
+                    </td>
+                    <td>
+                        <button command="show-modal" commandfor="my-dialog">Open dialog</button>
+
+                        <dialog id="my-dialog">
+                        <p>Ushbu dialog invoker buyrug'i yordamida ochildi.</p>
+                        <button commandfor="my-dialog" command="close">Close</button>
+                        </dialog>
+                    </td>
+                </tr>
+            </table>
+
+            <h3>
+                Popover buyruqlari yordamida modal bo'lmagan dialoglar
+            </h3>
+
+            <p>
+                Modal bo'lmagan dialoglar deklarativ tarzda ochilishi, yopilishi va o'zgartirilishi mumkin Popover API HTML atributlari popovertarget va popovertargetaction, ular &lt;button&gt; va &lt;input&gt; elementlarida aniqlanishi mumkin.
+            </p>
+
+            <p>
+                Quyidagi HTML atributlarni &lt;button&gt; elementiga qanday qo'llashni ko'rsatadi, shuning uchun uni "my-dialog" 
+                <span class="maxsus">id</span> bilan modal 
+                &lt;dialog&gt;ni ko'rsatish va yashirish uchun bosish mumkin.
+            </p>
+
+            <table class="html">
+                <tr>
+                    <th>Element</th>
+                    <th>Display</th>
+                </tr>
+                <tr>
+                    <td class="pre">
+                        &lt;button popovertarget=&quot;my-dialog&quot;&gt;Open dialog&lt;/button&gt; <br><br>
+
+                        &lt;dialog id=&quot;my-dialog&quot; popover&gt; <br>
+                        &lt;p&gt;This dialog was opened using a popovertargetaction attribute.&lt;/p&gt; <br>
+                        &lt;button popovertarget=&quot;my-dialog&quot; popovertargetaction=&quot;hide&quot;&gt;Close&lt;/button&gt;<br>
+                        &lt;/dialog&gt;<br>
+                    </td>
+                    <td>
+                        <button command="show-modal" popovertarget="my-dialog">Open dialog</button>
+
+                        <dialog id="my-dialog" popover>
+                            <p>This dialog was opened using a popovertargetaction attribute.</p>
+                            <button popovertarget="my-dialog" popovertargetaction="hide">Close</button>
+                        </dialog>
+                    </td>
+                </tr>
+            </table>
+
+            <p>
+                Popover API shuningdek, JavaScript-da holatni olish va o'rnatish uchun ishlatilishi mumkin bo'lgan xususiyatlarni taqdim etadi.
+            </p>
+
+            <h3>
+                Muloqot oynalarini yopish
+            </h3>
+
+            <p>
+                Har bir &lt;dialog&gt; elementi uchun yopish mexanizmini ta'minlash va bu 
+                jismoniy klaviaturaga ega bo'lmagan qurilmalarda ishlashini ta'minlash muhimdir.
             </p>
         </div>
     </div>
