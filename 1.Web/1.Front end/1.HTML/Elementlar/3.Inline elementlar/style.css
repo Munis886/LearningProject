@@ -45,6 +45,10 @@ body {
     margin: 0 auto;
 }
 
+.menyu  ul{
+    margin: 0;    
+}
+
 #menyu {
     background-color:dimgray;
     width: 100%;
@@ -130,6 +134,7 @@ html td:nth-child(2){
 
 .ul li{
     line-height: 1.6;
+    list-style-type: none;
 }
 
 

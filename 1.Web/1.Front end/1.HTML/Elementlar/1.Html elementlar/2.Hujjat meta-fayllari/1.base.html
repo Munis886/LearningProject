@@ -4,8 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>head</title>
-    <link rel="stylesheet" href="/1.Front end/1.HTML/style.css">
-    <script src="/1.Front end/1.HTML/Elementlar/Js.js"></script>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../../style.css">
+    <script src="../../Js.js"></script>
 </head>
 <body>
     <div id="bosh">
@@ -20,7 +21,9 @@
             <ul>
                 <li><a href="/index.html">HOME</a></li>
                 <li><a href="/1.Front end/1.Front_end.html">FRONT END</a></li>
-                <li><a href="#"></a></li>
+                <li><a href="../../../1.HTML.html">HTML</a></li>
+                <li><a href="../../../../2.Css/Css.html">CSS</a></li>
+                <li><a href="./../../../../3.Js/Javascript.html">JAVASCRIPT</a></li>
             </ul>
         </div>
     </div>
@@ -29,25 +32,25 @@
         <div id="menu" class="menu">
             <h3>HTML</h3>   
             <ul>
-                <li><a href="/1.Front end/1.HTML/1.HTML.html">HTML HOME</a></li>
+                <li><a href="../../../1.HTML.html">HTML HOME</a></li>
                 <li>
                     <a href="#" onclick="toggleSubMenu('sub-menu-1')">Elementlar</a>
                     <ul id="sub-menu-1" class="sub-menu">
                         <li>
                             <span></span>
-                            <a href="/1.Front end/1.HTML/Elementlar/Elementlar.html">Elementlar haqida</a>
+                            <a href="../../Elementlar.html">Elementlar haqida</a>
                         </li>
                         <li>
                             <span></span>
-                            <a href="/1.Front end/1.HTML/Elementlar/1.Html elementlar.html">HTML elementlar</a>
+                            <a href="../../1.Html elementlar.html">HTML elementlar</a>
                         </li>
                         <li>
                             <span></span>
-                            <a href="/1.Front end/1.HTML/Elementlar/2.block elementlar.html">Block elementlar</a>
+                            <a href="../../2.block elementlar.html">Block elementlar</a>
                         </li>
                         <li>
                             <span></span>
-                            <a href="/1.Front end/1.HTML/Elementlar/3.inline elementlar.html">Inline elementlar</a>
+                            <a href="../../3.inline elementlar.html">Inline elementlar</a>
                         </li>
                     </ul>
                 </li>
@@ -69,15 +72,20 @@
             </ul>
         </div>
         <div id="container">
-    
-        
-            <div id="sarlavha" >
-                <h2 style="width: 5em">&lt;base&gt;</h2>
+            <div class="sarlavha">
+                <ul>
+                    <li class="li_1">
+                        <a href="javascript: history.back();">⟨</a>
+                    </li>
+                    <li class="li_2">
+                        base
+                    </li>
+                </ul>
             </div>
         <div id="text">
             <p>
-                To'liq HTML hujjati ikki qismdan iborat <span style="color: cyan;">head</span> va
-                <span style="color: cyan;">body</span> HTML hujjatining bir qismi sarlavha
+                To'liq HTML hujjati ikki qismdan iborat <span>head</span> va
+                <span>body</span> HTML hujjatining bir qismi sarlavha
                 deyiladi, unda biz hujjat to'g'risidagi muhim ma'lumotlarni ba'zi qismlarini joylashtiramiz
                 va uning tanasi head deb nomlangan bitta element ichiga joylashtirilgan. 
             </p>
@@ -90,9 +98,9 @@
                 &lt;!Doctype html&gt; <br>
                 &lt;html lang="en"&gt; <br>
                     &nbsp;&lt;head&gt; <br>
-                    &nbsp;&nbsp;&lt;<span style="color: red;">title</span>&gt; 
+                    &nbsp;&nbsp;&lt;<span>title</span>&gt; 
                         My notes 
-                        &lt;/<span style="color: red;">title</span>&gt; <br>
+                        &lt;/<span>title</span>&gt; <br>
                     &nbsp;&lt;/head&gt; <br>
                     &nbsp;&lt;body&gt; <br>
                         <br>
@@ -104,7 +112,7 @@
                 brauzerga aytdi.
             </p>
             <p>
-                <b>head</b>da paydo bo'lgan yana bir narsa <b style="color: blue;">stillar </b>jadvallari haqida ma'lumot,
+                <b>head</b>da paydo bo'lgan yana bir narsa <b>stillar </b>jadvallari haqida ma'lumot,
                 shuningdek sahifada qaysi shrift ranglardan foydalanishni, 
             </p>
             <h3>&lt;Style&gt; - Stillar</h3>
@@ -112,11 +120,11 @@
                 &lt;!Doctype html&gt; <br>
                 &lt;html lang="en"&gt; <br>
                     &nbsp;&lt;head&gt; <br>
-                    &nbsp;&nbsp;&lt;<span style="color: red;">style</span>&gt; <br>
-                    &nbsp;&nbsp;&nbsp; <span style="color: darkgoldenrod;">p {</span> 
-                        <span style="color: darkgoldenrod;">color: green</span>
-                    <span style="color: darkgoldenrod;">}</span> <br>
-                    &nbsp;&nbsp;&lt;/<span style="color: red;">style</span>&gt; <br>
+                    &nbsp;&nbsp;&lt;<span>style</span>&gt; <br>
+                    &nbsp;&nbsp;&nbsp; <span> p {</span> 
+                        <span>color: green</span>
+                    <span>}</span> <br>
+                    &nbsp;&nbsp;&lt;/<span>style</span>&gt; <br>
                     &nbsp;&lt;/head&gt; <br>
                     &nbsp;&lt;body&gt; <br>
                     <br>                   
@@ -125,7 +133,7 @@
             </p>
             <p>
                 matnni boshida qanday joylashtirishni 
-                brauzerda ishlaydigan dasturlar <b style="color: blue;">script</b>larini ham o'z ichiga oladi, bu veb-ilovalar test kabi
+                brauzerda ishlaydigan dasturlar <b>script</b>larini ham o'z ichiga oladi, bu veb-ilovalar test kabi
                 ishlaydi. 
             </p>
             <h3>&lt;Script&gt;</h3>
@@ -133,9 +141,9 @@
                 &lt;!Doctype html&gt; <br>
                 &lt;html lang="en"&gt; <br>
                     &nbsp;&lt;head&gt; <br>
-                    &nbsp;&nbsp;&lt;<span style="color: red;">script</span>&gt; <br>
+                    &nbsp;&nbsp;&lt;<span>script</span>&gt; <br>
                      <br>
-                    &nbsp;&nbsp;&lt;/<span style="color: red;">script</span>&gt; <br>
+                    &nbsp;&nbsp;&lt;/<span>script</span>&gt; <br>
                     &nbsp;&lt;/head&gt; <br>
                     &nbsp;&lt;body&gt; <br>
                     <br>                   
@@ -144,7 +152,7 @@
             </p>
             <p>
                 bu brauzerda ishlaydi veb-ilovalarning ishlashi, masalan biz ko'rgan testlar
-                shuningdek ushbu bo'limda o'rganganlaringiz <b style="color: blue;">meta</b>da bo'lishi mumkin, bu sahifaning o'zi haqida
+                shuningdek ushbu bo'limda o'rganganlaringiz <b>meta</b>da bo'lishi mumkin, bu sahifaning o'zi haqida
                 boshqa ma'lumotlar, masalan qidiruv tizimi uchun kalit so'zlar, ma'lumot, masalan html tegining
                 o'ziga ham ishora qilishi mumkin. 
             </p>
@@ -154,7 +162,7 @@
                 &lt;html lang="en"&gt; <br>
                     &nbsp;&lt;head&gt; <br>
                     &nbsp;&nbsp;&lt;
-                    <span style="color: red;">
+                    <span>
                         meta 
                     </span> name="description" content="Notes on HTML" &gt; <br>
                      <br>

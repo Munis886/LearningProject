@@ -53,10 +53,17 @@ body {
     background-color: dimgray;
 }
 
-#text > p {
-    width: 95%;
+#text, .text{
+    width: 90%;
+    background-color: bisque;
+    margin: 0 auto;
+    padding: 10px 40px;
+    text-align: justify;    
     font-size: 19px;
-    padding: 0 20px;
+}
+
+#text > p {
+    font-size: 19px;
     line-height: 1.4;
 }
 
@@ -200,12 +207,7 @@ body {
     text-align: center;
 }
 
-#text {
-    margin: 0 auto;
-    background-color: bisque;
-    margin: 0 5px;
-    padding: 10px 40px;
-}
+
 
 /* HTML faylidagi teglar*/
 
@@ -232,9 +234,11 @@ body {
 .Izoh {
     border-radius: 4px;
     padding: 5px;
+    font-size: 19px;
     margin: 0 auto;
     display: flex;
     background-color: bisque;
+    width: 90%;
 }
 
 kbd {
@@ -301,5 +305,6 @@ kbd {
     align-items: center;
     padding-right: 10px;
 }
+
 
 

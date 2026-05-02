@@ -5,7 +5,13 @@ body {
 }
 
 #bosh {
-    background-color:chocolate;
+    background: hsla(126, 50%, 48%, 1);
+
+    background: -moz-linear-gradient(90deg, hsla(126, 50%, 48%, 1) 0%, hsla(101, 46%, 8%, 1) 100%);
+
+    background: -webkit-linear-gradient(90deg, hsla(126, 50%, 48%, 1) 0%, hsla(101, 46%, 8%, 1) 100%);
+
+    background: linear-gradient(90deg, hsla(126, 50%, 48%, 1) 0%, hsla(101, 46%, 8%, 1) 100%);
     margin: 0 auto;
 }
 
@@ -22,10 +28,17 @@ body {
     width: 100%;
     margin: 0 auto;
     display: flex;
+    border-top: 1px solid black;
 }
 
 #menyu {
-    background-color:dimgray; 
+    background: hsla(26, 50%, 48%, 1);
+
+    background: -moz-linear-gradient(90deg, hsla(126, 50%, 48%, 1) 0%, hsla(101, 46%, 8%, 1) 100%);
+
+    background: -webkit-linear-gradient(90deg, hsla(126, 50%, 48%, 1) 0%, hsla(101, 46%, 8%, 1) 100%);
+
+    background: linear-gradient(90deg, hsla(126, 50%, 48%, 1) 0%, hsla(101, 46%, 8%, 1) 100%);
     margin: 0 auto;
     padding: 0;
 }
@@ -34,6 +47,8 @@ body {
     display: inline;
     list-style-type: none;
     border-right: 1px solid #222123;
+    border-radius: 15px;
+    box-shadow: 0 0 1px;
 }
 
 .menyu ul {
@@ -46,6 +61,7 @@ body {
     color: #fff;
     padding: 5px 10px;
     display: inline-block;
+    
 }
 
 .body {
@@ -71,7 +87,16 @@ body {
 .menu.active {
     left: 0; /* Menu ko'rinadigan holatda */
     position:relative;
-  }
+}
+
+.menyu button {
+    background-color: hsla(176, 50%, 48%, 1);
+    border-radius: 2px;
+    border: 2px solid hsla(126, 50%, 48%, 1);
+    border-radius: 4px;
+    box-shadow: 0 0 3px;
+    margin-right: 8px;
+}
 
 #menu h3 {
     padding: 2px 3px;
@@ -127,11 +152,11 @@ body {
 
     background: hsla(145, 44%, 37%, 1);
 
-    background: linear-gradient(90deg, hsla(145, 44%, 37%, 1) 0%, hsla(190, 53%, 56%, 1) 100%);
+    background: -webkit-linear-gradient(90deg, hsla(145, 44%, 37%, 1) 0%, hsla(190, 53%, 56%, 1) 100%);
 
     background: -moz-linear-gradient(90deg, hsla(145, 44%, 37%, 1) 0%, hsla(190, 53%, 56%, 1) 100%);
 
-    background: -webkit-linear-gradient(90deg, hsla(145, 44%, 37%, 1) 0%, hsla(190, 53%, 56%, 1) 100%);
+    background: linear-gradient(90deg, hsla(145, 44%, 37%, 1) 0%, hsla(190, 53%, 56%, 1) 100%);
 
 filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#348756", endColorstr="#54B6CA", GradientType=1 );
 }
@@ -153,11 +178,11 @@ pre {
 
     background: hsla(116, 50%, 48%, 1);
 
-    background: linear-gradient(90deg, hsla(116, 50%, 48%, 1) 0%, hsla(101, 46%, 8%, 1) 100%);
+    background: -webkit-linear-gradient(90deg, hsla(116, 50%, 48%, 1) 0%, hsla(101, 46%, 8%, 1) 100%);
 
     background: -moz-linear-gradient(90deg, hsla(116, 50%, 48%, 1) 0%, hsla(101, 46%, 8%, 1) 100%);
 
-    background: -webkit-linear-gradient(90deg, hsla(116, 50%, 48%, 1) 0%, hsla(101, 46%, 8%, 1) 100%);
+    background: linear-gradient(90deg, hsla(116, 50%, 48%, 1) 0%, hsla(101, 46%, 8%, 1) 100%);
 
     filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#46B83D", endColorstr="#111E0B", GradientType=1 );
 
@@ -333,11 +358,11 @@ iframe {
     width: auto;
     background: hsla(116, 50%, 48%, 1);
 
-    background: linear-gradient(90deg, hsla(116, 50%, 48%, 1) 0%, hsla(101, 46%, 8%, 1) 100%);
-
     background: -moz-linear-gradient(90deg, hsla(116, 50%, 48%, 1) 0%, hsla(101, 46%, 8%, 1) 100%);
 
     background: -webkit-linear-gradient(90deg, hsla(116, 50%, 48%, 1) 0%, hsla(101, 46%, 8%, 1) 100%);
+
+    background: linear-gradient(90deg, hsla(116, 50%, 48%, 1) 0%, hsla(101, 46%, 8%, 1) 100%);
 
     filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#46B83D", endColorstr="#111E0B", GradientType=1 );
 
