@@ -268,6 +268,54 @@
                 Har bir &lt;dialog&gt; elementi uchun yopish mexanizmini ta'minlash va bu 
                 jismoniy klaviaturaga ega bo'lmagan qurilmalarda ishlashini ta'minlash muhimdir.
             </p>
+
+            <p>
+                Muloqot oynasini yopishning ko'plab usullari mavjud:
+            </p>
+
+            <ul>
+                <li>
+                    Shaklni &lt;dialog&gt; elementiga &lt;form&gt; elementida o'rnatilgan method="dialog" 
+                    bilan yuborish (muloqot oynasini ochish atributidan foydalanish misoliga qarang).
+                </li>
+                <li>
+                    “Yengil oʻchirish” yoqilganda dialog oynasi tashqarisini bosish (Popover API HTML atributlari misoliga qarang).
+                </li>
+                <li>
+                    Esc tugmachasini bosish, u yoqilgan dialog oynalarida (Popover API HTML atributlari misoliga qarang).
+                </li>
+                <li>
+                    HTMLDialogElement.close() usulini chaqirish (modal misolga qarang).
+                </li>
+            </ul>
+
+            <h3>
+                CSS uslubi
+            </h3>
+
+            <p>
+                &lt;dialog&gt; element nomidan foydalanib tanlanishi mumkin (har qanday boshqa element kabi) va siz uning holatini :modal va :open kabi soxta sinflar yordamida ham moslashingiz mumkin.
+            </p>
+
+            <p>
+                HTMLDialogElement.showModal() usuli yordamida dialog oynasi ko'rsatilganda &lt;dialog&gt; elementi orqasida ko'rsatiladigan modal dialog oynasining fonini uslublash uchun CSS ::backdrop psevdoelementidan foydalanish mumkin. Ushbu psevdoelementdan, masalan, modal dialog oynasi orqasidagi inert tarkibni xiralashtirish, qoraytirish yoki boshqacha tarzda xiralashtirish uchun ishlatilishi mumkin.
+            </p>
+
+            <h3>
+                Qo'shimcha eslatmalar
+            </h3>
+
+            <ul>
+                <li>
+                    HTML &lt;form&gt; elementlari dialog oynasini yopish uchun ishlatilishi mumkin, agar ular metod="dialog" atributiga ega bo'lsa yoki formani yuborish uchun ishlatiladigan tugma formmethod="dialog" o'rnatilgan bo'lsa. &lt;dialog&gt; ichidagi &lt;forma&gt; dialog usuli orqali yuborilganda, dialog oynasi yopiladi, forma boshqaruv elementlarining holatlari saqlanadi, lekin topshirilmaydi va returnValue xususiyati faollashtirilgan tugma qiymatiga o'rnatiladi.
+                </li>
+                <li>
+                    Avtofokus atributi modal dialog oynasini ochgandan so'ng darhol foydalanuvchi o'zaro aloqada bo'lishi kutilayotgan elementga qo'shilishi kerak. Agar boshqa hech qanday element darhol o'zaro ta'sirni o'z ichiga olmasa, avtofokusni dialog oynasi ichidagi yopish tugmasiga yoki agar foydalanuvchi o'chirish uchun uni bosishi/faollashtirishi kutilsa, muloqot oynasining o'ziga qo'shish tavsiya etiladi.
+                </li>
+                <li>
+                    &lt;dialog&gt; elementiga tabindex xossasini qo'shmang, chunki u interaktiv emas va fokusni olmaydi. Muloqot oynasi mazmuni, shu jumladan muloqot oynasidagi yopish tugmasi diqqatni jalb qilishi va interaktiv bo'lishi mumkin.
+                </li>
+            </ul>
         </div>
     </div>
     
