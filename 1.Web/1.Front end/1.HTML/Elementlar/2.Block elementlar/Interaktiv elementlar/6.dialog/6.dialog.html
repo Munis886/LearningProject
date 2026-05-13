@@ -324,6 +324,112 @@
             <p>
                 Muloqot oynasini amalga oshirishda foydalanuvchi diqqatini o'rnatish uchun eng mos joyni hisobga olish muhimdir. &lt;dialog&gt;ni ochish uchun HTMLDialogElement.showModal() dan foydalanilganda, fokus birinchi joylashtirilgan fokuslanadigan elementga o'rnatiladi. Avtofokus atributidan foydalangan holda dastlabki fokusni joylashtirishni aniq ko'rsatish har qanday muayyan dialog uchun eng yaxshi dastlabki fokus joylashuvi deb hisoblangan elementga dastlabki fokusni o'rnatishga yordam beradi. Shubha tug'ilganda, dialog oynasida boshlang'ich fokusni qayerga o'rnatish har doim ham noma'lum bo'lishi mumkin, ayniqsa dialogning mazmuni chaqirilganda dinamik ravishda ko'rsatiladigan holatlarda, &lt;dialog&gt; elementining o'zi eng yaxshi dastlabki fokusni joylashtirishni ta'minlashi mumkin.
             </p>
+
+            <p>
+                Foydalanuvchilarga dialogni yopish imkonini beruvchi mexanizm mavjudligiga ishonch hosil qiling. Barcha foydalanuvchilar dialog oynasini yopishini ta'minlashning eng ishonchli usuli bu tasdiqlash, bekor qilish yoki yopish tugmasi kabi aniq tugmani kiritishdir.
+            </p>
+
+            <p>
+                Odatiy bo'lib, showModal() usuli bilan chaqirilgan dialogni Esc tugmachasini bosish orqali o'chirish mumkin. Modal bo'lmagan dialog sukut bo'yicha Esc tugmasi orqali o'chirilmaydi va modal bo'lmagan dialog nimani ifodalashiga qarab, bu xatti-harakat uchun istalmagan bo'lishi mumkin. Klaviatura foydalanuvchilari Esc tugmasi modal dialog oynalarini yopishini kutishadi; ushbu xatti-harakatning amalga oshirilishi va saqlanishini ta'minlash. Agar bir nechta modal dialoglar ochiq bo'lsa, Esc tugmachasini bosish faqat oxirgi ko'rsatilgan dialog oynasini yopishi kerak. &lt;dialog&gt;-dan foydalanilganda, bu xatti-harakat brauzer tomonidan taqdim etiladi.
+            </p>
+
+            <p>
+                Muloqot oynalari boshqa elementlar yordamida yaratilishi mumkin bo'lsa-da, mahalliy &lt;dialog&gt; elementi shunga o'xshash maqsadda boshqa elementlardan foydalansangiz, takrorlanishi kerak bo'lgan qulaylik va mavjudlik xususiyatlarini ta'minlaydi. Agar siz maxsus dialog ilovasini yaratayotgan bo'lsangiz, barcha kutilgan standart xatti-harakatlar qo'llab-quvvatlanishiga va tegishli yorliqlash bo'yicha tavsiyalarga rioya qilinganligiga ishonch hosil qiling.
+            </p>
+
+            <p>
+                &lt;dialog&gt; elementi brauzerlar tomonidan ARIA role=&quot;dialog&quot; atributidan foydalanadigan maxsus dialog oynalariga o'xshash tarzda ochiladi. showModal() usuli bilan chaqirilgan &lt;dialog&gt; elementlari bilvosita aria-modal=&quot;true&quot;ga ega bo'lsa, show() usuli bilan chaqirilgan yoki ochiq atribut yordamida yoki &lt;dialog&gt;ning standart displeyini o'zgartirish orqali ko'rsatilgan &lt;dialog&gt; elementlar [aria-modal=&quot;false&quot;] sifatida namoyon bo'ladi. Modal dialoglarni amalga oshirishda &lt;dialog&gt; va uning mazmunidan boshqa hamma narsa inert atributi yordamida inert holga keltirilishi kerak. HTMLDialogElement.showModal() usuli bilan birga &lt;dialog&gt; dan foydalanilganda, bu xatti-harakat brauzer tomonidan ta'minlanadi.
+            </p>
+
+            <h3>
+                Misollar
+            </h3>
+
+            <h3>
+                Invoker Command API HTML atributlari
+            </h3>
+
+            <p>
+                Ushbu misol Invoker Commands API ning commandfor va buyruq HTML atributlari yordamida modal dialogni ochish va yopishdan qanday foydalanishingiz mumkinligini ko'rsatadi.
+            </p>
+
+            <p>
+                Birinchidan, biz &lt;button&gt; elementini e'lon qilamiz, buyruq atributini &quot;show-modal&quot; ga o'rnatamiz va ochiladigan dialog oynasining identifikatoriga commandfor atributini o'rnatamiz (my-dialog). Keyin biz &quot;Yopish&quot; &lt;tugmasi&gt;ni o'z ichiga olgan &lt;dialog&gt; elementini e'lon qilamiz. Ushbu tugma &quot;yopish&quot; buyrug'ini (bir xil) dialog identifikatoriga yuboradi.
+            </p>
+
+            <table class="html">
+                <tr>
+                    <th>Element</th>
+                    <th>Display</th>
+                </tr>
+                <tr>
+                    <td class="pre">
+                        &lt;button command=&quot;show-modal&quot; commandfor=&quot;my-dialog&quot;&gt;Open dialog&lt;/button&gt;
+
+                        &lt;dialog id=&quot;my-dialog&quot;&gt;
+                        &lt;p&gt;This dialog was opened using an invoker command.&lt;/p&gt;
+                        &lt;button commandfor=&quot;my-dialog&quot; command=&quot;close&quot;&gt;Close&lt;/button&gt;
+                        &lt;/dialog&gt;
+                    </td>
+                    <td>
+                        <button command="show-modal" commandfor="my-dialog">Open dialog</button>
+
+                        <dialog id="my-dialog">
+                        <p>Ushbu dialog invoker buyrug'i yordamida ochildi.</p>
+                        <button commandfor="my-dialog" command="close">Close</button>
+                        </dialog>
+                    </td>
+                </tr>
+            </table>
+
+            <h3>
+                Natija
+            </h3>
+
+            <p>
+                "Muloqot oynasini ochish" tugmasini bosib dialog oynasini oching. Muloqot oynasini "Yopish" tugmachasini tanlash yoki Esc tugmasini bosish orqali yopishingiz mumkin.
+            </p>
+
+            <h3>
+                Popover API HTML atributlari
+            </h3>
+
+            <p>
+                Ushbu misol Popover API ning popover, popovertarget va popovertargetaction HTML atributlari yordamida modal bo'lmagan dialogni qanday ochishingiz va yopishingiz mumkinligini ko'rsatadi.
+            </p>
+
+            <p>
+                &lt;dialog&gt; popover atributini qo'shish orqali popoverga aylanadi. Biz atribut uchun qiymat belgilamaganimiz sababli, standart &quot;auto&quot; qiymati ishlatiladi. Bu dialog oynasidan tashqaridagi tugmani bosish yoki Esc tugmasini bosish orqali dialogni yopish imkonini beruvchi &quot;engil o'chirish&quot; xatti-harakatini faollashtiradi. Buning o'rniga biz popover=&quot;manual&quot; ni &quot;engil o'chirish&quot; harakatini o'chirib qo'yishimiz mumkin edi, bu holda dialog &quot;Yopish&quot; tugmasi yordamida yopilishi kerak edi.
+            </p>
+
+            <p>
+                E'tibor bering, biz dialog oynasini ochadigan &lt;button&gt; uchun popovertargetaction atributini belgilamadik. Bu holda bu kerak emas, chunki uning standart qiymati o'tish bo'lib, tugma bosilganda uning ochiq va yopiq holatlari o'rtasidagi dialog oynasini almashtiradi.
+            </p>
+
+            <table class="html">
+                <tr>
+                    <th>Element</th>
+                    <th>Display</th>
+                </tr>
+                <tr>
+                    <td class="pre">
+                        &lt;button popovertarget=&quot;my-dialog&quot;&gt;Open dialog&lt;/button&gt;
+
+                        &lt;dialog id=&quot;my-dialog&quot; popover&gt;
+                        &lt;p&gt;Bu dialog popovertargetaction atributi yordamida ochildi.&lt;/p&gt;
+                        &lt;button popovertarget=&quot;my-dialog&quot; popovertargetaction=&quot;hide&quot;&gt;Close&lt;/button&gt;
+                        &lt;/dialog&gt;
+                    </td>
+                    <td>
+                        <button popovertarget="my-dialog">Open dialog</button>
+
+                        <dialog id="my-dialog" popover>
+                            <p>Bu dialog popovertargetaction atributi yordamida ochildi.</p>
+                            <button popovertarget="my-dialog" popovertargetaction="hide">Close</button>
+                        </dialog>
+                    </td>
+                </tr>
+            </table>
         </div>
     </div>
     
