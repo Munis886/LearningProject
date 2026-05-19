@@ -5,7 +5,7 @@ body {
 }
 
 #bosh {
-    background-color:chocolate;
+    background-image: linear-gradient(120deg, #f6d365 0%, #fda085 100%);
     width: 100%;
     margin: 0 auto;
 }
@@ -55,7 +55,8 @@ body {
 
 #text, .text{
     width: 90%;
-    background-color: bisque;
+    /* background-color: bisque; */
+    background-image: linear-gradient(120deg, #f6d365 0%, #fda085 100%);
     margin: 0 auto;
     padding: 10px 40px;
     text-align: justify;    
@@ -192,7 +193,7 @@ body {
     width: 100%;
     margin: 0 auto;
     font-size: 17px;
-    background-color: bisque;
+    background-image: linear-gradient(120deg, #f6d365 0%, #fda085 100%);
     overflow-y: auto;
     height: 100vh;
 }
@@ -304,6 +305,40 @@ kbd {
     justify-content: space-between;
     align-items: center;
     padding-right: 10px;
+}
+
+#menyu2 {
+    background: hsla(26, 50%, 48%, 1);
+    margin: 0 auto;
+    padding: 0;
+}
+
+.menyu2 {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    border-top: 1px solid black;
+}
+
+
+.menyu2 ul li{
+    display: inline;
+    list-style-type: none;
+    color: white;
+}
+
+.menyu2 ul {
+    margin: 0;
+    padding: 0;
+    padding-left: 130px;
+}
+
+.menyu2 ul li a {
+    text-decoration: none;
+    color: #fff;
+    padding: 5px 10px;
+    display: inline-block;
+    
 }
 
 
