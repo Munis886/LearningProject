@@ -105,23 +105,59 @@
                 </tr>
                 <tr>
                     <td class="pre">
-                        &lt;button popovertarget=&quot;my-dialog&quot;&gt;Open dialog&lt;/button&gt;
+                        &lt;p&gt;You can reach Michael at:&lt;/p&gt; <br>
 
-                        &lt;dialog id=&quot;my-dialog&quot; popover&gt;
-                        &lt;p&gt;Bu dialog popovertargetaction atributi yordamida ochildi.&lt;/p&gt;
-                        &lt;button popovertarget=&quot;my-dialog&quot; popovertargetaction=&quot;hide&quot;&gt;Close&lt;/button&gt;
-                        &lt;/dialog&gt;
+                        &lt;ul&gt; <br>
+                        &lt;li&gt;&lt;a href=&quot;https://example.com&quot;&gt;Website&lt;/a&gt;&lt;/li&gt; <br>
+                        &lt;li&gt;&lt;a href=&quot;mailto:m.bluth@example.com&quot;&gt;Email&lt;/a&gt;&lt;/li&gt; <br>
+                        &lt;li&gt;&lt;a href=&quot;tel:+123456789&quot;&gt;Phone&lt;/a&gt;&lt;/li&gt; <br>
+                        &lt;/ul&gt;
                     </td>
                     <td>
-                        <button popovertarget="my-dialog">Open dialog</button>
-
-                        <dialog id="my-dialog" popover>
-                            <p>Bu dialog popovertargetaction atributi yordamida ochildi.</p>
-                            <button popovertarget="my-dialog" popovertargetaction="hide">Close</button>
-                        </dialog>
+                        <p>You can reach Michael at:</p>
+                        <ul>
+                            <li><a href="https://example.com">Website</a></li>
+                            <li><a href="mailto:m.bluth@example.com">Email</a></li>
+                            <li><a href="tel:+123456789">Phone</a></li>
+                        </ul>
                     </td>
                 </tr>
             </table>
+
+            <h3>
+                Atributlar
+            </h3>
+
+            <p>
+                Ushbu elementning atributlari global atributlarni o'z ichiga oladi.
+            </p>
+            <style>
+                dd,dt {
+                    line-height: 1.8;
+                }
+
+                dd {
+                    padding-top: 12px;
+                    padding-bottom: 6px;
+                }
+            </style>
+            <dl>
+                <dt><span class="maxsus">attributionsrc</span></dt>
+                <dd>
+                    Brauzerdan Attribution-Reporting-Elegible sarlavhasini yuborishni xohlashingizni bildiradi. Server tomonida bu javobda Attribution-Reporting-Register-Source sarlavhasini yuborish, navigatsiyaga asoslangan atribut manbasini roʻyxatdan oʻtkazish uchun ishlatiladi.
+                </dd>
+                <dd>
+                    Brauzer foydalanuvchi havolani bosganida navigatsiyaga asoslangan atribut manbasi bilan bog'liq manba ma'lumotlarini (Atribution-Reporting-Register-Source javob sarlavhasida keltirilgan) saqlaydi. Batafsil ma’lumot uchun Attribution Reporting API’ga qarang.
+                </dd>
+                <dd>
+                    Siz o'rnatishingiz mumkin bo'lgan ushbu atributning ikkita versiyasi mavjud:
+                </dd>
+            </dl>
+            <ul>
+                <li>
+                    Mantiqiy, ya'ni faqat <span class="maxsus">atributionsrc</span> nomi. Bu siz Attribution-Reporting-Eligible sarlavhasi href atributi koʻrsatgan serverga yuborilishi kerakligini bildiradi. Xuddi shu serverda atribut manbasini ro'yxatdan o'tkazish bilan shug'ullanayotganingizda bu yaxshi.
+                </li>
+            </ul>
         </div>
     </div>
 </body>

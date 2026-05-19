@@ -17,11 +17,19 @@ body {
     background-color: darkgrey;
 }
 
+.body {
+    margin: 0;
+    display: flex;
+    height: 100vh;
+    overflow: hidden;
+}
+
 #container {
     width: 100%;
     margin: 0 auto;
     font-size: 17px;
     background-color: bisque;
+    overflow-y: scroll;
 }
 
 #text, .text {
@@ -54,7 +62,7 @@ body {
 }
 
 .menyu {
-    width: 70%;
+    display: flex;
     margin: 0 auto;
 }
 
