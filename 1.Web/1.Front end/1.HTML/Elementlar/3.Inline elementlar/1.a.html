@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>a</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./style.css">
 </head>
 <body>
     <div id="bosh">
@@ -81,12 +81,47 @@
                 foydalanuvchi bosgan matnga aylanadi va keyin <kbd>&lt;a&gt;</kbd> yorlig'i 
                 yopiladi.
             </p>
-            
-            <h2>Atributlar</h2>
-                       
+
+            <div class="sayt">
+                <i>udacity.com</i>
+            </div>
+            <h2>
+                &lt;a&gt; HTML langar elementi
+            </h2>
             <p>
-                
+                &lt;a&gt; HTML elementi (yoki langar elementi) o'zining href atributiga ega bo'lib, veb-sahifalar, fayllar, elektron pochta manzillari, xuddi shu sahifadagi manzillar yoki URL manzili mumkin bo'lgan boshqa narsalarga giperhavola yaratadi.
             </p>
+
+            <p>
+                Har bir &lt;a&gt; ichidagi tarkib havolaning manzilini ko'rsatishi kerak. Agar href atributi mavjud bo'lsa, &lt;a&gt; elementiga diqqat qaratgan holda enter tugmasini bosish uni faollashtiradi.
+            </p>
+            
+            <h3>Sinab ko'ring</h3>
+                       
+            <table class="html">
+                <tr>
+                    <th>Element</th>
+                    <th>Display</th>
+                </tr>
+                <tr>
+                    <td class="pre">
+                        &lt;button popovertarget=&quot;my-dialog&quot;&gt;Open dialog&lt;/button&gt;
+
+                        &lt;dialog id=&quot;my-dialog&quot; popover&gt;
+                        &lt;p&gt;Bu dialog popovertargetaction atributi yordamida ochildi.&lt;/p&gt;
+                        &lt;button popovertarget=&quot;my-dialog&quot; popovertargetaction=&quot;hide&quot;&gt;Close&lt;/button&gt;
+                        &lt;/dialog&gt;
+                    </td>
+                    <td>
+                        <button popovertarget="my-dialog">Open dialog</button>
+
+                        <dialog id="my-dialog" popover>
+                            <p>Bu dialog popovertargetaction atributi yordamida ochildi.</p>
+                            <button popovertarget="my-dialog" popovertargetaction="hide">Close</button>
+                        </dialog>
+                    </td>
+                </tr>
+            </table>
         </div>
     </div>
 </body>

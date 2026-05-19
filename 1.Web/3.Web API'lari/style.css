@@ -11,6 +11,21 @@ body, h1 {
     overflow: hidden;
 }
 
+.flex-container {
+    display: flex;
+    margin: auto;
+    width: 80%;
+}
+
+.flex-container ul li {
+    
+    line-height: 1.5;
+}
+
+.padding-left {
+    padding-left: 305px;
+}
+
 
 body {
     background-color: bisque;

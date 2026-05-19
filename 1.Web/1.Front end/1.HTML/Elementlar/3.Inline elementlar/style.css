@@ -137,5 +137,11 @@ html td:nth-child(2){
     list-style-type: none;
 }
 
+.sayt {
+    color: blue;
+    text-align: right;
+    margin: 0 auto;
+}
+
 
 
