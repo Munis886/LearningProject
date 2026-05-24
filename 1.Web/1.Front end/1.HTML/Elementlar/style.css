@@ -554,3 +554,36 @@ div #menu ul li a:hover {
   font-weight: 600;
 }
 
+#menyu2 {
+    background: hsla(26, 50%, 48%, 1);
+    margin: 0 auto;
+    padding: 0;
+}
+
+.menyu2 {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    border-top: 1px solid black;
+}
+
+
+.menyu2 ul li{
+    display: inline;
+    list-style-type: none;
+    color: white;
+}
+
+.menyu2 ul {
+    margin: 0;
+    padding: 0;
+    padding-left: 130px;
+}
+
+.menyu2 ul li a {
+    text-decoration: none;
+    color: #fff;
+    padding: 5px 10px;
+    display: inline-block;
+    
+}

@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>a</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./style.css">
 </head>
 <body>
     <div id="bosh">
@@ -81,12 +81,83 @@
                 foydalanuvchi bosgan matnga aylanadi va keyin <kbd>&lt;a&gt;</kbd> yorlig'i 
                 yopiladi.
             </p>
-            
-            <h2>Atributlar</h2>
-                       
+
+            <div class="sayt">
+                <i>udacity.com</i>
+            </div>
+            <h2>
+                &lt;a&gt; HTML langar elementi
+            </h2>
             <p>
-                
+                &lt;a&gt; HTML elementi (yoki langar elementi) o'zining href atributiga ega bo'lib, veb-sahifalar, fayllar, elektron pochta manzillari, xuddi shu sahifadagi manzillar yoki URL manzili mumkin bo'lgan boshqa narsalarga giperhavola yaratadi.
             </p>
+
+            <p>
+                Har bir &lt;a&gt; ichidagi tarkib havolaning manzilini ko'rsatishi kerak. Agar href atributi mavjud bo'lsa, &lt;a&gt; elementiga diqqat qaratgan holda enter tugmasini bosish uni faollashtiradi.
+            </p>
+            
+            <h3>Sinab ko'ring</h3>
+                       
+            <table class="html">
+                <tr>
+                    <th>Element</th>
+                    <th>Display</th>
+                </tr>
+                <tr>
+                    <td class="pre">
+                        &lt;p&gt;You can reach Michael at:&lt;/p&gt; <br>
+
+                        &lt;ul&gt; <br>
+                        &lt;li&gt;&lt;a href=&quot;https://example.com&quot;&gt;Website&lt;/a&gt;&lt;/li&gt; <br>
+                        &lt;li&gt;&lt;a href=&quot;mailto:m.bluth@example.com&quot;&gt;Email&lt;/a&gt;&lt;/li&gt; <br>
+                        &lt;li&gt;&lt;a href=&quot;tel:+123456789&quot;&gt;Phone&lt;/a&gt;&lt;/li&gt; <br>
+                        &lt;/ul&gt;
+                    </td>
+                    <td>
+                        <p>You can reach Michael at:</p>
+                        <ul>
+                            <li><a href="https://example.com">Website</a></li>
+                            <li><a href="mailto:m.bluth@example.com">Email</a></li>
+                            <li><a href="tel:+123456789">Phone</a></li>
+                        </ul>
+                    </td>
+                </tr>
+            </table>
+
+            <h3>
+                Atributlar
+            </h3>
+
+            <p>
+                Ushbu elementning atributlari global atributlarni o'z ichiga oladi.
+            </p>
+            <style>
+                dd,dt {
+                    line-height: 1.8;
+                }
+
+                dd {
+                    padding-top: 12px;
+                    padding-bottom: 6px;
+                }
+            </style>
+            <dl>
+                <dt><span class="maxsus">attributionsrc</span></dt>
+                <dd>
+                    Brauzerdan Attribution-Reporting-Elegible sarlavhasini yuborishni xohlashingizni bildiradi. Server tomonida bu javobda Attribution-Reporting-Register-Source sarlavhasini yuborish, navigatsiyaga asoslangan atribut manbasini roʻyxatdan oʻtkazish uchun ishlatiladi.
+                </dd>
+                <dd>
+                    Brauzer foydalanuvchi havolani bosganida navigatsiyaga asoslangan atribut manbasi bilan bog'liq manba ma'lumotlarini (Atribution-Reporting-Register-Source javob sarlavhasida keltirilgan) saqlaydi. Batafsil ma’lumot uchun Attribution Reporting API’ga qarang.
+                </dd>
+                <dd>
+                    Siz o'rnatishingiz mumkin bo'lgan ushbu atributning ikkita versiyasi mavjud:
+                </dd>
+            </dl>
+            <ul>
+                <li>
+                    Mantiqiy, ya'ni faqat <span class="maxsus">atributionsrc</span> nomi. Bu siz Attribution-Reporting-Eligible sarlavhasi href atributi koʻrsatgan serverga yuborilishi kerakligini bildiradi. Xuddi shu serverda atribut manbasini ro'yxatdan o'tkazish bilan shug'ullanayotganingizda bu yaxshi.
+                </li>
+            </ul>
         </div>
     </div>
 </body>

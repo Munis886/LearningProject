@@ -89,6 +89,7 @@ body {
     color: #fff;
     padding: 5px 10px;
     margin: 5px 10px;
+    line-height: 2;
 }
 
 dt, dd {
@@ -135,6 +136,12 @@ html td:nth-child(2){
 .ul li{
     line-height: 1.6;
     list-style-type: none;
+}
+
+.sayt {
+    color: blue;
+    text-align: right;
+    margin: 0 auto;
 }
 
 
