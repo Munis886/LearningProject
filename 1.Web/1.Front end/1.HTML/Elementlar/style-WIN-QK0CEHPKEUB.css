@@ -1,0 +1,592 @@
+/*elementlardagi marginlarni yo'qotadi*/
+body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: darkgrey;
+}
+
+.body {
+    margin: 0;
+    display: flex;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.sayt {
+    color: blue;
+    text-align: right;
+    margin: 0 auto;
+}
+
+#bosh {
+    background-color:chocolate;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.bosh {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.bosh h1{
+    margin: 0;
+}
+
+.menyu {
+    display: flex;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.menyu ul {
+    margin: 0;
+    padding: 0;
+}
+
+#menyu {
+    background-color:dimgray;
+    margin: 0 auto;
+    width: 100%;
+}
+
+#menyu ul li{
+    list-style-type: none;
+    display: inline;
+    padding: 10px 0;
+    
+}
+
+#menyu ul li a {
+    text-decoration: none;
+    color: #fff;
+    padding: 5px 10px;
+    display: inline-block;
+}
+
+#container {
+    width: 100%;
+    margin: 0 auto;
+    font-size: 17px;
+    background-color: bisque;
+    overflow-y: auto;
+    height: 100vh;
+}
+
+#sarlavha h2, #sarlavha h1 {
+    display: inline-block; /* Elementni inline-block qilib sozlash */
+    width: auto; /* Kenglikni avtomatik qilish */
+    margin: 10px 0;
+    border-radius: 0 10px 10px 0;
+    background-color: greenyellow;
+    padding: 5px 25px;
+    text-align: center;
+}
+
+.sarlavha ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 10px 0;
+    align-items: center;
+}
+
+.sarlavha ul {
+    display: inline-flex;
+    width: auto;
+    background: greenyellow;
+    border-radius: 0 8px 8px 0;
+    font-size: 25px;
+    box-shadow: 0 0 8px #333;
+}
+
+.li_1 {
+    padding: 0;
+    font-weight: 350;
+    border-right: 1px solid bisque;
+}
+
+.li_1 a {
+    font-weight: 500;
+    color: black;
+    transition: 0.4s;
+    padding: 5px 5px;
+}
+
+.li_1 a:hover {
+    font-weight: 600;
+    color: seagreen;
+    transition: 0.4s;
+}
+
+.li_2 {
+    padding: 5px 15px 5px 16px;
+    font-weight: 550; 
+}
+
+.li_3 {
+    padding: 0;
+    font-weight: 350;
+    border-left: 1px solid bisque;
+}
+
+.li_3 a {
+    font-weight: 500;
+    color: black;
+    transition: 0.4s;
+    padding: 5px 5px;
+    border-radius: 0 8px 8px 0;
+}
+
+.li_3 a:hover {
+    font-weight: 600;
+    color: seagreen;
+    transition: 0.4s;
+}
+
+#text, .text {
+    padding: 10px 40px;
+    margin: 10px auto;
+    width: 80%;
+}
+
+#text p{
+    padding: 5px 30px;
+    margin: 5px 0;
+    font-size: 17px;
+}
+
+#text ol li a{
+    text-decoration: none;
+    color: black;
+}
+
+#text ul li {
+    padding: 5px 0;
+}
+
+.orqaga a {
+    text-decoration: none;
+    color: #333;
+}
+
+.html_table {                 
+    border-collapse: collapse;
+    margin: auto;
+    width: 80%;
+}
+.html_table th {
+    border: 1px solid #ddd;
+    padding: 8px 12px;
+    background-color: #222;
+    color: aliceblue;
+} 
+.html_table tbody tr td{
+    border: 1px solid #ddd;
+    padding: 8px 12px;
+    background-color: #333;
+    color: #ddd;
+} 
+
+.html_table tbody tr td:nth-child(1) {
+    text-align: center;
+    border: 1px solid #ddd;
+    border-collapse: collapse;
+    width: 90px;
+}
+
+.html_table tbody tr td a {
+    color: #ddd;
+    text-decoration: none;
+}
+
+.html_table tbody tr td a:hover {
+    text-decoration: underline;
+}
+
+.block_table {
+    margin: auto;
+    width: 80%;
+    border: 1px solid #ddd;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    table-layout: fixed;
+}
+
+.block_table tbody tr td a {
+    color: #ddd;
+    text-decoration: none;
+}
+
+.block_table tbody tr td a:hover {
+    text-decoration: underline;
+}
+
+.block_table thead tr th{
+    border: 1px solid #ddd;
+    padding: 8px 12px;
+    background-color: #333;
+    color: aliceblue;
+    border-collapse: collapse;
+} 
+
+.block_table tr td {
+    border: 1px solid #ddd;
+    border-collapse: collapse;
+    padding: 8px 12px;
+}
+
+.block_table tr td a {
+    color: #cdcdcd;
+    text-decoration: none;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.block_table thead tr th{
+    border: 1px solid #ddd;
+    padding: 8px 12px;
+    background-color: #333;
+} 
+
+.block_table tbody tr:nth-child(odd) {
+    background-color: #3f3f3f;
+    color:#cdcdcd
+} 
+.block_table tbody tr:nth-child(even) {
+    background-color: #2e2e2e;
+    color:#cdcdcd
+} 
+
+.block_table  tr td a {
+    color: #cdcdcd;
+    text-decoration: none;
+    margin: auto;
+}
+
+.block_table th:nth-child(1),
+.block_table td:nth-child(1) {
+    width: 40px;
+    text-align: center;
+}
+
+.block_table th:nth-child(2),
+.block_table td:nth-child(2) {
+    width: 100px;
+    text-align: center;
+}
+
+.block_table th:nth-child(3),
+.block_table td:nth-child(3) {
+    width: calc(100% - 200px);
+}
+
+.block_table tbody tr td a:hover {
+    text-decoration: underline;
+}
+
+.meta_table{
+    margin: auto;
+    width: 80%;
+    border: 1px solid #ddd;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    table-layout: fixed;
+}
+
+.meta_table th:nth-child(1),
+.meta_table td:nth-child(1) {
+    width: 90px;
+    text-align: center;
+}
+
+
+
+.meta_table tbody tr td:nth-child(1) {
+    text-align: center;
+    border: 1px solid #ddd;
+    border-collapse: collapse;
+    width: 90px;
+}
+
+.meta_table tbody tr td a {
+    color: #ddd;
+    text-decoration: none;
+}
+
+.meta_table tbody tr td a:hover {
+    text-decoration: underline;
+}
+
+.meta_table thead tr th{
+    border: 1px solid #ddd;
+    padding: 8px 12px;
+    background-color: #333;
+    color: aliceblue;
+    border-collapse: collapse;
+} 
+
+.meta_table tr td {
+    border: 1px solid #ddd;
+    border-collapse: collapse;
+    padding: 8px 12px;
+}
+
+.meta_table tr td a {
+    color: #cdcdcd;
+    text-decoration: none;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.meta_table thead tr td{
+    border: 1px solid #ddd;
+    padding: 8px 12px;
+    background-color: #333;
+} 
+
+.meta_table tbody tr:nth-child(odd) {
+    background-color: #3f3f3f;
+    color:#cdcdcd
+} 
+.meta_table tbody tr:nth-child(even) {
+    background-color: #2e2e2e;
+    color:#cdcdcd
+} 
+
+.meta_table  tr td a {
+    color: #cdcdcd;
+    text-decoration: none;
+    margin: auto;
+}
+
+
+#elementlar {
+    display: flex;
+}
+
+#elementlar ul li{
+    display: inline-block;
+    list-style-type: none;
+    margin: 10px auto;
+    text-align: center;
+}
+
+#elementlar ul li a {
+    text-decoration: none;
+    color: #eee;
+    background-color: brown;
+    padding: 25px 38px;
+    margin: 10px 40px;
+    border-radius: 15px;
+}
+
+#elementlar ul li a:hover {
+    text-decoration: none;
+    color: #0300a8a9;
+    background-color: rgba(155, 55, 55, 0.534);
+    padding: 25px 38px;
+    border-radius: 15px;
+}
+#elementlar ul {
+    margin: auto;
+}
+
+.menu {
+    width: 250px;
+    height: 100vh;
+    position:absolute;
+    overflow-y: auto;
+    overflow: hidden;
+    top: 0;
+    background: dimgray;
+    z-index: 1000;
+    left: -250px; /* Menu yashirilgan holatda */
+    transition: left 0.3s; /* Silliq ko'rinish uchun o'tish */
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+  }
+  
+.menu.active {
+    left: 0; /* Menu ko'rinadigan holatda */
+    position:relative;
+  }
+
+#menu h3 {
+    padding: 2px 3px;
+    margin: 2px 3px;
+    color: #fff;
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+}
+
+#menu ul li{   
+      list-style-type: none;
+  }
+#menu ul {
+      padding: 0;
+      margin: 0;
+  }
+
+.menu-row {
+      display: flex;
+      justify-content: space-between;
+      gap: 1px;
+  }
+  
+#menu ul li a {
+      display: block;
+      margin: 1px 0;
+      color: #000; /* Dastlabki matn rangi */
+      background-color: #f0f0f0; /* Dastlabki fon rangi */
+      padding: 6px 25px;
+      text-decoration: none;
+    }
+  
+  /* Kursor ustiga kelsa */
+#menu ul li a:hover {
+      background-color: #33d3; /* Kursor ustiga kelsa fon rangi */
+      color: #fff; /* Kursor ustiga kelsa matn rangi */
+    }
+  
+    /* Bosilgan holat */
+#menu  a:active {
+      background-color: #0003d3 !important; /* Bosilgan holat fon rangi */
+      color: #fff !important; /* Bosilgan holat matn rangi */
+    }
+
+
+  /* Kursor ustiga kelsa */
+div #menu ul li a:hover {
+    background-color: #d3d3d3; /* Kursor ustiga kelsa fon rangi */
+    color: #fff; /* Kursor ustiga kelsa matn rangi */
+}
+  
+    /* Bosilgan holat */
+  #menu  a:active {
+      background-color: #0003d3 !important; /* Bosilgan holat fon rangi */
+      color: #fff !important; /* Bosilgan holat matn rangi */
+    }
+
+.sub-menu {
+    display: none; /* Yashirilgan holatda */
+    padding-left: 25px; /* Ichkariga siljitish */
+    background-color: dimgray;
+  }
+  
+.sub-menu li {
+    margin: 0 0 1px 5px;
+}
+
+.multi-column {
+    column-gap: 35px; /* Ustunlar orasidagi masofa */
+    column-count: 2; /* 2 ta ustunga bo'linadi */
+}
+
+.multi-column li {
+    margin: 0 0 1px 5px;
+    line-height: 1.5; /* Satırlar arasındaki boşluk */
+}
+
+:root{
+  --code-token-attribute-name: #ff97a0;
+  --code-background-inline: #343434;
+  --background-primary: #1b1b1b;
+  /* .CSS uchun rang */
+  --code-background-block: #343434;
+  --icon-information: #5e9eff;
+  --background-information: #013e70;
+  --text-secondary: #cdcdcd;
+  --note-background: var(--background-information);
+  --note-theme: var(--icon-information);
+  --elem-radius: 0.25rem;
+}
+
+.Eslatma {
+  display: flex; 
+  margin: 15px auto; 
+  width: 80%;           
+  border-left: 3px solid var(--note-theme);
+  border-radius: var(--elem-radius);
+  color: var(--text-secondary);
+}
+
+/* .Eslatma .chap_yon {
+  width: 1%; 
+  background-color: cyan; 
+  border-radius: 15px 0 0 15px;
+} */
+
+.Eslatma_tana {
+  background-color: var(--note-background); 
+  border-radius: 0 10px 10px 0;
+}
+
+.Eslatma_tana {
+    position: relative; /* Konteynerni nisbiy pozitsiyaga qo'yamiz */
+    padding: 15px 15px 15px 15px;
+    }
+
+.Eslatma_tana::before {
+    content: "i";
+    position: absolute;
+    top: 25px; /* Belgilangan joylashuv */
+    left: 15px; /* Chapdan joylashuv */
+    right: 10px; /* O'ngdan joylashuv */
+    bottom: 10px; /* Pastdan joylashuv */
+    background-color: var(--note-theme);
+    color: white;
+    font-weight: bold;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+}
+
+.Eslatma_tana > p{
+  margin: 0;
+  padding: 0;
+  font-weight: 600;
+}
+
+#menyu2 {
+    background: hsla(26, 50%, 48%, 1);
+    margin: 0 auto;
+    padding: 0;
+}
+
+.menyu2 {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    border-top: 1px solid black;
+}
+
+
+.menyu2 ul li{
+    display: inline;
+    list-style-type: none;
+    color: white;
+}
+
+.menyu2 ul {
+    margin: 0;
+    padding: 0;
+    padding-left: 130px;
+}
+
+.menyu2 ul li a {
+    text-decoration: none;
+    color: #fff;
+    padding: 5px 10px;
+    display: inline-block;
+}
+
+.menyu2 ul li a:hover {
+    text-decoration: underline;
+}

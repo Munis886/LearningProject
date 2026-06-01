@@ -1,0 +1,247 @@
+/*elementlardagi marginlarni yo'qotadi*/
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.orqaga {
+    margin: 0 auto;
+}
+
+.orqaga a {
+    text-decoration: none;
+    color: #333;
+}
+
+body {
+    background-color: darkgrey;
+}
+
+.body {
+    margin: 0;
+    display: flex;
+    height: 100vh;
+    overflow: hidden;
+}
+
+#container {
+    width: 100%;
+    margin: 0 auto;
+    font-size: 17px;
+    background-color: bisque;
+    overflow-y: scroll;
+}
+
+#text, .text {
+    padding: 10px 40px;
+}
+
+#text p{
+    padding-left: 20px;
+}
+
+#sarlavha h2{
+    
+    padding-left: 25px;
+}
+
+#bosh {
+    background-color:chocolate;
+    padding: 5px 0;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.bosh {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.bosh h1{
+    margin: 0 auto;
+}
+
+.menyu {
+    display: flex;
+    margin: 0 auto;
+}
+
+#menyu {
+    background-color:dimgray;
+    width: 100%;
+    margin: 0 auto;
+}
+#menyu ul li{
+    list-style-type: none;
+    display: inline;
+}
+#menyu ul{
+    margin: 0;
+}
+#menyu ul li a {
+    text-decoration: none;
+    color: #fff;
+    padding: 5px 10px;
+    display: inline-block;
+}
+
+.html {
+    border-radius: 4px 4px 0 0;
+    border: 1px solid #333;
+    border-collapse: collapse;
+    margin: auto;
+}
+
+.html th{
+    border: 1px solid #333;
+    background-color: cadetblue;
+    padding: 8px 20px;
+}
+
+html td {
+    border: 1px solid #333;
+    padding: 8px 20px;
+    background-color: #fff;
+}
+
+html td:nth-child(1){
+    width: 450px;
+}
+
+html td:nth-child(2){
+    width: 300px;
+}
+
+.pre {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    width: 80%;
+    margin: 20px auto;
+    font-family: 'Courier New', Courier, monospace;
+    border: 1px solid #222333;
+}
+
+.maxsus {
+    border-radius: 6px;
+    background-color: #333;
+    color: #fff;
+    padding: 3px 6px;
+    margin: 4px 3px;
+    line-height: 1.6;
+}
+
+.qisqa {
+    padding: 10px 20px;
+    width: 80%;
+    margin: auto;
+}
+
+.sayt {
+    color: blue;
+    text-align: right;
+    margin: 0 auto;
+    font-style: italic;
+}
+
+.Eslatma {
+  display: flex; 
+  margin: 15px auto; 
+  width: 80%;
+  border-left: 3px solid var(--note-theme);
+  border-radius: var(--elem-radius);
+  color: var(--text-secondary);
+}
+
+/* .Eslatma .chap_yon {
+  width: 1%; 
+  background-color: cyan; 
+  border-radius: 15px 0 0 15px;
+} */
+
+.Eslatma_tana {
+  background-color: var(--note-background); 
+  padding: 15px 12px 15px 36px; 
+  border-radius: 0 10px 10px 0;
+  
+}
+
+.Eslatma_tana {
+    position: relative; /* Konteynerni nisbiy pozitsiyaga qo'yamiz */
+    padding: 15px 15px 15px 35px;
+    }
+
+.Eslatma_tana::before {
+    content: "i";
+    position: absolute;
+    top: 17px; /* Belgilangan joylashuv */
+    left: 10px; /* Chapdan joylashuv */
+    right: 10px; /* O'ngdan joylashuv */
+    background-color: var(--note-theme);
+    color: white;
+    font-weight: bold;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+}
+
+.Eslatma_tana > p{
+  margin: 0;
+  padding: 0;
+}
+
+:root{
+  --code-token-attribute-name: #ff97a0;
+  --code-background-inline: #343434;
+  --background-primary: #1b1b1b;
+  /* .CSS uchun rang */
+  --code-background-block: #343434;
+  --icon-information: #5e9eff;
+  --background-information: #013e70;
+  --text-secondary: #cdcdcd;
+  --note-background: var(--background-information);
+  --note-theme: var(--icon-information);
+  --elem-radius: 0.25rem;
+}
+
+#menyu2 {
+    background: hsla(26, 50%, 48%, 1);
+    margin: 0 auto;
+    padding: 0;
+}
+
+.menyu2 {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    border-top: 1px solid black;
+}
+
+
+.menyu2 ul li{
+    display: inline;
+    list-style-type: none;
+    color: white;
+}
+
+.menyu2 ul {
+    margin: 0;
+    padding: 0;
+    padding-left: 130px;
+}
+
+.menyu2 ul li a {
+    text-decoration: none;
+    color: #fff;
+    padding: 5px 10px;
+    display: inline-block;
+}
+
+.menyu2 ul li a:hover {
+    text-decoration: underline;
+}
+

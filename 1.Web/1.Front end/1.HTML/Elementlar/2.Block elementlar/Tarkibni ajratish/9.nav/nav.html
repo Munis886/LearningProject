@@ -3,8 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Html</title>
-    <link rel="stylesheet" href="style.css">
+    <title>nav</title>
+    <link rel="stylesheet" href="../../style.css">
+    <link rel="stylesheet" href="../../style/menu.css">
+    <script src="../../../Js.js"></script>
 </head>
 <body>
     <div id="bosh">
@@ -15,59 +17,171 @@
 
     <div id="menyu">
         <div class="menyu">
+            <button id="toggle-btn" onclick="toggleMenu()">Menu</button>
             <ul>
                 <li><a href="/index.html">HOME</a></li>
                 <li><a href="./1.Web/1.Front end/1.HTML/1.HTML.html">HTML</a></li>
+                <li><a href="/1.Web/1.Front end/2.Css/Css.html">CSS</a></li>
             </ul>
         </div>
     </div>
-
-    
-    <div id="container">
-        <div id="text">
-            <div class="orqaga">
-                <a href="/1.Front end/1.HTML/Elementlar/2.block elementlar.html">&lt;&lt;orqaga</a>
-            </div>
-            <div id="sarlavha">
-                <h2>&lt;address&gt; — kontakt manzili elementi.</h2>
-            </div>
-            
-            <p>
-                HTML elementi ilova qilingan HTML shaxs yoki odamlar yoki 
-                tashkilot uchun aloqa ma'lumotlarini taqdim etishini bildiradi .<address>
-            </p>
-
-            
-            <p>
-                Element tarkibi tomonidan taqdim etilgan aloqa ma'lumotlari 
-                &lt;address&gt; kontekstga mos keladigan har qanday shaklda bo'lishi 
-                mumkin va jismoniy manzil, URL, elektron pochta manzili, 
-                telefon raqami, ijtimoiy tarmoq manzili, geografik koordinatalar
-                va boshqalar kabi zarur bo'lgan har qanday aloqa ma'lumotlarini 
-                o'z ichiga olishi mumkin. Elementda &lt;address&gt;
-                aloqa ma'lumotlari tegishli bo'lgan shaxs, 
-                odamlar yoki tashkilotning nomi bo'lishi kerak.
-            </p>
-            
-            <p>
-                &lt;address&gt;turli xil kontekstlarda, masalan, 
-                sahifa sarlavhasida biznesning aloqa ma'lumotlarini 
-                taqdim etish yoki maqola muallifini ga &lt;address&gt;
-                element qo'shish orqali ko'rsatish kabi ishlatilishi 
-                mumkin &lt;article&gt;.
-            </p>
-
+    <div id="menyu2">
+        <div class="menyu2">
+            <ul>
+                <li><a href="/1.Web/Web.html">Web</a></li>
+                <li>⇛</li>
+                <li><a href="/1.Web/1.Front end/1.HTML/1.HTML.html">HTML</a></li>
+                <li>⇛</li>
+                <li><a href="/1.Web/1.Front end/1.HTML/Elementlar/Elementlar.html">Elementlar</a></li>
+                <li>⇛</li>
+                <li><a href="/1.Web/1.Front end/1.HTML/Elementlar/2.Block elementlar/Tarkibni ajratish/9.nav/nav.html">nav</a></li>
+            </ul>
         </div>
+    </div>
     
-        <div id="Atributlar">
-            <h2>Atributlar</h2>
-           
-            <div class="text">
+    <div class="body">
+        <div id="menu" class="menu">
+            <h3>HTML</h3>   
+            <ul>
+                <li><a href="/1.Web/1.Front end/1.HTML/1.HTML.html">HTML HOME</a></li>
+                <li>
+                        <a href="#" onclick="toggleSubMenu('sub-menu-1')">Elementlar</a>
+                        <ul id="sub-menu-1" class="sub-menu">
+                            <li>
+                                <span></span>
+                                <a href="/1.Web/1.Front end/1.HTML/Elementlar/Elementlar.html">Elementlar haqida</a>
+                            </li>
+                            <li>
+                                <span></span>
+                                <a href="/1.Web/1.Front end/1.HTML/Elementlar/1.Html elementlar.html">HTML elementlar</a>
+                            </li>
+
+                            <li>
+                                <span></span>
+                                <a href="/1.Web/1.Front end/1.HTML/Elementlar/2.block elementlar.html">Block elementlar</a>
+                            </li>
+                            <li>
+                                <span></span>
+                                <a href="/1.Web/1.Front end/1.HTML/Elementlar/3.inline elementlar.html">Inline elementlar</a>
+                            </li>
+                        </ul>
+                </li>
+
+                <li>
+                    <a href="#" onclick="toggleSubMenu('sub-menu-2')">Belgilar</a>
+                    <ul id="sub-menu-2" class="sub-menu">
+                        <li><a href="/1.Web/1.Front end/1.HTML/Belgilar/Belgilar.html">Belgilar</a></li>
+                        <li><a href="/1.Web/1.Front end/1.HTML/Belgilar/1.Belgi 1-300.html">Belgi 1-300</a></li>
+                        <li><a href="/1.Web/1.Front end/1.HTML/Belgilar/2.Belgi 9000-10000.html">Belgi 9000-10000</a></li>
+                        <li><a href="/1.Web/1.Front end/1.HTML/Belgilar/3.Belgi 65000-66000.html">Belgi 65000-66000</a></li>
+                        <li><a href="/1.Web/1.Front end/1.HTML/Belgilar/4.Belgi 127000-128000.html">Belgi 127000-128000</a></li>
+                        <li><a href="/1.Web/1.Front end/1.HTML/Belgilar/5.Belgi 128000-129000.html">Belgi 128000-129000</a></li>
+                        <li><a href="/1.Web/1.Front end/1.HTML/Belgilar/6.Belgi alifbo.html">Belgi alifbo</a></li>
+                    </ul>
+                </li>
+                <li></li>
+                <li></li>
+            </ul>
+        </div>
+        <div id="container">
+            <div id="text">
+                <div class="orqaga">
+                    <a href="javascript:history.back()">&lt;&lt;orqaga</a>
+                </div>
+                <div id="sarlavha">
+                    <h2>&lt;nav&gt; — HTML navigatsiya bo'limi elementi.</h2>
+                </div>
+                
                 <p>
-                    Bu element faqat global atributlarni o'z ichiga oladi .
+                    &lt;nav&gt; HTML elementi sahifaning bir qismini ifodalaydi, uning maqsadi joriy hujjat ichida yoki boshqa hujjatlarga navigatsiya havolalarini taqdim etishdir. Navigatsiya bo'limlarining umumiy misollari menyular, tarkiblar jadvallari va indekslardir.
                 </p>
+
+                
+                <table class="html">
+                    <tr>
+                        <th>Element</th>
+                        <th>Display</th>
+                    </tr>
+                    <tr>
+                        <td class="pre">
+                            &lt;nav class=&quot;crumbs&quot;&gt; <br>
+                            &lt;ol&gt;  <br>
+                                &lt;li class=&quot;crumb&quot;&gt;&lt;a href=&quot;#&quot;&gt;Bikes&lt;/a&gt;&lt;/li&gt; <br>
+                                &lt;li class=&quot;crumb&quot;&gt;&lt;a href=&quot;#&quot;&gt;BMX&lt;/a&gt;&lt;/li&gt; <br>
+                                &lt;li class=&quot;crumb&quot;&gt;Jump Bike 3000&lt;/li&gt; <br>
+                            &lt;/ol&gt; <br>
+                            &lt;/nav&gt; <br><br>
+
+                            &lt;h1&gt;Jump Bike 3000&lt;/h1&gt; <br>
+                            &lt;p&gt; <br>
+                            This BMX bike is a solid step into the pro world. It looks as legit as it <br>
+                            rides and is built to polish your skills. <br>
+                            &lt;/p&gt; <br>
+                        </td>
+                        <td>
+                            <nav class="crumbs">
+                                <ol>
+                                    <li class="crumb"><a href="#">Bikes</a></li>
+                                    <li class="crumb"><a href="#">BMX</a></li>
+                                    <li class="crumb">Jump Bike 3000</li>
+                                </ol>
+                            </nav>
+
+                            <h1>Jump Bike 3000</h1>
+                            <p>
+                                This BMX bike is a solid step into the pro world. It looks as legit as it
+                                rides and is built to polish your skills.
+                            </p>
+                        </td>
+                    </tr>
+                </table>
+                <div id="Atributlar">
+                    <h2>Atributlar</h2>
+            
+                    <div class="text">
+                        <p>
+                            Bu element faqat global atributlarni o'z ichiga oladi .
+                        </p>
+                    </div>
+                    <h2>
+                        Foydalanish bo'yicha eslatmalar
+                    </h2>
+                    <ul>
+                        <li>
+                            Barcha havolalar &lt;nav&gt; elementida bo'lishi shart emas. &lt;nav&gt; faqat navigatsiya havolalarining asosiy bloki uchun mo'ljallangan; odatda &lt;footer&gt; elementida ko'pincha &lt;nav&gt; elementida bo'lishi shart bo'lmagan havolalar ro'yxati mavjud.
+                        </li>
+                        <li>
+                            Hujjatda bir nechta &lt;nav&gt; elementlari bo'lishi mumkin, masalan, biri sayt navigatsiyasi uchun, ikkinchisi esa sahifa ichidagi navigatsiya uchun. aria-labelledby bunday holatda foydalanish imkoniyatini oshirish uchun ishlatilishi mumkin, misolga qarang.
+                        </li>
+                        <li>
+                            Nogiron foydalanuvchilarga moʻljallangan ekranni oʻqish dasturlari kabi foydalanuvchi agentlari ushbu elementdan faqat navigatsiya uchun moʻljallangan kontentning dastlabki koʻrsatilishini oʻtkazib yuborishni aniqlash uchun foydalanishi mumkin.
+                        </li>
+                    </ul>
+                    
+                    <h2>
+                        Misollar
+                    </h2>
+
+                    <p>
+                        Ushbu misolda &lt;nav&gt; bloki havolalarning tartibsiz ro'yxatini (&lt;ul&gt;) o'z ichiga olishi uchun ishlatiladi. Tegishli CSS bilan bu yon panel, navigatsiya paneli yoki ochiladigan menyu sifatida taqdim etilishi mumkin.
+                    </p>
+
+                    <div class="css">
+                        <div class="css_tana">
+                            <pre>
+                                &lt;nav class=&quot;menu&quot;&gt;
+                                &lt;ul&gt;
+                                    &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Home&lt;/a&gt;&lt;/li&gt;
+                                    &lt;li&gt;&lt;a href=&quot;#&quot;&gt;About&lt;/a&gt;&lt;/li&gt;
+                                    &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Contact&lt;/a&gt;&lt;/li&gt;
+                                &lt;/ul&gt;
+                                &lt;/nav&gt;
+                            </pre>
+                        </div>
+                    </div>
+                </div>
             </div>
-        </div>
+        </div>   
     </div>
     
 </body>

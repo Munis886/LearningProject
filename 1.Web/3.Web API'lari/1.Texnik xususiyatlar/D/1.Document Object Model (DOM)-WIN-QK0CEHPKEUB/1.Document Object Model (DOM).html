@@ -5,32 +5,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="keywords" content="Javascript, Java script">
     <meta name="description" content="Bu yerda Javascript haqida batafsil ma'lumot olamiz">
-    <link rel="stylesheet" href="/1.Web/3.Web API'lari/style.css">
-    <link rel="stylesheet" href="/1.Web/3.Web API'lari/style/1.bosh.css">
-    <link rel="stylesheet" href="/1.Web/3.Web API'lari/style/2.menu.css">
+    <link rel="stylesheet" href="../../../style.css">
+    <link rel="stylesheet" href="../../../style/1.bosh.css">
+    <link rel="stylesheet" href="../../../style/2.menu.css">
     <title>Hujjat obyekti modeli (DOM)</title>
     <script src="/1.Front end/3.Js/script.js"></script>
 </head>
 
 <body>
+    
     <div id="bosh">
         <div class="bosh">
-            <h1>Document</h1>
+            <h1>Web API'lari</h1>
         </div>
     </div>
 
-    <div id="menyu">
-        <div class="menyu">
-            <button id="toggle-btn" onclick="toggleMenu()">Menu</button>
-            <ul>
-                <li><a href="/index.html">HOME</a></li>
-                <li><a href="/1.Web/1.Front end/1.Front_end.html">FRONT END</a></li>
-                <li><a href="/1.Web/1.Front end/1.HTML/1.HTML.html">HTML</a></li>
-                <li><a href="/1.Web/1.Front end/2.Css/Css.html">CSS</a></li>
-                <li><a href="/1.Web/1.Front end/3.Js/Javascript.html">JAVASCRIPT</a></li>
-                <li><a href="/2.Backend/1.Node js/Node js.html">NODE JS</a></li>
-            </ul>        
-        </div>
+     <div id="menyu">
+    <div class="menyu"> 
+        <button id="toggle-btn" onclick="toggleMenu()">Menu</button>
+        <ul>
+            <li><a href="/index.html">HOME</a></li>
+            <li><a href="/1.Front end/1.Front_end.html">FRONT END</a></li>
+            <li><a href="/1.Front end/1.HTML/1.HTML.html">HTML</a></li>
+            <li><a href="/1.Front end/2.Css/Css.html">CSS</a></li>
+            <li><a href="/1.Front end/3.Js/Javascript.html">JAVASCRIPT</a></li>
+            <li><a href="/2.Backend/1.Node js/Node js.html">NODE JS</a></li>
+        </ul>
     </div>
     <div id="bosh">
             <div class="bosh">
@@ -38,11 +38,10 @@
                     <li><a href="/1.Web/Web.html">Web</a></li>
                     <li>⇛</li>
                     <li><a href="/1.Web/3.Web API'lari/Web API'lari.html">Web API'lari</a></li>
-                    <li>⇛</li>
-                    <li><a href="../9.Document/9.Document.html">Document</a></li>
                 </ul>
             </div>
         </div>
+    </div>
     <div class="body">
         <div id="menu" class="menu">
             <h3><a href="/1.Front end/3.Js/Javascript.html">Document Object Model</a></h3>
@@ -710,6 +709,25 @@
                     </ul>
                 </li>
                 <li>
+                    <a href="#" onclick="toggleSubMenu('sub-menu-7')">
+                        <span>
+                            7
+                        </span> <b>Comment</b>
+                    </a>
+                    <ul id="sub-menu-7" class="sub-menu">
+                        <li>
+                            <a href="/1.Front end/3.Js/7.Obyektlar/7.1.Obyektlar. Kirish/7.1.Obyektlar. Kirish.html">
+                                7.1.Obyektlar. Kirish
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/1.Front end/3.Js/7.Obyektlar/7.2.Kodda obyektlar/7.2.Kodda obyektlar.html">
+                                7.2.Kodda obyektlar
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
                     <a href="#" onclick="toggleSubMenu('sub-menu-8')">
                         <span>
                             8
@@ -754,7 +772,7 @@
             <div class="sarlavha">
                 <ul>
                     <li class="li_2">
-                        Document
+                        Hujjat obyekti modeli (DOM)
                     </li>
                 </ul>
             </div>
@@ -762,42 +780,22 @@
             <div id="text" class="qisqa">
 
                 <p>
-                    Hujjat interfeysi brauzerda yuklangan har qanday veb-sahifani ifodalaydi va veb-sahifa 
-                    tarkibiga kirish nuqtasi bo'lib xizmat qiladi, ya'ni <a href="/1.Web/3.Web API'lari/1.Texnik xususiyatlar/D/1.Document Object Model (DOM)/1.Document Object Model (DOM).html">DOM daraxti</a>.
+                    Document Object Model ( DOM ) veb-sahifalarni skriptlar yoki 
+                    dasturlash tillariga xotirada hujjatning tuzilishini - masalan, 
+                    veb-sahifani ifodalovchi HTMLni - ifodalash orqali bog'laydi. 
+                    Odatda bu JavaScriptga ishora qiladi, garchi HTML, SVG yoki XML 
+                    hujjatlarini obyekt sifatida modellashtirish asosiy JavaScript 
+                    tilining bir qismi bo'lmasa ham.
                 </p>
                 
                 <p>
-                    DOM daraxti boshqa elementlar qatorida 
-                    <a href="/1.Web/1.HTML/Elementlar/1.Html elementlar/6.body.html">&lt;body&gt;</a> va &lt;table&gt; 
-                    kabi elementlarni o'z ichiga oladi. 
-                    U sahifaning URL manzilini qanday olish va hujjatda yangi elementlarni yaratish kabi 
-                    global miqyosda hujjatning funksionalligini ta'minlaydi.
+                    DOM mantiqiy daraxtga ega hujjatni ifodalaydi. 
+                    Daraxtning har bir shoxi tugun bilan tugaydi va har 
+                    bir tugun obyektlarni o'z ichiga oladi. DOM usullari 
+                    daraxtga dasturiy kirish imkonini beradi. Ular yordamida 
+                    siz hujjatning tuzilishini, uslubini yoki tarkibini 
+                    o'zgartirishingiz mumkin.
                 </p>
-                
-                <svg viewBox="-1 -1 650 42" preserveAspectRatio="xMinYMin meet">
-                    <a href="/en-US/docs/Web/API/EventTarget">
-                        <rect x="0" y="0" width="88" height="25" fill="#fff" stroke="#D4DDE4" stroke-width="2px"></rect>
-                        <text x="44" y="16" font-size="10px" fill="#4D4E53" text-anchor="middle">
-                            EventTarget
-                        </text>
-                    </a>
-                    <line x1="88" y1="14" x2="118" y2="14" stroke="#D4DDE4"></line>
-                    <polyline points="88,14 98,9 98,19 88,14" stroke="#D4DDE4" fill="#fff"></polyline>
-                    <a href="/en-US/docs/Web/API/Node">
-                        <rect x="118" y="0" width="75" height="25" fill="#fff" stroke="#D4DDE4" stroke-width="2px"></rect>
-                        <text x="155.5" y="16" font-size="10px" fill="#4D4E53" text-anchor="middle">
-                            Node
-                        </text>
-                    </a>
-                    <line x1="193" y1="14" x2="223" y2="14" stroke="#D4DDE4"></line>
-                    <polyline points="193,14 203,9 203,19 193,14" stroke="#D4DDE4" fill="#fff"></polyline>
-                    <a href="/en-US/docs/Web/API/Document" aria-current="page">
-                        <rect x="223" y="0" width="75" height="25" fill="#F4F7F8" stroke="#D4DDE4" stroke-width="2px"></rect>
-                        <text x="260.5" y="16" font-size="10px" fill="#4D4E53" text-anchor="middle">
-                            Document
-                        </text>
-                    </a>
-                </svg>
 
                 <p>
                     Tugunlarga shuningdek, hodisalarni qayta ishlovchi qurilmalar 
@@ -887,7 +885,7 @@
                     Uning DOM daraxti quyidagicha ko'rinadi:
                 </p>
                 <div class="center-align">
-                    <img src="using_the_w3c_dom_level_1_core-doctree.jpg" alt="using_the_w3c_dom_level_1_core-doctree" width="50%">
+                    <img src="using_the_w3c_dom_level_1_core-doctree.jpg" alt="using_the_w3c_dom_level_1_core-doctree" width="60%">
                 </div>
                 <p>
                     Yuqoridagi daraxt yuqoridagi hujjatning DOM daraxtiga o'xshash bo'lsa-da, 
@@ -999,16 +997,16 @@
                     <div class="css_tana">
                         <pre class="pre">
                             &lt;html lang=&quot;en&quot;&gt;
-                              &lt;head&gt; &lt;/head&gt;
-                              &lt;body&gt;
-                                &lt;script&gt;
-                                  // create a couple of elements in an otherwise empty HTML page
-                                  const heading = document.createElement(&quot;h1&quot;);
-                                  const headingText = document.createTextNode(&quot;Big Head!&quot;);
-                                  heading.appendChild(headingText);
-                                  document.body.appendChild(heading);
-                                &lt;/script&gt;
-                              &lt;/body&gt;
+                        &nbsp;      &lt;head&gt; &lt;/head&gt;
+                        &nbsp;      &lt;body&gt;
+                        &nbsp;&nbsp;        &lt;script&gt;
+                        &nbsp; &nbsp; &nbsp;           // bo'sh HTML sahifasida bir nechta element yarating
+                        &nbsp; &nbsp; &nbsp;           const heading = document.createElement(&quot;h1&quot;);
+                        &nbsp; &nbsp; &nbsp;           const headingText = document.createTextNode(&quot;Big Head!&quot;);
+                        &nbsp; &nbsp; &nbsp;           heading.appendChild(headingText);
+                        &nbsp; &nbsp; &nbsp;           document.body.appendChild(heading);
+                        &nbsp; &nbsp;         &lt;/script&gt;
+                        &nbsp;       &lt;/body&gt;
                             &lt;/html&gt;
                         </pre>
                     </div>
@@ -1030,10 +1028,14 @@
                     <li><a href="#">CharacterData</a></li>
                     <li><a href="#">Comment</a></li>
                     <li><a href="#">CustomEvent</a></li>
-                    <li><a href="#">Document</a></li>
+                    <li>
+                        <a href="../../../2.Interfeyslar/D/9.Document/9.Document.html">
+                            Document
+                        </a>
+                    </li>
                     <li><a href="#">DocumentFragment</a></li>
                     <li><a href="#">DocumentType</a></li>
-                    <li><a href="#">DOMError Deprecated</a></li>
+                    <li><a href="#">DOMError</a></li>
                 </ul>
 
                 <p>
