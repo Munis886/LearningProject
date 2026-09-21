@@ -1,4 +1,4 @@
-    * {
+* {
       margin: 0;
       padding: 0;
       box-sizing: border-box;
@@ -44,35 +44,34 @@
     }
  
     /* === QUYI MENYU === */
-    .sub-menu,
     .submenu {
       display: none;             /* boshlang'ich holat: yashirin */
-      position: static;
+      position: absolute;        /* normal oqimdan chiqadi */
+      top: 0;                    /* asosiy element bilan bir hizda */
+      left: 100%;                /* o'ng tomonga chiqadi */
       background: #34495e;
       border-radius: 6px;
-      min-width: 100%;
-      box-shadow: none;
-      padding-left: 15px;
-      margin: 0;
-      opacity: 1;
-      transform: none;
-      transition: none;
+      min-width: 180px;
+      box-shadow: 4px 4px 12px rgba(0,0,0,0.3);
+      z-index: 100;              /* boshqa elementlar ustida turadi */
+ 
+      /* Animatsiya uchun */
+      opacity: 0;
+      transform: translateX(-10px);
+      transition: opacity 0.25s, transform 0.25s;
     }
  
     /* Hover bo'lganda quyi menyuni ko'rsat */
-    nav ul li:hover > .sub-menu,
     nav ul li:hover > .submenu {
       display: block;
+      opacity: 1;
+      transform: translateX(0);
     }
  
-    .sub-menu li a,
     .submenu li a {
       padding: 12px 18px;
       font-size: 14px;
       border-bottom: 1px solid rgba(255,255,255,0.05);
-      color: white;
-      text-decoration: none;
-      display: block;
     }
  
     .submenu li:last-child a {

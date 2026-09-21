@@ -126,14 +126,28 @@ body {
     text-align: center;
 }
 
-.sub-menu {
+.sub-menu,
+.submenu {
     display: none; /* Yashirilgan holatda */
-    padding-left: 25px; /* Ichkariga siljitish */
+    position: static;
     background-color: dimgray;
+    width: 100%;
+    border-radius: 6px;
+    padding-left: 15px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin: 0;
+    box-shadow: none;
   }
   
-.sub-menu li {
-    margin: 0 0 1px 5px;
+nav ul li:hover > .sub-menu,
+nav ul li:hover > .submenu {
+    display: block;
+  }
+
+.sub-menu li,
+.submenu li {
+    margin: 0;
   }
 
 .fa-book:before {

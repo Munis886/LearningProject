@@ -91,7 +91,7 @@ div #menu ul li a:hover {
       background-color: #0003d3 !important; /* Bosilgan holat fon rangi */
       color: #fff !important; /* Bosilgan holat matn rangi */
     }
-#container {
+.container {
       width: 100%;
       margin: 0 auto;
       font-size: 17px;
@@ -362,18 +362,12 @@ iframe {
 .css {
   margin: auto;
   background: rgb(59, 59, 59);
-  border-radius: 0;
-  width: 80%;
+  border-radius: 0; 
 }
 
 
-.css > p{
-  padding: 6px 20px;
-  border-bottom: 2px solid #000;
-  margin: 0 auto;
-  color: white;
-  font-size: large;
-}
+
+
 
 .css_tana p{
   padding: 12px 20px;
