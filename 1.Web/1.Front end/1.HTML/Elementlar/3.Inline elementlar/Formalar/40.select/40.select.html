@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>select</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="../../style.css">
+</head>
+<body>
+    <div id="bosh">
+        <div class="bosh">
+            <h1>Inline elementlar</h1>
+        </div>
+    </div>
+
+    <div id="menyu">
+        <div class="menyu">
+            <ul>
+                <li><a href="/index.html">HOME</a></li>
+                <li><a href="/1.Web/Web.html">WEB</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div id="container">
+        <div id="text">
+
+            <div class="orqaga">
+                <a href="javascript:history.back()">&lt;&lt;orqaga</a>
+            </div>
+            
+            <h2>&lt;select&gt;</h2>
+
+            <p>
+              &lt;select&gt; HTML elementi variantlar menyusini taqdim etuvchi boshqaruv elementini ifodalaydi.
+            </p>
+
+            <table class="html">
+                <tr>
+                    <th>Element</th>
+                    <th>Display</th>
+                </tr>
+                <tr>
+                    <td class="pre">
+                        &lt;label for="pet-select"&gt;Uy hayvonini tanlang:&lt;/label&gt;&gt; <br><br>
+
+                        &lt;select name="pets" id="pet-select"&gt; <br>
+                        &lt;option value=""&gt;--Please choose an option--&lt;/option&gt;<br>
+                        &lt;option value="dog"&gt;It&lt;/option&gt;<br>
+                        &lt;option value="cat"&gt;Mushuk&lt;/option&gt;<br>
+                        &lt;option value="hamster"&gt;Hamster&lt;/option&gt;<br>
+                        &lt;option value="parrot"&gt;To'tiqush&lt;/option&gt;<br>
+                        &lt;option value="spider"&gt;O'rgimchak&lt;/option&gt;<br>
+                        &lt;option value="goldfish"&gt;Oltin baliq&lt;/option&gt;<br>
+                        &lt;/select&gt;<br>
+                    </td>
+                    <td>
+                        <label for="pet-select">Uy hayvonini tanlang:</label>
+
+                        <select name="pets" id="pet-select">
+                            <option value="">--Iltimos, variantni tanlang--</option>
+                            <option value="dog">It</option>
+                            <option value="cat">Mushuk</option>
+                            <option value="hamster">Hamster</option>
+                            <option value="parrot">To'tiqush</option>
+                            <option value="spider">O'rgimchak</option>
+                            <option value="goldfish">Oltin baliq</option>
+                        </select>
+                    </td>
+                </tr>
+            </table>
+
+        </div>
+        <div id="text">
+            <h2>Atributlar</h2>
+            <p>
+                Ushbu elementning atributlari global atributlarni o'z ichiga oladi.
+            </p>
+
+            <dl>
+                <dt>
+                    <span class="maxsus">
+                        autofocus
+                    </span>
+                </dt>
+
+                <dd>
+                    Bu mantiqiy atribut sahifa yuklanganda tugma kiritish fokusiga ega boʻlishi kerakligini bildiradi. Hujjatdagi faqat bitta element bu atributga ega bo'lishi mumkin.
+                </dd>
+            </dl>
+
+            <table class="html">
+                <tr>
+                    <th>Element</th>
+                    <th>Display</th>
+                </tr>
+                <tr>
+                    <td class="pre">
+                        &lt;button class=&quot;favorite styled&quot; autofocus&gt; <br>
+                        &nbsp; Add to favorites <br>
+                        &lt;/button&gt;
+                    </td>
+                    <td>
+                        <button class="favorite styled" autofocus>Add to favorites</button>
+                    </td>
+                </tr>
+            </table>
+           
+            <dl>
+                <dt>
+                    <span class="maxsus">
+                        command
+                    </span>
+                </dt>
+
+                <dd>
+                    Bu atribut, tugma bilan bog'langan buyruqni belgilaydi. command for atributi orqali ko'rsatilgan &lt;button&gt; boshqaruvi tomonidan boshqariladigan elementda bajarilishi kerak bo'lgan amalni belgilaydi. Mumkin qiymatlar:
+                </dd>
+            </dl>
+
+            <ul class="ul">
+                <li> <span class="maxsus">"show-modal"</span>
+                    <ul>
+                        <li>
+                            Tugma modal sifatida <span class="blue_color">
+                                <a href="../../../2.Block elementlar/Interaktiv elementlar/6.dialog/6.dialog.html">&lt;dialog&gt;</a></span>
+                            ni ko'rsatadi. Agar dialog allaqachon modal bo'lsa, hech qanday chora ko'rilmaydi. 
+                            Bu <span class="blue_color">
+                                
+                                <a href="../../../2.Block elementlar/Interaktiv elementlar/6.dialog/6.dialog.html">&lt;dialog&gt;</a></span> elementida 
+                            <b>HTMLDialogElement.showModal()</b> usulini chaqirishning deklarativ ekvivalentidir.
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+
+            <table class="html">
+                <tr>
+                    <th>Element</th>
+                    <th>Display</th>
+                </tr>
+                <tr>
+                    <td class="pre">
+                        &lt;button class=&quot;favorite styled&quot; command="show-modal" &gt; <br>
+                        &nbsp; Add to favorites <br>
+                        &lt;/button&gt;
+                    </td>
+                    <td>
+                        <button class="favorite styled" command="show-modal">Add to favorites</button>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    
+   
+</body>
+</html>

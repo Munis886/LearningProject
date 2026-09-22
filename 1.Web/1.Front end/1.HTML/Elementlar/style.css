@@ -362,6 +362,81 @@ body {
     margin: auto;
 }
 
+.forma_table{
+    margin: auto;
+    width: 80%;
+    border: 1px solid #ddd;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    table-layout: fixed;
+}
+
+.forma_table th:nth-child(1),
+.forma_table td:nth-child(1) {
+    width: 119px;
+    text-align: center;
+}
+
+
+
+.forma_table tbody tr td:nth-child(1) {
+    text-align: center;
+    border: 1px solid #ddd;
+    border-collapse: collapse;
+    width: 90px;
+}
+
+.forma_table tbody tr td a {
+    color: #ddd;
+    text-decoration: none;
+}
+
+.forma_table tbody tr td a:hover {
+    text-decoration: underline;
+}
+
+.forma_table thead tr th{
+    border: 1px solid #ddd;
+    padding: 8px 12px;
+    background-color: #333;
+    color: aliceblue;
+    border-collapse: collapse;
+} 
+
+.forma_table tr td {
+    border: 1px solid #ddd;
+    border-collapse: collapse;
+    padding: 8px 12px;
+}
+
+.forma_table tr td a {
+    color: #cdcdcd;
+    text-decoration: none;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.forma_table thead tr td{
+    border: 1px solid #ddd;
+    padding: 8px 12px;
+    background-color: #333;
+} 
+
+.forma_table tbody tr:nth-child(odd) {
+    background-color: #3f3f3f;
+    color:#cdcdcd
+} 
+.forma_table tbody tr:nth-child(even) {
+    background-color: #2e2e2e;
+    color:#cdcdcd
+} 
+
+.forma_table  tr td a {
+    color: #cdcdcd;
+    text-decoration: none;
+    margin: auto;
+}
+
 
 #elementlar {
     display: flex;

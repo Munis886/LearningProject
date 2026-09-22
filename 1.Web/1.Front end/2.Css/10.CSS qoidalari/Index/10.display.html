@@ -97,8 +97,8 @@
                     flow layout , grid yoki flex ni belgilaydi .display
                 </p>
                 <p>
-                    Rasmiy ravishda, displayxususiyat elementning ichki va tashqi ko'rsatish 
-                    turlarini o'rnatadi . Tashqi tur elementning oqim tartibidagi ishtirokini 
+                    Rasmiy ravishda, display xususiyat elementning ichki va tashqi ko'rsatish 
+                    turlarini o'rnatadi. Tashqi tur elementning oqim tartibidagi ishtirokini 
                     belgilaydi ; ichki turi bolalar tartibini o'rnatadi. ning ba'zi qiymatlari 
                     displayo'zlarining individual spetsifikatsiyalarida to'liq belgilangan; 
                     masalan, display: flexe'lon qilinganda nima sodir bo'lishi haqida batafsil 
@@ -131,17 +131,18 @@
                 </h2>
                 
                 <section class="section">
-                    <div class="CSS">
+                    <div id="CSS">
                         <p>CSS</p>
+                        <div class="css">
+                            <p>
+                                ::before { <br>
+                                    content: /* value */; <br>
+                                    /* properties */ <br>
+                                }
+                            </p>
+                        </div>
                     </div>
-                    <div class="css">
-                        <p>
-                            ::before { <br>
-                                content: /* value */; <br>
-                                /* properties */ <br>
-                            }
-                        </p>
-                    </div>
+                    
                 </section>
                 
                 <p>
@@ -159,34 +160,35 @@
                 </h2>
                 <div id="CSS">
                     <p>CSS</p>
+                    <div class="css">
+                        <p>
+                            :root { <br>
+                                --first-color: #16f; <br>
+                                --second-color: #ff7; <br>
+                            } <br><br>
+                            
+                            #firstParagraph { <br>
+                                background-color: var(--first-color); <br>
+                                color: var(--second-color); <br>
+                            } <br><br>
+                            
+                            #secondParagraph { <br>
+                                background-color: var(--second-color); <br>
+                                color: var(--first-color); <br>
+                            } <br><br>
+                            
+                            #container { <br>
+                                --first-color: #290; <br>
+                            } <br><br>
+                            
+                            #thirdParagraph { <br>
+                                background-color: var(--first-color); <br>
+                                color: var(--second-color); <br>
+                            } <br><br>
+                        </p>
+                    </div>
                 </div>
-                <div class="css">
-                    <p>
-                        :root { <br>
-                            --first-color: #16f; <br>
-                            --second-color: #ff7; <br>
-                          } <br><br>
-                          
-                          #firstParagraph { <br>
-                            background-color: var(--first-color); <br>
-                            color: var(--second-color); <br>
-                          } <br><br>
-                          
-                          #secondParagraph { <br>
-                            background-color: var(--second-color); <br>
-                            color: var(--first-color); <br>
-                          } <br><br>
-                          
-                          #container { <br>
-                            --first-color: #290; <br>
-                          } <br><br>
-                          
-                          #thirdParagraph { <br>
-                            background-color: var(--first-color); <br>
-                            color: var(--second-color); <br>
-                        } <br><br>
-                    </p>
-                </div>
+                
                 <h2>
                     Natija
                 </h2>
@@ -199,6 +201,7 @@
                     #firstParagraph {
                     background-color: var(--first-color);
                     color: var(--second-color);
+                    margin: 0;
                     }
 
                     #secondParagraph {
