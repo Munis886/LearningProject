@@ -81,12 +81,15 @@
             <dl>
                 <dt>
                     <span class="maxsus">
-                        autofocus
+                        autocomplete
                     </span>
                 </dt>
 
                 <dd>
-                    Bu mantiqiy atribut sahifa yuklanganda tugma kiritish fokusiga ega boʻlishi kerakligini bildiradi. Hujjatdagi faqat bitta element bu atributga ega bo'lishi mumkin.
+                    Foydalanuvchi agentining avtomatik to'ldirish xususiyatiga ishora beruvchi satr. Qiymatlarning to'liq ro'yxati va avtomatik to'ldirishdan qanday foydalanish haqida tafsilotlar uchun 
+                    <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Attributes/autocomplete">
+                        HTML avtomatik to'ldirish atributiga qarang.
+                    </a>
                 </dd>
             </dl>
 
@@ -97,12 +100,11 @@
                 </tr>
                 <tr>
                     <td class="pre">
-                        &lt;button class=&quot;favorite styled&quot; autofocus&gt; <br>
-                        &nbsp; Add to favorites <br>
-                        &lt;/button&gt;
+                        &lt;select autocomplete="on"&gt;Add to favorites
+                        &lt;/select&gt;
                     </td>
                     <td>
-                        <button class="favorite styled" autofocus>Add to favorites</button>
+                        <select autocomplete="on">Add to favorites</select>
                     </td>
                 </tr>
             </table>
@@ -110,47 +112,27 @@
             <dl>
                 <dt>
                     <span class="maxsus">
-                        command
+                        autofocus
                     </span>
                 </dt>
 
                 <dd>
-                    Bu atribut, tugma bilan bog'langan buyruqni belgilaydi. command for atributi orqali ko'rsatilgan &lt;button&gt; boshqaruvi tomonidan boshqariladigan elementda bajarilishi kerak bo'lgan amalni belgilaydi. Mumkin qiymatlar:
+                    Ushbu Boolean atributi sahifa yuklanganda forma boshqaruvi kirish fokusga ega bo'lishi kerakligini belgilash imkonini beradi. Hujjatdagi faqat bitta forma elementi avtofokus atributiga ega bo'lishi mumkin.
                 </dd>
             </dl>
 
-            <ul class="ul">
-                <li> <span class="maxsus">"show-modal"</span>
-                    <ul>
-                        <li>
-                            Tugma modal sifatida <span class="blue_color">
-                                <a href="../../../2.Block elementlar/Interaktiv elementlar/6.dialog/6.dialog.html">&lt;dialog&gt;</a></span>
-                            ni ko'rsatadi. Agar dialog allaqachon modal bo'lsa, hech qanday chora ko'rilmaydi. 
-                            Bu <span class="blue_color">
-                                
-                                <a href="../../../2.Block elementlar/Interaktiv elementlar/6.dialog/6.dialog.html">&lt;dialog&gt;</a></span> elementida 
-                            <b>HTMLDialogElement.showModal()</b> usulini chaqirishning deklarativ ekvivalentidir.
-                        </li>
-                    </ul>
-                </li>
-            </ul>
+            <dl>
+                <dt>
+                    <span class="maxsus">
+                        disabled
+                    </span>
+                </dt>
 
-            <table class="html">
-                <tr>
-                    <th>Element</th>
-                    <th>Display</th>
-                </tr>
-                <tr>
-                    <td class="pre">
-                        &lt;button class=&quot;favorite styled&quot; command="show-modal" &gt; <br>
-                        &nbsp; Add to favorites <br>
-                        &lt;/button&gt;
-                    </td>
-                    <td>
-                        <button class="favorite styled" command="show-modal">Add to favorites</button>
-                    </td>
-                </tr>
-            </table>
+                <dd>
+                    Bu Boolean atributi foydalanuvchi boshqaruv elementi bilan o'zaro aloqa qila olmasligini bildiradi. Agar bu atribut ko'rsatilmagan bo'lsa, boshqaruv elementi o'z sozlamasini o'z ichiga olgan elementdan meros qilib oladi, masalan, &lt;fieldset&gt;; agar o'chirilgan atributlar to'plamiga ega bo'lgan o'z ichiga olgan element bo'lmasa, boshqaruv elementi yoqilgan bo'ladi.
+                </dd>
+            </dl>
+
         </div>
     </div>
     
