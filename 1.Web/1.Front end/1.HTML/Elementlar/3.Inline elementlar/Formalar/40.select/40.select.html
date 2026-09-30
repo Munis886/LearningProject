@@ -47,12 +47,12 @@
 
                         &lt;select name="pets" id="pet-select"&gt; <br>
                         &lt;option value=""&gt;--Iltimos, variantni tanlang--&lt;/option&gt;<br>
-                        &lt;option value="dog"&gt;It&lt;/option&gt;<br>
-                        &lt;option value="cat"&gt;Mushuk&lt;/option&gt;<br>
-                        &lt;option value="hamster"&gt;Hamster&lt;/option&gt;<br>
-                        &lt;option value="parrot"&gt;To'tiqush&lt;/option&gt;<br>
-                        &lt;option value="spider"&gt;O'rgimchak&lt;/option&gt;<br>
-                        &lt;option value="goldfish"&gt;Oltin baliq&lt;/option&gt;<br>
+                        &lt;option value="It"&gt;It&lt;/option&gt;<br>
+                        &lt;option value="Mushuk"&gt;Mushuk&lt;/option&gt;<br>
+                        &lt;option value="Hamster"&gt;Hamster&lt;/option&gt;<br>
+                        &lt;option value="To'tiqush"&gt;To'tiqush&lt;/option&gt;<br>
+                        &lt;option value="O'rgimchak"&gt;O'rgimchak&lt;/option&gt;<br>
+                        &lt;option value="Oltin baliq"&gt;Oltin baliq&lt;/option&gt;<br>
                         &lt;/select&gt;<br>
                     </td>
                     <td>
@@ -60,12 +60,12 @@
 
                         <select name="pets" id="pet-select">
                             <option value="">--Iltimos, variantni tanlang--</option>
-                            <option value="dog">It</option>
-                            <option value="cat">Mushuk</option>
-                            <option value="hamster">Hamster</option>
-                            <option value="parrot">To'tiqush</option>
-                            <option value="spider">O'rgimchak</option>
-                            <option value="goldfish">Oltin baliq</option>
+                            <option value="It">It</option>
+                            <option value="Mushuk">Mushuk</option>
+                            <option value="Hamster">Hamster</option>
+                            <option value="To'tiqush">To'tiqush</option>
+                            <option value="O'rgimchak">O'rgimchak</option>
+                            <option value="Oltin baliq">Oltin baliq</option>
                         </select>
                     </td>
                 </tr>
@@ -133,6 +133,34 @@
                 </dd>
             </dl>
 
+
+            <dl>
+                <dt>
+                    <span class="maxsus">
+                        form
+                    </span>
+                </dt>
+
+                <dd>
+                    &lt;select&gt; ni (uning forma egasi) bilan bog'lash uchun &lt;form&gt; elementi. Ushbu atributning qiymati xuddi shu hujjatdagi &lt;form&gt; ning identifikatori bo'lishi kerak. (Agar bu atribut o'rnatilmagan bo'lsa, &lt;select&gt; o'zining ajdod &lt;form&gt; elementi bilan bog'liq bo'ladi, agar mavjud bo'lsa.)
+                </dd>
+
+                <dd>
+                    Bu atribut sizga &lt;select&gt; elementlarini faqat &lt;form&gt; ichida emas, balki hujjatning istalgan joyidagi &lt;form&gt; elementlariga bog'lash imkonini beradi. Shuningdek, u ajdod &lt;form&gt; elementini ham bekor qilishi mumkin.
+                </dd>
+            </dl>
+
+            <dl>
+                <dt>
+                    <span class="maxsus">
+                        multiple
+                    </span>
+                </dt>
+
+                <dd>
+                    Bu Boolean atributi ro'yxatda nol yoki undan ko'p variantni tanlash mumkinligini bildiradi. Agar u ko'rsatilmagan bo'lsa, bir vaqtning o'zida faqat bitta variantni tanlash mumkin. Bir nechta tanlangan variantlar URLSearchParams massiv konvensiyasi yordamida yuboriladi, ya'ni name=value1&name=value2. Agar bir nechta variant ko'rsatilgan bo'lsa, o'lcham standart holatda 1 o'rniga 4 ga o'rnatiladi.
+                </dd>
+            </dl>
         </div>
     </div>
     
