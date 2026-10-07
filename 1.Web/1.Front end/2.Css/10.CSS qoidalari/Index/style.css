@@ -449,3 +449,30 @@ iframe {
   color: seagreen;
   transition: 0.4s;
 }
+
+.html {
+    border-radius: 4px 4px 0 0;
+    border: 1px solid #333;
+    border-collapse: collapse;
+    margin: auto;
+}
+
+.html th{
+    border: 1px solid #333;
+    background-color: cadetblue;
+    padding: 8px 20px;
+}
+
+html td {
+    border: 1px solid #333;
+    padding: 8px 20px;
+    background-color: seagreen;
+}
+
+html td:nth-child(1){
+    width: 500px;
+}
+
+html td:nth-child(2){
+    width: 200px;
+}

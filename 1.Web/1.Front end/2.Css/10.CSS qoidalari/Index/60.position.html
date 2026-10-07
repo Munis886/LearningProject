@@ -5,10 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="keywords" content="Css">
     <meta name="description" content="Bu yerda Css haqida batafsil ma'lumotlar">
-    <title>overflow</title>
-    <link rel="stylesheet" href="../2.Css/style.css">
+    <title>position</title>
+    <link rel="stylesheet" href="../../style.css">
     <link rel="stylesheet" href="style.css">
-    <script src="../2.Css/Js.js"></script>
+    <script src="../../Js.js"></script>
     
 </head>
 <body>
@@ -22,11 +22,15 @@
         <button id="toggle-btn" onclick="toggleMenu()">Menu</button>
         <ul>
             <li><a href="/index.html">HOME</a></li>
-            <li><a href="/1.Front end/1.Front_end.html">FRONT END</a></li>
-            <li><a href="/1.Front end/1.HTML/1.HTML.html">HTML</a></li>
-            <li><a href="/1.Front end/2.Css/Css.html">CSS</a></li>
+            <li><a href="/1.Web/1.Front end/1.Front_end.html">FRONT END</a></li>
+            <li><a href="/1.Web/1.Front end/1.HTML/1.HTML.html">HTML</a></li>
+            <li><a href="/1.Web/1.Front end/2.Css/Css.html">CSS</a></li>
             <li><a href="/1.Web/1.Front end/3.Js/Javascript.html">JAVASCRIPT</a></li>
         </ul>
+    </div>
+    
+    <div class="w3-sidebar w3collapse" >
+       
     </div>
     
     <div style="display: flex;">
@@ -109,20 +113,20 @@
             <div class="sarlavha">
                 <ul>
                     <li class="li_1">
-                        <a href="/1.Front end/2.Css/10.CSS qoidalari/CSS qoidalari.html">⟨</a>
+                        <a href="../CSS qoidalari.html">⟨</a>
                     </li>
                     <li class="li_2">
-                        overflow
+                        position CSS xususiyati
                     </li>
                 </ul>
             </div>
             
             <div class="text">
                   
-                <p style="font-variant: no-common-ligatures proportional-nums;">
-                    Overflow CSS stenografiya xususiyati kontent elementning 
-                    toʻldirish qutisiga (toshib ketishi) gorizontal va/yoki vertikal 
-                    yoʻnalishda mos kelmasa, kerakli harakatni oʻrnatadi.
+                <p>
+                    CSS position xususiyati elementning hujjatda qanday joylashishini belgilaydi. Joylashtirilgan elementlarning oxirgi joylashuvini aniqlash uchun yuqori, 
+                    o'ng, pastki va chap jismoniy xususiyatlar hamda inset-block-start, inset-block-end, inset-inline-start va inset-inline-end oqimga oid mantiqiy 
+                    xususiyatlardan foydalanish mumkin.
                 </p>
                 
                 <style>
@@ -137,11 +141,34 @@
                     <h2 id="sinab_koring">
                         <a href="#Sinab ko'ring">Sinab ko'ring</a>
                     </h2>
-                    <iframe src="/1.Front end/2.Css/10.CSS qoidalari/Index/Misol/50.overflow/pages/css/overflow.html" 
-                    frameborder="0" width="80%" height="419px"></iframe>
                 </section>
                 
-                
+                <table class="html">
+                    <tr>
+                        <th>Element</th>
+                        <th>Display</th>
+                    </tr>
+                    <tr>
+                        <style>
+                            .keywords {
+                                color: #f2f2f2;
+                                background-color: #343434;
+                                padding: 6px 8px;
+                                margin: 4px 8px;
+                                border-radius: 4px;
+                            }
+                            .keywords:hover {
+                                border: 1px solid #fff;
+                            }
+                        </style>
+                        <td class="pre">
+                            <span class="keywords">position: static;</span> <br>
+                        </td>
+                        <td>
+                            <button class="favorite styled" command="show-modal">Add to favorites</button>
+                        </td>
+                    </tr>
+                </table>
                 <style>
                     #CSS {
                         border-radius: 5px;
