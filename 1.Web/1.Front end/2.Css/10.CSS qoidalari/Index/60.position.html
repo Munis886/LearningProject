@@ -162,11 +162,169 @@
                             }
                         </style>
                         <td class="pre">
-                            <span class="keywords">position: static;</span> <br>
+                            <label class="css-option">
+                                <code>position: static;</code>
+                                <input type="radio" name="position" value="static" checked>
+                            </label>
+                            <label class="css-option">
+                                <code>
+                                    position: relative;
+                                        top: 40px;
+                                        left: 40px;
+                                </code>
+                                <input type="radio" name="position" value="static" checked>
+                            </label>
                         </td>
+                        <style>
+                            #example-element {
+                                background-color: yellow;
+                                border: 3px solid red;
+                                z-index: 1;
+                            }
+                            .box + .box {
+                                margin-left: 10px;
+                            }
+                            .box {
+                                background-color: rgb(0 0 255 / 0.2);
+                                border: 3px solid blue;
+                                float: left;
+                                width: 65px;
+                                height: 65px;
+                            }
+
+                            .css-option {
+                                display: flex;
+                                align-items: center;
+                                padding: 8px 12px;
+                                margin-bottom: 8px;
+                                background-color: #1e1e1e; /* To'q mavzu foni */
+                                border: 1px solid #444;
+                                border-radius: 6px;
+                                cursor: pointer;
+                                color: #d4d4d4;
+                                font-family: Consolas, monospace;
+                                }
+
+                            /* Kursor olib borilganda */
+                            .css-option:hover {
+                            background-color: #2a2a2a;
+                            }
+                            /* Radio tugmani vizual moslashtirish */
+                            .css-option input[type="radio"] {
+                                margin-right: 12px;
+                                cursor: pointer;
+                            }
+                            /* Yacheyka tanlanganda uning o'zini ajratib ko'rsatish */
+                            .css-option:has(input:checked) {
+                                border-color: #3b82f6; /* Ko'k hoshiya */
+                                background-color: #1a2634; /* Och ko'k fon */
+                            }
+                            </style>
                         <td>
-                            <button class="favorite styled" command="show-modal">Add to favorites</button>
+                            <p>
+                                Ushbu demoda siz sariq katakcha uchun pozitsiya xususiyatini boshqarishingiz mumkin.
+                            </p>
+                            <div class="box"></div>
+                            <div class="box" id="example-element" style="position: static;"></div>
+                            <div class="box"></div> <br><br><br>
+                            <p>
+                                Yopishqoq joylashuv effektini ko'rish uchun position: yopishqoq variantini tanlang va ushbu konteynerni aylantiring.
+                            </p>
+                            <p>
+                                Element konteyneri bilan birga konteynerning yuqori qismiga yetguncha (yoki yuqori qismida ko'rsatilgan ofsetga yetguncha) aylantiriladi va keyin aylantirishni to'xtatadi, shunda u ko'rinadigan bo'lib qoladi.
+                            </p>
+                            <p>
+                                Ushbu matnning qolgan qismi faqat konteyner toshib ketishini ta'minlash uchun taqdim etilgan, shunda siz uni aylantirishingiz va natijani ko'rishingiz mumkin.
+                            </p>
+                            <p>
+                                Galaktikaning g'arbiy spiral qo'lining modaga mos kelmaydigan uchining noma'lum orqa suvlarida, uzoqda, e'tiborga olinmagan kichik sariq quyosh joylashgan. Taxminan to'qson ikki million mil masofada bu orbitada mutlaqo ahamiyatsiz kichkina ko'k-yashil sayyora aylanib yuradi, uning maymunlardan kelib chiqqan hayot shakllari shunchalik hayratlanarli darajada ibtidoiyki, ular hali ham raqamli soatlarni juda yaxshi g'oya deb o'ylashadi.
+                            </p>
                         </td>
+                    </tr>
+                    <tr>
+                        <style>
+                            .keywords {
+                                color: #f2f2f2;
+                                background-color: #343434;
+                                padding: 6px 8px;
+                                margin: 4px 8px;
+                                border-radius: 4px;
+                            }
+                            .keywords:hover {
+                                border: 1px solid #fff;
+                            }
+                        </style>
+                        <td class="pre">
+                            
+                        </td>
+                        <style>
+                            #example-element {
+                                background-color: yellow;
+                                border: 3px solid red;
+                                z-index: 1;
+                            }
+                            .box + .box {
+                                margin-left: 10px;
+                            }
+                            .box {
+                                background-color: rgb(0 0 255 / 0.2);
+                                border: 3px solid blue;
+                                float: left;
+                                width: 65px;
+                                height: 65px;
+                            }
+
+                            .css-option {
+                                display: flex;
+                                align-items: center;
+                                padding: 8px 12px;
+                                margin-bottom: 8px;
+                                background-color: #1e1e1e; /* To'q mavzu foni */
+                                border: 1px solid #444;
+                                border-radius: 6px;
+                                cursor: pointer;
+                                color: #d4d4d4;
+                                font-family: Consolas, monospace;
+                                }
+
+                            /* Kursor olib borilganda */
+                            .css-option:hover {
+                            background-color: #2a2a2a;
+                            }
+                            /* Radio tugmani vizual moslashtirish */
+                            .css-option input[type="radio"] {
+                                margin-right: 12px;
+                                cursor: pointer;
+                            }
+                            /* Yacheyka tanlanganda uning o'zini ajratib ko'rsatish */
+                            .css-option:has(input:checked) {
+                                border-color: #3b82f6; /* Ko'k hoshiya */
+                                background-color: #1a2634; /* Och ko'k fon */
+                            }
+                            </style>
+                        <td>
+                            <p>
+                                Ushbu demoda siz sariq katakcha uchun pozitsiya xususiyatini boshqarishingiz mumkin.
+                            </p>
+                            <div class="box"></div>
+                            <div class="box" id="example-element" style="position: static;"></div>
+                            <div class="box"></div> <br><br><br>
+                            <p>
+                                Yopishqoq joylashuv effektini ko'rish uchun position: yopishqoq variantini tanlang va ushbu konteynerni aylantiring.
+                            </p>
+                            <p>
+                                Element konteyneri bilan birga konteynerning yuqori qismiga yetguncha (yoki yuqori qismida ko'rsatilgan ofsetga yetguncha) aylantiriladi va keyin aylantirishni to'xtatadi, shunda u ko'rinadigan bo'lib qoladi.
+                            </p>
+                            <p>
+                                Ushbu matnning qolgan qismi faqat konteyner toshib ketishini ta'minlash uchun taqdim etilgan, shunda siz uni aylantirishingiz va natijani ko'rishingiz mumkin.
+                            </p>
+                            <p>
+                                Galaktikaning g'arbiy spiral qo'lining modaga mos kelmaydigan uchining noma'lum orqa suvlarida, uzoqda, e'tiborga olinmagan kichik sariq quyosh joylashgan. Taxminan to'qson ikki million mil masofada bu orbitada mutlaqo ahamiyatsiz kichkina ko'k-yashil sayyora aylanib yuradi, uning maymunlardan kelib chiqqan hayot shakllari shunchalik hayratlanarli darajada ibtidoiyki, ular hali ham raqamli soatlarni juda yaxshi g'oya deb o'ylashadi.
+                            </p>
+                        </td>
+                    </tr>
+                    <tr>
+
                     </tr>
                 </table>
                 <style>
