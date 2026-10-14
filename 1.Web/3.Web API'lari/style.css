@@ -28,16 +28,17 @@ body, h1 {
 
 
 body {
-    background-color: bisque;
+    background-color: #000333;
 }
 
 #container {
     width: 100%;
     margin: 0 auto;
     font-size: 17px;
-    background-color: #f2f2f2;
+    background-color: #000333;
     overflow-y: auto;
     height: 100vh;
+    color: #d4d077;
 }
 
 .h2  {
@@ -48,7 +49,6 @@ body {
 
 #text {
     padding: 10px 40px;
-    
 }
 
 #text > p{
@@ -58,21 +58,21 @@ body {
 }
 
 #text > p a{
-    color: #333;
+    color: #fff333;
     text-decoration: none;
 }
 
 #text > p a:hover {
     text-decoration: underline;
 }
-.text1 {
-    display: flex; 
-    margin: auto; 
-    width: 80%;
+
+#text dl ul li a {
+    text-decoration: none;
+    color: #6a6af1;
 }
 
-.matn p, .matn h2 {
-    padding: 0;
+#text {
+    padding: 10px 40px;
 }
 
 #sarlavha h2, #sarlavha h1 {
@@ -80,7 +80,7 @@ body {
     width: auto; /* Kenglikni avtomatik qilish */
     margin: 10px 0;
     border-radius: 0 10px 10px 0;
-    background-color: #f1ff2f;
+    background-color: #2f90ff;
     padding: 5px 25px;
     text-align: center;
     box-shadow: 0 0 9px #000333; 
@@ -97,73 +97,9 @@ body {
     margin: 0 0 1px 5px;
   }
 
-.fa-book:before {
-    content: "\f02d";
-}
 :root {
-    --some-color: #0000ff;
-    --javob-uchun: #ff0000;
     --moviy-rang: #323fb2;
-    --thead-uchun: #123456;
     --tugma-uchun: #526509;
-    --matn-uchun: #726709;
-    --kul-rang: rgb(113, 113, 101);
-}
-
-.green {
-    color: green;
-}
-.crimson {
-    color: crimson;
-}
-
-.moviy {
-    color: var(--moviy-rang);
-}
-
-
-.havo_chegara {
-    border: 1.5px solid #6491FC;  
-    width: 80%; 
-    margin: 8px 15px; 
-    border-radius: 0 0 60px 0; 
-    margin-top: 15px;
-    padding: 19px 20px;
-}
-
-.qora_chegara {
-    border: 1.5px solid rgb(110, 120, 101);;  
-    width: 70%; 
-    margin: 8px auto; 
-    border-radius: 6px; 
-    margin-top: 15px;
-    padding-left: 15px;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-}
-
-.oddiy_chegara {
-    border: 1.5px solid #349;  
-    width: 80%; 
-    margin: 7px 15px; 
-    border-radius: 5px; 
-    padding: 10px 20px;
-    padding-left: 25px;
-}
-
-.chegara_ichida {
-    border: 1.5px solid #349;  
-    margin: 8px auto; 
-    border-radius: 5px; 
-    padding: 10px 20px;
-    padding-left: 25px;
-}
-
-.yashil_maydon {
-    border: 1.5px solid #650;  
-    width: 70%; 
-    margin: 8px auto; 
-    margin-top: 15px;
-    padding-left: 15px;
 }
 
 div p {
@@ -172,15 +108,11 @@ div p {
 }
 
 
-.center-box {
-    margin: 10px auto
-}
-
 .center-align {
     text-align: center;
 }
 
-.maxsus_sozlar, .maxsus {
+.maxsus {
     border: 2px solid #DFDDDD;;
     border-radius: 4px;
     width: auto;
@@ -190,11 +122,6 @@ div p {
 
 .maxsus {
     line-height: 1.7;
-}
-
-.ul li, .ol li {
-    margin: 10px 0px;
-    line-height: 1.4; 
 }
 
 table {              
@@ -216,11 +143,6 @@ table, th, td {
 }
 
 
-.kul {
-    color: var(--kul-rang);
-    font-style: italic;
-}
-
 .pre {
     margin: 0px 12px;
     padding-left: 7px;
@@ -229,22 +151,6 @@ table, th, td {
     font-family: sans-serif;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 } 
-
-.sariq {
-    color: var(--matn-uchun);
-}
-
-.code {
-    padding-top: 20px;
-    background-color: #321111;
-    color: #fff;
-    border-radius: 6px;
-}
-
-.code pre {
-    background-color: #333222;
-    padding-left: 20px;
-}
 
 .sarlavha ul {
     display: flex;
@@ -257,7 +163,7 @@ table, th, td {
 .sarlavha ul {
     display: inline-flex;
     width: auto;
-    background: greenyellow;
+    background: rgb(47, 206, 255);
     border-radius: 0 8px 8px 0;
     font-size: 25px;
     box-shadow: 0 0 8px #333;
@@ -289,30 +195,7 @@ table, th, td {
     font-weight: 550; 
 }
 
-.li_3 {
-    padding: 0;
-    font-weight: 350;
-    border-left: 1px solid bisque;
-    box-sizing: border-box;
-}
-
-.li_3 a {
-    font-weight: 500;
-    color: black;
-    transition: 0.4s;
-    padding: 5px 5px;
-    border-radius: 0 8px 8px 0;
-    box-sizing: border-box;
-}
-
-.li_3 a:hover {
-    font-weight: 600;
-    color: seagreen;
-    transition: 0.4s;
-    box-sizing: border-box;
-}
-
-.css {
+.js {
     background-color: #333;
     color: #fff;
     padding: 0;
@@ -321,15 +204,21 @@ table, th, td {
     width: 80%;
 }
 
-.css > p {
+.js > p {
     padding: 2px 12px;
     margin: 0;
 }
 
-.css_tana {
+.js_tana {
     background-color: #222;
     padding: 0;
     border-radius: 6px;
     margin: 0;
+    margin-left: 25px;
     width: 100%;
+}
+
+.red {
+    color: red;
+    font-weight: 500;
 }

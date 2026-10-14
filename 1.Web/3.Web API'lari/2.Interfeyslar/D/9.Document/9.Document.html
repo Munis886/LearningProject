@@ -825,6 +825,13 @@
                 <p>
                     Bu interfeys shuningdek, Node va EventTarget interfeyslaridan meros bo'lib oladi.
                 </p>
+                
+                <h2 class="h2">
+                    Eskirgan xususiyatlar
+                </h2>
+                <div class="eski">
+
+                </div>
                 <h2 class="h2">
                     Kontseptsiyalar va qo'llanilishi
                 </h2>
@@ -844,15 +851,15 @@
                 </p>
 
                 <p>
-                    Masalan, DOM ushbu kod parchasidagi usul hujjatdagi querySelectorAll barcha 
-                    elementlarning ro'yxatini qaytarishi kerakligini belgilaydi:&lt;p&gt;
+                    Masalan, DOM ushbu kod parchasidagi usul hujjatdagi <a href="#" style="color: rgb(87, 87, 252); font-weight: bold;">querySelectorAll</a> barcha 
+                    elementlarning ro'yxatini qaytarishi kerakligini belgilaydi:
                 </p>
 
                 <div class="css">
                     <p>JS</p>
                     <div class="css_tana">
                         <pre class="pre">
-                            const paragraphs = document.querySelectorAll("p");
+                            const paragraphs = document.<span style="color: rgb(112, 112, 45);">querySelectorAll</span>("p");
                             // paragraphs[0] is the first &lt;p&gt; element
                             // paragraphs[1] is the second &lt;p&gt; element, etc.
                             alert(paragraphs[0].nodeName);
