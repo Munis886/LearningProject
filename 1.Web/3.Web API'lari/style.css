@@ -35,7 +35,7 @@ body {
     width: 100%;
     margin: 0 auto;
     font-size: 17px;
-    background-color: #000333;
+    background-color: #161942;
     overflow-y: auto;
     height: 100vh;
     color: #d4d077;
@@ -71,6 +71,11 @@ body {
     color: #6a6af1;
 }
 
+#text dl dt a {
+    text-decoration: none;
+    color: #6a6af1;
+}
+
 #text {
     padding: 10px 40px;
 }
@@ -80,7 +85,7 @@ body {
     width: auto; /* Kenglikni avtomatik qilish */
     margin: 10px 0;
     border-radius: 0 10px 10px 0;
-    background-color: #2f90ff;
+    background-color: #0e335e;
     padding: 5px 25px;
     text-align: center;
     box-shadow: 0 0 9px #000333; 
@@ -163,7 +168,7 @@ table, th, td {
 .sarlavha ul {
     display: inline-flex;
     width: auto;
-    background: rgb(47, 206, 255);
+    background: rgb(66, 84, 134);
     border-radius: 0 8px 8px 0;
     font-size: 25px;
     box-shadow: 0 0 8px #333;
@@ -196,6 +201,7 @@ table, th, td {
 }
 
 .js {
+    display: block;
     background-color: #333;
     color: #fff;
     padding: 0;
@@ -221,4 +227,8 @@ table, th, td {
 .red {
     color: red;
     font-weight: 500;
+}
+
+.dl dd{
+    margin: 4px 4px 20px 20px;
 }
