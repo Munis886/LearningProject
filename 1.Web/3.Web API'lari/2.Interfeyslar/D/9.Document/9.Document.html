@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="/1.Web/3.Web API'lari/style/1.bosh.css">
     <link rel="stylesheet" href="/1.Web/3.Web API'lari/style/2.menu.css">
     <title>Hujjat obyekti modeli (DOM)</title>
-    <script src="/1.Front end/3.Js/script.js"></script>
+    <script src="/1.Web/3.Web API'lari/Js.js"></script>
 </head>
 
 <body>
@@ -760,7 +760,6 @@
             </div>
 
             <div id="text" class="qisqa">
-
                 <p>
                     Hujjat interfeysi brauzerda yuklangan har qanday veb-sahifani ifodalaydi va veb-sahifa 
                     tarkibiga kirish nuqtasi bo'lib xizmat qiladi, ya'ni <a href="/1.Web/3.Web API'lari/1.Texnik xususiyatlar/D/1.Document Object Model (DOM)/1.Document Object Model (DOM).html">DOM daraxti</a>.
@@ -805,6 +804,27 @@
                     so'ng, hodisalarni qayta ishlovchi qurilmalar bajariladi.
                 </p>
 
+                <p>
+                    Hujjat interfeysi har qanday hujjat turi uchun umumiy xususiyatlar va usullarni tavsiflaydi. Hujjat turiga (masalan, HTML, XML, SVG, …) qarab, kattaroq API mavjud: "text/html" kontent turi bilan taqdim etiladigan HTML hujjatlari ham HTMLDocument interfeysini amalga oshiradi, XML va SVG hujjatlari esa XMLDocument interfeysini amalga oshiradi.
+                </p>
+
+                <h2 class="h2">
+                    Konstruktor
+                </h2>
+                <dl>
+                    <dt><a href="/1.Web/3.Web API'lari/2.Interfeyslar/D/9.Document/1.Konstruktor/1.Document().html">Document()</a></dt>
+                    <dd>Yangi Hujjat obyektini yaratadi.</dd>
+                </dl>
+                <h2 class="h2">
+                    Instance xususiyatlari
+                </h2>
+                <dl>
+                    <dt><a href="#">Document.activeElement</a></dt>
+                    <dd>Hozirda fokusga ega bo'lgan elementni qaytaradi.</dd>
+                </dl>
+                <p>
+                    Bu interfeys shuningdek, Node va EventTarget interfeyslaridan meros bo'lib oladi.
+                </p>
                 <h2 class="h2">
                     Kontseptsiyalar va qo'llanilishi
                 </h2>
