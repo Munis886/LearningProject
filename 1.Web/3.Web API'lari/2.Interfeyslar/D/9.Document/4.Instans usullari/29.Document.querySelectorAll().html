@@ -773,7 +773,7 @@
                     <p>JS</p>
                     <div class="js_tana">
                         <p>
-                            new <span class="red">Document</span>()
+                            <span class="red">querySelectorAll</span>(selectors)
                         </p>
                     </div>
                 </div>
@@ -782,8 +782,31 @@
                     Parametrlar
                 </h2>
                 <dl>
-                    <dt>Hech biri yo'q</dt>
+                    <dt>
+                        <span class="maxsus">
+                            selektorlar
+                        </span>
+                    </dt>
+                    <dd>
+                        Mos keladigan bir yoki bir nechta selektorlarni o'z ichiga olgan satr. Bu satr haqiqiy CSS selektori satri bo'lishi kerak; agar u bo'lmasa, SyntaxError istisnosi tashlanadi. <br><br>
+
+                        HTML spetsifikatsiyasi atribut qiymatlarining haqiqiy CSS identifikatorlari bo'lishini talab qilmasligini unutmang. Agar klass yoki id atribut qiymati haqiqiy CSS identifikatori bo'lmasa, uni selektorda ishlatishdan oldin, qiymatga CSS.escape() ni chaqirish yoki Escaping belgilar bo'limida tasvirlangan usullardan birini qo'llash orqali uni escape qilishingiz kerak. Misol uchun Escaping atribut qiymatlariga qarang.
+                    </dd>
                 </dl>
+
+                <h2 class="h2">
+                    Qaytish qiymati
+                </h2>
+
+                <p>
+                    Belgilangan selektorlardan kamida bittasiga mos keladigan har bir element uchun bitta Element obyektini o'z ichiga olgan jonli bo'lmagan NodeList yoki mos kelmasa bo'sh NodeList. Elementlar hujjat tartibida joylashgan - ya'ni, ota-onalar bolalardan oldin, oldingi aka-uka va opa-singillar keyingi aka-uka va opa-singillardan oldin.
+                </p>
+
+                <div class="Eslatma">
+                    <div class="Eslatma_tana">
+                        Izoh: Agar ko'rsatilgan selektorlar CSS soxta elementini o'z ichiga olsa, qaytarilgan ro'yxat har doim bo'sh bo'ladi.
+                    </div>
+                </div>
             </div>
         </div> 
     </div>

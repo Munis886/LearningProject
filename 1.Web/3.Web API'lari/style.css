@@ -117,12 +117,12 @@ div p {
     text-align: center;
 }
 
-.maxsus {
-    border: 2px solid #DFDDDD;;
-    border-radius: 4px;
+.maxsus {   
+    border-radius: 6px;
     width: auto;
-    padding: 2.5px 2px;
+    padding: 2px 8px;
     line-height: 2.9;
+    background-color: #0e335e;
 }
 
 .maxsus {
@@ -168,7 +168,7 @@ table, th, td {
 .sarlavha ul {
     display: inline-flex;
     width: auto;
-    background: rgb(66, 84, 134);
+    background: #0e335e;
     border-radius: 0 8px 8px 0;
     font-size: 25px;
     box-shadow: 0 0 8px #333;
@@ -183,7 +183,7 @@ table, th, td {
 
 .li_1 a {
     font-weight: 500;
-    color: black;
+    color: bisque;
     transition: 0.4s;
     padding: 5px 5px;
 }
@@ -215,14 +215,16 @@ table, th, td {
     margin: 0;
 }
 
+.js_tana p{
+    margin-left: 3%;
+}
+
 .js_tana {
     display: inline-block;
     background-color: #222;
     padding: 0;
     border-radius: 6px;
-    margin: 0;
-    margin-left: 25px;
-    width: 90%;
+    width: 100%;
 }
 
 .red {
@@ -232,4 +234,74 @@ table, th, td {
 
 .dl dd{
     margin: 4px 4px 20px 20px;
+}
+
+pre {
+  white-space: pre-line;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  padding-left: 30px;
+}
+
+:root{
+  --code-token-attribute-name: #ff97a0;
+  --code-background-inline: #343434;
+  --background-primary: #1b1b1b;
+  /* .CSS uchun rang */
+  --code-background-block: #343434;
+  --icon-information: #5e9eff;
+  --background-information: #013e70;
+  --text-secondary: #cdcdcd;
+  --note-background: var(--background-information);
+  --note-theme: var(--icon-information);
+  --elem-radius: 0.25rem;
+}
+
+.Eslatma {
+  display: flex; 
+  margin: 15px auto; 
+  width: 80%;
+  border-left: 3px solid var(--note-theme);
+  border-radius: var(--elem-radius);
+  color: var(--text-secondary);
+}
+
+/* .Eslatma .chap_yon {
+  width: 1%; 
+  background-color: cyan; 
+  border-radius: 15px 0 0 15px;
+} */
+
+.Eslatma_tana {
+  background-color: var(--note-background); 
+  padding: 15px 12px 15px 36px; 
+  border-radius: 0 10px 10px 0;
+  
+}
+
+.Eslatma_tana {
+    position: relative; /* Konteynerni nisbiy pozitsiyaga qo'yamiz */
+    padding: 15px 15px 15px 35px;
+    }
+
+.Eslatma_tana::before {
+    content: "i";
+    position: absolute;
+    top: 17px; /* Belgilangan joylashuv */
+    left: 10px; /* Chapdan joylashuv */
+    right: 10px; /* O'ngdan joylashuv */
+    background-color: var(--note-theme);
+    color: white;
+    font-weight: bold;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+}
+
+.Eslatma_tana > p{
+  margin: 0;
+  padding: 0;
 }
