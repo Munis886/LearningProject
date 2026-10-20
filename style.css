@@ -1,7 +1,10 @@
+/* boshi */
+
 body,div,ul,li,h1,h2{
     margin: 0;
     padding: 0;
 }
+/* sayt sarlavhasi */
 #bosh_qism {
     background-color: #ffa089;
     padding: 5px 0;
@@ -12,6 +15,8 @@ body,div,ul,li,h1,h2{
     width: 80%;
     margin: 0 auto;
 }
+
+/* menyu */
 
 #menyu {
     background-color: #ff7f50;
@@ -55,7 +60,6 @@ body,div,ul,li,h1,h2{
 .top {
     grid-column: 1 / 3;
     height: 10%;
-    
 }
 
 .top p {
