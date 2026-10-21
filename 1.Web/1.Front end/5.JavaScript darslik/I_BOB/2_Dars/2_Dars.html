@@ -1201,7 +1201,7 @@
                 <p>
                     Saqlagan faylni ochamiz… Ochilgan zahoti bizga quyidagi oyna ochiladi.
                 </p>
-                <img src="./2.oyna.png" alt="oyna">
+                <img src="./2.oyna.png" alt="oyna"> <br>
 
                 <input class="p" type="button" value="Sahifani oching" onclick="var ism=prompt('Salom birodar ismingiz nima', 'yozing'); alert('Xush kelibsiz Hurmatli ' +ism);">
                 
@@ -1211,7 +1211,7 @@
                 </p>
 
                 <img src="./3.oyna.png" alt="oyna">
-                
+
                 <p class="p">*** *** ************************************</p>
 
                 <p class="p">
@@ -1243,7 +1243,7 @@
                 </pre>
 
                 <script type="text/javascript">
-                    function savol() {
+                    function savol1() {
                     var ism=prompt("Salom birodar ismingiz nima", "yozing");
                     alert("Xush kelibsiz Hurmatli " + ism);
                     }
@@ -1253,7 +1253,7 @@
                     Sahifamizda bitta tugma turibdi. Ana shunga sichqoncha bilan bosamiz. 
                 </p>
                 
-                <input type="button" value="Bu yerga bosing" onclick="savol()" />
+                <input type="button" value="Bu yerga bosing" onclick="savol1()" />
                 
                 <p>
                     Mana bunday oyna ochiladi 
@@ -1350,7 +1350,8 @@
                         &lt;script type="text/javascript"&gt;
                             function sorov() {
                                 var ism = prompt("Salom birodar ismingiz nima", "yozing");
-                                document.<a href="/1.Web/1.Front end/3.Js/8.Hujjat obyekt modeli/8.4.Elementni ID orqali tanlash/8.4.Elementni ID orqali tanlash.html">getElementById</a>("natija").innerHTML = "Xush kelibsiz Muhtaram janob " + ism;
+                                document.
+                                <a href="/1.Web/1.Front end/3.Js/8.Hujjat obyekt modeli/8.4.Elementni ID orqali tanlash/8.4.Elementni ID orqali tanlash.html">getElementById</a>("natija").<a href="#" title="bu JavaScript-da HTML elementining ichidagi matn, teglarni yoki boshqa qismni o'qish hamda uni o'zgartirish (yangi elementlar qo'shish) uchun ishlatiladigan xususiyat (property)">innerHTML</a> = "Xush kelibsiz Muhtaram janob " + ism;
                                 }    
                         &lt;/script&gt;
 
@@ -1361,7 +1362,7 @@
                 <script type="text/javascript">
                     function sorov() {
                         var ism = prompt("Salom birodar ismingiz nima", "yozing");
-                        document.getElementById("natija").innerHTML = "Xush kelibsiz Muhtaram janob " + ism;
+                        document.getElementById("natija").a = "Xush kelibsiz Muhtaram janob " + ism;
                         }    
                 </script>
 
