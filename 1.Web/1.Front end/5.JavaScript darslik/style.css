@@ -386,7 +386,7 @@ pre {
 .sarlavha ul:hover {
     background-color: var(--background-information);
     color: whitesmoke;
-    transition: 0.6s;
+    transition: 0.4s;
     
 }
 
