@@ -1161,7 +1161,7 @@
                     &lt;/script&gt;
 
                     Sizga qaysi ovqat yoqadi:
-                    &lt;input type=&quot;text&quot; size=&quot;25&quot; value=&quot; &quot; name=&quot;ovqat&quot;&gt;
+                    &lt;input type=&quot;text&quot; size=&quot;25&quot; value=&quot; &quot; id=&quot;ovqat&quot;&gt;
                     &lt;input type=&quot;button&quot; value=&quot;javob berish&quot; onclick=&quot;javob()&quot;&gt;
 
                     &lt;/body&gt;
@@ -1174,15 +1174,15 @@
                 </p>
 
                 <script type="text/javascript">
-                    function javob() {
-                        alert("Men uchun eng mazali taom bu " + ovqat.value);
+                    function javob1() {
+                        alert("Men uchun eng mazali taom bu " + document.getElementById("ovqat1").value);
                     }
                 </script>
 
                 <p class="border p">
                     Sizga qaysi ovqat yoqadi:
-                    <input type="text" size="25" value=" " name="ovqat">
-                    <input type="button" value="javob berish" onclick="javob()">
+                    <input type="text" size="25" value=" " id="ovqat1">
+                    <input type="button" value="javob berish" onclick="javob1()">
                 </p>
 
                 <hr class="hr">
@@ -1206,8 +1206,8 @@
                     }
                     &lt;/script&gt;
 
-                    Sizga qaysi ovqat yoqadi: &lt;input type=&quot;text&quot; size=&quot;25&quot; name=&quot;ovqat&quot;&gt;&lt;p&gt;
-                    Nima uchun: Chunki &lt;input type=&quot;text&quot; size=&quot;30&quot; name=&quot;sabab&quot;&gt; &lt;p&gt;
+                    Sizga qaysi ovqat yoqadi: &lt;input type=&quot;text&quot; size=&quot;25&quot; id=&quot;ovqat&quot;&gt;&lt;p&gt;
+                    Nima uchun: Chunki &lt;input type=&quot;text&quot; size=&quot;30&quot; id=&quot;sabab&quot;&gt; &lt;p&gt;
                     &lt;input type=&quot;button&quot; value=&quot;Javob berish&quot; onclick=&quot;javob()&quot;&gt;
 
                     &lt;/body&gt;
@@ -1220,17 +1220,17 @@
 
                 <script type="text/javascript">
                     function javob_sabab() {
-                        alert("Men uchun eng mazali taom bu " + ovqat2.value);
-                        alert("Chunki bu taom " + sabab.value);
+                        alert("Men uchun eng mazali taom bu " + document.getElementById("ovqat2").value);
+                        alert("Chunki bu taom " + document.getElementById("sabab").value);
                     }
                 </script>
 
                 <p class="border p">
                     Sizga qaysi ovqat yoqadi:
-                    <input type="text" size="25" name="ovqat2">
+                    <input type="text" size="25" id="ovqat2">
                     <br><br>
                     Nima uchun: Chunki
-                    <input type="text" size="30" name="sabab">
+                    <input type="text" size="30" id="sabab">
                     <br><br>
                     <input type="button" value="Javob berish" onclick="javob_sabab()">
                 </p>
@@ -1257,8 +1257,8 @@
                     }
                     &lt;/script&gt;
 
-                    Sizga qaysi ovqat yoqadi: &lt;input type=&quot;text&quot; size=&quot;25&quot; name=&quot;ovqat&quot;&gt;&lt;p&gt;
-                    Nima uchun: Chunki &lt;input type=&quot;text&quot; size=&quot;30&quot; name=&quot;sabab&quot;&gt; &lt;p&gt;
+                    Sizga qaysi ovqat yoqadi: &lt;input type=&quot;text&quot; size=&quot;25&quot; id=&quot;ovqat&quot;&gt;&lt;p&gt;
+                    Nima uchun: Chunki &lt;input type=&quot;text&quot; size=&quot;30&quot; id=&quot;sabab&quot;&gt; &lt;p&gt;
                     &lt;input type=&quot;button&quot; value=&quot;Javob berish&quot; onclick=&quot;javob()&quot;&gt;
 
                     &lt;/body&gt;
@@ -1282,10 +1282,10 @@
 
                 <p class="border p">
                     Sizga qaysi ovqat yoqadi:
-                    <input type="text" size="25" name="ovqat3">
+                    <input type="text" size="25" id="ovqat3">
                     <br><br>
                     Nima uchun: Chunki
-                    <input type="text" size="30" name="sabab3">
+                    <input type="text" size="30" id="sabab3">
                     <br><br>
                     <input type="button" value="Javob berish" onclick="javob_yoz()">
                 </p>
