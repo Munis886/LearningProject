@@ -35,7 +35,10 @@ body {
     width: 100%;
     margin: 0 auto;
     font-size: 17px;
-    background-color: #161942;
+    background: hsla(270, 55%, 42%, 1);
+    background: -moz-linear-gradient(90deg, hsla(270, 55%, 42%, 1) 0%, hsla(255, 55%, 17%, 1) 100%);
+    background: -webkit-linear-gradient(90deg, hsla(270, 55%, 42%, 1) 0%, hsla(255, 55%, 17%, 1) 100%);
+    background: linear-gradient(90deg, hsla(270, 55%, 42%, 1) 0%, hsla(255, 55%, 17%, 1) 100%);
     overflow-y: auto;
     height: 100vh;
     color: #d4d077;
@@ -85,7 +88,7 @@ body {
     width: auto; /* Kenglikni avtomatik qilish */
     margin: 10px 0;
     border-radius: 0 10px 10px 0;
-    background-color: #0e335e;
+    background-color: #35205f;
     padding: 5px 25px;
     text-align: center;
     box-shadow: 0 0 9px #000333; 
