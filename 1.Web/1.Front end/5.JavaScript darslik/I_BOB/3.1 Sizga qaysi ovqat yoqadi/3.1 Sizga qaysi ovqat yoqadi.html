@@ -1123,13 +1123,13 @@
             <div class="sarlavha">
                 <ul>
                     <li class="li_1">
-                        <a href="/1.Web/1.Front end/5.JavaScript darslik/I_BOB/3-dars/3-dars.html">⟨</a>
+                        <a href="/1.Web/1.Front end/5.JavaScript darslik/I_BOB/2.1 Funksiya haqida ikki ogiz gap/2.1 Funksiya haqida ikki ogiz gap.html">⟨</a>
                     </li>
                     <li class="li_2">
-                       Dars_3.1 Sizga qaysi ovqat yoqadi
+                       Dars_3 Sizga qaysi ovqat yoqadi
                     </li>
                     <li class="li_3">
-                        <a href="#">⟩</a>
+                        <a href="/1.Web/1.Front end/5.JavaScript darslik/I_BOB/4.1 Matematik hisob-kitoblar/4.1 Matematik hisob-kitoblar.html">⟩</a>
                     </li>
                 </ul>
             </div>
@@ -1142,7 +1142,7 @@
 
                 <p>
                     Web saytimizga yozadigan <b>forma</b> yaratib userdan savol so´raymiz… keyin esa unga javob
-                    qaytaramiz… Bunda user kiritgan yozuvni o´qish uchun <b>.value</b> xossasidan foydalanamiz.
+                    qaytaramiz… Bunda user kiritgan yozuvni o´qish uchun <b><a href="#" title="— bu JavaScript-da foydalanuvchi input maydoniga (<input> tegiga) kiritgan matn yoki qiymatni o'qib olish yoki uni o'zgartirish uchun ishlatiladigan muhim xususiyat (property).">.value</a></b> xossasidan foydalanamiz.
                     Mana tayyor kod. Bloknot (yoki boshqa text redaktori, masalan WordPad)ni ochib yozing va
                     <b>Save as</b> qilib <i>faylnomi.html</i> deb nomlang.
                 </p>
@@ -1156,7 +1156,7 @@
 
                     &lt;script type=&quot;text/javascript&quot;&gt;
                     function javob() {
-                    &nbsp;&nbsp;&nbsp; alert(&quot;Men uchun eng mazali taom bu &quot; + ovqat.value)
+                    &nbsp;&nbsp;&nbsp; alert(&quot;Men uchun eng mazali taom bu &quot; + document.getElementById(&quot;ovqat&quot;).value)
                     }
                     &lt;/script&gt;
 
@@ -1201,8 +1201,8 @@
 
                     &lt;script type=&quot;text/javascript&quot;&gt;
                     function javob() {
-                    &nbsp;&nbsp;&nbsp; alert(&quot;Men uchun eng mazali taom bu &quot; + ovqat.value);
-                    &nbsp;&nbsp;&nbsp; alert(&quot;Chunki bu taom &quot; + sabab.value)
+                    &nbsp;&nbsp;&nbsp; alert(&quot;Men uchun eng mazali taom bu &quot; + document.getElementById(&quot;ovqat&quot;).value);
+                    &nbsp;&nbsp;&nbsp; alert(&quot;Chunki bu taom &quot; + document.getElementById(&quot;sabab&quot;).value)
                     }
                     &lt;/script&gt;
 
@@ -1252,8 +1252,8 @@
 
                     &lt;script type=&quot;text/javascript&quot;&gt;
                     function javob() {
-                    &nbsp;&nbsp;&nbsp; document.write(&quot;Men uchun eng mazali taom bu &quot; + ovqat.value +
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &quot; Chunki bu taom &quot; + sabab.value);
+                    &nbsp;&nbsp;&nbsp; document.write(&quot;Men uchun eng mazali taom bu &quot; + document.getElementById(&quot;ovqat&quot;).value +
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &quot; Chunki bu taom &quot; + document.getElementById(&quot;sabab&quot;).value);
                     }
                     &lt;/script&gt;
 
@@ -1275,8 +1275,8 @@
                 <script type="text/javascript">
                     function javob_yoz() {
                         document.getElementById("natija3").innerHTML =
-                            "Men uchun eng mazali taom bu " + ovqat3.value +
-                            " Chunki bu taom " + sabab3.value;
+                            "Men uchun eng mazali taom bu " + document.getElementById("ovqat3").value +
+                            " Chunki bu taom " + document.getElementById("sabab3").value;
                     }
                 </script>
 
