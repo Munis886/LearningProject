@@ -8,14 +8,14 @@
     <link rel="stylesheet" href="/1.Web/3.Web API'lari/style.css">
     <link rel="stylesheet" href="/1.Web/3.Web API'lari/style/1.bosh.css">
     <link rel="stylesheet" href="/1.Web/3.Web API'lari/style/2.menu.css">
-    <title>Hujjat obyekti modeli (DOM)</title>
+    <title>Window</title>
     <script src="/1.Web/3.Web API'lari/Js.js"></script>
 </head>
 
 <body>
     <div id="bosh">
         <div class="bosh">
-            <h1>Document</h1>
+            <h1>Window</h1>
         </div>
     </div>
 
@@ -28,7 +28,8 @@
                 <li><a href="/1.Web/1.Front end/1.HTML/1.HTML.html">HTML</a></li>
                 <li><a href="/1.Web/1.Front end/2.Css/Css.html">CSS</a></li>
                 <li><a href="/1.Web/1.Front end/3.Js/Javascript.html">JAVASCRIPT</a></li>
-                <li><a href="/2.Backend/1.Node js/Node js.html">NODE JS</a></li>
+                <li><a href="/1.Web/3.Web API'lari/Web API'lari.html">Web API'lari</a></li>
+
             </ul>        
         </div>
     </div>
@@ -39,7 +40,7 @@
                     <li>⇛</li>
                     <li><a href="/1.Web/3.Web API'lari/Web API'lari.html">Web API'lari</a></li>
                     <li>⇛</li>
-                    <li><a href="../9.Document/9.Document.html">Document</a></li>
+                    <li><a href="#">Window</a></li>
                 </ul>
             </div>
         </div>
@@ -757,27 +758,33 @@
                         <a href="javascript:history.back()">⟨</a>
                     </li>
                     <li class="li_2">
-                        Document
+                        Window
                     </li>
                 </ul>
             </div>
 
             <div id="text" class="qisqa">
                 <p>
-                    Hujjat interfeysi brauzerda yuklangan har qanday veb-sahifani ifodalaydi va veb-sahifa 
-                    tarkibiga kirish nuqtasi bo'lib xizmat qiladi, ya'ni <a href="/1.Web/3.Web API'lari/1.Texnik xususiyatlar/D/1.Document Object Model (DOM)/1.Document Object Model (DOM).html">DOM daraxti</a>.
+                    Window interfeysi DOM hujjatini o'z ichiga olgan oynani ifodalaydi; hujjat xususiyati ushbu oynada yuklangan DOM hujjatiga ishora qiladi.    
                 </p>
                 
                 <p>
-                    DOM daraxti boshqa elementlar qatorida 
-                    <a href="/1.Web/1.HTML/Elementlar/1.Html elementlar/6.body.html">&lt;body&gt;</a> va &lt;table&gt; 
-                    kabi elementlarni o'z ichiga oladi. 
-                    U sahifaning URL manzilini qanday olish va hujjatda yangi elementlarni yaratish kabi 
-                    global miqyosda hujjatning funksionalligini ta'minlaydi.
+                    Berilgan hujjat uchun oynani document.defaultView xususiyati yordamida olish mumkin.
                 </p>
                 
+                <p>
+                    Skript ishlayotgan oynani ifodalovchi global o'zgaruvchi, window, JavaScript kodiga duchor bo'ladi.
+                </p>
+
+                <p>
+                    Window interfeysi foydalanuvchi interfeysi oynasi tushunchasi bilan bevosita bog'liq bo'lmagan turli xil funktsiyalar, nomlar, obyektlar va konstruktorlarga ega. Biroq, Window interfeysi global miqyosda mavjud bo'lishi kerak bo'lgan ushbu elementlarni kiritish uchun mos joydir. Ularning aksariyati JavaScript Reference va DOM Reference da hujjatlashtirilgan.
+                </p>
+
+                <p>
+                    Tabli brauzerda har bir yorliq o'zining Window obyekti bilan ifodalanadi; berilgan yorliq ichida ishlaydigan JavaScript kodi tomonidan ko'riladigan global oyna har doim kod ishlayotgan yorliqni ifodalaydi. Shunga qaramay, hatto yorliqli brauzerda ham ba'zi xususiyatlar va usullar, masalan, resizeTo() va innerHeight, yorliqni o'z ichiga olgan umumiy oynaga qo'llaniladi. Odatda, yorliqqa tegishli bo'lmagan har qanday narsa oynaga tegishli bo'ladi.
+                </p>
                 <svg viewBox="-1 -1 650 42" preserveAspectRatio="xMinYMin meet">
-                    <a href="/en-US/docs/Web/API/EventTarget">
+                    <a href="#">
                         <rect x="0" y="0" width="88" height="25" fill="#fff" stroke="#D4DDE4" stroke-width="2px"></rect>
                         <text x="44" y="16" font-size="10px" fill="#4D4E53" text-anchor="middle">
                             EventTarget
@@ -785,48 +792,32 @@
                     </a>
                     <line x1="88" y1="14" x2="118" y2="14" stroke="#D4DDE4"></line>
                     <polyline points="88,14 98,9 98,19 88,14" stroke="#D4DDE4" fill="#fff"></polyline>
-                    <a href="/en-US/docs/Web/API/Node">
+                    <a href="/1.Web/3.Web API'lari/2.Interfeyslar/W/49.Window/49.Window.html">
                         <rect x="118" y="0" width="75" height="25" fill="#fff" stroke="#D4DDE4" stroke-width="2px"></rect>
                         <text x="155.5" y="16" font-size="10px" fill="#4D4E53" text-anchor="middle">
-                            Node
-                        </text>
-                    </a>
-                    <line x1="193" y1="14" x2="223" y2="14" stroke="#D4DDE4"></line>
-                    <polyline points="193,14 203,9 203,19 193,14" stroke="#D4DDE4" fill="#fff"></polyline>
-                    <a href="/en-US/docs/Web/API/Document" aria-current="page">
-                        <rect x="223" y="0" width="75" height="25" fill="#F4F7F8" stroke="#D4DDE4" stroke-width="2px"></rect>
-                        <text x="260.5" y="16" font-size="10px" fill="#4D4E53" text-anchor="middle">
-                            Document
+                            Window
                         </text>
                     </a>
                 </svg>
 
+                <h2>
+                    Instance xususiyatlari
+                </h2>
+
                 <p>
-                    Hujjat interfeysi har qanday hujjat turi uchun umumiy xususiyatlar va usullarni tavsiflaydi. Hujjat turiga (masalan, HTML, XML, SVG, …) qarab, kattaroq API mavjud: "text/html" kontent turi bilan taqdim etiladigan HTML hujjatlari ham HTMLDocument interfeysini amalga oshiradi, XML va SVG hujjatlari esa XMLDocument interfeysini amalga oshiradi.
+                    Bu interfeys EventTarget interfeysidan xususiyatlarni meros qilib oladi.
                 </p>
 
-                <h2 class="h2">
-                    Konstruktor
-                </h2>
-                <dl>
-                    <dt><a href="/1.Web/3.Web API'lari/2.Interfeyslar/D/9.Document/1.Konstruktor/1.Document().html">Document()</a></dt>
-                    <dd>Yangi Hujjat obyektini yaratadi.</dd>
-                </dl>
-
-                <h2 class="h2">
-                    Instans usullari
-                </h2>
-
                 <p>
-                    Bu interfeys shuningdek, Node va EventTarget interfeyslaridan meros bo'lib oladi.
+                    E'tibor bering, ob'ektlar bo'lgan xususiyatlar (masalan, o'rnatilgan elementlarning prototipini bekor qilish uchun) quyida alohida bo'limda keltirilgan.
                 </p>
 
                 <dl>
                     <dt>
-                        <a href="./4.Instans usullari/20.getElementById().html">Document.getElementById()</a>
+                        <a href="./4.Instans usullari/20.getElementById().html">Window.caches</a>
                     </dt>
                     <dd>
-                        Aniqlangan elementga obyekt havolasini qaytaradi.
+                        Joriy kontekst bilan bog'liq CacheStorage obyektini qaytaradi. Ushbu obyekt oflayn foydalanish uchun aktivlarni saqlash va so'rovlarga maxsus javoblar yaratish kabi funksiyalarni yoqadi.
                     </dd>
                 </dl>
 

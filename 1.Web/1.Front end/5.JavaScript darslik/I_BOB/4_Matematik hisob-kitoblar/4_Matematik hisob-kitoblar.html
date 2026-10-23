@@ -1102,15 +1102,15 @@
 
                     &lt;script type=&quot;text/javascript&quot;&gt;
                     function yuza() {
-                    &nbsp;&nbsp;&nbsp; var a=tomon1.value;
-                    &nbsp;&nbsp;&nbsp; var b=tomon2.value;
-                    &nbsp;&nbsp;&nbsp; alert(a*b)
+                    &nbsp;&nbsp;&nbsp; var a = parseInt(document.getElementById('tomon1').value);
+                    &nbsp;&nbsp;&nbsp; var b = parseInt(document.getElementById('tomon2').value);
+                    &nbsp;&nbsp;&nbsp; alert(a * b);
                     }
                     &lt;/script&gt;
 
                     To'g'ri to'rtburchak yuzasini topish &lt;p&gt;
-                    Eni: &lt;input type=&quot;text&quot; size=&quot;20&quot; name=&quot;tomon1&quot;&gt;&lt;p&gt;
-                    Bo'yi: &lt;input type=&quot;text&quot; size=&quot;20&quot; name=&quot;tomon2&quot;&gt;&lt;p&gt;
+                    Eni: &lt;input type=&quot;text&quot; size=&quot;20&quot; id=&quot;tomon1&quot;&gt;&lt;p&gt;
+                    Bo'yi: &lt;input type=&quot;text&quot; size=&quot;20&quot; id=&quot;tomon2&quot;&gt;&lt;p&gt;
                     &lt;input type=&quot;button&quot; value=&quot;Hisoblash&quot; onclick=&quot;yuza()&quot;&gt;
 
                     &lt;/body&gt;
@@ -1123,8 +1123,8 @@
 
                 <script type="text/javascript">
                     function yuza() {
-                        var a = parseInt(document.getElementById('en').value);
-                        var b = parseInt(document.getElementById('boy').value);
+                        var a = parseInt(document.getElementById('tomon1').value);
+                        var b = parseInt(document.getElementById('tomon2').value);
                         alert(a * b);
                     }
                 </script>
@@ -1132,9 +1132,9 @@
                 <p class="border p">
                     To'g'ri to'rtburchak yuzasini topish
                     <br><br>
-                    Eni: <input type="text" size="20" id="en">
+                    Eni: <input type="text" size="20" id="tomon1">
                     <br><br>
-                    Bo'yi: <input type="text" size="20" id="boy">
+                    Bo'yi: <input type="text" size="20" id="tomon2">
                     <br><br>
                     <input type="button" value="Hisoblash" onclick="yuza()">
                 </p>
