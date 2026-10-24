@@ -47,6 +47,14 @@ body {
     display: inline-block;
 }
 
+.toggle-btn {
+    background-color: dimgray;
+    color: #fff;
+    border: none;
+    padding: 4px 10px;
+    cursor: pointer;
+}
+
 
 
 body {
