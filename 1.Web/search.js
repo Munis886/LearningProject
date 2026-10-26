@@ -6,13 +6,16 @@
   const style = document.createElement("style");
   style.textContent = `
     #project-search-widget {
-      position: fixed;
+      position: absolute;
       top: var(--project-search-top, 6px);
       right: 16px;
       z-index: 3000;
       width: min(360px, calc(100vw - 32px));
       color: #1f2937;
       font: 14px/1.45 Arial, sans-serif;
+    }
+    #project-search-widget.is-pinned {
+      position: fixed;
     }
     #project-search-form {
       display: flex;
@@ -110,11 +113,8 @@
     }
     @media (max-width: 760px) {
       #project-search-widget {
-        position: relative;
-        top: auto;
-        right: auto;
         width: min(420px, calc(100% - 24px));
-        margin: 8px 12px 10px auto;
+        right: 12px;
       }
     }
   `;
@@ -155,13 +155,31 @@
 
   widget.append(form, status, results);
   const host = document.getElementById("menyu");
-  if (host) {
-    widget.style.setProperty(
-      "--project-search-top",
-      `${Math.max(6, host.getBoundingClientRect().top + 6)}px`,
-    );
+  document.body.append(widget);
+
+  function updateWidgetPosition() {
+    const hasPinnedPosition = (element) => {
+      if (!element) {
+        return false;
+      }
+      const position = window.getComputedStyle(element).position;
+      return position === "sticky" || position === "fixed";
+    };
+    const headers = document.querySelectorAll("#bosh, .bosh");
+    const isPinnedHeader = Array.from(headers).some(hasPinnedPosition);
+    const isPinned = isPinnedHeader && hasPinnedPosition(host);
+
+    widget.classList.toggle("is-pinned", isPinned);
+    const top = host
+      ? host.getBoundingClientRect().top + (isPinned ? 0 : window.scrollY) + 6
+      : window.scrollY + 6;
+    widget.style.setProperty("--project-search-top", `${Math.max(6, top)}px`);
   }
-  (host || document.body).append(widget);
+
+  updateWidgetPosition();
+  window.addEventListener("scroll", updateWidgetPosition, { passive: true });
+  window.addEventListener("resize", updateWidgetPosition);
+  window.addEventListener("load", updateWidgetPosition);
 
   let indexPromise;
   let debounceTimer;
