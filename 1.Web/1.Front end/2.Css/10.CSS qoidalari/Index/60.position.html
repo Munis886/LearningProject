@@ -1,15 +1,14 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="uz">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="keywords" content="Css">
-    <meta name="description" content="Bu yerda Css haqida batafsil ma'lumotlar">
-    <title>position</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords" content="CSS, position, joylashuv">
+    <meta name="description" content="CSS position xususiyati va uning qiymatlari">
+    <title>position CSS xususiyati</title>
     <link rel="stylesheet" href="../../style.css">
     <link rel="stylesheet" href="style.css">
     <script src="../../Js.js"></script>
-    
 </head>
 <body>
     <div id="bosh">
@@ -18,485 +17,92 @@
         </div>
     </div>
     <div id="menyu">
-    <div class="menyu">
-        <button id="toggle-btn" onclick="toggleMenu()">Menu</button>
-        <ul>
-            <li><a href="/index.html">HOME</a></li>
-            <li><a href="/1.Web/1.Front end/1.Front_end.html">FRONT END</a></li>
-            <li><a href="/1.Web/1.Front end/1.HTML/1.HTML.html">HTML</a></li>
-            <li><a href="/1.Web/1.Front end/2.Css/Css.html">CSS</a></li>
-            <li><a href="/1.Web/1.Front end/3.Js/Javascript.html">JAVASCRIPT</a></li>
-        </ul>
-    </div>
-    
-    <div class="w3-sidebar w3collapse" >
-       
-    </div>
-    
-    <div style="display: flex;">
-        <script>
-            subtopnav_intoview();
-        </script>
-        <div id="menu" class="menu">
-            <h3>CSS</h3>
+        <div class="menyu">
+            <button id="toggle-btn" onclick="toggleMenu()">Menu</button>
             <ul>
-                <li><a href="/1.Web/1.Front end/2.Css/Css.html">CSS HOME </a></li>
-                <li>
-                    <a href="#" onclick="toggleSubMenu('sub-menu-1')">
-                        Daraxt diagrammasi
-                    </a>
-                    <ul id="sub-menu-1" class="sub-menu">
-                        <li><a href="/1.Web/1.Front end/2.Css/1.Daraxt diagrammasi/1.Matnni daraxt diagrammasida ko'rsatish.html">Matnni daraxt diagrammasida ko'rsatish</a></li>
-                        <li><a href="/1.Web/1.Front end/2.Css/1.Daraxt diagrammasi/2.Daraxt diagrammasining tarkibi.html">Daraxt diagrammasining tarkibi</a></li>
-                        <li><a href="/1.Web/1.Front end/2.Css/1.Daraxt diagrammasi/3.Daraxt diagrammalaridan qutilarga.html">Daraxt diagrammalaridan qutilarga</a></li>
-                    </ul>
-                </li>
-                <li>
-                    <a href="#" onclick="toggleSubMenu('sub-menu-2')">
-                        "HTML"ga uslub berish
-                    </a>
-                    <ul id="sub-menu-2" class="sub-menu">
-                        <li><a href="/1.Web/1.Front end/2.Css/2.Uslub berish/1.HTMLga to‘g‘ridan to‘g‘ri uslub berish.html">HTMLga to‘g‘ridan to‘g‘ri uslub berish</a></li>
-                        <li><a href="/1.Web/1.Front end/2.Css/2.Uslub berish/2.HTMLga alohida uslub berish.html">HTMLga alohida uslub berish</a></li>
-                    </ul>
-                </li>
-                <li><a href="/1.Web/1.Front end/2.Css/3.CSS sintaksisi/3.CSS sintaksisi.html">"CSS" sintaksisi</a></li>
-                <li>
-                    <a href="#" onclick="toggleSubMenu('sub-menu-3')">Selektorlar</a>
-                    <ul id="sub-menu-3" class="sub-menu">
-                        <li><a href="/1.Web/1.Front end/2.Css/4.Selektorlar/1.Asosiy CSS Selektorlari/1.Asosiy CSS Selektorlari.html">Asosiy CSS Selektorlari</a></li>
-                        <li><a href="/1.Web/1.Front end/2.Css/4.Selektorlar/1.Selektor Turlari.html">Selektorlar turlari</a></li>
-                        <li><a href="/1.Web/1.Front end/2.Css/4.Selektorlar/2.class va id selektorlari.html">Class va id selektorlari</a></li>
-                        <li><a href="/1.Web/1.Front end/2.Css/4.Selektorlar/3.Selektorlarni birlashtirish.html">Selektorlarni birlashtirish</a></li>
-                        <li><a href="/1.Web/1.Front end/2.Css/4.Selektorlar/4.CSS Selektorlar.html">CSS Selektorlar</a></li>
-                    </ul>
-                </li>
-                <li>
-                    <a href="#" onclick="toggleSubMenu('sub-menu-4')">Takrorlash</a>
-                    <ul id="sub-menu-4" class="sub-menu">
-                        <li><a href="/1.Web/1.Front end/2.Css/5.Takrorkash/Termin so‘zlarni takrorlash.html">Termin so‘zlarni takrorlash</a></li>
-                        <li><a href="/1.Web/1.Front end/2.Css/5.Takrorkash/Selektorlarni takrorlash.html">Selektorlarni takrorlash</a></li>
-                    </ul>
-                </li>
-                <li>
-                    <a href="/1.Web/1.Front end/2.Css/6.CSSda kaskad nima uchun juda muhim/6.CSSda kaskad nima uchun juda muhim.html">"CSS"da "kaskad" nima uchun juda muhim?</a>
-                </li>
-                <li>
-                    <a href="/1.Web/1.Front end/2.Css/7.O‘lchov birliklari/7.O‘lchov birliklari.html">O‘lchov birliklari</a>
-                </li>
-                <li>
-                <li>
-                    <a href="/1.Web/1.Front end/2.Css/8.Qutilar/8.Qutilar.html">Qutilar</a>
-                </li>
-                <li>
-                    <a href="/1.Web/1.Front end/2.Css/9.Foizlar/9.Foizlar.html">Foizlar</a>
-                </li>
-                <li>
-                    <a href="/1.Web/1.Front end/2.Css/10.CSS qoidalari/CSS qoidalari.html">CSS qoidalari</a>
-                </li>
-                <li>
-                    <a href="/1.Web/1.Front end/2.Css/11.CSS uslublarni HTMLdan ajratish/11.CSS uslublarni HTMLdan ajratish.html">CSS uslublarni HTMLdan ajratish</a>
-                </li>
-                <li>
-                    <a href="/1.Web/1.Front end/2.Css/12.Ranglardan foydalanish/12.Ranglardan foydalanish.html">Ranglardan foydalanish</a>
-                </li>
-                <li>
-                    <a href="/1.Web/1.Front end/2.Css/13.Shriftlar/13.Shriftlar.html">Shriftlar</a>
-                </li>
-                <li>
-                    <a href="/1.Web/1.Front end/2.Css/14.CSSda Flexbox xossasi/14.CSSda Flexbox xossasi.html">"CSS"da "Flexbox" xossasi</a>
-                </li>
+                <li><a href="/index.html">HOME</a></li>
+                <li><a href="/1.Web/1.Front end/1.Front_end.html">FRONT END</a></li>
+                <li><a href="/1.Web/1.Front end/1.HTML/1.HTML.html">HTML</a></li>
+                <li><a href="/1.Web/1.Front end/2.Css/Css.html">CSS</a></li>
             </ul>
-        </div> 
-        
-        <div id="container">
-            <div class="sarlavha">
+        </div>
+        <div class="body">
+            <div id="menu" class="menu">
+                <h3>CSS</h3>
                 <ul>
-                    <li class="li_1">
-                        <a href="../CSS qoidalari.html">⟨</a>
-                    </li>
-                    <li class="li_2">
-                        position CSS xususiyati
-                    </li>
+                    <li><a href="/1.Web/1.Front end/2.Css/Css.html">CSS HOME</a></li>
+                    <li><a href="/1.Web/1.Front end/2.Css/4.Selektorlar/4.CSS Selektorlar.html">Selektorlar</a></li>
+                    <li><a href="../CSS qoidalari.html">CSS qoidalari</a></li>
+                    <li><a href="/1.Web/1.Front end/2.Css/11.CSS uslublarni HTMLdan ajratish/11.CSS uslublarni HTMLdan ajratish.html">CSS uslublarini HTMLdan ajratish</a></li>
                 </ul>
             </div>
-            
-            <div class="text">
-                  
-                <p>
-                    CSS position xususiyati elementning hujjatda qanday joylashishini belgilaydi. Joylashtirilgan elementlarning oxirgi joylashuvini aniqlash uchun yuqori, 
-                    o'ng, pastki va chap jismoniy xususiyatlar hamda inset-block-start, inset-block-end, inset-inline-start va inset-inline-end oqimga oid mantiqiy 
-                    xususiyatlardan foydalanish mumkin.
-                </p>
-                
-                <style>
-                    a {
-                        text-decoration: none;
-                    }
-                    #sinab_koring {
-                        font-weight: 500;
-                    }
-                </style>
-                <section>
-                    <h2 id="sinab_koring">
-                        <a href="#Sinab ko'ring">Sinab ko'ring</a>
-                    </h2>
-                </section>
-                
-                <table class="html">
-                    <tr>
-                        <th>Element</th>
-                        <th>Display</th>
-                    </tr>
-                    <tr>
-                        <style>
-                            .keywords {
-                                color: #f2f2f2;
-                                background-color: #343434;
-                                padding: 6px 8px;
-                                margin: 4px 8px;
-                                border-radius: 4px;
-                            }
-                            .keywords:hover {
-                                border: 1px solid #fff;
-                            }
-                        </style>
-                        <td class="pre">
-                            <label class="css-option">
-                                <code>position: static;</code>
-                                <input type="radio" name="position" value="static" checked>
-                            </label>
-                            <label class="css-option">
-                                <code>
-                                    position: relative;
-                                        top: 40px;
-                                        left: 40px;
-                                </code>
-                                <input type="radio" name="position" value="static" checked>
-                            </label>
-                        </td>
-                        <style>
-                            #example-element {
-                                background-color: yellow;
-                                border: 3px solid red;
-                                z-index: 1;
-                            }
-                            .box + .box {
-                                margin-left: 10px;
-                            }
-                            .box {
-                                background-color: rgb(0 0 255 / 0.2);
-                                border: 3px solid blue;
-                                float: left;
-                                width: 65px;
-                                height: 65px;
-                            }
-
-                            .css-option {
-                                display: flex;
-                                align-items: center;
-                                padding: 8px 12px;
-                                margin-bottom: 8px;
-                                background-color: #1e1e1e; /* To'q mavzu foni */
-                                border: 1px solid #444;
-                                border-radius: 6px;
-                                cursor: pointer;
-                                color: #d4d4d4;
-                                font-family: Consolas, monospace;
-                                }
-
-                            /* Kursor olib borilganda */
-                            .css-option:hover {
-                            background-color: #2a2a2a;
-                            }
-                            /* Radio tugmani vizual moslashtirish */
-                            .css-option input[type="radio"] {
-                                margin-right: 12px;
-                                cursor: pointer;
-                            }
-                            /* Yacheyka tanlanganda uning o'zini ajratib ko'rsatish */
-                            .css-option:has(input:checked) {
-                                border-color: #3b82f6; /* Ko'k hoshiya */
-                                background-color: #1a2634; /* Och ko'k fon */
-                            }
-                            </style>
-                        <td>
-                            <p>
-                                Ushbu demoda siz sariq katakcha uchun pozitsiya xususiyatini boshqarishingiz mumkin.
-                            </p>
-                            <div class="box"></div>
-                            <div class="box" id="example-element" style="position: static;"></div>
-                            <div class="box"></div> <br><br><br>
-                            <p>
-                                Yopishqoq joylashuv effektini ko'rish uchun position: yopishqoq variantini tanlang va ushbu konteynerni aylantiring.
-                            </p>
-                            <p>
-                                Element konteyneri bilan birga konteynerning yuqori qismiga yetguncha (yoki yuqori qismida ko'rsatilgan ofsetga yetguncha) aylantiriladi va keyin aylantirishni to'xtatadi, shunda u ko'rinadigan bo'lib qoladi.
-                            </p>
-                            <p>
-                                Ushbu matnning qolgan qismi faqat konteyner toshib ketishini ta'minlash uchun taqdim etilgan, shunda siz uni aylantirishingiz va natijani ko'rishingiz mumkin.
-                            </p>
-                            <p>
-                                Galaktikaning g'arbiy spiral qo'lining modaga mos kelmaydigan uchining noma'lum orqa suvlarida, uzoqda, e'tiborga olinmagan kichik sariq quyosh joylashgan. Taxminan to'qson ikki million mil masofada bu orbitada mutlaqo ahamiyatsiz kichkina ko'k-yashil sayyora aylanib yuradi, uning maymunlardan kelib chiqqan hayot shakllari shunchalik hayratlanarli darajada ibtidoiyki, ular hali ham raqamli soatlarni juda yaxshi g'oya deb o'ylashadi.
-                            </p>
-                        </td>
-                    </tr>
-                    <tr>
-                        <style>
-                            .keywords {
-                                color: #f2f2f2;
-                                background-color: #343434;
-                                padding: 6px 8px;
-                                margin: 4px 8px;
-                                border-radius: 4px;
-                            }
-                            .keywords:hover {
-                                border: 1px solid #fff;
-                            }
-                        </style>
-                        <td class="pre">
-                            
-                        </td>
-                        <style>
-                            #example-element {
-                                background-color: yellow;
-                                border: 3px solid red;
-                                z-index: 1;
-                            }
-                            .box + .box {
-                                margin-left: 10px;
-                            }
-                            .box {
-                                background-color: rgb(0 0 255 / 0.2);
-                                border: 3px solid blue;
-                                float: left;
-                                width: 65px;
-                                height: 65px;
-                            }
-
-                            .css-option {
-                                display: flex;
-                                align-items: center;
-                                padding: 8px 12px;
-                                margin-bottom: 8px;
-                                background-color: #1e1e1e; /* To'q mavzu foni */
-                                border: 1px solid #444;
-                                border-radius: 6px;
-                                cursor: pointer;
-                                color: #d4d4d4;
-                                font-family: Consolas, monospace;
-                                }
-
-                            /* Kursor olib borilganda */
-                            .css-option:hover {
-                            background-color: #2a2a2a;
-                            }
-                            /* Radio tugmani vizual moslashtirish */
-                            .css-option input[type="radio"] {
-                                margin-right: 12px;
-                                cursor: pointer;
-                            }
-                            /* Yacheyka tanlanganda uning o'zini ajratib ko'rsatish */
-                            .css-option:has(input:checked) {
-                                border-color: #3b82f6; /* Ko'k hoshiya */
-                                background-color: #1a2634; /* Och ko'k fon */
-                            }
-                            </style>
-                        <td>
-                            <p>
-                                Ushbu demoda siz sariq katakcha uchun pozitsiya xususiyatini boshqarishingiz mumkin.
-                            </p>
-                            <div class="box"></div>
-                            <div class="box" id="example-element" style="position: static;"></div>
-                            <div class="box"></div> <br><br><br>
-                            <p>
-                                Yopishqoq joylashuv effektini ko'rish uchun position: yopishqoq variantini tanlang va ushbu konteynerni aylantiring.
-                            </p>
-                            <p>
-                                Element konteyneri bilan birga konteynerning yuqori qismiga yetguncha (yoki yuqori qismida ko'rsatilgan ofsetga yetguncha) aylantiriladi va keyin aylantirishni to'xtatadi, shunda u ko'rinadigan bo'lib qoladi.
-                            </p>
-                            <p>
-                                Ushbu matnning qolgan qismi faqat konteyner toshib ketishini ta'minlash uchun taqdim etilgan, shunda siz uni aylantirishingiz va natijani ko'rishingiz mumkin.
-                            </p>
-                            <p>
-                                Galaktikaning g'arbiy spiral qo'lining modaga mos kelmaydigan uchining noma'lum orqa suvlarida, uzoqda, e'tiborga olinmagan kichik sariq quyosh joylashgan. Taxminan to'qson ikki million mil masofada bu orbitada mutlaqo ahamiyatsiz kichkina ko'k-yashil sayyora aylanib yuradi, uning maymunlardan kelib chiqqan hayot shakllari shunchalik hayratlanarli darajada ibtidoiyki, ular hali ham raqamli soatlarni juda yaxshi g'oya deb o'ylashadi.
-                            </p>
-                        </td>
-                    </tr>
-                    <tr>
-
-                    </tr>
-                </table>
-                <style>
-                    #CSS {
-                        border-radius: 5px;
-                        background-color:darkgrey;
-                    }
-                    #CSS p {
-                        padding-bottom: 0;
-                        margin: 0;
-                    }
-                </style>
-                
-                <h2 style="font-variant:inherit;">
-                    Tarkibiy xususiyatlar
-                </h2>
-                <p>
-                    Bu xususiyat quyidagi CSS xususiyatlarining qisqartmasi hisoblanadi:
-                </p>
-                <ul>
-                    <li><a href="">overflow-x</a></li>
-                    <li><a href="">overflow-y</a></li>
-                </ul>
-
-                <h2>
-                    Sintaksis
-                </h2>
-
-                <div id="CSS" style=" margin: 10px auto; width: 80%;" >
-                    <p>CSS</p>
-                    <div style="background-color: #343434; margin: 0 auto; ">
-                        <p>
-                            /* Keyword values */ <br>
-                            overflow: visible; <br>
-                            overflow: hidden; <br>
-                            overflow: clip; <br>
-                            overflow: scroll; <br>
-                            overflow: auto; <br>
-                            overflow: hidden visible; <br><br>
-                            
-                            /* Global values */ <br>
-                            overflow: inherit; <br>
-                            overflow: initial; <br>
-                            overflow: revert; <br>
-                            overflow: revert-layer; <br>
-                            overflow: unset; <br>
-                        </p>
-                    </div>
+            <div id="container">
+                <div class="sarlavha">
+                    <ul>
+                        <li class="li_1"><a href="../CSS qoidalari.html">⟨</a></li>
+                        <li class="li_2">position CSS xususiyati</li>
+                    </ul>
                 </div>
-                <p>
-                    Overflow xususiyati bir yoki ikkita &lt;overflow&gt; 
-                    kalit so'z qiymati sifatida belgilanadi. Agar faqat 
-                    bitta kalit so'z ko'rsatilgan bo'lsa, overflow-x va 
-                    overflow-y bir xil qiymatga o'rnatiladi. Agar ikkita 
-                    kalit so'z ko'rsatilgan bo'lsa, birinchi qiymat gorizontal 
-                    yo'nalishdagi overflow-x uchun, ikkinchisi esa vertikal 
-                    yo'nalishdagi overflow-y uchun amal qiladi.
-                </p>
-                <h2>
-                    Values
-                </h2>
-                <dl>
-                    <dt id="visible">
-                        <span style="background: #343434; border-radius: 4px; padding: 1px 2px; color: #f2f2f2;">
-                            <a href="#visible" style="color: aliceblue;">visible</a>
-                        </span>
-                    </dt>
-                    <dd>
-                        To‘ldiriladigan kontent kesilmagan va elementning to‘ldirish qutisidan 
-                        tashqarida ko‘rinishi mumkin. Elementlar qutisi aylantirish konteyneri emas. 
-                        Bu overflow xususiyatining standart qiymati.
-                    </dd> 
-                </dl>
-                <div class="Eslatma">
-                    
-                    <div class="Eslatma_tana">
+                <div class="text">
+                    <p>
+                        CSS <code>position</code> xususiyati elementning hujjatdagi joylashuv usulini belgilaydi. Elementning yakuniy joyi <code>top</code>, <code>right</code>, <code>bottom</code>, <code>left</code> yoki oqimga mos mantiqiy <code>inset-*</code> xususiyatlari bilan sozlanadi.
+                    </p>
 
-                        <p style="padding: 0; margin: 0;">
-                            <b>Eslatma:</b> Kalit so‘z qiymatining qoplamasi avtomatik uchun eski qiymat taxallusidir. 
-                            Overlay yordamida aylantirish chiziqlari joy egallash o'rniga tarkibning ustiga chiziladi.
-                        </p>
-                    </div>
+                    <h2>Sinab ko‘ring</h2>
+                    <p>
+                        Muharrirdagi <code>position</code> qiymati va ofsetlarni o‘zgartirib, elementlar joylashuvi qanday o‘zgarishini kuzating.
+                    </p>
+                    <iframe
+                        src="Misol/60.position/pages/tabbed/position.html"
+                        title="position CSS xususiyati uchun interaktiv misol"
+                        style="width: 100%; height: 600px; border: 0;"
+                    ></iframe>
+
+                    <h2>Sintaksis</h2>
+                    <pre><code>position: static;
+position: relative;
+position: absolute;
+position: fixed;
+position: sticky;</code></pre>
+                    <p>
+                        <code>position</code> uchun beshta asosiy qiymat mavjud. Boshlang‘ich holatda barcha elementlar <code>static</code> qiymatidan foydalanadi.
+                    </p>
+
+                    <dl>
+                        <dt><code>static</code></dt>
+                        <dd>
+                            Element odatiy hujjat oqimida joylashadi. <code>top</code>, <code>right</code>, <code>bottom</code> va <code>left</code> ofsetlari unga ta’sir qilmaydi.
+                        </dd>
+                        <dt><code>relative</code></dt>
+                        <dd>
+                            Element odatiy oqimdagi o‘rnini saqlaydi, so‘ng o‘zining dastlabki joyiga nisbatan siljiydi. Siljish uchun ajratilgan joy saqlanib qoladi.
+                        </dd>
+                        <dt><code>absolute</code></dt>
+                        <dd>
+                            Element odatiy oqimdan chiqariladi va eng yaqin joylashtirilgan ota elementga nisbatan joylashtiriladi. Bunday ota element bo‘lmasa, boshlang‘ich qamrov blokiga nisbatan joylashadi.
+                        </dd>
+                        <dt><code>fixed</code></dt>
+                        <dd>
+                            Element odatiy oqimdan chiqarilib, odatda brauzer oynasiga nisbatan joylashtiriladi. Sahifa aylantirilganda ham shu joyda qoladi.
+                        </dd>
+                        <dt><code>sticky</code></dt>
+                        <dd>
+                            Element avval odatiy oqimda joylashadi, belgilangan ofsetga yetgach esa eng yaqin aylantirish konteyneri chegarasida yopishib turadi. Bu holat uchun, masalan, <code>top: 0</code> kabi <code>auto</code> bo‘lmagan qiymat kerak.
+                        </dd>
+                    </dl>
+
+                    <h2>Ofsetlar va qatlamlar</h2>
+                    <p>
+                        Ofsetlar joylashtirilgan elementning chetini uning joylashuv kontekstiga nisbatan belgilaydi. <code>position: relative</code>, <code>absolute</code>, <code>fixed</code> va <code>sticky</code> elementlarda                         <code>z-index</code> ustma-ust chizilish tartibini boshqarishi mumkin. <code>fixed</code> va <code>sticky</code> har doim yangi stacking context hosil qiladi; <code>relative</code> va <code>absolute</code> esa <code>z-index</code> qiymati <code>auto</code> bo‘lmaganda hosil qiladi.
+                    </p>
+
+                    <p>
+                        Batafsil: <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/position">MDN: position CSS xususiyati</a> va <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Reference">CSS Reference</a>.
+                    </p>
                 </div>
-
-                <p>
-                    Media soʻrovlar sintaksisi haqida maʼlumot olish 
-                    uchun Media soʻrovlaridan foydalanish boʻlimiga qarang.
-                </p>
-
-                <h2>
-                    Tavsif
-                </h2>
-                
-                <p>
-                    Media so'rovining &lt;media-query-list&gt; tarkibiga 
-                    &lt; media-type&gt;s, &lt;media-feature&gt;s va mantiqiy operatorlar kiradi.
-                </p>
-                
-                <h2 style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">
-                    Media turlari
-                </h2>
-
-                <p>
-                    <span style="background: #353535; padding: 1px 5px; border-radius: 3px; color: #fff;">
-                        &lt;media-type&gt;</span> qurilmaning umumiy toifasini tavsiflaydi. 
-                        <span style="background: #353535; padding: 1px 5px; border-radius: 3px; color: #fff;">only</span> 
-                        mantiqiy operatordan foydalanilgandan tashqari, 
-                        media turi ixtiyoriy
-                        <span style="background: #353535; padding: 1px 5px; border-radius: 3px; color: #fff;">
-                            all</span>&nbsp; 
-                            turi nazarda tutilgan.
-                </p>
-                <dl>
-                   <dt>
-                        <span style="background: #353535; padding: 1px 5px; border-radius: 3px; color: #fff;">all</span>
-                   </dt>
-                   <dd>
-                    Barcha qurilmalar uchun javob beradi.
-                   </dd>
-                   <dt>
-                    <span style="background: #353535; padding: 1px 5px; border-radius: 3px; color: #fff;">print</span> 
-                   </dt>
-                   <dd>
-                        Chop etishni oldindan ko'rish rejimida ekranda ko'rilgan 
-                        sahifalangan materiallar va hujjatlar uchun mo'ljallangan. 
-                        (Ushbu formatlarga xos bo'lgan formatlash muammolari haqida 
-                        ma'lumot olish uchun sahifalangan mediaga qarang.)
-                   </dd>
-                   <dt>
-                    <span style="background: #353535; padding: 1px 5px; border-radius: 3px; color: #fff;">screen</span> 
-                   </dt>
-                   <dd>
-                        Asosan ekranlar uchun mo'ljallangan.
-                   </dd>
-                </dl>
-
-                
-                <div class="Eslatma">
-                    
-                    <div class="Eslatma_tana">
-                        <p style="padding: 0; margin: 0;">
-                            <b>Eslatma:</b> Kalit so‘z qiymatining qoplamasi avtomatik uchun eski qiymat 
-                            taxallusidir. Overlay yordamida aylantirish chiziqlari joy egallash o'rniga 
-                            tarkibning ustiga chiziladi.
-                        </p>
-                       
-                    </div>
-                </div>
-                <h2 style="font-family: monospace;">
-                    Media xususiyatlari
-                </h2>  
-                <p>
-                    <i style="background: #343434; border-radius: 4px; padding: 1px; color: #f2f2f2;">&lt;media feature&gt;</i> foydalanuvchi agenti, chiqish qurilmasi yoki 
-                    muhitning o'ziga xos xususiyatlarini tavsiflaydi. Media funksiyasi 
-                    ifodalari ularning mavjudligi, qiymati yoki qiymatlar diapazoni 
-                    uchun sinovdan o‘tkaziladi va butunlay ixtiyoriydir. Har bir media 
-                    xususiyati ifodasi qavslar bilan o'ralgan bo'lishi kerak.
-                </p>
-                <dl>
-                    <dt>
-                        <span style="background: #343434; border-radius: 4px; padding: 1px 2px; color: #f2f2f2;">
-                            <a href="/1.Front end/2.Css/10.CSS qoidalari/Index/Misol/40.@media/20.prefers-reduced-motion.html" style="color: aliceblue;">prefers-reduced-motion</a>
-                        </span> 
-                    </dt>
-                    <dd>
-                        Foydalanuvchi sahifada kamroq harakatni afzal ko'radi. Media soʻrovlari darajasi 5-ga qoʻshilgan.
-                    </dd>
-                    <!--salom dunyo -->
-                </dl>
             </div>
         </div>
     </div>
-    
+    <script src="/1.Web/search.js" defer></script>
 </body>
 </html>

@@ -1,0 +1,196 @@
+<!doctype html>
+<html lang="uz">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <title>CSS Demo: position</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="../../css/codemirror.css?v=220ae8b" rel="stylesheet" />
+    <link href="../../css/editor-tabbed.css?v=220ae8b" rel="stylesheet" />
+  </head>
+
+  <body>
+    <header class="output-header border-rounded-top">
+      <h4 class="output-heading">CSS misoli: position</h4>
+      <button id="reset" class="reset" type="button">Qayta tiklash</button>
+    </header>
+    <noscript>
+      <div id="warning-no-script" class="warning-container">
+        <div class="warning">
+          JavaScript o‘chirilganligi sababli interaktiv misol ko‘rsatilmaydi.
+        </div>
+      </div>
+    </noscript>
+    <div id="warning-mathml-not-supported" class="warning-container hidden">
+      <div class="warning">
+        Brauzeringiz MathML-ni qo‘llab-quvvatlamagani sababli interaktiv misol ko‘rsatilmaydi.
+      </div>
+    </div>
+    <div
+      id="editor-container"
+      class="editor-container tabbed-standard hidden border-rounded-bottom"
+      data-tabs="html,css"
+      
+      data-editor-type="tabbed"
+    >
+      <section id="tab-container" class="tabs">
+        <div class="tab-list" id="tablist" role="tablist">
+          <button
+            role="tab"
+            aria-selected="false"
+            aria-controls="html-panel"
+            id="html"
+            class="hidden"
+          >
+            HTML
+          </button>
+          <button
+            role="tab"
+            aria-selected="false"
+            aria-controls="css-panel"
+            id="css"
+            class="hidden"
+            tabindex="-1"
+          >
+            CSS
+          </button>
+          <button
+            role="tab"
+            aria-selected="false"
+            aria-controls="js-panel"
+            id="js"
+            class="hidden"
+            tabindex="-1"
+          >
+            JavaScript
+          </button>
+        </div>
+        <section
+          id="html-panel"
+          tabindex="0"
+          role="tabpanel"
+          aria-labelledby="html"
+          class="hidden"
+          aria-hidden="true"
+        >
+          <div id="html-editor">
+            <pre><code>&lt;div class="stage"&gt;
+  &lt;div class="box"&gt;1 — oddiy oqim&lt;/div&gt;
+  &lt;div class="box target"&gt;2 — position&lt;/div&gt;
+  &lt;div class="box"&gt;3 — oddiy oqim&lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+          </div>
+        </section>
+        <section
+          id="css-panel"
+          tabindex="0"
+          role="tabpanel"
+          aria-labelledby="css"
+          class="hidden"
+          aria-hidden="true"
+        >
+          <div id="css-editor">
+            <pre><code>body {
+  font-family: Arial, sans-serif;
+  padding: 1rem;
+}
+
+.stage {
+  position: relative;
+  min-height: 180px;
+  padding: 1rem;
+  border: 2px dashed #94a3b8;
+  background: #f8fafc;
+}
+
+.box {
+  display: inline-block;
+  margin: 0.5rem;
+  padding: 1rem;
+  border: 2px solid #2563eb;
+  background: #dbeafe;
+}
+
+.target {
+  position: relative;
+  top: 24px;
+  left: 20px;
+  border-color: #b45309;
+  background: #fef3c7;
+}
+</code></pre>
+          </div>
+        </section>
+        <section
+          id="js-panel"
+          tabindex="0"
+          role="tabpanel"
+          aria-labelledby="js"
+          class="hidden"
+          aria-hidden="true"
+        >
+          <div id="js-editor">
+            <pre><code></code></pre>
+          </div>
+        </section>
+      </section>
+      <div id="output" class="output-container">
+        <h4 class="output-label">Natija</h4>
+        <iframe id="output-iframe"></iframe>
+      </div>
+    </div>
+
+    <section
+      class="console-container hidden"
+      aria-hidden="true"
+    >
+      <h4 class="console-label">Konsol natijasi</h4>
+      <button type="button" id="clear" class="clear">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 877.714 1024"
+          class="icon-clear"
+        >
+          <path
+            class="path0"
+            fill="currentColor"
+            d="M749.714 510.286c0-62.286-18.286-120-49.714-168.571L269.143 772.001c49.143 32 107.429 50.857 169.714 50.857 171.429 0 310.857-140 310.857-312.571zM178.857 681.143l431.429-430.857c-49.143-33.143-108-52-171.429-52-171.429 0-310.857 140-310.857 312 0 63.429 18.857 121.714 50.857 170.857zm698.857-170.857c0 243.429-196.571 440.571-438.857 440.571S0 753.714 0 510.286c0-242.857 196.571-440 438.857-440s438.857 197.143 438.857 440z"
+          />
+        </svg>
+        Konsolni tozalash
+      </button>
+      <div id="console" class="console"><code></code></div>
+    </section>
+
+    <template id="output-head">
+      <meta charset="utf-8" />
+      <meta http-equiv="x-ua-compatible" content="ie=edge" />
+      <title></title>
+      <meta name="viewport" content="width=device-width, initial-scale=1" />
+      <link href="../../css/editor-tabbed.css?v=220ae8b" rel="stylesheet" />
+      <style id="css-output">
+        %css-content%
+      </style>
+    </template>
+    <template id="output-body">
+      <div id="html-output" class="output editor-tabbed">
+        %html-content%
+      </div>
+
+      <script>
+        function executeExample() {
+          'use script';
+          try {
+          // %js-content%
+          } catch(e) {
+            console.error(e);
+          }
+        }
+      </script>
+    </template>
+    <script src="../../js/codemirror.js?v=220ae8b"></script>
+    <script src="../../js/editor-tabbed.js?v=220ae8b"></script>
+  <script src="/1.Web/search.js" defer></script>
+</body>
+</html>
