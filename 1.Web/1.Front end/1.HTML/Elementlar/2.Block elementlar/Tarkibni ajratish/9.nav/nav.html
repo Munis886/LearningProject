@@ -91,6 +91,22 @@
                 <div id="sarlavha">
                     <h2>&lt;nav&gt; — HTML navigatsiya bo'limi elementi.</h2>
                 </div>
+<div style="display: flex; gap: 20px; margin: 20px 0;">
+                    <!-- MDN Iframe -->
+                    <div style="flex: 1;">
+                        <h3>MDN Documentation</h3>
+                        <iframe src="https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/nav" 
+                                style="width: 100%; height: 500px; border: none; border-radius: 8px;"
+                                title="MDN nav element documentation"></iframe>
+                    </div>
+                    <!-- W3Schools Iframe -->
+                    <div style="flex: 1;">
+                        <h3>W3Schools nav Tag</h3>
+                        <iframe src="https://www.w3schools.com/tags/tag_nav.asp" 
+                                style="width: 100%; height: 500px; border: none; border-radius: 8px;"
+                                title="W3Schools nav tag documentation"></iframe>
+                    </div>
+                </div>
                 
                 <p>
                     &lt;nav&gt; HTML elementi sahifaning bir qismini ifodalaydi, uning maqsadi joriy hujjat ichida yoki boshqa hujjatlarga navigatsiya havolalarini taqdim etishdir. Navigatsiya bo'limlarining umumiy misollari menyular, tarkiblar jadvallari va indekslardir.
@@ -185,5 +201,39 @@
     </div>
     
     <script src="/1.Web/search.js" defer></script>
+<script>
+        // JavaScript interaktivlik nav elementi uchun
+        document.addEventListener('DOMContentLoaded', function() {
+            // Nav elementlari uchun aktivatsiya
+            const navLinks = document.querySelectorAll('nav a');
+            
+            navLinks.forEach(link => {
+                link.addEventListener('click', function(e) {
+                    // Asosiy navigatsiya bosilganda aktiv holat qo'shish
+                    navLinks.forEach(l => l.classList.remove('active'));
+                    this.classList.add('active');
+                });
+            });
+            
+            // Mob menuni ochish/yopish
+            const toggleBtn = document.getElementById('toggle-btn');
+            const mainMenu = document.querySelector('#menyu ul');
+            
+            if (toggleBtn && mainMenu) {
+                toggleBtn.addEventListener('click', function() {
+                    mainMenu.classList.toggle('open');
+                });
+            }
+            
+            // Sarlavha bosqichlarini aniqlash
+            const navHeadings = document.querySelectorAll('h2');
+            navHeadings.forEach(heading => {
+                heading.style.cursor = 'pointer';
+                heading.addEventListener('click', function() {
+                    this.classList.toggle('active');
+                });
+            });
+        });
+    </script>
 </body>
 </html>
