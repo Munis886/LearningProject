@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <nav class="flyout-nav">
+            <ul class="flyout-list">
+                <li class="flyout-item">
+                <button type="button" class="flyout-btn" aria-haspopup="true" aria-expanded="false">
+                    Kategoriyalar &#9656;
+                </button>
+
+                <!-- O'ng tomonga ochiladigan ichki menyu -->
+                    <ul class="flyout-submenu">
+                        <li class="flyout-item"><a href="#frontend" class="flyout-btn">Frontend</a></li>
+                        <li class="flyout-item"><a href="#backend" class="flyout-btn">Backend</a></li>
+                        <li class="flyout-item"><a href="#mobile" class="flyout-btn">Mobil ilovalar</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+
+        <nav class="flyout-nav">
+            <ul class="flyout-list">
+                <li class="flyout-item">
+                <button type="button" class="flyout-btn" aria-haspopup="true" aria-expanded="false">
+                    Dasturlash Kurslari &#9656;
+                </button>
+                <ul class="flyout-submenu">
+                    <li class="flyout-item">
+                        <a href="#web" class="flyout-btn" aria-haspopup="true">Veb Dasturlash &#9656;</a>
+                        <!-- 2-darajali o'ngga ochiluvchi menyu -->
+                        <ul class="flyout-submenu">
+                            <li class="flyout-item"><a href="#html" class="flyout-btn">HTML va CSS</a></li>
+                            <li class="flyout-item"><a href="#js" class="flyout-btn">JavaScript</a></li>
+                        </ul>
+                    </li>
+                    <li class="flyout-item"><a href="#python" class="flyout-btn">Python Asoslari</a></li>
+                </ul>
+                </li>
+            </ul>
+        </nav>
+    </body>
+</html>

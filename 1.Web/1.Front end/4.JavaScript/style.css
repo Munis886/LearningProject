@@ -5,7 +5,8 @@ body, h1 {
 }
 
 #bosh {
-    background-color:chocolate;
+    background-color: #fbc02d;
+    background-image: linear-gradient(120deg, #fff59d 0%, #fbc02d 50%, #f57f17 100%);
     margin: 0 auto;
 }
 
@@ -113,14 +114,16 @@ div #menu ul li a:hover {
     }
 
 body {
-    background-color: bisque;
+    background-color: #fff9c4;
+    background-image: linear-gradient(120deg, #fff9c4 0%, #ffd54f 50%, #fbc02d 100%);
 }
 
 #container {
     width: 100%;
     margin: 0 auto;
     font-size: 17px;
-    background-color: #f2f2f2;
+    background-color: #fff9c4;
+    background-image: linear-gradient(120deg, #fff9c4 0%, #ffd54f 50%, #fbc02d 100%);
     overflow-y: auto;
     height: 100vh;
 }

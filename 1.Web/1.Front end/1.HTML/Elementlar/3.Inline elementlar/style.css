@@ -6,11 +6,13 @@ body, h1,h2 {
 
 body {
     background-color: darkgrey;
+    background-image: linear-gradient(135deg, darkgrey 0%, #8e8e8e 100%);
 }
 
 #container {
     width: 100%;
     background-color: bisque;
+    background-image: linear-gradient(120deg, #fff5e6 0%, bisque 50%, #f5cba7 100%);
     margin: 0 auto;
 }
 
@@ -19,7 +21,7 @@ body {
     padding: 5px;
     border-radius: 2px;
     margin: 0 auto;
-    background-color: bisque;
+    background: transparent;
 }
 
 #text p{
@@ -29,7 +31,8 @@ body {
 }
 
 #bosh {
-    background-color:chocolate;
+    background-color: chocolate;
+    background-image: linear-gradient(120deg, chocolate 0%, #e67e22 50%, #f39c12 100%);
     padding: 10px 0;
     width: 100%;
     margin: 0 auto;

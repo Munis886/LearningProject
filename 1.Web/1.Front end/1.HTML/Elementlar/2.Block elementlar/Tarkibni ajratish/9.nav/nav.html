@@ -1,12 +1,184 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="uz">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>nav</title>
+    <title>&lt;nav&gt; — HTML navigatsiya bo'limi elementi</title>
     <link rel="stylesheet" href="../../style.css">
     <link rel="stylesheet" href="../../style/menu.css">
     <script src="../../../Js.js"></script>
+    <style>
+        /* Sahifa uchun qo'shimcha qulaylik va ko'rgazmali stillar */
+        .badge {
+            display: inline-block;
+            background-color: #0056b3;
+            color: #ffffff;
+            font-size: 13px;
+            font-weight: 600;
+            padding: 3px 8px;
+            border-radius: 4px;
+            margin-right: 5px;
+            font-family: monospace;
+        }
+        .attr-box {
+            background-color: #fff8e7;
+            border-left: 4px solid #f39c12;
+            padding: 10px 15px;
+            margin: 12px 0;
+            border-radius: 0 6px 6px 0;
+        }
+        .css-rule-box {
+            background-color: #eaf2f8;
+            border-left: 4px solid #2980b9;
+            padding: 12px 18px;
+            margin: 14px 0;
+            border-radius: 0 6px 6px 0;
+        }
+        .js-feature-box {
+            background-color: #f4ecf7;
+            border-left: 4px solid #8e44ad;
+            padding: 12px 18px;
+            margin: 14px 0;
+            border-radius: 0 6px 6px 0;
+        }
+        .info-tip {
+            background-color: #e8f8f5;
+            border-left: 4px solid #1abc9c;
+            padding: 10px 15px;
+            margin: 12px 0;
+            border-radius: 0 6px 6px 0;
+        }
+        pre.code-block,
+        .code-block {
+            background-color: #272822;
+            color: #f8f8f2;
+            padding: 14px 18px;
+            border-radius: 6px;
+            overflow-x: auto;
+            font-family: Consolas, "Courier New", monospace;
+            font-size: 15px;
+            line-height: 1.6;
+            margin: 12px 0;
+            white-space: pre-wrap; /* Kod qatorlarini bir qatorda emas, tartiblangan qatorlarga ajratadi */
+            word-wrap: break-word;
+            tab-size: 4;
+        }
+        .code-inline {
+            background-color: #f0f0f0;
+            color: #c7254e;
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-family: Consolas, monospace;
+            font-size: 0.9em;
+        }
+        /* Jadval ichidagi kod maydoni */
+        td.pre {
+            background-color: #272822 !important;
+            color: #f8f8f2 !important;
+            padding: 12px 15px !important;
+            font-family: Consolas, "Courier New", monospace !important;
+            font-size: 14px !important;
+            line-height: 1.5 !important;
+            white-space: pre-wrap !important;
+            vertical-align: top;
+        }
+        td.pre code {
+            font-family: inherit;
+        }
+        /* Jonli namuna stillari */
+        .demo-preview {
+            background: #ffffff;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+            padding: 15px;
+            margin: 10px 0 20px 0;
+        }
+        /* Namuna 1: W3Schools gorizontal menyu */
+        .w3-navbar {
+            background-color: #333333;
+            overflow: hidden;
+            border-radius: 4px;
+        }
+        .w3-navbar a {
+            float: left;
+            display: block;
+            color: #f2f2f2;
+            text-align: center;
+            padding: 12px 18px;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        .w3-navbar a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+        .w3-navbar a.active {
+            background-color: #04AA6D;
+            color: white;
+        }
+        /* Namuna 2: MDN Breadcrumb */
+        .crumbs ol {
+            list-style-type: none;
+            padding-left: 0;
+            margin: 0;
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+        .crumb {
+            display: inline-flex;
+            align-items: center;
+        }
+        .crumb a {
+            color: #0066cc;
+            text-decoration: none;
+        }
+        .crumb a:hover {
+            text-decoration: underline;
+        }
+        .crumb:not(:last-child)::after {
+            content: '>';
+            margin-left: 8px;
+            color: #666;
+            font-weight: bold;
+        }
+        .crumb.current {
+            color: #333;
+            font-weight: bold;
+        }
+        /* Namuna 3: Pagination */
+        .pagination-demo {
+            display: flex;
+            gap: 6px;
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        .pagination-demo a {
+            padding: 6px 12px;
+            border: 1px solid #ccc;
+            text-decoration: none;
+            color: #333;
+            border-radius: 4px;
+        }
+        .pagination-demo a:hover {
+            background-color: #e9ecef;
+        }
+        .pagination-demo a.active {
+            background-color: #007bff;
+            color: white;
+            border-color: #007bff;
+        }
+        /* Responsive Iframe konteyner */
+        .iframe-container {
+            width: 100%;
+            background: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+            overflow: hidden;
+            margin: 15px 0 25px 0;
+        }
+    </style>
 </head>
 <body>
     <div id="bosh">
@@ -17,14 +189,15 @@
 
     <div id="menyu">
         <div class="menyu">
-            <button id="toggle-btn" onclick="toggleMenu()">Menu</button>
+            <button id="toggle-btn" class="toggle-btn" onclick="toggleMenu()">Menu</button>
             <ul>
                 <li><a href="/index.html">HOME</a></li>
-                <li><a href="./1.Web/1.Front end/1.HTML/1.HTML.html">HTML</a></li>
+                <li><a href="/1.Web/1.Front end/1.HTML/1.HTML.html">HTML</a></li>
                 <li><a href="/1.Web/1.Front end/2.Css/Css.html">CSS</a></li>
             </ul>
         </div>
     </div>
+
     <div id="menyu2">
         <div class="menyu2">
             <ul>
@@ -34,7 +207,9 @@
                 <li>⇛</li>
                 <li><a href="/1.Web/1.Front end/1.HTML/Elementlar/Elementlar.html">Elementlar</a></li>
                 <li>⇛</li>
-                <li><a href="/1.Web/1.Front end/1.HTML/Elementlar/2.Block elementlar/Tarkibni ajratish/9.nav/nav.html">nav</a></li>
+                <li><a href="/1.Web/1.Front end/1.HTML/Elementlar/2.block elementlar.html">Block elementlar</a></li>
+                <li>⇛</li>
+                <li><a href="/1.Web/1.Front end/1.HTML/Elementlar/2.Block elementlar/Tarkibni ajratish/9.nav/nav.html">&lt;nav&gt;</a></li>
             </ul>
         </div>
     </div>
@@ -45,26 +220,25 @@
             <ul>
                 <li><a href="/1.Web/1.Front end/1.HTML/1.HTML.html">HTML HOME</a></li>
                 <li>
-                        <a href="#" onclick="toggleSubMenu('sub-menu-1')">Elementlar</a>
-                        <ul id="sub-menu-1" class="sub-menu">
-                            <li>
-                                <span></span>
-                                <a href="/1.Web/1.Front end/1.HTML/Elementlar/Elementlar.html">Elementlar haqida</a>
-                            </li>
-                            <li>
-                                <span></span>
-                                <a href="/1.Web/1.Front end/1.HTML/Elementlar/1.Html elementlar.html">HTML elementlar</a>
-                            </li>
-
-                            <li>
-                                <span></span>
-                                <a href="/1.Web/1.Front end/1.HTML/Elementlar/2.block elementlar.html">Block elementlar</a>
-                            </li>
-                            <li>
-                                <span></span>
-                                <a href="/1.Web/1.Front end/1.HTML/Elementlar/3.inline elementlar.html">Inline elementlar</a>
-                            </li>
-                        </ul>
+                    <a href="#" onclick="toggleSubMenu('sub-menu-1')">Elementlar</a>
+                    <ul id="sub-menu-1" class="sub-menu">
+                        <li>
+                            <span></span>
+                            <a href="/1.Web/1.Front end/1.HTML/Elementlar/Elementlar.html">Elementlar haqida</a>
+                        </li>
+                        <li>
+                            <span></span>
+                            <a href="/1.Web/1.Front end/1.HTML/Elementlar/1.Html elementlar.html">HTML elementlar</a>
+                        </li>
+                        <li>
+                            <span></span>
+                            <a href="/1.Web/1.Front end/1.HTML/Elementlar/2.block elementlar.html">Block elementlar</a>
+                        </li>
+                        <li>
+                            <span></span>
+                            <a href="/1.Web/1.Front end/1.HTML/Elementlar/3.inline elementlar.html">Inline elementlar</a>
+                        </li>
+                    </ul>
                 </li>
 
                 <li>
@@ -79,161 +253,603 @@
                         <li><a href="/1.Web/1.Front end/1.HTML/Belgilar/6.Belgi alifbo.html">Belgi alifbo</a></li>
                     </ul>
                 </li>
-                <li></li>
-                <li></li>
             </ul>
         </div>
+
         <div id="container">
             <div id="text">
                 <div class="orqaga">
-                    <a href="javascript:history.back()">&lt;&lt;orqaga</a>
+                    <a href="javascript:history.back()">&lt;&lt; orqaga</a>
                 </div>
+
                 <div id="sarlavha">
-                    <h2>&lt;nav&gt; — HTML navigatsiya bo'limi elementi.</h2>
+                    <h2>&lt;nav&gt; — HTML navigatsiya bo'limi elementi</h2>
                 </div>
-<div style="display: flex; gap: 20px; margin: 20px 0;">
-                    <!-- MDN Iframe -->
-                    <div style="flex: 1;">
-                        <h3>MDN Documentation</h3>
-                        <iframe src="https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/nav" 
-                                style="width: 100%; height: 500px; border: none; border-radius: 8px;"
-                                title="MDN nav element documentation"></iframe>
-                    </div>
-                    <!-- W3Schools Iframe -->
-                    <div style="flex: 1;">
-                        <h3>W3Schools nav Tag</h3>
-                        <iframe src="https://www.w3schools.com/tags/tag_nav.asp" 
-                                style="width: 100%; height: 500px; border: none; border-radius: 8px;"
-                                title="W3Schools nav tag documentation"></iframe>
-                    </div>
-                </div>
-                
+
                 <p>
-                    &lt;nav&gt; HTML elementi sahifaning bir qismini ifodalaydi, uning maqsadi joriy hujjat ichida yoki boshqa hujjatlarga navigatsiya havolalarini taqdim etishdir. Navigatsiya bo'limlarining umumiy misollari menyular, tarkiblar jadvallari va indekslardir.
+                    <strong>&lt;nav&gt;</strong> HTML elementi sahifaning navigatsiya havolalari guruhini taqdim etuvchi bo'limini ifodalaydi. Uning asosiy vazifasi — joriy hujjat ichidagi bo'limlarga yoki saytdagi boshqa sahifalarga yo'naltiruvchi asosiy havolalar to'plamini bir joyga jamlashdir.
                 </p>
 
-                
+                <p>
+                    <strong>W3Schools ta'rifi:</strong> <code class="code-inline">&lt;nav&gt;</code> tegi sahifadagi asosiy navigatsiya havolalari to'plamini (a set of navigation links) belgilaydi.
+                </p>
+                <p>
+                    <strong>MDN (Mozilla Developer Network) ta'rifi:</strong> <code class="code-inline">&lt;nav&gt;</code> elementi sayt bo'ylab harakatlanish uchun mo'ljallangan bo'lim hisoblanadi. Navigatsiya bo'limlarining odatiy misollariga menyular, mundarijalar (Table of Contents), indekslar, breadcrumb (non ushoqlari yo'naltiruvchisi) va sahifalash (pagination) bloklari kiradi.
+                </p>
+
+                <div class="info-tip">
+                    <strong>Odatiy brauzer xulqi (Default Display):</strong> <code class="code-inline">&lt;nav&gt;</code> elementi blok darajasidagi element (<strong>block-level element</strong>) bo'lib, uning standart CSS qiymati <code class="code-inline">display: block;</code> hisoblanadi. U o'zi joylashgan konteynerning butun kengligini egallaydi va yangi qatordan boshlanadi.
+                </div>
+
+                <!-- Sinab ko'rish bo'limi (25.pre.html andozasi bo'yicha) -->
+                <section>
+                    <div id="sarlavha">
+                        <h2 id="sinab_koring">
+                            <style>
+                                h2 a {
+                                    color: black;
+                                    text-decoration: none;
+                                }
+                            </style>
+                            <a href="#sinab_koring">Sinab ko'ring.</a>
+                        </h2>
+                    </div>
+                    <div class="iframe-container" style="margin-left: 25px; width: 95%;">
+                        <iframe src="./pages/tabbed/nav.html" frameborder="0" width="100%" height="450px" title="HTML Demo: nav"></iframe>
+                    </div>
+                </section>
+
+                <hr style="border: 0; height: 1px; background: #d0d0d0; margin: 30px 0;">
+
+                <!-- 1. Batafsil tushuntirish bo'limi -->
+                <h2>&lt;nav&gt; tegi nima uchun ishlatiladi?</h2>
+                <p>
+                    HTML5 dan oldin dasturchilar barcha navigatsiya bo'limlarini oddiy <code class="code-inline">&lt;div class="nav"&gt;</code> yoki <code class="code-inline">&lt;div id="menu"&gt;</code> teglari yordamida yaratishgan. HTML5 semantik inqilobi bilan birga kelgan <code class="code-inline">&lt;nav&gt;</code> tegi quyidagi muhim afzalliklarni taqdim etadi:
+                </p>
+
+                <ul>
+                    <li>
+                        <strong>Semantik aniqlik va toza kod:</strong> Kodni o'qiyotgan dasturchi va tahlil qilayotgan brauzer uchun bu qism aynan sayt navigatsiyasi ekanligi darhol ayon bo'ladi.
+                    </li>
+                    <li>
+                        <strong>Maxsus imkoniyatlar (Accessibility / a11y):</strong>
+                        Ko'zi ojiz yoki ko'rish qobiliyati zaif foydalanuvchilar maxsus <em>ekranni o'qish dasturlari</em> (Screen Readers: NVDA, JAWS, VoiceOver, TalkBack) orqali saytdan foydalanishadi. Ekranni o'qish dasturlari <code class="code-inline">&lt;nav&gt;</code> tegini <strong>"navigation landmark"</strong> (navigatsiya maydoni) sifatida taniydi. Bu foydalanuvchiga butun sahifani boshidan oxirigacha eshitib o'tirmasdan, to'g'ridan-to'g'ri menyuga sakrash yoki aksincha, navigatsiyani o'tkazib yuborib asosiy kontentga o'tish imkonini beradi.
+                    </li>
+                    <li>
+                        <strong>SEO (Qidiruv tizimlarini optimallashtirish):</strong>
+                        Google, Yandex, Bing kabi qidiruv tizimlarining qidiruv botlari sahifani tahlil qilayotganda <code class="code-inline">&lt;nav&gt;</code> ichidagi havolalarga alohida e'tibor qaratadi. Bu sayt iyerarxiyasini to'g'ri shakllantirishga va qidiruv natijalarida sayt bo'limlarining (sitelinks) to'g'ri chiqishiga bevosita yordam beradi.
+                    </li>
+                </ul>
+
+                <h3>Qachon &lt;nav&gt; ishlatish kerak?</h3>
+                <p>Quyidagi hollarda <code class="code-inline">&lt;nav&gt;</code> tegi ishlatilishi maqsadga muvofiqdir:</p>
+                <ol>
+                    <li><strong>Asosiy sayt menyusi (Primary / Header navigation):</strong> Sahifaning yuqori qismidagi bosh sahifa, xizmatlar, haqimizda, aloqa kabi asosiy havolalar.</li>
+                    <li><strong>Mundarija (Table of Contents):</strong> Katta hajmdagi maqola, qo'llanma yoki hujjat ichidagi bo'limlarga olib boruvchi ichki havolalar (anchor links).</li>
+                    <li><strong>Non bo'laklari (Breadcrumbs):</strong> Foydalanuvchining sayt tuzilmasida qayerda turganligini ko'rsatuvchi zanjir (Masalan: Bosh sahifa &gt; HTML &gt; Block elementlar &gt; nav).</li>
+                    <li><strong>Sahifalash (Pagination):</strong> Maqolalar, mahsulotlar yoki qidiruv natijalarida sahifalar orasida o'tish bloklari (&laquo; Oldingi, 1, 2, 3, Keyingi &raquo;).</li>
+                    <li><strong>Yon panel navigatsiyasi (Sidebar navigation):</strong> Admin panellar yoki hujjatlar sahifasidagi yon menyular.</li>
+                </ol>
+
+                <div class="attr-box">
+                    <strong>Muhim eslatma (Qachon ISHLATILMAYDI):</strong><br>
+                    Sahifadagi <em>BARCHA</em> havolalar <code class="code-inline">&lt;nav&gt;</code> ichida bo'lishi shart emas va tavsiya etilmaydi!
+                    <ul>
+                        <li><code class="code-inline">&lt;footer&gt;</code> ichidagi ikkilamchi havolalar (Masalan: Maxfiylik siyosati, Foydalanish shartlari, Mualliflik huquqi / Copyright, Ijtimoiy tarmoq havolalari) odatda <code class="code-inline">&lt;nav&gt;</code> ichiga kiritilmaydi.</li>
+                        <li>Oddiy matn yoki maqola ichidagi giperhavolalar (<code class="code-inline">&lt;p&gt;</code> ichidagi <code class="code-inline">&lt;a&gt;</code> teglari) ham <code class="code-inline">&lt;nav&gt;</code> ichiga olinmaydi.</li>
+                    </ul>
+                </div>
+
+                <hr style="border: 0; height: 1px; background: #d0d0d0; margin: 30px 0;">
+
+                <!-- 2. Atributlar bo'limi -->
+                <div id="Atributlar">
+                    <h2>&lt;nav&gt; elementi bilan ishlatiladigan atributlar</h2>
+                    <p>
+                        <code class="code-inline">&lt;nav&gt;</code> tegining o'ziga xos maxsus HTML atributlari yo'q, u barcha <strong>Global atributlar</strong>ni va maxsus <strong>ARIA (Accessible Rich Internet Applications)</strong> atributlarini to'liq qo'llab-quvvatlaydi.
+                    </p>
+
+                    <h3>1. Global atributlar:</h3>
+                    <ul>
+                        <li><span class="badge">class</span> — CSS stillash va JavaScript orqali elementlarni tanlash uchun sinf nomi beradi (Masalan: <code class="code-inline">&lt;nav class="navbar"&gt;</code>).</li>
+                        <li><span class="badge">id</span> — Sahifa miqyosida yagona identifikator belgilaydi (Masalan: <code class="code-inline">&lt;nav id="main-navigation"&gt;</code>).</li>
+                        <li><span class="badge">style</span> — Elementga bevosita inline CSS stillarini berish uchun ishlatiladi.</li>
+                        <li><span class="badge">title</span> — Kursor ustiga keltirilganda chiqadigan qo'shimcha matnli maslahat (tooltip).</li>
+                        <li><span class="badge">hidden</span> — Elementni sahifada ko'rinmaydigan qilib yashiradi.</li>
+                        <li><span class="badge">tabindex</span> — Klaviatura fokusini (Tab tugmasi bosilganda) boshqarish tartibini belgilaydi.</li>
+                        <li><span class="badge">data-*</span> — Maxsus dasturiy ma'lumotlarni saqlash uchun atributlar (Masalan: <code class="code-inline">data-menu-theme="dark"</code>).</li>
+                    </ul>
+
+                    <h3>2. Maxsus ARIA atributlari (Foydalanish qulayligi uchun o'ta muhim):</h3>
+                    <div class="attr-box">
+                        <p><strong><span class="badge">aria-label</span></strong> — Navigatsiyaning nomini bevosita bildiradi.</p>
+                        <p>
+                            Agar bitta sahifada ikkita yoki undan ortiq <code class="code-inline">&lt;nav&gt;</code> mavjud bo'lsa (masalan: asosiy menyu, non ushoqlari va sahifalash), ekranni o'qish dasturlari ularni bir-biridan ajrata olishi uchun har biriga tushunarli <code class="code-inline">aria-label</code> berilishi shart:
+                        </p>
+<pre class="code-block"><code>&lt;!-- 1. Asosiy sayt menyusi --&gt;
+&lt;nav aria-label="Asosiy menyu"&gt;
+    &lt;ul&gt;
+        &lt;li&gt;&lt;a href="/"&gt;Bosh sahifa&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href="/kurslar"&gt;Kurslar&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+&lt;/nav&gt;
+
+&lt;!-- 2. Non ushoqlari yo'naltiruvchisi --&gt;
+&lt;nav aria-label="Sayt iyerarxiyasi (Breadcrumbs)"&gt;
+    &lt;ol&gt;
+        &lt;li&gt;&lt;a href="/"&gt;Bosh sahifa&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href="/html"&gt;HTML&lt;/a&gt;&lt;/li&gt;
+    &lt;/ol&gt;
+&lt;/nav&gt;
+
+&lt;!-- 3. Sahifalash navigatsiyasi --&gt;
+&lt;nav aria-label="Sahifalash"&gt;
+    &lt;ul&gt;
+        &lt;li&gt;&lt;a href="?page=1"&gt;1&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href="?page=2"&gt;2&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+&lt;/nav&gt;</code></pre>
+                    </div>
+
+                    <div class="attr-box">
+                        <p><strong><span class="badge">aria-labelledby</span></strong> — Sahifadagi mavjud sarlavha elementining <code class="code-inline">id</code>si orqali navigatsiya nomini belgilaydi.</p>
+<pre class="code-block"><code>&lt;h2 id="toc-heading"&gt;Darslik mundarijasi&lt;/h2&gt;
+
+&lt;nav aria-labelledby="toc-heading"&gt;
+    &lt;ul&gt;
+        &lt;li&gt;&lt;a href="#kirish"&gt;1. Kirish&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href="#atributlar"&gt;2. Atributlar&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href="#css-qoidalari"&gt;3. CSS qoidalari&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+&lt;/nav&gt;</code></pre>
+                    </div>
+
+                    <div class="attr-box">
+                        <p><strong><span class="badge">aria-current="page"</span></strong> — Navigatsiya havolalaridan aynan qaysi biri joriy ko'rilayotgan sahifa ekanligini ekranni o'qish dasturlariga bildiradi.</p>
+<pre class="code-block"><code>&lt;nav aria-label="Asosiy menyu"&gt;
+    &lt;ul&gt;
+        &lt;li&gt;&lt;a href="/home"&gt;Bosh sahifa&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href="/about" aria-current="page" class="active"&gt;Biz haqimizda&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href="/contact"&gt;Aloqa&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+&lt;/nav&gt;</code></pre>
+                    </div>
+                </div>
+
+                <hr style="border: 0; height: 1px; background: #d0d0d0; margin: 30px 0;">
+
+                <!-- 3. CSS qoidalari bo'limi -->
+                <h2>&lt;nav&gt; tegi bilan ishlatiladigan asosiy CSS qoidalari</h2>
+                <p>
+                    HTML elementi sifatida <code class="code-inline">&lt;nav&gt;</code> faqat semantik qobiq hisoblanadi. Uni chiroyli, qulay va zamonaviy ko'rinishga keltirish uchun quyidagi CSS usullari qo'llaniladi:
+                </p>
+
+                <div class="css-rule-box">
+                    <h3>1. Odatiy ro'yxat stillarini tozalash (List Reset)</h3>
+                    <p>Odatda menyu havolalari <code class="code-inline">&lt;ul&gt;</code> yoki <code class="code-inline">&lt;ol&gt;</code> ichida yoziladi. Ulardagi nuqtalar va bo'shliqlarni olib tashlash:</p>
+<pre class="code-block"><code>/* Menyu ro'yxatini tozalash */
+nav ul,
+nav ol {
+    list-style: none; /* Nuqta yoki raqamlarni yo'qotish */
+    margin: 0;        /* Tashqi bo'shliqni tozalash */
+    padding: 0;       /* Ichki bo'shliqni tozalash */
+}</code></pre>
+                </div>
+
+                <div class="css-rule-box">
+                    <h3>2. Flexbox yordamida gorizontal navigatsiya paneli (Navbar)</h3>
+                    <p>Havolalarni bir qatorda chiroyli joylashtirish va o'rtaga tekislash:</p>
+<pre class="code-block"><code>/* Asosiy navigatsiya paneli */
+.navbar {
+    display: flex;
+    justify-content: space-between; /* Chapda logotip, o'ngda havolalar */
+    align-items: center;            /* Vertikal markazga tekislash */
+    background-color: #2c3e50;
+    padding: 12px 24px;
+}
+
+/* Navigatsiya ro'yxati */
+.navbar ul {
+    display: flex;
+    gap: 20px;                      /* Havolalar orasidagi masofa */
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+/* Navigatsiya havolalari */
+.navbar a {
+    color: #ecf0f1;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 6px 12px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+/* Havolaga kursor kelganda yoki klaviatura fokusi tushganda */
+.navbar a:hover,
+.navbar a:focus-visible {
+    background-color: #34495e;
+    color: #ffffff;
+}
+
+/* Hozirda faol bo'lgan sahifa havolasi */
+.navbar a.active {
+    background-color: #3498db;
+    color: #ffffff;
+}</code></pre>
+                </div>
+
+                <div class="css-rule-box">
+                    <h3>3. Yopishqoq menyu (Sticky Navbar)</h3>
+                    <p>Foydalanuvchi sahifani pastga siljitganda (scroll qilganda) ekranning yuqori qismida qolib ketadigan menyu:</p>
+<pre class="code-block"><code>/* Yuqorida yopishib turuvchi menyu */
+nav.sticky-nav {
+    position: sticky;
+    top: 0;
+    z-index: 1000;                     /* Boshqa elementlar ustida turishi uchun */
+    background: rgba(44, 62, 80, 0.95);
+    backdrop-filter: blur(8px);        /* Shaffof xiralashtirish effekti */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}</code></pre>
+                </div>
+
+                <div class="css-rule-box">
+                    <h3>4. Non bo'laklari (Breadcrumbs) stillari</h3>
+                    <p>MDN andozasi bo'yicha havolalar orasiga ajratuvchi belgilar qo'yish:</p>
+<pre class="code-block"><code>/* Breadcrumb konteyneri */
+.breadcrumb ol {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+/* Havolalar */
+.breadcrumb li a {
+    color: #2980b9;
+    text-decoration: none;
+}
+
+.breadcrumb li a:hover {
+    text-decoration: underline;
+}
+
+/* Har bir element orasiga '>' belgisini qo'yish */
+.breadcrumb li:not(:last-child)::after {
+    content: "›";
+    margin-left: 8px;
+    color: #7f8c8d;
+    font-weight: bold;
+}
+
+/* Oxirgi element (joriy sahifa) */
+.breadcrumb li:last-child {
+    color: #333333;
+    font-weight: 600;
+}</code></pre>
+                </div>
+
+                <div class="css-rule-box">
+                    <h3>5. Moslashuvchan (Responsive) mobil dizayn va media so'rovlar</h3>
+                    <p>Kichik ekranlarda (smartfonlarda) menyuni vertikal ustun shakliga keltirish:</p>
+<pre class="code-block"><code>/* Mobil ekranlar uchun (ekran kengligi 768px dan kichik bo'lganda) */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navbar ul {
+        flex-direction: column;
+        width: 100%;
+        display: none; /* Dastlab yashirilgan turadi */
+    }
+
+    /* Gamburger menyu bosilganda JS orqali ochiladi */
+    .navbar ul.open {
+        display: flex;
+    }
+
+    .navbar a {
+        display: block;
+        width: 100%;
+        padding: 10px 14px;
+    }
+}</code></pre>
+                </div>
+
+                <hr style="border: 0; height: 1px; background: #d0d0d0; margin: 30px 0;">
+
+                <!-- 4. JavaScript imkoniyatlari bo'limi -->
+                <h2>&lt;nav&gt; bilan JavaScriptda foydalanish mumkin bo'lgan imkoniyatlar</h2>
+                <p>
+                    JavaScript yordamida <code class="code-inline">&lt;nav&gt;</code> elementini to'liq interaktiv, qulay va dinamik qilish mumkin. Quyida eng ommabop 4 ta amaliy imkoniyat keltirilgan:
+                </p>
+
+                <div class="js-feature-box">
+                    <h3>1. Mobil "Gamburger menyu" (Mobile Toggle Menu) boshqaruvi</h3>
+                    <p>Kichik ekranlarda menyuni ochish va yopish, shuningdek <code class="code-inline">aria-expanded</code> atributini dinamik almashtirish:</p>
+<pre class="code-block"><code>// Gamburger tugmasi va menyu ro'yxatini tanlab olamiz
+const toggleButton = document.getElementById('hamburger-btn');
+const navLinksList = document.getElementById('nav-menu-list');
+
+toggleButton.addEventListener('click', () => {
+    // Menyuning hozirgi ochiq yoki yopiqlik holatini tekshirish
+    const isExpanded = toggleButton.getAttribute('aria-expanded') === 'true';
+    
+    // ARIA holatini teskarisiga almashtirish
+    toggleButton.setAttribute('aria-expanded', !isExpanded);
+    
+    // Menyu klassini almashtirish orqali ochish/yopish
+    navLinksList.classList.toggle('open');
+});</code></pre>
+                </div>
+
+                <div class="js-feature-box">
+                    <h3>2. Joriy sahifa havolasini avtomatik faollashtirish (Active Link Highlighting)</h3>
+                    <p>Foydalanuvchi qaysi sahifaga kirgan bo'lsa, URL manziliga qarab o'sha havolaga <code class="code-inline">active</code> klassi va <code class="code-inline">aria-current="page"</code> atributini avtomatik qo'shish:</p>
+<pre class="code-block"><code>document.addEventListener('DOMContentLoaded', () => {
+    // Brauzerning joriy URL manzil yo'lini aniqlaymiz
+    const currentPath = window.location.pathname;
+    
+    // Menyu ichidagi barcha havolalarni olamiz
+    const navAnchors = document.querySelectorAll('nav a');
+
+    navAnchors.forEach(link => {
+        // Agar havola manzili joriy manzilga teng bo'lsa
+        if (link.getAttribute('href') === currentPath) {
+            link.classList.add('active');
+            link.setAttribute('aria-current', 'page');
+        }
+    });
+});</code></pre>
+                </div>
+
+                <div class="js-feature-box">
+                    <h3>3. Sahifa siljishida (Scroll) menyu o'lchamini kichraytirish (Shrink Navbar)</h3>
+                    <p>Foydalanuvchi sahifani pastga aylantirganda, navigatsiya panelini ixchamlashtirish va soya qo'shish:</p>
+<pre class="code-block"><code>const navigationBar = document.querySelector('nav.site-navigation');
+
+window.addEventListener('scroll', () => {
+    // Agar sahifa 60px dan ko'proq pastga siljigan bo'lsa
+    if (window.scrollY > 60) {
+        navigationBar.classList.add('nav-scrolled');
+    } else {
+        navigationBar.classList.remove('nav-scrolled');
+    }
+});</code></pre>
+                </div>
+
+                <div class="js-feature-box">
+                    <h3>4. Klaviatura orqali qulay boshqarish (Keyboard Accessibility)</h3>
+                    <p>Foydalanuvchi klaviaturadagi <kbd>Escape</kbd> tugmasini bosganda ochilgan menyuni avtomatik yopish va fokusni tugmaga qaytarish:</p>
+<pre class="code-block"><code>document.addEventListener('keydown', (event) => {
+    // Escape tugmasi bosilganda va menyu ochiq bo'lsa
+    if (event.key === 'Escape' && navLinksList.classList.contains('open')) {
+        navLinksList.classList.remove('open');
+        toggleButton.setAttribute('aria-expanded', 'false');
+        toggleButton.focus(); // Klaviatura fokusini yana tugmaga qaytarish
+    }
+});</code></pre>
+                </div>
+
+                <hr style="border: 0; height: 1px; background: #d0d0d0; margin: 30px 0;">
+
+                <!-- 5. Amaliy namunalar jadvali -->
+                <h2>MDN va W3Schools asosidagi to'liq amaliy namunalar</h2>
+
+                <h3>1-namuna: W3Schools uslubidagi klassik gorizontal navigatsiya paneli</h3>
                 <table class="html">
                     <tr>
-                        <th>Element</th>
-                        <th>Display</th>
+                        <th>HTML &amp; CSS kodi</th>
+                        <th>Brauzerdagi natijasi (Display)</th>
                     </tr>
                     <tr>
-                        <td class="pre">
-                            &lt;nav class=&quot;crumbs&quot;&gt; <br>
-                            &lt;ol&gt;  <br>
-                                &lt;li class=&quot;crumb&quot;&gt;&lt;a href=&quot;#&quot;&gt;Bikes&lt;/a&gt;&lt;/li&gt; <br>
-                                &lt;li class=&quot;crumb&quot;&gt;&lt;a href=&quot;#&quot;&gt;BMX&lt;/a&gt;&lt;/li&gt; <br>
-                                &lt;li class=&quot;crumb&quot;&gt;Jump Bike 3000&lt;/li&gt; <br>
-                            &lt;/ol&gt; <br>
-                            &lt;/nav&gt; <br><br>
+                        <td class="pre"><code>&lt;!-- HTML kodi --&gt;
+&lt;nav class="w3-navbar" aria-label="W3Schools menyu"&gt;
+    &lt;a class="active" href="#home"&gt;Bosh sahifa&lt;/a&gt;
+    &lt;a href="#news"&gt;Yangiliklar&lt;/a&gt;
+    &lt;a href="#contact"&gt;Aloqa&lt;/a&gt;
+    &lt;a href="#about"&gt;Haqimizda&lt;/a&gt;
+&lt;/nav&gt;
 
-                            &lt;h1&gt;Jump Bike 3000&lt;/h1&gt; <br>
-                            &lt;p&gt; <br>
-                            This BMX bike is a solid step into the pro world. It looks as legit as it <br>
-                            rides and is built to polish your skills. <br>
-                            &lt;/p&gt; <br>
-                        </td>
+/* CSS kodi */
+.w3-navbar {
+    background-color: #333333;
+    overflow: hidden;
+    border-radius: 4px;
+}
+
+.w3-navbar a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 12px 18px;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.w3-navbar a:hover {
+    background-color: #dddddd;
+    color: #000000;
+}
+
+.w3-navbar a.active {
+    background-color: #04AA6D;
+    color: #ffffff;
+}</code></td>
                         <td>
-                            <nav class="crumbs">
-                                <ol>
-                                    <li class="crumb"><a href="#">Bikes</a></li>
-                                    <li class="crumb"><a href="#">BMX</a></li>
-                                    <li class="crumb">Jump Bike 3000</li>
-                                </ol>
-                            </nav>
-
-                            <h1>Jump Bike 3000</h1>
-                            <p>
-                                This BMX bike is a solid step into the pro world. It looks as legit as it
-                                rides and is built to polish your skills.
-                            </p>
+                            <div class="demo-preview">
+                                <nav class="w3-navbar" aria-label="W3Schools menyu">
+                                    <a class="active" href="javascript:void(0)">Bosh sahifa</a>
+                                    <a href="javascript:void(0)">Yangiliklar</a>
+                                    <a href="javascript:void(0)">Aloqa</a>
+                                    <a href="javascript:void(0)">Haqimizda</a>
+                                </nav>
+                            </div>
                         </td>
                     </tr>
                 </table>
-                <div id="Atributlar">
-                    <h2>Atributlar</h2>
-            
-                    <div class="text">
-                        <p>
-                            Bu element faqat global atributlarni o'z ichiga oladi .
-                        </p>
-                    </div>
-                    <h2>
-                        Foydalanish bo'yicha eslatmalar
-                    </h2>
-                    <ul>
-                        <li>
-                            Barcha havolalar &lt;nav&gt; elementida bo'lishi shart emas. &lt;nav&gt; faqat navigatsiya havolalarining asosiy bloki uchun mo'ljallangan; odatda &lt;footer&gt; elementida ko'pincha &lt;nav&gt; elementida bo'lishi shart bo'lmagan havolalar ro'yxati mavjud.
-                        </li>
-                        <li>
-                            Hujjatda bir nechta &lt;nav&gt; elementlari bo'lishi mumkin, masalan, biri sayt navigatsiyasi uchun, ikkinchisi esa sahifa ichidagi navigatsiya uchun. aria-labelledby bunday holatda foydalanish imkoniyatini oshirish uchun ishlatilishi mumkin, misolga qarang.
-                        </li>
-                        <li>
-                            Nogiron foydalanuvchilarga moʻljallangan ekranni oʻqish dasturlari kabi foydalanuvchi agentlari ushbu elementdan faqat navigatsiya uchun moʻljallangan kontentning dastlabki koʻrsatilishini oʻtkazib yuborishni aniqlash uchun foydalanishi mumkin.
-                        </li>
-                    </ul>
-                    
-                    <h2>
-                        Misollar
-                    </h2>
 
-                    <p>
-                        Ushbu misolda &lt;nav&gt; bloki havolalarning tartibsiz ro'yxatini (&lt;ul&gt;) o'z ichiga olishi uchun ishlatiladi. Tegishli CSS bilan bu yon panel, navigatsiya paneli yoki ochiladigan menyu sifatida taqdim etilishi mumkin.
-                    </p>
+                <br>
 
-                    <div class="css">
-                        <div class="css_tana">
-                            <pre>
-                                &lt;nav class=&quot;menu&quot;&gt;
-                                &lt;ul&gt;
-                                    &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Home&lt;/a&gt;&lt;/li&gt;
-                                    &lt;li&gt;&lt;a href=&quot;#&quot;&gt;About&lt;/a&gt;&lt;/li&gt;
-                                    &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Contact&lt;/a&gt;&lt;/li&gt;
-                                &lt;/ul&gt;
-                                &lt;/nav&gt;
-                            </pre>
-                        </div>
-                    </div>
-                </div>
+                <h3>2-namuna: MDN uslubidagi Non bo'laklari (Breadcrumbs) yo'naltiruvchisi</h3>
+                <table class="html">
+                    <tr>
+                        <th>HTML &amp; CSS kodi</th>
+                        <th>Brauzerdagi natijasi (Display)</th>
+                    </tr>
+                    <tr>
+                        <td class="pre"><code>&lt;!-- HTML kodi --&gt;
+&lt;nav class="crumbs" aria-label="Sayt iyerarxiyasi"&gt;
+    &lt;ol&gt;
+        &lt;li class="crumb"&gt;&lt;a href="#"&gt;Velosipedlar&lt;/a&gt;&lt;/li&gt;
+        &lt;li class="crumb"&gt;&lt;a href="#"&gt;BMX&lt;/a&gt;&lt;/li&gt;
+        &lt;li class="crumb current" aria-current="page"&gt;Jump Bike 3000&lt;/li&gt;
+    &lt;/ol&gt;
+&lt;/nav&gt;
+
+&lt;h3&gt;Jump Bike 3000&lt;/h3&gt;
+&lt;p&gt;Professional darajadagi zamonaviy BMX velosipedi.&lt;/p&gt;
+
+/* CSS kodi */
+.crumbs ol {
+    list-style-type: none;
+    padding-left: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.crumb {
+    display: inline-flex;
+    align-items: center;
+}
+
+.crumb a {
+    color: #0066cc;
+    text-decoration: none;
+}
+
+.crumb a:hover {
+    text-decoration: underline;
+}
+
+.crumb:not(:last-child)::after {
+    content: '>';
+    margin-left: 8px;
+    color: #666666;
+    font-weight: bold;
+}
+
+.crumb.current {
+    color: #333333;
+    font-weight: bold;
+}</code></td>
+                        <td>
+                            <div class="demo-preview">
+                                <nav class="crumbs" aria-label="Sayt iyerarxiyasi">
+                                    <ol>
+                                        <li class="crumb"><a href="javascript:void(0)">Velosipedlar</a></li>
+                                        <li class="crumb"><a href="javascript:void(0)">BMX</a></li>
+                                        <li class="crumb current" aria-current="page">Jump Bike 3000</li>
+                                    </ol>
+                                </nav>
+                                <h3 style="margin-top: 10px;">Jump Bike 3000</h3>
+                                <p style="padding-left: 0;">Professional darajadagi zamonaviy BMX velosipedi.</p>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+
+                <br>
+
+                <h3>3-namuna: Sahifalash (Pagination) navigatsiya bloki</h3>
+                <table class="html">
+                    <tr>
+                        <th>HTML &amp; CSS kodi</th>
+                        <th>Brauzerdagi natijasi (Display)</th>
+                    </tr>
+                    <tr>
+                        <td class="pre"><code>&lt;!-- HTML kodi --&gt;
+&lt;nav aria-label="Maqolalar sahifalari"&gt;
+    &lt;ul class="pagination-demo"&gt;
+        &lt;li&gt;&lt;a href="#"&gt;&laquo; Oldingi&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href="#"&gt;1&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href="#" class="active" aria-current="page"&gt;2&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href="#"&gt;3&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href="#"&gt;Keyingi &raquo;&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+&lt;/nav&gt;
+
+/* CSS kodi */
+.pagination-demo {
+    display: flex;
+    gap: 6px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.pagination-demo a {
+    padding: 6px 12px;
+    border: 1px solid #cccccc;
+    text-decoration: none;
+    color: #333333;
+    border-radius: 4px;
+}
+
+.pagination-demo a:hover {
+    background-color: #e9ecef;
+}
+
+.pagination-demo a.active {
+    background-color: #007bff;
+    color: #ffffff;
+    border-color: #007bff;
+}</code></td>
+                        <td>
+                            <div class="demo-preview">
+                                <nav aria-label="Maqolalar sahifalari">
+                                    <ul class="pagination-demo">
+                                        <li><a href="javascript:void(0)">&laquo; Oldingi</a></li>
+                                        <li><a href="javascript:void(0)">1</a></li>
+                                        <li><a href="javascript:void(0)" class="active" aria-current="page">2</a></li>
+                                        <li><a href="javascript:void(0)">3</a></li>
+                                        <li><a href="javascript:void(0)">Keyingi &raquo;</a></li>
+                                    </ul>
+                                </nav>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+
+                <hr style="border: 0; height: 1px; background: #d0d0d0; margin: 30px 0;">
+
+                <!-- 6. Brauzerlar mosligi -->
+                <h2>Brauzerlar tomonidan qo'llab-quvvatlanishi</h2>
+                <p>
+                    <code class="code-inline">&lt;nav&gt;</code> tegi barcha asosiy zamonaviy va mobil brauzerlar tomonidan to'liq qo'llab-quvvatlanadi:
+                </p>
+                <ul>
+                    <li><strong>Google Chrome:</strong> 5.0 versiyasidan boshlab (To'liq qo'llab-quvvatlaydi)</li>
+                    <li><strong>Mozilla Firefox:</strong> 4.0 versiyasidan boshlab (To'liq qo'llab-quvvatlaydi)</li>
+                    <li><strong>Microsoft Edge:</strong> 12.0 versiyasidan boshlab (To'liq qo'llab-quvvatlaydi)</li>
+                    <li><strong>Apple Safari:</strong> 5.0 versiyasidan boshlab (To'liq qo'llab-quvvatlaydi)</li>
+                    <li><strong>Opera:</strong> 11.1 versiyasidan boshlab (To'liq qo'llab-quvvatlaydi)</li>
+                    <li><strong>Barcha mobil brauzerlar:</strong> Chrome Mobile, Safari Mobile, Samsung Internet va boshqalar.</li>
+                </ul>
+
             </div>
         </div>   
     </div>
     
     <script src="/1.Web/search.js" defer></script>
-<script>
-        // JavaScript interaktivlik nav elementi uchun
-        document.addEventListener('DOMContentLoaded', function() {
-            // Nav elementlari uchun aktivatsiya
-            const navLinks = document.querySelectorAll('nav a');
-            
-            navLinks.forEach(link => {
-                link.addEventListener('click', function(e) {
-                    // Asosiy navigatsiya bosilganda aktiv holat qo'shish
-                    navLinks.forEach(l => l.classList.remove('active'));
-                    this.classList.add('active');
-                });
-            });
-            
-            // Mob menuni ochish/yopish
-            const toggleBtn = document.getElementById('toggle-btn');
-            const mainMenu = document.querySelector('#menyu ul');
-            
-            if (toggleBtn && mainMenu) {
-                toggleBtn.addEventListener('click', function() {
-                    mainMenu.classList.toggle('open');
-                });
-            }
-            
-            // Sarlavha bosqichlarini aniqlash
-            const navHeadings = document.querySelectorAll('h2');
-            navHeadings.forEach(heading => {
-                heading.style.cursor = 'pointer';
-                heading.addEventListener('click', function() {
-                    this.classList.toggle('active');
-                });
-            });
-        });
-    </script>
 </body>
 </html>

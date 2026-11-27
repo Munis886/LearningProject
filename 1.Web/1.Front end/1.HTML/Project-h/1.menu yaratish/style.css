@@ -1,0 +1,71 @@
+/* 1. Ro'yxatlarning standart stillarini tozalash */
+.flyout-list,
+.flyout-submenu {
+  list-style: none;            /* Ro'yxat bandlari oldidagi nuqta (marker) belgisini olib tashlaydi */
+  margin: 0;                   /* Tashqi bo'shliqni (margin) nolga tenglaydi */
+  padding: 0;                  /* Ichki bo'shliqni (padding) nolga tenglaydi */
+  width: 210px;                /* Menyu ro'yxatining kengligini 210 piksel qilib belgilaydi */
+}
+
+/* 2. Har bir menyu bandi — ichki menyu uchun koordinata boshi */
+.flyout-item {
+  position: relative;          /* Ichki ochiladigan menyu (.flyout-submenu) uchun tayanch joylashuv nuqtasi bo'ladi */
+}
+
+/* 3. Tugma va havolalarning yagona stili */
+.flyout-btn {
+  display: block;              /* Elementni blok ko'rinishiga o'tkazadi (butun qator kengligini egallaydi) */
+  width: 100%;                 /* Kengligini ota element (.flyout-item) kengligiga teng (100%) qiladi */
+  padding: 10px 14px;          /* Matn atrofidan yuqori/pastga 10px, chap/o'ngga 14px ichki bo'shliq beradi */
+  background-color: #1e3a8a;   /* Fon rangini to'q ko'k rangga bo'yaydi */
+  color: #ffffff;              /* Matn rangini oq rangga o'zgartiradi */
+  border: none;                /* Tugmaning standart tashqi ramkasini (chegarasini) olib tashlaydi */
+  text-align: left;            /* Matnni chap tomonga tekislaydi */
+  text-decoration: none;       /* Havolalar tagidagi standart chiziqni olib tashlaydi */
+  font-size: 14px;             /* Shrift o'lchamini 14 piksel qilib belgilaydi */
+  cursor: pointer;             /* Sichqoncha ustiga kelganda kursorni qo'l (ko'rsatkich) shakliga o'zgartiradi */
+}
+
+/* Tugma/havola ustiga kursor borganda yoki klaviatura fokusi tushganda */
+.flyout-btn:hover,
+.flyout-btn:focus {
+  background-color: #2563eb;   /* Fon rangini ochroq ko'k rangga o'zgartiradi */
+}
+
+/* 4. O'ngga ochiladigan menyu (Dastlab yashirin holatda) */
+.flyout-submenu {
+  position: absolute;          /* Ichki menyuni hujjat oqimidan chiqarib, ota elementga nisbatan joylashtiradi */
+  top: 0;                      /* Ota elementning yuqori chekkasi bilan bir tekisda joylashtiradi */
+  left: 100%;                  /* Ota .flyout-item ning o'ng chekkasidan boshlab joylashtiradi */
+  background-color: #ffffff;   /* Ichki menyu fonini oq rangga bo'yaydi */
+  border: 1px solid #cbd5e1;   /* Atrofiga 1px qalinlikdagi och kulrang chegara chizadi */
+  border-radius: 4px;          /* Menyu burchaklarini 4 pikselga yumaloqlashtiradi */
+  z-index: 100;                /* Boshqa elementlarning ustida ko'rinishini ta'minlaydi (qatlam tartibi) */
+
+  /* Silliq animatsiya uchun yashirish */
+  opacity: 0;                  /* Dastlabki holatda to'liq shaffof (ko'rinmas) qiladi */
+  visibility: hidden;          /* Elementni ko'rinmas va bosib bo'lmaydigan holatga o'tkazadi */
+  transform: translateX(-8px); /* Ochilish animatsiyasi uchun menyuni 8px chapga surib turadi */
+  transition: opacity 0.2s ease, transform 0.2s ease, visibility 0.2s; /* Shaffoflik, siljish va ko'rinish o'zgarishlarini 0.2 soniyada silliq bajaradi */
+}
+
+/* Ichki menyudagi havolalar ko'rinishi */
+.flyout-submenu .flyout-btn {
+  background-color: #ffffff;   /* Ichki menyu bandlari fonini oq rang qiladi */
+  color: #1e293b;              /* Ichki menyu matn rangini to'q kulrang-ko'k rangga o'zgartiradi */
+}
+
+/* Ichki menyudagi havola ustiga kursor kelganda */
+.flyout-submenu .flyout-btn:hover {
+  background-color: #f1f5f9;   /* Fon rangini juda och kulrangga o'zgartiradi */
+  color: #2563eb;              /* Matn rangini ko'k rangga o'zgartiradi */
+}
+
+/* 5. Kursor borganda, Tab bosilganda yoki JS .is-open qo'shganda ochish */
+.flyout-item:hover > .flyout-submenu,
+.flyout-item:focus-within > .flyout-submenu,
+.flyout-item.is-open > .flyout-submenu {
+  opacity: 1;                  /* Menyuni to'liq ko'rinadigan (shaffof bo'lmagan) holatga keltiradi */
+  visibility: visible;         /* Menyuni ko'rinadigan va bosish mumkin bo'lgan holatga o'tkazadi */
+  transform: translateX(0);    /* Chapga surilgan holatdan o'zining haqiqiy joyiga silliq qaytaradi */
+}
